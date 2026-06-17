@@ -1,23 +1,27 @@
-name: Publicar Short Diario — IA al Día
+name: IA al Día — Publicación Automática
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9AM Chile (UTC-4)
-    - cron: '0 17 * * *'   # 1PM Chile (UTC-4)
-    - cron: '0 23 * * *'   # 7PM Chile (UTC-4)
-  workflow_dispatch:         # permite correrlo manualmente desde GitHub
+    - cron: '0 13 * * *'   # 9AM Chile  — Short
+    - cron: '0 17 * * *'   # 1PM Chile  — Short
+    - cron: '0 23 * * *'   # 7PM Chile  — Short
+    - cron: '0 15 * * 1'   # 11AM Chile lunes — Video largo
+  workflow_dispatch:
+    inputs:
+      tipo:
+        description: 'Tipo: short o largo'
+        required: false
+        default: 'short'
 
 jobs:
-  publish:
+  publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Configurar Python 3.11
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -32,11 +36,24 @@ jobs:
 
       - name: Restaurar .env
         run: |
-          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"   >> .env
-          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}"   >> .env
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
 
-      - name: Publicar Short
+      - name: Publicar Short (9AM / 1PM / 7PM)
+        if: >
+          (github.event_name == 'schedule' &&
+           (github.event.schedule == '0 13 * * *' ||
+            github.event.schedule == '0 17 * * *' ||
+            github.event.schedule == '0 23 * * *')) ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'short') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == '')
         run: python -W ignore generate_short.py
+
+      - name: Publicar Video Largo (lunes 11AM)
+        if: >
+          (github.event_name == 'schedule' && github.event.schedule == '0 15 * * 1') ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'largo')
+        run: python -W ignore generate_long.py
 
       - name: Guardar token renovado
         if: always()
