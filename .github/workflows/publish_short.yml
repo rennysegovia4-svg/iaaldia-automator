@@ -1,0 +1,45 @@
+name: Publicar Short Diario — IA al Día
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # 9AM Chile (UTC-4)
+    - cron: '0 17 * * *'   # 1PM Chile (UTC-4)
+    - cron: '0 23 * * *'   # 7PM Chile (UTC-4)
+  workflow_dispatch:         # permite correrlo manualmente desde GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Restaurar credenciales
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 -d > client_secrets.json
+          echo "${{ secrets.TOKEN_JSON }}"          | base64 -d > token.json
+
+      - name: Restaurar .env
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"   >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}"   >> .env
+
+      - name: Publicar Short
+        run: python -W ignore generate_short.py
+
+      - name: Guardar token renovado
+        if: always()
+        run: |
+          NEW_TOKEN=$(base64 -w 0 token.json 2>/dev/null || base64 token.json)
+          echo "TOKEN_ACTUALIZADO=$NEW_TOKEN" >> $GITHUB_STEP_SUMMARY
