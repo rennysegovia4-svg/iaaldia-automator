@@ -149,20 +149,27 @@ Crea un guión ULTRA enganchador para un YouTube Short (55 segundos máximo, 130
 REGLA DE ORO DEL GANCHO: {hook}
 
 REGLAS DEL GUIÓN:
-- Los primeros 3 segundos son CRÍTICOS: deben generar curiosidad o impacto inmediato
-- Usa lenguaje conversacional y directo, como si hablaras con un amigo en persona
-- Escribe oraciones CORTAS. Máximo 12 palabras por oración. Así suena más natural al hablar.
-- Usa puntos seguidos frecuentemente. No comas largas. El ritmo debe ser dinámico.
+- Los primeros 3 segundos son CRÍTICOS: una sola frase corta de 5-8 palabras que detenga el scroll
+- Usa lenguaje conversacional y OPINADO. Di "yo creo", "me parece increíble", "esto me preocupa". No seas robot.
+- Escribe oraciones CORTAS. Máximo 12 palabras por oración. Ritmo dinámico.
+- Usa puntos seguidos frecuentemente. No comas largas.
 - Sin asteriscos, guiones, ni símbolos especiales
-- Termina con: "Sígueme para más IA al Día"
+- FINAL con loop: el cierre debe hacerle al espectador querer volver al principio. Termina con una pregunta o frase que genere curiosidad que solo se responde viendo el video de nuevo. Ejemplo: "Pero la pregunta real es... ¿ya lo sabías?"
+- La última oración SIEMPRE es: "Sígueme para más IA al Día"
 - Español latinoamericano neutro
+
+REGLAS DEL TÍTULO (SEO 2026):
+- La palabra clave principal debe estar en los primeros 40 caracteres
+- 4-6 palabras máximo, directo y que genere clicks
+- Un solo emoji al final
 
 El formato DEBE ser exactamente este JSON válido (sin markdown, sin texto extra):
 {{
-  "titulo": "título con emoji, máximo 60 caracteres, que genere clicks",
-  "descripcion": "2-3 oraciones + hashtags: #IA #InteligenciaArtificial #ChatGPT #Tecnologia #Shorts #IaAlDia",
-  "tags": ["inteligencia artificial", "chatgpt", "ia", "tecnologia", "shorts", "ia al dia"],
+  "titulo": "título SEO con keyword al inicio, máximo 55 caracteres, un emoji al final",
+  "descripcion": "Primer párrafo: 1-2 oraciones con la keyword principal (esto aparece en preview). Segundo párrafo: contexto del video. #Shorts #IA #InteligenciaArtificial #ChatGPT #Tecnologia #IaAlDia",
+  "tags": ["ia 2026", "inteligencia artificial", "chatgpt trucos", "ia herramientas gratis", "ia al dia", "shorts ia", "tecnologia latina", "ia noticias", "futuro ia", "automatizacion ia", "ia español", "ia para todos"],
   "guion": "guión completo listo para leer en voz alta, sin símbolos especiales",
+  "hook_texto": "las primeras 5-7 palabras del guión exactas, para overlay visual",
   "keyword_video": "keyword en inglés para Pexels (robot, artificial intelligence, technology, future, computer, data, brain)"
 }}"""
 
@@ -299,9 +306,29 @@ def estimate_captions(script: str, duration: float) -> list:
         i += 4
     return phrases
 
-def build_caption_filter(phrases: list) -> str:
-    """Genera filtros drawtext encadenados para cada frase."""
+def build_caption_filter(phrases: list, hook_text: str = "") -> str:
+    """Genera filtros drawtext: hook gigante primeros 2.5s + captions durante todo el video."""
     filters = []
+
+    # Hook visual grande en los primeros 2.5 segundos
+    if hook_text:
+        safe_hook = (hook_text.replace("'", "").replace('"', "")
+                              .replace("\\", "").replace("%", "")
+                              .replace(":", " ").replace("\n", " "))[:40]
+        # Texto blanco con borde rojo, centrado, grande
+        filters.append(
+            f"drawtext=fontfile='{FONT}'"
+            f":text='{safe_hook}'"
+            f":fontcolor=white"
+            f":fontsize=90"
+            f":x=(w-text_w)/2"
+            f":y=(h-text_h)/2-80"
+            f":box=1:boxcolor=black@0.75:boxborderw=22"
+            f":bordercolor=0x00DCFF:borderw=3"
+            f":enable='between(t,0.0,2.5)'"
+        )
+
+    # Captions normales para el resto
     for text, start, end in phrases:
         safe = (text.replace("'", "").replace('"', "")
                     .replace("\\", "").replace("%", "")
@@ -319,7 +346,7 @@ def build_caption_filter(phrases: list) -> str:
     return ",".join(filters)
 
 # ── Paso 4: Ensamblar video ───────────────────────────────────────────────────
-def create_short(audio_path: str, bg_video_path: str, output_path: str, script_text: str = ""):
+def create_short(audio_path: str, bg_video_path: str, output_path: str, script_text: str = "", hook_text: str = ""):
     duration = MP3(audio_path).info.length + 0.5
 
     # Zoom cinematográfico (+10%) + color grade vibrante
@@ -329,10 +356,10 @@ def create_short(audio_path: str, bg_video_path: str, output_path: str, script_t
         "eq=contrast=1.12:brightness=-0.02:saturation=1.35:gamma=0.95"
     )
 
-    # Captions animadas
+    # Hook visual + captions animadas
     if script_text:
         phrases = estimate_captions(script_text, duration)
-        cap_filter = build_caption_filter(phrases)
+        cap_filter = build_caption_filter(phrases, hook_text)
         if cap_filter:
             vf += "," + cap_filter
 
@@ -500,16 +527,25 @@ def main():
         download_pexels_video(script["keyword_video"], bg_path)
 
         print("[5/6] Ensamblando Short con captions + zoom + color grade...")
-        create_short(audio_path, bg_path, output_path, script["guion"])
+        hook_text = script.get("hook_texto", "")
+        create_short(audio_path, bg_path, output_path, script["guion"], hook_text)
 
         print("[5/6] Generando miniatura personalizada...")
         create_thumbnail(script["titulo"], thumb_path)
+
+        # Descripción mejorada SEO + transparencia IA (evita penalización YouTube)
+        descripcion_final = (
+            script["descripcion"] +
+            "\n\n━━━━━━━━━━━━━━━━\n"
+            "🤖 Canal: IA al Día — Noticias de inteligencia artificial para LATAM.\n"
+            "⚠️ Contenido creado con asistencia de IA con fines educativos e informativos."
+        )
 
         print("[6/6] Subiendo a YouTube...")
         youtube = get_youtube_client()
         video_id = upload_to_youtube(
             youtube, output_path,
-            script["titulo"], script["descripcion"], script["tags"]
+            script["titulo"], descripcion_final, script["tags"]
         )
         upload_thumbnail(youtube, video_id, thumb_path)
 
