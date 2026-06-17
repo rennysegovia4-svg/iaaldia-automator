@@ -219,23 +219,67 @@ def generate_audio(text: str, path: str):
     asyncio.run(_audio_async(text, path))
 
 
-# ── Paso 3: Video de fondo ────────────────────────────────────────────────────
-def download_pexels_video(keyword: str, output_path: str) -> bool:
+# ── Paso 3: Videos de fondo desde Pexels (3 clips sin loop) ─────────────────
+import shutil
+
+def _fetch_clip(query: str, path: str, used_ids: set) -> bool:
     headers = {"Authorization": PEXELS_API_KEY}
-    for query in [keyword, "technology", "future city"]:
-        params = {"query": query, "orientation": "portrait", "size": "medium", "per_page": 15}
-        r = requests.get("https://api.pexels.com/videos/search", headers=headers, params=params)
-        videos = r.json().get("videos", [])
-        if videos:
-            break
+    params = {"query": query, "orientation": "portrait", "size": "medium", "per_page": 20}
+    r = requests.get("https://api.pexels.com/videos/search", headers=headers, params=params)
+    videos = [v for v in r.json().get("videos", []) if v["id"] not in used_ids]
     if not videos:
         return False
-    video = random.choice(videos[:8])
+    video = random.choice(videos[:10])
+    used_ids.add(video["id"])
     files = sorted(video["video_files"], key=lambda x: x.get("width", 0))
-    r = requests.get(files[-1]["link"], stream=True)
-    with open(output_path, "wb") as f:
-        for chunk in r.iter_content(chunk_size=8192):
+    dl = requests.get(files[-1]["link"], stream=True)
+    with open(path, "wb") as f:
+        for chunk in dl.iter_content(chunk_size=8192):
             f.write(chunk)
+    return True
+
+def download_pexels_video(keyword: str, output_path: str) -> bool:
+    """Descarga 3 clips distintos y los concatena para tener continuidad."""
+    tmp_dir = output_path + "_clips"
+    os.makedirs(tmp_dir, exist_ok=True)
+    used_ids: set = set()
+
+    queries = [keyword, "technology future", "artificial intelligence"]
+    clips = []
+    for i, q in enumerate(queries):
+        clip_path = os.path.join(tmp_dir, f"clip_{i}.mp4")
+        if _fetch_clip(q, clip_path, used_ids):
+            clips.append(clip_path)
+
+    if not clips:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
+        return False
+
+    if len(clips) == 1:
+        shutil.copy(clips[0], output_path)
+    else:
+        n = len(clips)
+        inputs = []
+        for c in clips:
+            inputs += ["-i", c]
+        filt = "".join(
+            f"[{i}:v]scale=1080:1920:force_original_aspect_ratio=increase,"
+            f"crop=1080:1920,setsar=1[v{i}];" for i in range(n)
+        )
+        filt += "".join(f"[v{i}]" for i in range(n))
+        filt += f"concat=n={n}:v=1:a=0[vout]"
+        cmd = [
+            FFMPEG, "-y", *inputs,
+            "-filter_complex", filt,
+            "-map", "[vout]",
+            "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+            output_path
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode != 0:
+            shutil.copy(clips[0], output_path)
+
+    shutil.rmtree(tmp_dir, ignore_errors=True)
     return True
 
 
@@ -294,7 +338,7 @@ def create_short(audio_path: str, bg_video_path: str, output_path: str, script_t
 
     cmd = [
         FFMPEG, "-y",
-        "-stream_loop", "-1", "-i", bg_video_path,
+        "-i", bg_video_path,
         "-i", audio_path,
         "-t", str(duration),
         "-vf", vf,
