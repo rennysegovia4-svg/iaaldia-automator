@@ -239,23 +239,73 @@ def download_pexels_video(keyword: str, output_path: str) -> bool:
     return True
 
 
+FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+
+def estimate_captions(script: str, duration: float) -> list:
+    """Divide el guión en frases de 4 palabras con timing estimado."""
+    words = script.split()
+    time_per_word = (duration - 1.0) / max(len(words), 1)
+    phrases, i = [], 0
+    while i < len(words):
+        chunk = words[i:i+4]
+        phrase = " ".join(chunk)
+        start = 0.5 + i * time_per_word
+        end   = 0.5 + (i + len(chunk)) * time_per_word
+        phrases.append((phrase, start, end))
+        i += 4
+    return phrases
+
+def build_caption_filter(phrases: list) -> str:
+    """Genera filtros drawtext encadenados para cada frase."""
+    filters = []
+    for text, start, end in phrases:
+        safe = (text.replace("'", "").replace('"', "")
+                    .replace("\\", "").replace("%", "")
+                    .replace(":", " ").replace("\n", " "))[:35]
+        filters.append(
+            f"drawtext=fontfile='{FONT}'"
+            f":text='{safe}'"
+            f":fontcolor=yellow"
+            f":fontsize=74"
+            f":x=(w-text_w)/2"
+            f":y=h-310"
+            f":box=1:boxcolor=black@0.65:boxborderw=18"
+            f":enable='between(t,{start:.2f},{end:.2f})'"
+        )
+    return ",".join(filters)
+
 # ── Paso 4: Ensamblar video ───────────────────────────────────────────────────
-def create_short(audio_path: str, bg_video_path: str, output_path: str):
+def create_short(audio_path: str, bg_video_path: str, output_path: str, script_text: str = ""):
     duration = MP3(audio_path).info.length + 0.5
+
+    # Zoom cinematográfico (+10%) + color grade vibrante
+    vf = (
+        "scale=1188:2112:force_original_aspect_ratio=increase,"
+        "crop=1080:1920,"
+        "eq=contrast=1.12:brightness=-0.02:saturation=1.35:gamma=0.95"
+    )
+
+    # Captions animadas
+    if script_text:
+        phrases = estimate_captions(script_text, duration)
+        cap_filter = build_caption_filter(phrases)
+        if cap_filter:
+            vf += "," + cap_filter
+
     cmd = [
         FFMPEG, "-y",
         "-stream_loop", "-1", "-i", bg_video_path,
         "-i", audio_path,
         "-t", str(duration),
-        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
-        "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+        "-vf", vf,
+        "-c:v", "libx264", "-preset", "fast", "-crf", "22",
         "-c:a", "aac", "-b:a", "128k",
         "-shortest", "-movflags", "+faststart",
         output_path
     ]
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
-        raise RuntimeError(f"FFmpeg error: {result.stderr[-300:]}")
+        raise RuntimeError(f"FFmpeg error: {result.stderr[-400:]}")
 
 
 # ── Opción 5: Miniatura personalizada ────────────────────────────────────────
@@ -405,8 +455,8 @@ def main():
         print(f"[4/6] Descargando video de fondo...")
         download_pexels_video(script["keyword_video"], bg_path)
 
-        print("[5/6] Ensamblando Short 1080x1920...")
-        create_short(audio_path, bg_path, output_path)
+        print("[5/6] Ensamblando Short con captions + zoom + color grade...")
+        create_short(audio_path, bg_path, output_path, script["guion"])
 
         print("[5/6] Generando miniatura personalizada...")
         create_thumbnail(script["titulo"], thumb_path)
