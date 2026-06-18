@@ -19,7 +19,8 @@ from googleapiclient.http import MediaFileUpload
 import edge_tts, asyncio, imageio_ffmpeg
 from mutagen.mp3 import MP3
 
-FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
+import shutil as _shutil
+FFMPEG = _shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
 
 BASE_DIR       = Path(__file__).parent
 ENV_FILE       = BASE_DIR / ".env"
