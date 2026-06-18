@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
 YouTube Shorts Automator — IA al Día
-Pipeline: trending topic → script → TTS → imágenes IA → slideshow → captions → YouTube
+Pipeline: trending topic → research → script → TTS → imágenes IA → slideshow
+         → Whisper captions → música ambient + voice ducking → YouTube
 """
 
-import os, json, random, requests, subprocess, tempfile, time, math, feedparser
-import shutil, concurrent.futures, urllib.parse
+import os, json, random, requests, subprocess, tempfile, time, math
+import feedparser, shutil, concurrent.futures, urllib.parse, urllib.request, re
 from pathlib import Path
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
@@ -18,8 +19,7 @@ from googleapiclient.http import MediaFileUpload
 import edge_tts, asyncio, imageio_ffmpeg
 from mutagen.mp3 import MP3
 
-import shutil as _shutil
-FFMPEG = _shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
+FFMPEG = shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
 
 # ── Config ────────────────────────────────────────────────────────────────────
 BASE_DIR       = Path(__file__).parent
@@ -28,7 +28,12 @@ CLIENT_SECRETS = BASE_DIR / "client_secrets.json"
 TOKEN_FILE     = BASE_DIR / "token.json"
 SCOPES         = ["https://www.googleapis.com/auth/youtube"]
 TTS_VOICE      = "es-CL-LorenzoNeural"
-FONT           = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+
+# Font: macOS usa Arial Bold, Linux usa DejaVu
+_MAC_FONT  = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+_LIN_FONT  = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT       = _MAC_FONT if os.path.exists(_MAC_FONT) else _LIN_FONT
+
 GEMINI_MODELS  = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
 
 BG_DARK  = (8, 12, 28)
@@ -37,6 +42,7 @@ CYAN     = (0, 220, 255)
 CYAN_DIM = (0, 140, 180)
 WHITE    = (255, 255, 255)
 GRAY     = (160, 175, 210)
+
 
 def load_env():
     env = {}
@@ -48,11 +54,11 @@ def load_env():
                 env[k.strip()] = v.strip()
     return env
 
+
 ENV            = load_env()
 GEMINI_API_KEY = ENV["GEMINI_API_KEY"]
 PEXELS_API_KEY = ENV["PEXELS_API_KEY"]
 
-# ── Afiliados (ingresos desde el día 1) ──────────────────────────────────────
 AFFILIATES = (
     "\n\n💡 Herramientas IA que recomiendo:\n"
     "→ ChatGPT: https://chat.openai.com\n"
@@ -133,15 +139,41 @@ Responde SOLO con el tema (1 oración, sin comillas, máximo 15 palabras)."""
     return random.choice(FALLBACK_TOPICS)
 
 
-# ── Paso 2: Script viral ──────────────────────────────────────────────────────
-def generate_script(topic: str) -> dict:
+# ── Paso 1b: Research Gate anti-alucinación (rushindrasinha/youtube-shorts-pipeline) ─
+def research_topic(topic: str) -> str:
+    """DuckDuckGo snippets para anclar el script en hechos reales."""
+    try:
+        data = urllib.parse.urlencode({"q": topic + " 2026", "b": ""}).encode()
+        req  = urllib.request.Request(
+            "https://html.duckduckgo.com/html/", data=data,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; researchbot/1.0)"}
+        )
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        snippets = re.findall(r'class="result__snippet"[^>]*>([^<]+)<', html)
+        if snippets:
+            return "\n".join(s.strip()[:300] for s in snippets[:5])
+    except Exception:
+        pass
+    return ""
+
+
+# ── Paso 2: Script viral con contexto verificado ──────────────────────────────
+def generate_script(topic: str, research: str = "") -> dict:
     client = genai.Client(api_key=GEMINI_API_KEY)
     hook   = random.choice(HOOK_FORMULAS)
+
+    research_ctx = ""
+    if research:
+        research_ctx = (
+            f"\n\nHECHOS VERIFICADOS (úsalos en el guión, no inventes datos adicionales):\n"
+            f"{research}\n"
+        )
 
     prompt = f"""Eres un creador de contenido viral en YouTube con 5 millones de suscriptores, especializado en IA para LATAM.
 
 Crea un guión ULTRA enganchador para un YouTube Short (55 segundos, 130-150 palabras) sobre: {topic}
-
+{research_ctx}
 GANCHO: {hook}
 
 REGLAS:
@@ -176,13 +208,13 @@ JSON exacto (sin markdown):
                 break
             except Exception as e:
                 if "429" in str(e):
-                    break  # probar siguiente modelo
+                    break
                 if attempt < 2:
                     time.sleep(15 * (attempt + 1))
         if response:
             break
+
     if not response:
-        # Fallback: template con el topic del día
         print("      Gemini sin cuota, usando template de emergencia...")
         return {
             "titulo": f"IA 2026: {topic[:35]} 🤖",
@@ -223,7 +255,108 @@ def generate_audio(text: str, path: str):
     asyncio.run(_tts_async(text, path))
 
 
-# ── Paso 4: Imágenes IA con Pollinations.ai (gratis, sin API key) ─────────────
+# ── Paso 3b: Whisper captions exactas (rushindrasinha/youtube-shorts-pipeline) ─
+def transcribe_whisper(audio_path: str) -> list:
+    """
+    Transcribe con faster-whisper y devuelve frases de 4 palabras
+    con timestamps exactos del audio real. Fallback a None si falla.
+    """
+    try:
+        from faster_whisper import WhisperModel
+        print("      Cargando Whisper tiny...")
+        model = WhisperModel("tiny", device="cpu", compute_type="int8",
+                             download_root="/tmp/whisper_models")
+        segments, _ = model.transcribe(audio_path, language="es", word_timestamps=True)
+
+        words = []
+        for seg in segments:
+            for w in (seg.words or []):
+                word = w.word.strip()
+                if word:
+                    words.append({"word": word, "start": w.start, "end": w.end})
+
+        if not words:
+            return None
+
+        # Agrupar en frases de 4 palabras con timestamps exactos
+        phrases = []
+        for i in range(0, len(words), 4):
+            chunk = words[i:i+4]
+            phrase = " ".join(w["word"] for w in chunk)
+            phrases.append((phrase, chunk[0]["start"], chunk[-1]["end"]))
+
+        print(f"      Whisper: {len(phrases)} frases con timestamps exactos ✓")
+        return phrases
+
+    except Exception as e:
+        print(f"      Whisper no disponible: {str(e)[:60]}")
+        return None
+
+
+def estimate_captions(script: str, duration: float) -> list:
+    """Timing estimado como fallback si Whisper no está disponible."""
+    words         = script.split()
+    time_per_word = (duration - 1.0) / max(len(words), 1)
+    phrases, i    = [], 0
+    while i < len(words):
+        chunk  = words[i:i+4]
+        phrase = " ".join(chunk)
+        start  = 0.5 + i * time_per_word
+        end    = 0.5 + (i + len(chunk)) * time_per_word
+        phrases.append((phrase, start, end))
+        i += 4
+    return phrases
+
+
+# ── Paso 3c: Música ambient + voice ducking ───────────────────────────────────
+def generate_ambient_music(duration: float, output_path: str) -> bool:
+    """
+    Genera un pad ambient con FFmpeg (C-mayor: Do+Mi+Sol+Do).
+    Tremolo lento (0.3Hz) evita que suene plano. No requiere archivos externos.
+    """
+    try:
+        expr = (
+            "aevalsrc="
+            "0.08*sin(2*PI*130.8*t)*abs(sin(2*PI*0.25*t+0.5))+"
+            "0.06*sin(2*PI*164.8*t)*abs(sin(2*PI*0.25*t+1.0))+"
+            "0.05*sin(2*PI*196.0*t)*abs(sin(2*PI*0.25*t+1.5))+"
+            "0.04*sin(2*PI*261.6*t)*abs(sin(2*PI*0.25*t+2.0))"
+            ":s=44100"
+        )
+        cmd = [
+            FFMPEG, "-y",
+            "-f", "lavfi", "-i", expr,
+            "-t", str(duration + 1),
+            "-af", "afade=t=in:d=1.5,afade=t=out:st=" + str(duration - 1.5) + ":d=1.5",
+            "-c:a", "aac", "-b:a", "64k",
+            output_path
+        ]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        return r.returncode == 0
+    except Exception:
+        return False
+
+
+def build_duck_filter(phrases: list, duration: float,
+                      vol_speech: float = 0.07, vol_gap: float = 0.22) -> str:
+    """
+    Voice ducking: música baja durante el habla, sube en silencios.
+    Construye expresión FFmpeg volume= dinámica.
+    """
+    if not phrases:
+        return f"volume={vol_speech}"
+
+    # Regiones de habla con buffer ±0.2s
+    regions = [(max(0, s - 0.2), min(duration, e + 0.2)) for _, s, e in phrases]
+
+    expr = str(vol_gap)
+    for start, end in regions:
+        expr = f"if(between(t,{start:.2f},{end:.2f}),{vol_speech},{expr})"
+
+    return f"volume='{expr}':eval=frame"
+
+
+# ── Paso 4: Imágenes IA con Pollinations.ai ──────────────────────────────────
 IMAGE_STYLES = [
     "professional dark infographic, neon blue cyan, flat design, no text, vertical",
     "futuristic tech visualization, dark background, glowing elements, minimal, vertical",
@@ -260,7 +393,7 @@ def _pexels_fallback(keyword: str, output_path: str) -> bool:
         if videos:
             video = random.choice(videos[:8])
             files = sorted(video["video_files"], key=lambda x: x.get("width", 0))
-            dl = requests.get(files[-1]["link"], stream=True)
+            dl    = requests.get(files[-1]["link"], stream=True)
             with open(output_path, "wb") as f:
                 for chunk in dl.iter_content(chunk_size=8192):
                     f.write(chunk)
@@ -268,7 +401,6 @@ def _pexels_fallback(keyword: str, output_path: str) -> bool:
     return False
 
 def generate_background(guion: str, keyword: str, duration: float, tmp_dir: str) -> str:
-    """Genera slideshow con imágenes IA cambiando cada 3s. Fallback a Pexels."""
     img_dir = os.path.join(tmp_dir, "slides")
     os.makedirs(img_dir, exist_ok=True)
 
@@ -290,7 +422,6 @@ def generate_background(guion: str, keyword: str, duration: float, tmp_dir: str)
 
     image_paths = [p for p in results if p and os.path.exists(p)]
 
-    # Si consiguió suficientes imágenes → slideshow
     if len(image_paths) >= 8:
         print(f"      {len(image_paths)}/{len(tasks)} imágenes generadas ✓")
         secs_per = duration / len(image_paths)
@@ -309,39 +440,26 @@ def generate_background(guion: str, keyword: str, duration: float, tmp_dir: str)
             "-c:v", "libx264", "-preset", "fast", "-crf", "23", "-r", "30",
             slideshow
         ]
-        result = subprocess.run(cmd, capture_output=True, text=True)
-        if result.returncode == 0:
+        if subprocess.run(cmd, capture_output=True).returncode == 0:
             return slideshow
 
-    # Fallback: Pexels
     print("      Pollinations limitado, usando Pexels como fallback...")
     pexels_path = os.path.join(tmp_dir, "background.mp4")
     _pexels_fallback(keyword, pexels_path)
     return pexels_path
 
 
-# ── Paso 5: Captions animadas ─────────────────────────────────────────────────
-def estimate_captions(script: str, duration: float) -> list:
-    words         = script.split()
-    time_per_word = (duration - 1.0) / max(len(words), 1)
-    phrases, i    = [], 0
-    while i < len(words):
-        chunk = words[i:i+4]
-        phrase = " ".join(chunk)
-        start  = 0.5 + i * time_per_word
-        end    = 0.5 + (i + len(chunk)) * time_per_word
-        phrases.append((phrase, start, end))
-        i += 4
-    return phrases
-
+# ── Paso 5: Captions con drawtext ─────────────────────────────────────────────
 def build_caption_filter(phrases: list, hook_text: str = "") -> str:
+    def safe(t):
+        return (t.replace("'", "").replace('"', "").replace("\\", "")
+                 .replace("%", "").replace(":", "").replace("\n", " "))[:35]
+
     filters = []
     if hook_text:
-        safe = (hook_text.replace("'","").replace('"',"")
-                         .replace("\\","").replace("%","")
-                         .replace(":","").replace("\n"," "))[:40]
+        s = safe(hook_text)[:40]
         filters.append(
-            f"drawtext=fontfile='{FONT}':text='{safe}'"
+            f"drawtext=fontfile='{FONT}':text='{s}'"
             f":fontcolor=white:fontsize=90"
             f":x=(w-text_w)/2:y=(h-text_h)/2-80"
             f":box=1:boxcolor=black@0.75:boxborderw=22"
@@ -349,11 +467,9 @@ def build_caption_filter(phrases: list, hook_text: str = "") -> str:
             f":enable='between(t,0.0,2.5)'"
         )
     for text, start, end in phrases:
-        safe = (text.replace("'","").replace('"',"")
-                    .replace("\\","").replace("%","")
-                    .replace(":","").replace("\n"," "))[:35]
+        s = safe(text)
         filters.append(
-            f"drawtext=fontfile='{FONT}':text='{safe}'"
+            f"drawtext=fontfile='{FONT}':text='{s}'"
             f":fontcolor=yellow:fontsize=74"
             f":x=(w-text_w)/2:y=h-310"
             f":box=1:boxcolor=black@0.65:boxborderw=18"
@@ -362,41 +478,54 @@ def build_caption_filter(phrases: list, hook_text: str = "") -> str:
     return ",".join(filters)
 
 
-# ── Paso 6: Ensamblar video ───────────────────────────────────────────────────
+# ── Paso 6: Ensamblar video + música ─────────────────────────────────────────
 def create_short(audio_path: str, bg_path: str, output_path: str,
-                 script_text: str = "", hook_text: str = ""):
+                 phrases: list, hook_text: str = "", music_path: str = ""):
     duration = MP3(audio_path).info.length + 0.5
 
-    vf = (
+    is_slideshow = "slideshow" in bg_path
+    base_vf = (
+        "eq=contrast=1.12:brightness=-0.02:saturation=1.35:gamma=0.95"
+        if is_slideshow else
         "scale=1188:2112:force_original_aspect_ratio=increase,"
         "crop=1080:1920,"
         "eq=contrast=1.12:brightness=-0.02:saturation=1.35:gamma=0.95"
     )
 
-    if script_text:
-        phrases    = estimate_captions(script_text, duration)
-        cap_filter = build_caption_filter(phrases, hook_text)
-        if cap_filter:
-            vf += "," + cap_filter
+    cap_filter = build_caption_filter(phrases, hook_text)
+    vf = base_vf + ("," + cap_filter if cap_filter else "")
 
-    # Si el bg es slideshow (ya a 1080x1920) omitir scale/crop
-    is_slideshow = "slideshow" in bg_path
-    if is_slideshow:
-        vf = "eq=contrast=1.12:brightness=-0.02:saturation=1.35:gamma=0.95"
-        if script_text:
-            vf += "," + cap_filter
+    if music_path and os.path.exists(music_path):
+        # 3 inputs: video, voz, música ambient
+        duck = build_duck_filter(phrases, duration)
+        cmd = [
+            FFMPEG, "-y",
+            "-i", bg_path,
+            "-i", audio_path,
+            "-i", music_path,
+            "-t", str(duration),
+            "-filter_complex",
+            f"[2:a]{duck}[music];[1:a][music]amix=inputs=2:duration=first:weights=1 0.6[aout]",
+            "-map", "0:v", "-map", "[aout]",
+            "-vf", vf,
+            "-c:v", "libx264", "-preset", "fast", "-crf", "22",
+            "-c:a", "aac", "-b:a", "128k",
+            "-shortest", "-movflags", "+faststart",
+            output_path
+        ]
+    else:
+        cmd = [
+            FFMPEG, "-y",
+            "-i", bg_path,
+            "-i", audio_path,
+            "-t", str(duration),
+            "-vf", vf,
+            "-c:v", "libx264", "-preset", "fast", "-crf", "22",
+            "-c:a", "aac", "-b:a", "128k",
+            "-shortest", "-movflags", "+faststart",
+            output_path
+        ]
 
-    cmd = [
-        FFMPEG, "-y",
-        "-i", bg_path,
-        "-i", audio_path,
-        "-t", str(duration),
-        "-vf", vf,
-        "-c:v", "libx264", "-preset", "fast", "-crf", "22",
-        "-c:a", "aac", "-b:a", "128k",
-        "-shortest", "-movflags", "+faststart",
-        output_path
-    ]
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(f"FFmpeg error: {result.stderr[-400:]}")
@@ -426,8 +555,8 @@ def create_thumbnail(title: str, output_path: str):
     try:
         f_logo  = ImageFont.truetype(FONT, 36)
         f_title = ImageFont.truetype(FONT, 72)
-        f_sub   = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial.ttf", 36)
-    except:
+        f_sub   = ImageFont.truetype(FONT, 36)
+    except Exception:
         f_logo = f_title = f_sub = ImageFont.load_default()
 
     draw.text((30,28), "IA", font=f_logo, fill=WHITE)
@@ -443,8 +572,8 @@ def create_thumbnail(title: str, output_path: str):
             line = [w]
     if line:
         lines.append(" ".join(line))
-    lines    = lines[:3]
-    y_start  = H//2 - len(lines)*45
+    lines   = lines[:3]
+    y_start = H//2 - len(lines)*45
     for i, ln in enumerate(lines):
         draw.text((W//2, y_start+i*85), ln, font=f_title,
                   fill=WHITE, anchor="mm", stroke_width=3, stroke_fill=BG_DARK)
@@ -516,30 +645,53 @@ def main():
 
     with tempfile.TemporaryDirectory() as tmp:
         audio_path  = os.path.join(tmp, "audio.mp3")
+        music_path  = os.path.join(tmp, "ambient.aac")
         output_path = os.path.join(tmp, "short.mp4")
         thumb_path  = os.path.join(tmp, "thumbnail.png")
 
-        print("[1/6] Buscando tema trending...")
+        print("[1/7] Buscando tema trending...")
         topic = get_trending_topic()
 
-        print("[2/6] Generando script con hook viral...")
-        script = generate_script(topic)
+        print("[2/7] Research gate (DuckDuckGo)...")
+        research = research_topic(topic)
+        if research:
+            print(f"      {len(research.split(chr(10)))} snippets verificados ✓")
+        else:
+            print("      Sin research disponible, continuando...")
+
+        print("[3/7] Generando script con hook viral...")
+        script = generate_script(topic, research)
         print(f"      Título: {script['titulo']}")
 
-        print("[3/6] Generando voz (Lorenzo, Chile)...")
+        print("[4/7] Generando voz (Lorenzo, Chile)...")
         generate_audio(script["guion"], audio_path)
         duration = MP3(audio_path).info.length + 0.5
+        print(f"      Duración: {duration:.1f}s")
 
-        print("[4/6] Generando fondo con imágenes IA...")
+        print("[5/7] Generando fondo con imágenes IA...")
         bg_path = generate_background(
             script["guion"], script["keyword_video"], duration, tmp
         )
 
-        print("[5/6] Ensamblando Short...")
-        hook_text = script.get("hook_texto", "")
-        create_short(audio_path, bg_path, output_path, script["guion"], hook_text)
+        print("[6/7] Transcribiendo con Whisper (captions exactas)...")
+        phrases = transcribe_whisper(audio_path)
+        if not phrases:
+            print("      Fallback: timing estimado")
+            phrases = estimate_captions(script["guion"], duration)
 
-        print("[5/6] Generando miniatura...")
+        print("[6/7] Generando música ambient...")
+        has_music = generate_ambient_music(duration, music_path)
+        if has_music:
+            print("      Música ambient generada ✓ (voice ducking activo)")
+
+        print("[6/7] Ensamblando Short...")
+        hook_text = script.get("hook_texto", "")
+        create_short(
+            audio_path, bg_path, output_path, phrases, hook_text,
+            music_path if has_music else ""
+        )
+
+        print("[6/7] Generando miniatura...")
         create_thumbnail(script["titulo"], thumb_path)
 
         descripcion_final = (
@@ -550,7 +702,7 @@ def main():
             "⚠️ Contenido creado con asistencia de IA con fines educativos."
         )
 
-        print("[6/6] Subiendo a YouTube...")
+        print("[7/7] Subiendo a YouTube...")
         youtube  = get_youtube_client()
         video_id = upload_to_youtube(
             youtube, output_path,
