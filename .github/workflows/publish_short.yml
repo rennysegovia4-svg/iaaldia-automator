@@ -13,6 +13,10 @@ on:
         required: false
         default: 'short'
 
+concurrency:
+  group: publicar-short
+  cancel-in-progress: false
+
 jobs:
   publicar:
     runs-on: ubuntu-latest
