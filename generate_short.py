@@ -54,33 +54,21 @@ ALERT_THRESHOLD = 30.0
 # ── Wav2Lip (repo 3) — deshabilitado por defecto; requiere ~700MB modelo ──────
 USE_WAV2LIP = False
 
-PRESENTER_QUERIES = [
-    "man talking camera professional",
-    "woman speaking camera presenter",
-    "journalist interview camera portrait",
-    "news anchor speaking portrait",
-    "person vlog camera talking portrait",
-    "man explaining camera close up",
-    "woman presenting camera studio",
-    "reporter speaking microphone portrait",
-    "man interview camera serious",
-    "woman news anchor portrait",
-]
+# Nichos: se cargan dinámicamente según el día
+from niches import get_niche
+_NICHE_KEY, _NICHE = get_niche(LANG_CODE)
+PRESENTER_QUERIES = _NICHE["pexels_queries"]
+RSS_FEEDS         = _NICHE["rss_feeds"]
+print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY})")
 
-RSS_FEEDS = [
-    "https://venturebeat.com/category/ai/feed/",
-    "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-    "https://feeds.arstechnica.com/arstechnica/technology-lab",
-]
-
-AFFILIATES = (
-    "\n\n💡 Herramientas IA que recomiendo:\n"
-    "→ ChatGPT: https://chat.openai.com\n"
-    "→ Claude AI: https://claude.ai\n"
-    "→ Gemini: https://gemini.google.com\n"
-    "→ Perplexity: https://perplexity.ai"
-)
+_AFFILIATES_BY_NICHE = {
+    "ia_noticias":       "\n\n💡 Herramientas IA que recomiendo:\n→ ChatGPT: https://chat.openai.com\n→ Claude AI: https://claude.ai\n→ Gemini: https://gemini.google.com\n→ Perplexity: https://perplexity.ai",
+    "finanzas":          "\n\n💡 Recursos de finanzas:\n→ Fintual: https://fintual.cl\n→ FXCM: https://www.fxcm.com\n→ Binance: https://binance.com",
+    "negocios_digitales":"\n\n💡 Herramientas para tu negocio:\n→ Shopify: https://shopify.com\n→ Canva: https://canva.com\n→ Dropi: https://dropi.co",
+    "cripto_inversiones": "\n\n⚠️ No es consejo financiero.\n💡 Exchanges confiables:\n→ Binance: https://binance.com\n→ Buda: https://buda.com",
+    "productividad_ia":  "\n\n💡 Herramientas gratis que uso:\n→ ChatGPT: https://chat.openai.com\n→ Canva IA: https://canva.com\n→ Notion AI: https://notion.so",
+}
+AFFILIATES = _AFFILIATES_BY_NICHE.get(_NICHE_KEY, _AFFILIATES_BY_NICHE["ia_noticias"])
 
 def load_env():
     env = {}
@@ -220,42 +208,42 @@ RESPOND JSON only (no markdown):
         except: return _fallback_script(), False
     # ─────────────────────────────────────────────────────────────────────────
 
-    prompt = f"""Eres el periodista de tecnología más influyente de América Latina. Tu canal tiene millones de seguidores porque siempre dices la verdad con datos reales, no inventas nada.
+    niche_ctx  = _NICHE.get("prompt_nicho", "")
+    niche_tags = json.dumps(_NICHE["tags"], ensure_ascii=False)
+    niche_hash = _NICHE["hashtags"]
+    canal_name = _NICHE["nombre"]
 
-NOTICIAS REALES DEL DÍA (úsalas como base):
+    prompt = f"""Eres el creador de contenido más influyente de América Latina en este tema.
+Tu canal se llama "{canal_name}" y tiene millones de seguidores porque siempre dices la verdad con datos reales.
+
+{niche_ctx}
+
+NOTICIAS / DATOS REALES DEL DÍA (úsalos como base):
 {h_block}
 
-HECHOS VERIFICADOS DE INTERNET (cita al menos 2 de estos en el guión):
+HECHOS VERIFICADOS DE INTERNET (cita al menos 2 en el guión):
 {r_block if r_block else "No hay datos adicionales — usa solo las noticias de arriba."}
 
 TAREA: Crea un guión de YouTube Short de 58-62 segundos (155-170 palabras).
 
-GANCHO (primeras 3-5 palabras, detiene el scroll — elige UNA fórmula):
-• "Acaban de confirmar que [hecho real impactante]"
-• "El [número real]% de [grupo] ya está [haciendo algo con IA]"
-• "Despidieron a [número real] personas. El motivo fue la IA."
-• "[Empresa real] acaba de anunciar que [hecho verificado]"
-• "Esto que ves ya existe. Y nadie en LATAM lo sabe."
-
 ESTRUCTURA OBLIGATORIA:
-[0-5s]   GANCHO — fact real, cifra real, impacto inmediato
+[0-5s]   GANCHO — hecho real, cifra real, impacto inmediato (detiene el scroll)
 [5-20s]  CONTEXTO — por qué importa, con dato numérico verificado
 [20-38s] CASO CONCRETO — empresa, país, persona real. Nombra quién.
 [38-50s] CONSECUENCIA — qué pasa si lo ignoras
-[50-62s] LLAMADA — qué puede hacer el espectador HOY + "Sígueme para más IA al Día."
+[50-62s] LLAMADA — qué puede hacer el espectador HOY + "Sígueme para más {canal_name}."
 
 REGLAS ESTRICTAS:
-- SOLO usa hechos que estén en las noticias o en los datos de arriba. Si no tienes el dato exacto, di "según reportes" o "estimaciones indican" — nunca inventes cifras.
+- SOLO usa hechos verificados. Si no tienes el dato exacto, di "según reportes" — nunca inventes cifras.
 - Máximo 8 palabras por oración
-- Voz directa: "esto ya está pasando", "lo confirman", "los datos dicen"
-- Sin palabras vacías: "increíble", "revolucionario", "impresionante", "fascinante"
+- Voz directa, activa, sin palabras vacías ("increíble", "revolucionario", "fascinante")
 - Español latinoamericano natural, fluido, no robótico
 
 RESPONDE JSON sin markdown:
 {{
   "titulo": "Título SEO: keyword principal al inicio, máximo 52 chars, 1 emoji al final",
-  "descripcion": "2 oraciones con keyword principal. Dato concreto. #Shorts #IA #InteligenciaArtificial #ChatGPT #Tecnologia #IaAlDia",
-  "tags": ["ia 2026","inteligencia artificial noticias","chatgpt novedades","ia herramientas","ia al dia","shorts ia","tecnologia latina","ia trabajo","futuro ia","automatizacion","ia español","ia impacto"],
+  "descripcion": "2 oraciones con keyword principal. Dato concreto. {niche_hash}",
+  "tags": {niche_tags},
   "guion": "guión completo 155-170 palabras, listo para leer",
   "hook_texto": "primeras 5-7 palabras exactas del guión"
 }}"""
@@ -287,12 +275,13 @@ RESPONDE JSON sin markdown:
         return _fallback_script(), False
 
 def _fallback_script():
+    fb = _NICHE.get("fallback", {})
     return {
-        "titulo": "IA 2026: lo que nadie te cuenta 🤖",
-        "descripcion": "Todo sobre inteligencia artificial en 2026. #Shorts #IA #InteligenciaArtificial #IaAlDia",
-        "tags": ["ia 2026","inteligencia artificial noticias","chatgpt novedades","ia herramientas","ia al dia","shorts ia","tecnologia latina","ia trabajo","futuro ia","automatizacion","ia español","ia impacto"],
-        "guion": "Nadie te dijo esto sobre la inteligencia artificial. El 40% de los empleos actuales van a cambiar en los próximos 3 años según la ONU. Yo lo veo cada semana. Una empresa que conozco despidió 30 personas el mes pasado. Contrató un solo modelo de IA. Lo que nadie menciona es que aún puedes adaptarte. Pero sí es tarde para ignorarlo. La pregunta no es si te va a afectar. La pregunta es qué vas a hacer antes de que llegue. Sígueme para más IA al Día.",
-        "hook_texto": "Nadie te dijo esto sobre la IA",
+        "titulo":      fb.get("titulo", "IA 2026: lo que nadie te cuenta 🤖"),
+        "descripcion": fb.get("descripcion", "Contenido de valor para América Latina. #Shorts"),
+        "tags":        _NICHE.get("tags", ["ia 2026","inteligencia artificial","shorts"]),
+        "guion":       fb.get("guion", "Contenido próximamente. Sígueme para más."),
+        "hook_texto":  fb.get("hook_texto", "Esto es lo que nadie te dice"),
     }
 
 
