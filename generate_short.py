@@ -119,17 +119,22 @@ def get_headlines():
     return headlines[:12]
 
 def research_topic(topic):
-    try:
-        data = urllib.parse.urlencode({"q": topic + " 2026", "b": ""}).encode()
-        req  = urllib.request.Request(
-            "https://html.duckduckgo.com/html/", data=data,
-            headers={"User-Agent": "Mozilla/5.0"}
-        )
-        with urllib.request.urlopen(req, timeout=8) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-        snippets = re.findall(r'class="result__snippet"[^>]*>([^<]+)<', html)
-        return "\n".join(s.strip()[:200] for s in snippets[:5])
-    except: return ""
+    """Busca hechos reales con DuckDuckGo + búsqueda secundaria de cifras."""
+    results = []
+    for query in [topic + " 2026", topic + " estadisticas datos", topic + " empresa reporte"]:
+        try:
+            data = urllib.parse.urlencode({"q": query, "b": ""}).encode()
+            req  = urllib.request.Request(
+                "https://html.duckduckgo.com/html/", data=data,
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+            )
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                html = resp.read().decode("utf-8", errors="ignore")
+            snippets = re.findall(r'class="result__snippet"[^>]*>([^<]+)<', html)
+            results.extend(s.strip()[:220] for s in snippets[:4])
+        except: pass
+        if len(results) >= 8: break
+    return "\n".join(f"• {r}" for r in results[:10]) if results else ""
 
 
 # ── Paso 2: Script Gemini 2.5 Pro ────────────────────────────────────────────
@@ -138,37 +143,44 @@ def generate_script(headlines, research):
     h_block = "\n".join(f"- {h}" for h in headlines) if headlines else "tendencias IA 2026"
     r_block = f"\nHECHOS VERIFICADOS:\n{research}\n" if research else ""
 
-    prompt = f"""Eres el creador de contenido de IA más viral de habla hispana en YouTube.
+    prompt = f"""Eres el periodista de tecnología más influyente de América Latina. Tu canal tiene millones de seguidores porque siempre dices la verdad con datos reales, no inventas nada.
 
-NOTICIAS DEL DÍA:
+NOTICIAS REALES DEL DÍA (úsalas como base):
 {h_block}
-{r_block}
-Crea un guión de YouTube Short de 58-62 segundos (155-170 palabras).
 
-ESTRUCTURA:
-[0-5s]   GANCHO — para el scroll. Una fórmula:
-  "Nadie te dijo que [verdad incómoda sobre IA]"
-  "[N] de cada 10 personas [error que cometen con IA]"
-  "La IA acaba de [hacer algo que cambia todo]"
-[5-20s]  TENSIÓN — el problema real con un dato numérico.
-[20-38s] EVIDENCIA — caso real, empresa, persona. Específico.
-[38-50s] GIRO — el ángulo que nadie menciona.
-[50-62s] CIERRE — consecuencia para el espectador + "Sígueme para más IA al Día."
+HECHOS VERIFICADOS DE INTERNET (cita al menos 2 de estos en el guión):
+{r_block if r_block else "No hay datos adicionales — usa solo las noticias de arriba."}
 
-REGLAS:
-- Máximo 9 palabras por oración
-- Voz humana: "yo lo vi", "me preocupa", "te juro que"
-- Mínimo 2 datos numéricos (%, millones, días)
-- Sin: "increíble", "revolucionario", "impresionante"
-- Español latinoamericano natural
+TAREA: Crea un guión de YouTube Short de 58-62 segundos (155-170 palabras).
+
+GANCHO (primeras 3-5 palabras, detiene el scroll — elige UNA fórmula):
+• "Acaban de confirmar que [hecho real impactante]"
+• "El [número real]% de [grupo] ya está [haciendo algo con IA]"
+• "Despidieron a [número real] personas. El motivo fue la IA."
+• "[Empresa real] acaba de anunciar que [hecho verificado]"
+• "Esto que ves ya existe. Y nadie en LATAM lo sabe."
+
+ESTRUCTURA OBLIGATORIA:
+[0-5s]   GANCHO — fact real, cifra real, impacto inmediato
+[5-20s]  CONTEXTO — por qué importa, con dato numérico verificado
+[20-38s] CASO CONCRETO — empresa, país, persona real. Nombra quién.
+[38-50s] CONSECUENCIA — qué pasa si lo ignoras
+[50-62s] LLAMADA — qué puede hacer el espectador HOY + "Sígueme para más IA al Día."
+
+REGLAS ESTRICTAS:
+- SOLO usa hechos que estén en las noticias o en los datos de arriba. Si no tienes el dato exacto, di "según reportes" o "estimaciones indican" — nunca inventes cifras.
+- Máximo 8 palabras por oración
+- Voz directa: "esto ya está pasando", "lo confirman", "los datos dicen"
+- Sin palabras vacías: "increíble", "revolucionario", "impresionante", "fascinante"
+- Español latinoamericano natural, fluido, no robótico
 
 RESPONDE JSON sin markdown:
 {{
-  "titulo": "Título SEO keyword al inicio, max 52 chars, emoji al final",
-  "descripcion": "2 oraciones con keyword. #Shorts #IA #InteligenciaArtificial #ChatGPT #Tecnologia #IaAlDia",
+  "titulo": "Título SEO: keyword principal al inicio, máximo 52 chars, 1 emoji al final",
+  "descripcion": "2 oraciones con keyword principal. Dato concreto. #Shorts #IA #InteligenciaArtificial #ChatGPT #Tecnologia #IaAlDia",
   "tags": ["ia 2026","inteligencia artificial noticias","chatgpt novedades","ia herramientas","ia al dia","shorts ia","tecnologia latina","ia trabajo","futuro ia","automatizacion","ia español","ia impacto"],
-  "guion": "guión completo 155-170 palabras",
-  "hook_texto": "primeras 6-8 palabras exactas"
+  "guion": "guión completo 155-170 palabras, listo para leer",
+  "hook_texto": "primeras 5-7 palabras exactas del guión"
 }}"""
 
     used_pro = False
@@ -271,9 +283,10 @@ def get_presenter_video(tmp_dir, duration):
             if not usable: continue
 
             video = random.choice(usable[:8])
-            files = sorted(video["video_files"], key=lambda x: x.get("width", 0))
-            portrait = [f for f in files if f.get("width", 999) <= f.get("height", 1)]
-            chosen   = random.choice(portrait) if portrait else files[min(1, len(files)-1)]
+            files = sorted(video["video_files"], key=lambda x: x.get("width", 0) * x.get("height", 0), reverse=True)
+            # Preferir portrait de mayor resolución (mínimo 720px de ancho)
+            portrait = [f for f in files if f.get("width", 0) >= 720 and f.get("width", 999) <= f.get("height", 1)]
+            chosen   = portrait[0] if portrait else files[0]
 
             raw = os.path.join(tmp_dir, "presenter_raw.mp4")
             dl  = requests.get(chosen["link"], stream=True, timeout=45)
@@ -411,7 +424,7 @@ def assemble(presenter_vid, audio_path, music_path,
                "-t", str(duration),
                "-filter_complex", fc,
                "-map", "[vout]", "-map", "[aout]",
-               "-c:v", "libx264", "-preset", "fast", "-crf", "19",
+               "-c:v", "libx264", "-preset", "fast", "-crf", "17",
                "-c:a", "aac", "-b:a", "192k",
                "-shortest", "-movflags", "+faststart", output_path]
     else:
@@ -419,7 +432,7 @@ def assemble(presenter_vid, audio_path, music_path,
                "-i", presenter_vid, "-i", audio_path,
                "-t", str(duration),
                "-vf", vf,
-               "-c:v", "libx264", "-preset", "fast", "-crf", "19",
+               "-c:v", "libx264", "-preset", "fast", "-crf", "17",
                "-c:a", "aac", "-b:a", "192k",
                "-shortest", "-movflags", "+faststart", output_path]
 
