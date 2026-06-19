@@ -1,0 +1,62 @@
+name: IA al Día — Watchdog Autocorrector
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # Cada 15 minutos, 24/7
+  workflow_run:
+    workflows:
+      - "IA al Día — Publicación Automática"
+      - "IA al Día — Learning Loop"
+      - "IA al Día — Viral Learner"
+      - "IA al Día — Analytics Semanal"
+    types: [completed]        # Se dispara inmediatamente al terminar cualquier workflow
+  workflow_dispatch:
+
+# Permisos para leer runs, pushear código y disparar workflows
+permissions:
+  contents: write
+  actions:  write
+
+jobs:
+  autocorreccion:
+    name: "Detección y autocorrección"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # No correr si el trigger es un workflow_run exitoso (solo en fallos)
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'failure'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias mínimas
+        run: pip install requests google-genai
+
+      - name: Restaurar .env para Gemini
+        run: echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+
+      - name: Ejecutar Watchdog
+        env:
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -W ignore watchdog.py
+
+      - name: Guardar log del watchdog
+        if: always()
+        run: |
+          git config user.name  "IA al Día Watchdog"
+          git config user.email "watchdog@iaaldia.ai"
+          git add watchdog_log.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "chore: watchdog log $(date +%H:%M)"
+          git push || true
