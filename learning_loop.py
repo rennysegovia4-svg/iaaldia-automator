@@ -112,20 +112,24 @@ def build_youtube_clients():
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
     token_path   = BASE_DIR / "token.json"
-    secrets_path = BASE_DIR / "client_secrets.json"
-    SCOPES = [
-        "https://www.googleapis.com/auth/youtube.readonly",
-        "https://www.googleapis.com/auth/yt-analytics.readonly",
-    ]
+    # Usar solo el scope que tiene el token existente — no pedir analytics por separado
+    SCOPES = ["https://www.googleapis.com/auth/youtube"]
     creds = None
     if token_path.exists():
         creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
     if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
+        try:
+            creds.refresh(Request())
+        except Exception as e:
+            print(f"  ! Token refresh error: {str(e)[:80]}")
+            return None, None
     if not creds or not creds.valid:
         return None, None
     yt  = build("youtube", "v3", credentials=creds)
-    yta = build("youtubeAnalytics", "v2", credentials=creds)
+    try:
+        yta = build("youtubeAnalytics", "v2", credentials=creds)
+    except Exception:
+        yta = None  # Analytics es opcional
     return yt, yta
 
 def get_channel_videos(yt, max_results=50) -> list:

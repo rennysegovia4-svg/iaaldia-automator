@@ -50,14 +50,17 @@ def build_youtube():
 
     token_path   = BASE_DIR / "token.json"
     secrets_path = BASE_DIR / "client_secrets.json"
-    SCOPES = ["https://www.googleapis.com/auth/youtube.readonly",
-              "https://www.googleapis.com/auth/yt-analytics.readonly"]
+    SCOPES = ["https://www.googleapis.com/auth/youtube"]
 
     creds = None
     if token_path.exists():
         creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
     if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
+        try:
+            creds.refresh(Request())
+        except Exception as e:
+            print(f"  ! Token refresh: {str(e)[:80]}")
+            return None
     if not creds or not creds.valid:
         print("  ! Token no válido para YouTube API")
         return None
