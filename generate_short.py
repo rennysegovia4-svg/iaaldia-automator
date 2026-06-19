@@ -142,10 +142,43 @@ def research_topic(topic):
 
 
 # ── Paso 2: Script Gemini 2.5 Pro ─────────────────────────────────────────────
+def _build_viral_context(niche_key: str) -> str:
+    """Carga patrones virales aprendidos e inyecta en el prompt."""
+    try:
+        from viral_learner import load_patterns
+        p = load_patterns()
+        hooks   = p.get("hook_formulas", [])[:6]
+        titles  = p.get("title_patterns", [])[:4]
+        insight = p.get("insight_clave", "")
+        thumb   = p.get("recomendacion_thumbnail", "")
+        niche_p = p.get("patrones_por_nicho", {}).get(niche_key, {})
+        niche_h = niche_p.get("hooks", [])[:3]
+        niche_t = niche_p.get("topics", [])[:3]
+        words   = p.get("palabras_clave_virales", [])[:8]
+        banned  = p.get("palabras_prohibidas", [])[:5]
+        updated = p.get("updated", "")
+
+        block = f"""
+PATRONES VIRALES APRENDIDOS DE YOUTUBE (actualizado {updated}):
+Insight clave: {insight}
+Hooks que más funcionan en este nicho:
+{chr(10).join(f'• {h}' for h in (niche_h or hooks[:3]))}
+Patrones de título viral:
+{chr(10).join(f'• {t}' for t in titles)}
+Palabras que aparecen en virales: {', '.join(words)}
+Palabras prohibidas (matan el CTR): {', '.join(banned)}
+Temas trending en este nicho: {', '.join(niche_t) if niche_t else 'según noticias del día'}
+Thumbnail que más CTR genera: {thumb}
+"""
+        return block
+    except Exception:
+        return ""
+
 def generate_script(headlines, research):
     client  = genai.Client(api_key=GEMINI_API_KEY)
     h_block = "\n".join(f"- {h}" for h in headlines) if headlines else "tendencias IA 2026"
     r_block = f"\nHECHOS VERIFICADOS:\n{research}\n" if research else ""
+    viral_ctx = _build_viral_context(_NICHE_KEY)
 
     # ── Canal en inglés [AI-Youtube-Shorts-Generator + ShortGPT] ─────────────
     if LANG_CODE == "en":
@@ -217,7 +250,7 @@ RESPOND JSON only (no markdown):
 Tu canal se llama "{canal_name}" y tiene millones de seguidores porque siempre dices la verdad con datos reales.
 
 {niche_ctx}
-
+{viral_ctx}
 NOTICIAS / DATOS REALES DEL DÍA (úsalos como base):
 {h_block}
 
@@ -227,7 +260,7 @@ HECHOS VERIFICADOS DE INTERNET (cita al menos 2 en el guión):
 TAREA: Crea un guión de YouTube Short de 58-62 segundos (155-170 palabras).
 
 ESTRUCTURA OBLIGATORIA:
-[0-5s]   GANCHO — hecho real, cifra real, impacto inmediato (detiene el scroll)
+[0-5s]   GANCHO — usa uno de los patrones virales de arriba adaptado al tema de hoy
 [5-20s]  CONTEXTO — por qué importa, con dato numérico verificado
 [20-38s] CASO CONCRETO — empresa, país, persona real. Nombra quién.
 [38-50s] CONSECUENCIA — qué pasa si lo ignoras
@@ -236,8 +269,9 @@ ESTRUCTURA OBLIGATORIA:
 REGLAS ESTRICTAS:
 - SOLO usa hechos verificados. Si no tienes el dato exacto, di "según reportes" — nunca inventes cifras.
 - Máximo 8 palabras por oración
-- Voz directa, activa, sin palabras vacías ("increíble", "revolucionario", "fascinante")
+- Voz directa, activa. Prohibido usar las palabras vetadas de arriba.
 - Español latinoamericano natural, fluido, no robótico
+- El gancho DEBE replicar el patrón viral más fuerte del nicho
 
 RESPONDE JSON sin markdown:
 {{
