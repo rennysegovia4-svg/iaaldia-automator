@@ -55,11 +55,15 @@ ALERT_THRESHOLD = 30.0
 USE_WAV2LIP = False
 
 # Nichos: se cargan dinámicamente según el día
-from niches import get_niche
-_NICHE_KEY, _NICHE = get_niche(LANG_CODE)
+from niches import get_niche, NICHES
+from learning_loop import load_strategy, register_video
+
+# Estrategia aprendida — pesos dinámicos por nicho
+_STRATEGY  = load_strategy()
+_NICHE_KEY, _NICHE = get_niche(LANG_CODE, _STRATEGY.get("niche_weights"))
 PRESENTER_QUERIES = _NICHE["pexels_queries"]
 RSS_FEEDS         = _NICHE["rss_feeds"]
-print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY})")
+print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {_STRATEGY.get('nivel_confianza',0):.0%}")
 
 _AFFILIATES_BY_NICHE = {
     "ia_noticias":       "\n\n💡 Herramientas IA que recomiendo:\n→ ChatGPT: https://chat.openai.com\n→ Claude AI: https://claude.ai\n→ Gemini: https://gemini.google.com\n→ Perplexity: https://perplexity.ai",
@@ -1035,6 +1039,14 @@ def main():
 
         credits   = update_credits(used_tts, used_imagen, used_pro)
         remaining = CREDIT_TOTAL - credits["spent"]
+
+        # ── Registrar video en memoria del learning loop ──────────────────────
+        try:
+            hook_usado = script.get("hook_texto", "")
+            register_video(video_id, script["titulo"], _NICHE_KEY, hook_usado,
+                           hora_publicacion=datetime.now().hour)
+        except Exception as e:
+            print(f"      Learning loop registro: {str(e)[:50]}")
 
         # ── Distribución multi-plataforma [ShortGPT + yt-short-clipper] ───
         print("[+] Distribución multi-plataforma...")

@@ -1,0 +1,59 @@
+name: IA al Día — Learning Loop
+
+on:
+  schedule:
+    - cron: '0 9 * * *'    # 5AM Chile — antes de publicar
+    - cron: '0 20 * * *'   # 4PM Chile — después de publicar
+  workflow_run:
+    workflows: ["IA al Día — Publicar Short"]
+    types: [completed]     # se activa automáticamente al terminar cada publicación
+  workflow_dispatch:
+
+jobs:
+  aprender:
+    name: "Ciclo de aprendizaje"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: |
+          pip install google-genai google-auth google-auth-oauthlib \
+                      google-auth-httplib2 google-api-python-client
+
+      - name: Restaurar credenciales
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 -d > client_secrets.json
+          echo "${{ secrets.TOKEN_JSON }}"          | base64 -d > token.json
+
+      - name: Ejecutar Learning Loop
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -W ignore learning_loop.py
+
+      - name: Ejecutar Viral Learner (datos externos)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -W ignore viral_learner.py
+
+      - name: Commit memoria y estrategia
+        run: |
+          git config user.name  "IA al Día Bot"
+          git config user.email "bot@iaaldia.ai"
+          git add memory.json strategy.json viral_patterns.json
+          git diff --cached --quiet || git commit -m "chore: loop iter $(python3 -c \"import json; print(json.load(open('memory.json'))['iteracion'])\")"
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

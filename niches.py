@@ -197,12 +197,30 @@ ROTATION_ORDER = [
     "productividad_ia",  # IA 2x por semana para mantener marca
 ]
 
-def get_niche(lang_code="es"):
-    """Retorna el nicho del día. Inglés siempre usa ia_noticias."""
+def get_niche(lang_code="es", learned_weights: dict = None):
+    """
+    Retorna el nicho del día.
+    - Inglés: siempre ia_noticias
+    - ES sin pesos aprendidos: rotación por día del año
+    - ES con pesos aprendidos: selección probabilística por performance
+    """
+    import random
     if lang_code == "en":
         return "ia_noticias", NICHES["ia_noticias"]
-    day_of_year = date.today().timetuple().tm_yday
-    key = ROTATION_ORDER[day_of_year % len(ROTATION_ORDER)]
+
+    if learned_weights and any(v > 0 for v in learned_weights.values()):
+        # Selección ponderada por performance aprendida
+        keys   = [k for k in learned_weights if k in NICHES]
+        weights = [max(learned_weights[k], 0.05) for k in keys]  # mínimo 5% cada uno
+        total  = sum(weights)
+        weights = [w / total for w in weights]
+        # Seed = día para que los 3 videos del día usen el mismo nicho
+        rng = random.Random(date.today().toordinal())
+        key = rng.choices(keys, weights=weights, k=1)[0]
+    else:
+        day_of_year = date.today().timetuple().tm_yday
+        key = ROTATION_ORDER[day_of_year % len(ROTATION_ORDER)]
+
     return key, NICHES[key]
 
 def get_niche_by_key(key):
