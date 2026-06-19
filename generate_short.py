@@ -11,10 +11,13 @@ IA al Día v6.0 — Integración 8 repos:
   8. MoviePy           — concatenación intro + video principal
 """
 
-import os, json, random, requests, subprocess, tempfile, time, re, base64, glob, textwrap
+import os, json, random, requests, subprocess, tempfile, time, re, base64, glob, textwrap, sys
 import feedparser, shutil, urllib.parse, urllib.request, asyncio
 from pathlib import Path
 from datetime import datetime, date
+
+# Idioma: "es" (español, canal principal) o "en" (inglés, canal clon)
+LANG_CODE = os.environ.get("LANG_CODE", "es")
 from PIL import Image, ImageDraw, ImageFont
 from google import genai
 from google.oauth2.credentials import Credentials
@@ -29,8 +32,10 @@ FFMPEG = shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
 
 BASE_DIR       = Path(__file__).parent
 ENV_FILE       = BASE_DIR / ".env"
-CLIENT_SECRETS = BASE_DIR / "client_secrets.json"
-TOKEN_FILE     = BASE_DIR / "token.json"
+# Soporte multi-canal: canal ES usa token.json, canal EN usa token_en.json
+_suffix        = f"_{LANG_CODE}" if LANG_CODE != "es" else ""
+CLIENT_SECRETS = BASE_DIR / f"client_secrets{_suffix}.json"
+TOKEN_FILE     = BASE_DIR / f"token{_suffix}.json"
 CREDITS_FILE   = BASE_DIR / "credits.json"
 SCOPES         = ["https://www.googleapis.com/auth/youtube"]
 GEMINI_MODELS  = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash"]
@@ -154,6 +159,67 @@ def generate_script(headlines, research):
     h_block = "\n".join(f"- {h}" for h in headlines) if headlines else "tendencias IA 2026"
     r_block = f"\nHECHOS VERIFICADOS:\n{research}\n" if research else ""
 
+    # ── Canal en inglés [AI-Youtube-Shorts-Generator + ShortGPT] ─────────────
+    if LANG_CODE == "en":
+        prompt = f"""You are the most influential AI tech journalist in the English-speaking world.
+Your channel has millions of followers because you always report REAL facts with REAL data.
+
+TODAY'S REAL NEWS (use as base):
+{h_block}
+
+VERIFIED FACTS FROM RESEARCH:
+{r_block if r_block else "No additional data — use only the news above."}
+
+TASK: Write a YouTube Short script of 58-62 seconds (155-170 words in English).
+
+HOOK (first 3-5 words, must stop the scroll — pick ONE formula):
+• "They just confirmed that [real shocking fact]"
+• "[Real number]% of [group] is already [doing something with AI]"
+• "[Company] just fired [real number] people. The reason was AI."
+• "This already exists. Nobody in [country] knows about it."
+
+REQUIRED STRUCTURE:
+[0-5s]   HOOK — real fact, real number, immediate impact
+[5-20s]  CONTEXT — why it matters, verified stat
+[20-38s] CONCRETE CASE — real company/country/person. Name them.
+[38-50s] CONSEQUENCE — what happens if ignored
+[50-62s] CALL TO ACTION — what viewer can do TODAY + "Follow for daily AI updates."
+
+STRICT RULES:
+- ONLY use facts from the news above. If unsure, say "reports indicate" — never invent stats.
+- Max 8 words per sentence. Direct voice. No filler words.
+- Natural English, not robotic.
+
+RESPOND JSON only (no markdown):
+{{
+  "titulo": "SEO title: main keyword at start, max 52 chars, 1 emoji at end",
+  "descripcion": "2 sentences with main keyword. Concrete data. #Shorts #AI #ArtificialIntelligence #ChatGPT #Technology #AINews",
+  "tags": ["ai 2026","artificial intelligence news","chatgpt update","ai tools","machine learning","ai jobs","future of ai","automation","ai replacing jobs","tech news","ai daily","ai shorts"],
+  "guion": "full script 155-170 words, ready to read",
+  "hook_texto": "first 5-7 exact words of the script"
+}}"""
+        used_pro = False
+        response = None
+        for model in GEMINI_MODELS:
+            for attempt in range(3):
+                try:
+                    response = client.models.generate_content(model=model, contents=prompt)
+                    used_pro = (model == "gemini-2.5-pro")
+                    break
+                except Exception as e:
+                    if "429" in str(e) or "quota" in str(e).lower(): break
+                    if attempt < 2: time.sleep(15 * (attempt + 1))
+            if response: break
+        if not response: return _fallback_script(), False
+        text = response.text.strip()
+        if "```" in text:
+            for part in text.split("```"):
+                part = part.strip().lstrip("json").strip()
+                if part.startswith("{"): text = part; break
+        try:    return json.loads(text), used_pro
+        except: return _fallback_script(), False
+    # ─────────────────────────────────────────────────────────────────────────
+
     prompt = f"""Eres el periodista de tecnología más influyente de América Latina. Tu canal tiene millones de seguidores porque siempre dices la verdad con datos reales, no inventas nada.
 
 NOTICIAS REALES DEL DÍA (úsalas como base):
@@ -264,10 +330,12 @@ def _gemini_tts(text, path):
     return False
 
 async def _edge_tts_async(text, path):
-    await edge_tts.Communicate(
-        text, "es-CL-LorenzoNeural",
-        rate="-8%", pitch="-3Hz", volume="+15%"
-    ).save(path)
+    # [ShortGPT] voz según idioma del canal
+    if LANG_CODE == "en":
+        voice, rate, pitch = "en-US-GuyNeural", "-5%", "-2Hz"
+    else:
+        voice, rate, pitch = "es-CL-LorenzoNeural", "-8%", "-3Hz"
+    await edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, volume="+15%").save(path)
 
 def generate_audio(text, path):
     if _gemini_tts(text, path): return True
@@ -944,6 +1012,23 @@ def main():
 
         credits   = update_credits(used_tts, used_imagen, used_pro)
         remaining = CREDIT_TOTAL - credits["spent"]
+
+        # ── Distribución multi-plataforma [ShortGPT + yt-short-clipper] ───
+        print("[+] Distribución multi-plataforma...")
+        try:
+            from platforms import publish_tiktok, publish_instagram, get_seo_keywords
+            _seo_kws = get_seo_keywords(script["titulo"], LANG_CODE)
+            if _seo_kws:
+                extra = [k for k in _seo_kws if k not in script["tags"]]
+                script["tags"].extend(extra[:4])
+
+            _desc_short = script["descripcion"][:300] + " #Shorts #IA #IaAlDia"
+            publish_tiktok(output_path, script["titulo"], _desc_short)
+            publish_instagram(output_path, _desc_short)
+        except ImportError:
+            print("      platforms.py no encontrado, omitiendo TikTok/Instagram")
+        except Exception as e:
+            print(f"      Multi-plataforma: {str(e)[:60]}")
 
     print(f"\n  ✓ https://youtube.com/shorts/{video_id}")
     print(f"  ✓ {script['titulo']}")

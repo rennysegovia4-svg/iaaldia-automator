@@ -2,14 +2,16 @@ name: IA al Día — Publicación Automática
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9AM Chile  — Short
-    - cron: '0 17 * * *'   # 1PM Chile  — Short
-    - cron: '0 23 * * *'   # 7PM Chile  — Short
-    - cron: '0 15 * * 1'   # 11AM Chile lunes — Video largo
+    - cron: '0 13 * * *'   # 9AM Chile  — Short ES
+    - cron: '0 17 * * *'   # 1PM Chile  — Short ES
+    - cron: '0 23 * * *'   # 7PM Chile  — Short ES
+    - cron: '0 15 * * 1'   # 11AM Chile lunes — Video largo ES
+    - cron: '0 14 * * *'   # 10AM Chile — Short EN (canal inglés)
+    - cron: '0 20 * * *'   # 4PM Chile  — Short EN (canal inglés)
   workflow_dispatch:
     inputs:
       tipo:
-        description: 'Tipo: short o largo'
+        description: 'Tipo: short, largo, short_en'
         required: false
         default: 'short'
 
@@ -18,9 +20,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publicar:
+  # ── Canal Español (principal) ───────────────────────────────────────────────
+  publicar_es:
+    name: "Short ES"
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    if: >
+      (github.event_name == 'schedule' &&
+       (github.event.schedule == '0 13 * * *' ||
+        github.event.schedule == '0 17 * * *' ||
+        github.event.schedule == '0 23 * * *')) ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'short') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == '')
 
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +49,58 @@ jobs:
             libcairo2-dev libpango1.0-dev \
             libglib2.0-dev pkg-config
 
-      - name: Instalar dependencias
+      - name: Instalar dependencias Python
+        run: pip install -r requirements.txt
+
+      - name: Restaurar credenciales ES
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 -d > client_secrets.json
+          echo "${{ secrets.TOKEN_JSON }}"          | base64 -d > token.json
+
+      - name: Restaurar .env
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
+
+      - name: Publicar Short ES
+        env:
+          LANG_CODE: es
+          TIKTOK_ACCESS_TOKEN:     ${{ secrets.TIKTOK_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID:       ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN:  ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: python -W ignore generate_short.py
+
+      - name: Guardar token renovado ES
+        if: always()
+        run: |
+          NEW_TOKEN=$(base64 -w 0 token.json 2>/dev/null || base64 token.json)
+          echo "TOKEN_ES=$NEW_TOKEN" >> $GITHUB_STEP_SUMMARY
+
+  # ── Video Largo (lunes) ─────────────────────────────────────────────────────
+  publicar_largo:
+    name: "Video Largo ES"
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: >
+      (github.event_name == 'schedule' && github.event.schedule == '0 15 * * 1') ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'largo')
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias del sistema
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --fix-missing \
+            ffmpeg fonts-dejavu-core \
+            libcairo2-dev libpango1.0-dev
+
+      - name: Instalar dependencias Python
         run: pip install -r requirements.txt
 
       - name: Restaurar credenciales
@@ -51,20 +113,7 @@ jobs:
           echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
           echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
 
-      - name: Publicar Short (9AM / 1PM / 7PM)
-        if: >
-          (github.event_name == 'schedule' &&
-           (github.event.schedule == '0 13 * * *' ||
-            github.event.schedule == '0 17 * * *' ||
-            github.event.schedule == '0 23 * * *')) ||
-          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'short') ||
-          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == '')
-        run: python -W ignore generate_short.py
-
-      - name: Publicar Video Largo (lunes 11AM)
-        if: >
-          (github.event_name == 'schedule' && github.event.schedule == '0 15 * * 1') ||
-          (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'largo')
+      - name: Publicar Video Largo
         run: python -W ignore generate_long.py
 
       - name: Guardar token renovado
@@ -72,3 +121,69 @@ jobs:
         run: |
           NEW_TOKEN=$(base64 -w 0 token.json 2>/dev/null || base64 token.json)
           echo "TOKEN_ACTUALIZADO=$NEW_TOKEN" >> $GITHUB_STEP_SUMMARY
+
+  # ── Canal Inglés (clon) ─────────────────────────────────────────────────────
+  publicar_en:
+    name: "Short EN"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    # Solo corre si hay credenciales del canal EN configuradas
+    if: >
+      (github.event_name == 'schedule' &&
+       (github.event.schedule == '0 14 * * *' ||
+        github.event.schedule == '0 20 * * *')) ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'short_en')
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias del sistema
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --fix-missing \
+            ffmpeg fonts-dejavu-core \
+            libcairo2-dev libpango1.0-dev
+
+      - name: Instalar dependencias Python
+        run: pip install -r requirements.txt
+
+      - name: Verificar credenciales EN
+        id: check_en
+        run: |
+          if [ -z "${{ secrets.TOKEN_JSON_EN }}" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Canal EN no configurado — agrega TOKEN_JSON_EN y CLIENT_SECRETS_JSON_EN a GitHub Secrets"
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Restaurar credenciales EN
+        if: steps.check_en.outputs.skip == 'false'
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON_EN }}" | base64 -d > client_secrets_en.json
+          echo "${{ secrets.TOKEN_JSON_EN }}"           | base64 -d > token_en.json
+
+      - name: Restaurar .env
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
+
+      - name: Publicar Short EN
+        if: steps.check_en.outputs.skip == 'false'
+        env:
+          LANG_CODE: en
+          TIKTOK_ACCESS_TOKEN:    ${{ secrets.TIKTOK_ACCESS_TOKEN_EN }}
+          INSTAGRAM_USER_ID:      ${{ secrets.INSTAGRAM_USER_ID_EN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN_EN }}
+        run: python -W ignore generate_short.py
+
+      - name: Guardar token renovado EN
+        if: steps.check_en.outputs.skip == 'false'
+        run: |
+          NEW_TOKEN=$(base64 -w 0 token_en.json 2>/dev/null || base64 token_en.json)
+          echo "TOKEN_EN=$NEW_TOKEN" >> $GITHUB_STEP_SUMMARY
