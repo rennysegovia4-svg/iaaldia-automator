@@ -235,7 +235,7 @@ JSON exacto (sin markdown):
     return json.loads(text)
 
 
-# ── Paso 3: Audio TTS ─────────────────────────────────────────────────────────
+# ── Paso 3: Audio TTS — Gemini (natural) con fallback a Edge-TTS (gratis) ─────
 def _add_pauses(text: str) -> str:
     text = text.replace(". ", "... ")
     text = text.replace(", ", ",  ")
@@ -243,6 +243,47 @@ def _add_pauses(text: str) -> str:
     text = text.replace(" Pero ", "  Pero ")
     text = text.replace(" Ahora ", "  Ahora ")
     return text
+
+def _generate_audio_gemini(text: str, path: str) -> bool:
+    """Voz con Gemini 2.5 Flash TTS — más natural que Edge-TTS. ~$0.02/video."""
+    try:
+        from google.genai import types as gtypes
+        gemini = genai.Client(api_key=GEMINI_API_KEY)
+        response = gemini.models.generate_content(
+            model="gemini-2.5-flash-preview-tts",
+            contents=text,
+            config=gtypes.GenerateContentConfig(
+                response_modalities=["AUDIO"],
+                speech_config=gtypes.SpeechConfig(
+                    voice_config=gtypes.VoiceConfig(
+                        prebuilt_voice_config=gtypes.PrebuiltVoiceConfig(
+                            voice_name="Charon"
+                        )
+                    )
+                )
+            )
+        )
+        import base64
+        audio_b64 = response.candidates[0].content.parts[0].inline_data.data
+        raw_path  = path.replace(".mp3", "_raw.pcm")
+        with open(raw_path, "wb") as f:
+            f.write(base64.b64decode(audio_b64))
+        cmd = [
+            FFMPEG, "-y",
+            "-f", "s16le", "-ar", "24000", "-ac", "1",
+            "-i", raw_path,
+            "-c:a", "libmp3lame", "-b:a", "128k",
+            path
+        ]
+        r = subprocess.run(cmd, capture_output=True)
+        os.remove(raw_path)
+        if r.returncode == 0:
+            print("      Voz: Gemini TTS ✓ (natural)")
+            return True
+    except Exception as e:
+        if "429" not in str(e) and "quota" not in str(e).lower():
+            print(f"      Gemini TTS error: {str(e)[:60]}")
+    return False
 
 async def _tts_async(text: str, path: str):
     communicate = edge_tts.Communicate(
@@ -252,7 +293,9 @@ async def _tts_async(text: str, path: str):
     await communicate.save(path)
 
 def generate_audio(text: str, path: str):
-    asyncio.run(_tts_async(text, path))
+    if not _generate_audio_gemini(text, path):
+        print("      Voz: Edge-TTS fallback (Lorenzo)")
+        asyncio.run(_tts_async(text, path))
 
 
 # ── Paso 3b: Whisper captions exactas (rushindrasinha/youtube-shorts-pipeline) ─
@@ -531,8 +574,75 @@ def create_short(audio_path: str, bg_path: str, output_path: str,
         raise RuntimeError(f"FFmpeg error: {result.stderr[-400:]}")
 
 
-# ── Miniatura ─────────────────────────────────────────────────────────────────
+# ── Miniatura — Imagen 4 (profesional) con fallback a Pillow (gratis) ─────────
 def create_thumbnail(title: str, output_path: str):
+    if _create_thumbnail_imagen4(title, output_path):
+        return
+    _create_thumbnail_pillow(title, output_path)
+
+def _create_thumbnail_imagen4(title: str, output_path: str) -> bool:
+    """Miniatura con Imagen 4 Fast + texto encima con Pillow. ~$0.04/thumbnail."""
+    try:
+        from google.genai import types as gtypes
+        gemini = genai.Client(api_key=GEMINI_API_KEY)
+        clean  = re.sub(r'[🤯🔥💡😱🤖]', '', title).strip()
+        prompt = (
+            f"Professional YouTube thumbnail background, no text, dark cinematic scene, "
+            f"theme: artificial intelligence and technology, neon cyan blue glow, "
+            f"dramatic lighting, ultra detailed, 16:9 ratio, photorealistic 4K"
+        )
+        response = gemini.models.generate_images(
+            model="imagen-4.0-fast-generate-001",
+            prompt=prompt,
+            config=gtypes.GenerateImagesConfig(
+                number_of_images=1,
+                aspect_ratio="16:9",
+                safety_filter_level="BLOCK_LOW_AND_ABOVE",
+            )
+        )
+        img_bytes = response.generated_images[0].image.image_bytes
+        # Cargar imagen de Imagen 4 y superponer texto con Pillow
+        import io
+        base_img = Image.open(io.BytesIO(img_bytes)).resize((1280, 720))
+        draw = ImageDraw.Draw(base_img)
+        try:
+            f_logo  = ImageFont.truetype(FONT, 34)
+            f_title = ImageFont.truetype(FONT, 68)
+            f_sub   = ImageFont.truetype(FONT, 30)
+        except Exception:
+            f_logo = f_title = f_sub = ImageFont.load_default()
+        # Branding
+        draw.rectangle([0, 0, 8, 720], fill=CYAN)
+        draw.text((28, 26), "IA", font=f_logo, fill=WHITE)
+        draw.text((70, 26), "al Día", font=f_logo, fill=CYAN)
+        draw.rectangle([28, 76, 290, 79], fill=CYAN)
+        # Título
+        words = clean.split()
+        lines, line = [], []
+        for w in words:
+            line.append(w)
+            if len(" ".join(line)) > 20:
+                lines.append(" ".join(line[:-1]))
+                line = [w]
+        if line:
+            lines.append(" ".join(line))
+        y = 720 // 2 - len(lines[:3]) * 42
+        for ln in lines[:3]:
+            draw.text((640, y), ln, font=f_title, fill=WHITE,
+                      anchor="mm", stroke_width=3, stroke_fill=(0,0,0))
+            y += 82
+        draw.rectangle([28, 650, 1252, 653], fill=CYAN)
+        draw.text((640, 690), "Inteligencia Artificial para todos los días",
+                  font=f_sub, fill=GRAY, anchor="mm")
+        base_img.save(output_path)
+        print("      Miniatura: Imagen 4 ✓ (profesional)")
+        return True
+    except Exception as e:
+        if "429" not in str(e) and "quota" not in str(e).lower():
+            print(f"      Imagen 4 error: {str(e)[:60]}")
+        return False
+
+def _create_thumbnail_pillow(title: str, output_path: str):
     W, H = 1280, 720
     img  = Image.new("RGB", (W, H), BG_DARK)
     draw = ImageDraw.Draw(img)
@@ -663,7 +773,7 @@ def main():
         script = generate_script(topic, research)
         print(f"      Título: {script['titulo']}")
 
-        print("[4/7] Generando voz (Lorenzo, Chile)...")
+        print("[4/7] Generando voz (Gemini TTS / Edge-TTS fallback)...")
         generate_audio(script["guion"], audio_path)
         duration = MP3(audio_path).info.length + 0.5
         print(f"      Duración: {duration:.1f}s")
@@ -691,7 +801,7 @@ def main():
             music_path if has_music else ""
         )
 
-        print("[6/7] Generando miniatura...")
+        print("[6/7] Generando miniatura (Imagen 4 / Pillow fallback)...")
         create_thumbnail(script["titulo"], thumb_path)
 
         descripcion_final = (
