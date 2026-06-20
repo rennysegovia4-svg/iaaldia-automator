@@ -1,124 +1,144 @@
 {
   "updated": "2026-06-20",
   "hook_formulas": [
-    "Truco para [Beneficio universal]",
-    "[Demostrativo] es la IA [Calificador] para [Acción] [GRATIS]",
-    "[Tipo de herramienta] para [Acción específica]",
-    "[Verbo] [Objeto] con IA ([Herramienta])",
-    "La mejor herramienta para [Problema] es [Solución]",
-    "Cómo Hacer [Resultado] Con IA",
-    "This AI tool [Acción] to [Resultado]",
-    "Best Ai tool to [Acción] [Objeto] for FREE"
+    "CALIFICATIVO_SUPERLATIVO + CREDENCIAL: 'El curso DEFINITIVO. Gano 6 cifras con esto.'",
+    "La mayoría no sabe que [IA] puede hacer [ACCIÓN INESPERADA] — probado con 2000 alumnos",
+    "Existe un modo [ADJETIVO_PROVOCADOR] en [IA]. Los expertos lo usan. Nadie habla de esto.",
+    "Esto que hice con IA en [TIEMPO] me habría tomado [TIEMPO_LARGO] solo",
+    "Acaban de confirmar que [hecho real impactante]",
+    "El [N]% de [grupo] ya está usando esto. ¿Tú no?",
+    "Despidieron [N] personas. El motivo fue la IA.",
+    "[Empresa] lo hizo primero. Esto cambia todo.",
+    "Esto ya existe. Y nadie en LATAM lo sabe.",
+    "Si no haces esto con IA, estás perdiendo tiempo y dinero",
+    "Con [herramienta] en 5 minutos haces lo que antes tomaba 3 horas",
+    "El error que comete el 90% al usar [IA]",
+    "CREDENCIAL_FINANCIERA + ELIMINAR_BARRERA: 'Gano 6 cifras con IA sin saber programar'",
+    "La mayoría no sabe que [IA] puede hacer [ACCIÓN INESPERADA]",
+    "Existe un modo [ADJETIVO_PROVOCADOR] en [IA]. Los expertos lo usan. Tú no.",
+    "El error que comete el 90% al usar [HERRAMIENTA]"
   ],
   "title_patterns": [
-    "[Afirmación de solución]: [Truco/Herramienta] para [Beneficio]",
-    "[Demostrativo] + [IA/Herramienta] + [Calificador] + para + [Acción] + [GRATIS/FREE]",
-    "[Verbo infinitivo] + [Objeto] + con IA ([Herramienta])",
-    "La mejor + [Herramienta] + para + [Acción/Problema] + es + [Nombre de IA]",
-    "Cómo + Hacer + [Resultado] + Con IA",
-    "[Demostrativo] + AI tool + [Acción] + to + [Resultado/Idioma]",
-    "Best Ai tool + to + [Acción] + [Objeto] + for FREE",
-    "Una + IA + para + [Acción específica] + [Objeto]"
+    "El modo [ADJETIVO] de [IA] que la mayoría no conoce",
+    "Cómo [RESULTADO] con IA sin saber programar (en [TIEMPO])",
+    "[IA] vs [COMPETIDOR]: la diferencia que cambia todo",
+    "El error del [%]% usando [HERRAMIENTA] (y cómo evitarlo)",
+    "[Número] [cosa] que [resultado impactante] 🤖",
+    "[Empresa] acaba de [acción]: lo que nadie dice",
+    "Por qué el [N]% ya usa [solución] para ganar dinero",
+    "[Acción concreta] en [N] minutos: caso real con datos"
   ],
-  "palabras_prohibidas": [],
+  "palabras_prohibidas": [
+    "increíble",
+    "revolucionario",
+    "impresionante",
+    "fascinante",
+    "épico",
+    "increíblemente",
+    "absolutamente",
+    "totalmente",
+    "realmente"
+  ],
   "palabras_clave_virales": [
-    "IA",
-    "AI",
-    "Shorts",
-    "Gratis",
-    "FREE",
-    "Herramienta",
-    "Tool",
-    "Crear",
-    "Música",
-    "ChatGPT",
-    "Truco",
-    "Video",
-    "Excel",
-    "Comic",
-    "Manga"
+    "sin programar",
+    "6 cifras",
+    "modo secreto",
+    "la mayoría no sabe",
+    "expertos usan",
+    "cambia todo",
+    "nadie te cuenta",
+    "confirmaron",
+    "despidieron",
+    "ya existe",
+    "nadie sabe",
+    "datos reales",
+    "automatizado",
+    "gratis",
+    "en segundos"
   ],
-  "estructura_gancho_optima": "El gancho óptimo comienza con una promesa clara de un beneficio inmediato y tangible, a menudo destacando una solución \"GRATIS\" o \"definitiva\" a un problema común o una tarea compleja, utilizando una herramienta o técnica (especialmente IA). Se enfoca en la acción (\"Cómo Hacer\", \"Crear\") o el truco que lo hace posible.",
+  "estructura_gancho_optima": "Número/credencial concreto + dato impactante + promesa SIN barrera técnica en ≤8 palabras",
   "duracion_optima_segundos": 58,
+  "insight_clave": "Nick Saraev prueba: credencial financiera inmediata + eliminar barrera técnica = combo más viral en tech/IA 2026. Los espectadores no quieren saber QUÉ es algo, quieren saber CUÁNTO pueden ganar con ello.",
+  "recomendacion_thumbnail": "Número grande ($ o %) + cara con expresión de sorpresa + fondo color sólido. Opcional: texto 'SIN PROGRAMAR' o 'MODO SECRETO'",
   "patrones_por_nicho": {
+    "productividad_ia": {
+      "hooks": [
+        "Claude Code está conectado a tu computadora. Eso lo cambia todo.",
+        "El modo 'bypass permissions' de Claude: los expertos lo usan. La mayoría le tiene miedo.",
+        "En 10 minutos con Claude Code hago lo que antes tardaba 3 horas"
+      ],
+      "topics": [
+        "claude code tutorial",
+        "bypass permissions",
+        "plan mode",
+        "context management ia"
+      ],
+      "fuente": "Nick Saraev curso Claude Code 4h - 2026-06-20"
+    },
     "ia_noticias": {
       "hooks": [
-        "Acaban de confirmar que [hecho real impactante sobre IA]",
-        "[Demostrativo] es la IA [Calificador] para [Acción] [GRATIS]",
-        "Esta herramienta hace en 3 min lo que te toma 3 horas"
+        "Acaban de confirmar que [empresa] ya usa IA para despedir empleados",
+        "Esto ya existe y nadie en LATAM lo usa todavía",
+        "El [N]% de empresas Fortune 500 ya automatizó [función] con IA"
       ],
       "topics": [
-        "Noticias impactantes y descubrimientos sobre IA",
-        "Herramientas de IA novedosas y gratuitas",
-        "Casos de uso de IA para eficiencia y automatización"
-      ]
-    },
-    "finanzas": {
-      "hooks": [
-        "Si tienes [N] y no haces esto, los estás perdiendo",
-        "Con [N] al mes puedes tener [resultado] en [N] años",
-        "Truco para [Beneficio financiero/económico]"
-      ],
-      "topics": [
-        "Estrategias para no perder dinero",
-        "Planes de ahorro e inversión a largo plazo",
-        "Consejos prácticos para generar o ahorrar dinero"
+        "novedades ia 2026",
+        "ia reemplazando trabajos",
+        "nuevas herramientas ia",
+        "gpt 5",
+        "claude 4",
+        "gemini 2"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Esto ya existe. Y nadie en LATAM lo sabe.",
-        "La mejor herramienta para [Problema de negocio] es [Solución]",
-        "[N]% de [grupo] ya está [haciendo algo rentable]"
+        "Gané $[N] con IA este mes. Sin saber programar. Aquí cómo.",
+        "Esta automatización con IA genera dinero mientras duermo",
+        "3 negocios que puedes iniciar hoy con IA y $0 de inversión"
       ],
       "topics": [
-        "Oportunidades de negocio digital poco conocidas",
-        "Herramientas para optimizar procesos en negocios digitales",
-        "Tendencias y estadísticas de éxito en negocios online"
+        "ganar dinero con ia",
+        "negocios online ia",
+        "dropshipping con ia",
+        "automatizar tienda online",
+        "shopify ia"
+      ]
+    },
+    "finanzas": {
+      "hooks": [
+        "Si tienes $[N] ahorrados y no haces esto, los estás perdiendo",
+        "La IA predijo [resultado financiero]. Aquí el dato exacto.",
+        "Con [herramienta] en 5 min analizo una acción mejor que un broker"
+      ],
+      "topics": [
+        "ia para invertir",
+        "analisis financiero ia",
+        "trading con ia",
+        "finanzas personales ia",
+        "como invertir 2026"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Acaban de confirmar que [hecho real impactante sobre cripto]",
-        "Si tienes [cantidad en cripto] y no haces esto, los estás perdiendo",
-        "Truco para [Beneficio en cripto/ganancia rápida]"
+        "La IA detectó esta señal en Bitcoin hace 3 días. Mira qué pasó.",
+        "El [N]% de los traders top ya usa IA. ¿Tú no?",
+        "Esta herramienta analiza [N] criptos en 30 segundos"
       ],
       "topics": [
-        "Noticias y eventos de alto impacto en el mundo cripto",
-        "Estrategias para proteger o aumentar inversiones en criptomonedas",
-        "Métodos para identificar oportunidades o evitar pérdidas en cripto"
-      ]
-    },
-    "productividad_ia": {
-      "hooks": [
-        "Truco para [Beneficio universal y deseado]",
-        "[Esta/La mejor] IA/Herramienta [Calificador] para [Acción] [GRATIS/FREE]",
-        "Cómo Hacer [Resultado creativo] Con IA"
-      ],
-      "topics": [
-        "Lifehacks/Utilidad (e.g., wifi gratis)",
-        "Herramientas de IA para creatividad y marketing",
-        "IA para optimización de tareas y productividad"
+        "ia y bitcoin",
+        "trading bot ia",
+        "analisis cripto ia",
+        "defi ia"
       ]
     }
   },
-  "insight_clave": "El factor común más potente para la viralidad es la promesa de un beneficio tangible, inmediato y preferiblemente GRATIS o de muy bajo costo, presentado como una solución simple o un 'truco' que resuelve un problema universal o acelera una tarea compleja. La IA es el medio para esa solución, no el fin.",
-  "recomendacion_thumbnail": "Los thumbnails más efectivos son aquellos que muestran visualmente el resultado final o el beneficio prometido de forma clara y llamativa (e.g., un icono de Wi-Fi, una interfaz de IA generando algo, un gráfico de éxito). Deben incorporar texto superpuesto con palabras clave como 'GRATIS', 'TRUCO', 'IA', o el nombre de la herramienta, creando una sensación de revelación o acceso a una solución valiosa.",
-  "top_videos_semana": [
-    {
-      "titulo": "#Shorts Truco para tener wifi gratis.",
-      "views": 9800724,
-      "id": "KLeiyJsRTCM"
-    },
-    {
-      "titulo": "This AI tool translates video to ANY language #shorts #videotips #videomarketingtips",
-      "views": 594396,
-      "id": "os7nUVOZ_0E"
-    },
-    {
-      "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 471151,
-      "id": "14URUL4nBkA"
+  "top_videos_semana": [],
+  "aprendizajes_externos": {
+    "nick_saraev_2026_06_20": {
+      "canal": "Nick Saraev (X/Twitter, curso Claude Code 4h)",
+      "credencial": "6 cifras anuales + 2000 alumnos",
+      "formula_clave": "SUPERLATIVO + CREDENCIAL_FINANCIERA + SOCIAL + ELIMINAR_BARRERA",
+      "insight": "Credencial financiera en primeras palabras + eliminar barrera técnica = máximo CTR en tech/IA"
     }
-  ]
+  }
 }
