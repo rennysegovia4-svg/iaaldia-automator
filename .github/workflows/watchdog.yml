@@ -9,10 +9,9 @@ on:
       - "IA al Día — Learning Loop"
       - "IA al Día — Viral Learner"
       - "IA al Día — Analytics Semanal"
-    types: [completed]        # Se dispara inmediatamente al terminar cualquier workflow
+    types: [completed]
   workflow_dispatch:
 
-# Permisos para leer runs, pushear código y disparar workflows
 permissions:
   contents: write
   actions:  write
@@ -23,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
-    # No correr si el trigger es un workflow_run exitoso (solo en fallos)
     if: >
       github.event_name != 'workflow_run' ||
       github.event.workflow_run.conclusion == 'failure'
@@ -57,6 +55,7 @@ jobs:
         run: |
           git config user.name  "IA al Día Watchdog"
           git config user.email "watchdog@iaaldia.ai"
+          git pull --rebase origin main || true
           git add watchdog_log.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "chore: watchdog log $(date +%H:%M)"
-          git push || true
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main || true

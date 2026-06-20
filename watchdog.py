@@ -36,6 +36,7 @@ ERROR_PATTERNS = [
     (r"JSONDecodeError|json\.decoder",          "json_parse",          "Error parseando JSON de Gemini"),
     (r"Connection.*timed out|ReadTimeout|ConnectTimeout", "timeout",  "Timeout de conexión"),
     (r"No space left on device",               "disk_full",            "Disco lleno en runner"),
+    (r"403.*push|push.*403|ad-m/github-push", "push_403",             "Push 403 — acción de push sin permisos"),
     (r"faster.whisper|whisper.*numpy|numpy.*incompatible", "whisper_numpy", "Conflicto numpy/whisper"),
     (r"manim.*not found|manim.*command",       "manim_missing",        "Manim no en PATH"),
     (r"moviepy|VideoFileClip",                 "moviepy_error",        "Error en MoviePy"),
@@ -228,6 +229,24 @@ def fix_manim_missing(detail: str, logs: str):
         return True
     return True
 
+def fix_push_403(detail: str, logs: str):
+    """Reemplaza ad-m/github-push-action por git push directo con token."""
+    import re as _re
+    fixed = False
+    for wf in (BASE_DIR / ".github" / "workflows").glob("*.yml"):
+        src = wf.read_text()
+        if "ad-m/github-push-action" in src:
+            patched = _re.sub(
+                r"\s*- name: Push.*?\n.*?uses: ad-m/github-push-action@master\n.*?with:.*?\n.*?github_token:.*?\n.*?branch: main",
+                "\n      - name: Push\n        run: git push \"https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git\" HEAD:main",
+                src, flags=_re.DOTALL
+            )
+            if patched != src:
+                wf.write_text(patched)
+                print(f"  ✓ fix_push_403 → {wf.name}")
+                fixed = True
+    return fixed
+
 def fix_moviepy_error(detail: str, logs: str):
     """Fija versión de moviepy."""
     req = BASE_DIR / "requirements.txt"
@@ -253,6 +272,7 @@ KNOWN_FIXES = {
     "pexels_auth":    lambda d, l: True,  # Secret issue — solo retrigger
     "gemini_auth":    lambda d, l: True,  # Secret issue — solo retrigger
     "disk_full":      lambda d, l: True,  # Infra issue — solo retrigger
+    "push_403":       fix_push_403,
 }
 
 # ── FIX DESCONOCIDO: Gemini analiza y genera el patch ─────────────────────────

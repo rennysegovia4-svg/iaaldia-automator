@@ -2,8 +2,11 @@ name: IA al Día — Viral Learner
 
 on:
   schedule:
-    - cron: '0 10 * * *'   # 6AM Chile (UTC-4) todos los días
+    - cron: '0 10 * * *'   # 6AM Chile todos los días
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   aprender:
@@ -15,6 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -22,7 +26,9 @@ jobs:
           cache: 'pip'
 
       - name: Instalar dependencias
-        run: pip install google-genai google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+        run: |
+          pip install google-genai google-auth google-auth-oauthlib \
+                      google-auth-httplib2 google-api-python-client
 
       - name: Restaurar credenciales
         run: |
@@ -34,15 +40,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -W ignore viral_learner.py
 
-      - name: Commit patrones actualizados
+      - name: Commit y push patrones
         run: |
           git config user.name  "IA al Día Bot"
           git config user.email "bot@iaaldia.ai"
+          git pull --rebase origin main || true
           git add viral_patterns.json
-          git diff --cached --quiet || git commit -m "chore: viral patterns update $(date +%Y-%m-%d)"
-
-      - name: Push patrones
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          git diff --cached --quiet && echo "Sin cambios" && exit 0
+          git commit -m "chore: viral patterns $(date +%Y-%m-%d)"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
