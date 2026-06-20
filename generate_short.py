@@ -38,7 +38,7 @@ CLIENT_SECRETS = BASE_DIR / f"client_secrets{_suffix}.json"
 TOKEN_FILE     = BASE_DIR / f"token{_suffix}.json"
 CREDITS_FILE   = BASE_DIR / "credits.json"
 SCOPES         = ["https://www.googleapis.com/auth/youtube"]
-GEMINI_MODELS  = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash"]
+GEMINI_MODELS  = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-2.5-pro"]
 
 _MAC_FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 _LIN_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
