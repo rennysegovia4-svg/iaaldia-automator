@@ -19,8 +19,7 @@ TOKEN_FILE     = BASE_DIR / "token.json"
 CLIENT_SECRETS = BASE_DIR / "client_secrets.json"
 SCOPES         = [
     "https://www.googleapis.com/auth/youtube",
-    "https://www.googleapis.com/auth/yt-analytics.readonly",
-]
+    ]
 
 def get_creds():
     creds = None

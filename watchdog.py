@@ -41,8 +41,7 @@ ERROR_PATTERNS = [
     (r"manim.*not found|manim.*command",       "manim_missing",        "Manim no en PATH"),
     (r"moviepy|VideoFileClip",                 "moviepy_error",        "Error en MoviePy"),
     (r"PEXELS.*403|pexels.*unauthorized",      "pexels_auth",          "API key de Pexels inválida"),
-    (r"GEMINI.*403|API.*key.*invalid",         "gemini_auth",          "API key de Gemini inválida"),
-]
+    (r"GEMINI.*403|API.*key.*invalid",         "gemini_auth",          "API key de Gemini inválida")]
 
 # ── LOG ────────────────────────────────────────────────────────────────────────
 def load_log() -> dict:
@@ -129,9 +128,9 @@ def fix_invalid_scope(detail: str, logs: str):
         src = fpath.read_text()
         if "yt-analytics.readonly" in src:
             new_src = src.replace(
-                '"https://www.googleapis.com/auth/yt-analytics.readonly"', "")
+                '', "")
             new_src = re.sub(r',\s*\n?\s*\]', ']', new_src)
-            new_src = new_src.replace('["https://www.googleapis.com/auth/youtube.readonly",]',
+            new_src = new_src.replace('["https://www.googleapis.com/auth/youtube.readonly"]',
                                       '["https://www.googleapis.com/auth/youtube"]')
             if new_src != src:
                 fpath.write_text(new_src)
