@@ -1,138 +1,165 @@
 {
-  "updated": "2026-06-20",
+  "updated": "2026-06-21",
   "hook_formulas": [
-    "CALIFICATIVO_SUPERLATIVO + CREDENCIAL: 'El curso DEFINITIVO. Gano 6 cifras con esto.'",
-    "La mayoría no sabe que [IA] puede hacer [ACCIÓN INESPERADA] — probado con 2000 alumnos",
-    "Existe un modo [ADJETIVO_PROVOCADOR] en [IA]. Los expertos lo usan. Nadie habla de esto.",
-    "Esto que hice con IA en [TIEMPO] me habría tomado [TIEMPO_LARGO] solo",
-    "Acaban de confirmar que [hecho real impactante]",
-    "El [N]% de [grupo] ya está usando esto. ¿Tú no?",
-    "Despidieron [N] personas. El motivo fue la IA.",
-    "[Empresa] lo hizo primero. Esto cambia todo.",
-    "Esto ya existe. Y nadie en LATAM lo sabe.",
-    "Si no haces esto con IA, estás perdiendo tiempo y dinero",
-    "Con [herramienta] en 5 minutos haces lo que antes tomaba 3 horas",
-    "El error que comete el 90% al usar [IA]",
-    "CREDENCIAL_FINANCIERA + ELIMINAR_BARRERA: 'Gano 6 cifras con IA sin saber programar'",
-    "La mayoría no sabe que [IA] puede hacer [ACCIÓN INESPERADA]",
-    "Existe un modo [ADJETIVO_PROVOCADOR] en [IA]. Los expertos lo usan. Tú no.",
-    "El error que comete el 90% al usar [HERRAMIENTA]"
+    "Pregunta Directa de Situación Personal + Emoji de Dinero/Duda (Ej. 'How much money is in your bank account? 🤔💰')",
+    "Adjetivo Impactante + Estrategia/Idea + Marca/Sujeto + Emoji (Ej. 'Genius Marketing Strategy by Zomato😬')",
+    "Cifra de Ingresos Exorbitante + Fuente/Canal + Pregunta de Confirmación + Emoji (Ej. '😅 2 CR/Month From ONLINE?')",
+    "Número + Adjetivo de Inversión + Idea de Negocio Rentable + Exclamación (Ej. '3 LOW INVESTMENT HIGHLY PROFITABLE STARTUP IDEAS!')",
+    "Afirmación Controversial/Negativa + Tema Clave + Emoji de Shock (Ej. 'Trading एक FRAUD है 🤯')",
+    "Personaje/Arquetipo con Rasgo Deseado + Rasgo de Éxito + Emoji de Dinero (Ej. 'RABINO MILLONARIO 💰')",
+    "Verbo de Descubrimiento/Denuncia + Grupo + Cifra Millonaria + Motivación (Ej. 'Descubren a funcionarias robando 22 millones para sus lujos')",
+    "Historia de Drama/Fraude + Cifra Monetaria + Tiempo/Acción (Ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+    "Autoridad/Experto + Verbo de Opinión Fuerte + Tema del Futuro (Ej. 'ANDREW TATE SAYS THIS ABOUT CRYPTO FUTURE')",
+    "Alerta/Advertencia + Tema + Manera Equivocada + Número + Beneficio (Ej. 'Don't Invest in Crypto THE WRONG WAY - 3 TIPS!')",
+    "Concepto Específico + Problema/Controversia + Marca/Entidad (Ej. 'D Mart Scam')",
+    "Relación/Situación Cotidiana + Tema Específico + Emoji de Humor (Ej. 'Day Traders Shopping with wife be like 😅')"
   ],
   "title_patterns": [
-    "El modo [ADJETIVO] de [IA] que la mayoría no conoce",
-    "Cómo [RESULTADO] con IA sin saber programar (en [TIEMPO])",
-    "[IA] vs [COMPETIDOR]: la diferencia que cambia todo",
-    "El error del [%]% usando [HERRAMIENTA] (y cómo evitarlo)",
-    "[Número] [cosa] que [resultado impactante] 🤖",
-    "[Empresa] acaba de [acción]: lo que nadie dice",
-    "Por qué el [N]% ya usa [solución] para ganar dinero",
-    "[Acción concreta] en [N] minutos: caso real con datos"
+    "Número + Adjetivo de Beneficio + Tipo de Idea/Concepto + Exclamación (Ej. '3 LOW INVESTMENT HIGHLY PROFITABLE STARTUP IDEAS!')",
+    "Pregunta Directa + Objeto de Curiosidad + Emojis de Duda/Dinero (Ej. 'How much money is in your bank account? 🤔💰')",
+    "Verbo de Impacto + Sujeto (colectivo) + Cifra Monetaria + Motivo (Ej. 'Descubren a funcionarias robando 22 millones para sus lujos')",
+    "Adjetivo de Éxito/Controversia + Concepto/Marca + Emoji (Ej. 'Genius Marketing Strategy by Zomato😬')",
+    "Afirmación Controvertida/Fuerte + Tema Polémico + Emoji de Shock (Ej. 'Trading एक FRAUD है 🤯')",
+    "Cifra Monetaria de Impacto + Evento Negativo + Contexto Narrativo (Ej. '7000 CRORE SCAM BY 7TH FAIL')",
+    "Arquetipo o Figura Pública + Característica/Acción Relevante + Emoji de Dinero (Ej. 'RABINO MILLONARIO 💰')",
+    "Advertencia/Consejo + Tema + Manera Errónea + Número + Beneficio (Ej. 'Don't Invest in Crypto THE WRONG WAY - 3 TIPS!')"
   ],
-  "palabras_prohibidas": [
-    "increíble",
-    "revolucionario",
-    "impresionante",
-    "fascinante",
-    "épico",
-    "increíblemente",
-    "absolutamente",
-    "totalmente",
-    "realmente"
-  ],
+  "palabras_prohibidas": [],
   "palabras_clave_virales": [
-    "sin programar",
-    "6 cifras",
-    "modo secreto",
-    "la mayoría no sabe",
-    "expertos usan",
-    "cambia todo",
-    "nadie te cuenta",
-    "confirmaron",
-    "despidieron",
-    "ya existe",
-    "nadie sabe",
-    "datos reales",
-    "automatizado",
-    "gratis",
-    "en segundos"
+    "shorts",
+    "money",
+    "dinero",
+    "finanzas",
+    "finance",
+    "business",
+    "negocios",
+    "viral",
+    "scam",
+    "fraude",
+    "trading",
+    "crypto",
+    "cripto",
+    "millonario",
+    "ideas",
+    "sabiduria",
+    "mentalidad",
+    "💰",
+    "🤔",
+    "🤯"
   ],
-  "estructura_gancho_optima": "Número/credencial concreto + dato impactante + promesa SIN barrera técnica en ≤8 palabras",
+  "estructura_gancho_optima": "Comienza con una pregunta directa o una afirmación impactante/controversial que evoca curiosidad o shock, frecuentemente apoyada por cifras monetarias significativas o la mención de un arquetipo/autoridad. Incorpora emojis relevantes para reforzar la emoción (ej. dinero, sorpresa, duda) y crea una promesa de revelación o beneficio.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "Nick Saraev prueba: credencial financiera inmediata + eliminar barrera técnica = combo más viral en tech/IA 2026. Los espectadores no quieren saber QUÉ es algo, quieren saber CUÁNTO pueden ganar con ello.",
-  "recomendacion_thumbnail": "Número grande ($ o %) + cara con expresión de sorpresa + fondo color sólido. Opcional: texto 'SIN PROGRAMAR' o 'MODO SECRETO'",
+  "insight_clave": "La viralidad se dispara al conectar temas de alto interés (dinero, éxito, estafas) con emociones fuertes como la curiosidad, el shock o la aspiración. Esto se logra mediante el uso de grandes cifras monetarias, la referencia a figuras de autoridad o arquetipos de éxito, y narrativas de 'descubrimiento/revelación' que prometen un conocimiento oculto o una verdad impactante, capturando la atención de forma inmediata.",
+  "recomendacion_thumbnail": "Utilizar miniaturas con rostros humanos expresivos (sorpresa, duda, ambición) o gráficos que representen grandes sumas de dinero/ganancias (billetes, gráficos en ascenso). Es crucial incorporar texto superpuesto con números impactantes (cifras de dinero, porcentajes) o palabras clave emocionales (SCAM, FRAUDE, MILLONES) en una fuente grande, legible y con alto contraste. El objetivo principal es generar una curiosidad o un shock visual inmediato que invite al clic.",
   "patrones_por_nicho": {
-    "productividad_ia": {
-      "hooks": [
-        "Claude Code está conectado a tu computadora. Eso lo cambia todo.",
-        "El modo 'bypass permissions' de Claude: los expertos lo usan. La mayoría le tiene miedo.",
-        "En 10 minutos con Claude Code hago lo que antes tardaba 3 horas"
-      ],
-      "topics": [
-        "claude code tutorial",
-        "bypass permissions",
-        "plan mode",
-        "context management ia"
-      ],
-      "fuente": "Nick Saraev curso Claude Code 4h - 2026-06-20"
-    },
     "ia_noticias": {
       "hooks": [
-        "Acaban de confirmar que [empresa] ya usa IA para despedir empleados",
-        "Esto ya existe y nadie en LATAM lo usa todavía",
-        "El [N]% de empresas Fortune 500 ya automatizó [función] con IA"
+        "No hay datos específicos para este nicho en los videos proporcionados. Se aplicarán patrones generales."
       ],
       "topics": [
-        "novedades ia 2026",
-        "ia reemplazando trabajos",
-        "nuevas herramientas ia",
-        "gpt 5",
-        "claude 4",
-        "gemini 2"
-      ]
-    },
-    "negocios_digitales": {
-      "hooks": [
-        "Gané $[N] con IA este mes. Sin saber programar. Aquí cómo.",
-        "Esta automatización con IA genera dinero mientras duermo",
-        "3 negocios que puedes iniciar hoy con IA y $0 de inversión"
-      ],
-      "topics": [
-        "ganar dinero con ia",
-        "negocios online ia",
-        "dropshipping con ia",
-        "automatizar tienda online",
-        "shopify ia"
+        "IA",
+        "Noticias de tecnología",
+        "Automatización"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Si tienes $[N] ahorrados y no haces esto, los estás perdiendo",
-        "La IA predijo [resultado financiero]. Aquí el dato exacto.",
-        "Con [herramienta] en 5 min analizo una acción mejor que un broker"
+        "Pregunta Personal Directa sobre Dinero + Emojis de Duda/Valor (Ej. 'How much money is in your bank account? 🤔💰')",
+        "Arquetipo de Éxito + Cifra Millonaria/Concepto + Emoji (Ej. 'RABINO MILLONARIO 💰 #reflexion')",
+        "Noticia de Escándalo/Robo + Cifras Millonarias + Detalles de Lujos (Ej. 'Descubren a funcionarias robando 22 millones para sus lujos')"
       ],
       "topics": [
-        "ia para invertir",
-        "analisis financiero ia",
-        "trading con ia",
-        "finanzas personales ia",
-        "como invertir 2026"
+        "Mentalidad de riqueza",
+        "Ahorro/Retiro (AFORE/PPR)",
+        "Corrupción financiera",
+        "Entrevistas financieras"
+      ]
+    },
+    "negocios_digitales": {
+      "hooks": [
+        "Estrategia de Marketing 'Genial' + Marca Específica + Emoji de Sorpresa (Ej. 'Genius Marketing Strategy by Zomato😬')",
+        "Cifra de Ganancia Elevada + Origen Online + Pregunta de Validación (Ej. '😅 2 CR/Month From ONLINE?')",
+        "Número + Ideas de Negocio Rentables de Baja Inversión (Ej. '3 LOW INVESTMENT HIGHLY PROFITABLE STARTUP IDEAS!')"
+      ],
+      "topics": [
+        "Estrategias de negocio",
+        "Ideas de emprendimiento",
+        "Ganancias online",
+        "Trading",
+        "Estafas empresariales"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "La IA detectó esta señal en Bitcoin hace 3 días. Mira qué pasó.",
-        "El [N]% de los traders top ya usa IA. ¿Tú no?",
-        "Esta herramienta analiza [N] criptos en 30 segundos"
+        "Drama/Historia de Fraude con Cifra Monetaria Grande + Tiempo/Reacción (Ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+        "Figura de Autoridad Fuerte + Predicción/Opinión sobre Cripto Futuro (Ej. 'ANDREW TATE SAYS THIS ABOUT CRYPTO FUTURE')",
+        "Advertencia/Consejo Clave sobre Invertir en Cripto + Número de Tips (Ej. 'Don't Invest in Crypto THE WRONG WAY - 3 TIPS!')"
       ],
       "topics": [
-        "ia y bitcoin",
-        "trading bot ia",
-        "analisis cripto ia",
-        "defi ia"
+        "Fraudes cripto",
+        "Predicciones/Opiniones de expertos",
+        "Inversión en criptomonedas (XRP, Bitcoin)",
+        "Apps de inversión"
+      ]
+    },
+    "productividad_ia": {
+      "hooks": [
+        "No hay datos específicos para este nicho en los videos proporcionados. Se aplicarán patrones generales."
+      ],
+      "topics": [
+        "Productividad",
+        "Herramientas de IA",
+        "Automatización de tareas"
       ]
     }
   },
-  "top_videos_semana": [],
+  "top_videos_semana": [
+    {
+      "titulo": "Genius Marketing Strategy by Zomato😬 #shorts #marketing #zomato",
+      "views": 65024265,
+      "id": "wJ1-eR_hAV0"
+    },
+    {
+      "titulo": "😅 2 CR/Month From ONLINE? #shorts #motivational #trading #business #startup",
+      "views": 64297035,
+      "id": "d3Ao72kqV6s"
+    },
+    {
+      "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
+      "views": 42067185,
+      "id": "IKXiyApvKjI"
+    },
+    {
+      "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
+      "views": 42067185,
+      "id": "IKXiyApvKjI"
+    },
+    {
+      "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
+      "views": 22963691,
+      "id": "D53HF_okHi8"
+    },
+    {
+      "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
+      "views": 15144982,
+      "id": "gDn_SQU6YZE"
+    },
+    {
+      "titulo": "ANDREW TATE SAYS THIS ABOUT CRYPTO FUTURE  #shorts",
+      "views": 10813973,
+      "id": "mHwNoZ2C8wU"
+    },
+    {
+      "titulo": "🕎 RABINO MILLONARIO 💰 #reflexion  #shorts #finanzas #sabiduria #viral #mentalidaddeexito #dinero",
+      "views": 873062,
+      "id": "9ZnbKZu43LY"
+    },
+    {
+      "titulo": "Descubren a funcionarias robando 22 millones para sus lujos #viral #shorts #noticiasmexico",
+      "views": 628048,
+      "id": "tW5w5w3oLF8"
+    }
+  ],
   "aprendizajes_externos": {
     "nick_saraev_2026_06_20": {
       "canal": "Nick Saraev (X/Twitter, curso Claude Code 4h)",

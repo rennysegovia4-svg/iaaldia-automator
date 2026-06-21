@@ -1,17 +1,36 @@
 {
-  "updated": "2026-06-20",
-  "iteracion": 1,
+  "updated": "2026-06-21",
+  "iteracion": 2,
   "niche_weights": {
-    "ia_noticias": 0.3,
-    "finanzas": 0.2,
-    "negocios_digitales": 0.2,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.15
+    "ia_noticias": 0.7,
+    "finanzas": 0.075,
+    "negocios_digitales": 0.075,
+    "productividad_ia": 0.075,
+    "cripto_inversiones": 0.075
   },
-  "best_hooks": [],
-  "avoid_hooks": [],
-  "best_hora": 17,
-  "duracion_optima": 58,
-  "recomendaciones": [],
-  "nivel_confianza": 0.0
+  "best_hooks": [
+    "Dramatismo/Miedo con Impacto Personal: '¡IA que te QUITA el TRABAJO! 😱'",
+    "Noticia Impactante/Cambio Inevitable: 'El buscador cambió. 🤯 ¡El Futuro Llegó!'",
+    "Comparativa Desveladora: 'X vs Y: ¡La VERDADERA diferencia que nadie te dice! 🤯'",
+    "Beneficio Futuro con Proyección: 'IA [Año]: cómo ganar dinero con...' (Ej. IA 2026)",
+    "Pregunta con Dilema o Dato Impactante: '¿Eres del X% o del Y%?'",
+    "Alerta con Estadística: '¡Alerta! ⚠️ X% creen que la IA...'"
+  ],
+  "avoid_hooks": [
+    "Títulos demasiado específicos/técnicos sobre herramientas (ej. 'X funciones de Excel', 'Zapier: IA...')",
+    "Beneficios genéricos sin emoción ni urgencia (ej. 'IA ahorra X horas/semana', 'IA para liberar GB')",
+    "Preguntas amplias sin relevancia personal inmediata (ej. 'IA Global: ¿País tiene el control?')"
+  ],
+  "best_hora": 19,
+  "duracion_optima": 0,
+  "recomendaciones": [
+    "Priorizar el nicho de `ia_noticias` de forma casi exclusiva, ya que muestra una performance promedio de 14 vistas, mientras que otros nichos en el template de pesos no tienen datos de interacción.",
+    "Crear títulos y ganchos que generen emociones fuertes como miedo, sorpresa, curiosidad o alarma, utilizando emojis impactantes (🤯, 😱, ⚠️) para potenciar la llamada a la acción.",
+    "Enfocarse en noticias de IA de gran impacto, comparativas de herramientas líderes (e.g., Claude vs ChatGPT), efectos de la IA en el trabajo y el futuro, o el potencial de monetización con IA.",
+    "Publicar los Shorts preferentemente en la tarde-noche, con el horario de las 19:00 horas siendo el más efectivo según los datos actuales.",
+    "Evitar contenido y títulos centrados en herramientas de software muy específicas o beneficios de productividad genéricos sin un componente emocional o noticioso fuerte.",
+    "Implementar la recolección de datos sobre la duración de los videos en futuras iteraciones para poder determinar la `duracion_optima` y refinar aún más la estrategia."
+  ],
+  "nivel_confianza": 0.4,
+  "insight_semana": "Los Shorts de 'ia_noticias' que evocan miedo, sorpresa o dramatismo, o que presentan noticias impactantes o comparativas directas de herramientas populares de IA, superan drásticamente a aquellos con beneficios genéricos o temáticas técnicas específicas, mostrando que la resonancia emocional y la relevancia noticiosa son claves para la visibilidad en el nicho de IA."
 }
