@@ -1,34 +1,35 @@
 {
-  "updated": "2026-06-21",
-  "iteracion": 8,
+  "updated": "2026-06-22",
+  "iteracion": 9,
   "niche_weights": {
-    "ia_noticias": 0.3,
-    "finanzas": 0.2,
-    "negocios_digitales": 0.2,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.15
+    "ia_noticias": 0.6,
+    "finanzas": 0.1,
+    "negocios_digitales": 0.1,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.1
   },
   "best_hooks": [
-    "Comparación Directa + Exclusividad + Emoción: \"X vs Y: ¡La VERDADERA diferencia que nadie te dice! 🤯\"",
-    "Noticia Alarmante + Consecuencia Negativa + Emoción: \"¡[Tecnología] que te QUITA el TRABAJO! 😱 ¡Pánico Global!\"",
-    "Pregunta Intriga + Noticia Relevante + Emoción: \"[Entidad] cambia [algo importante] ¿Por qué? 🤯\"",
-    "Amenaza Inevitable + Futuro Incierto + Emoción: \"¡La [Tecnología] Más Peligrosa Es Inevitable! 😱 El Futuro Llegó\"",
-    "Beneficio Futuro + Específico + CTA: \"[Tecnología] 20XX: cómo ganar dinero con [Tecnología] 🤖\"",
-    "Miedo Existencial + Estadística/Dilema + Emoción: \"¡La [Tecnología] nos MATA de miedo! 😱 ¿Eres del X% o del Y%?\""
+    "Comparación directa + promesa de información exclusiva + emoción (🤯) (ej. 'Claude vs ChatGPT: ¡La VERDADERA diferencia que nadie te dice! 🤯', 29 vistas)",
+    "Anticipación del futuro (fecha o tendencia) + beneficio económico específico + tecnología (🤖) (ej. 'IA 2026: cómo ganar dinero con inteligencia 🤖', 28 vistas)",
+    "Noticia de gran impacto (Big Tech + cambio clave) + emoción (🤯) (ej. 'Google IA: El buscador cambió. 🤯', 20 vistas)",
+    "Alerta de amenaza personal o global + emoción fuerte (😱) (ej. '¡IA que te QUITA el TRABAJO! 😱 ¡Pánico Global!', 20 vistas)",
+    "Pregunta de curiosidad sobre un cambio importante + emoción (🤯) (ej. 'Google cambia su buscador ¿Por qué? 🤯', 13 vistas)",
+    "Dilema o estadística impactante + emoción (😱) (ej. '¡La IA nos MATA de miedo! 😱 ¿Eres del 16% o del 84%?', 11 vistas)"
   ],
   "avoid_hooks": [
-    "Ganchos de \"Ahorro de tiempo/automatización\" genéricos sin emoción o especificidad disruptiva (Ej. \"IA ahorra 3 horas diarias\", 1 view).",
-    "Promesas de \"negocio automatizado\" sin un elemento de curiosidad, urgencia o gran impacto emocional (Ej. \"Negocio Online con ChatGPT: 90% automatizado\", 0 views).",
-    "Preguntas de impacto global/político de la IA sin una conexión directa o alarmante al usuario (Ej. \"IA Global: ¿EE.UU. tiene el control? 🌐\", 1 view)."
+    "Promesas de automatización o ahorro de tiempo sin un elemento emocional o disruptivo (ej. 'Zapier: IA ahorra 3 horas diarias 🤖', 1 vista)",
+    "Preguntas genéricas o globales sin un impacto personal directo o una controversia fuerte (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐', 1 vista)",
+    "Listado de noticias o actualizaciones de empresas sin un gancho específico, problema o beneficio claro (ej. 'IA al Día: Google, Amazon y Snap en la era IA 🚀', 3 vistas)"
   ],
   "best_hora": 18,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar la creación de títulos que incorporen elementos de miedo, sorpresa o intriga (emojis 🤯, 😱) ya que estos consistentemente generan las vistas más altas.",
-    "Desarrollar contenido que capitalice en la comparación directa de herramientas/conceptos de IA, prometiendo información 'exclusiva' o 'la verdad que nadie te dice', replicando el éxito de 'Claude vs ChatGPT'.",
-    "Mantener el horario de publicación de las 18:00 horas como principal, dada su consolidación como el de mayor rendimiento acumulado (58 vistas) y el video individual más exitoso (29 vistas).",
-    "Dado el score y la tendencia negativa de 'ia_noticias' (-1.0), es crucial probar activamente los nichos 'finanzas', 'negocios_digitales' y 'productividad_ia' con los ganchos más exitosos para diversificar el contenido y encontrar nuevas audiencias, manteniendo un enfoque en la IA donde sea pertinente."
+    "Priorizar la creación de contenido en el nicho 'ia_noticias', dado que es el único que consistentemente genera vistas significativas (promedio de 10 vistas, score de 1.003).",
+    "Implementar ganchos que enfaticen la comparación directa, la exclusividad de la información y generen curiosidad o miedo para maximizar el CTR.",
+    "Publicar consistentemente a las 18:00 horas, ya que este horario ha demostrado ser el más efectivo, albergando el video con más vistas (29) y el mayor número de videos en el top 10.",
+    "Evitar ganchos que solo prometan ahorro de tiempo o automatización sin un elemento emocional o disruptivo, ya que han demostrado un rendimiento consistentemente bajo (0-1 vista).",
+    "Comenzar a registrar la duración de los videos para poder determinar una duración óptima en futuras iteraciones."
   ],
-  "nivel_confianza": 0.7,
-  "insight_semana": "Aunque el nicho 'ia_noticias' muestra una tendencia negativa general, los ganchos basados en el miedo, la comparación directa y la promesa de información exclusiva o alarmante siguen siendo los principales impulsores del rendimiento, superando a los enfoques de 'ahorro de tiempo' o 'automatización' genéricos."
+  "nivel_confianza": 0.45,
+  "insight_semana": "La clave para romper el umbral de las 20 vistas reside en la combinación de un gancho que promete información exclusiva (comparación directa) o genera una emoción intensa (miedo/pánico) sobre un tema relevante de IA, reforzado por la publicación a las 18:00."
 }
