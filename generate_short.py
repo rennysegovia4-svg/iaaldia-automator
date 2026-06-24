@@ -843,68 +843,85 @@ def estimate_words(script, duration):
 
 
 # ── Captions PIL — MoneyPrinterTurbo + MoneyPrinter style ─────────────────────
-def render_caption_strip(words, tmp_dir, W=1080, cap_h=270):
+def render_caption_strip(words, tmp_dir, W=1080, cap_h=190):
     """
     [MoneyPrinterTurbo + MoneyPrinter] Renderiza grupos de palabras con PIL:
-    - Palabra activa: CYAN 96px con sombra
-    - Contexto anterior: blanco 62px semi-transparente
+    - Palabra activa: CYAN con sombra
+    - Contexto anterior: blanco semi-transparente
+    - Auto-escala si el texto es más ancho que el video
     - Caja oscura de fondo (MoneyPrinter style)
     Exporta como webm yuva420p para overlay con canal alfa.
     """
     caps_dir = os.path.join(tmp_dir, "cap_frames")
     os.makedirs(caps_dir, exist_ok=True)
 
+    BASE_ACTIVE  = 68   # px — era 96, reducido para no desbordar
+    BASE_CONTEXT = 44   # px — era 62
+    MARGIN       = 48   # px libres a cada lado
+    MAX_W        = W - MARGIN * 2
+    GAP          = 16   # separación entre palabras
+
     try:
-        fb  = ImageFont.truetype(FONT_BOLD, 96)
-        fsm = ImageFont.truetype(FONT_BOLD, 62)
+        fb  = ImageFont.truetype(FONT_BOLD, BASE_ACTIVE)
+        fsm = ImageFont.truetype(FONT_BOLD, BASE_CONTEXT)
     except:
         fb = fsm = ImageFont.load_default()
+
+    def _measure(grp, draw):
+        try:
+            return sum(draw.textlength(g[0], font=g[1]) for g in grp) + GAP * (len(grp) - 1)
+        except:
+            return sum(len(g[0]) * 28 for g in grp)
 
     cap_paths  = []
     cap_durs   = []
 
     for i, wd in enumerate(words):
         img  = Image.new("RGBA", (W, cap_h), (0, 0, 0, 0))
-
-        # [MoneyPrinter] fondo oscuro semi-transparente detrás del texto
-        bg = Image.new("RGBA", (W, cap_h), (0, 0, 0, 160))
+        bg   = Image.new("RGBA", (W, cap_h), (0, 0, 0, 155))
         img.alpha_composite(bg)
         draw = ImageDraw.Draw(img)
 
-        # Grupo de palabras: [prev] [ACTIVA] [siguiente]
+        # Solo [prev] + [ACTIVA] — quitar "siguiente" reduce overflow en palabras largas
         group = []
         if i > 0:
-            group.append((words[i-1]["word"], fsm, (255, 255, 255, 150)))
+            group.append((words[i-1]["word"], fsm, (255, 255, 255, 140)))
         group.append((wd["word"], fb, (0, 220, 255, 255)))   # CYAN activa
-        if i < len(words) - 1:
-            group.append((words[i+1]["word"], fsm, (255, 255, 255, 110)))
 
-        # Medir ancho total para centrar
-        try:
-            total_w = sum(draw.textlength(g[0], font=g[1]) for g in group) + 22 * (len(group)-1)
-        except:
-            total_w = sum(len(g[0]) * 40 for g in group)
-        x  = max(16, (W - total_w) // 2)
+        # Auto-escala si el grupo desborda el ancho máximo
+        total_w = _measure(group, draw)
+        if total_w > MAX_W and total_w > 0:
+            scale = MAX_W / total_w
+            new_active  = max(36, int(BASE_ACTIVE  * scale))
+            new_context = max(24, int(BASE_CONTEXT * scale))
+            try:
+                fb_s  = ImageFont.truetype(FONT_BOLD, new_active)
+                fsm_s = ImageFont.truetype(FONT_BOLD, new_context)
+                group = [(g[0], fb_s if g[2] == (0,220,255,255) else fsm_s, g[2]) for g in group]
+                total_w = _measure(group, draw)
+            except:
+                pass
+
+        x  = max(MARGIN, (W - total_w) // 2)
         cy = cap_h // 2
 
         for text, font, color in group:
             is_active = (color == (0, 220, 255, 255))
             if is_active:
-                # [MoneyPrinterTurbo] sombra multi-direccional en palabra activa
-                for dx, dy in [(4,4),(-4,4),(4,-4),(-4,-4),(0,5)]:
+                for dx, dy in [(3,3),(-3,3),(3,-3),(-3,-3),(0,4)]:
                     try:
                         draw.text((x+dx, cy+dy), text, font=font,
-                                  fill=(0,0,0,190), anchor="lm")
+                                  fill=(0,0,0,200), anchor="lm")
                     except TypeError:
                         draw.text((x+dx, cy - font.size//2 + dy), text,
-                                  font=font, fill=(0,0,0,190))
+                                  font=font, fill=(0,0,0,200))
             try:
                 draw.text((x, cy), text, font=font, fill=color, anchor="lm")
                 tw = draw.textlength(text, font=font)
             except TypeError:
                 draw.text((x, cy - font.size//2), text, font=font, fill=color)
-                tw = len(text) * 40
-            x += tw + 22
+                tw = len(text) * 28
+            x += tw + GAP
 
         path = os.path.join(caps_dir, f"cap_{i:04d}.png")
         img.save(path)
@@ -1111,10 +1128,10 @@ def assemble(presenter_vid, audio_path, music_path,
         h = sf(hook_text)
         fixed_filters.append(
             f"drawtext=fontfile='{FONT_BOLD}':text='{h}'"
-            f":fontcolor=white:fontsize=88"
-            f":x=(w-text_w)/2:y=(h/2)-80"
-            f":shadowcolor=black@0.99:shadowx=5:shadowy=5"
-            f":bordercolor=black:borderw=4"
+            f":fontcolor=white:fontsize=64"
+            f":x=(w-text_w)/2:y=(h/2)-60"
+            f":shadowcolor=black@0.99:shadowx=4:shadowy=4"
+            f":bordercolor=black:borderw=3"
             f":enable='between(t,0,4.0)'"
         )
     fixed_filters += [
@@ -1162,10 +1179,10 @@ def assemble(presenter_vid, audio_path, music_path,
             if not w: continue
             word_filters.append(
                 f"drawtext=fontfile='{FONT_BOLD}':text='{w}'"
-                f":fontcolor=white:fontsize=112"
-                f":x=(w-text_w)/2:y=h-310"
-                f":shadowcolor=black@0.99:shadowx=6:shadowy=6"
-                f":bordercolor=black:borderw=5"
+                f":fontcolor=white:fontsize=72"
+                f":x=(w-text_w)/2:y=h-260"
+                f":shadowcolor=black@0.99:shadowx=4:shadowy=4"
+                f":bordercolor=black:borderw=3"
                 f":enable='between(t,{wd['start']:.2f},{wd['end']:.2f})'"
             )
         all_filters = fixed_filters + word_filters
