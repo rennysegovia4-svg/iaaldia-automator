@@ -480,9 +480,9 @@ def _elevenlabs_tts(text: str, path: str, persona_key: str = "periodista_urgente
         if not api_key:
             return False
 
-        # Voz por persona — override posible con ELEVENLABS_VOICE_PERIODISTA_URGENTE etc.
-        env_key = f"ELEVENLABS_VOICE_{persona_key.upper()}"
-        default_voice = env.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")
+        # Voz por persona — lee ELEVENLABS_VOICE_<PERSONA> o el default
+        env_key = f"ELEVENLABS_VOICE_{persona_key.upper().replace('-','_')}"
+        default_voice = env.get("ELEVENLABS_VOICE_ID", "onwK4e9ZLuTAKqWW03F9")  # Daniel
         voice_id = env.get(env_key, default_voice)
 
         settings = _EL_VOICE_SETTINGS.get(persona_key, _EL_VOICE_SETTINGS["periodista_urgente"])
