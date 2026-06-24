@@ -3,7 +3,6 @@ name: IA al Día — Publicación Automática
 on:
   schedule:
     - cron: '0 13 * * *'   # 9AM Chile  — Short ES
-    - cron: '0 17 * * *'   # 1PM Chile  — Short ES
     - cron: '0 23 * * *'   # 7PM Chile  — Short ES
     - cron: '0 15 * * 1'   # 11AM Chile lunes — Video largo ES
     - cron: '0 14 * * *'   # 10AM Chile — Short EN (canal inglés)
@@ -28,7 +27,6 @@ jobs:
     if: >
       (github.event_name == 'schedule' &&
        (github.event.schedule == '0 13 * * *' ||
-        github.event.schedule == '0 17 * * *' ||
         github.event.schedule == '0 23 * * *')) ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == 'short') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.tipo == '')

@@ -391,19 +391,35 @@ Escribe UN guión de YouTube Short de 58-62 segundos (entre 145 y 175 palabras).
 REGLAS DE ORO:
 1. El gancho empieza con el dato más impactante. NUNCA con "Hola" o presentación.
 2. Varía el largo de las oraciones: mezcla frases cortas (impacto) con frases más largas (explicación).
-   Ejemplo natural: "Esto acaba de confirmarse. [Nombre real] despidió a 500 personas esta semana.
-   No fue de golpe, venía gestándose hace 8 meses. Lo que nadie te explica es el motivo real."
-3. Usa conectores humanos del estilo asignado (ver arriba). Prohibido: "increíble", "revolucionario", "épico".
-4. Español latinoamericano conversacional. Nada de lenguaje de presentación corporativa.
-5. SOLO hechos verificados. Si no tienes la cifra exacta, di "según fuentes" o "se estima que".
+   Ejemplo: "Esto acaba de confirmarse. [Empresa] despidió 500 personas esta semana.
+   No fue de golpe, venía gestándose 8 meses. Lo que nadie te explica es el motivo real."
+3. Usa conectores humanos del estilo asignado. Prohibido: "increíble", "revolucionario", "épico", "gratis".
+4. Español latinoamericano conversacional. Cero lenguaje corporativo.
+5. SOLO hechos verificados. Si no tienes la cifra exacta, di "según fuentes".
 6. El cierre usa la frase exacta del narrador asignado (ver arriba).
+7. El guión debe TERMINAR con una pregunta al espectador que invite a comentar.
+   Ejemplos: "¿Y tú ya lo sabías?" / "¿Crees que esto te va a afectar?" / "¿Qué opinas?"
+
+REGLAS DEL TÍTULO (crítico para el CTR — basado en análisis de los videos con más views):
+✅ USA estas fórmulas probadas:
+   - "[MARCA A] vs [MARCA B]: lo que NADIE te dice"
+   - "[Empresa] acaba de [cambio disruptivo]. Esto cambia TODO."
+   - "Gané $[número] con IA sin [barrera] (LATAM)"
+   - "¡[VERBO EN CAPS]: [consecuencia impactante]! 😱"
+   - "[Dato sorprendente]: ¿El [%]% ya lo hace y tú no?"
+❌ EVITA siempre:
+   - Títulos con "gratis", "herramientas", "ahorra X horas" (peor CTR comprobado)
+   - Listas de empresas sin conflicto: "Google, Amazon y X en la era IA"
+   - Títulos genéricos sin emoción ni dato concreto
+OBLIGATORIO: Al menos 1 palabra en MAYÚSCULAS en el título + 1 emoji fuerte (😱🤯💰⚡🔥)
 
 RESPONDE JSON sin markdown:
 {{
-  "titulo": "Título SEO: keyword principal al inicio, máx 52 chars, 1 emoji al final",
-  "descripcion": "2 oraciones con keyword. Dato concreto. {niche_hash}",
+  "titulo": "Título viral máx 52 chars — usa fórmulas de arriba, CAPS + emoji fuerte",
+  "descripcion": "2 oraciones con keyword + dato concreto. Termina con pregunta de engagement: '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
+  "pregunta_comentarios": "Una sola pregunta provocadora para el primer comentario fijado",
   "tags": {niche_tags},
-  "guion": "guión completo 145-175 palabras, CON PERSONALIDAD, listo para leer en voz alta",
+  "guion": "guión completo 145-175 palabras, CON PERSONALIDAD, termina con pregunta al espectador",
   "hook_texto": "primeras 6-8 palabras exactas del guión"
 }}"""
 
@@ -1214,6 +1230,27 @@ def upload_thumb(yt, video_id, thumb_path):
     except Exception as e:
         print(f"      Miniatura omitida: {str(e)[:50]}")
 
+def _pin_engagement_comment(yt, video_id, pregunta):
+    if not pregunta or not pregunta.strip():
+        return
+    try:
+        resp = yt.commentThreads().insert(
+            part="snippet",
+            body={
+                "snippet": {
+                    "videoId": video_id,
+                    "topLevelComment": {
+                        "snippet": {"textOriginal": f"💬 {pregunta.strip()}\n\n👇 Cuéntame tu opinión aquí abajo"}
+                    }
+                }
+            }
+        ).execute()
+        comment_id = resp["snippet"]["topLevelComment"]["id"]
+        yt.comments().setModerationStatus(id=comment_id, moderationStatus="published").execute()
+        print(f"      Comentario fijado ✓: {pregunta[:60]}")
+    except Exception as e:
+        print(f"      Comentario omitido: {str(e)[:60]}")
+
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
@@ -1288,6 +1325,7 @@ def main():
         yt       = get_youtube()
         video_id = upload_video(yt, output_path, script["titulo"], desc_final, script["tags"])
         upload_thumb(yt, video_id, thumb_path)
+        _pin_engagement_comment(yt, video_id, script.get("pregunta_comentarios", ""))
 
         credits   = update_credits(used_tts, used_imagen, used_pro)
         remaining = CREDIT_TOTAL - credits["spent"]
