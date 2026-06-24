@@ -448,31 +448,70 @@ def _fallback_script():
 
 # ── Paso 3: TTS — 4 capas de fallback, siempre produce audio ──────────────────
 
-def _elevenlabs_tts(text: str, path: str) -> bool:
-    """ElevenLabs — voz más humana disponible. Requiere ELEVENLABS_API_KEY en .env."""
+# Voces ElevenLabs por persona — se configuran al conectar la key
+# Overrideable con ELEVENLABS_VOICE_<PERSONA> en .env
+_EL_VOICE_SETTINGS = {
+    "periodista_urgente": {"stability": 0.38, "similarity_boost": 0.80, "style": 0.20, "use_speaker_boost": True},
+    "amigo_que_sabe":     {"stability": 0.55, "similarity_boost": 0.75, "style": 0.40, "use_speaker_boost": True},
+    "provocador":         {"stability": 0.32, "similarity_boost": 0.82, "style": 0.55, "use_speaker_boost": True},
+    "analista_frio":      {"stability": 0.72, "similarity_boost": 0.70, "style": 0.10, "use_speaker_boost": False},
+    "storyteller":        {"stability": 0.42, "similarity_boost": 0.78, "style": 0.58, "use_speaker_boost": True},
+    "coach":              {"stability": 0.38, "similarity_boost": 0.80, "style": 0.48, "use_speaker_boost": True},
+}
+
+def _prep_text_for_elevenlabs(text: str) -> str:
+    """Preprocesa el guión para que ElevenLabs haga pausas y énfasis naturales."""
+    import re
+    # Pausas en puntos y comas
+    text = re.sub(r'\. ', '.  ', text)         # pausa doble tras punto
+    text = re.sub(r', ', ',  ', text)          # pausa leve tras coma
+    text = re.sub(r'\.\.\. ?', '...  ', text)  # pausa larga en suspenso
+    # Quitar emojis (ElevenLabs los ignora o los lee mal)
+    text = re.sub(r'[\U0001F000-\U0001FFFF\U00002600-\U000027BF]', '', text)
+    # Separar números seguidos de % para que no los lea raro
+    text = re.sub(r'(\d)%', r'\1 por ciento', text)
+    return text.strip()
+
+def _elevenlabs_tts(text: str, path: str, persona_key: str = "periodista_urgente") -> bool:
+    """ElevenLabs — voz humana con parámetros por persona. Requiere ELEVENLABS_API_KEY en .env."""
     try:
         env = load_env()
         api_key = env.get("ELEVENLABS_API_KEY", "")
         if not api_key:
             return False
-        # Diego (es): voz masculina latina natural
-        voice_id = env.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")
+
+        # Voz por persona — override posible con ELEVENLABS_VOICE_PERIODISTA_URGENTE etc.
+        env_key = f"ELEVENLABS_VOICE_{persona_key.upper()}"
+        default_voice = env.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")
+        voice_id = env.get(env_key, default_voice)
+
+        settings = _EL_VOICE_SETTINGS.get(persona_key, _EL_VOICE_SETTINGS["periodista_urgente"])
+        clean_text = _prep_text_for_elevenlabs(text)
+
         r = requests.post(
             f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
             headers={"xi-api-key": api_key, "Content-Type": "application/json"},
             json={
-                "text": text,
+                "text": clean_text,
                 "model_id": "eleven_multilingual_v2",
-                "voice_settings": {"stability": 0.48, "similarity_boost": 0.78, "style": 0.28}
+                "output_format": "mp3_44100_128",   # MP3 directo, sin conversión PCM
+                "voice_settings": settings,
             },
-            timeout=30
+            timeout=45
         )
         if r.status_code == 200 and len(r.content) > 2000:
             open(path, "wb").write(r.content)
-            print("      Voz: ElevenLabs ✓"); return True
-        print(f"      ElevenLabs: HTTP {r.status_code}")
+            remaining = r.headers.get("xi-remaining-characters", "?")
+            print(f"      Voz: ElevenLabs {persona_key} ✓ | chars restantes: {remaining}")
+            return True
+        if r.status_code == 401:
+            print("      ElevenLabs: API key inválida")
+        elif r.status_code == 429:
+            print("      ElevenLabs: cuota agotada — usando fallback")
+        else:
+            print(f"      ElevenLabs: HTTP {r.status_code} — {r.text[:80]}")
     except Exception as e:
-        print(f"      ElevenLabs: {str(e)[:55]}")
+        print(f"      ElevenLabs: {str(e)[:60]}")
     return False
 
 def _gemini_tts(text: str, path: str) -> bool:
@@ -541,7 +580,7 @@ def _polish_audio(path: str):
 def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente") -> bool:
     """4 capas de fallback — siempre produce audio válido."""
     # Capa 1: ElevenLabs (más humano, requiere API key opcional)
-    if _elevenlabs_tts(text, path):
+    if _elevenlabs_tts(text, path, persona_key):
         _polish_audio(path); return True
 
     # Capa 2: Gemini TTS
