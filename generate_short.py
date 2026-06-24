@@ -65,6 +65,118 @@ PRESENTER_QUERIES = _NICHE["pexels_queries"]
 RSS_FEEDS         = _NICHE["rss_feeds"]
 print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {_STRATEGY.get('nivel_confianza',0):.0%}")
 
+# ── Personas narradoras — rotan cada día para máxima variedad ──────────────────
+NARRATOR_PERSONAS = {
+    "periodista_urgente": {
+        "instruccion": (
+            "Hablas como locutor de noticias de última hora en radio. Tono serio y urgente. "
+            "Mezcla frases cortas de golpe (3-5 palabras) con frases de contexto más largas (10-15 palabras). "
+            "Empieza SIEMPRE con el dato más impactante, nunca con presentación. "
+            "Usa: 'Hace pocas horas...', 'Acaba de confirmarse...', 'Esto acaba de salir:'"
+        ),
+        "conectores": ["y esto es lo más importante:", "pero hay algo que nadie menciona:", "mira lo que dicen los datos:"],
+        "cierre": "Sígueme para estar informado antes que nadie.",
+        "voice_edge": ("es-MX-JorgeNeural", "+8%", "-1Hz"),
+    },
+    "amigo_que_sabe": {
+        "instruccion": (
+            "Hablas como si le contaras un secreto a un amigo cercano. Tono cálido, casual y directo. "
+            "Usa 'mira', 'te cuento', 'fíjate', 'y lo más loco es que...'. "
+            "Alterna frases cortas de impacto con frases más largas de explicación. "
+            "Suenas como alguien que acaba de descubrir algo y no puede guardárselo."
+        ),
+        "conectores": ["y aquí viene lo bueno:", "pero espera, hay más:", "y lo que nadie te cuenta es esto:"],
+        "cierre": "Sígueme, que yo te traigo todo esto primero.",
+        "voice_edge": ("es-CO-GonzaloNeural", "-3%", "-2Hz"),
+    },
+    "provocador": {
+        "instruccion": (
+            "Desafías al espectador. Preguntas que incomodan seguidas de datos duros. "
+            "Ritmo variable: una pregunta corta, pausa implícita, dato largo contundente. "
+            "Usa: '¿En serio todavía no sabes esto?', 'La mayoría se equivoca aquí.', 'Te voy a decir algo incómodo:'. "
+            "No eres agresivo, pero sí directo al punto de que duele un poco."
+        ),
+        "conectores": ["y aquí es donde la gente se equivoca:", "pero nadie quiere escuchar esto:", "la realidad es esta:"],
+        "cierre": "Sígueme si quieres saber lo que los demás no te dicen.",
+        "voice_edge": ("es-ES-AlvaroNeural", "+2%", "+1Hz"),
+    },
+    "analista_frio": {
+        "instruccion": (
+            "Solo datos. Sin emoción, sin hipérboles. Hablas como analista que presenta cifras en una reunión. "
+            "Frases claras y directas. Varía la longitud para que no suene monótono: "
+            "una cifra corta, una explicación media, una consecuencia larga. "
+            "Usa: 'El dato es simple:', 'Los números muestran que...', 'Tres cifras que importan:'"
+        ),
+        "conectores": ["el segundo dato es más relevante:", "la consecuencia directa:", "lo que estos números indican:"],
+        "cierre": "Sígueme para análisis con datos reales cada día.",
+        "voice_edge": ("es-AR-TomasNeural", "-5%", "-3Hz"),
+    },
+    "storyteller": {
+        "instruccion": (
+            "Cuentas una historia corta con inicio, giro inesperado y lección. "
+            "Frases cortas para tensión, frases largas para descripción. Fluido, natural. "
+            "Empieza poniendo al espectador en escena: 'Imagina esto:', 'El martes pasado, algo pasó.', 'Hay una empresa que conozco.'. "
+            "El giro debe llegar en el segundo tercio del guión, no al final."
+        ),
+        "conectores": ["y aquí viene el giro:", "entonces pasó algo que nadie esperaba:", "la lección fue clara:"],
+        "cierre": "Sígueme para más historias que te enseñan algo real.",
+        "voice_edge": ("es-MX-DaliaNeural", "-8%", "-2Hz"),
+    },
+    "coach": {
+        "instruccion": (
+            "Motivador pero concreto, nunca con frases vacías. Cada oración lleva a una acción. "
+            "Energía alta al inicio, baja un poco en el medio para explicar, sube al final para el CTA. "
+            "Usa: 'Tienes 60 segundos para entender esto.', 'Un solo cambio puede transformar tu resultado.', 'La acción concreta es esta:'. "
+            "Prohibido el relleno: cada palabra debe tener un propósito."
+        ),
+        "conectores": ["el siguiente paso concreto:", "y si lo aplicas hoy mismo:", "esto es lo que debes hacer:"],
+        "cierre": "Sígueme para más herramientas que sí funcionan.",
+        "voice_edge": ("es-MX-JorgeNeural", "+5%", "+0Hz"),
+    },
+}
+
+# Plantillas de estructura — 4 formatos que rotan
+SCRIPT_TEMPLATES = {
+    "NEWS_FLASH":      "GANCHO(dato urgente real) → QUÉ PASÓ(quién, qué, dónde, cifra real) → POR QUÉ IMPORTA PARA TI(impacto personal directo) → ACCIÓN HOY(qué hace el espectador)",
+    "HISTORIA_GIRO":   "ESCENA INICIAL(personaje/empresa/situación concreta) → CONFLICTO(el problema o dato sorprendente) → GIRO INESPERADO(lo que nadie esperaba) → LECCIÓN APLICABLE(qué haces tú con esto)",
+    "LISTA_RAPIDA":    "PROMESA(voy a darte N cosas en 60 segundos) → ITEM 1 con dato real → ITEM 2 con dato real → ITEM 3 con dato real → REMATE(por qué importan juntas)",
+    "PREGUNTA_RETORICA":"PREGUNTA QUE DUELE O SORPRENDE → DATO que la responde de forma inesperada → REVELACIÓN(la respuesta correcta que nadie te dijo) → CTA concreto y accionable",
+}
+
+# Selección determinista por día — mismo nicho, misma persona durante el día
+_day_num      = datetime.now().timetuple().tm_yday
+_PERSONA_KEYS  = list(NARRATOR_PERSONAS.keys())
+_TEMPLATE_KEYS = list(SCRIPT_TEMPLATES.keys())
+_PERSONA_KEY   = _PERSONA_KEYS[_day_num % len(_PERSONA_KEYS)]
+_TEMPLATE_KEY  = _TEMPLATE_KEYS[(_day_num + 2) % len(_TEMPLATE_KEYS)]
+_PERSONA       = NARRATOR_PERSONAS[_PERSONA_KEY]
+_TEMPLATE      = SCRIPT_TEMPLATES[_TEMPLATE_KEY]
+
+
+def _validate_guion(guion: str) -> str:
+    """
+    Valida que el guión encaje en 58-62 segundos (140-175 palabras a ~160 wpm).
+    Si es muy largo, corta en el último punto antes del límite.
+    Limpia caracteres problemáticos para TTS.
+    """
+    # Limpiar chars problemáticos para TTS
+    for bad, good in [("«", '"'), ("»", '"'), ("–", "-"), ("—", "-"),
+                      ("\n", " "), ("  ", " "), ("...", ".")]:
+        guion = guion.replace(bad, good)
+    guion = guion.strip()
+
+    words = guion.split()
+    if len(words) > 178:
+        truncated = " ".join(words[:178])
+        last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
+        if last_punct > len(truncated) * 0.65:
+            guion = truncated[:last_punct + 1]
+        else:
+            guion = truncated + "."
+
+    return guion
+
+
 _AFFILIATES_BY_NICHE = {
     "ia_noticias":       "\n\n💡 Herramientas IA que recomiendo:\n→ ChatGPT: https://chat.openai.com\n→ Claude AI: https://claude.ai\n→ Gemini: https://gemini.google.com\n→ Perplexity: https://perplexity.ai",
     "finanzas":          "\n\n💡 Recursos de finanzas:\n→ Fintual: https://fintual.cl\n→ FXCM: https://www.fxcm.com\n→ Binance: https://binance.com",
@@ -250,40 +362,49 @@ RESPOND JSON only (no markdown):
     niche_hash = _NICHE["hashtags"]
     canal_name = _NICHE["nombre"]
 
-    prompt = f"""Eres el creador de contenido más influyente de América Latina en este tema.
-Tu canal se llama "{canal_name}" y tiene millones de seguidores porque siempre dices la verdad con datos reales.
+    prompt = f"""Eres un creador de contenido de habla hispana con millones de seguidores.
+Tu canal "{canal_name}" triunfa porque suenas HUMANO, no robótico. Cada guión tiene personalidad propia.
 
+══ CONTEXTO DEL NICHO ══
 {niche_ctx}
+
+══ ESTILO DE NARRADOR HOY: {_PERSONA_KEY.upper().replace("_"," ")} ══
+{_PERSONA["instruccion"]}
+Conectores que usas naturalmente: {" / ".join(_PERSONA["conectores"])}
+Cierre de canal: "{_PERSONA["cierre"]}"
+
+══ PLANTILLA DE ESTRUCTURA HOY: {_TEMPLATE_KEY} ══
+{_TEMPLATE}
+
+══ PATRONES VIRALES APRENDIDOS ══
 {viral_ctx}
-NOTICIAS / DATOS REALES DEL DÍA (úsalos como base):
+
+══ NOTICIAS REALES DE HOY (usa como base, no inventes) ══
 {h_block}
 
-HECHOS VERIFICADOS DE INTERNET (cita al menos 2 en el guión):
-{r_block if r_block else "No hay datos adicionales — usa solo las noticias de arriba."}
+══ DATOS VERIFICADOS (cita al menos 1) ══
+{r_block if r_block else "Usa solo las noticias de arriba. Si no tienes dato exacto, di 'según reportes'."}
 
-TAREA: Crea un guión de YouTube Short de 58-62 segundos (155-170 palabras).
+══ TAREA ══
+Escribe UN guión de YouTube Short de 58-62 segundos (entre 145 y 175 palabras).
 
-ESTRUCTURA OBLIGATORIA:
-[0-5s]   GANCHO — usa uno de los patrones virales de arriba adaptado al tema de hoy
-[5-20s]  CONTEXTO — por qué importa, con dato numérico verificado
-[20-38s] CASO CONCRETO — empresa, país, persona real. Nombra quién.
-[38-50s] CONSECUENCIA — qué pasa si lo ignoras
-[50-62s] LLAMADA — qué puede hacer el espectador HOY + "Sígueme para más {canal_name}."
-
-REGLAS ESTRICTAS:
-- SOLO usa hechos verificados. Si no tienes el dato exacto, di "según reportes" — nunca inventes cifras.
-- Máximo 8 palabras por oración
-- Voz directa, activa. Prohibido usar las palabras vetadas de arriba.
-- Español latinoamericano natural, fluido, no robótico
-- El gancho DEBE replicar el patrón viral más fuerte del nicho
+REGLAS DE ORO:
+1. El gancho empieza con el dato más impactante. NUNCA con "Hola" o presentación.
+2. Varía el largo de las oraciones: mezcla frases cortas (impacto) con frases más largas (explicación).
+   Ejemplo natural: "Esto acaba de confirmarse. [Nombre real] despidió a 500 personas esta semana.
+   No fue de golpe, venía gestándose hace 8 meses. Lo que nadie te explica es el motivo real."
+3. Usa conectores humanos del estilo asignado (ver arriba). Prohibido: "increíble", "revolucionario", "épico".
+4. Español latinoamericano conversacional. Nada de lenguaje de presentación corporativa.
+5. SOLO hechos verificados. Si no tienes la cifra exacta, di "según fuentes" o "se estima que".
+6. El cierre usa la frase exacta del narrador asignado (ver arriba).
 
 RESPONDE JSON sin markdown:
 {{
-  "titulo": "Título SEO: keyword principal al inicio, máximo 52 chars, 1 emoji al final",
-  "descripcion": "2 oraciones con keyword principal. Dato concreto. {niche_hash}",
+  "titulo": "Título SEO: keyword principal al inicio, máx 52 chars, 1 emoji al final",
+  "descripcion": "2 oraciones con keyword. Dato concreto. {niche_hash}",
   "tags": {niche_tags},
-  "guion": "guión completo 155-170 palabras, listo para leer",
-  "hook_texto": "primeras 5-7 palabras exactas del guión"
+  "guion": "guión completo 145-175 palabras, CON PERSONALIDAD, listo para leer en voz alta",
+  "hook_texto": "primeras 6-8 palabras exactas del guión"
 }}"""
 
     used_pro = False
@@ -308,7 +429,9 @@ RESPONDE JSON sin markdown:
             part = part.strip().lstrip("json").strip()
             if part.startswith("{"): text = part; break
     try:
-        return json.loads(text), used_pro
+        result = json.loads(text)
+        result["guion"] = _validate_guion(result.get("guion", ""))
+        return result, used_pro
     except:
         return _fallback_script(), False
 
@@ -323,17 +446,47 @@ def _fallback_script():
     }
 
 
-# ── Paso 3: TTS ────────────────────────────────────────────────────────────────
-def _gemini_tts(text, path):
+# ── Paso 3: TTS — 4 capas de fallback, siempre produce audio ──────────────────
+
+def _elevenlabs_tts(text: str, path: str) -> bool:
+    """ElevenLabs — voz más humana disponible. Requiere ELEVENLABS_API_KEY en .env."""
+    try:
+        env = load_env()
+        api_key = env.get("ELEVENLABS_API_KEY", "")
+        if not api_key:
+            return False
+        # Diego (es): voz masculina latina natural
+        voice_id = env.get("ELEVENLABS_VOICE_ID", "pNInz6obpgDQGcFmaJgB")
+        r = requests.post(
+            f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+            headers={"xi-api-key": api_key, "Content-Type": "application/json"},
+            json={
+                "text": text,
+                "model_id": "eleven_multilingual_v2",
+                "voice_settings": {"stability": 0.48, "similarity_boost": 0.78, "style": 0.28}
+            },
+            timeout=30
+        )
+        if r.status_code == 200 and len(r.content) > 2000:
+            open(path, "wb").write(r.content)
+            print("      Voz: ElevenLabs ✓"); return True
+        print(f"      ElevenLabs: HTTP {r.status_code}")
+    except Exception as e:
+        print(f"      ElevenLabs: {str(e)[:55]}")
+    return False
+
+def _gemini_tts(text: str, path: str) -> bool:
     try:
         from google.genai import types as gt
         c = genai.Client(api_key=GEMINI_API_KEY)
+        # Aoede = voz femenina más natural en español que Charon
+        voice_name = "Aoede" if LANG_CODE == "es" else "Charon"
         r = c.models.generate_content(
             model="gemini-2.5-flash-preview-tts", contents=text,
             config=gt.GenerateContentConfig(
                 response_modalities=["AUDIO"],
                 speech_config=gt.SpeechConfig(voice_config=gt.VoiceConfig(
-                    prebuilt_voice_config=gt.PrebuiltVoiceConfig(voice_name="Charon")
+                    prebuilt_voice_config=gt.PrebuiltVoiceConfig(voice_name=voice_name)
                 ))
             )
         )
@@ -348,26 +501,84 @@ def _gemini_tts(text, path):
             [FFMPEG, "-y", "-f", "s16le", "-ar", "24000", "-ac", "1",
              "-i", rp, "-c:a", "libmp3lame", "-b:a", "192k", path],
             capture_output=True).returncode == 0
-        os.remove(rp)
-        if ok and os.path.getsize(path) > 1000:
-            print("      Voz: Gemini TTS Charon ✓"); return True
+        if os.path.exists(rp): os.remove(rp)
+        if ok and os.path.exists(path) and os.path.getsize(path) > 1000:
+            print(f"      Voz: Gemini TTS {voice_name} ✓"); return True
     except Exception as e:
         if "429" not in str(e) and "quota" not in str(e).lower():
-            print(f"      Gemini TTS: {str(e)[:50]}")
+            print(f"      Gemini TTS: {str(e)[:55]}")
     return False
 
-async def _edge_tts_async(text, path):
-    # [ShortGPT] voz según idioma del canal
+async def _edge_tts_async(text: str, path: str, persona_key: str = "periodista_urgente"):
     if LANG_CODE == "en":
         voice, rate, pitch = "en-US-GuyNeural", "-5%", "-2Hz"
     else:
-        voice, rate, pitch = "es-CL-LorenzoNeural", "-8%", "-3Hz"
+        persona = NARRATOR_PERSONAS.get(persona_key, NARRATOR_PERSONAS["periodista_urgente"])
+        voice, rate, pitch = persona["voice_edge"]
     await edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, volume="+15%").save(path)
 
-def generate_audio(text, path):
-    if _gemini_tts(text, path): return True
-    print("      Voz: Edge-TTS Lorenzo (fallback)")
-    asyncio.run(_edge_tts_async(text, path))
+def _polish_audio(path: str):
+    """Compresión + normalización de loudness para voz más cálida y presente."""
+    polished = path.replace(".mp3", "_pol.mp3")
+    try:
+        r = subprocess.run([
+            FFMPEG, "-y", "-i", path,
+            "-af", (
+                "acompressor=threshold=-18dB:ratio=3:attack=5:release=100:makeup=2,"
+                "loudnorm=I=-14:LRA=7:TP=-1.5,"
+                "equalizer=f=250:width_type=o:width=2:g=-2,"
+                "equalizer=f=3000:width_type=o:width=1:g=1"
+            ),
+            "-c:a", "libmp3lame", "-b:a", "192k", polished
+        ], capture_output=True, timeout=30)
+        if r.returncode == 0 and os.path.exists(polished) and os.path.getsize(polished) > 1000:
+            os.replace(polished, path)
+    except Exception:
+        if os.path.exists(polished):
+            try: os.remove(polished)
+            except: pass
+
+def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente") -> bool:
+    """4 capas de fallback — siempre produce audio válido."""
+    # Capa 1: ElevenLabs (más humano, requiere API key opcional)
+    if _elevenlabs_tts(text, path):
+        _polish_audio(path); return True
+
+    # Capa 2: Gemini TTS
+    if _gemini_tts(text, path):
+        _polish_audio(path); return True
+
+    # Capa 3: Edge-TTS con voz de la persona (3 intentos)
+    for attempt in range(3):
+        try:
+            asyncio.run(_edge_tts_async(text, path, persona_key))
+            if os.path.exists(path) and os.path.getsize(path) > 2000:
+                label = "" if attempt == 0 else f" (retry {attempt})"
+                print(f"      Voz: Edge-TTS {persona_key}{label} ✓")
+                _polish_audio(path); return False
+        except Exception as e:
+            print(f"      Edge-TTS intento {attempt+1}: {str(e)[:55]}")
+            if attempt < 2: time.sleep(4)
+
+    # Capa 4: gTTS como último recurso absoluto
+    try:
+        from gtts import gTTS
+        gTTS(text=text, lang="es", slow=False).save(path)
+        if os.path.exists(path) and os.path.getsize(path) > 2000:
+            print("      Voz: gTTS último recurso ✓")
+            _polish_audio(path); return False
+    except Exception as e:
+        print(f"      gTTS: {str(e)[:55]}")
+
+    # Fallback nuclear: tono de audio para que el video no falle
+    print("      ⚠️  TODOS LOS TTS FALLARON — audio de emergencia")
+    word_count  = len(text.split())
+    est_dur     = max(30, int(word_count / 2.6))
+    subprocess.run([
+        FFMPEG, "-y", "-f", "lavfi",
+        "-i", f"aevalsrc=0.0*sin(440*2*PI*t):s=44100",
+        "-t", str(est_dur), "-c:a", "libmp3lame", "-b:a", "128k", path
+    ], capture_output=True)
     return False
 
 
@@ -480,7 +691,8 @@ def transcribe_whisper(audio_path):
         from faster_whisper import WhisperModel
         model = WhisperModel("tiny", device="cpu", compute_type="int8",
                              download_root="/tmp/whisper_models")
-        segs, _ = model.transcribe(audio_path, language="es", word_timestamps=True)
+        lang = "en" if LANG_CODE == "en" else "es"
+        segs, _ = model.transcribe(audio_path, language=lang, word_timestamps=True)
         words   = []
         for seg in segs:
             for w in (seg.words or []):
@@ -967,9 +1179,8 @@ def upload_thumb(yt, video_id, thumb_path):
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     print(f"\n{'='*60}")
-    print(f"  IA al Día v6.0 — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    print(f"  8 repos: MoneyPrinterTurbo · Manim · MoviePy · PaddleGAN")
-    print(f"  stable-diffusion-videos · Wav2Lip · MoneyPrinter · Fay(skip)")
+    print(f"  IA al Día v11.0 — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"  Nicho: {_NICHE['nombre']} | Persona: {_PERSONA_KEY} | Template: {_TEMPLATE_KEY}")
     print(f"{'='*60}\n")
 
     used_tts = used_imagen = used_pro = False
@@ -992,10 +1203,12 @@ def main():
         script, used_pro = generate_script(headlines, research)
         print(f"      Título: {script['titulo']}")
 
-        print("[3/7] Voz (Gemini TTS Charon)...")
-        used_tts = generate_audio(script["guion"], audio_path)
+        print(f"[3/7] Voz (persona: {_PERSONA_KEY})...")
+        used_tts = generate_audio(script["guion"], audio_path, _PERSONA_KEY)
+        if not os.path.exists(audio_path) or os.path.getsize(audio_path) < 100:
+            raise RuntimeError("Audio no generado — todos los TTS fallaron.")
         duration  = MP3(audio_path).info.length + 0.5
-        print(f"      Duración: {duration:.1f}s")
+        print(f"      Duración: {duration:.1f}s | palabras: {len(script['guion'].split())}")
 
         print("[4/7] Presentador (Pexels · xfade)...")
         presenter = get_multi_presenter_video(tmp, duration)
