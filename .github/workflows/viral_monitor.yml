@@ -1,0 +1,61 @@
+name: Viral Monitor — Detección de Tendencias
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # Cada 2 horas, 24/7
+  workflow_dispatch:          # Permite correr manualmente para testear
+
+permissions:
+  contents: write
+  actions: write              # Necesario para disparar workflow_dispatch
+
+concurrency:
+  group: viral-monitor
+  cancel-in-progress: true    # Si corre uno nuevo, cancela el anterior
+
+jobs:
+  detectar_viral:
+    name: "Detectar Viral LATAM"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install requests feedparser google-auth google-auth-oauthlib google-api-python-client
+
+      - name: Restaurar credenciales
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 -d > client_secrets.json
+          echo "${{ secrets.TOKEN_JSON }}"          | base64 -d > token.json
+
+      - name: Restaurar .env
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
+
+      - name: Correr detector viral
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -W ignore trend_monitor.py
+
+      - name: Guardar estado viral (si cambió)
+        if: always()
+        run: |
+          if git diff --quiet viral_state.json 2>/dev/null; then
+            echo "Sin cambios en viral_state.json"
+          else
+            git config user.name  "IA al Día Bot"
+            git config user.email "bot@iaaldia.ai"
+            git add viral_state.json
+            git commit -m "chore: actualizar viral_state [skip ci]" || true
+            git push origin main || true
+          fi

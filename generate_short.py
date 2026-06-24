@@ -290,11 +290,86 @@ Thumbnail que más CTR genera: {thumb}
     except Exception:
         return ""
 
+def _generate_viral_script(client, viral_topic, viral_context, viral_score, viral_ctx):
+    """Genera script optimizado para un tema viral detectado en tiempo real."""
+    research = research_topic(viral_topic)
+    r_block  = f"\nHECHOS VERIFICADOS:\n{research}\n" if research else ""
+
+    prompt = f"""Eres el locutor de breaking news más urgente de YouTube en español.
+Acabas de recibir una alerta: el tema "{viral_topic}" es TENDENCIA en este momento en México, Argentina, Colombia y Chile.
+Score viral: {viral_score}/100 | Contexto: {viral_context}
+
+Tu trabajo: crear un Short de YouTube que capitalice ESTA tendencia ahora mismo.
+Las personas ya están buscando "{viral_topic}" — tienes que ser el primero en publicar sobre esto.
+
+{r_block}
+
+{viral_ctx}
+
+══ MODO URGENTE — REGLAS ESPECIALES ══
+1. GANCHO: empieza con el nombre del tema viral en la primera frase. No hay tiempo para rodeos.
+   Formato: "[Dato impactante sobre {viral_topic}]. Y esto acaba de explotar en redes."
+2. ESTRUCTURA: NEWS_FLASH
+   → Dato urgente real → Qué pasó exactamente → Por qué LATAM lo debe saber HOY → Qué hacer
+3. Usa: "Esto es tendencia ahora mismo", "millones ya lo buscan", "acaba de confirmarse"
+4. Tono: periodista de última hora. Frases cortas. Cada frase = dato o acción.
+5. TÍTULO: usa fórmula viral comprobada con el tema. Mínimo 1 palabra en CAPS + emoji fuerte.
+6. El guión termina con una pregunta directa al espectador sobre el tema.
+7. Español latinoamericano. 145-175 palabras exactas.
+
+RESPONDE JSON sin markdown:
+{{
+  "titulo": "Título viral máx 52 chars — CAPS + emoji 😱🤯💰⚡ — tema '{viral_topic}' presente",
+  "descripcion": "2 oraciones urgentes sobre {viral_topic}. Dato real. Termina con '¿Tú lo sabías? 👇' {' '.join(['#Shorts','#viral','#{}'.format(viral_topic.replace(' ','')[:15])])}",
+  "pregunta_comentarios": "Pregunta provocadora sobre {viral_topic} para fijar como comentario",
+  "tags": ["viral","tendencias latam","shorts","noticias hoy","{viral_topic[:30]}","trending"],
+  "guion": "guión 145-175 palabras en modo breaking news — urgente, con datos, termina con pregunta",
+  "hook_texto": "primeras 6-8 palabras exactas del guión"
+}}"""
+
+    response = None
+    for model in ["gemini-2.5-flash", "gemini-2.0-flash"]:
+        for attempt in range(2):
+            try:
+                response = client.models.generate_content(model=model, contents=prompt)
+                break
+            except Exception as e:
+                if "429" in str(e) or "quota" in str(e).lower(): break
+                if attempt < 1: time.sleep(10)
+        if response: break
+
+    if not response:
+        return _fallback_script(), False
+
+    text = response.text.strip()
+    if "```" in text:
+        for part in text.split("```"):
+            part = part.strip().lstrip("json").strip()
+            if part.startswith("{"): text = part; break
+    try:
+        result = json.loads(text)
+        result["guion"] = _validate_guion(result.get("guion", ""))
+        result["_viral_mode"] = True
+        result["_viral_topic"] = viral_topic
+        print(f"      [MODO VIRAL] Tema: {viral_topic} | Score: {viral_score}")
+        return result, False
+    except:
+        return _fallback_script(), False
+
+
 def generate_script(headlines, research):
     client  = genai.Client(api_key=GEMINI_API_KEY)
     h_block = "\n".join(f"- {h}" for h in headlines) if headlines else "tendencias IA 2026"
     r_block = f"\nHECHOS VERIFICADOS:\n{research}\n" if research else ""
     viral_ctx = _build_viral_context(_NICHE_KEY)
+
+    # ── MODO VIRAL: si fue disparado por trend_monitor ─────────────────────────
+    _vt = os.environ.get("VIRAL_TOPIC", "").strip()
+    _vc = os.environ.get("VIRAL_CONTEXT", "").strip()
+    _vs = os.environ.get("VIRAL_SCORE", "0").strip()
+    if _vt:
+        return _generate_viral_script(client, _vt, _vc, _vs, viral_ctx)
+    # ──────────────────────────────────────────────────────────────────────────
 
     # ── Canal en inglés [AI-Youtube-Shorts-Generator + ShortGPT] ─────────────
     if LANG_CODE == "en":
@@ -1254,8 +1329,10 @@ def _pin_engagement_comment(yt, video_id, pregunta):
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
+    _viral_mode = bool(os.environ.get("VIRAL_TOPIC", "").strip())
+    _viral_label = f" 🔥 MODO VIRAL: {os.environ.get('VIRAL_TOPIC','')[:40]}" if _viral_mode else ""
     print(f"\n{'='*60}")
-    print(f"  IA al Día v11.0 — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"  IA al Día v11.0 — {datetime.now().strftime('%Y-%m-%d %H:%M')}{_viral_label}")
     print(f"  Nicho: {_NICHE['nombre']} | Persona: {_PERSONA_KEY} | Template: {_TEMPLATE_KEY}")
     print(f"{'='*60}\n")
 
