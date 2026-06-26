@@ -1,128 +1,119 @@
 {
   "updated": "2026-06-26",
   "hook_formulas": [
-    "Afirmación/Revelación Impactante + [Emoji de sorpresa/valor] (ej. La Impresora de Dinero 💸)",
-    "Pregunta de Intriga/Dilema Personal + [Emoji de elección/incógnita] (ej. ¿Qué Camino Tomarías Tú? 🛣️)",
-    "Evento Dramático/Extremo + [Emoji de emoción fuerte] (ej. Lo más triste que verás hoy #shorts, ROBARON EL DINERO)",
-    "Humor/Situación Relatable con Exageración + [Emoji cómico] (ej. Mis sueños cuando me como toda la olla de frijoles 🤣)",
-    "Hecho Sorprendente/Descubrimiento + [Emoji de asombro/impacto] (ej. Wow 😮🚀, Este chico es una inteligencia artificial...🙀🤯)",
-    "Truco/Hack/Herramienta Útil con Beneficio + [Emoji de idea/confirmación] (ej. Truco para tener wifi gratis., Try this on Amazon! 🤯)",
-    "Advertencia/Prohibición + Consecuencia Implícita (ej. Nunca le digas esta frase a tu muñeco...)",
-    "Caso de Éxito/Estrategia Genial + [Emoji de astucia/éxito] (ej. Genius Marketing Strategy by Zomato😬)",
-    "Declaración Controversial/Polémica + [Emoji de shock/reflexión] (ej. Trading एक FRAUD है 🤯)",
-    "Inspiración/Cita Icónica + [Referencia de personaje] (ej. Puedes Lograrlo - Nemo, Yo soy el Dueño - Batman)",
-    "Prueba/Desafío de Veracidad (ej. CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA)",
-    "Novedad/Contraste Inesperado + [Emoji visual] (ej. Las frutas verdaderas sin IA🍓)"
+    "Afirmación Impactante Breve + Emoji de sorpresa/valor: Ej. 'La Impresora de Dinero 💸'",
+    "Pregunta de Intriga Personal/Dilema + Emoji de elección/incógnita: Ej. '¿Qué Camino Tomarías Tú? 🛣️'",
+    "Situación Dramática/Emocional Fuerte + Emoji: Ej. 'Lo más triste que verás hoy #shorts'",
+    "Humor/Exageración Relatable + Emoji Cómico: Ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣'",
+    "Revelación de Hecho/Descubrimiento Sorprendente + Emoji de Asombro: Ej. 'Este chico es una inteligencia artificial año 1985 🙀🤯...'",
+    "Truco/Hack/Herramienta Útil con Beneficio Directo: Ej. '#Shorts Truco para tener wifi gratis.'",
+    "Desafío a la Expectativa/Creencia Común + Emoji de shock: Ej. 'Trading एक FRAUD es 🤯'",
+    "Referencia a Personaje/Película Famosa con un mensaje de poder/motivación: Ej. 'Puedes Lograrlo - Nemo #shorts'",
+    "Impacto Global/Fenómeno Grande + Emoji de magnitud: Ej. 'Extinción masiva 🌎'",
+    "Consejo/Lección Inesperada de Figura Influyente: Ej. 'ANDREW TATE SAYS THIS ABOUT CRYPTO FUTURE #shorts'",
+    "Comparación/Contraste Inesperado: Ej. 'Las frutas verdaderas sin IA🍓'",
+    "Situación de 'Acto Fallido' o 'Fallo Épico': Ej. 'Act Goes Wrong On BGT 2022...'"
   ],
   "title_patterns": [
-    "[Declaración Impactante/Evento] + [Emoji Emocional/Visual]",
-    "Pregunta de Intriga/Dilema + [Emoji de Reflexión/Camino]",
-    "[Solución/Truco] para [Problema/Objetivo]",
-    "Afirmación Controversial/Sorprendente + [Emoji de Shock]",
-    "[Humor/Situación Relatable] + [Emoji Cómico/Embarazo]",
-    "[Personaje/Marca] + [Acción/Declaración Clave]",
-    "[Adjetivo Extremo] + [Sujeto] + que verás hoy/siempre",
-    "[Número] + [Beneficio/Consecuencia] + [Sujeto]"
+    "[Afirmación Breve y Emotiva] + [Emoji Clave]",
+    "[Pregunta Directa] + [Contexto Opcional] + [Emoji de Intriga]",
+    "[Declaración de Problema/Situación] + [Resultado/Impacto] + [Emoji Relevante]",
+    "[Sujeto/Hecho] + [Verbo/Estado Impactante] + [Año/Contexto] + [Emoji de Asombro]",
+    "[Acción/Truco/Herramienta] + [Beneficio Directo] + [Emoji de Éxito/Sorpresa]",
+    "[Frase/Cita Famosa] + [Personaje] #shorts",
+    "[Concepto/Cifra Impactante] + [Impacto/Escándalo] + [Sujeto]",
+    "Negación/Advertencia de un Concepto Erróneo: Ej. 'Nunca le digas esta frase a tu muñeco...'"
   ],
   "palabras_prohibidas": [
-    "tutorial",
-    "guía",
-    "explicación",
-    "completo",
-    "paso a paso",
-    "aprende",
-    "introducción",
-    "cómo funciona",
-    "video",
-    "parte"
+    "No se pueden inferir palabras que 'matan el CTR' de una lista de videos ya virales, ya que por definición, estos títulos tuvieron un CTR exitoso."
   ],
   "palabras_clave_virales": [
+    "#shorts",
     "dinero",
     "IA",
-    "shorts",
     "viral",
-    "truco",
-    "invertir",
-    "negocios",
     "ahorrar",
-    "gratis",
-    "inteligencia artificial",
-    "scam",
+    "invertir",
+    "finanzas",
+    "negocios",
+    "truco",
     "comedia",
-    "épico",
-    "tierra",
-    "emprendedor"
+    "😱",
+    "🤯",
+    "💰",
+    "gratis",
+    "emprender"
   ],
-  "estructura_gancho_optima": "El gancho óptimo se inicia con una afirmación impactante, una pregunta intrigante, o la exposición de un evento dramático o humorístico en las primeras 1-3 palabras del título y/o los primeros 1-3 segundos del video. Frecuentemente, incluye un emoji relevante que refuerza la emoción o el tema central, generando curiosidad o una reacción emocional inmediata.",
+  "estructura_gancho_optima": "El gancho óptimo inicia con un impacto emocional fuerte, una pregunta personal directa o una afirmación sorprendente, siempre acompañado de un emoji relevante en el título. Este formato busca captar la atención en los primeros segundos, generando curiosidad, asombro, humor o identificación inmediata para fomentar la retención del espectador.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "La virabilidad en YouTube Shorts se dispara cuando el contenido, independientemente del nicho, logra invocar una fuerte respuesta emocional universal (curiosidad, asombro, humor, miedo, indignación) en los primeros segundos, superando la necesidad de un tema hiper-nicho y enfocándose en la reacción humana básica.",
-  "recomendacion_thumbnail": "El thumbnail debe ser una captura visual de un momento climático o emocionalmente cargado del video, mostrando rostros con expresiones extremas (sorpresa, risa, shock) o un objeto/situación visualmente impactante y misteriosa. Priorizar colores vibrantes y contrastes fuertes, con texto superpuesto mínimo y grande que refuerce la intriga sin revelar todo, o una flecha/círculo que dirija la atención.",
+  "insight_clave": "Los Shorts virales capitalizan en la entrega de un 'payout' emocional o la resolución de una intriga de forma casi instantánea. El uso estratégico y consistente de emojis en los títulos actúa como un potente comunicador visual, reforzando la emoción central o la promesa del contenido antes incluso de que el video se reproduzca, creando una conexión inmediata con el espectador y validando el clic.",
+  "recomendacion_thumbnail": "Miniaturas que muestran el momento más intenso, emocional o sorprendente del video (el 'payout' visual). Deben incluir un close-up de una cara con una expresión exagerada (sorpresa, risa, asombro) o un elemento visual impactante del contenido. Utilizar tipografía grande y legible, colores vibrantes y, crucialmente, replicar o complementar los emojis clave del título para crear una cohesión visual-emocional inmediata y maximizar el CTR.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Exageración/Humor Relatable con IA 🤣",
-        "Drama/Evento Extremo relacionado con IA 😟",
-        "Hecho Sorprendente/Descubrimiento sobre IA 🤯"
+        "Humor/Situación Relatable con IA/Tecnología + Emoji cómico",
+        "Evento Dramático/Impactante con IA + Emoji de shock/muerte",
+        "Hecho Sorprendente/Revelación de IA + Emoji de asombro/cohete"
       ],
       "topics": [
-        "Humor y situaciones cotidianas con IA",
-        "Noticias y avances impactantes de la IA",
-        "Misterios y teorías conspirativas sobre IA"
+        "Humor y exageraciones con IA",
+        "Impacto emocional y social de la IA",
+        "Curiosidades y hechos inesperados sobre IA"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Afirmación Impactante sobre Dinero/Inversiones 💸",
-        "Pregunta de Intriga/Dilema de Finanzas Personales 🤔",
-        "Drama/Evento Extremo en el ámbito financiero 🚨"
+        "Afirmación Impactante sobre Dinero/Riqueza + Emoji de dinero",
+        "Pregunta Personal/Dilema de Finanzas + Emoji de camino/incógnita",
+        "Desafío a Creencias Comunes de Ahorro/Inversión + Emoji de gráfica/dinero"
       ],
       "topics": [
-        "Dinero fácil o secretos financieros",
-        "Ahorro e inversión (errores, consejos)",
-        "Emprendimiento y negocios (conceptos básicos)"
+        "Consejos de ahorro e inversión",
+        "Historias y mitos sobre el dinero (robo, generación)",
+        "Emprendimiento y decisiones de negocio"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Afirmación Controversial/Revelación de Negocios 🤯",
-        "Caso de Éxito/Estrategia Genial de Marketing 💡",
-        "Drama/Evento Extremo (Scam/Fraude) en Negocios 🚨"
+        "Estrategias de Negocio Inesperadas/Geniales + Emoji de genio/sonrisa",
+        "Logros Financieros Extremos/Sorprendentes + Emoji de dinero/interrogación",
+        "Dramatización de Fraudes/Problemas en Negocios + Emoji de shock/calavera"
       ],
       "topics": [
-        "Estrategias de Marketing Digital y empresarial",
-        "Trading y finanzas online (riesgos/oportunidades)",
-        "Ideas de Negocio y startups"
+        "Estrategias de marketing y negocio",
+        "Historias de éxito y fraude financiero",
+        "Ideas de negocio de baja inversión"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Humor/Contraste Inesperado (sin IA) 🍓",
-        "Inspiración/Citas Icónicas relacionadas con el éxito/dinero ✨",
-        "Drama/Evento Extremo de Estafas o Pérdidas 💸"
+        "Referencia a Personajes/Películas Famosas con Mensaje de Éxito/Poder + Emoji de héroe/éxito",
+        "Situaciones Dramáticas/Extremas Relacionadas con Dinero/Estafas + Emoji de shock/desaparición",
+        "Citas de Figuras Influyentes sobre Cripto/Finanzas + #shorts"
       ],
       "topics": [
-        "Criptomonedas (Bitcoin, el futuro)",
-        "Estafas y riesgos en inversiones",
-        "Reflexiones de vida y éxito (a menudo con referencias culturales)"
+        "Bitcoin y el mundo de las criptomonedas",
+        "Estafas y riesgos financieros",
+        "Motivación y éxito personal/financiero"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Truco/Hack con IA para un problema específico ✅",
-        "Herramienta 'definitiva' o 'mejor' de IA para una tarea 🚀",
-        "Uso de IA para crear algo (música, texto, presentaciones) 🎨"
+        "Truco/Hack con IA para Beneficio Concreto + Emoji de idea/check",
+        "Herramienta IA Específica con un 'Mejor' o 'Definitivo' + Beneficio",
+        "Demostración de Capacidad de IA para Tareas Comunes (Música, Texto, Tablas)"
       ],
       "topics": [
-        "Herramientas de IA para productividad",
-        "Hacks tecnológicos y de eficiencia con IA",
-        "IA para la creación de contenido (música, texto, imágenes)"
+        "Herramientas de IA para la productividad",
+        "Trucos y hacks con IA para tareas específicas",
+        "Casos de uso de ChatGPT y otras IAs generativas"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "La Impresora de Dinero 💸 #shorts",
-      "views": 124810160,
+      "views": 124810169,
       "id": "w483cRons3Q"
     },
     {
@@ -137,7 +128,7 @@
     },
     {
       "titulo": "ROBARON EL DINERO #shorts",
-      "views": 60122752,
+      "views": 60122771,
       "id": "SAfxWhvr-t8"
     },
     {
@@ -147,7 +138,7 @@
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 44586187,
+      "views": 44586438,
       "id": "QYxtNplarhA"
     },
     {
@@ -157,12 +148,12 @@
     },
     {
       "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42150254,
+      "views": 42150278,
       "id": "IKXiyApvKjI"
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 31174224,
+      "views": 31174804,
       "id": "59AAoa8l064"
     },
     {
@@ -171,13 +162,13 @@
       "id": "HwpwN5bQ4t4"
     },
     {
-      "titulo": "Wow 😮🚀 #shorts #viral #trending #veo3 #ia #inteligenciaartificial",
-      "views": 14295722,
-      "id": "3wgEWelGlsk"
+      "titulo": "A.I. is getting Savage 💀🤯 | Kuldeep Singhaniaa #shorts",
+      "views": 17818202,
+      "id": "LC7J_JOMrsg"
     },
     {
       "titulo": "3 LOW INVESTMENT HIGHLY PROFITABLE STARTUP IDEAS! | Ankur Warikoo #shorts",
-      "views": 11136182,
+      "views": 11136230,
       "id": "3uwET64rjGE"
     },
     {
