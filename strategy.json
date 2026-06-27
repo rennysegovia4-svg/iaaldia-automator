@@ -1,35 +1,33 @@
 {
   "updated": "2026-06-27",
-  "iteracion": 44,
+  "iteracion": 45,
   "niche_weights": {
-    "ia_noticias": 0.3,
-    "finanzas": 0.2,
-    "negocios_digitales": 0.2,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.15
+    "ia_noticias": 0.8,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05
   },
   "best_hooks": [
-    "Fórmula 1 (Curiosidad por Revelación): 'Lo que nadie te explica/dice sobre X' (Ej: 'Bitcoin 2026: lo que nadie te explica ₿' con 34 vistas).",
-    "Fórmula 2 (Noticia Filtrada + Dilema Moral/Impacto): '¡FILTRADO! X: ¿INJUSTICIA/IMPACTO?' (Ej: '¡FILTRADO! Goleadores Mundial 2026: ¿INJUSTICIA? 🤯' con 28 vistas).",
-    "Fórmula 3 (Impacto Directo de IA en Entidades o Trabajo): 'IA: ¡Su X ya NO ES el mismo! / ¡IA que te QUITA el TRABAJO!' (Ej: 'Google IA: ¡Su Buscador ya NO ES el mismo! 🤯' con 25 vistas).",
-    "Fórmula 4 (Beneficio Personal + Geografía): 'Gané $X con IA sin Y (LATAM)' (Ej: 'Gané $8,000 con IA sin programar (LATAM) 💰' con 21 vistas).",
-    "Fórmula 5 (Predicción Futura con Año Específico): 'X [Año]: cómo ganar/qué pasará [con emoción/intriga]' (Ej: 'IA 2026: cómo ganar dinero con inteligencia 🤖' con 33 vistas).",
-    "Fórmula 6 (Crisis/Desplome por IA + Pregunta Impactante): 'X desplome: ¿Sentenciado por la IA? 😱' (Ej: 'BITCOIN desplome: ¿Sentenciado por la IA? 😱' con 29 vistas)."
+    "Gancho de Predicción/Futuro con Año Específico (ej. '2026')",
+    "Gancho de Comparación Crítica Reveladora (ej. 'vs. ¡La VERDADERA diferencia que nadie te dice! 🤯')",
+    "Gancho de Alerta/Impacto Negativo de IA (ej. 'desplome: ¿Sentenciado por la IA? 😱', '¡IA que te QUITA el TRABAJO! 😱')",
+    "Gancho de Noticia Exclusiva/Cambio Drástico (ej. '¡FILTRADO!', 'ya NO ES el mismo! 🤯', 'El buscador cambió. 🤯')",
+    "Gancho de Oportunidad de Ganancia con IA (ej. 'cómo ganar dinero con inteligencia 🤖', 'Gané $8,000 con IA')",
+    "Gancho de Simulación/Evento Viral con Gran Impacto Emocional (ej. 'MÉXICO CAMPEÓN 🏆 MUNDIAL 2026: ¡SIMULACIÓN VIRAL!', '¿INJUSTICIA? 🤯')"
   ],
   "avoid_hooks": [
-    "Patrón 1 (Temas demasiado nicho/específicos sin conexión IA clara): Ejemplos como 'PARTIDO COLOMBIA SÁBADO' o 'WIMBLEDON' que obtuvieron 0 vistas.",
-    "Patrón 2 (Mensajes genéricos de autoayuda/motivación): 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱' que obtuvo 0 vistas.",
-    "Patrón 3 (Noticias técnicas para un público limitado): 'Zapier acaba de ANULAR el código. CAMBIA TODO. 🤯' que obtuvo 0 vistas."
+    "Títulos sobre deportes o eventos muy específicos y no relacionados con IA.",
+    "Títulos genéricos de autoayuda o motivación sin vínculo directo con IA.",
+    "Títulos con jerga técnica o menciones de herramientas/versiones de IA de nicho."
   ],
   "best_hora": 9,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', ya que es el único que muestra interacción positiva, utilizando los ganchos probados para curiosidad, revelación y el impacto futuro de la IA.",
-    "Desarrollar y probar activamente el contenido en los nichos 'productividad_ia' y 'cripto_inversiones', ya que están alineados con la temática de IA y podrían generar engagement si se aplican ganchos efectivos similares a los exitosos en 'ia_noticias'.",
-    "Experimentar con la publicación en franjas horarias de alta audiencia, especialmente alrededor de las 9 AM y entre las 18 y 22 PM, que han mostrado ser las más efectivas en la muestra actual, aunque con datos limitados.",
-    "Revisar y eliminar, o reformular drásticamente, el contenido que se aleja de la temática central de IA o que utiliza ganchos genéricos/técnicos, ya que consistentemente resulta en 0 vistas.",
-    "Dado que no se dispone de datos sobre la duración óptima de los Shorts, se recomienda mantener los videos entre 45 y 58 segundos, siguiendo las mejores prácticas generales de YouTube Shorts, mientras se recogen datos específicos del canal."
+    "Concentrar la producción de contenido en el nicho de 'ia_noticias', ya que es el único que genera vistas significativas (promedio de 7 vistas) y todos los videos del TOP 10 pertenecen a este, a pesar de su tendencia a la baja.",
+    "Continuar explorando la combinación de la IA con temas de alta visibilidad y proyección futura (ej. '2026', 'Mundial', 'Bitcoin', 'Google'), destacando el impacto de la IA en estos, lo cual ha generado las mayores vistas (35, 33, 28, 25 vistas).",
+    "Evitar temas desligados de la IA (ej. deportes genéricos, autoayuda) o contenido excesivamente técnico o específico de herramientas de IA (ej. 'Zapier', 'GPT-5.6') que no capturan el interés de la audiencia general, ya que consistentemente obtienen 0 vistas. No hay datos sobre la duración óptima de los videos; se recomienda comenzar a recopilar esta métrica para futuras iteraciones."
   ],
   "nivel_confianza": 0.7,
-  "insight_semana": "La clave para generar engagement, incluso con bajos volúmenes de vistas, radica en la explotación consistente de la curiosidad y el impacto futuro de la IA a través de ganchos que prometen revelaciones, predicciones, o amenazas directas, mientras que el contenido fuera de esta temática central consistentemente fracasa."
+  "insight_semana": "El engagement está totalmente anclado en la intersección de la IA con temas de gran impacto futuro, financiero o social, evidenciando que la audiencia busca contenido de IA que sea relevante y genere intriga sobre su porvenir o afectación directa. La ausencia de este anclaje resulta en 0 vistas."
 }
