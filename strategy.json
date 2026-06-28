@@ -1,22 +1,35 @@
 {
   "updated": "2026-06-28",
-  "iteracion": 52,
+  "iteracion": 53,
   "niche_weights": {
-    "ia_noticias": 0.9,
-    "finanzas": 0.025,
-    "negocios_digitales": 0.025,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.025
+    "ia_noticias": 0.7,
+    "finanzas": 0.075,
+    "negocios_digitales": 0.075,
+    "productividad_ia": 0.075,
+    "cripto_inversiones": 0.075
   },
-  "best_hooks": [],
-  "avoid_hooks": [],
+  "best_hooks": [
+    "Exclamación + Noticia de IA Impactante + Consecuencia/Riesgo (ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱')",
+    "Afirmación Audaz/Mito + Pregunta de Validación + Emoción (ej. 'MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯')",
+    "Urgencia + Noticia Reciente + Duda/Polémica (ej. '¡URGENTE! CUADRO MUNDIAL 2026: ¿FALSO? 🤯')",
+    "Predicción Impactante (IA) + Evento Masivo + Prueba Social (ej. 'MUNDIAL 2026: ¡México GANA en SIMULACIÓN VIRAL! 😱')",
+    "Tema Complejo/Controvertido + Revelación Exclusiva (ej. 'Bitcoin 2026: lo que nadie te explica ₿')",
+    "Comparación + Promesa de Verdad no Contada (ej. 'Claude vs ChatGPT: ¡La VERDADERA diferencia que nadie te dice! 🤯')"
+  ],
+  "avoid_hooks": [
+    "Títulos demasiado genéricos o de autoayuda (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos enfocados en herramientas de IA muy específicas sin un ángulo noticioso o de impacto general (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')",
+    "Títulos sobre eventos o temas muy localizados o de nicho, o preguntas sobre IA que no implican una predicción o controversia masiva (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡', 'IA Global: ¿EE.UU. tiene el control? 🌐')"
+  ],
   "best_hora": 15,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho 'ia_noticias', priorizando la vinculación de noticias de IA con eventos masivos y de alta actualidad (ej. F1, Mundial de Fútbol, Bitcoin) para replicar el éxito del video de 258 vistas.",
-    "Establecer la publicación de videos entre las 14:00 y las 15:00 horas (2 PM - 3 PM) como horario óptimo, aprovechando el pico de audiencia que generó el video más visto (258 vistas a las 15:00).",
-    "Utilizar títulos que incorporen elementos de sorpresa, urgencia o exclusividad (\"😱\", \"🤯\", \"¡URGENTE!\", \"¿VERDAD?\") para maximizar el engagement y el click-through, como se observa en los videos de mayor rendimiento."
+    "Priorizar el contenido dentro del nicho 'ia_noticias', especialmente aquellos que combinan la IA con predicciones, controversias o eventos de alto perfil como deportes (ej. el éxito del video de F1 con 258 vistas).",
+    "Implementar activamente las seis fórmulas de ganchos identificadas en los títulos de los videos más vistos, centrándose en la emoción, la urgencia y la promesa de revelación.",
+    "Programar las publicaciones consistentemente entre las 14:00 y las 15:00 horas, dado que el video más exitoso se publicó a las 15:00 y esta franja horaria tuvo un alto promedio de vistas (67.5 vistas a las 14:00).",
+    "Evitar títulos que sean excesivamente genéricos, de autoayuda o que se centren en herramientas de nicho, ya que estos demostraron un rendimiento muy bajo o nulo.",
+    "Comenzar a recopilar datos sobre la duración de los videos para identificar la 'duracion_optima' en futuras iteraciones, ya que actualmente no hay información disponible para esta métrica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias de IA con la cobertura de eventos de interés masivo (ej. F1, Mundial) dentro del nicho 'ia_noticias' ha demostrado ser la estrategia más efectiva, generando un video con 258 vistas y dominando el Top 10."
+  "insight_semana": "La fusión inesperada de 'IA_noticias' con eventos de alta popularidad global (como la F1 o el Mundial de fútbol) tiene un potencial de viralización masivo, generando picos de audiencia que superan significativamente el rendimiento promedio del canal."
 }
