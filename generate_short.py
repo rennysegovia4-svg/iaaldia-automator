@@ -37,20 +37,20 @@ _suffix        = f"_{LANG_CODE}" if LANG_CODE != "es" else ""
 CLIENT_SECRETS = BASE_DIR / f"client_secrets{_suffix}.json"
 TOKEN_FILE     = BASE_DIR / f"token{_suffix}.json"
 # Asegurar que token.json esté disponible, decodificándolo desde un secreto de GitHub si no existe
-    if not TOKEN_FILE.exists():
-        env_var_name = f"YOUTUBE_TOKEN_BASE64{'_EN' if LANG_CODE == 'en' else ''}"
-        if env_var_name in os.environ:
-            print(f"Decodificando {env_var_name} a {TOKEN_FILE.name}...")
-            try:
-                decoded_token = base64.b64decode(os.environ[env_var_name]).decode('utf-8')
-                TOKEN_FILE.write_text(decoded_token)
-                print(f"{TOKEN_FILE.name} creado exitosamente.")
-            except Exception as e:
-                print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
-                sys.exit(1)
-        else:
-            print(f"Error: {TOKEN_FILE.name} no encontrado y la variable de entorno {env_var_name} no está configurada.", file=sys.stderr)
+if not TOKEN_FILE.exists():
+    env_var_name = f"YOUTUBE_TOKEN_BASE64{'_EN' if LANG_CODE == 'en' else ''}"
+    if env_var_name in os.environ:
+        print(f"Decodificando {env_var_name} a {TOKEN_FILE.name}...")
+        try:
+            decoded_token = base64.b64decode(os.environ[env_var_name]).decode('utf-8')
+            TOKEN_FILE.write_text(decoded_token)
+            print(f"{TOKEN_FILE.name} creado exitosamente.")
+        except Exception as e:
+            print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
             sys.exit(1)
+    else:
+        print(f"Error: {TOKEN_FILE.name} no encontrado y la variable de entorno {env_var_name} no está configurada.", file=sys.stderr)
+        sys.exit(1)
 
 CREDITS_FILE   = BASE_DIR / "credits.json"
 SCOPES         = ["https://www.googleapis.com/auth/youtube"]
