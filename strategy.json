@@ -1,35 +1,34 @@
 {
-  "updated": "2026-06-28",
-  "iteracion": 53,
+  "updated": "2026-06-29",
+  "iteracion": 54,
   "niche_weights": {
-    "ia_noticias": 0.7,
-    "finanzas": 0.075,
-    "negocios_digitales": 0.075,
-    "productividad_ia": 0.075,
-    "cripto_inversiones": 0.075
+    "ia_noticias": 0.75,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "productividad": 0.05
   },
   "best_hooks": [
-    "Exclamación + Noticia de IA Impactante + Consecuencia/Riesgo (ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱')",
-    "Afirmación Audaz/Mito + Pregunta de Validación + Emoción (ej. 'MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯')",
-    "Urgencia + Noticia Reciente + Duda/Polémica (ej. '¡URGENTE! CUADRO MUNDIAL 2026: ¿FALSO? 🤯')",
-    "Predicción Impactante (IA) + Evento Masivo + Prueba Social (ej. 'MUNDIAL 2026: ¡México GANA en SIMULACIÓN VIRAL! 😱')",
-    "Tema Complejo/Controvertido + Revelación Exclusiva (ej. 'Bitcoin 2026: lo que nadie te explica ₿')",
-    "Comparación + Promesa de Verdad no Contada (ej. 'Claude vs ChatGPT: ¡La VERDADERA diferencia que nadie te dice! 🤯')"
+    "Urgencia + Pregunta/Exclamación + Evento Global + Emoticono (ej. F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
+    "Afirmación Shockeante/Controversial + Pregunta de Duda + Figura/Evento Relevante + Emojis (ej. MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯)",
+    "Revelación Exclusiva / 'Nadie te dice' + Tema de Alto Interés + Misterio/Duda (ej. Bitcoin 2026: lo que nadie te explica ₿)",
+    "Noticia Alarmante (Riesgo/Desplome/Freno) + IA/Crypto + Emoticono (ej. ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
+    "Predicción/Simulación Sorprendente (de evento grande) + Impacto + Prueba Social ('VIRAL') + Emoticono (ej. MUNDIAL 2026: ¡México GANA en SIMULACIÓN VIRAL! 😱)",
+    "Beneficio Directo (Cómo ganar dinero/ahorrar tiempo) + IA + Futuro (Año específico) + Emoticono (ej. IA 2026: cómo ganar dinero con inteligencia 🤖)"
   ],
   "avoid_hooks": [
-    "Títulos demasiado genéricos o de autoayuda (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos enfocados en herramientas de IA muy específicas sin un ángulo noticioso o de impacto general (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')",
-    "Títulos sobre eventos o temas muy localizados o de nicho, o preguntas sobre IA que no implican una predicción o controversia masiva (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡', 'IA Global: ¿EE.UU. tiene el control? 🌐')"
+    "Títulos genéricos de autoayuda/motivación sin relación a los nichos de alto rendimiento (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA 😱)",
+    "Noticias deportivas hiper-locales o con alcance limitado que carecen de la magnitud global (ej. PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)",
+    "Temas de IA o Finanzas muy específicos de herramientas, o preguntas demasiado abstractas sin un elemento de urgencia o novedad (ej. Zapier: IA ahorra 3 horas diarias 🤖, IA Global: ¿EE.UU. tiene el control? 🌐)"
   ],
   "best_hora": 15,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar el contenido dentro del nicho 'ia_noticias', especialmente aquellos que combinan la IA con predicciones, controversias o eventos de alto perfil como deportes (ej. el éxito del video de F1 con 258 vistas).",
-    "Implementar activamente las seis fórmulas de ganchos identificadas en los títulos de los videos más vistos, centrándose en la emoción, la urgencia y la promesa de revelación.",
-    "Programar las publicaciones consistentemente entre las 14:00 y las 15:00 horas, dado que el video más exitoso se publicó a las 15:00 y esta franja horaria tuvo un alto promedio de vistas (67.5 vistas a las 14:00).",
-    "Evitar títulos que sean excesivamente genéricos, de autoayuda o que se centren en herramientas de nicho, ya que estos demostraron un rendimiento muy bajo o nulo.",
-    "Comenzar a recopilar datos sobre la duración de los videos para identificar la 'duracion_optima' en futuras iteraciones, ya que actualmente no hay información disponible para esta métrica."
+    "Focalizarse en la sinergia 'IA_noticias + Eventos Masivos': Los videos que combinan noticias de IA con temas de gran alcance como F1 o el Mundial de fútbol (266, 78, 47, 45, 33 vistas) dominan los resultados. Priorizar la creación de contenido que explore estas interacciones, buscando la novedad y el impacto en audiencias amplias.",
+    "Diseñar títulos basados en Urgencia, Misterio y Preguntas Retóricas: Utilizar estructuras de título como '¡URGENTE! [Tema] ¿FALSO? 🤯', '[Afirmación impactante] ¿VERDAD? 😱🤯' o '[Tema]: lo que nadie te explica 🤫'. La inclusión de emojis relevantes (😱🤯🤖🏆₿) potencia la visibilidad, como se observa en los 10 videos con más vistas.",
+    "Establecer las 15:00 (3 PM) como horario principal de publicación: El video con mayor rendimiento se lanzó a esta hora (266 vistas), y el rango de 14:00-15:00 muestra el promedio más alto. Realizar pruebas A/B en esta franja y considerar publicaciones secundarias en las 4:00 AM para captar audiencias tempranas o internacionales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La fusión inesperada de 'IA_noticias' con eventos de alta popularidad global (como la F1 o el Mundial de fútbol) tiene un potencial de viralización masivo, generando picos de audiencia que superan significativamente el rendimiento promedio del canal."
+  "insight_semana": "La combinación de 'IA_noticias' con temas de deportes y eventos globales de alta relevancia (F1, Mundial de fútbol) tiene un potencial de viralización significativamente mayor, como se demostró con el video de F1 que obtuvo 266 vistas, superando al segundo video más visto por un 192% y validando este enfoque como clave."
 }
