@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-30",
-  "iteracion": 62,
+  "iteracion": 63,
   "niche_weights": {
     "ia_noticias": 0.3,
     "finanzas": 0.2,
@@ -9,26 +9,26 @@
     "cripto_inversiones": 0.15
   },
   "best_hooks": [
-    "Urgencia y Ubicación Geográfica en Eventos Globales: [EVENTO] HOY?! 😱 HORARIO EN [REGION] YA!",
-    "Noticia Shock de Grandes Entidades: ¡[EMOCIÓN]!: [ENTIDAD] [ACCIÓN IMPACTANTE] 😱",
-    "Tecnología/Evento con Riesgo Inminente: ¡[ACCIÓN FUERTE] [TECNOLOGÍA]! Acceso/Privacidad en RIESGO 😱",
-    "Pregunta Sorpresa sobre Afirmación Extrema: [PERSONAJE/SUJETO]: ¡[AFIRMACIÓN EXTRAORDINARIA]! ¿VERDAD? 😱🤯",
-    "Exclusividad/Secreto sobre Eventos/Estrategias: ¡[EVENTO/PERSONA] EXPLOTA/REVELA! NADIE te dijo ESTO/usa ESTO 🤯",
-    "Descreencia Extrema ante Dato/Resultado: [DATO/EVENTO]: ¡NO CREERÁS LO QUE PASA! 😱"
+    "PREGUNTA URGENTE + Emoticono 😱/🤯 + YA/HOY (ej. 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!')",
+    "¡CONMOCIÓN!/¡EXPLOTA!: Noticia impactante + Emoticono 😱/🤯 (ej. '¡CONMOCIÓN!: La IA FALLA 😱')",
+    "¡FRENAN!/RIESGO: Alerta sobre un evento crítico + Emoticono 😱/🤯 (ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱')",
+    "NADIE te dijo ESTO / La estrategia que NADIE usa! + Emoticono 🤯 (ej. '¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯')",
+    "Noticia de figura/evento viral: ¡NO CREERÁS LO QUE PASA! / ES TENDENCIA! + Emoticono 😱 (ej. 'MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯')",
+    "Situación crítica/privacidad MUERTA + Emoticono 🤯 (ej. 'CHATGPT en la CORTE: ¡Tu privacidad MUERTA! 🤯')"
   ],
   "avoid_hooks": [
-    "Temas genéricos o filosóficos sin urgencia ni noticia específica (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Noticias informativas/positivas de herramientas específicas sin sensacionalismo (ej. 'Zapier: IA ahorra 3 horas diarias')",
-    "Preguntas amplias o estadísticas poco dramáticas sobre temas abstractos (ej. 'IA: ¿El 13% YA LO USA y tú NO?' o 'IA Global: ¿EE.UU. tiene el control?')"
+    "Títulos genéricos de autoayuda o consejos que no se conectan a una noticia sensacionalista (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱').",
+    "Preguntas basadas en datos específicos o porcentajes que no generen intriga o alarma (ej. 'IA: ¿El 13% YA LO USA y tú NO? 🤯').",
+    "Títulos demasiado técnicos o centrados en herramientas de nicho (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')."
   ],
   "best_hora": 15,
-  "duracion_optima": 30,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Reducir la dependencia del nicho 'ia_noticias' diversificando activamente hacia 'finanzas', 'negocios_digitales', 'productividad_ia' y 'cripto_inversiones' con la ponderación asignada, dado el trend negativo de -1.0 en el nicho dominante.",
-    "Priorizar la creación de contenido con ganchos basados en la urgencia, eventos globales/noticias impactantes y un toque sensacionalista, siguiendo las fórmulas de 'best_hooks' inferidas de los títulos más exitosos.",
-    "Implementar un sistema de tracking para el rendimiento de los 'hooks' específicos (títulos) y comenzar a registrar la duración de los videos para identificar patrones de éxito y optimizar 'duracion_optima' en futuras iteraciones.",
-    "Aunque las 15:00 horas produjo el video de mayor impacto, se recomienda experimentar también con los horarios de 0:00, 14:00, 16:00 y 17:00, los cuales han demostrado tener videos en el Top 10 con un rendimiento sólido."
+    "Implementar una estrategia de diversificación agresiva, asignando un 70% del contenido a los nichos 'finanzas', 'negocios_digitales', 'productividad_ia' y 'cripto_inversiones' para mitigar la tendencia negativa del nicho 'ia_noticias'.",
+    "Priorizar ganchos que generen urgencia, shock o revelación de secretos, replicando los patrones de los videos del top 10 y evitando los enfoques genéricos o técnicos que resultaron en 0-3 vistas.",
+    "Maximizar la publicación de contenido altamente urgente y de eventos globales relevantes a las 15:00 horas, dada la explosiva performance del video con 269 vistas en ese horario.",
+    "Comenzar la recolección de datos sobre la duración de los videos y el CTR/retención de los diferentes tipos de ganchos para optimizar aún más el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de que el nicho 'ia_noticias' monopoliza el top 10 (100% de los videos) y ha producido el video más viral de esta iteración con 269 vistas, su `trend` de -1.0 es una señal crítica de fatiga de la audiencia y la necesidad urgente de diversificar el contenido hacia nichos no explorados previamente."
+  "insight_semana": "La dependencia exclusiva en 'ia_noticias', aunque sigue generando los picos más altos de vistas con ganchos sensacionalistas (100% del Top 10), es insostenible debido a su tendencia de rendimiento decreciente de -1.0, lo que exige una diversificación inmediata y enfocada en replicar la intensidad de los titulares en nuevos nichos."
 }
