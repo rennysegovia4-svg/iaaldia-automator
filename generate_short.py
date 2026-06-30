@@ -1248,9 +1248,18 @@ def _thumb_imagen4(title, output_path):
         import io as _io
         c     = genai.Client(api_key=GEMINI_API_KEY)
         clean = re.sub(r'[\U0001F000-\U0001FFFF]', '', title).strip()
+        topic_lower = clean.lower()
+        if any(w in topic_lower for w in ["mundial", "fútbol", "futbol", "messi", "ronaldo", "champions", "f1", "tenis", "wimbledon", "nba", "nfl", "deporte"]):
+            thumb_prompt = f"Professional YouTube Shorts thumbnail, dramatic stadium crowd background, bright stadium lights, intense action shot, vivid colors, cinematic, 16:9, photorealistic, no text. Topic: {clean[:60]}"
+        elif any(w in topic_lower for w in ["cripto", "bitcoin", "inversión", "dinero", "finanzas", "bolsa", "acciones"]):
+            thumb_prompt = f"Professional YouTube thumbnail, dramatic dark background, glowing gold coins and charts, person shocked expression, high contrast neon yellow, 16:9, photorealistic, no text. Topic: {clean[:60]}"
+        elif any(w in topic_lower for w in ["chatgpt", "ia", "gpt", "gemini", "claude", "openai", "inteligencia artificial", "robot"]):
+            thumb_prompt = f"Professional YouTube thumbnail, dramatic dark background, AI technology neon blue holographic interface, shocked human face, high contrast, 16:9, photorealistic, no text. Topic: {clean[:60]}"
+        else:
+            thumb_prompt = f"Professional YouTube thumbnail, dramatic cinematic background, person with shocked or amazed expression, high contrast vivid colors, 16:9, photorealistic, no text. Topic: {clean[:60]}"
         r = c.models.generate_images(
             model="imagen-4.0-fast-generate-001",
-            prompt="Professional YouTube thumbnail, dramatic dark background, AI technology neon blue glow, person shocked, high contrast, no text, 16:9, photorealistic",
+            prompt=thumb_prompt,
             config=gt.GenerateImagesConfig(number_of_images=1, aspect_ratio="16:9",
                                            safety_filter_level="BLOCK_LOW_AND_ABOVE")
         )
