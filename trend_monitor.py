@@ -49,8 +49,10 @@ NICHE_KEYWORDS = {
         "trump","milei","petro","sheinbaum","lula","xi jinping","putin",
     ],
     "entretenimiento": [
-        "bad bunny","shakira","j balvin","karol g","reggaeton","escándalo","viral",
+        "bad bunny","shakira","j balvin","karol g","reggaeton","escándalo","chisme",
         "famoso","netflix","serie","pelicula","oscar","grammy","taylor swift","drake",
+        "peso pluma","bizarrap","maluma","anuel","nicki nicole","rosalía","nathy peluso",
+        "farandula","celebridad","actor","cantante","reality","tiktok viral","trend",
     ],
     "negocios_digitales": [
         "amazon","apple","google","meta","microsoft","startup","unicornio","elon musk",

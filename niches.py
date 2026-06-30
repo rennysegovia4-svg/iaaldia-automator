@@ -228,11 +228,11 @@ TONO: Analítico pero accesible. Sin sesgo. Explica como si tu audiencia no sigu
     "entretenimiento": {
         "nombre": "Entretenimiento al Día",
         "rss_feeds": [
-            "https://www.infobae.com/feeds/rss/entretenimiento/",
-            "https://www.peopleenespanol.com/rss",
             "https://www.eonline.com/syndication/feeds/rssfeeds/espanol.xml",
-            "https://los40.com/los40/rss/portada.xml",
             "https://www.billboard.com/feed/",
+            "https://trends.google.com/trending/rss?geo=MX",
+            "https://trends.google.com/trending/rss?geo=AR",
+            "https://trends.google.com/trending/rss?geo=CO",
         ],
         "pexels_queries": [
             "celebrity red carpet portrait",
@@ -245,21 +245,22 @@ TONO: Analítico pero accesible. Sin sesgo. Explica como si tu audiencia no sigu
                  "pelea famosos","netflix serie","taylor swift","bad bunny noticias",
                  "farandula latam","reality show","actor noticias","viral shorts"],
         "hashtags": "#Shorts #Entretenimiento #Chismes #Celebrities #Farandula #Viral",
-        "prompt_nicho": """Eres el periodista de entretenimiento más viral de habla hispana.
-TEMA: Chismes de famosos, música viral, series y películas, peleas entre celebrities, reality shows.
-ENFOQUE: Lo que todo el mundo está hablando. Datos reales, declaraciones textuales, contexto del drama.
+        "prompt_nicho": """Eres el periodista de entretenimiento más viral de habla hispana, con un enfoque ÚNICO: usas IA para analizar, predecir y revelar lo que nadie más detectó.
+TEMA: Chismes de famosos, música viral, series, peleas entre celebrities, reality shows — SIEMPRE con el ángulo de qué detectó o predijo la IA.
+ENFOQUE: La IA como lente que revela lo oculto. No solo reportas el chisme — la IA lo analizó, lo predijo, o detectó algo que nadie más vio.
 GANCHO IDEAS:
-• "[Famoso] acaba de [declaración/acción impactante] y LATAM no puede creerlo"
-• "El drama entre [persona A] y [persona B]: lo que realmente pasó según fuentes"
-• "La canción de [artista] tiene este significado oculto que nadie vio"
-• "[Famoso] acaba de revelar algo que tenía en secreto por [N] años"
-TONO: Emocionante y dinámico como si fueras el primero en contarlo. Datos + drama + contexto.
+• "La IA analizó la letra de [artista] y encontró esto que nadie vio 😱"
+• "Gemini predijo el drama entre [A] y [B] hace [N] semanas. Tenía razón 🤯"
+• "La IA detectó que [famoso] eliminó [N] posts en [N] horas: esto significa algo 😱"
+• "[Famoso] reaccionó así cuando le mostraron lo que dijo la IA sobre él"
+ARTISTAS/CELEBRIDADES LATAM prioritarios: Shakira, Bad Bunny, Karol G, Peso Pluma, Bizarrap, Maluma, J Balvin, Rosalía, Anuel, Nicki Nicole.
+TONO: Urgente, como si acabaras de descubrir algo. La IA es tu fuente exclusiva que nadie más tiene.
 """,
         "fallback": {
-            "titulo": "El chisme de la semana que tiene a LATAM hablando 🎭",
-            "guion": "Hay un chisme que tiene a América Latina hablando esta semana y no para de crecer. Dos figuras del entretenimiento que se habían reconciliado públicamente están en crisis de nuevo. Esta vez la polémica explotó en una alfombra roja. Las cámaras captaron el momento exacto. Una mirada. Un gesto. Y las redes lo interpretaron todo. Más de 5 millones de vistas en 6 horas. Lo interesante es el contexto: hay contratos, marcas y proyectos compartidos que complican la situación. No es solo drama personal. Hay millones de dólares en juego. Sígueme para entretenimiento al día.",
-            "hook_texto": "El chisme que tiene a LATAM sin dormir",
-            "descripcion": "Entretenimiento y chismes con datos reales para América Latina. #Shorts #Chismes #Entretenimiento",
+            "titulo": "La IA detectó esto en la canción de Bad Bunny 🤯",
+            "guion": "Pasé la última canción de Bad Bunny por análisis de inteligencia artificial y lo que encontró nadie lo esperaba. La IA detectó 3 referencias ocultas que pasan desapercibidas al oído humano. Una de ellas apunta directamente a alguien del círculo cercano del artista. Hay una frecuencia en la producción que se repite exactamente en su canción más polémica de 2024. ¿Coincidencia o mensaje? Las redes ya están hablando. Más de 2 millones de reproducciones en 6 horas. El equipo del artista no ha comentado nada todavía. Sígueme para entretenimiento con IA al día.",
+            "hook_texto": "La IA encontró esto en la canción",
+            "descripcion": "IA analiza el entretenimiento y chismes de LATAM con datos reales. #Shorts #Chismes #IA #Entretenimiento #BadBunny",
         },
     },
 
