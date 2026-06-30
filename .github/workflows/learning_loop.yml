@@ -54,9 +54,9 @@ jobs:
         run: |
           git config user.name  "IA al Día Bot"
           git config user.email "bot@iaaldia.ai"
-          git pull --rebase origin main || true
           git add memory.json strategy.json viral_patterns.json watchdog_log.json 2>/dev/null || true
           git diff --cached --quiet && echo "Sin cambios" && exit 0
           ITER=$(python3 -c "import json; print(json.load(open('memory.json')).get('iteracion',0))" 2>/dev/null || echo "?")
           git commit -m "chore: learning loop iter $ITER"
+          git pull --rebase origin main || (git rebase --abort; echo "rebase falló, reintentando merge"; git pull --no-rebase origin main)
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
