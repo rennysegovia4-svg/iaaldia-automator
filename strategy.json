@@ -1,6 +1,6 @@
 {
   "updated": "2026-06-30",
-  "iteracion": 64,
+  "iteracion": 65,
   "niche_weights": {
     "deportes": 0.3,
     "ia_noticias": 0.2,
@@ -12,26 +12,26 @@
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia Extrema + Evento Global + Geo-especificidad + Emoción: Ej. 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!'",
-    "Revelación Chocante + Sujeto Específico (IA/Empresa) + Consecuencia Inesperada + Emoción: Ej. '¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱'",
-    "Noticia de Ruptura + Tecnología/Evento Clave + Riesgo/Amenaza + Emoción: Ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱'",
-    "Cambio Drástico + Entidades de Alto Perfil + Contraste Humano/Tecnológico + Emoción: Ej. 'Google CAMBIA todo. ¡Ford REGRESA a lo HUMANO! 😱'",
-    "Figura Pública/Evento Deportivo + Afirmación Sorprendente + Pregunta de Verificación + Emoción: Ej. 'MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯'",
-    "Exclusiva Sensacionalista + Evento Importante/Figura Autoritaria + Desafío a la Creencia Común + Emoción: Ej. '¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯'"
+    "Urgencia + Evento Actual + Especificidad (ej. hora/lugar): 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!'",
+    "Controversia/Fallo Inesperado de Tecnología (IA): '¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱'",
+    "Impacto Futuro/Riesgo + Tecnología (IA) + Consecuencia Negativa: '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱'",
+    "Gran Noticia/Cambio Radical + Reversión/Sorpresa: 'Google CAMBIA todo. ¡Ford REGRESA a lo HUMANO! 😱'",
+    "Pregunta Sensacionalista/Afirmación Extrema + Figura Conocida: 'MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯'",
+    "Revelación Exclusiva/Información Oculta + Evento/Persona: '¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯'"
   ],
   "avoid_hooks": [
-    "Genéricos o de autoayuda sin especificidad, novedad o un anclaje noticioso claro: Ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱'",
-    "Preguntas amplias o conceptuales sobre temas complejos sin un ángulo de urgencia o impacto directo: Ej. 'IA Global: ¿EE.UU. tiene el control? 🌐'",
-    "Beneficios de herramientas o métodos específicos sin un ángulo noticioso, sensacionalista o de alto drama: Ej. 'Zapier: IA ahorra 3 horas diarias 🤖', 'Gana $60,000 online: Método She Sells en LATAM 🤑'"
+    "Ganchos motivacionales o de autoayuda genéricos sin noticias ni urgencia: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱'",
+    "Preguntas abstractas sobre IA o geopolítica sin un evento o revelación específica: 'IA Global: ¿EE.UU. tiene el control? 🌐'",
+    "Títulos que promueven herramientas específicas o métodos para ganar dinero sin un ángulo noticioso o sensacionalista: 'Zapier: IA ahorra 3 horas diarias 🤖', 'Gana $60,000 online: Método She Sells en LATAM 🤑'"
   ],
   "best_hora": 15,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Diversificar activamente la creación de contenido hacia el nicho de 'deportes', asignándole un 30% del peso, capitalizando el éxito de videos como el de F1 (269 vistas), Messi y Wimbledon, que dominan el top 10.",
-    "Mantener un 20% del peso en 'ia_noticias' para seguir generando picos de vistas, pero enfocándose en ángulos de noticias 'breaking' o revelaciones impactantes, especialmente si involucran grandes empresas o figuras.",
-    "Priorizar la publicación a las 15:00 horas, ya que el video de mayor rendimiento se publicó en este horario, y considerar el rango de 14:00-17:00 como ventanas óptimas de oportunidad.",
-    "Dado que no se dispone de datos sobre la duración óptima de los videos, se recomienda comenzar con videos entre 45-58 segundos y monitorear la retención para afinar este parámetro en futuras iteraciones."
+    "Priorizar el contenido de 'deportes' con ganchos de alta urgencia, enfocándose en eventos globales con especificidad geográfica (ej. 'HORARIO EN LATAM'), siguiendo el patrón del video más visto (269 vistas).",
+    "Diversificar activamente fuera de 'ia_noticias' para mitigar la tendencia negativa de rendimiento (-0.75), explorando nichos adyacentes como 'finanzas' y 'entretenimiento' que aún no tienen datos pero tienen alto potencial.",
+    "Mantener el uso de elementos sensacionalistas en los títulos, incluyendo exclamaciones y emojis como 😱 y 🤯, que son consistentes en el Top 10 para maximizar la curiosidad y el CTR.",
+    "Evitar categóricamente títulos genéricos de autoayuda, preguntas abstractas sin relevancia inmediata o promoción directa de herramientas/métodos sin un ángulo noticioso, ya que han demostrado vistas entre 0 y 3."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La sobresaturación en 'ia_noticias' general está reduciendo su impacto promedio, pero los temas de *deportes con alta urgencia y relevancia global*, enmarcado con ganchos noticiosos y específicos (F1, Messi, Wimbledon), son la fuente de mayor viralidad (269 vistas) y deben ser explorados como nicho principal."
+  "insight_semana": "La sobresaturación del nicho 'ia_noticias', a pesar de su dominio en el Top 10, y el éxito explosivo del video de F1, señalan la urgencia de diversificar hacia contenido de 'deportes' con ganchos de alta inmediatez y relevancia local para maximizar el engagement."
 }
