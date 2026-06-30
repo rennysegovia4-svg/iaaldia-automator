@@ -1,33 +1,34 @@
 {
   "updated": "2026-06-30",
-  "iteracion": 61,
+  "iteracion": 62,
   "niche_weights": {
-    "ia_noticias": 0.5,
-    "finanzas": 0.125,
-    "negocios_digitales": 0.125,
-    "productividad_ia": 0.125,
-    "cripto_inversiones": 0.125
+    "ia_noticias": 0.3,
+    "finanzas": 0.2,
+    "negocios_digitales": 0.2,
+    "productividad_ia": 0.15,
+    "cripto_inversiones": 0.15
   },
   "best_hooks": [
-    "¡URGENTE! [Tema de Interés Global] [Algo inesperado] ¡YA! 😱",
-    "¡CONMOCIÓN! [Entidad Específica] [Acción sorprendente] y [Consecuencia clave] 😱",
-    "[Figura/Evento Mayor]: ¡[Afirmación impactante]! ¿VERDAD? 🤯",
-    "[Tecnología/Evento Específico]: [RIESGO/Impacto Negativo] ¡Tu [Algo valioso] MUERTA! 🤯",
-    "¡[Evento Masivo] EXPLOTA! NADIE te dijo ESTO 🤯",
-    "[Tema Candente] HOY: [Novedad específica] en [Región/Contexto] 😱"
+    "Urgencia y Ubicación Geográfica en Eventos Globales: [EVENTO] HOY?! 😱 HORARIO EN [REGION] YA!",
+    "Noticia Shock de Grandes Entidades: ¡[EMOCIÓN]!: [ENTIDAD] [ACCIÓN IMPACTANTE] 😱",
+    "Tecnología/Evento con Riesgo Inminente: ¡[ACCIÓN FUERTE] [TECNOLOGÍA]! Acceso/Privacidad en RIESGO 😱",
+    "Pregunta Sorpresa sobre Afirmación Extrema: [PERSONAJE/SUJETO]: ¡[AFIRMACIÓN EXTRAORDINARIA]! ¿VERDAD? 😱🤯",
+    "Exclusividad/Secreto sobre Eventos/Estrategias: ¡[EVENTO/PERSONA] EXPLOTA/REVELA! NADIE te dijo ESTO/usa ESTO 🤯",
+    "Descreencia Extrema ante Dato/Resultado: [DATO/EVENTO]: ¡NO CREERÁS LO QUE PASA! 😱"
   ],
   "avoid_hooks": [
-    "Frases genéricas de autoayuda o motivación sin un contexto noticioso o específico.",
-    "Preguntas amplias sobre tecnología o geopolítica sin un componente de urgencia o impacto personal claro.",
-    "Titulares excesivamente técnicos o que describen una funcionalidad sin generar asombro o controversia."
+    "Temas genéricos o filosóficos sin urgencia ni noticia específica (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Noticias informativas/positivas de herramientas específicas sin sensacionalismo (ej. 'Zapier: IA ahorra 3 horas diarias')",
+    "Preguntas amplias o estadísticas poco dramáticas sobre temas abstractos (ej. 'IA: ¿El 13% YA LO USA y tú NO?' o 'IA Global: ¿EE.UU. tiene el control?')"
   ],
   "best_hora": 15,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 30,
   "recomendaciones": [
-    "Maximizar el uso de ganchos con 'urgencia', 'sorpresa' y emojis de impacto (`😱`, `🤯`) en los títulos, dado que estos elementos dominan el top 10.",
-    "Priorizar temas que involucren entidades y eventos de alto perfil global o tecnológico (como F1, Messi, Google, GPT-5.6), asociándolos con noticias inesperadas o controversiales.",
-    "Diversificar activamente la publicación en nichos con 0 vistas (`finanzas`, `negocios_digitales`, `cripto_inversiones`, `productividad_ia`) utilizando los patrones de gancho exitosos para comenzar a recolectar datos y evaluar su potencial."
+    "Reducir la dependencia del nicho 'ia_noticias' diversificando activamente hacia 'finanzas', 'negocios_digitales', 'productividad_ia' y 'cripto_inversiones' con la ponderación asignada, dado el trend negativo de -1.0 en el nicho dominante.",
+    "Priorizar la creación de contenido con ganchos basados en la urgencia, eventos globales/noticias impactantes y un toque sensacionalista, siguiendo las fórmulas de 'best_hooks' inferidas de los títulos más exitosos.",
+    "Implementar un sistema de tracking para el rendimiento de los 'hooks' específicos (títulos) y comenzar a registrar la duración de los videos para identificar patrones de éxito y optimizar 'duracion_optima' en futuras iteraciones.",
+    "Aunque las 15:00 horas produjo el video de mayor impacto, se recomienda experimentar también con los horarios de 0:00, 14:00, 16:00 y 17:00, los cuales han demostrado tener videos en el Top 10 con un rendimiento sólido."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito viral no proviene únicamente de la categoría 'ia_noticias', sino de la *intersección entre la urgencia extrema de la información (Ej: 'F1 CLASIFICACIÓN HOY?!') y la relevancia masiva de un evento o figura global*, lo que permite picos de vistas significativos que superan ampliamente al contenido 'típico' del nicho."
+  "insight_semana": "A pesar de que el nicho 'ia_noticias' monopoliza el top 10 (100% de los videos) y ha producido el video más viral de esta iteración con 269 vistas, su `trend` de -1.0 es una señal crítica de fatiga de la audiencia y la necesidad urgente de diversificar el contenido hacia nichos no explorados previamente."
 }
