@@ -694,7 +694,7 @@ def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente"
     if _gemini_tts(text, path):
         _polish_audio(path); return True
 
-    # Capa 3: Edge-TTS con voz de la persona (3 intentos)
+    # Capa 3: Edge-TTS con voz de la persona (3 intentos, espera creciente)
     for attempt in range(3):
         try:
             asyncio.run(_edge_tts_async(text, path, persona_key))
@@ -704,7 +704,7 @@ def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente"
                 _polish_audio(path); return False
         except Exception as e:
             print(f"      Edge-TTS intento {attempt+1}: {str(e)[:55]}")
-            if attempt < 2: time.sleep(4)
+            if attempt < 2: time.sleep(8 * (attempt + 1))  # 8s, 16s entre intentos
 
     # Capa 4: gTTS como último recurso absoluto
     try:
@@ -716,16 +716,8 @@ def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente"
     except Exception as e:
         print(f"      gTTS: {str(e)[:55]}")
 
-    # Fallback nuclear: tono de audio para que el video no falle
-    print("      ⚠️  TODOS LOS TTS FALLARON — audio de emergencia")
-    word_count  = len(text.split())
-    est_dur     = max(30, int(word_count / 2.6))
-    subprocess.run([
-        FFMPEG, "-y", "-f", "lavfi",
-        "-i", f"aevalsrc=0.0*sin(440*2*PI*t):s=44100",
-        "-t", str(est_dur), "-c:a", "libmp3lame", "-b:a", "128k", path
-    ], capture_output=True)
-    return False
+    # Todos los TTS fallaron — no publicar video sin audio
+    raise RuntimeError("TODOS LOS TTS FALLARON — abortando para no publicar video mudo")
 
 
 # ── Paso 4: Presentador Pexels — multi-clip xfade (stable-diffusion-videos) ───
