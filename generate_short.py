@@ -340,7 +340,7 @@ RESPONDE JSON sin markdown:
   "pregunta_comentarios": "Pregunta provocadora sobre {viral_topic} para fijar como comentario",
   "tags": ["viral","tendencias latam","shorts","noticias hoy","{viral_topic[:30]}","trending"],
   "guion": "guión 145-175 palabras en modo breaking news — urgente, con datos, termina con pregunta",
-  "hook_texto": "primeras 6-8 palabras exactas del guión"
+  "hook_texto": "primeras 5-6 palabras del guión — máx 25 caracteres en total"
 }}"""
 
     response = None
@@ -511,7 +511,7 @@ RESPONDE JSON sin markdown:
   "pregunta_comentarios": "Una sola pregunta provocadora para el primer comentario fijado",
   "tags": {niche_tags},
   "guion": "guión completo 145-175 palabras, CON PERSONALIDAD, termina con pregunta al espectador",
-  "hook_texto": "primeras 6-8 palabras exactas del guión"
+  "hook_texto": "primeras 5-6 palabras del guión — máx 25 caracteres en total"
 }}"""
 
     used_pro = False
@@ -1124,7 +1124,19 @@ def assemble(presenter_vid, audio_path, music_path,
                          ("¿",""),("¡",""),("\n"," "),
                          ("á","a"),("é","e"),("í","i"),("ó","o"),("ú","u"),("ñ","n")]:
             t = t.replace(old, new)
-        return t[:44]
+        return t.strip()
+
+    def _wrap_hook(text, max_per_line=22):
+        """Divide el hook en 2 líneas si es muy largo para que no se corte."""
+        text = text[:52]  # límite absoluto
+        if len(text) <= max_per_line:
+            return text, 1
+        mid = len(text) // 2
+        for offset in range(mid):
+            for pos in [mid - offset, mid + offset]:
+                if 0 < pos < len(text) - 1 and text[pos] == ' ':
+                    return text[:pos] + '\\n' + text[pos+1:], 2
+        return text[:max_per_line], 1
 
     # [PaddleGAN] Cinematic grade: curvas para sombras frías + luces cálidas
     vf_grade = (
@@ -1141,11 +1153,14 @@ def assemble(presenter_vid, audio_path, music_path,
         "drawbox=x=0:y=1560:w=1080:h=360:color=black@0.60:t=fill",
     ]
     if hook_text:
-        h = sf(hook_text)
+        h_raw = sf(hook_text)
+        h, n_lines = _wrap_hook(h_raw)
+        h_size = 52 if n_lines == 1 else 44   # 2 líneas = fuente más chica
+        h_y    = "(h/2)-55" if n_lines == 1 else "(h/2)-75"
         fixed_filters.append(
             f"drawtext=fontfile='{FONT_BOLD}':text='{h}'"
-            f":fontcolor=white:fontsize=64"
-            f":x=(w-text_w)/2:y=(h/2)-60"
+            f":fontcolor=white:fontsize={h_size}:line_spacing=8"
+            f":x=(w-text_w)/2:y={h_y}"
             f":shadowcolor=black@0.99:shadowx=4:shadowy=4"
             f":bordercolor=black:borderw=3"
             f":enable='between(t,0,4.0)'"
