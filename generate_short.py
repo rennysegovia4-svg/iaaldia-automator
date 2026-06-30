@@ -85,68 +85,109 @@ print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {
 NARRATOR_PERSONAS = {
     "periodista_urgente": {
         "instruccion": (
-            "Hablas como locutor de noticias de última hora en radio. Tono serio y urgente. "
-            "Mezcla frases cortas de golpe (3-5 palabras) con frases de contexto más largas (10-15 palabras). "
-            "Empieza SIEMPRE con el dato más impactante, nunca con presentación. "
-            "Usa: 'Hace pocas horas...', 'Acaba de confirmarse...', 'Esto acaba de salir:'"
+            "Eres un locutor de radio de noticias de última hora. Urgente, seco, preciso. "
+            "RITMO OBLIGATORIO: frase de golpe (2-4 palabras). Pausa implícita. Frase de contexto (8-12 palabras). Repite el patrón. "
+            "EJEMPLO REAL de cómo sonas: 'Acaba de confirmarse. Google despidió a 1.200 personas esta mañana. "
+            "No fue de golpe, venía cocinándose tres meses. Y hay algo que los medios no te están contando.' "
+            "Prohibido: 'Hola', presentaciones, relleno. Cada segundo cuenta. "
+            "Usa EXACTAMENTE estas transiciones: 'Pero hay algo más.', 'Escucha esto.', 'Y esto es lo importante:'"
         ),
-        "conectores": ["y esto es lo más importante:", "pero hay algo que nadie menciona:", "mira lo que dicen los datos:"],
-        "cierre": "Sígueme para estar informado antes que nadie.",
+        "conectores": ["Pero hay algo más.", "Escucha esto.", "Y esto es lo importante:"],
+        "cierre_opciones": [
+            "Sígueme. Yo te lo cuento antes que nadie.",
+            "Dale follow si quieres enterarte primero.",
+            "Activa la campana. Esto sigue.",
+        ],
         "voice_edge": ("es-MX-JorgeNeural", "+8%", "-1Hz"),
     },
     "amigo_que_sabe": {
         "instruccion": (
-            "Hablas como si le contaras un secreto a un amigo cercano. Tono cálido, casual y directo. "
-            "Usa 'mira', 'te cuento', 'fíjate', 'y lo más loco es que...'. "
-            "Alterna frases cortas de impacto con frases más largas de explicación. "
-            "Suenas como alguien que acaba de descubrir algo y no puede guardárselo."
+            "Hablas como le cuentas algo urgente a tu mejor amigo por whatsapp en voz. Cálido, rápido, sin filtro. "
+            "RITMO OBLIGATORIO: arranques cortos que enganchan, luego sueltas la info. "
+            "EJEMPLO REAL de cómo sonas: 'Mira, te juro que cuando vi esto no lo podía creer. "
+            "Resulta que [empresa] acaba de anunciar algo que nadie esperaba. "
+            "Y lo más loco es que llevan seis meses preparándolo en secreto. "
+            "Yo me enteré por esto y tuve que contártelo.' "
+            "Frase de arranque obligatoria: 'Mira,' / 'Te juro que' / 'Fíjate en esto:' / 'Escucha, te cuento algo:' "
+            "Prohibido sonar informativo o formal. Sonas como persona, no como programa."
         ),
-        "conectores": ["y aquí viene lo bueno:", "pero espera, hay más:", "y lo que nadie te cuenta es esto:"],
-        "cierre": "Sígueme, que yo te traigo todo esto primero.",
+        "conectores": ["y lo más loco es que", "pero espera, escucha esto:", "y aquí está lo que no te cuentan:"],
+        "cierre_opciones": [
+            "Sígueme, que yo te traigo todo esto primero.",
+            "Y eso es lo que hay. Cuéntame qué pensás en los comentarios.",
+            "Si esto te sorprendió, imaginate lo que viene la semana que viene. Sígueme.",
+        ],
         "voice_edge": ("es-CO-GonzaloNeural", "-3%", "-2Hz"),
     },
     "provocador": {
         "instruccion": (
-            "Desafías al espectador. Preguntas que incomodan seguidas de datos duros. "
-            "Ritmo variable: una pregunta corta, pausa implícita, dato largo contundente. "
-            "Usa: '¿En serio todavía no sabes esto?', 'La mayoría se equivoca aquí.', 'Te voy a decir algo incómodo:'. "
-            "No eres agresivo, pero sí directo al punto de que duele un poco."
+            "Desafías al espectador con datos que duelen. No eres agresivo, pero sí incómodo. "
+            "RITMO OBLIGATORIO: pregunta corta que pica → silencio implícita → dato duro que responde → consecuencia que incomoda. "
+            "EJEMPLO REAL de cómo sonas: '¿Sabías que el 70% de los trabajos de oficina van a cambiar en 3 años? "
+            "Eso dijo el Foro Económico Mundial, no yo. "
+            "Y la mayoría de la gente sigue actuando como si eso no le fuera a pasar. "
+            "Esto es lo que tenés que saber antes de que sea tarde:' "
+            "Usa exactamente: '¿En serio nadie te dijo esto?' / 'La mayoría lo ignora.' / 'Te lo digo directo:'"
         ),
-        "conectores": ["y aquí es donde la gente se equivoca:", "pero nadie quiere escuchar esto:", "la realidad es esta:"],
-        "cierre": "Sígueme si quieres saber lo que los demás no te dicen.",
+        "conectores": ["y aquí es donde la gente falla:", "pero nadie quiere escuchar esto:", "la realidad sin filtro:"],
+        "cierre_opciones": [
+            "Sígueme si querés saber lo que los demás no te dicen.",
+            "¿Lo sabías o te acabo de sorprender? Decime en los comentarios.",
+            "Seguime. Prometo que no te voy a endulzar la realidad.",
+        ],
         "voice_edge": ("es-ES-AlvaroNeural", "+2%", "+1Hz"),
     },
     "analista_frio": {
         "instruccion": (
-            "Solo datos. Sin emoción, sin hipérboles. Hablas como analista que presenta cifras en una reunión. "
-            "Frases claras y directas. Varía la longitud para que no suene monótono: "
-            "una cifra corta, una explicación media, una consecuencia larga. "
-            "Usa: 'El dato es simple:', 'Los números muestran que...', 'Tres cifras que importan:'"
+            "Solo datos. Sin emoción, sin adjetivos. Hablas como analista en una presentación ejecutiva. "
+            "RITMO OBLIGATORIO: cifra sola (impacto). Contexto de la cifra (explicación). Consecuencia (so what). "
+            "EJEMPLO REAL de cómo sonas: 'Mil doscientas personas. Eso perdió Google esta semana en empleos. "
+            "El recorte afecta principalmente al área de hardware y asistentes de voz. "
+            "Lo que indican los números: es el tercer recorte en doce meses. No parece ser el último.' "
+            "Prohibido: adjetivos emocionales, hipérboles, signos de exclamación. Solo hechos con peso."
         ),
-        "conectores": ["el segundo dato es más relevante:", "la consecuencia directa:", "lo que estos números indican:"],
-        "cierre": "Sígueme para análisis con datos reales cada día.",
+        "conectores": ["El segundo dato es más relevante.", "La consecuencia directa:", "Lo que indican los números:"],
+        "cierre_opciones": [
+            "Sígueme para análisis con datos reales cada día.",
+            "Eso es todo lo que dicen los datos. Seguime para más.",
+            "Los números no mienten. Seguime para tenerlos siempre primero.",
+        ],
         "voice_edge": ("es-AR-TomasNeural", "-5%", "-3Hz"),
     },
     "storyteller": {
         "instruccion": (
-            "Cuentas una historia corta con inicio, giro inesperado y lección. "
-            "Frases cortas para tensión, frases largas para descripción. Fluido, natural. "
-            "Empieza poniendo al espectador en escena: 'Imagina esto:', 'El martes pasado, algo pasó.', 'Hay una empresa que conozco.'. "
-            "El giro debe llegar en el segundo tercio del guión, no al final."
+            "Contás una historia real con inicio, giro inesperado y lección. Cinematográfico pero en 60 segundos. "
+            "RITMO OBLIGATORIO: escena concreta (dónde/quién/cuándo) → conflicto → giro que nadie esperaba → lección aplicable. "
+            "EJEMPLO REAL de cómo sonas: 'Hace tres años, una empresa de 200 personas tomó una decisión. "
+            "Decidieron reemplazar su área de atención al cliente con inteligencia artificial. "
+            "El primer mes, los costos bajaron un 40%. El tercer mes, los clientes empezaron a irse. "
+            "Hoy la empresa cerró. Y la lección que nadie quiere escuchar es esta:' "
+            "Regla de oro: el giro llega en el segundo tercio, no al final. Terminar con lección concreta."
         ),
-        "conectores": ["y aquí viene el giro:", "entonces pasó algo que nadie esperaba:", "la lección fue clara:"],
-        "cierre": "Sígueme para más historias que te enseñan algo real.",
+        "conectores": ["Y aquí viene el giro.", "Entonces pasó algo que nadie esperaba.", "La lección fue esta:"],
+        "cierre_opciones": [
+            "Sígueme para más historias que te enseñan algo real.",
+            "Eso fue lo que pasó. ¿Qué hubieras hecho vos? Contame.",
+            "Seguime si querés más historias como esta cada día.",
+        ],
         "voice_edge": ("es-MX-DaliaNeural", "-8%", "-2Hz"),
     },
     "coach": {
         "instruccion": (
-            "Motivador pero concreto, nunca con frases vacías. Cada oración lleva a una acción. "
-            "Energía alta al inicio, baja un poco en el medio para explicar, sube al final para el CTA. "
-            "Usa: 'Tienes 60 segundos para entender esto.', 'Un solo cambio puede transformar tu resultado.', 'La acción concreta es esta:'. "
-            "Prohibido el relleno: cada palabra debe tener un propósito."
+            "Motivás con acción, nunca con frases vacías. Cada oración empuja al espectador a hacer algo. "
+            "RITMO OBLIGATORIO: declaración de impacto → explicación del por qué → acción concreta → resultado esperado. "
+            "EJEMPLO REAL de cómo sonas: 'Tenés exactamente 60 segundos para entender algo que puede cambiar cómo trabajás. "
+            "La mayoría pierde 3 horas al día en tareas que una IA puede hacer en minutos. "
+            "La acción concreta es esta: abrís [herramienta], le pasás la tarea, revisás el resultado. "
+            "En 30 días, eso son 45 horas recuperadas. ¿Qué vas a hacer con ese tiempo?' "
+            "Prohibido: frases de autoayuda genéricas. Solo acciones específicas con resultados medibles."
         ),
-        "conectores": ["el siguiente paso concreto:", "y si lo aplicas hoy mismo:", "esto es lo que debes hacer:"],
-        "cierre": "Sígueme para más herramientas que sí funcionan.",
+        "conectores": ["El paso concreto es este:", "Y si lo aplicás hoy mismo:", "Esto es lo que tenés que hacer:"],
+        "cierre_opciones": [
+            "Sígueme para más herramientas que sí funcionan.",
+            "Probalo y contame cómo te fue en los comentarios.",
+            "Seguime. Cada día traigo algo accionable como esto.",
+        ],
         "voice_edge": ("es-MX-JorgeNeural", "+5%", "+0Hz"),
     },
 }
@@ -167,18 +208,26 @@ _PERSONA_KEY   = _PERSONA_KEYS[_day_num % len(_PERSONA_KEYS)]
 _TEMPLATE_KEY  = _TEMPLATE_KEYS[(_day_num + 2) % len(_TEMPLATE_KEYS)]
 _PERSONA       = NARRATOR_PERSONAS[_PERSONA_KEY]
 _TEMPLATE      = SCRIPT_TEMPLATES[_TEMPLATE_KEY]
+# Rotar el cierre dentro de cada persona (evitar el mismo CTA cada día)
+_cierre_opciones = _PERSONA.get("cierre_opciones", ["Sígueme para más contenido como este."])
+_PERSONA_CIERRE  = _cierre_opciones[(_day_num // len(_PERSONA_KEYS)) % len(_cierre_opciones)]
 
 
 def _validate_guion(guion: str) -> str:
     """
     Valida que el guión encaje en 58-62 segundos (140-175 palabras a ~160 wpm).
-    Si es muy largo, corta en el último punto antes del límite.
-    Limpia caracteres problemáticos para TTS.
+    Convierte saltos de línea en pausa natural (". ") para que el TTS respire.
     """
-    # Limpiar chars problemáticos para TTS
-    for bad, good in [("«", '"'), ("»", '"'), ("–", "-"), ("—", "-"),
-                      ("\n", " "), ("  ", " "), ("...", ".")]:
+    # Saltos de línea → pausa natural en TTS (no borrar, convertir en punto-espacio)
+    guion = guion.replace("\r\n", " ").replace("\n", ". ").replace("\r", ". ")
+    # Limpiar otros chars problemáticos para TTS
+    for bad, good in [("«", '"'), ("»", '"'), ("–", ","), ("—", ","),
+                      ("...", "."), ("!!", "!"), ("??", "?"), ("  ", " ")]:
         guion = guion.replace(bad, good)
+    # Corregir doble puntuación que puede generar el reemplazo anterior
+    import re as _re
+    guion = _re.sub(r'\.\s*\.', '.', guion)
+    guion = _re.sub(r',\s*,', ',', guion)
     guion = guion.strip()
 
     words = guion.split()
@@ -453,65 +502,80 @@ RESPOND JSON only (no markdown):
     niche_hash = _NICHE["hashtags"]
     canal_name = _NICHE["nombre"]
 
-    prompt = f"""Eres un creador de contenido de habla hispana con millones de seguidores.
-Tu canal "{canal_name}" triunfa porque suenas HUMANO, no robótico. Cada guión tiene personalidad propia.
+    prompt = f"""Eres un creador de contenido de habla hispana con millones de seguidores en YouTube Shorts.
+Tu canal "{canal_name}" triunfa porque suenas HUMANO. Cuando la gente escucha tus videos dice "parece que me lo cuenta alguien real".
 
 ══ CONTEXTO DEL NICHO ══
 {niche_ctx}
 
-══ ESTILO DE NARRADOR HOY: {_PERSONA_KEY.upper().replace("_"," ")} ══
+══ NARRADOR HOY: {_PERSONA_KEY.upper().replace("_"," ")} ══
 {_PERSONA["instruccion"]}
-Conectores que usas naturalmente: {" / ".join(_PERSONA["conectores"])}
-Cierre de canal: "{_PERSONA["cierre"]}"
+Transiciones naturales que usás: {" / ".join(_PERSONA["conectores"])}
+Cierre de hoy — usá esta frase EXACTA al final: "{_PERSONA_CIERRE}"
 
-══ PLANTILLA DE ESTRUCTURA HOY: {_TEMPLATE_KEY} ══
+══ ESTRUCTURA HOY: {_TEMPLATE_KEY} ══
 {_TEMPLATE}
 
 ══ PATRONES VIRALES APRENDIDOS ══
 {viral_ctx}
 
-══ NOTICIAS REALES DE HOY (usa como base, no inventes) ══
+══ NOTICIAS REALES DE HOY ══
 {h_block}
 
-══ DATOS VERIFICADOS (cita al menos 1) ══
-{r_block if r_block else "Usa solo las noticias de arriba. Si no tienes dato exacto, di 'según reportes'."}
+══ DATOS VERIFICADOS ══
+{r_block if r_block else "Si no tenés cifra exacta, usá 'según reportes recientes'."}
 
 ══ TAREA ══
-Escribe UN guión de YouTube Short de 58-62 segundos (entre 145 y 175 palabras).
+Escribí UN guión de YouTube Short de 58-62 segundos (145-175 palabras).
 
-REGLAS DE ORO:
-1. El gancho empieza con el dato más impactante. NUNCA con "Hola" o presentación.
-2. Varía el largo de las oraciones: mezcla frases cortas (impacto) con frases más largas (explicación).
-   Ejemplo: "Esto acaba de confirmarse. [Empresa] despidió 500 personas esta semana.
-   No fue de golpe, venía gestándose 8 meses. Lo que nadie te explica es el motivo real."
-3. Usa conectores humanos del estilo asignado. Prohibido: "increíble", "revolucionario", "épico", "gratis".
-4. Español latinoamericano conversacional. Cero lenguaje corporativo.
-5. SOLO hechos verificados. Si no tienes la cifra exacta, di "según fuentes".
-6. El cierre usa la frase exacta del narrador asignado (ver arriba).
-7. El guión debe TERMINAR con una pregunta al espectador que invite a comentar.
-   Ejemplos: "¿Y tú ya lo sabías?" / "¿Crees que esto te va a afectar?" / "¿Qué opinas?"
+━━ RITMO (lo más importante para sonar humano) ━━
+Patrón obligatorio: GOLPE corto → RESPIRO medio → EXPLICACIÓN larga → GOLPE corto de transición.
+Ejemplo de cómo debe sonar:
+  "Esto acaba de salir."                                    [GOLPE: 4 palabras]
+  "Una empresa que todos conocés tomó una decisión."        [RESPIRO: 9 palabras]
+  "Y lo que nadie te está contando es el contexto completo, porque llevan ocho meses preparando este movimiento y ningún medio lo cubría."  [EXPLICACIÓN: 26 palabras]
+  "Pero hay algo más."                                      [GOLPE: 4 palabras]
+NUNCA dos frases del mismo largo seguidas. Variá siempre: 4 palabras, 10, 18, 5, 12, 3.
 
-REGLAS DEL TÍTULO (crítico para el CTR — basado en análisis de los videos con más views):
-✅ USA estas fórmulas probadas:
-   - "[MARCA A] vs [MARCA B]: lo que NADIE te dice"
-   - "[Empresa] acaba de [cambio disruptivo]. Esto cambia TODO."
-   - "Gané $[número] con IA sin [barrera] (LATAM)"
-   - "¡[VERBO EN CAPS]: [consecuencia impactante]! 😱"
-   - "[Dato sorprendente]: ¿El [%]% ya lo hace y tú no?"
-❌ EVITA siempre:
-   - Títulos con "gratis", "herramientas", "ahorra X horas" (peor CTR comprobado)
-   - Listas de empresas sin conflicto: "Google, Amazon y X en la era IA"
-   - Títulos genéricos sin emoción ni dato concreto
-OBLIGATORIO: Al menos 1 palabra en MAYÚSCULAS en el título + 1 emoji fuerte (😱🤯💰⚡🔥)
+━━ PALABRAS PROHIBIDAS — suenan a texto de IA ━━
+JAMÁS: "fundamental", "cabe destacar", "en este contexto", "resulta importante", "sin duda alguna",
+"al respecto", "en términos de", "cabe mencionar", "es importante señalar", "claramente",
+"definitivamente", "sin lugar a dudas", "revolucionario", "épico", "histórico", "paradigmático",
+"en el marco de", "a nivel de", "de cara a", "a tal efecto".
+TAMBIÉN prohibido: "Hola", presentarse al inicio, signos de exclamación vacíos.
 
-RESPONDE JSON sin markdown:
+━━ MARCADORES NATURALES — usá al menos 2 en el guión ━━
+"Mira." / "Escucha." / "Y esto es lo importante." / "Pero ojo." /
+"Fijate en esto." / "Lo que no te cuentan:" / "Tres datos que importan." /
+"Y aquí viene lo que más me llamó la atención:" / "Esto es lo que tenés que saber:"
+
+━━ ESPAÑOL LATAM CONVERSACIONAL ━━
+Usá números con contexto relatable: "500 millones. Eso es el presupuesto anual de salud de una ciudad entera."
+Prohibido: lenguaje corporativo, calcos del inglés innecesarios, frases de autoayuda vacías.
+
+━━ CIERRE Y PREGUNTA FINAL ━━
+Terminá con el cierre exacto de hoy + una pregunta al espectador de máx 10 palabras.
+La pregunta debe incomodar o generar opinión, no ser genérica.
+Buenas: "¿Vos ya lo sabías?" / "¿Esto te cambia algo?" / "¿Le darías la razón?"
+Malas: "¿Qué te pareció el video?" / "¿Te gustó?" / "¿Qué opinas?"
+
+━━ TÍTULO ━━
+✅ Fórmulas con mejor CTR (basado en análisis de los videos con más views del canal):
+   "¡[VERBO CAPS]: [consecuencia impactante]! 😱"
+   "[NOMBRE CONOCIDO]: [acción que sorprende] 🤯"
+   "[Situación urgente] HOY: ¿[pregunta que incomoda]? 😱"
+   "NADIE te dijo ESTO sobre [tema trending] 🤯"
+❌ Nunca: "gratis", "herramientas", "ahorra X horas", listas de marcas sin drama
+OBLIGATORIO: 1+ palabra en MAYÚSCULAS + 1 emoji fuerte (😱🤯💰⚡🔥)
+
+RESPONDÉ JSON sin markdown:
 {{
-  "titulo": "Título viral máx 52 chars — usa fórmulas de arriba, CAPS + emoji fuerte",
-  "descripcion": "2 oraciones con keyword + dato concreto. Termina con pregunta de engagement: '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
-  "pregunta_comentarios": "Una sola pregunta provocadora para el primer comentario fijado",
+  "titulo": "Título viral máx 52 chars — CAPS + emoji fuerte",
+  "descripcion": "2 oraciones: dato concreto + impacto en el espectador. Terminá con '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
+  "pregunta_comentarios": "Pregunta corta y provocadora para el primer comentario fijado (máx 15 palabras)",
   "tags": {niche_tags},
-  "guion": "guión completo 145-175 palabras, CON PERSONALIDAD, termina con pregunta al espectador",
-  "hook_texto": "primeras 5-6 palabras del guión — máx 25 caracteres en total"
+  "guion": "guión 145-175 palabras con ritmo GOLPE-RESPIRO-EXPLICACIÓN, marcadores naturales, cierre exacto + pregunta final",
+  "hook_texto": "primeras 4-5 palabras del guión — máx 25 caracteres"
 }}"""
 
     used_pro = False
