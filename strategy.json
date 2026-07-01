@@ -1,36 +1,36 @@
 {
   "updated": "2026-07-01",
-  "iteracion": 66,
+  "iteracion": 67,
   "niche_weights": {
-    "ia_noticias": 0.4,
-    "deportes": 0.3,
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "productividad": 0.1,
     "finanzas": 0.1,
-    "negocios_digitales": 0.05,
-    "entretenimiento": 0.05,
-    "productividad_ia": 0.05,
+    "negocios_digitales": 0.08,
+    "entretenimiento": 0.07,
     "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia + Evento Global + Geo-especificidad (ej. 'F1 HOY?! HORARIO EN LATAM YA!')",
-    "Noticia Impactante + Entidades Clave con Consecuencia (ej. 'IA FALLA y Ford RECONTRATA')",
-    "Amenaza/Riesgo + Tecnología Específica + Impacto Personal (ej. 'FRENAN GPT-5.6! Acceso en RIESGO')",
-    "Celebridad/Evento + Pregunta Escéptica/Impactante (ej. 'MESSI: 1000 GOLES! ¿VERDAD?')",
-    "Revelación Exclusiva + Declaración Audaz (ej. 'NADIE te dijo ESTO', 'NADIE usa!')",
-    "Cambio Mayor + Entidad Poderosa + Consecuencia Directa (ej. 'Google CAMBIA todo. Ford REGRESA!', 'CHATGPT en la CORTE: Tu privacidad MUERTA!')"
+    "Pregunta urgente + Evento relevante + Emoji de sorpresa (ej. F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
+    "Afirmación de conmoción + Revelación inesperada + Emoji de shock (ej. ¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱)",
+    "Noticia de alto perfil + Riesgo/Amenaza + Emoji de alerta (ej. ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
+    "Pregunta dramática sobre evento/figura + Emoji de incredulidad (ej. MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯)",
+    "Exclusiva/Revelación 'secreta' + Énfasis en 'nadie' + Emoji de sorpresa (ej. ¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯)",
+    "Impacto directo en audiencia + Consecuencia negativa + Emoji de shock (ej. CHATGPT en la CORTE: ¡Tu privacidad MUERTA! 🤯)"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o beneficios sin una historia noticiosa o de urgencia (ej. 'NO TOMAR RIESGO').",
-    "Contenido excesivamente específico de herramientas o conceptos amplios de IA sin un gancho de controversia o impacto directo (ej. 'Zapier: IA ahorra', 'IA Global: ¿EE.UU. tiene el control?').",
-    "Promesas directas de ingresos rápidos con métodos específicos que carecen de una narrativa noticiosa (ej. 'Gana $60,000 online')."
+    "Títulos con frases motivacionales o de autoayuda genéricas (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA)",
+    "Títulos que mencionan herramientas o funcionalidades muy específicas sin un gancho de gran impacto o novedad (ej. Zapier: IA ahorra 3 horas diarias)",
+    "Títulos con referencias geográficas vagas o eventos sin un claro 'storytelling' de conmoción o controversia, y uso de emojis menos impactantes (ej. INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱)"
   ],
-  "best_hora": 15,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 17,
+  "duracion_optima": "insuficientes datos para duración_optima",
   "recomendaciones": [
-    "Priorizar la combinación de 'IA_noticias' con eventos deportivos globales de alta resonancia y figuras clave (ej. F1, Messi, Mundiales), ya que esta fórmula domina el Top 10 y generó el 100% de los videos con más de 80 vistas.",
-    "Maximizar el uso de elementos de urgencia y relevancia geográfica en los títulos (ej. 'HOY?!', 'HORARIO EN LATAM YA!') para captar la atención inmediata, como demostró el video de F1 (270 vistas).",
-    "Implementar títulos con un fuerte componente de curiosidad y revelación exclusiva ('NADIE te dijo ESTO', 'NADIE usa!') o preguntas impactantes ('¿VERDAD?', '¿ES FRAUDE?'), respaldado por el rendimiento consistente de estos patrones en los videos Top."
+    "Maximizar el contenido que fusiona noticias de IA con eventos deportivos de alto interés global, dado su rendimiento superior (112.16 vistas vs 55 promedio IA).",
+    "Diseñar títulos que generen intriga y revelación exclusiva, utilizando el formato '[Evento/Sujeto] ¡[Acción sorprendente]! 😱🤯' o 'NADIE te dijo ESTO', ya que dominan el Top 10.",
+    "Concentrar las publicaciones en la franja horaria de 14:00 a 17:00, donde se localiza el 40% de los videos con mejor rendimiento, ajustando si es posible al pico de las 15:00."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La sinergia entre las noticias de IA y los eventos deportivos globales, especialmente cuando se presentan con urgencia y especificidad geográfica, es la fórmula más potente actualmente, generando más del doble de vistas que cualquier otro tipo de contenido."
+  "insight_semana": "La fusión de noticias de IA con eventos deportivos globales populares (ej. F1, Mundiales) es una fórmula de contenido de alto rendimiento, logrando vistas significativamente superiores al promedio del nicho principal de IA, y es clave para contrarrestar la tendencia negativa general de 'ia_noticias'."
 }
