@@ -211,6 +211,8 @@ _TEMPLATE      = SCRIPT_TEMPLATES[_TEMPLATE_KEY]
 # Rotar el cierre dentro de cada persona (evitar el mismo CTA cada día)
 _cierre_opciones = _PERSONA.get("cierre_opciones", ["Sígueme para más contenido como este."])
 _PERSONA_CIERRE  = _cierre_opciones[(_day_num // len(_PERSONA_KEYS)) % len(_cierre_opciones)]
+# Modo SERIE: cada 3er día el video termina con cliffhanger "Parte 1 / mañana Parte 2"
+_IS_SERIE_PART1 = (_day_num % 3 == 0) and not os.environ.get("VIRAL_TOPIC", "")
 
 
 def _validate_guion(guion: str) -> str:
@@ -553,14 +555,16 @@ TAMBIÉN prohibido: "Hola", presentarse al inicio, signos de exclamación vacío
 Usá números con contexto relatable: "500 millones. Eso es el presupuesto anual de salud de una ciudad entera."
 Prohibido: lenguaje corporativo, calcos del inglés innecesarios, frases de autoayuda vacías.
 
-━━ CIERRE Y PREGUNTA FINAL ━━
-Terminá con el cierre exacto de hoy + una pregunta al espectador de máx 10 palabras.
-La pregunta debe incomodar o generar opinión, no ser genérica.
-Buenas: "¿Vos ya lo sabías?" / "¿Esto te cambia algo?" / "¿Le darías la razón?"
-Malas: "¿Qué te pareció el video?" / "¿Te gustó?" / "¿Qué opinas?"
+━━ CIERRE Y SUSCRIPCIÓN ━━
+{"MODO SERIE — PARTE 1:" if _IS_SERIE_PART1 else "MODO NORMAL:"}
+{"El guión de hoy es la PARTE 1 de 2. Debe terminar en el momento de mayor tensión, SIN RESOLVER la pregunta principal. El cierre OBLIGATORIO es: 'Suscríbete. Mañana publico la parte 2 con lo que nadie más te va a decir.' El título debe incluir 'PARTE 1' o '(1/2)'." if _IS_SERIE_PART1 else f"Terminá con: [{_PERSONA_CIERRE}] + CTA de suscripción CON RAZÓN CONCRETA. Ejemplos válidos: 'Suscríbete porque mañana publico algo que te va a cambiar la cabeza.' / 'Seguime — mañana continúo con el dato que más te va a sorprender.' / 'Activa la campana, esto sigue mañana.'"}
+Luego: pregunta corta al espectador que genere OPINIÓN DIVIDIDA (no pregunta genérica).
+Buenas: "¿Vos lo hubieras hecho?" / "¿Esto te afecta o no?" / "¿Le creés o no?"
+Malas: "¿Qué opinás?" / "¿Te gustó?" / "¿Qué te pareció?"
 
 ━━ TÍTULO ━━
-✅ Fórmulas con mejor CTR (basado en análisis de los videos con más views del canal):
+{"OBLIGATORIO incluir 'PARTE 1' o '(1/2)' en el título." if _IS_SERIE_PART1 else ""}
+✅ Fórmulas con mejor CTR del canal:
    "¡[VERBO CAPS]: [consecuencia impactante]! 😱"
    "[NOMBRE CONOCIDO]: [acción que sorprende] 🤯"
    "[Situación urgente] HOY: ¿[pregunta que incomoda]? 😱"
@@ -570,11 +574,11 @@ OBLIGATORIO: 1+ palabra en MAYÚSCULAS + 1 emoji fuerte (😱🤯💰⚡🔥)
 
 RESPONDÉ JSON sin markdown:
 {{
-  "titulo": "Título viral máx 52 chars — CAPS + emoji fuerte",
-  "descripcion": "2 oraciones: dato concreto + impacto en el espectador. Terminá con '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
-  "pregunta_comentarios": "Pregunta corta y provocadora para el primer comentario fijado (máx 15 palabras)",
+  "titulo": "Título viral máx 52 chars — CAPS + emoji fuerte{' + PARTE 1' if _IS_SERIE_PART1 else ''}",
+  "descripcion": "2 oraciones: dato concreto + impacto. Terminá con '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
+  "pregunta_comentarios": "Pregunta que genere opinión dividida (máx 15 palabras, sin signos de pregunta dobles)",
   "tags": {niche_tags},
-  "guion": "guión 145-175 palabras con ritmo GOLPE-RESPIRO-EXPLICACIÓN, marcadores naturales, cierre exacto + pregunta final",
+  "guion": "guión 145-175 palabras, ritmo GOLPE-RESPIRO-EXPLICACIÓN, {'cliffhanger sin resolver + CTA suscripción a Parte 2' if _IS_SERIE_PART1 else 'CTA suscripción con razón concreta'} + pregunta final",
   "hook_texto": "primeras 4-5 palabras del guión — máx 25 caracteres"
 }}"""
 
@@ -1446,6 +1450,41 @@ def _pin_engagement_comment(yt, video_id, pregunta):
         print(f"      Comentario omitido: {str(e)[:60]}")
 
 
+_CHANNEL_UPDATED_FLAG = BASE_DIR / ".channel_desc_updated"
+
+def update_channel_description(yt):
+    if _CHANNEL_UPDATED_FLAG.exists():
+        return
+    try:
+        ch = yt.channels().list(part="id", mine=True).execute()
+        channel_id = ch["items"][0]["id"]
+        desc = (
+            "🤖 Inteligencia Artificial + Deportes para LATAM — 3 videos NUEVOS cada día.\n\n"
+            "📡 ¿Qué vas a encontrar?\n"
+            "• Noticias de IA que impactan tu vida (ChatGPT, Gemini, Claude, robots)\n"
+            "• Deportes: Fútbol, F1, NBA, Tenis — los momentos que todos hablan\n"
+            "• Finanzas y cripto explicados simple\n"
+            "• Entretenimiento: lo viral antes que nadie\n\n"
+            "⚡ Publicamos 3 veces al día: 11AM, 8PM y extras virales.\n"
+            "🔔 Activa la campana para no perderte nada.\n\n"
+            "📌 SUSCRIBITE — mañana siempre hay algo que te va a sorprender.\n\n"
+            "#InteligenciaArtificial #IA #IaAlDia #Shorts #ChatGPT #Fútbol #Deportes #LATAM #Tecnología #Noticias"
+        )
+        yt.channels().update(
+            part="brandingSettings",
+            body={
+                "id": channel_id,
+                "brandingSettings": {
+                    "channel": {"description": desc}
+                }
+            }
+        ).execute()
+        _CHANNEL_UPDATED_FLAG.write_text("1")
+        print("      Descripción del canal actualizada ✓")
+    except Exception as e:
+        print(f"      Canal desc omitida: {str(e)[:60]}")
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     _viral_mode = bool(os.environ.get("VIRAL_TOPIC", "").strip())
@@ -1519,6 +1558,7 @@ def main():
 
         print("[7/7] Subiendo a YouTube...")
         yt       = get_youtube()
+        update_channel_description(yt)
         video_id = upload_video(yt, output_path, script["titulo"], desc_final, script["tags"])
         upload_thumb(yt, video_id, thumb_path)
         _pin_engagement_comment(yt, video_id, script.get("pregunta_comentarios", ""))
