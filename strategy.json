@@ -1,36 +1,38 @@
 {
   "updated": "2026-07-01",
-  "iteracion": 67,
+  "iteracion": 68,
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "finanzas": 0.1,
-    "negocios_digitales": 0.08,
-    "entretenimiento": 0.07,
-    "cripto_inversiones": 0.03,
+    "deportes": 0.05,
+    "ia_noticias": 0.7,
+    "finanzas": 0.05,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta urgente + Evento relevante + Emoji de sorpresa (ej. F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
-    "Afirmación de conmoción + Revelación inesperada + Emoji de shock (ej. ¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱)",
-    "Noticia de alto perfil + Riesgo/Amenaza + Emoji de alerta (ej. ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
-    "Pregunta dramática sobre evento/figura + Emoji de incredulidad (ej. MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯)",
-    "Exclusiva/Revelación 'secreta' + Énfasis en 'nadie' + Emoji de sorpresa (ej. ¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯)",
-    "Impacto directo en audiencia + Consecuencia negativa + Emoji de shock (ej. CHATGPT en la CORTE: ¡Tu privacidad MUERTA! 🤯)"
+    "[Evento/Tema] HOY?! YA! 😱",
+    "¡CONMOCIÓN!: La IA FALLA y [Sujeto] [Acción] 😱",
+    "¡[País1] vs [País2]! ¿[Evento] HOY? 😱",
+    "¡[Tema] en RIESGO / [Consecuencia] MUERTA! 😱",
+    "[Persona/Evento]: ¡[Cifra]! ¿VERDAD? 😱🤯",
+    "[Tema]: NADIE te dijo ESTO / que NADIE usa! 🤯"
   ],
   "avoid_hooks": [
-    "Títulos con frases motivacionales o de autoayuda genéricas (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA)",
-    "Títulos que mencionan herramientas o funcionalidades muy específicas sin un gancho de gran impacto o novedad (ej. Zapier: IA ahorra 3 horas diarias)",
-    "Títulos con referencias geográficas vagas o eventos sin un claro 'storytelling' de conmoción o controversia, y uso de emojis menos impactantes (ej. INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱)"
+    "Preguntas directas de fraude o conspiración sin un gancho viral (ej. '¿ES FRAUDE? ⚡')",
+    "Afirmaciones genéricas de autoayuda o amenaza existencial (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Titulares de ahorro funcional o promesas de ingresos directos sin intriga (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')"
   ],
-  "best_hora": 17,
-  "duracion_optima": "insuficientes datos para duración_optima",
+  "best_hora": 15,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Maximizar el contenido que fusiona noticias de IA con eventos deportivos de alto interés global, dado su rendimiento superior (112.16 vistas vs 55 promedio IA).",
-    "Diseñar títulos que generen intriga y revelación exclusiva, utilizando el formato '[Evento/Sujeto] ¡[Acción sorprendente]! 😱🤯' o 'NADIE te dijo ESTO', ya que dominan el Top 10.",
-    "Concentrar las publicaciones en la franja horaria de 14:00 a 17:00, donde se localiza el 40% de los videos con mejor rendimiento, ajustando si es posible al pico de las 15:00."
+    "Focalizar en IA + Deportes de Alta Actualidad: Priorizar videos de 'ia_noticias' que fusionen la inteligencia artificial con eventos deportivos globales de gran impacto (F1, Mundiales, Wimbledon), ya que este tipo de contenido genera consistentemente las vistas más altas (hasta 270 vistas).",
+    "Mantener y Optimizar Emojis de Impacto: Continuar el uso estratégico de emojis 😱 y 🤯 en los títulos. Su presencia en el 100% de los videos del Top 10 sugiere una fuerte capacidad para captar la atención en el feed de Shorts.",
+    "Explorar Ganchos de Urgencia y Revelación: Implementar ganchos que transmitan inmediatez ('HOY?! YA!') o revelen información exclusiva ('NADIE te dijo ESTO', 'NADIE usa!') para maximizar la curiosidad y el engagement inicial.",
+    "Estrategia de Publicación Horaria Flexible: Aunque el pico de vistas se observa a las 15:00, los videos de alto rendimiento están distribuidos a lo largo de diversas horas del día (especialmente entre las 14:00 y 21:00, y también 0:00 y 4:00). Se recomienda testear publicaciones en diferentes franjas horarias dentro de este rango para identificar los momentos óptimos de la audiencia.",
+    "Monitorear la Tendencia Negativa de IA General: A pesar del éxito de IA+Deportes, el nicho 'ia_noticias' en general muestra una tendencia de rendimiento negativa (-0.45). Es crucial analizar si el contenido de IA no relacionado con deportes necesita un ajuste de estrategia o una diversificación de temas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La fusión de noticias de IA con eventos deportivos globales populares (ej. F1, Mundiales) es una fórmula de contenido de alto rendimiento, logrando vistas significativamente superiores al promedio del nicho principal de IA, y es clave para contrarrestar la tendencia negativa general de 'ia_noticias'."
+  "insight_semana": "El factor más crítico para el rendimiento del canal es la habilidad de fusionar noticias de IA con la actualidad candente de eventos deportivos globales, una combinación que domina el Top 10 y eleva exponencialmente el engagement por encima de otros temas de IA o nichos."
 }
