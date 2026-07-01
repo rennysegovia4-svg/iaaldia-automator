@@ -1076,40 +1076,46 @@ def make_manim_intro(output_path):
 # ── Concatenar intro + video (MoviePy) ────────────────────────────────────────
 def prepend_intro(intro_path, main_path, output_path):
     """
-    [MoviePy] Concatena el intro Manim con el video principal.
-    Fallback a FFmpeg concat si MoviePy no está disponible.
+    Concatena el intro Manim (sin audio) con el video principal (con audio).
+    Usa filter_complex para generar silencio en la duración del intro y evitar
+    que el concat demuxer descarte el audio del video principal.
     """
     try:
-        from moviepy.editor import VideoFileClip, concatenate_videoclips
-        intro = VideoFileClip(intro_path)
-        main  = VideoFileClip(main_path)
-        final = concatenate_videoclips([intro, main], method="compose")
-        final.write_videofile(
-            output_path, codec="libx264", audio_codec="aac",
-            fps=25, preset="fast", logger=None
+        # Obtener duración del intro para generar silencio exacto
+        probe = subprocess.run(
+            [FFMPEG, "-i", intro_path],
+            capture_output=True, text=True
         )
-        intro.close(); main.close(); final.close()
-        print("      MoviePy: intro + video concatenados ✓")
-        return True
-    except Exception as e:
-        print(f"      MoviePy concat: {str(e)[:50]}")
+        dur_intro = 2.0
+        for line in probe.stderr.splitlines():
+            if "Duration" in line:
+                parts = line.split("Duration:")[1].split(",")[0].strip().split(":")
+                try:
+                    dur_intro = float(parts[0])*3600 + float(parts[1])*60 + float(parts[2])
+                except: pass
+                break
 
-    # FFmpeg fallback
-    try:
-        concat_f = output_path + "_concat.txt"
-        with open(concat_f, "w") as f:
-            f.write(f"file '{intro_path}'\nfile '{main_path}'\n")
+        # filter_complex: concat video + audio con silencio para el intro
         r = subprocess.run([
-            FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", concat_f,
+            FFMPEG, "-y",
+            "-i", intro_path,
+            "-i", main_path,
+            "-filter_complex",
+            (
+                f"[0:v][1:v]concat=n=2:v=1:a=0[vout];"
+                f"aevalsrc=0:s=44100:d={dur_intro:.3f}[sil];"
+                f"[sil][1:a]concat=n=2:v=0:a=1[aout]"
+            ),
+            "-map", "[vout]", "-map", "[aout]",
             "-c:v", "libx264", "-preset", "fast", "-crf", "17",
             "-c:a", "aac", "-b:a", "192k", output_path
         ], capture_output=True, timeout=120)
-        os.remove(concat_f)
-        if r.returncode == 0:
-            print("      FFmpeg concat: intro + video ✓")
+        if r.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) > 10000:
+            print("      Intro + video concatenados ✓")
             return True
+        print(f"      Concat intro: FFmpeg error — {r.stderr[-200:]}")
     except Exception as e:
-        print(f"      Concat fallback: {str(e)[:50]}")
+        print(f"      Concat intro: {str(e)[:60]}")
     return False
 
 
