@@ -1,37 +1,39 @@
 {
   "updated": "2026-07-01",
-  "iteracion": 70,
+  "iteracion": 71,
   "niche_weights": {
-    "ia_noticias": 0.6,
-    "productividad": 0.2,
-    "deportes": 0.05,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.35,
+    "ia_noticias": 0.2,
+    "finanzas": 0.12,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.08,
+    "productividad_ia": 0.08,
+    "productividad": 0.05,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡[Evento/Marca/Tech] [Verbo de Impacto]! [Consecuencia/Pregunta] 😱",
-    "[Celebridad/Evento]: ¡[Cifra/Afirmación Exagerada]! ¿VERDAD? 😱🤯",
-    "¡[Marca/Tech] [Cambio Radical]. [Consecuencia Impactante]! 😱",
-    "¿[Evento Futuro]: [Detalle Específico Impactante]! 😱",
-    "¡[Evento Global] [Verbo de Exageración]! ¡NADIE te dijo ESTO 🤯",
-    "[Tech/IA] en [Contexto Real]: ¡Tu [Concepto Clave] [Estado Impactante]! 🤯"
+    "[Evento/Tema] HOY?! 😱 [Urgencia Geográfica/Temporal]",
+    "¡[Emoción Fuerte]: [Noticia Impactante] [Verbo Acción]! 😱",
+    "¿[Afirmación Sorprendente] [Verdad/Realidad]? 😱🤯",
+    "[Problema/Amenaza] en [Contexto Relevante]: ¡[Consecuencia Negativa]! 🤯",
+    "[Evento Grande] ¡NADIE te dijo ESTO / Lo que NO sabes! 🤯",
+    "[Noticia/Evento] ¡Locura VIRAL en [Región]! 😱"
   ],
   "avoid_hooks": [
-    "Títulos genéricos o de autoayuda sin un evento o personaje específico (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱').",
-    "Temas políticos muy específicos de un país o región que no tienen un atractivo global inmediato (ej. 'VENEZUELA: ¿Dónde está el gobierno? 🤯').",
-    "Menciones de herramientas o tutoriales demasiado específicos, o de beneficios menos 'sensacionales' de IA (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')."
+    "Temas políticos/eventos locales sin un gancho sensacionalista o masivo (ej. 'PARTIDO COLOMBIA SÁBADO...')",
+    "Mensajes de autoayuda o productividad genéricos/abstractos (ej. 'NO TOMAR RIESGO...')",
+    "Contenido centrado en herramientas específicas o promesas monetarias directas sin un elemento de urgencia/escándalo (ej. 'Zapier: IA ahorra...', 'Gana $60,000 online...')"
   ],
   "best_hora": 15,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar contenido de 'ia_noticias' que fusione la actualidad de la IA con eventos deportivos globales de alta relevancia (ej. F1, Mundiales), replicando el éxito del video de F1 (271 vistas).",
-    "Explorar activamente el nicho de 'productividad' adoptando ganchos de conmoción o asombro, dado su fuerte crecimiento en tendencia (+9.5) a pesar de sus vistas promedio actuales.",
-    "Mantener la aplicación constante de los emojis '😱' y '🤯' en todos los títulos de Shorts, ya que su presencia es una constante en el Top 10 de videos.",
-    "Realizar pruebas de contenido en los nichos con 'insuficientes datos' (deportes, finanzas, entretenimiento, negocios_digitales, cripto_inversiones, politica_latam) con un bajo volumen de videos, pero aplicando los ganchos exitosos de 'ia_noticias' para identificar nuevas oportunidades."
+    "Priorizar fuertemente contenido de 'deportes', especialmente eventos globales y noticias de última hora, ya que demostró ser el de mayor impacto y viralidad, incluso cuando se categorizó bajo 'ia_noticias'.",
+    "Continuar explotando las 'ia_noticias', pero enfocándose en ángulos altamente sensacionalistas, de impacto global o de riesgo personal, para contrarrestar la tendencia negativa del nicho y mantener el engagement.",
+    "Investigar y testear activamente el nicho de 'productividad' con ganchos poderosos y formatos de noticia, dado su fuerte crecimiento en tendencia (+9.5), lo que indica un potencial de escalabilidad a pesar de las vistas actuales bajas.",
+    "Implementar los patrones de gancho identificados en los títulos de alto rendimiento, utilizando la urgencia ('HOY'), la emoción fuerte ('CONMOCIÓN', 'EXPLOTA'), preguntas sensacionalistas y promesas de información exclusiva.",
+    "Es crucial comenzar a registrar y analizar la duración de los videos para identificar la 'duracion_optima', ya que actualmente es un dato faltante clave para optimizar Shorts."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia más exitosa radica en la hiper-especialización dentro del nicho 'ia_noticias', particularmente al intersectar con temas de deportes globales, lo que permite generar picos de audiencia significativos (hasta 271 vistas) a pesar de la tendencia negativa general del nicho (-0.85)."
+  "insight_semana": "El mayor detonante de vistas en el canal son las noticias de 'deportes' con un componente de urgencia o sensacionalismo, especialmente cuando están vinculadas a eventos globales populares, superando el rendimiento de las noticias puras de IA."
 }
