@@ -76,6 +76,7 @@ jobs:
           echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
           echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
           echo "ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}" >> .env
+          echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> .env
           echo "ELEVENLABS_VOICE_PERIODISTA_URGENTE=onwK4e9ZLuTAKqWW03F9" >> .env
           echo "ELEVENLABS_VOICE_AMIGO_QUE_SABE=cjVigY5qzO86Huf0OWal" >> .env
           echo "ELEVENLABS_VOICE_PROVOCADOR=IKne3meq5aSn9XLyUdCD" >> .env
