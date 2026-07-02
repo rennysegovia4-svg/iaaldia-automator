@@ -1,38 +1,38 @@
 {
   "updated": "2026-07-02",
-  "iteracion": 72,
+  "iteracion": 73,
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.2,
-    "finanzas": 0.15,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.1,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.02
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "productividad": 0.15,
+    "finanzas": 0.1,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Urgencia Extrema + Llamada a la Acción: Utilizar frases como 'HOY?!' y 'YA!' para generar inmediatez y expectativa (ej. 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!' - 271 vistas).",
-    "Conmoción Global + Falla Crítica: Describir un evento impactante donde la IA falla o causa un problema significativo (ej. '¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱' - 131 vistas).",
-    "Evento Inesperado + Pregunta Viral: Crear una premisa de un evento importante que parece fuera de lugar o anticipado (ej. '¡ALEMANIA vs PARAGUAY! ¿Mundial 2026 HOY? 😱' - 128 vistas).",
-    "Geografía + Locura/Viralidad Regional: Combinar un país con una afirmación de un fenómeno viral en Latinoamérica (ej. 'INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱' - 99 vistas).",
-    "Riesgo Inminente + Consecuencia Dramática: Alertar sobre un peligro o amenaza directa relacionada con la IA que afecta al usuario o a la privacidad (ej. 'Acceso a IA avanzado en RIESGO 😱' - 97 vistas; 'Tu privacidad MUERTA! 🤯' - 79 vistas).",
-    "Revelación Exclusiva + Afirmación de Secreto: Implicar que se compartirá información que 'nadie más ha dicho' o que es sorprendente (ej. '¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯' - 80 vistas)."
+    "Fórmula 1 (Urgencia Deportiva): [Evento Deportivo Popular] + PREGUNTA Urgente/HORARIO EN LATAM YA! 😱 (Ej: F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
+    "Fórmula 2 (Controversia IA): ¡CONMOCIÓN!: La IA [FALLA/Hace Algo Inesperado] y [Consecuencia Sorprendente] 😱 (Ej: ¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱)",
+    "Fórmula 3 (Hipérbole Deportiva/Pregunta Engañosa): ¡[Equipo/Evento Deportivo] vs [Equipo/Evento]! ¿[Evento Mayor] HOY? 😱 (Ej: ¡ALEMANIA vs PARAGUAY! ¿Mundial 2026 HOY? 😱)",
+    "Fórmula 4 (Viralidad Regional Deportiva): [País/Equipo] 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱 (Ej: INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱)",
+    "Fórmula 5 (Riesgo/Amenaza IA): ¡FRENAN [Tecnología IA]! Acceso a IA avanzado en RIESGO 😱 (Ej: ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
+    "Fórmula 6 (Revelación/Secreto Deportivo): ¡[Evento Deportivo] EXPLOTA! NADIE te dijo ESTO 🤯 (Ej: ¡WIMBLEDON EXPLOTA! NADIE te dijo ESTO 🤯)"
   ],
   "avoid_hooks": [
-    "Temas Políticos o Eventos Deportivos Demasiado Locales sin Impacto Viral: Evitar referencias a eventos muy específicos o locales que no resuenan globalmente (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡' - 0 vistas).",
-    "Consejos de Autoayuda o Emprendimiento Genéricos y poco sensacionalistas: Los títulos que ofrecen consejos de vida o negocios de forma abstracta no atraen vistas (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱' - 0 vistas; 'EMPRENDER a los 50: la VERDAD 😱 (1/2)' - 0 vistas).",
-    "Enfoque en Herramientas Específicas o Conceptos Abstractos de IA sin Urgencia o Drama: Títulos sobre funcionalidad de IA o debates teóricos obtienen muy bajas vistas (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐' - 2 vistas; 'Zapier: IA ahorra 3 horas diarias 🤖' - 3 vistas)."
+    "Patrón 1 (Autoayuda Genérica sin giro disruptivo): Títulos de motivación o emprendimiento sin una conexión a noticias disruptivas de IA o eventos actuales (Ej: NO TOMAR RIESGO es tu MAYOR AMENAZA 😱, EMPRENDER a los 50: la VERDAD 😱)",
+    "Patrón 2 (Noticias Vagas de Eventos Mayores): Declaraciones genéricas sobre eventos importantes sin la especificidad, el giro de IA o la controversia que genere curiosidad (Ej: ¡MUNDIAL EXPLOTA HOY! ¿Por qué? 😱 en comparación con ¿MUNDIAL 2026: PENALES SIMULADOS! 😱)",
+    "Patrón 3 (Preguntas Geopolíticas sin Drama Inmediato): Preguntas sobre control o geopolítica de IA que carecen de un impacto personal o una urgencia dramática (Ej: IA Global: ¿EE.UU. tiene el control? 🌐)"
   ],
   "best_hora": 15,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido de 'noticias deportivas de última hora' o 'controversias deportivas', preferiblemente con un toque de IA o tecnología, dado que 5 de los 10 videos más vistos son de esta índole, incluyendo el top video con 271 vistas.",
-    "Implementar ganchos en los títulos que generen urgencia, sorpresa o revelación, utilizando frases como '¿HOY?! YA!', '¡CONMOCIÓN!', 'EXPLOTA!', 'NADIE te dijo ESTO', y los emojis 😱🤯 para maximizar el CTR.",
-    "Evitar temas hiper-locales, autoayuda genérica o resúmenes de herramientas de IA que no presenten un gancho sensacionalista o de impacto masivo, ya que estos tuvieron un rendimiento nulo o mínimo (0-3 vistas).",
-    "Experimentar activamente con las horas de publicación de las 15h, 0h y 20h, ya que los videos de mayor rendimiento se concentran en estos bloques, siendo las 15h la franja con el video más exitoso (271 vistas).",
-    "Implementar un sistema para registrar explícitamente los 'hooks' (ya sea en título, descripción o miniatura) para cada video, lo que permitirá un análisis más granular y basado en datos en futuras iteraciones."
+    "**Maximizar el Contenido de Deportes con Giro Noticioso/IA:** Dado que los videos con temática deportiva (F1, Mundial, Messi) presentados con un gancho de 'noticia falsa', urgencia o IA son los de mayor rendimiento, priorizar la creación de más contenido en esta intersección, enfocándose en eventos y figuras populares en Latam.",
+    "**Explotar el Potencial del Nicho de Productividad:** A pesar de no tener videos en el top 10, 'productividad' tiene el promedio de vistas más alto y una tendencia positiva. Es crucial explorar más este nicho, quizás combinándolo con IA (productividad_ia) para aprovechar su crecimiento y diversificar el contenido.",
+    "**Consolidar Notificaciones de IA Controversiales:** Continuar con las noticias de IA que involucren fallos, riesgos, cambios drásticos o controversias (ej. GPT-5.6, ChatGPT en la corte), ya que estas temáticas demuestran un engagement consistentemente alto dentro del nicho de ia_noticias.",
+    "**Optimizar el Horario de Publicación:** Concentrar la publicación de los Shorts entre las 14:00 y 17:00 horas, con un énfasis particular en las 15:00 horas, que se confirma como el pico de audiencia de mayor potencial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de 'deportes', aunque clasificado erróneamente como 'ia_noticias', es el verdadero motor de engagement del canal, con los videos deportivos generando las vistas más altas (hasta 271 views) y superando consistentemente a las noticias de IA puras y abstractas."
+  "insight_semana": "El mayor éxito del canal proviene de la fusión de noticias deportivas de alta relevancia con titulares sensacionalistas o hiperbólicos bajo la categoría de 'ia_noticias', aprovechando la curiosidad y el fanatismo del público latinoamericano, superando el rendimiento de contenido puramente de IA o genérico."
 }
