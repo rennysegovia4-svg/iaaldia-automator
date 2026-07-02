@@ -13,10 +13,6 @@ IA al Día v6.0 — Integración 8 repos:
 
 import os, json, random, requests, subprocess, tempfile, time, re, base64, glob, textwrap, sys
 import feedparser, shutil, urllib.parse, urllib.request, asyncio
-try:
-    import anthropic as _anthropic_sdk
-except ImportError:
-    _anthropic_sdk = None
 from pathlib import Path
 from datetime import datetime, date
 
@@ -267,10 +263,9 @@ def load_env():
                 env[k.strip()] = v.strip()
     return env
 
-ENV              = load_env()
-GEMINI_API_KEY   = ENV["GEMINI_API_KEY"]
-PEXELS_API_KEY   = ENV["PEXELS_API_KEY"]
-ANTHROPIC_API_KEY = ENV.get("ANTHROPIC_API_KEY", "") or os.environ.get("ANTHROPIC_API_KEY", "")
+ENV            = load_env()
+GEMINI_API_KEY = ENV["GEMINI_API_KEY"]
+PEXELS_API_KEY = ENV["PEXELS_API_KEY"]
 
 
 # ── Créditos ───────────────────────────────────────────────────────────────────
@@ -427,44 +422,6 @@ RESPONDE JSON sin markdown:
         return result, False
     except:
         return _fallback_script(), False
-
-
-def generate_script_claude(prompt: str) -> dict | None:
-    """
-    Genera el guión usando Claude Fable 5 con web search en tiempo real.
-    Fallback automático a Opus 4.8 si Fable 5 rechaza la solicitud.
-    Retorna el dict parseado o None si falla / key no configurada.
-    """
-    if not _anthropic_sdk or not ANTHROPIC_API_KEY:
-        return None
-    try:
-        client = _anthropic_sdk.Anthropic(api_key=ANTHROPIC_API_KEY)
-        response = client.beta.messages.create(
-            model="claude-fable-5",
-            max_tokens=1024,
-            messages=[{"role": "user", "content": prompt}],
-            tools=[{"type": "web_search_20260209", "name": "web_search"}],
-            betas=["server-side-fallback-2026-06-01"],
-            fallbacks=[{"model": "claude-opus-4-8"}],
-        )
-        if response.stop_reason == "refusal":
-            return None
-        # Extraer texto de los bloques de respuesta
-        text = ""
-        for block in response.content:
-            if hasattr(block, "text"):
-                text += block.text
-        text = text.strip()
-        if "```" in text:
-            for part in text.split("```"):
-                part = part.strip().lstrip("json").strip()
-                if part.startswith("{"): text = part; break
-        data = json.loads(text)
-        print(f"      [Claude] Guión generado vía {getattr(response, 'model', 'claude-fable-5')}")
-        return data
-    except Exception as e:
-        print(f"      [Claude] Error: {e} — usando Gemini")
-        return None
 
 
 def generate_script(headlines, research):
@@ -625,12 +582,6 @@ RESPONDÉ JSON sin markdown:
   "hook_texto": "primeras 4-5 palabras del guión — máx 25 caracteres"
 }}"""
 
-    # ── Intentar primero con Claude Fable 5 (mejor calidad, web search real-time) ─
-    claude_result = generate_script_claude(prompt)
-    if claude_result and "guion" in claude_result and "titulo" in claude_result:
-        return claude_result, False
-
-    # ── Fallback: Gemini ──────────────────────────────────────────────────────────
     used_pro = False
     response = None
     for model in GEMINI_MODELS:

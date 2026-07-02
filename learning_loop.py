@@ -17,6 +17,10 @@ Salidas:
 import os, json, time, math
 from pathlib import Path
 from datetime import date, datetime, timedelta
+try:
+    import anthropic as _anthropic_sdk
+except ImportError:
+    _anthropic_sdk = None
 
 BASE_DIR       = Path(__file__).parent
 MEMORY_FILE    = BASE_DIR / "memory.json"
@@ -37,8 +41,9 @@ def load_env():
                 if k in ["GEMINI_API_KEY", "PEXELS_API_KEY"]})
     return env
 
-ENV = load_env()
-GEMINI_API_KEY = ENV.get("GEMINI_API_KEY", "")
+ENV               = load_env()
+GEMINI_API_KEY    = ENV.get("GEMINI_API_KEY", "")
+ANTHROPIC_API_KEY = ENV.get("ANTHROPIC_API_KEY", "") or os.environ.get("ANTHROPIC_API_KEY", "")
 
 # ── Memoria por defecto ────────────────────────────────────────────────────────
 DEFAULT_MEMORY = {
@@ -271,43 +276,33 @@ def analyze_timing(memory: dict) -> dict:
         scores[h] = {"avg": round(_weighted_avg(views)), "n": len(views)}
     return scores
 
-# ── CAPA 3: APRENDER — actualizar pesos y extraer insights con Gemini ──────────
-def gemini_synthesize(memory: dict, niche_scores: dict, hook_scores: dict) -> dict:
-    """Gemini lee todos los datos y genera insights accionables + nueva estrategia."""
-    if not GEMINI_API_KEY:
-        return {}
-
-    from google import genai
-
-    top_videos = sorted(memory.get("videos", []), key=lambda x: x.get("views", 0), reverse=True)[:10]
-    low_videos = sorted(memory.get("videos", []), key=lambda x: x.get("views", 0))[:5]
-
-    top_hooks = sorted(hook_scores.items(), key=lambda x: x[1].get("score", 0), reverse=True)[:5]
-    low_hooks = sorted(hook_scores.items(), key=lambda x: x[1].get("score", 0))[:3]
-
+# ── CAPA 3: APRENDER ───────────────────────────────────────────────────────────
+def _build_synthesis_prompt(memory: dict, niche_scores: dict, hook_scores: dict) -> str:
+    top_videos   = sorted(memory.get("videos", []), key=lambda x: x.get("views", 0), reverse=True)[:10]
+    low_videos   = sorted(memory.get("videos", []), key=lambda x: x.get("views", 0))[:5]
+    top_hooks    = sorted(hook_scores.items(), key=lambda x: x[1].get("score", 0), reverse=True)[:5]
+    low_hooks    = sorted(hook_scores.items(), key=lambda x: x[1].get("score", 0))[:3]
     niche_ranking = sorted(niche_scores.items(), key=lambda x: x[1].get("score", 0), reverse=True)
-
     prev_learnings = memory.get("learnings", [])[-5:]
-
-    prompt = f"""Eres el estratega de YouTube más analítico del mundo. Tienes acceso a datos reales de un canal de Shorts en español.
+    return f"""Eres el estratega de YouTube más analítico del mundo. Tienes acceso a datos reales de un canal de Shorts en español.
 
 ITERACIÓN: {memory.get('iteracion', 0) + 1}
 TOTAL VIDEOS ANALIZADOS: {len(memory.get('videos', []))}
 
 TOP 10 VIDEOS (más views):
-{json.dumps([{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hora': v.get('hora','?'), 'hook': v.get('hook_formula','?')[:60]} for v in top_videos], ensure_ascii=False, indent=2)}
+{json.dumps([{{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hora': v.get('hora','?'), 'hook': v.get('hook_formula','?')[:60]}} for v in top_videos], ensure_ascii=False, indent=2)}
 
 5 VIDEOS MÁS BAJOS (para evitar sus patrones):
-{json.dumps([{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hook': v.get('hook_formula','?')[:60]} for v in low_videos], ensure_ascii=False, indent=2)}
+{json.dumps([{{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hook': v.get('hook_formula','?')[:60]}} for v in low_videos], ensure_ascii=False, indent=2)}
 
 RANKING DE NICHOS POR PERFORMANCE:
-{json.dumps([{'nicho': k, 'avg_views': v['avg_views'], 'score': v['score'], 'trend': v.get('trend',0)} for k,v in niche_ranking], ensure_ascii=False, indent=2)}
+{json.dumps([{{'nicho': k, 'avg_views': v['avg_views'], 'score': v['score'], 'trend': v.get('trend',0)}} for k,v in niche_ranking], ensure_ascii=False, indent=2)}
 
 HOOKS MÁS EFECTIVOS:
-{json.dumps([{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']} for h,s in top_hooks], ensure_ascii=False, indent=2)}
+{json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in top_hooks], ensure_ascii=False, indent=2)}
 
 HOOKS QUE FALLAN:
-{json.dumps([{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']} for h,s in low_hooks], ensure_ascii=False, indent=2)}
+{json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in low_hooks], ensure_ascii=False, indent=2)}
 
 APRENDIZAJES PREVIOS:
 {json.dumps(prev_learnings, ensure_ascii=False)}
@@ -347,6 +342,43 @@ REGLAS:
 - Si no hay suficientes datos, mantén pesos iguales y di "insuficientes datos para X"
 """
 
+
+def claude_synthesize(memory: dict, niche_scores: dict, hook_scores: dict) -> dict:
+    """Opus 4.8 con razonamiento adaptativo — 1 llamada/día, costo ~$0.05/mes."""
+    if not _anthropic_sdk or not ANTHROPIC_API_KEY:
+        return {}
+    prompt = _build_synthesis_prompt(memory, niche_scores, hook_scores)
+    try:
+        client = _anthropic_sdk.Anthropic(api_key=ANTHROPIC_API_KEY)
+        response = client.messages.create(
+            model="claude-opus-4-8",
+            max_tokens=1024,
+            thinking={"type": "adaptive"},
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = ""
+        for block in response.content:
+            if hasattr(block, "text"):
+                text += block.text
+        text = text.strip()
+        if "```" in text:
+            for part in text.split("```"):
+                part = part.strip().lstrip("json").strip()
+                if part.startswith("{"): text = part; break
+        data = json.loads(text)
+        print(f"  ✓ Síntesis Claude Opus 4.8 — confianza: {data.get('nivel_confianza',0):.0%}")
+        return data
+    except Exception as e:
+        print(f"  ! Claude Opus: {str(e)[:60]} — usando Gemini fallback")
+        return {}
+
+
+def gemini_synthesize(memory: dict, niche_scores: dict, hook_scores: dict) -> dict:
+    """Fallback de síntesis con Gemini cuando Claude no está disponible."""
+    if not GEMINI_API_KEY:
+        return {}
+    from google import genai
+    prompt = _build_synthesis_prompt(memory, niche_scores, hook_scores)
     client = genai.Client(api_key=GEMINI_API_KEY)
     for model in ["gemini-2.5-flash", "gemini-2.0-flash"]:
         try:
@@ -471,11 +503,13 @@ def run():
     best_hora = max(hora_scores.items(), key=lambda x: x[1].get("avg", 0), default=(("17", {})))[0] if hora_scores else "17"
     print(f"  Mejor hora:  {best_hora}:00")
 
-    # ── 3. APRENDER: síntesis con Gemini ──────────────────────────────────────
-    print("\n[3/4] Sintetizando aprendizajes con Gemini...")
+    # ── 3. APRENDER: síntesis con Claude (primario) → Gemini (fallback) ──────────
+    print("\n[3/4] Sintetizando aprendizajes...")
     synthesis = {}
     if len(memory.get("videos", [])) >= 3:
-        synthesis = gemini_synthesize(memory, niche_scores, hook_scores)
+        synthesis = claude_synthesize(memory, niche_scores, hook_scores)
+        if not synthesis:
+            synthesis = gemini_synthesize(memory, niche_scores, hook_scores)
     else:
         print(f"  ! Solo {len(memory.get('videos',[]))} videos — mínimo 3 para síntesis")
 

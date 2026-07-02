@@ -41,7 +41,8 @@ jobs:
 
       - name: Ejecutar Learning Loop
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -W ignore learning_loop.py
 
       - name: Ejecutar Viral Learner
