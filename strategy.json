@@ -1,39 +1,38 @@
 {
   "updated": "2026-07-03",
-  "iteracion": 80,
+  "iteracion": 81,
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
+    "deportes": 0.45,
+    "ia_noticias": 0.2,
     "productividad": 0.15,
-    "negocios_digitales": 0.1,
-    "finanzas": 0.05,
-    "entretenimiento": 0.03,
-    "cripto_inversiones": 0.01,
+    "finanzas": 0.1,
+    "negocios_digitales": 0.05,
+    "entretenimiento": 0.02,
     "productividad_ia": 0.01,
-    "politica_latam": 0.0
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡[Verbo Fuerte/Conmoción]!: [Sujeto Específico] [Consecuencia Impactante] 😱",
-    "[Evento/Sujeto] HOY?! 😱 [Detalle Urgente/Geo-Relevante en LATAM]",
-    "¡[Equipos/Evento Deportivo]! ¿[Mundial/Afirmación Shocking] HOY? 😱",
-    "[Marca/Celebridad]: ¡[Cifra o Hecho Extremo]! ¿[Pregunta de Veracidad]? 😱🤯",
-    "[País/Concepto] 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡[Adjetivo Fuerte/Locura] VIRAL en [Geo]! 😱",
-    "[Tema con Edad/Números Grandes]: [Cifra Ambiciosa/Resultado] 🤯 (Parte)"
+    "**[Evento/Tema Hot] + [Urgencia/Novedad] + [Emoji Impacto]**: Ej. \"F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!\"",
+    "**¡[Verbo Fuerte]!: [Sujeto] + [Acción Sorprendente] + [Emoji Impacto]**: Ej. \"¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱\"",
+    "**¡[Evento Mundial] [Detalle clave]! ¿[Pregunta de Intriga] + [Emoji Impacto]?**: Ej. \"¡ALEMANIA vs PARAGUAY! ¿Mundial 2026 HOY? 😱\"",
+    "**[Tema IA/Tech] + [Acción Impactante] + [Consecuencia Negativa] + [Emoji Impacto]**: Ej. \"¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱\"",
+    "**[Referencia Geográfica/Persona Famosa] + [Palabra Viral] + [Emoji Impacto]**: Ej. \"INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱\" / \"MESSI: ¡1000 GOLES! ¿VERDAD? 😱🤯\"",
+    "**[Verbo de Acción/Concepto] a los [Edad/Número]: [Afirmación Audaz] [Emoji Impacto]**: Ej. \"EMPRENDER A LOS 56: Cien Millones 🤯\""
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o reflexión sin un anclaje noticioso o cifra impactante (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Referencias a eventos con fechas futuras lejanas o locaciones demasiado específicas que carecen de urgencia o relevancia general (ej. '¡HORARIOS F1 2026! SILVERSTONE EXPLOTA 🤯')",
-    "Preguntas amplias o temas globales abstractos que no generen una emoción fuerte o curiosidad inmediata, con emojis menos impactantes (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')"
+    "Títulos que refieren a eventos deportivos con fechas muy futuras o localizaciones muy específicas sin relevancia global inmediata (ej. \"¡HORARIOS F1 2026! SILVERSTONE EXPLOTA 🤯\" con 1 vista).",
+    "Mensajes de autoayuda abstractos o clichés sin un gancho de novedad o especificidad (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\" con 0 vistas).",
+    "Preguntas políticas o tecnológicas genéricas que carecen de un impacto viral o de urgencia para la audiencia general (ej. \"IA Global: ¿EE.UU. tiene el control? 🌐\" con 2 vistas)."
   ],
   "best_hora": 15,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Priorizar la creación de contenido deportivo de alto impacto, enfocándose en eventos actuales de Fútbol y Fórmula 1, utilizando títulos que generen urgencia y emoción.",
-    "A pesar de la tendencia negativa general del nicho 'ia_noticias', continuar generando noticias de IA solo si son de alto impacto, involucran marcas importantes o riesgos significativos, replicando el patrón de los videos más vistos en esta categoría.",
-    "Explorar y escalar el nicho de 'productividad' dada su tendencia positiva y buen promedio de vistas, posiblemente incorporando el uso de números grandes o promesas claras en los títulos, similar al video 'EMPRENDER A LOS 56'.",
-    "Establecer la hora de publicación de las 15:00 como un punto clave para lanzar contenido de alto potencial, dado que el video más exitoso se publicó a esa hora con 271 vistas.",
-    "Optimizar los títulos para incluir combinaciones efectivas de exclamaciones, preguntas intrigantes, el emoji 😱, referencias geográficas explícitas (ej. LATAM) y verbos de acción fuertes, como se observa en el Top 10."
+    "Priorizar fuertemente el contenido de deportes (Fútbol y F1), enfocándose en la inmediatez (\"HOY\"), la relevancia geográfica (\"LATAM\") y el uso de emojis de alto impacto (😱, 🤯) en los títulos, ya que son los temas más virales.",
+    "Continuar generando contenido sobre noticias de IA que involucren fallas, prohibiciones, riesgos o cambios drásticos, ya que estos temas dentro de 'ia_noticias' han demostrado un rendimiento sólido.",
+    "Explorar y etiquetar adecuadamente el sub-nicho de 'emprendimiento' o 'finanzas' cuando se presenten historias con números grandes y afirmaciones audaces (ej. 'Cien Millones'), ya que este tipo de contenido, aunque etiquetado como 'ia_noticias', ha generado vistas significativas.",
+    "Evitar la creación de contenido con temas genéricos, mensajes de autoayuda abstractos, o referencias a eventos futuros lejanos, ya que estos patrones han demostrado un rendimiento extremadamente bajo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido deportivo, específicamente de Fútbol y F1, actúa como un motor de vistas extremadamente potente, representando la mayoría de las vistas del Top 10, incluso cuando está categorizado bajo un nicho más amplio como 'ia_noticias'. Esto indica que el *tema* específico es más crítico para el rendimiento que la etiqueta general del nicho."
+  "insight_semana": "A pesar de la tendencia negativa general del nicho `ia_noticias` (-0.95), los subtemas de deportes (Fútbol y F1) con un enfoque en urgencia y localización (LATAM) son el motor principal de vistas, representando el 65.4% de los videos más exitosos del Top 10, lo que demuestra que la especificidad y la inmediatez superan la tendencia general del nicho amplio."
 }
