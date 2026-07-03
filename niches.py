@@ -4,6 +4,10 @@ Rota diariamente: cada día usa un nicho distinto para máxima variedad.
 """
 from datetime import date
 
+# Mundial 2026: 11 junio – 19 julio 2026
+_MUNDIAL_START = date(2026, 6, 11)
+_MUNDIAL_END   = date(2026, 7, 19)
+
 NICHES = {
     "ia_noticias": {
         "nombre": "IA al Día",
@@ -264,6 +268,49 @@ TONO: Urgente, como si acabaras de descubrir algo. La IA es tu fuente exclusiva 
         },
     },
 
+    "mundial_2026": {
+        "nombre": "Mundial 2026",
+        "rss_feeds": [
+            "https://e00-marca.uecdn.es/rss/portada.xml",
+            "https://www.ole.com.ar/rss/ultimas-noticias.xml",
+            "https://depor.com/feed/",
+            "https://feeds.bbci.co.uk/sport/football/rss.xml",
+            "https://www.goal.com/feeds/en/news",
+            "https://www.espn.com/espn/rss/news",
+        ],
+        "pexels_queries": [
+            "soccer fans stadium celebration crowd",
+            "football player running field stadium",
+            "soccer ball net goal stadium",
+            "world cup trophy gold close up",
+            "football fans flags cheering portrait",
+        ],
+        "tags": ["mundial 2026","copa del mundo","world cup 2026","goles mundial",
+                 "polémicas mundial","selección nacional","futbol mundial","shorts mundial",
+                 "resultados mundial","mundial usa canada mexico","eliminatoria mundial",
+                 "futbol shorts"],
+        "hashtags": "#Shorts #Mundial2026 #WorldCup #Futbol #CopaDelMundo #FutbolLatam",
+        "prompt_nicho": """Eres el narrador deportivo más viral de América Latina, cubriendo el Mundial 2026 en tiempo real.
+TEMA: Jugadas, goles, polémicas, momentos épicos y datos del Mundial 2026 (USA, Canadá, México).
+FORMATO OBLIGATORIO: Narración pura en audio — describís la jugada con tal detalle que el oyente la VE sin verla.
+ENFOQUE: Lo que pasó, el dato que nadie menciona, la polémica real, el contexto histórico del momento.
+GANCHO IDEAS:
+• "El gol que paró al mundo entero. Así fue el minuto a minuto."
+• "El VAR anuló esto y las redes explotan. Tenés que escuchar qué pasó."
+• "El dato que nadie menciona de [jugador]: [dato histórico concreto]"
+• "Esto pasó en el vestuario después del partido y nadie lo filmó"
+• "[Jugador] hizo algo que solo [referencia histórica] había hecho antes"
+TONO: Apasionado, cinematográfico, como si estuvieras narrando en vivo pero con el contexto de haber analizado todo.
+IMPORTANTE: Describí las jugadas con palabras — nunca digas "como viste" o "en el video". El oyente no tiene imágenes.
+""",
+        "fallback": {
+            "titulo": "El gol que paró al mundo en el Mundial 2026 ⚽🌍",
+            "guion": "Cuarenta y dos mil personas en silencio. Después, un estallido que se escuchó a tres cuadras del estadio. Así fue el gol que paró al mundo entero en el Mundial 2026. El jugador recibió el balón de espaldas, giró 180 grados, y definió al ángulo opuesto sin mirar. El arquero no se movió. Nadie se movió. El dato que ningún medio menciona: fue el mismo movimiento exacto que hizo en semifinales hace cuatro años. Como si lo hubiera ensayado toda su vida para este momento. Las redes colapsaron en ocho minutos. Cuarenta millones de menciones en una hora. Sígueme y te cuento todo lo que pasa en el Mundial antes que nadie.",
+            "hook_texto": "Cuarenta y dos mil personas en silencio",
+            "descripcion": "Los goles, polémicas y datos del Mundial 2026 narrados como nunca. #Shorts #Mundial2026 #WorldCup #Futbol",
+        },
+    },
+
     "productividad_ia": {
         "nombre": "Productividad con IA",
         "rss_feeds": [
@@ -319,6 +366,7 @@ def get_niche(lang_code="es", learned_weights: dict = None):
     """
     Retorna el nicho del día.
     - Inglés: siempre ia_noticias
+    - Durante el Mundial 2026: alterna mundial_2026 (2 de cada 3 días) con ia_noticias
     - ES sin pesos aprendidos: rotación por día del año
     - ES con pesos aprendidos: selección probabilística por performance
     """
@@ -326,17 +374,23 @@ def get_niche(lang_code="es", learned_weights: dict = None):
     if lang_code == "en":
         return "ia_noticias", NICHES["ia_noticias"]
 
+    today = date.today()
+
+    # ── Prioridad Mundial 2026 ─────────────────────────────────────────────────
+    if _MUNDIAL_START <= today <= _MUNDIAL_END:
+        # 2 de cada 3 días → mundial; 1 de cada 3 → nicho normal (variedad)
+        if today.toordinal() % 3 != 0:
+            return "mundial_2026", NICHES["mundial_2026"]
+
     if learned_weights and any(v > 0 for v in learned_weights.values()):
-        # Selección ponderada por performance aprendida
-        keys   = [k for k in learned_weights if k in NICHES]
-        weights = [max(learned_weights[k], 0.05) for k in keys]  # mínimo 5% cada uno
-        total  = sum(weights)
+        keys    = [k for k in learned_weights if k in NICHES]
+        weights = [max(learned_weights[k], 0.05) for k in keys]
+        total   = sum(weights)
         weights = [w / total for w in weights]
-        # Seed = día para que los 3 videos del día usen el mismo nicho
-        rng = random.Random(date.today().toordinal())
+        rng = random.Random(today.toordinal())
         key = rng.choices(keys, weights=weights, k=1)[0]
     else:
-        day_of_year = date.today().timetuple().tm_yday
+        day_of_year = today.timetuple().tm_yday
         key = ROTATION_ORDER[day_of_year % len(ROTATION_ORDER)]
 
     return key, NICHES[key]
