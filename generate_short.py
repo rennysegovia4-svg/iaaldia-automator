@@ -790,6 +790,61 @@ def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente"
 
 # ── Paso 4: Presentador Pexels — multi-clip xfade (stable-diffusion-videos) ───
 
+def _veo2_prompt(pexels_query: str) -> str:
+    """Convierte una query corta de Pexels en un prompt cinematográfico para Veo 2."""
+    return (
+        f"{pexels_query}, vertical video 9:16, cinematic lighting, "
+        "smooth camera movement, high quality, no text, no watermark, "
+        "realistic footage style"
+    )
+
+
+def _generate_veo2_clip(prompt: str, tmp_dir: str, idx: int) -> str | None:
+    """
+    Genera un clip de 8s con Veo 2 (9:16 para Shorts).
+    Timeout 120s — si no termina, retorna None y el pipeline usa Pexels.
+    """
+    try:
+        from google.genai import types as _gtypes
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        operation = client.models.generate_videos(
+            model="veo-2.0-generate-001",
+            prompt=prompt,
+            config=_gtypes.GenerateVideosConfig(
+                aspect_ratio="9:16",
+                number_of_videos=1,
+                duration_seconds=8,
+            ),
+        )
+        deadline = time.time() + 120
+        while not operation.done:
+            if time.time() > deadline:
+                print(f"      [Veo 2] Timeout — usando Pexels")
+                return None
+            time.sleep(12)
+            operation = client.operations.get(operation)
+
+        videos = (operation.response or {})
+        if hasattr(videos, "generated_videos") and videos.generated_videos:
+            video_bytes = videos.generated_videos[0].video.video_bytes
+            if video_bytes:
+                raw = os.path.join(tmp_dir, f"veo2_raw_{idx}.mp4")
+                with open(raw, "wb") as f:
+                    f.write(video_bytes)
+                scaled = os.path.join(tmp_dir, f"veo2_scaled_{idx}.mp4")
+                subprocess.run([
+                    FFMPEG, "-y", "-i", raw,
+                    "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+                    "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an", scaled
+                ], capture_output=True)
+                if os.path.exists(scaled) and os.path.getsize(scaled) > 50000:
+                    print(f"      [Veo 2] Clip {idx+1} generado ✓")
+                    return scaled
+    except Exception as e:
+        print(f"      [Veo 2] Error: {str(e)[:60]} — usando Pexels")
+    return None
+
+
 def _download_pexels_clip(query, tmp_dir, idx):
     """Descarga y escala un clip de Pexels a 1080x1920."""
     headers = {"Authorization": PEXELS_API_KEY}
@@ -830,8 +885,7 @@ def _download_pexels_clip(query, tmp_dir, idx):
 
 def get_multi_presenter_video(tmp_dir, duration):
     """
-    [stable-diffusion-videos] Descarga 2 clips de Pexels distintos y aplica
-    crossfade xfade en el punto medio — da variedad visual sin GPU.
+    Genera 2 clips con Veo 2 (primario) o Pexels (fallback) y aplica crossfade.
     """
     queries = PRESENTER_QUERIES.copy()
     random.shuffle(queries)
@@ -839,7 +893,10 @@ def get_multi_presenter_video(tmp_dir, duration):
 
     for query in queries:
         if len(clips) >= 2: break
-        clip = _download_pexels_clip(query, tmp_dir, len(clips))
+        # Intentar Veo 2 primero
+        clip = _generate_veo2_clip(_veo2_prompt(query), tmp_dir, len(clips))
+        if not clip:
+            clip = _download_pexels_clip(query, tmp_dir, len(clips))
         if clip:
             clips.append((query, clip))
 
