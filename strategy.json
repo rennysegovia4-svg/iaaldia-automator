@@ -1,40 +1,38 @@
 {
   "updated": "2026-07-04",
-  "iteracion": 85,
+  "iteracion": 86,
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.25,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
     "entretenimiento": 0.1,
-    "negocios_digitales": 0.1,
-    "finanzas": 0.02,
-    "productividad_ia": 0.01,
+    "negocios_digitales": 0.08,
+    "productividad_ia": 0.03,
+    "finanzas": 0.01,
     "cripto_inversiones": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "Título + Urgencia + Emoción (ej. \"F1 CLASIFICACIÓN HOY?! 😱\")",
-    "Exageración/Impacto + Tema + Emoción (ej. \"SILVERSTONE EXPLOTA 🤯\")",
-    "Pregunta Sorpresa + Evento Específico + Emoción (ej. \"¿Mundial 2026 HOY? 😱\")",
-    "Conflicto/Paradoxa + Nombres Grandes + Emoción (ej. \"La IA FALLA y Ford RECONTRATA 😱\")",
-    "Noticia Alarmante + Consecuencia + Emoción (ej. \"FRENAN GPT-5.6! Acceso a IA en RIESGO 😱\")",
-    "Cifra Aspiracional/Dato Impactante + Tema + Emoción (ej. \"EMPRENDER A LOS 56: Cien Millones 🤯\")"
+    "¡[Evento/Tema] ¿HOY?! 😱 [Detalle]",
+    "¡[Evento/Noticia] EXPLOTA [HOY]! 🤯",
+    "¡[Verbo de Impacto]: [Hecho Sorpresa] 😱",
+    "¡[Evento] [Impacto] en [Lugar]! 😱",
+    "¡[Noticia Negativa] en RIESGO 😱",
+    "[Tema/Edad]: [Cifra Grande] 🤯"
   ],
   "avoid_hooks": [
-    "Preguntas genéricas o de bajo impacto inmediato (ej. \"IA Global: ¿EE.UU. tiene el control? 🌐\")",
-    "Mensajes de autoayuda genéricos sin un evento noticioso (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\")",
-    "Títulos de temática muy específica o abstracta de herramienta sin drama (ej. \"Zapier: IA ahorra 3 horas diarias 🤖\")",
-    "Títulos con 'Parte X' que fragmentan el contenido (ej. '(1/2)')",
-    "Títulos que insinúan fraude sin ofrecer un desenlace claro o relevante para la audiencia (ej. \"PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡\")"
+    "Títulos abstractos o de autoayuda genérica sin urgencia o novedad (ej. 'NO TOMAR RIESGO')",
+    "Preguntas genéricas o demasiado amplias sin inmediatez ni fuerte impacto (ej. 'IA Global: ¿EE.UU. tiene el control?')",
+    "Promesas vagas o clichés como 'la VERDAD' en temas de emprendimiento sin un número o caso específico"
   ],
-  "best_hora": 14,
-  "duracion_optima": 58,
+  "best_hora": 15,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias deportivas de alta actualidad (F1, Fútbol) ya que representa el 58.3% de las vistas del Top 10.",
-    "Continuar utilizando títulos con ganchos de urgencia, impacto emocional y preguntas directas, incorporando emojis impactantes (😱, 🤯, ⚡) para maximizar el CTR.",
-    "Explorar el nicho de noticias de tecnología/IA centrándose en controversias, fallos de alto perfil o anuncios con implicaciones significativas, como el caso de Ford y GPT-5.6.",
-    "Probar contenido de emprendimiento que incorpore cifras monetarias ambiciosas o edades clave, ya que el video 'Cien Millones' tuvo un buen rendimiento.",
-    "Concentrar las publicaciones en el rango horario de 14:00 a 17:00, que ha mostrado ser el más efectivo para los videos con mejor rendimiento."
+    "Priorizar la creación de contenido de `ia_noticias` enfocado en **eventos deportivos** (F1, fútbol) debido a su rendimiento superior (58.5% de vistas en el Top 10).",
+    "Implementar los ganchos de título identificados como más efectivos, utilizando **exclamaciones, preguntas de urgencia y emojis de impacto** (ej. `😱`, `🤯`, `⚡`).",
+    "Concentrar las publicaciones entre las **14:00 y 17:00 horas**, con un énfasis particular en la hora de las **15:00**, que mostró el mayor rendimiento individual.",
+    "Evitar títulos abstractos, promesas genéricas o preguntas demasiado amplias que carezcan de inmediatez o un evento específico.",
+    "Iniciar la recolección de datos sobre la **duración de los videos** para identificar la duración óptima de Shorts para este canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El desempeño del canal está fuertemente impulsado por las noticias trending, y dentro de estas, las actualizaciones deportivas de alta inmediatez y expectativa dominan la atención de la audiencia, incluso cuando se categorizan en un nicho más amplio como 'ia_noticias'."
+  "insight_semana": "El contenido deportivo (F1, Fútbol) representa el 58.5% de las vistas del Top 10 (749 de 1279 vistas) y es el principal impulsor de los videos más vistos, a pesar de estar categorizado bajo 'ia_noticias', consolidándose como un sub-nicho de alto rendimiento."
 }
