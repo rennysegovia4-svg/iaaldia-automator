@@ -1,36 +1,37 @@
 {
-  "updated": "2026-07-03",
-  "iteracion": 83,
+  "updated": "2026-07-04",
+  "iteracion": 84,
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.2,
+    "deportes": 0.5,
+    "ia_noticias": 0.15,
     "negocios_digitales": 0.15,
-    "finanzas": 0.1,
-    "productividad_ia": 0.05,
+    "finanzas": 0.05,
     "entretenimiento": 0.05,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Titulares que enfatizan la inmediatez y urgencia con palabras como 'HOY', 'YA', 'AHORA' y emojis de sorpresa (😱, 🤯).",
-    "Afirmaciones conmocionantes o que reportan fallos/riesgos importantes (ej. '¡CONMOCIÓN!', 'FALLA', 'RIESGO', 'EXPLOTA') con emojis de alerta.",
-    "Preguntas directas sobre eventos relevantes (deportivos o tecnológicos) que generan intriga y expectativa.",
-    "Menciones de marcas, eventos o tecnologías reconocidas (ej. 'F1', 'GPT', 'Google', 'Ford') y su impacto global o local ('LATAM').",
-    "Uso de números impactantes y audaces en contextos de oportunidad o logro (ej. 'Cien Millones') en temas de emprendimiento.",
-    "Emojis de énfasis (😱, 🤯, ⚡) utilizados consistentemente al final de los títulos para captar la atención."
+    "[TEMA] HOY?! 😱 [RELEVANCIA] YA!",
+    "¡[IMPACTO]!: [EVENTO] 😱",
+    "¡[EQUIPO1] vs [EQUIPO2]! ¿[TORNEO] HOY? 😱",
+    "¡[NOTICIA GRANDE]! [CONSECUENCIA] 😱",
+    "[PAÍS/LUGAR] ¡[REACCIÓN] VIRAL en [REGIÓN]! 😱",
+    "[ACCIÓN] A LOS [EDAD]: [CIFRA] 🤯"
   ],
   "avoid_hooks": [
-    "Títulos que carecen de inmediatez o impacto directo al espectador, con afirmaciones filosóficas o autoayuda generalizada (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Titulares con terminología de nicho financiero (ej. 'Ballenas') sin un contexto claro de beneficio o riesgo fácilmente comprensible para el público general.",
-    "Preguntas o afirmaciones que sugieren fraude o negatividad sobre eventos específicos sin un respaldo masivo o que son demasiado abstractas (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?', 'IA Global: ¿EE.UU. tiene el control?')."
+    "Afirmaciones genéricas de autoayuda o frases abstractas sobre el riesgo.",
+    "Preguntas geopolíticas amplias sin inmediatez o impacto personal directo.",
+    "Mencionar herramientas específicas o tutoriales muy de nicho sin un gancho de beneficio universal."
   ],
   "best_hora": 15,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido deportivo (Fútbol y F1) con un enfoque en la inmediatez ('HOY', 'YA') y la relevancia para Latam, dado su rendimiento superior (68.57% de las vistas del Top 10).",
-    "Publicar los videos más prometedores, especialmente los de deportes o noticias impactantes, a las 15:00 (3 PM), ya que este horario demostró ser el más efectivo para el video con más vistas (271).",
-    "Desarrollar más contenido en la categoría de 'negocios_digitales' o 'productividad' enfocado en emprendimiento con promesas cuantificables y ambiciosas (ej. 'Cien Millones'), replicando el éxito de este sub-nicho (87 vistas)."
+    "Priorizar el contenido deportivo centrado en eventos actuales de F1 y fútbol, utilizando llamadas a la acción o urgencia (ej. 'HOY', 'YA!', 'LATAM') en los títulos para maximizar el engagement.",
+    "Expandir el sub-nicho de emprendimiento o negocios digitales enfocándose en historias de éxito con cifras monetarias impactantes (ej. 'Cien Millones') y ganchos de edad, como alternativa de alto rendimiento a la IA pura.",
+    "Para las noticias de IA, enfocarse en desarrollos críticos de modelos populares o impactos masivos (ej. 'GPT-5.6', 'Ford RECONTRATA') en lugar de análisis geopolíticos o herramientas de nicho, que muestran bajo rendimiento.",
+    "No se dispone de datos de duración de video, se recomienda realizar pruebas A/B con duraciones variadas (ej. 15s, 30s, 45s, 58s) y analizar el tiempo de visualización promedio para determinar la duración óptima."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de contenido deportivo de alta demanda (Fútbol y F1) con un enfoque en la inmediatez ('HOY') y relevancia regional (LATAM), publicado de forma estratégica a las 15:00, es el principal motor de vistas, superando incluso a las 'ia_noticias' puras que muestran una tendencia negativa."
+  "insight_semana": "El contenido con temática deportiva (F1, fútbol) domina abrumadoramente el rendimiento del canal, concentrando el 66.2% de las vistas del Top 10 (824 de 1243), demostrando que la relevancia temática actual y la urgencia superan la categorización interna ('ia_noticias') para la audiencia."
 }
