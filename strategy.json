@@ -1,38 +1,40 @@
 {
   "updated": "2026-07-04",
-  "iteracion": 88,
+  "iteracion": 89,
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.07,
-    "productividad_ia": 0.05,
-    "finanzas": 0.03,
+    "productividad": 0.1,
+    "negocios_digitales": 0.05,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "politica_latam": 0.02,
+    "productividad_ia": 0.0
   },
   "best_hooks": [
-    "Pregunta de inmediatez con emoji de sorpresa/impacto: `[Evento/Tema] + ¿HOY?!/YA! + 😱/🤯/⚡` (ej: \"F1 CLASIFICACIÓN HOY?! 😱\")",
-    "Noticia de cambio drástico con verbo fuerte y emoji de impacto: `[Sujeto/Tema] + [Verbo IMPACTO: EXPLOTA/FALLA/CONMOCIÓN] + 😱/🤯` (ej: \"¡HORARIOS F1 2026! SILVERSTONE EXPLOTA 🤯\")",
-    "Anuncio de riesgo o novedad disruptiva con emoji de alarma: `[Evento/Tecnología] + [RIESGO/CAMBIA todo] + 😱` (ej: \"¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱\")",
-    "Evento deportivo con pregunta de urgencia o emoji de impacto: `[Deporte/Países] + ¿Mundial HOY? + 😱` (ej: \"¡ALEMANIA vs PARAGUAY! ¿Mundial 2026 HOY? 😱\")",
-    "Fenómeno viral con referencia geográfica y emoji de sorpresa: `[País/Evento] + ¡Locura VIRAL en Latam! + 😱` (ej: \"INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱\")",
-    "Hecho sorprendente con dato numérico y emoji de revelación: `[Acción/Tema] + [Dato numérico impactante] + 🤯` (ej: \"EMPRENDER A LOS 56: Cien Millones 🤯\")"
+    "[EVENTO ESPECÍFICO] + [URGENCIA/HOY] + [LOCALIZACIÓN] + [EMOJI IMPACTO] (Ej: F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
+    "¡[MARCA/TECNOLOGÍA GRANDE] + [ACCIÓN/CRISIS] + [CONSECUENCIA DRAMÁTICA] + [EMOJI CONMOCIÓN] (Ej: ¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱)",
+    "¡[EVENTO GRANDE/MUNDIAL] + [VERBO 'EXPLOTA'] + [URGENCIA/HOY] + [EMOJI IMPACTO] (Ej: ¡MUNDIAL EXPLOTA HOY! ¿Por qué? 😱)",
+    "[PAÍS/EQUIPO] + [EMOCIÓN FUERTE/VIRAL] + [CONTEXTO GEOGRÁFICO] + [EMOJI IMPACTO] (Ej: INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱)",
+    "[TEMÁTICA AVANZADA/ESPECÍFICA] + [RIESGO/CONSECUENCIA NEGATIVA] + [EMOJI ALERTA] (Ej: ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
+    "[RESULTADO NUMÉRICO SORPRENDENTE] + [ACCIÓN/CONCEPTO RELACIONABLE] + [EMOJI ASOMBRO] (Ej: Cien Millones 🤯 en EMPRENDER A LOS 56)"
   ],
   "avoid_hooks": [
-    "Temas abstractos de autoayuda o reflexión sin anclaje a un evento o noticia: (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\")",
-    "Noticias de nicho muy específico o descripciones de herramientas sin un componente dramático/urgente: (ej. \"Zapier: IA ahorra 3 horas diarias 🤖\")",
-    "Títulos con preguntas genéricas, emojis de bajo impacto, o que sugieren una serie/continuidad (ej. '(1/2)'): (ej. \"IA Global: ¿EE.UU. tiene el control? 🌐\", \"EMPRENDER a los 50: la VERDAD 😱 (1/2)\")"
+    "Títulos que sugieren una serie o contenido incompleto (ej. '(1/2)'), ya que reduce drásticamente las vistas (2 views).",
+    "Frases genéricas de autoayuda o motivación que carecen de especificidad o un gancho dramático claro (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA' con 0 views).",
+    "Preguntas demasiado genéricas sobre temas amplios de IA o política sin un elemento de urgencia o controversia personal (ej. 'IA Global: ¿EE.UU. tiene el control?' con 2 views).",
+    "Títulos centrados en herramientas muy específicas o beneficios puramente funcionales que no apelan a una emoción o interés masivo (ej. 'Zapier: IA ahorra 3 horas diarias' con 3 views)."
   ],
   "best_hora": 15,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de **deportes (F1 y fútbol)**, ya que consistentemente genera las mayores vistas, incluso cuando se categoriza bajo 'ia_noticias'.",
-    "Implementar títulos siguiendo los patrones más efectivos identificados, combinando **inmediatez (`HOY?!/YA!`), verbos de alto impacto (`EXPLOTA`, `FALLA`), y emojis potentes (`😱`, `🤯`, `⚡`)**.",
-    "Concentrar las publicaciones en la franja horaria de **14:00 a 17:00 (hora local)**, identificando las 15:00 como el pico de mayor rendimiento individual.",
-    "Evitar la creación de contenido con **títulos abstractos, de autoayuda genérica, o de nicho muy específico sin un gancho de urgencia o sorpresa** que conecte con la audiencia general.",
-    "Utilizar **años futuros específicos (ej. '2026') únicamente cuando se combinen con noticias de horarios o eventos de naturaleza explosiva/urgente**."
+    "**Priorizar fuertemente contenido de nicho de 'deportes'** (F1, fútbol, eventos de mundiales) dentro de la categoría `ia_noticias`, ya que representa el 58.5% de las vistas del Top 10 y es el sub-nicho más atractivo actualmente.",
+    "**Continuar utilizando títulos con elementos de urgencia ('HOY?!', 'YA!'), fechas futuras de eventos importantes ('2026'), verbos de alto impacto ('EXPLOTA', 'CONMOCIÓN'), y emojis relevantes** para maximizar la CTR y el engagement inicial.",
+    "**Explorar la dicotomía humano vs. IA y el impacto de la IA en grandes corporaciones (Ford, Google, GPT)**, ya que genera alto interés y ha producido videos con 131 y 93 vistas.",
+    "**Publicar los Shorts entre las 14:00 y 17:00 horas (GMT-X)**, con especial énfasis en las 15:00, ya que este bloque horario ha demostrado ser el más efectivo para captar la atención de la audiencia.",
+    "**En temas de emprendimiento o finanzas, utilizar números concretos y sorprendentes** (ej. 'Cien Millones') en los títulos en lugar de frases abstractas o genéricas ('la VERDAD') para mejorar el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de **deportes (F1 y fútbol)**, aunque categorizado bajo `ia_noticias`, sigue siendo el principal motor de vistas, representando el 58.5% de las vistas de los videos del Top 10, y superando consistentemente a otras temáticas, lo que indica una fuerte demanda por este sub-nicho."
+  "insight_semana": "La audiencia del canal tiene una demanda excepcionalmente alta por noticias deportivas de última hora y eventos futuros (especialmente F1 y fútbol), demostrando ser un 'gancho' mucho más potente que las noticias generales de IA, incluso cuando se publican bajo la misma categoría `ia_noticias`."
 }
