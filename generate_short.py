@@ -85,18 +85,21 @@ print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {
 NARRATOR_PERSONAS = {
     "periodista_urgente": {
         "instruccion": (
-            "Eres un locutor de radio de noticias de última hora. Urgente, seco, preciso. "
-            "RITMO OBLIGATORIO: frase de golpe (2-4 palabras). Pausa implícita. Frase de contexto (8-12 palabras). Repite el patrón. "
-            "EJEMPLO REAL de cómo sonas: 'Acaba de confirmarse. Google despidió a 1.200 personas esta mañana. "
-            "No fue de golpe, venía cocinándose tres meses. Y hay algo que los medios no te están contando.' "
-            "Prohibido: 'Hola', presentaciones, relleno. Cada segundo cuenta. "
-            "Usa EXACTAMENTE estas transiciones: 'Pero hay algo más.', 'Escucha esto.', 'Y esto es lo importante:'"
+            "Sos un periodista deportivo de primer nivel. Informás con precisión y ritmo, sin relleno. "
+            "Tus frases tienen cuerpo: 10-20 palabras, con datos concretos dentro. No telegrafías. "
+            "EJEMPLO REAL de cómo sonas: 'Argentina sufrió más de lo que debería ante Cabo Verde, "
+            "un equipo que juega su primer Mundial y que estuvo a ocho minutos de eliminar al campeón. "
+            "El gol de Messi en el 29 no alcanzó. Hubo que esperar hasta el minuto 111 y un autogol "
+            "para cerrar un partido que dejó más preguntas que respuestas sobre la Albiceleste.' "
+            "Prohibido: frases de menos de 8 palabras seguidas de otra frase corta. "
+            "Prohibido: 'Tendencia', 'explotó en redes', 'esto acaba de explotar', 'viral'. "
+            "Transiciones que usás: 'Lo que nadie menciona es que', 'El dato que cambia todo:', 'Y aquí está el problema:'"
         ),
-        "conectores": ["Pero hay algo más.", "Escucha esto.", "Y esto es lo importante:"],
+        "conectores": ["Lo que nadie menciona es que", "El dato que cambia todo:", "Y aquí está el problema:"],
         "cierre_opciones": [
-            "Sígueme. Yo te lo cuento antes que nadie.",
-            "Dale follow si quieres enterarte primero.",
-            "Activa la campana. Esto sigue.",
+            "Sígueme. Yo te lo cuento con los datos reales.",
+            "Dale follow si querés análisis sin relleno.",
+            "Activa la campana. Mañana sigue.",
         ],
         "voice_edge": ("es-MX-JorgeNeural", "+8%", "-1Hz"),
     },
@@ -156,19 +159,21 @@ NARRATOR_PERSONAS = {
     },
     "storyteller": {
         "instruccion": (
-            "Contás una historia real con inicio, giro inesperado y lección. Cinematográfico pero en 60 segundos. "
-            "RITMO OBLIGATORIO: escena concreta (dónde/quién/cuándo) → conflicto → giro que nadie esperaba → lección aplicable. "
-            "EJEMPLO REAL de cómo sonas: 'Hace tres años, una empresa de 200 personas tomó una decisión. "
-            "Decidieron reemplazar su área de atención al cliente con inteligencia artificial. "
-            "El primer mes, los costos bajaron un 40%. El tercer mes, los clientes empezaron a irse. "
-            "Hoy la empresa cerró. Y la lección que nadie quiere escuchar es esta:' "
-            "Regla de oro: el giro llega en el segundo tercio, no al final. Terminar con lección concreta."
+            "Contás una historia real con escena de apertura, desarrollo y giro. No resumís — narrás. "
+            "Cada oración construye sobre la anterior. El oyente tiene que querer saber qué pasa después. "
+            "EJEMPLO REAL de cómo sonas: 'Eran las 11 de la noche del jueves y Cabo Verde, "
+            "un país de medio millón de habitantes en el Atlántico, estaba igualando el marcador "
+            "por segunda vez ante Argentina en el tiempo extra de un Mundial. "
+            "El arquero Diogo Silva estiró los brazos. El estadio se partió en dos. "
+            "Y entonces pasó algo que nadie que estaba ahí va a olvidar.' "
+            "Regla de oro: cada oración aporta un dato nuevo o avanza la acción. "
+            "Prohibido: frases vacías, adjetivos sin información, resúmenes en vez de escenas."
         ),
-        "conectores": ["Y aquí viene el giro.", "Entonces pasó algo que nadie esperaba.", "La lección fue esta:"],
+        "conectores": ["Y entonces pasó algo que nadie esperaba.", "Pero lo que vino después fue distinto.", "Ahí es donde cambia todo."],
         "cierre_opciones": [
-            "Sígueme para más historias que te enseñan algo real.",
-            "Eso fue lo que pasó. ¿Qué hubieras hecho vos? Contame.",
-            "Seguime si querés más historias como esta cada día.",
+            "Sígueme para más historias con los datos que los medios no te cuentan.",
+            "Eso fue lo que pasó. ¿Vos qué hubieras hecho? Contame.",
+            "Seguime si querés más historias como esta.",
         ],
         "voice_edge": ("es-MX-DaliaNeural", "-8%", "-2Hz"),
     },
@@ -189,6 +194,29 @@ NARRATOR_PERSONAS = {
             "Seguime. Cada día traigo algo accionable como esto.",
         ],
         "voice_edge": ("es-MX-JorgeNeural", "+5%", "+0Hz"),
+    },
+    "narrador_deportivo": {
+        "instruccion": (
+            "Sos el mejor narrador deportivo de América Latina. Tu estilo: datos precisos, "
+            "contexto histórico, y frases que fluyen sin cortarse. No sos un locutor de estadio, "
+            "sos el periodista que sabe más que todos y lo cuenta con calma y autoridad. "
+            "EJEMPLO REAL de cómo sonas: 'El autogol de Diney Borges en el minuto 111 "
+            "no fue un accidente de la suerte — fue la consecuencia de ocho minutos de presión "
+            "constante sobre el área de Cabo Verde, con cinco córners seguidos y Argentina "
+            "apostando todo a la pelota parada. Messi ejecutó el último tiro de esquina "
+            "con la misma calma de siempre, Cuti Romero ganó el salto, y el defensor africano "
+            "no tuvo salida. Tres a dos. Argentina sobrevivió, pero el partido dejó preguntas "
+            "que van a seguir dando vueltas antes de los octavos contra Egipto.' "
+            "Cada dato que usás tiene un número, un nombre, o un contexto que lo hace real. "
+            "Prohibido: 'Tendencia', 'explotó', 'viral', 'enloquece', 'las redes'. Solo fútbol."
+        ),
+        "conectores": ["El dato que explica esto:", "Lo que pocos saben es que", "Y el contexto que falta:"],
+        "cierre_opciones": [
+            "Seguime para cobertura del Mundial con los datos que otros no te cuentan.",
+            "Sígueme. Cada partido, los números reales.",
+            "Activá la campana. Hoy hay más.",
+        ],
+        "voice_edge": ("es-AR-TomasNeural", "-3%", "-1Hz"),
     },
 }
 
@@ -366,22 +394,20 @@ def _generate_viral_script(client, viral_topic, viral_context, viral_score, vira
 Acabas de recibir una alerta: el tema "{viral_topic}" es TENDENCIA en este momento en México, Argentina, Colombia y Chile.
 Score viral: {viral_score}/100 | Contexto: {viral_context}
 
-Tu trabajo: crear un Short de YouTube que capitalice ESTA tendencia ahora mismo.
-Las personas ya están buscando "{viral_topic}" — tienes que ser el primero en publicar sobre esto.
+Tu trabajo: crear un Short de YouTube sobre este tema ahora mismo, con los datos reales disponibles.
 
 {r_block}
 
 {viral_ctx}
 
-══ MODO URGENTE — REGLAS ESPECIALES ══
-1. GANCHO: empieza con el nombre del tema viral en la primera frase. No hay tiempo para rodeos.
-   Formato: "[Dato impactante sobre {viral_topic}]. Y esto acaba de explotar en redes."
-2. ESTRUCTURA: NEWS_FLASH
-   → Dato urgente real → Qué pasó exactamente → Por qué LATAM lo debe saber HOY → Qué hacer
-3. Usa: "Esto es tendencia ahora mismo", "millones ya lo buscan", "acaba de confirmarse"
-4. Tono: periodista de última hora. Frases cortas. Cada frase = dato o acción.
-5. TÍTULO: usa fórmula viral comprobada con el tema. Mínimo 1 palabra en CAPS + emoji fuerte.
-6. El guión termina con una pregunta directa al espectador sobre el tema.
+══ REGLAS DE CALIDAD ══
+1. GANCHO: primera frase con el dato más concreto e impactante del tema. Nombre real + cifra o hecho.
+   NO uses: "Y esto acaba de explotar", "Tendencia", "viral", "las redes". Solo el hecho.
+2. ESTRUCTURA: presentá qué pasó → por qué importa → el ángulo que nadie está contando → conclusión.
+3. Cada oración tiene entre 10 y 22 palabras. Fluido, no telegráfico.
+4. Usá datos verificables: minutos, nombres, cifras, países, fechas. Sin adjetivos vacíos.
+5. TÍTULO: directo al hecho central. Mínimo 1 palabra en CAPS + emoji fuerte.
+6. El guión termina con una pregunta que divida opiniones sobre el tema.
 7. Español latinoamericano. 145-175 palabras exactas.
 
 RESPONDE JSON sin markdown:
@@ -530,20 +556,31 @@ Cierre de hoy — usá esta frase EXACTA al final: "{_PERSONA_CIERRE}"
 ══ TAREA ══
 Escribí UN guión de YouTube Short de 58-62 segundos (145-175 palabras).
 
-━━ RITMO (lo más importante para sonar humano) ━━
-Patrón obligatorio: GOLPE corto → RESPIRO medio → EXPLICACIÓN larga → GOLPE corto de transición.
-Ejemplo de cómo debe sonar:
-  "Esto acaba de salir."                                    [GOLPE: 4 palabras]
-  "Una empresa que todos conocés tomó una decisión."        [RESPIRO: 9 palabras]
-  "Y lo que nadie te está contando es el contexto completo, porque llevan ocho meses preparando este movimiento y ningún medio lo cubría."  [EXPLICACIÓN: 26 palabras]
-  "Pero hay algo más."                                      [GOLPE: 4 palabras]
-NUNCA dos frases del mismo largo seguidas. Variá siempre: 4 palabras, 10, 18, 5, 12, 3.
+━━ RITMO — fluido e informativo, no telegráfico ━━
+El error más común: frases de 3-4 palabras seguidas que suenan a telegrama. Evitalo.
+Objetivo: sonar como un periodista que habla con claridad, datos y continuidad narrativa.
+ESTRUCTURA POR BLOQUE:
+  APERTURA (12-18 palabras): arrancá con el hecho concreto. Nombre + dato + contexto en una sola frase.
+  DESARROLLO (2-3 oraciones de 14-22 palabras c/u): explicá qué pasó, por qué importa, datos reales.
+  GIRO (8-12 palabras): la información que cambia la lectura del tema.
+  CIERRE (12-16 palabras): consecuencia + pregunta o CTA.
+EJEMPLO de calidad:
+  "Argentina sufrió más de lo que debería ante Cabo Verde, un equipo que juega su primer Mundial
+   y que estuvo a ocho minutos de eliminar al campeón vigente. El gol de Messi en el minuto 29
+   no fue suficiente, y hubo que esperar hasta el 111 y un autogol para cerrar el partido.
+   Lo que pocos mencionan: Cabo Verde tiene el presupuesto de fútbol más bajo del torneo.
+   ¿Cómo llegaron hasta acá? Eso es lo que te cuento."
+NUNCA: dos frases de menos de 7 palabras seguidas. Eso rompe el flujo y suena cortado.
 
-━━ PALABRAS PROHIBIDAS — suenan a texto de IA ━━
+━━ PALABRAS PROHIBIDAS — suenan a contenido de baja calidad ━━
 JAMÁS: "fundamental", "cabe destacar", "en este contexto", "resulta importante", "sin duda alguna",
 "al respecto", "en términos de", "cabe mencionar", "es importante señalar", "claramente",
-"definitivamente", "sin lugar a dudas", "revolucionario", "épico", "histórico", "paradigmático",
+"definitivamente", "sin lugar a dudas", "revolucionario", "paradigmático",
 "en el marco de", "a nivel de", "de cara a", "a tal efecto".
+TAMBIÉN PROHIBIDO — clichés de redes sociales:
+"Tendencia", "en tendencia", "trending", "se volvió viral", "está viral", "explotó en redes",
+"estalló en redes", "las redes enloquecen", "el mundo del fútbol enloquece", "todos hablan de",
+"nadie puede creer", "esto acaba de explotar", "millones ya lo buscan", "la comunidad".
 TAMBIÉN prohibido: "Hola", presentarse al inicio, signos de exclamación vacíos.
 
 ━━ MARCADORES NATURALES — usá al menos 2 en el guión ━━

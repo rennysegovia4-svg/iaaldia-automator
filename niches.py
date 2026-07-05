@@ -173,15 +173,19 @@ GANCHO IDEAS:
                  "deportes shorts","transfer futbol","gol record","deporte viral","liga española",
                  "seleccion nacional","atletismo"],
         "hashtags": "#Shorts #Deportes #Futbol #Champions #CopaAmerica #FutbolLatam",
-        "prompt_nicho": """Eres el periodista deportivo más seguido de América Latina.
-TEMA: Fútbol (Liga española, Champions, Copa Libertadores, selecciones), NBA, NFL, tenis, atletismo.
-ENFOQUE: Noticias de último minuto, fichajes, polémicas, récords, declaraciones explosivas.
-GANCHO IDEAS:
-• "[Jugador famoso] acaba de [fichar/declarar/hacer algo inesperado] y LATAM explota"
-• "El récord que nadie esperaba: [dato real sorprendente]"
-• "La polémica que sacude al [equipo/liga]: [hecho concreto]"
-• "Confirmado: [noticia de fichaje/resultado/sanción] cambia todo"
-TONO: Energético, pasional, como si lo estuvieras viendo en vivo. Mezcla emoción con datos.
+        "prompt_nicho": """Eres el periodista deportivo más riguroso y seguido de América Latina.
+TEMA: Fútbol (Mundial, Champions, Libertadores, ligas locales), NBA, tenis, atletismo.
+ENFOQUE: Hechos concretos con contexto histórico y datos verificables. No resúmenes, sino análisis.
+ESTILO OBLIGATORIO:
+• Frases de 12-20 palabras. Fluidas, no telegráficas.
+• Cada oración aporta un dato nuevo: minuto, nombre, cifra, récord, antecedente.
+• Prohibido: "Tendencia", "explotó en redes", "viral", "enloquece", "nadie puede creer".
+GANCHO IDEAS (con datos reales, no adjetivos):
+• "[Jugador] hizo [acción concreta] en el minuto [N] — es la [N]ª vez que pasa en [competición] en [N] años"
+• "[Equipo] lleva [N] partidos sin [logro] — el último fue en [año] con [contexto]"
+• "La decisión del VAR en el minuto [N] tiene un dato que los medios no están contando"
+• "[Nombre] declaró [cita textual o paráfrasis directa] — y el contexto cambia todo"
+TONO: Autoridad periodística. Informativo, preciso, con el ritmo de quien sabe más que todos.
 """,
         "fallback": {
             "titulo": "La noticia deportiva que sacude LATAM hoy ⚽",
@@ -290,18 +294,20 @@ TONO: Urgente, como si acabaras de descubrir algo. La IA es tu fuente exclusiva 
                  "resultados mundial","mundial usa canada mexico","eliminatoria mundial",
                  "futbol shorts"],
         "hashtags": "#Shorts #Mundial2026 #WorldCup #Futbol #CopaDelMundo #FutbolLatam",
-        "prompt_nicho": """Eres el narrador deportivo más viral de América Latina, cubriendo el Mundial 2026 en tiempo real.
-TEMA: Jugadas, goles, polémicas, momentos épicos y datos del Mundial 2026 (USA, Canadá, México).
-FORMATO OBLIGATORIO: Narración pura en audio — describís la jugada con tal detalle que el oyente la VE sin verla.
-ENFOQUE: Lo que pasó, el dato que nadie menciona, la polémica real, el contexto histórico del momento.
-GANCHO IDEAS:
-• "El gol que paró al mundo entero. Así fue el minuto a minuto."
-• "El VAR anuló esto y las redes explotan. Tenés que escuchar qué pasó."
-• "El dato que nadie menciona de [jugador]: [dato histórico concreto]"
-• "Esto pasó en el vestuario después del partido y nadie lo filmó"
-• "[Jugador] hizo algo que solo [referencia histórica] había hecho antes"
-TONO: Apasionado, cinematográfico, como si estuvieras narrando en vivo pero con el contexto de haber analizado todo.
-IMPORTANTE: Describí las jugadas con palabras — nunca digas "como viste" o "en el video". El oyente no tiene imágenes.
+        "prompt_nicho": """Eres el mejor periodista del Mundial 2026. Narrás con precisión y profundidad.
+TEMA: Jugadas, goles, polémicas, datos históricos y contexto del Mundial 2026 (USA, Canadá, México).
+FORMATO OBLIGATORIO: Narración en audio — describís cada momento con detalle concreto, sin imágenes.
+ESTILO OBLIGATORIO:
+• Frases de 14-22 palabras. Cada oración suma información nueva.
+• Usá números reales: minutos, estadísticas históricas, nombres completos, posiciones en la tabla.
+• Prohibido: "Tendencia", "explotó", "viral", "las redes enloquecen", "nadie puede creer".
+• Nunca digas "como viste" o "en el video" — el oyente no tiene imágenes.
+GANCHO IDEAS (con datos, no adjetivos):
+• "Minuto [N]. [Jugador] recibió el balón en [posición] y [acción exacta] — es el [N]º gol de su carrera en Mundiales."
+• "El árbitro [nombre] dejó correr la jugada pese al contacto claro — es la [N]ª vez que no cobra penal en este torneo."
+• "[Selección] llegó al partido con [dato de contexto] — y lo que pasó en el área en el minuto [N] explica por qué."
+• "El autogol del minuto [N] tiene una historia detrás que arrancó [N] minutos antes con una decisión táctica."
+TONO: Periodista con autoridad y pasión contenida. Informativo y cinematográfico al mismo tiempo.
 """,
         "fallback": {
             "titulo": "El gol que paró al mundo en el Mundial 2026 ⚽🌍",
@@ -348,18 +354,18 @@ GANCHO IDEAS:
     },
 }
 
-# Orden de rotación diaria — 10 slots (variedad máxima)
+# Orden de rotación diaria — 10 slots (deportes al 40% por performance)
 ROTATION_ORDER = [
+    "deportes",
     "ia_noticias",
     "deportes",
     "finanzas",
-    "entretenimiento",
-    "negocios_digitales",
-    "politica_latam",
-    "productividad_ia",
     "deportes",
-    "cripto_inversiones",
     "entretenimiento",
+    "deportes",
+    "negocios_digitales",
+    "cripto_inversiones",
+    "politica_latam",
 ]
 
 def get_niche(lang_code="es", learned_weights: dict = None):
