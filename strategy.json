@@ -1,40 +1,36 @@
 {
-  "updated": "2026-07-04",
-  "iteracion": 89,
+  "updated": "2026-07-05",
+  "iteracion": 90,
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "productividad": 0.1,
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "finanzas": 0.1,
+    "entretenimiento": 0.1,
     "negocios_digitales": 0.05,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02,
-    "productividad_ia": 0.0
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "[EVENTO ESPECÍFICO] + [URGENCIA/HOY] + [LOCALIZACIÓN] + [EMOJI IMPACTO] (Ej: F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)",
-    "¡[MARCA/TECNOLOGÍA GRANDE] + [ACCIÓN/CRISIS] + [CONSECUENCIA DRAMÁTICA] + [EMOJI CONMOCIÓN] (Ej: ¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱)",
-    "¡[EVENTO GRANDE/MUNDIAL] + [VERBO 'EXPLOTA'] + [URGENCIA/HOY] + [EMOJI IMPACTO] (Ej: ¡MUNDIAL EXPLOTA HOY! ¿Por qué? 😱)",
-    "[PAÍS/EQUIPO] + [EMOCIÓN FUERTE/VIRAL] + [CONTEXTO GEOGRÁFICO] + [EMOJI IMPACTO] (Ej: INGLATERRA 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ¡Locura VIRAL en Latam! 😱)",
-    "[TEMÁTICA AVANZADA/ESPECÍFICA] + [RIESGO/CONSECUENCIA NEGATIVA] + [EMOJI ALERTA] (Ej: ¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱)",
-    "[RESULTADO NUMÉRICO SORPRENDENTE] + [ACCIÓN/CONCEPTO RELACIONABLE] + [EMOJI ASOMBRO] (Ej: Cien Millones 🤯 en EMPRENDER A LOS 56)"
+    "Urgencia + Evento Específico + Localización/Audiencia + Emoción Fuerte (ej. 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!')",
+    "Palabra 'EXPLOTA' + Evento/Tema + Urgencia + Emoción Fuerte (ej. '¡HORARIOS F1 2026! SILVERSTONE EXPLOTA 🤯')",
+    "Adjetivo Impactante ('CONMOCIÓN', 'Locura VIRAL') + Evento/Situación + Consecuencia/Relevancia + Emoción Fuerte (ej. '¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱')",
+    "Controversia/Conflicto + Tema Específico + Pregunta + Emoción Fuerte (ej. 'TARJETA ROJA MUNDIAL: ¿ROBO EN SIMULACIÓN? 🤯')",
+    "Noticia de Avance/Freno Tecnológico + Implicación de Riesgo + Emoción Fuerte (ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱')",
+    "Pregunta Directa + Evento/Tema Actual + Urgencia + Emoción Fuerte (ej. '¡MUNDIAL EXPLOTA HOY! ¿Por qué? 😱')"
   ],
   "avoid_hooks": [
-    "Títulos que sugieren una serie o contenido incompleto (ej. '(1/2)'), ya que reduce drásticamente las vistas (2 views).",
-    "Frases genéricas de autoayuda o motivación que carecen de especificidad o un gancho dramático claro (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA' con 0 views).",
-    "Preguntas demasiado genéricas sobre temas amplios de IA o política sin un elemento de urgencia o controversia personal (ej. 'IA Global: ¿EE.UU. tiene el control?' con 2 views).",
-    "Títulos centrados en herramientas muy específicas o beneficios puramente funcionales que no apelan a una emoción o interés masivo (ej. 'Zapier: IA ahorra 3 horas diarias' con 3 views)."
+    "Títulos que sugieren contenido seriado o 'parte X' (ej. 'PARTE 1', '(1/2)')",
+    "Títulos excesivamente genéricos, filosóficos o de autoayuda sin un evento, urgencia o conflicto claro (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos de noticias que son demasiado amplios o abstractos, careciendo de la especificidad, urgencia o gancho emocional intenso (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')"
   ],
   "best_hora": 15,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "**Priorizar fuertemente contenido de nicho de 'deportes'** (F1, fútbol, eventos de mundiales) dentro de la categoría `ia_noticias`, ya que representa el 58.5% de las vistas del Top 10 y es el sub-nicho más atractivo actualmente.",
-    "**Continuar utilizando títulos con elementos de urgencia ('HOY?!', 'YA!'), fechas futuras de eventos importantes ('2026'), verbos de alto impacto ('EXPLOTA', 'CONMOCIÓN'), y emojis relevantes** para maximizar la CTR y el engagement inicial.",
-    "**Explorar la dicotomía humano vs. IA y el impacto de la IA en grandes corporaciones (Ford, Google, GPT)**, ya que genera alto interés y ha producido videos con 131 y 93 vistas.",
-    "**Publicar los Shorts entre las 14:00 y 17:00 horas (GMT-X)**, con especial énfasis en las 15:00, ya que este bloque horario ha demostrado ser el más efectivo para captar la atención de la audiencia.",
-    "**En temas de emprendimiento o finanzas, utilizar números concretos y sorprendentes** (ej. 'Cien Millones') en los títulos en lugar de frases abstractas o genéricas ('la VERDAD') para mejorar el rendimiento."
+    "Concentrar la estrategia de contenido en la intersección de 'noticias de IA' con eventos de alta actualidad en 'deportes' (F1, Mundial) y 'noticias de IA puras' con implicaciones de riesgo o fallos, ya que estos temas dominan el Top 10 de vistas.",
+    "Implementar de forma consistente títulos que combinen urgencia ('HOY', 'YA'), palabras de impacto ('EXPLOTA', 'CONMOCIÓN', 'RIESGO'), preguntas y emojis de alto impacto (😱, 🤯, ⚡), siguiendo los patrones de los videos de mayor rendimiento.",
+    "Eliminar completamente la creación de contenido seriado o que insinúe partes (ej. 'PARTE 1', '(1/2)') para Shorts, ya que estos videos han mostrado un rendimiento nulo o extremadamente bajo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La audiencia del canal tiene una demanda excepcionalmente alta por noticias deportivas de última hora y eventos futuros (especialmente F1 y fútbol), demostrando ser un 'gancho' mucho más potente que las noticias generales de IA, incluso cuando se publican bajo la misma categoría `ia_noticias`."
+  "insight_semana": "El formato de 'noticia urgente y sensacionalista' es el motor principal de las vistas, permitiendo al canal capitalizar en diversos temas de alta demanda (especialmente deportes, pero también IA de impacto y entretenimiento) siempre que se enmarquen con ganchos de urgencia, impacto emocional y emojis potentes, como se observa en el 100% de los videos del Top 10."
 }
