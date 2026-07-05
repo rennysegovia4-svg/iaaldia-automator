@@ -1,36 +1,39 @@
 {
   "updated": "2026-07-05",
-  "iteracion": 90,
+  "iteracion": 91,
   "niche_weights": {
-    "deportes": 0.35,
+    "deportes": 0.45,
     "ia_noticias": 0.25,
-    "finanzas": 0.1,
     "entretenimiento": 0.1,
+    "finanzas": 0.05,
     "negocios_digitales": 0.05,
     "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia + Evento Específico + Localización/Audiencia + Emoción Fuerte (ej. 'F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!')",
-    "Palabra 'EXPLOTA' + Evento/Tema + Urgencia + Emoción Fuerte (ej. '¡HORARIOS F1 2026! SILVERSTONE EXPLOTA 🤯')",
-    "Adjetivo Impactante ('CONMOCIÓN', 'Locura VIRAL') + Evento/Situación + Consecuencia/Relevancia + Emoción Fuerte (ej. '¡CONMOCIÓN!: La IA FALLA y Ford RECONTRATA 😱')",
-    "Controversia/Conflicto + Tema Específico + Pregunta + Emoción Fuerte (ej. 'TARJETA ROJA MUNDIAL: ¿ROBO EN SIMULACIÓN? 🤯')",
-    "Noticia de Avance/Freno Tecnológico + Implicación de Riesgo + Emoción Fuerte (ej. '¡FRENAN GPT-5.6! Acceso a IA avanzado en RIESGO 😱')",
-    "Pregunta Directa + Evento/Tema Actual + Urgencia + Emoción Fuerte (ej. '¡MUNDIAL EXPLOTA HOY! ¿Por qué? 😱')"
+    "[Evento/Tema deportivo actual] + [Verbo de impacto/emoción] + [Emoji de sorpresa/alarma]",
+    "[Urgencia temporal (HOY/YA)] + [Evento deportivo/noticia específica con localización] + [Emoji de alarma/sorpresa]",
+    "[Nombre propio/Celebridad deportiva] + [Verbo de reacción fuerte (EXPLOTA)] + [Situación inesperada] + [Emoji]",
+    "[Controversia/Pregunta intrigante] + [Evento específico (Mundial)] + [Emoji de asombro]",
+    "[Problema/Costo personal] + [Solución inesperada/Pregunta reveladora] + [Emoji de asombro]",
+    "[Tecnología IA específica] + [Estado crítico (FRENAN/RIESGO)] + [Emoji de alarma]"
   ],
   "avoid_hooks": [
-    "Títulos que sugieren contenido seriado o 'parte X' (ej. 'PARTE 1', '(1/2)')",
-    "Títulos excesivamente genéricos, filosóficos o de autoayuda sin un evento, urgencia o conflicto claro (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos de noticias que son demasiado amplios o abstractos, careciendo de la especificidad, urgencia o gancho emocional intenso (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')"
+    "Contenido de autoayuda genérico o sin un gancho de urgencia/especificidad fuerte (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Preguntas demasiado amplias o académicas sin impacto emocional o personal directo (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')",
+    "Temas excesivamente nicho o factuales que carecen de un componente emocional o de intriga fuerte (ej. 'Zapier: IA ahorra 3 horas diarias 🤖')",
+    "Emojis de bajo impacto o genéricos (ej. 🌐, 🤖) en comparación con 😱, 🤯, ⚡."
   ],
-  "best_hora": 15,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 4,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la estrategia de contenido en la intersección de 'noticias de IA' con eventos de alta actualidad en 'deportes' (F1, Mundial) y 'noticias de IA puras' con implicaciones de riesgo o fallos, ya que estos temas dominan el Top 10 de vistas.",
-    "Implementar de forma consistente títulos que combinen urgencia ('HOY', 'YA'), palabras de impacto ('EXPLOTA', 'CONMOCIÓN', 'RIESGO'), preguntas y emojis de alto impacto (😱, 🤯, ⚡), siguiendo los patrones de los videos de mayor rendimiento.",
-    "Eliminar completamente la creación de contenido seriado o que insinúe partes (ej. 'PARTE 1', '(1/2)') para Shorts, ya que estos videos han mostrado un rendimiento nulo o extremadamente bajo."
+    "Priorizar la creación de contenido de `deportes` que gire en torno a eventos de alta actualidad (Mundial, F1) o figuras reconocidas, utilizando el estilo de 'noticia de último momento' con un toque de IA si es posible.",
+    "Mantener el uso intensivo de palabras de impacto y urgencia como 'EXPLOTA', 'VOLARÁ la cabeza', 'CONMOCIÓN', 'RIESGO' y 'HOY' en los títulos.",
+    "Asegurar la inclusión de emojis de alto impacto (🤯, 😱, ⚡) en todos los títulos, ya que su presencia es constante en los videos con mejor rendimiento.",
+    "Experimentar con la publicación de videos de alto potencial en la ventana de las 4:00h y también mantener pruebas a las 15:00h, dado que ambas han demostrado generar los videos con mayor cantidad de vistas.",
+    "Explorar formatos de intriga que resuelvan un problema o revelen un dato sorprendente relacionado con finanzas personales o costos, siguiendo el patrón de éxito del video 'PAGANDO $200: ¿SABÍAS que no tenés que hacerlo? 🤯'."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El formato de 'noticia urgente y sensacionalista' es el motor principal de las vistas, permitiendo al canal capitalizar en diversos temas de alta demanda (especialmente deportes, pero también IA de impacto y entretenimiento) siempre que se enmarquen con ganchos de urgencia, impacto emocional y emojis potentes, como se observa en el 100% de los videos del Top 10."
+  "insight_semana": "La combinación de noticias deportivas hiper-actuales o predictivas sobre grandes eventos (Mundial, F1), presentadas con lenguaje emocional de alto impacto y emojis clave, es la estrategia más potente para generar vistas, superando consistentemente a otras temáticas y ganchos."
 }
