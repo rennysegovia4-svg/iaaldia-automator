@@ -1,37 +1,38 @@
 {
   "updated": "2026-07-06",
-  "iteracion": 96,
+  "iteracion": 97,
   "niche_weights": {
-    "deportes": 0.65,
-    "ia_noticias": 0.15,
-    "productividad": 0.05,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "negocios_digitales": 0.025,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "deportes": 0.01,
+    "ia_noticias": 0.9,
+    "finanzas": 0.02,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Fórmula 1: [EVENTO FUTURO/URGENTE] + ¿QUÉ PASÓ? / ¿ES REAL? + 😱 (Ej. BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱)",
-    "Fórmula 2: [NACIÓN/EQUIPO] EN SHOCK: [NOMBRE CLAVE] [ACCIÓN IMPACTANTE]! 😱 (Ej. ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
-    "Fórmula 3: ¡[EQUIPO] ELIMINADO de [EVENTO]! 😱 [OTRO EQUIPO] HACE HISTORIA (Ej. ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)",
-    "Fórmula 4: [NOMBRE DE JUGADOR/CELEBRIDAD] [VERBO FUERTE] A [EQUIPO/NACIÓN] DE [EVENTO]! 🤯 (Ej. HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯)",
-    "Fórmula 5: ¡[TEMA ESPECÍFICO] [VERBO IMPACTANTE]! 🤯 Esto DEBES saber YA (Ej. ¡TENIS EXPLOTA! 🤯 Esto DEBES saber YA)",
-    "Fórmula 6: [TEMA/EVENTO] [PREGUNTA URGENTE]?! 😱 HORARIO EN LATAM YA! (Ej. F1 CLASIFICACIÓN HOY?! 😱 HORARIO EN LATAM YA!)"
+    "[País/Jugador/Evento Famoso] [Verbo de Impacto]: [Declaración de Shock]! 😱/🤯",
+    "[Jugador/Equipo] ELIMINA A [País/Equipo] del [Evento Mayor]! 🤯",
+    "[País/Equipo] [Resultado] [País/Equipo] en [Evento Mayor]! ¿QUÉ PASÓ? 😱",
+    "¡[País/Equipo] ELIMINADO del [Evento Mayor]! 😱 [Ganador] HACE HISTORIA",
+    "¡[Deporte/Evento] EXPLOTA! 🤯 Esto DEBES saber YA",
+    "[Celebridad/Figura Pública] EXPLOTA: ¡[Nombres Propios Clave] JUNTOS! 🤯"
   ],
   "avoid_hooks": [
-    "Títulos filosóficos o abstractos sin un evento o dato concreto (Ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos demasiado específicos sobre herramientas, geopolítica o que impliquen una serie (Ej. 'Zapier: IA ahorra 3 horas diarias 🤖', 'EMPRENDER a los 50: la VERDAD 😱 (1/2)', 'IA Global: ¿EE.UU. tiene el control? 🌐')",
-    "Preguntas especulativas o de baja urgencia que no generen un impacto emocional fuerte (Ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
+    "Preguntas filosóficas o declaraciones abstractas sin especificidad ni urgencia (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Alertas genéricas sin un suceso concreto o figura destacada que justifique el gancho (ej. 'ALERTA: Copa MUNDIAL DE FÚTBOL EXPLOTA! ¿Por qué?')",
+    "Temas de IA global o eventos de fútbol futuros muy lejanos sin conexión inmediata con la actualidad (ej. 'IA Global: ¿EE.UU. tiene el control?', '¡MUNDIAL 2030: IA REVELA SEDES!')"
   ],
   "best_hora": 21,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido deportivo, especialmente fútbol (Mundiales con resultados hipotéticos), tenis y F1, ya que ha demostrado ser el único motor de engagement consistente, ocupando el 100% del TOP 10.",
-    "Ajustar la estrategia de publicación para concentrar los Shorts en la franja horaria de 21h a 22h, dado que los videos con mayor rendimiento se publicaron en este período, superando los picos observados en iteraciones previas.",
-    "Mantener y perfeccionar la creación de títulos que incorporen nombres propios de figuras deportivas, eventos futuros o urgentes, verbos de impacto y emojis de asombro (😱, 🤯) para maximizar la tasa de clics."
+    "Priorizar la creación de contenido de noticias deportivas generadas por IA (fútbol, tenis, F1), ya que este sub-nicho dentro de 'ia_noticias' es el único driver de rendimiento significativo, representando el 100% del top 10.",
+    "Implementar de forma rigurosa los patrones de títulos de alto rendimiento que combinan eventos/figuras deportivas famosas con verbos de acción/sorpresa y emojis (`😱`, `🤯`), enfatizando la inmediatez y el impacto.",
+    "Consolidar la estrategia de publicación en la franja horaria de 21h a 22h, dado que este período ha demostrado ser el de mayor engagement de los videos más vistos (958, 919, 889, 820 vistas).",
+    "Evitar estrictamente títulos abstractos, preguntas filosóficas o declaraciones genéricas sin un gancho específico, ya que estos han resultado en cero o muy bajas vistas.",
+    "Establecer un sistema de seguimiento para correlacionar la duración de los Shorts con el rendimiento, ya que no se dispone de datos internos para determinar una duración óptima específica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido deportivo, especialmente las 'noticias' simuladas sobre eventos futuros (como el Mundial 2026), domina por completo el rendimiento del canal, y el horario óptimo de publicación se ha redefinido drásticamente hacia la noche (21h-22h), invalidando aprendizajes anteriores sobre la madrugada."
+  "insight_semana": "El canal ha encontrado su fórmula de éxito exclusiva en las noticias deportivas generadas por IA, donde la combinación de eventos actuales/futuros, figuras prominentes y ganchos emocionales de asombro en los títulos es el factor crítico para la viralidad, consolidando el horario nocturno (21h-22h) como el de mayor impacto y desechando cualquier contenido fuera de esta especificidad."
 }
