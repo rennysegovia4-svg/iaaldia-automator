@@ -1,41 +1,38 @@
 {
   "updated": "2026-07-06",
-  "iteracion": 100,
+  "iteracion": 101,
   "niche_weights": {
-    "ia_noticias": 0.85,
+    "deportes": 0.6,
+    "ia_noticias": 0.15,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
     "productividad": 0.05,
-    "finanzas": 0.014,
-    "negocios_digitales": 0.014,
-    "cripto_inversiones": 0.014,
-    "productividad_ia": 0.014,
-    "deportes": 0.014,
-    "entretenimiento": 0.014,
-    "politica_latam": 0.016
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[PAIS/JUGADOR] [ACCIÓN DRAMÁTICA]! 😱",
-    "[JUGADOR/PAIS] ELIMINA A [PAIS/JUGADOR] DEL [EVENTO]! 🤯",
-    "[PAIS1] [SCORE] [PAIS2] EN [EVENTO]! ¿QUÉ PASÓ? 😱",
-    "¡[DEPORTE/EVENTO] EXPLOTA! 🤯 Esto DEBES saber YA",
-    "[EVENTO ESPECÍFICO] HOY?! 😱 HORARIO EN LATAM YA!",
-    "¡[TEMA ESPECÍFICO] [EVENTO]! La búsqueda que te VOLARÁ la cabeza 🤯"
+    "[SUJETO IMPACTANTE/PAÍS] [VERBO DE SHOCK O ESTADO EMOCIONAL]! [EMOJI 😱]",
+    "[EVENTO FUTURO/HIPOTÉTICO] [CONSECUENCIA EXPLOSIVA]! [EMOJI 🤯]",
+    "¡[DEPORTE/EVENTO] EXPLOTA! [GANCHO DE URGENCIA/CURIOSIDAD] [EMOJI 🤯]",
+    "[NOTICIA DE ÚLTIMA HORA DEPORTIVA] [PREGUNTA DE CURIOSIDAD O SORPRESA]! [EMOJI 😱]",
+    "[TEMA DEPORTIVO ESPECÍFICO] [AFIRMACIÓN QUE 'VOLARÁ LA CABEZA'] 🤯",
+    "[EVENTO DEPORTIVO INTERNACIONAL] [IMPACTO/HORARIO EN LATAM] [EMOJI 😱]"
   ],
   "avoid_hooks": [
-    "¿ES FRAUDE? ⚡ (en títulos genéricos sin detalles)",
-    "[Consejo genérico abstracto]: es tu MAYOR AMENAZA 😱",
-    "[Empresa] DESPIDE [Número]: ¿TU CULPA? 😱 (acusatorio)",
-    "[Tema global genérico]: ¿[País] tiene el control? 🌐 (demasiado filosófico/amplio)",
-    "[Tema nicho] (1/2) (si el tema no es extremadamente popular)"
+    "Preguntas genéricas de fraude o culpa sin contexto específico: (ej. '¿ES FRAUDE? ⚡', '¿TU CULPA? 😱')",
+    "Mensajes de autoayuda o consejos genéricos y vagos sin un gancho noticioso: (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Noticias de IA/tecnología o negocios genéricas sin un ángulo sensacionalista fuerte o conexión directa: (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')"
   ],
   "best_hora": 21,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima.",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar el contenido de noticias deportivas (reales, simuladas o futuras) dentro del nicho 'ia_noticias', ya que es el tipo de video que consistentemente genera las vistas más altas.",
-    "Utilizar nombres propios de países, jugadores y eventos específicos en los títulos, como 'ARGENTINA', 'CABRAL', 'HAALAND', 'BRASIL', 'MUNDIAL 2026', 'F1', 'WIMBLEDON' para aumentar el engagement.",
-    "Emplear un lenguaje dramático y de urgencia ('SHOCK', 'PARALIZA', 'ELIMINA', 'EXPLOTA', 'DEBES saber YA') combinado con emojis de impacto (`😱`, `🤯`) para captar la atención inmediatamente.",
-    "Incluir la mención de 'LATAM' en títulos de eventos deportivos internacionales para conectar específicamente con la audiencia regional, lo cual ha demostrado ser efectivo.",
-    "Programar las publicaciones entre las 21h y 22h, el horario con la mayor concentración de videos exitosos en cuanto a vistas."
+    "Priorizar la creación de contenido deportivo (especialmente fútbol, tenis, F1) bajo el formato de 'ia_noticias', centrándose en narrativas hipotéticas o de alto impacto emocional.",
+    "Optimizar los títulos utilizando combinaciones de emojis (😱, 🤯), verbos de acción fuertes ('EXPLOTA', 'ELIMINA', 'PARALIZA') y llamadas a la curiosidad/urgencia.",
+    "Publicar los Shorts entre las 21:00 y 22:00 horas (LATAM) para maximizar la visibilidad inicial, dado el rendimiento demostrado en esta franja horaria.",
+    "Incorporar referencias explícitas a 'LATAM' en títulos de noticias deportivas internacionales para fortalecer la conexión y resonancia con la audiencia regional."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de 'ia_noticias' es el único que genera vistas significativas, y su éxito radica casi exclusivamente en contenido deportivo (simulado o futuro) con títulos impactantes y específicos, destacando la importancia del sub-tema sobre la categoría general."
+  "insight_semana": "El contenido deportivo generado con IA, en particular las narrativas hipotéticas o de alto impacto sobre eventos futuros (ej. Mundial 2026), es el motor principal del rendimiento del canal, impulsado por títulos sensacionalistas y un horario de publicación estratégico entre 21h-22h (LATAM)."
 }
