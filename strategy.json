@@ -1,38 +1,41 @@
 {
   "updated": "2026-07-06",
-  "iteracion": 99,
+  "iteracion": 100,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.2,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "ia_noticias": 0.85,
+    "productividad": 0.05,
+    "finanzas": 0.014,
+    "negocios_digitales": 0.014,
+    "cripto_inversiones": 0.014,
+    "productividad_ia": 0.014,
+    "deportes": 0.014,
+    "entretenimiento": 0.014,
+    "politica_latam": 0.016
   },
   "best_hooks": [
-    "[ENTIDAD DEPORTIVA ESPECÍFICA] + [ACCIÓN IMPACTANTE/RESULTADO] + [EMOJI DE SHOCK/SORPRESA]",
-    "[EVENTO DEPORTIVO ESPECÍFICO] + [SITUACIÓN INESPERADA] + [PREGUNTA DE INTRIGA/ASOMBRO]",
-    "[DEPORTE/EVENTO DE ACTUALIDAD] + [VERBO IMPACTANTE] + [LLAMADA A LA ACCIÓN URGENTE/DEBES SABER]",
-    "[FIGURA DEPORTIVA/EVENTO CLAVE] + [PREGUNTA ESPECÍFICA SOBRE FUTURO/ESTADO] + [EMOJI DE URGENCIA]",
-    "[DESCRIPCIÓN INTRODUCTORIA DE UN HALLAZGO] + [PROMESAS DE REVELACIÓN/ASOMBRO] + [EMOJI]",
-    "[EVENTO DEPORTIVO MUNDIAL] + [ADJETIVO INTENSO] + [REFERENCIA GEOGRÁFICA REGIONAL] + [EMOJI DE SHOCK]"
+    "[PAIS/JUGADOR] [ACCIÓN DRAMÁTICA]! 😱",
+    "[JUGADOR/PAIS] ELIMINA A [PAIS/JUGADOR] DEL [EVENTO]! 🤯",
+    "[PAIS1] [SCORE] [PAIS2] EN [EVENTO]! ¿QUÉ PASÓ? 😱",
+    "¡[DEPORTE/EVENTO] EXPLOTA! 🤯 Esto DEBES saber YA",
+    "[EVENTO ESPECÍFICO] HOY?! 😱 HORARIO EN LATAM YA!",
+    "¡[TEMA ESPECÍFICO] [EVENTO]! La búsqueda que te VOLARÁ la cabeza 🤯"
   ],
   "avoid_hooks": [
-    "Preguntas filosóficas o demasiado genéricas sin especificidad ni urgencia ('NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Referencias a eventos futuros lejanos o conceptos abstractos (ej. 'MUNDIAL 2030', 'IA Global') incluso con ganchos de asombro",
-    "Títulos con 'Parte X' en temas poco enganchantes o sin un gancho inicial fuerte que justifique la continuidad ('EMPRENDER a los 50: la VERDAD 😱 (1/2)')"
+    "¿ES FRAUDE? ⚡ (en títulos genéricos sin detalles)",
+    "[Consejo genérico abstracto]: es tu MAYOR AMENAZA 😱",
+    "[Empresa] DESPIDE [Número]: ¿TU CULPA? 😱 (acusatorio)",
+    "[Tema global genérico]: ¿[País] tiene el control? 🌐 (demasiado filosófico/amplio)",
+    "[Tema nicho] (1/2) (si el tema no es extremadamente popular)"
   ],
   "best_hora": 21,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para determinar la duración óptima.",
   "recomendaciones": [
-    "Priorizar la creación de contenido de 'ia_noticias' centrado exclusivamente en temas deportivos de actualidad (fútbol, tenis, F1) debido a que el 100% de los videos con más vistas pertenecen a esta categoría y nicho.",
-    "Maximizar el uso de ganchos que incluyan nombres de figuras deportivas, equipos o eventos específicos, combinados con verbos de acción impactantes y emojis de sorpresa/shock para generar click-through.",
-    "Concentrar la publicación de los Shorts entre las 21h y 22h, ya que este horario ha demostrado ser el de mayor rendimiento, invalidando picos de otras franjas horarias previamente observadas.",
-    "Evitar categóricamente contenidos sobre eventos deportivos futuros lejanos (ej. Mundial 2030) o temas abstractos de IA global, ya que su bajo o nulo rendimiento indica falta de inmediatez y relevancia para la audiencia de Shorts.",
-    "Integrar referencias geográficas regionales como 'LATAM' en títulos de eventos deportivos globales de interés para ampliar el alcance y la conexión con la audiencia hispanohablante, como se observó en videos de F1 y Wimbledon."
+    "Priorizar el contenido de noticias deportivas (reales, simuladas o futuras) dentro del nicho 'ia_noticias', ya que es el tipo de video que consistentemente genera las vistas más altas.",
+    "Utilizar nombres propios de países, jugadores y eventos específicos en los títulos, como 'ARGENTINA', 'CABRAL', 'HAALAND', 'BRASIL', 'MUNDIAL 2026', 'F1', 'WIMBLEDON' para aumentar el engagement.",
+    "Emplear un lenguaje dramático y de urgencia ('SHOCK', 'PARALIZA', 'ELIMINA', 'EXPLOTA', 'DEBES saber YA') combinado con emojis de impacto (`😱`, `🤯`) para captar la atención inmediatamente.",
+    "Incluir la mención de 'LATAM' en títulos de eventos deportivos internacionales para conectar específicamente con la audiencia regional, lo cual ha demostrado ser efectivo.",
+    "Programar las publicaciones entre las 21h y 22h, el horario con la mayor concentración de videos exitosos en cuanto a vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias deportivas altamente específicas y de actualidad, presentadas con un formato de 'noticia IA' y ganchos emocionales/urgentes, es el único y más potente motor de engagement y vistas del canal en esta iteración."
+  "insight_semana": "El nicho de 'ia_noticias' es el único que genera vistas significativas, y su éxito radica casi exclusivamente en contenido deportivo (simulado o futuro) con títulos impactantes y específicos, destacando la importancia del sub-tema sobre la categoría general."
 }
