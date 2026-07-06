@@ -1,38 +1,39 @@
 {
   "updated": "2026-07-06",
-  "iteracion": 101,
+  "iteracion": 102,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.15,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
+    "deportes": 0.7,
+    "ia_noticias": 0.1,
     "productividad": 0.05,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "entretenimiento": 0.03,
+    "productividad_ia": 0.03,
     "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "[SUJETO IMPACTANTE/PAÍS] [VERBO DE SHOCK O ESTADO EMOCIONAL]! [EMOJI 😱]",
-    "[EVENTO FUTURO/HIPOTÉTICO] [CONSECUENCIA EXPLOSIVA]! [EMOJI 🤯]",
-    "¡[DEPORTE/EVENTO] EXPLOTA! [GANCHO DE URGENCIA/CURIOSIDAD] [EMOJI 🤯]",
-    "[NOTICIA DE ÚLTIMA HORA DEPORTIVA] [PREGUNTA DE CURIOSIDAD O SORPRESA]! [EMOJI 😱]",
-    "[TEMA DEPORTIVO ESPECÍFICO] [AFIRMACIÓN QUE 'VOLARÁ LA CABEZA'] 🤯",
-    "[EVENTO DEPORTIVO INTERNACIONAL] [IMPACTO/HORARIO EN LATAM] [EMOJI 😱]"
+    "[PAÍS/SUJETO] EN SHOCK: [EVENTO DRAMÁTICO]! 😱",
+    "[JUGADOR/EQUIPO] ELIMINA A [OPONENTE] DEL MUNDIAL [AÑO]! 🤯",
+    "[EQUIPO A] [SCORE]-[SCORE] [EQUIPO B] EN MUNDIAL [AÑO]! ¿QUÉ PASÓ? 😱",
+    "¡[PAÍS/EQUIPO] ELIMINADO del MUNDIAL [AÑO]! 😱 [GANADOR] HACE HISTORIA",
+    "¡[DEPORTE] EXPLOTA! 🤯 Esto DEBES saber YA",
+    "¡[TEMA] que te VOLARÁ la cabeza 🤯"
   ],
   "avoid_hooks": [
-    "Preguntas genéricas de fraude o culpa sin contexto específico: (ej. '¿ES FRAUDE? ⚡', '¿TU CULPA? 😱')",
-    "Mensajes de autoayuda o consejos genéricos y vagos sin un gancho noticioso: (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Noticias de IA/tecnología o negocios genéricas sin un ángulo sensacionalista fuerte o conexión directa: (ej. 'IA Global: ¿EE.UU. tiene el control? 🌐')"
+    "¿ES FRAUDE? ⚡ (cuando es genérico y no tiene contexto claro)",
+    "[AFIRMACIÓN NEGATIVA] es tu MAYOR AMENAZA 😱 (frases motivacionales/de autoayuda abstractas)",
+    "¿TU CULPA? 😱 (asociación directa de la culpa al espectador sin ofrecer valor claro)"
   ],
   "best_hora": 21,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido deportivo (especialmente fútbol, tenis, F1) bajo el formato de 'ia_noticias', centrándose en narrativas hipotéticas o de alto impacto emocional.",
-    "Optimizar los títulos utilizando combinaciones de emojis (😱, 🤯), verbos de acción fuertes ('EXPLOTA', 'ELIMINA', 'PARALIZA') y llamadas a la curiosidad/urgencia.",
-    "Publicar los Shorts entre las 21:00 y 22:00 horas (LATAM) para maximizar la visibilidad inicial, dado el rendimiento demostrado en esta franja horaria.",
-    "Incorporar referencias explícitas a 'LATAM' en títulos de noticias deportivas internacionales para fortalecer la conexión y resonancia con la audiencia regional."
+    "Priorizar el contenido de deportes (especialmente fútbol) con énfasis en narrativas hipotéticas o futuristas con desenlaces dramáticos ('Mundial 2026', 'elimina', 'shock'), ya que son los de mayor rendimiento.",
+    "Mantener el horario de publicación entre las 21h y 22h (LATAM), ya que esta franja horaria concentra consistentemente los videos con más vistas y el promedio más alto.",
+    "Emplear títulos con lenguaje impactante y emojis como 😱 y 🤯 para generar curiosidad y urgencia, siguiendo los patrones demostrados por los videos top.",
+    "Evitar títulos con preguntas genéricas sobre fraude o que culpabilizan directamente al espectador sin un contexto específico y relevante, ya que han demostrado un rendimiento nulo.",
+    "Explorar la creación de series o 'Parte 1' para temas deportivos o de noticias de menor alcance pero con potencial de seguimiento, como se vio con los videos de Ancelotti/Vinicius y F1/Alonso."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido deportivo generado con IA, en particular las narrativas hipotéticas o de alto impacto sobre eventos futuros (ej. Mundial 2026), es el motor principal del rendimiento del canal, impulsado por títulos sensacionalistas y un horario de publicación estratégico entre 21h-22h (LATAM)."
+  "insight_semana": "El éxito abrumador de narrativas deportivas hipotéticas y dramáticas, especialmente centradas en futuros eventos como el 'Mundial 2026' y acciones de jugadores, demuestra que la especulación, el drama y el 'qué pasaría si' generan el mayor engagement en el canal, potenciado por la publicación en horario nocturno."
 }
