@@ -1,40 +1,39 @@
 {
-  "updated": "2026-07-08",
-  "iteracion": 114,
+  "updated": "2026-07-09",
+  "iteracion": 115,
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 0.92,
-    "finanzas": 0.0,
+    "ia_noticias": 0.85,
+    "productividad": 0.1,
+    "deportes": 0.01,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
     "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0,
-    "productividad": 0.08
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Títulos con resultado de eliminación directo y marcador dramático (ej. 'PAÍS ELIMINA A PAÍS X-Y en Evento 😱 ¡IMPACTO!')",
-    "Títulos con impacto emocional en una nación y una acción clave (ej. 'NACIÓN EN SHOCK: JUGADOR/EVENTO PARALIZA! 😱')",
-    "Títulos centrados en un jugador estrella causando una eliminación (ej. 'JUGADOR ELIMINA A PAÍS del Evento! 🤯')",
-    "Títulos con resultado inesperado o falta de acción en evento importante (ej. 'PAÍS 0-0 PAÍS en Evento! ¿QUÉ PASÓ? 😱')",
-    "Títulos que evocan un evento global o un momento icónico (ej. 'El gol que paró al mundo en el Evento ⚽🌍')",
-    "Títulos que resaltan una eliminación y la historicidad del evento (ej. '¡PAÍS ELIMINADO del Evento! 😱 NACIÓN HACE HISTORIA')"
+    "`{PAÍS_1} ELIMINA A {PAÍS_2} {MARCADOR} en el Mundial 2026 😱 ¡DRAMA!`",
+    "`{PAÍS} EN SHOCK: {NOMBRE_JUGADOR/EVENTO} PARALIZA! 😱`",
+    "`{JUGADOR_ESTRELLA} ELIMINA A {PAÍS} DEL MUNDIAL 2026! 🤯`",
+    "`{PAÍS_1} {MARCADOR} {PAÍS_2} EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱`",
+    "`¡{PAÍS_PERDEDOR} ELIMINADO del MUNDIAL 2026! 😱 {PAÍS_GANADOR} HACE HISTORIA`",
+    "`El gol que paró al mundo en el Mundial 2026 ⚽🌍`"
   ],
   "avoid_hooks": [
-    "Preguntas generales sobre 'fraude' o 'dinero' sin un evento específico reciente",
-    "Títulos de autoayuda o filosóficos no relacionados con el nicho principal",
-    "Títulos que anuncian 'PARTE 1' sin una promesa de valor inmediato o un gancho completo para Shorts"
+    "Patrones que dividen el contenido (ej. 'Parte 1', '(1/2)').",
+    "Frases genéricas de autoayuda o abstractas (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Noticias de IA o política global sin eventos dramáticos y personalizados (ej. 'IA Global: ¿EE.UU. tiene el control?')."
   ],
-  "best_hora": 21,
-  "duracion_optima": 0,
+  "best_hora": 11,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el nicho 'ia_noticias' enfocado en eventos deportivos hipotéticos y dramáticos del Mundial 2026, ya que es el único segmento que genera vistas significativas.",
-    "Continuar utilizando títulos con elementos de sorpresa, emoción ('😱', '🤯'), nombres de países y jugadores específicos, y resultados dramáticos (eliminaciones, empates inesperados).",
-    "Publicar la mayoría de los Shorts en la franja horaria nocturna (21:00-00:00), con especial atención a las 21:00 y 23:00, que han mostrado los promedios más altos dentro de este período crítico.",
-    "Evitar completamente los temas de 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (como nicho separado de 0 vistas), 'entretenimiento' y 'política_latam' hasta que se realicen pruebas específicas que demuestren algún potencial.",
-    "Descartar la estrategia de títulos con 'Parte 1', ya que no genera interés en el formato Shorts y resultó en 0 vistas.",
-    "Es crucial empezar a recopilar datos sobre la duración de los videos y el CTR de las miniaturas/títulos para identificar patrones adicionales de optimización, ya que estos datos son actualmente inexistentes."
+    "Priorizar contenido del nicho `ia_noticias` enfocado en eventos deportivos de alto dramatismo, como eliminaciones o resultados inesperados en un 'Mundial 2026', ya que esta combinación domina el TOP 10 de videos.",
+    "Maximizar el uso de títulos que incluyan nombres de países, marcadores específicos (ej. '4-1', '0-0'), nombres de jugadores clave asociados a acciones decisivas (ej. 'HAALAND', 'DE KETELAERE', 'MERINO'), y emojis de alto impacto (😱, 🤯, ⚽🌍) para potenciar la curiosidad y el engagement.",
+    "Experimentar consistentemente con la hora de publicación de las 11:00 AM, ya que produjo el video con mayor número de vistas (1036), complementando los picos de audiencia nocturnos (21-23h) previamente identificados.",
+    "Evitar cualquier estrategia de dividir contenido en 'Partes' (ej. 'Parte 1', '1/2') para Shorts, dado que esta táctica ha resultado en 0 vistas de forma consistente.",
+    "Reenfocar el contenido de `ia_noticias` lejos de temas genéricos de autoayuda, política global o IA sin un gancho dramático y específico, ya que estos temas han mostrado un rendimiento extremadamente bajo (0-2 vistas)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento del canal está casi por completo monopolizado por el contenido de 'ia_noticias' aplicado a resultados hipotéticos y dramáticos del Mundial 2026, con un claro pico de engagement en horarios nocturnos y un rechazo total a otros nichos y estructuras de títulos menos directas."
+  "insight_semana": "El nicho de `ia_noticias` logra su máxima efectividad al centrarse en eventos deportivos de alto dramatismo como la eliminación en un 'Mundial 2026', con títulos que combinan resultados inesperados, marcadores específicos y emociones fuertes, superando consistentemente a cualquier otro tema o enfoque."
 }
