@@ -1,39 +1,38 @@
 {
   "updated": "2026-07-09",
-  "iteracion": 115,
+  "iteracion": 116,
   "niche_weights": {
-    "ia_noticias": 0.85,
-    "productividad": 0.1,
     "deportes": 0.01,
+    "ia_noticias": 0.9,
     "finanzas": 0.01,
+    "entretenimiento": 0.01,
     "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
     "productividad_ia": 0.01,
-    "entretenimiento": 0.0,
-    "politica_latam": 0.0
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "`{PAÍS_1} ELIMINA A {PAÍS_2} {MARCADOR} en el Mundial 2026 😱 ¡DRAMA!`",
-    "`{PAÍS} EN SHOCK: {NOMBRE_JUGADOR/EVENTO} PARALIZA! 😱`",
-    "`{JUGADOR_ESTRELLA} ELIMINA A {PAÍS} DEL MUNDIAL 2026! 🤯`",
-    "`{PAÍS_1} {MARCADOR} {PAÍS_2} EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱`",
-    "`¡{PAÍS_PERDEDOR} ELIMINADO del MUNDIAL 2026! 😱 {PAÍS_GANADOR} HACE HISTORIA`",
-    "`El gol que paró al mundo en el Mundial 2026 ⚽🌍`"
+    "PAÍS ELIMINA A PAÍS MARCADOR en el Mundial 2026 😱 ¡DEVASTADOR!",
+    "PAÍS EN SHOCK: JUGADOR PARALIZA! 😱",
+    "PAÍS ELIMINA A PAÍS: ¡GOL AGÓNICO EN MUNDIAL! 😱",
+    "JUGADOR ELIMINA A PAÍS DEL MUNDIAL 2026! 🤯",
+    "PAÍS MARCADOR PAÍS EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱",
+    "¡PAÍS ELIMINADO del MUNDIAL 2026! 😱 PAÍS HACE HISTORIA"
   ],
   "avoid_hooks": [
-    "Patrones que dividen el contenido (ej. 'Parte 1', '(1/2)').",
-    "Frases genéricas de autoayuda o abstractas (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Noticias de IA o política global sin eventos dramáticos y personalizados (ej. 'IA Global: ¿EE.UU. tiene el control?')."
+    "Títulos que segmentan el contenido en 'Parte X' (e.g., 'PARTE 1')",
+    "Ganchos de 'fraude' genérico sin un evento deportivo de alta relevancia o contexto claro",
+    "Títulos de autoayuda o motivación genérica sin un evento noticioso específico"
   ],
   "best_hora": 11,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar contenido del nicho `ia_noticias` enfocado en eventos deportivos de alto dramatismo, como eliminaciones o resultados inesperados en un 'Mundial 2026', ya que esta combinación domina el TOP 10 de videos.",
-    "Maximizar el uso de títulos que incluyan nombres de países, marcadores específicos (ej. '4-1', '0-0'), nombres de jugadores clave asociados a acciones decisivas (ej. 'HAALAND', 'DE KETELAERE', 'MERINO'), y emojis de alto impacto (😱, 🤯, ⚽🌍) para potenciar la curiosidad y el engagement.",
-    "Experimentar consistentemente con la hora de publicación de las 11:00 AM, ya que produjo el video con mayor número de vistas (1036), complementando los picos de audiencia nocturnos (21-23h) previamente identificados.",
-    "Evitar cualquier estrategia de dividir contenido en 'Partes' (ej. 'Parte 1', '1/2') para Shorts, dado que esta táctica ha resultado en 0 vistas de forma consistente.",
-    "Reenfocar el contenido de `ia_noticias` lejos de temas genéricos de autoayuda, política global o IA sin un gancho dramático y específico, ya que estos temas han mostrado un rendimiento extremadamente bajo (0-2 vistas)."
+    "Concentrar la producción de contenido en el nicho `ia_noticias` centrado en eventos deportivos dramáticos y ficticios (ej. 'Mundial 2026'), dado que es el único con rendimiento significativo.",
+    "Utilizar activamente los patrones de título/gancho identificados en 'best_hooks' que incluyen drama, marcadores, países y jugadores específicos, así como emojis de sorpresa (😱, 🤯).",
+    "Priorizar la hora de publicación a las 11:00 AM, mientras se considera también la franja nocturna (21:00 - 00:00) que ha mostrado un clúster de videos de alto rendimiento.",
+    "Evitar categóricamente la segmentación de contenido en múltiples partes ('Parte 1', 'Parte 2') para Shorts, ya que ha demostrado 0 vistas.",
+    "Desinvertir en nichos como 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'entretenimiento' y 'politica_latam' hasta nuevo aviso, ya que no han generado vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de `ia_noticias` logra su máxima efectividad al centrarse en eventos deportivos de alto dramatismo como la eliminación en un 'Mundial 2026', con títulos que combinan resultados inesperados, marcadores específicos y emociones fuertes, superando consistentemente a cualquier otro tema o enfoque."
+  "insight_semana": "El rendimiento del canal está casi por completo impulsado por un sub-nicho hiper-específico: `ia_noticias` sobre fútbol y resultados dramáticos del 'Mundial 2026' ficticio, evidenciando una fuerte resonancia con narrativas de eliminación y sorpresa en este contexto."
 }
