@@ -1,39 +1,39 @@
 {
   "updated": "2026-07-10",
-  "iteracion": 122,
+  "iteracion": 123,
   "niche_weights": {
+    "ia_noticias": 0.45,
     "productividad": 0.3,
-    "ia_noticias": 0.25,
-    "finanzas": 0.064,
-    "negocios_digitales": 0.064,
-    "cripto_inversiones": 0.064,
-    "productividad_ia": 0.064,
-    "deportes": 0.064,
-    "entretenimiento": 0.064,
-    "politica_latam": 0.066
+    "deportes": 0.1,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "productividad_ia": 0.03,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "[País A] ELIMINA A [País B] [Resultado] en el Mundial [Año] 😱 ¡[Emoción]!",
-    "[País] EN SHOCK: [Protagonista] [Verbo Acción]! 😱",
-    "[País A] ELIMINA A [País B]: ¡[Evento Clave] [Adjetivo] EN MUNDIAL! 😱",
-    "[Jugador Famoso] ELIMINA A [País] DEL MUNDIAL [Año]! 🤯",
-    "[País A] [Resultado] [País B] EN MUNDIAL [Año]! ¿QUÉ PASÓ? 😱",
-    "El [Evento] que paró al mundo en el Mundial [Año] ⚽🌍"
+    "Evento impactante de X equipo/jugador en Y torneo [Reacción/Emoción] (Ej: 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
+    "País en SHOCK: [Detalle sorprendente]! (Ej: 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
+    "GOL AGÓNICO / GOL DECISIVO de [Jugador] en [Torneo] [Reacción] (Ej: 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL DE MERINO al 90+1! 😱')",
+    "[Jugador] ELIMINA a [País] del Mundial [Año]! 🤯 (Ej: 'HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯')",
+    "[País 1] vs [País 2] en Mundial [Año]! ¿QUÉ PASÓ? 😱 (Ej: 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
+    "El [Evento] que paró al mundo en el Mundial [Año] ⚽🌍 (Ej: 'El gol que paró al mundo en el Mundial 2026 ⚽🌍')"
   ],
   "avoid_hooks": [
-    "Títulos excesivamente específicos en tiempo ('SÁBADO', 'HOY') sin un contexto de relevancia más amplio.",
-    "Generalidades de autoayuda o finanzas sin un gancho específico, un problema claro o una solución prometedora.",
-    "Indicadores de serie (ej. '(1/2)') en Shorts, ya que rompen el formato de consumo rápido y la independencia del contenido."
+    "Títulos genéricos de finanzas/productividad sin un gancho específico (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos muy específicos o locales sin un contexto de gran evento global (Ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Títulos que denotan contenido en partes o continuado sin resolución (Ej: 'FRAUDE ARBITRAL HOY: ¿El DINERO decide? (1/2) 😱')"
   ],
   "best_hora": 22,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido de `ia_noticias` centrado en temáticas deportivas de alto impacto (ej. 'Mundial 2026', grandes eliminatorias), dado que estas son el único motor de viralidad y views masivos.",
-    "Asignar recursos para experimentar y escalar la producción en el nicho `productividad`, ya que ha demostrado el rendimiento promedio más alto (36 `avg_views`) y una tendencia de crecimiento positiva (9.333), ofreciendo una base de contenido más estable.",
-    "Implementar de inmediato un sistema para registrar los textos de `hooks` y la `duracion_optima` de cada video. La ausencia actual de estos datos críticos impide una optimización profunda y basada en métricas clave.",
-    "Concentrar las publicaciones en el rango horario de 21:00 a 00:00 (medianoche), ya que los videos más exitosos consistentemente se publican en este período, confirmando un patrón de engagement nocturno.",
-    "Para los nichos con 0 `avg_views` y sin tendencia, pausar la producción intensiva y, en su lugar, realizar pruebas de contenido de bajo volumen para determinar si hay algún sub-nicho o formato viable antes de una mayor inversión."
+    "Duplicar la producción de contenido en el formato `ia_noticias` centrado en **escenarios hipotéticos y dramáticos del Mundial 2026**, utilizando nombres de países y jugadores reconocibles globalmente, ya que este patrón domina el TOP 10.",
+    "Mantener y explorar de forma consistente el nicho de `productividad` (no `productividad_ia`), dado su alto promedio de vistas (36) y tendencia positiva, buscando identificar patrones de hooks exitosos dentro de esta categoría.",
+    "Priorizar las horas de publicación nocturnas, especialmente entre las 21:00 y las 00:00 (con énfasis en las 22:00), ya que este rango ha demostrado ser consistentemente efectivo para la audiencia actual.",
+    "Implementar urgentemente la recolección de datos sobre la duración de los videos. La ausencia de esta métrica crítica impide un análisis profundo de la retención y el rendimiento, que es fundamental para optimizar Shorts.",
+    "Evitar títulos genéricos, clichés de autoayuda o finanzas, y cualquier indicación de contenido 'parte de' (Ej: '1/2'), ya que estos patrones han demostrado ser los menos efectivos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito de un canal de Shorts es extremadamente polarizado: el contenido de 'noticias IA' sobre grandes eventos deportivos genera todos los hits virales, mientras que otros nichos como 'productividad' ofrecen un crecimiento más lento pero consistentemente positivo, y la mayoría de los demás nichos fallan completamente sin datos claros de rendimiento."
+  "insight_semana": "La combinación de noticias generadas por IA sobre **escenarios futuros de alto dramatismo en eventos deportivos globales (Mundial 2026)**, utilizando un lenguaje emocional y nombres reconocibles, es el formato más potente y exitoso para generar vistas en este canal actualmente."
 }
