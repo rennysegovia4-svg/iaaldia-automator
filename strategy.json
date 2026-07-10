@@ -1,31 +1,39 @@
 {
   "updated": "2026-07-10",
-  "iteracion": 121,
+  "iteracion": 122,
   "niche_weights": {
-    "deportes": 0.45,
+    "productividad": 0.3,
     "ia_noticias": 0.25,
-    "finanzas": 0.1,
-    "negocios_digitales": 0.08,
-    "entretenimiento": 0.05,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "finanzas": 0.064,
+    "negocios_digitales": 0.064,
+    "cripto_inversiones": 0.064,
+    "productividad_ia": 0.064,
+    "deportes": 0.064,
+    "entretenimiento": 0.064,
+    "politica_latam": 0.066
   },
   "best_hooks": [
-    "No hay datos de 'hooks' en los videos analizados para determinar patrones exitosos."
+    "[País A] ELIMINA A [País B] [Resultado] en el Mundial [Año] 😱 ¡[Emoción]!",
+    "[País] EN SHOCK: [Protagonista] [Verbo Acción]! 😱",
+    "[País A] ELIMINA A [País B]: ¡[Evento Clave] [Adjetivo] EN MUNDIAL! 😱",
+    "[Jugador Famoso] ELIMINA A [País] DEL MUNDIAL [Año]! 🤯",
+    "[País A] [Resultado] [País B] EN MUNDIAL [Año]! ¿QUÉ PASÓ? 😱",
+    "El [Evento] que paró al mundo en el Mundial [Año] ⚽🌍"
   ],
   "avoid_hooks": [
-    "No hay datos de 'hooks' en los videos analizados para determinar patrones a evitar."
+    "Títulos excesivamente específicos en tiempo ('SÁBADO', 'HOY') sin un contexto de relevancia más amplio.",
+    "Generalidades de autoayuda o finanzas sin un gancho específico, un problema claro o una solución prometedora.",
+    "Indicadores de serie (ej. '(1/2)') en Shorts, ya que rompen el formato de consumo rápido y la independencia del contenido."
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar la creación de contenido de 'deportes' con el estilo de 'ia_noticias' (ej. predicciones de eventos como el Mundial 2026), ya que esta combinación es la única que ha demostrado capacidad viral, generando el 100% de los videos top.",
-    "Investigar las razones detrás del bajo promedio de vistas (11) y la tendencia negativa (-1.0) del nicho 'ia_noticias' en general, para identificar sub-temas no deportivos que no resuenan con la audiencia y mejorar la consistencia.",
-    "A pesar de no estar directamente en los pesos asignables, el nicho 'productividad' es el más estable y con tendencia positiva (36 avg_views, 9.333 trend). Se recomienda explorar cómo integrar su tipo de contenido dentro de 'productividad_ia' o solicitar una nueva categoría de nicho para explotar este rendimiento sostenido.",
-    "Implementar un plan de testeo con un bajo volumen de videos para todos los nichos con 0 vistas (finanzas, negocios_digitales, entretenimiento, cripto_inversiones, politica_latam, productividad_ia) para recolectar datos y evaluar su potencial real antes de asignar más recursos.",
-    "Mantener los horarios de publicación en la franja de tarde-noche y medianoche (principalmente entre las 21h y 0h), ya que consistentemente han demostrado ser los momentos de mayor engagement para los videos exitosos."
+    "Priorizar fuertemente la creación de contenido de `ia_noticias` centrado en temáticas deportivas de alto impacto (ej. 'Mundial 2026', grandes eliminatorias), dado que estas son el único motor de viralidad y views masivos.",
+    "Asignar recursos para experimentar y escalar la producción en el nicho `productividad`, ya que ha demostrado el rendimiento promedio más alto (36 `avg_views`) y una tendencia de crecimiento positiva (9.333), ofreciendo una base de contenido más estable.",
+    "Implementar de inmediato un sistema para registrar los textos de `hooks` y la `duracion_optima` de cada video. La ausencia actual de estos datos críticos impide una optimización profunda y basada en métricas clave.",
+    "Concentrar las publicaciones en el rango horario de 21:00 a 00:00 (medianoche), ya que los videos más exitosos consistentemente se publican en este período, confirmando un patrón de engagement nocturno.",
+    "Para los nichos con 0 `avg_views` y sin tendencia, pausar la producción intensiva y, en su lugar, realizar pruebas de contenido de bajo volumen para determinar si hay algún sub-nicho o formato viable antes de una mayor inversión."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' exhibe una volatilidad extrema: si bien produce el 100% de los hits virales (especialmente los relacionados con deportes), su promedio de vistas es muy bajo (11) y su tendencia negativa (-1.0) indican que la mayoría de sus videos no rinden, haciendo que el éxito dependa de acertar con temas virales muy específicos."
+  "insight_semana": "El éxito de un canal de Shorts es extremadamente polarizado: el contenido de 'noticias IA' sobre grandes eventos deportivos genera todos los hits virales, mientras que otros nichos como 'productividad' ofrecen un crecimiento más lento pero consistentemente positivo, y la mayoría de los demás nichos fallan completamente sin datos claros de rendimiento."
 }
