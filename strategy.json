@@ -1,38 +1,36 @@
 {
-  "updated": "2026-07-10",
-  "iteracion": 126,
+  "updated": "2026-07-11",
+  "iteracion": 127,
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.15,
-    "productividad_ia": 0.25,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "deportes": 0.05,
+    "ia_noticias": 0.6,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "[PAÍS/JUGADOR] + [ACCIÓN DRAMÁTICA: ELIMINA/SHOCK/PARALIZA] + [PAÍS/MUNDIAL] + [EMOJI DE SORPRESA/IMPACTO]",
-    "[EVENTO INESPERADO: GOL/RESULTADO] + [IMPACTO MUNDIAL/EMOCIONAL] + [EMOJI DE SORPRESA/DRAMA]",
-    "[PAÍS/JUGADOR] + [RESULTADO INESPERADO/HISTÓRICO] + [MUNDIAL AÑO] + [EMOJI DE SORPRESA]",
-    "[PAÍS A] + [RESULTADO ESPECÍFICO] + [PAÍS B] + [MUNDIAL AÑO] + [PREGUNTA DE INTRIGA] + [EMOJI DE INCERTIDUMBRE]",
-    "[PERSONA/PAÍS] + [ACCIÓN CLAVE: DOBLETE/GOL AGÓNICO] + [CONSECUENCIA DRAMÁTICA: ELIMINÓ] + [MUNDIAL AÑO] + [EMOJI DE IMPACTO]",
-    "[SUJETO] + [VERBO DE ACCIÓN FUERTE] + [OBJETO/CONSECUENCIA] + [EMOJI DRAMÁTICO]"
+    "[País 1] ELIMINA A [País 2] [Resultado] en el Mundial [Año] [Emoji Dramático] [Adjetivo de Impacto]",
+    "[País] EN SHOCK: [Jugador/Evento] [Verbo de Impacto]! [Emoji Dramático]",
+    "[Jugador] ELIMINA A [País] DEL Mundial [Año]! [Emoji de Sorpresa]",
+    "[País 1] [Resultado] [País 2] EN Mundial [Año]! ¿QUÉ PASÓ? [Emoji de Misterio]",
+    "¡[País] ELIMINADO del Mundial [Año]! [Emoji Dramático] [País 2] HACE HISTORIA",
+    "El gol que paró al mundo en el Mundial [Año] ⚽🌍"
   ],
   "avoid_hooks": [
-    "Hooks con consejos genéricos de autoayuda o motivación (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Hooks con intriga vaga o muy específica de nicho sin un atractivo dramático universal (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?', '¡PAGA $200 O NADA!').",
-    "Hooks ofreciendo consejos financieros genéricos o modelos de negocio, especialmente cuando son hiper-específicos a una ubicación (ej. 'El error de dinero que comete el 80% 💸', 'Negocio digital que funciona en Chile 2026 💼')."
+    "Títulos de finanzas o negocios con datos abstractos o porcentajes genéricos ('El error de dinero que comete el 80%').",
+    "Títulos genéricos de autoayuda o productividad que no se vinculan a un evento o resultado concreto ('NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Títulos de noticias que son demasiado específicos a un evento puntual sin contextualización de alto impacto global (Mundial, jugadores famosos, resultado explícito). ('PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')."
   ],
-  "best_hora": 22,
+  "best_hora": 11,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `deportes` (específicamente fútbol) con un enfoque dramático y especulativo, emulando los títulos del TOP 10 que narran eliminaciones o eventos impactantes en el 'Mundial 2026'.",
-    "Continuar explotando el formato de noticias de IA (`ia_noticias`) centrado en eventos deportivos impactantes y con resultados 'futuros' y usar emojis de alto impacto como '😱' y '🤯'.",
-    "Realizar pruebas de contenido dentro del nicho de `productividad_ia` dadas sus métricas de promedio de vistas (36) y tendencia positiva (+9.333), utilizando un enfoque similar de títulos de impacto pero adaptado al nicho.",
-    "Publicar videos predominantemente en la franja horaria nocturna (21:00 - 00:00), con un foco en las 22:00, ya que es el período de mayor éxito y coincide con aprendizajes previos.",
-    "Evitar categóricamente la creación de videos con títulos genéricos de autoayuda, finanzas sin drama o negocios digitales específicos de ubicación, ya que han demostrado un rendimiento nulo (0 views)."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias` enfocado en escenarios hipotéticos del 'Mundial 2026', utilizando nombres de países, jugadores específicos y emojis de alto impacto (😱, 🤯, ⚡).",
+    "Aunque no esté en los pesos de nicho directo, el nicho de `productividad` muestra la mejor tendencia y promedio de vistas general. Se recomienda investigar cómo integrar elementos de IA para explorar `productividad_ia` o considerar una expansión gradual a contenido de productividad con datos.",
+    "Experimentar con horarios de publicación, dando prioridad a las 11:00 AM (que tuvo el video de mayor rendimiento), pero también probando la franja nocturna de 21:00 a 00:00, que concentra la mayoría de los videos de alto rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito abrumador del canal se concentra en el contenido de fútbol especulativo generado por IA, dominando el TOP 10 con narrativas dramáticas y el uso de emojis de sorpresa. Paralelamente, el nicho de `productividad_ia` es el único que muestra una tendencia de crecimiento positivo y el mejor promedio de vistas general, indicando un potencial sin explotar para diversificación."
+  "insight_semana": "El mayor potencial de viralidad actual reside en las 'noticias' especulativas y dramáticas de fútbol (Mundial 2026) categorizadas bajo `ia_noticias`, las cuales constituyen el 100% del TOP 10 de videos a pesar de la tendencia negativa general del nicho."
 }
