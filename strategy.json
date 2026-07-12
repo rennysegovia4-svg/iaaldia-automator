@@ -1,40 +1,37 @@
 {
   "updated": "2026-07-12",
-  "iteracion": 134,
+  "iteracion": 135,
   "niche_weights": {
-    "ia_noticias": 0.55,
+    "ia_noticias": 0.5,
     "productividad": 0.3,
     "deportes": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "entretenimiento": 0.02,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.0,
+    "productividad_ia": 0.0,
     "politica_latam": 0.0
   },
   "best_hooks": [
-    "[PAÍS/JUGADOR] + [VERBO IMPACTANTE: ELIMINA/PARALIZA] + [PAÍS/EVENTO] + [AÑO/CONTEXTO] + [EMOJI SHOCK]",
-    "[PAÍS] EN SHOCK: [SUCESO/JUGADOR CLAVE] ¡[VERBO TENSO]!",
-    "[PAÍS 1] [MARCADOR] [PAÍS 2] EN [EVENTO CLAVE] [AÑO]! ¿QUÉ PASÓ? 😱",
-    "¡[PAÍS] ELIMINADO del [EVENTO] [AÑO]! 😱 [CAUSANTE] HACE HISTORIA",
-    "El [SUCESO ÉPICO] que paró al mundo en el [EVENTO] [AÑO] ⚽🌍",
-    "[JUGADOR/HECHO] DOBLETE que ELIMINÓ a [PAÍS] del [EVENTO] [AÑO] 🤯 ¡INCREÍBLE!"
+    "[País/Equipo A] ELIMINA a [País/Equipo B] por [Marcador/Acción] en [Evento Futuro]! 😱/🤯",
+    "La noticia que PARALIZÓ/CONMOCIONÓ a [País/Mundo] por [Evento/Jugador]! 😱",
+    "GOL AGÓNICO/Histórico que cambió el destino de [País/Evento]! ⚽🌍",
+    "[Jugador/Evento] HACE HISTORIA/IMPACTO Mundial en [Evento Futuro] 🤯",
+    "¿Qué pasó cuando [Evento Clave] en [Evento Futuro]? El mundo en shock! 😱",
+    "Un DOBLETE/Jugada increíble que sentenció a [Equipo] del [Evento Futuro]! 😱/🤯"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas sin contexto específico o figuras de autoridad (ej. 'El error de dinero que comete el 80% 💸')",
-    "Preguntas vagas o demasiado abiertas sobre eventos deportivos que carecen de un resultado dramático o un protagonista claro (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
-    "Afirmaciones abstractas sobre negocios o tecnología que no generan intriga inmediata o no están ligadas a un evento reciente/viral (ej. 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
+    "Títulos genéricos de autoayuda, finanzas o motivación sin un ángulo específico o dramático.",
+    "Afirmaciones abstractas o comparaciones numéricas complejas que no generan intriga inmediata.",
+    "Preguntas ambiguas o clickbait desconectado de un evento dramático específico o ampliamente reconocido."
   ],
-  "best_hora": 22,
+  "best_hora": 21,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias` enfocado exclusivamente en eventos deportivos virales y simulados (como 'Mundial 2026'), aplicando los patrones de títulos exitosos para maximizar el CTR.",
-    "Mantener y expandir la producción de contenido en el nicho de `productividad`, dado su promedio de vistas estable (36 avg_views) y su fuerte tendencia positiva (9.333).",
-    "Concentrar las publicaciones en la franja horaria de 21h a 0h, ya que esta ventana ha demostrado ser la más efectiva para captar la atención de la audiencia y acumular la mayoría de las vistas de los videos top.",
-    "Evitar categóricamente la publicación de contenido genérico de autoayuda, finanzas o negocios, que históricamente ha resultado en 0 vistas.",
-    "Realizar pruebas controladas publicando contenido de 'Mundial 2026' directamente bajo el nicho `deportes` para evaluar si la categorización afecta el rendimiento y la visibilidad.",
-    "Implementar la recopilación de datos de la duración de los videos para identificar la `duracion_optima`, ya que esta métrica es actualmente desconocida pero crítica para Shorts."
+    "Priorizar la creación de Shorts dentro del nicho 'ia_noticias' que simulen eventos deportivos dramáticos y de gran escala (ej. 'Mundial 2026'), utilizando titulares con lenguaje impactante y emocional (ej. ¡ELIMINA! 😱, PARALIZA! 🤯).",
+    "Concentrar la publicación de contenido de alto impacto en la franja horaria de 21h a 0h, con un enfoque inicial en las 21h, que ha demostrado ser consistentemente efectiva para los videos más vistos.",
+    "Diversificar ligeramente con contenido de 'productividad', ya que este nicho muestra un rendimiento promedio sólido (36 vistas) y una tendencia de crecimiento positiva (9.333), lo que puede aportar estabilidad al canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal está impulsado por la intersección única de `ia_noticias` con `deportes` (sub-nicho 'Mundial 2026'), logrando picos de vistas significativos; sin embargo, esta estrategia es de alto riesgo, ya que el mismo nicho `ia_noticias` produce el 100% de los videos con 0 vistas cuando el contenido se desvía de este patrón específico, indicando una extrema sensibilidad al tema y formato exacto."
+  "insight_semana": "El éxito viral del canal está exclusivamente ligado a un formato de 'ia_noticias' que simula eventos deportivos hipotéticos y altamente dramáticos (ej. Mundial 2026), generando picos de vistas significativos a pesar de una alta volatilidad general del nicho."
 }
