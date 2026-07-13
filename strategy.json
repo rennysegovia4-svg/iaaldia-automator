@@ -1,38 +1,37 @@
 {
-  "updated": "2026-07-12",
-  "iteracion": 138,
+  "updated": "2026-07-13",
+  "iteracion": 139,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.1,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "ia_noticias": 0.65,
+    "productividad": 0.3,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "deportes": 0.0,
+    "entretenimiento": 0.0,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[PAÍS] ELIMINA A [PAÍS] [RESULTADO] en el Mundial 2026 😱 ¡[ADJETIVO IMPACTANTE]!",
-    "[PAÍS] EN SHOCK: [JUGADOR/EVENTO] PARALIZA! 😱",
-    "¡[PAÍS] ELIMINADO del MUNDIAL 2026! 😱 [OPONENTE] HACE HISTORIA",
-    "[JUGADOR] ELIMINA A [PAÍS] DEL MUNDIAL 2026! 🤯",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍",
-    "[PAÍS 1] [X-X] [PAÍS 2] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱"
+    "Fórmula 1: [PAÍS] [VERBO IMPACTO] [OPONENTE] [RESULTADO/DETALLE] en el Mundial [AÑO] [EMOJI IMPACTO]!",
+    "Fórmula 2: [PAÍS] EN SHOCK: [JUGADOR/EVENTO] [ACCIÓN]! 😱",
+    "Fórmula 3: [PAÍS 1] [VERBO ELIMINATORIO] A [PAÍS 2]: ¡[GOL/DETALLE ESPECÍFICO]! 😱",
+    "Fórmula 4: [JUGADOR] [ACCIÓN HEROICA] que ELIMINÓ a [PAÍS] del MUNDIAL [AÑO]! 🤯",
+    "Fórmula 5: [PAÍS 1] [RESULTADO] [PAÍS 2] EN MUNDIAL [AÑO]! ¿QUÉ PASÓ? 😱",
+    "Fórmula 6: El gol que paró al mundo en el Mundial [AÑO] ⚽🌍"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de 'autoayuda' o motivación sin un evento concreto ('NO TOMAR RIESGO es tu MAYOR AMENAZA 😱').",
-    "Hooks sobre finanzas o negocios con afirmaciones generales y poco específicas ('El error de dinero que comete el 80% 💸').",
-    "Preguntas abiertas o eventos localizados sin un gancho global o dramático fuerte ('PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')."
+    "Patrón 1: Títulos genéricos de finanzas o autoayuda sin un evento específico o drama global (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Patrón 2: Títulos de deportes sobre eventos locales o poco relevantes, que no evocan el impacto de un 'Mundial' (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?').",
+    "Patrón 3: Títulos que prometen 'dinero' o 'errores comunes' sin generar una intriga profunda o una conexión con la actualidad dramática (ej. 'El error de dinero que comete el 80% 💸')."
   ],
   "best_hora": 21,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar Contenido Deportivo Global de Alto Impacto: Asignar el 60% del esfuerzo de contenido a noticias y eventos deportivos simulados de gran escala (ej. 'Mundial 2026') con resultados dramáticos, replicando los patrones del TOP 10.",
-    "Optimizar Horarios de Publicación: Concentrar las publicaciones entre las 21:00 y 22:00 horas para maximizar la visibilidad y el engagement, dado que este período acumula casi la mitad de las vistas de los videos exitosos.",
-    "Diseño de Títulos con Impacto Emocional: Utilizar títulos que incorporen nombres de países, jugadores, resultados específicos, la frase 'Mundial 2026' y emojis de shock (😱, 🤯) para capitalizar la intriga y el drama.",
-    "Descartar Temas de Bajo Rendimiento: Eliminar completamente la creación de contenido genérico sobre finanzas, autoayuda o eventos locales aislados, ya que estos temas consistentemente generan 0 vistas.",
-    "Monitorear Duración de Video: Implementar la recolección de datos sobre la duración de los Shorts para futuras iteraciones, con el fin de identificar la duracion_optima y mejorar la retención."
+    "Priorizar la creación de contenido dentro del sub-nicho 'Mundial 2026' bajo la categoría 'ia_noticias', utilizando títulos con eventos dramáticos, nombres de países/jugadores y emojis de impacto (😱, 🤯), ya que acapara el 100% de los videos con más vistas.",
+    "Concentrar las publicaciones en la franja horaria de 21:00 a 22:00, siendo las 21:00 la hora de mayor rendimiento individual en el TOP 10, para maximizar la visibilidad inicial.",
+    "Evitar contenido de finanzas genéricas, autoayuda o noticias deportivas locales sin el alcance de un evento global, dado que estos patrones resultaron en 0 vistas consistentemente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave de la viralidad reside en la explotación intensiva de un sub-nicho ultra-específico y dramático (deportes del Mundial 2026) durante las horas pico de la noche (21:00-22:00), lo que contrasta fuertemente con el bajo rendimiento general del nicho 'ia_noticias' cuando no acierta este patrón, evidenciando una estrategia de alto riesgo y recompensa."
+  "insight_semana": "El nicho 'ia_noticias' presenta una polarización extrema: el sub-nicho 'Mundial 2026' es el único que genera un alto volumen de vistas, dominando el TOP 10 con un promedio de 867.6 vistas por video exitoso, mientras que otros temas dentro de 'ia_noticias' y el resto de los nichos no logran engagement significativo."
 }
