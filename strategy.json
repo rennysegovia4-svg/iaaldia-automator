@@ -1,28 +1,40 @@
 {
   "updated": "2026-07-13",
-  "iteracion": 140,
+  "iteracion": 141,
   "niche_weights": {
-    "productividad": 0.4,
-    "ia_noticias": 0.4,
+    "ia_noticias": 0.7,
+    "productividad": 0.2,
+    "deportes": 0.05,
     "finanzas": 0.05,
-    "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.05,
-    "productividad_ia": 0.05,
-    "deportes": 0.0,
     "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
     "politica_latam": 0.0
   },
-  "best_hooks": "insuficientes datos para identificar hooks efectivos, el campo 'hook' está vacío en el dataset.",
-  "avoid_hooks": "insuficientes datos para identificar hooks a evitar, el campo 'hook' está vacío en el dataset.",
+  "best_hooks": [
+    "PAÍS_A ELIMINA A PAÍS_B en el Mundial 2026 ¡EVENTO CLAVE! 😱",
+    "PAÍS_A en SHOCK: ¡NOTICIA IMPACTANTE! 😱",
+    "PAÍS_A vs PAÍS_B en Mundial 2026: ¿QUÉ SUCEDIÓ? 😱",
+    "EVENTO_HISTÓRICO que PARALIZÓ al mundo en el Mundial 2026 ⚽🌍",
+    "NOMBRE_JUGADOR DOBLETE que ELIMINÓ a PAÍS del MUNDIAL 2026 🤯 ¡INCREÍBLE!",
+    "PAÍS_A ELIMINA a PAÍS_B: ¡GOL AGÓNICO/CLAVE al MINUTO! 😱"
+  ],
+  "avoid_hooks": [
+    "Consejos financieros/productividad genéricos o abstractos sin un gancho de urgencia o drama.",
+    "Noticias excesivamente específicas o locales (ej. 'PARTIDO COLOMBIA SÁBADO') sin relevancia masiva o impacto global.",
+    "Títulos que implican condiciones monetarias directas o números de negocio complejos sin contexto dramático."
+  ],
   "best_hora": 21,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima, no se registra la duración de los videos.",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar la producción de contenido en el sub-nicho 'Mundial 2026' dentro de 'ia_noticias', ya que ha demostrado ser el único generador de alto rendimiento, acaparando el 100% de los videos del TOP 10.",
-    "Mantener la estructura de títulos exitosa: utilizar la combinación de nombres de países/jugadores, menciones explícitas al 'Mundial 2026', resultados específicos y emojis de impacto (😱, 🤯), replicando el patrón del 80% de los videos del TOP 10.",
-    "Priorizar las horas de publicación entre las 21:00 y 22:00, dado que esta franja horaria concentra el 41.85% de las vistas del TOP 10 y la hora de las 21:00 es la más efectiva individualmente.",
-    "Explorar el nicho de 'productividad' dada su consistente media de 36 vistas y alto score/trend, lo que sugiere una audiencia receptiva y un potencial de crecimiento.",
-    "Evitar temáticas de títulos demasiado genéricas o 'clickbait' sin un contexto claro, como las observadas en los videos de bajo rendimiento (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA', 'El error de dinero que comete el 80% 💸'), ya que resultaron en 0 vistas."
+    "Priorizar la creación de contenido dentro del sub-nicho 'Mundial 2026' (categorizado como ia_noticias), dado su dominio absoluto en el TOP 10 y su potencial viral.",
+    "Concentrar las publicaciones de videos de alto impacto entre las 21:00 y 22:00 horas, con un enfoque principal en las 21:00, para aprovechar los picos de audiencia identificados.",
+    "Replicar y adaptar las estructuras de título exitosas del TOP 10, utilizando emojis de alto impacto (😱, 🤯, ⚽🌍) y lenguaje que genere drama, sorpresa o curiosidad (ej. 'ELIMINA A', 'EN SHOCK', '¿QUÉ PASÓ?', 'PARÓ AL MUNDO').",
+    "Abstenerse de crear contenido con títulos o temáticas similares a los videos con 0 vistas, especialmente aquellos relacionados con consejos financieros/productividad genéricos o noticias muy localizadas sin atractivo global.",
+    "Explorar la posibilidad de crear más contenido relacionado con 'deportes' que emule el éxito del 'Mundial 2026', como noticias de última hora o resultados inesperados generados por IA en otros contextos deportivos.",
+    "Se necesita recopilar datos sobre la duración de los videos para poder determinar una 'duración óptima' basada en evidencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta un rendimiento extremadamente polarizado; mientras su promedio general de vistas es bajo (4 vistas), su sub-nicho específico de 'Mundial 2026' domina el TOP 10 con un promedio de 867.7 vistas por video, demostrando un potencial masivo cuando el enfoque es ultra-específico y relevante."
+  "insight_semana": "El sub-nicho 'Mundial 2026' dentro de 'ia_noticias' es el único generador de contenido viral para el canal, demostrando un potencial de vistas masivo (promedio de 867.6 en el TOP 10) que eclipsa cualquier otro tipo de contenido probado, a pesar de que la media general del nicho 'ia_noticias' es de solo 4 vistas."
 }
