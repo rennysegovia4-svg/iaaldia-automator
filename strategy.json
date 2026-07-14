@@ -1,39 +1,38 @@
 {
   "updated": "2026-07-14",
-  "iteracion": 147,
+  "iteracion": 148,
   "niche_weights": {
-    "ia_noticias": 0.4,
-    "productividad": 0.35,
-    "deportes": 0.05,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.05,
+    "ia_noticias": 0.5,
+    "productividad": 0.2,
+    "finanzas": 0.1,
     "entretenimiento": 0.05,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "negocios_digitales": 0.05,
+    "deportes": 0.05,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[PAÍS A] ELIMINA A [PAÍS B] [RESULTADO] en el Mundial 2026 😱 ¡[IMPACTO]!",
-    "[PAÍS] EN SHOCK: [JUGADOR/EVENTO] [ACCIÓN DRAMÁTICA]! 😱",
-    "[PAÍS A] [RESULTADO] [PAÍS B] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱",
-    "[JUGADOR] ELIMINA A [PAÍS] DEL MUNDIAL 2026! 🤯",
-    "¡[PAÍS] ELIMINADO del MUNDIAL 2026! 😱 [PAÍS/JUGADOR] HACE HISTORIA",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍"
+    "Impacto de Eliminación Mundial: `{País A} ELIMINA A {País B} [resultado] en el Mundial 2026 😱 ¡{Emoción}!` (ej. \"BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!\")",
+    "Reacción a Evento Inesperado: `{País} EN SHOCK: {Evento/Jugador} PARALIZA! 😱` (ej. \"ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱\")",
+    "Gol Decisivo en Mundial: `{País A} ELIMINA A {País B}: ¡GOL {Adjetivo} EN MUNDIAL! 😱` (ej. \"ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱\")",
+    "Estrella Elimina Gigante: `{Jugador} ELIMINA A {País Grande} DEL MUNDIAL 2026! 🤯` (ej. \"HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯\")",
+    "Resultado Inesperado y Pregunta: `{País A} {Resultado} {País B} EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱` (ej. \"BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱\")",
+    "Hito Histórico Mundial: `¡{País} ELIMINADO del MUNDIAL 2026! 😱 {País Nuevo} HACE HISTORIA` (ej. \"¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA\")"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o desarrollo personal (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Títulos de finanzas o negocios, incluso con emojis dramáticos (ej. '¡PAGA $200 O NADA!', 'TRES EMPRESAS VALEN MÁS...').",
-    "Preguntas sobre eventos deportivos específicos de un país no enmarcado como 'Mundial 2026' y con tono menos sensacionalista (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')."
+    "Preguntas ambiguas o sin desenlace claro sobre eventos. (Ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Declaraciones genéricas de autoayuda o motivación. (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Afirmaciones abstractas, transaccionales o genéricas sobre finanzas/negocios. (Ej: '¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸')"
   ],
   "best_hora": 21,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Continuar explotando el sub-nicho 'Mundial 2026' dentro de `ia_noticias`, replicando la estructura de títulos exitosos que incluyen países, resultados, eventos dramáticos, nombres de jugadores y emojis de impacto (😱, 🤯, ⚽🌍).",
-    "Invertir significativamente en el nicho de `productividad`, ya que es el único que muestra un rendimiento estable con un avg_views de 36 y un trend positivo de 9.333, ofreciendo una base de crecimiento más predecible.",
-    "Evitar la creación de videos `ia_noticias` genéricos sobre finanzas, autoayuda o negocios, dado que consistentemente han generado 0 vistas y contribuyen a la tendencia negativa general del nicho `ia_noticias`.",
-    "Experimentar con videos directamente clasificados como `deportes` utilizando la misma estrategia de títulos 'Mundial 2026' para determinar si la clasificación de nicho tiene un impacto en la distribución o si el contenido es el único factor determinante de éxito.",
-    "Concentrar las publicaciones en las franjas horarias de mayor éxito identificadas: mediodía/tarde (11h y 14h) y, prioritariamente, noche/madrugada (21h, 22h, 23h y 0h) para maximizar la visibilidad."
+    "Maximizar la producción de contenido bajo el sub-nicho 'Mundial 2026' dentro de 'ia_noticias', replicando los patrones de los títulos TOP 10, dado que es el único generador de videos virales en el canal.",
+    "Diversificar la estrategia con contenido de 'productividad', aprovechando su estabilidad (avg_views: 36) y tendencia positiva (9.333) para construir una base de audiencia más consistente y mitigar la volatilidad de 'ia_noticias'.",
+    "Evitar estrictamente temas de 'ia_noticias' que no sean de 'Mundial 2026' o de noticias dramáticas y específicas (ej. finanzas genéricas, autoayuda, comparaciones abstractas), ya que consistentemente resultan en 0 vistas.",
+    "Continuar publicando en las ventanas horarias de alto rendimiento: mediodía/tarde (11h y 14h) y especialmente noche/madrugada (21h, 22h, 23h, 0h), asignando prioridad a la franja nocturna."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal opera con una extrema polarización de rendimiento: la viralidad es impulsada exclusivamente por un micro-nicho muy específico (`ia_noticias` sobre 'Mundial 2026'), mientras que el resto del contenido `ia_noticias` fracasa estrepitosamente. La única excepción es el nicho de `productividad`, que ofrece un crecimiento estable y sostenido, señalando la necesidad de una estrategia dual entre la búsqueda de virales ultra-específicos y el desarrollo de contenido estable en nichos probados."
+  "insight_semana": "La viralidad en el canal está extremadamente polarizada: el 100% de los videos TOP 10 provienen de un sub-nicho hiper-específico ('Mundial 2026' dentro de `ia_noticias`), mientras que el mismo nicho `ia_noticias` también genera el 100% de los videos con 0 vistas cuando se desvía a temas genéricos, resultando en una tendencia general negativa a pesar de éxitos masivos."
 }
