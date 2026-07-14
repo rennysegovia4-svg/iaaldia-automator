@@ -1,39 +1,38 @@
 {
   "updated": "2026-07-14",
-  "iteracion": 149,
+  "iteracion": 150,
   "niche_weights": {
-    "deportes": 0.05,
-    "ia_noticias": 0.75,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.04
+    "deportes": 0.4,
+    "ia_noticias": 0.1,
+    "productividad": 0.3,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "entretenimiento": 0.05,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[PAÍS 1] ELIMINA A [PAÍS 2] en el Mundial 2026 [EMOJI DE SHOCK]",
-    "[PAÍS] EN SHOCK: [JUGADOR] PARALIZA! [EMOJI DE SHOCK]",
-    "[PAÍS 1] ELIMINA A [PAÍS 2]: ¡GOL AGÓNICO EN MUNDIAL! [EMOJI DE SHOCK]",
-    "[JUGADOR] ELIMINA A [PAÍS] DEL MUNDIAL 2026! [EMOJI DE SHOCK]",
-    "¡[PAÍS] ELIMINADO del MUNDIAL 2026! [EMOJI DE SHOCK] [OTRA NACIÓN] HACE HISTORIA",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍"
+    "Noticia Impactante de Eliminación Mundialista: [PAÍS] ELIMINA A [PAÍS] del MUNDIAL 2026 😱",
+    "Evento Histórico en el Mundial 2026: ¡[PAÍS] EN SHOCK por [SUCESO]! 🤯",
+    "Gol Agónico / Decisivo en el Mundial 2026: [PAÍS] vs [PAÍS] ¡FINAL INESPERADO! ⚽🌍",
+    "Pregunta Impactante sobre Resultado Mundialista: [PAÍS A] vs [PAÍS B] en Mundial 2026: ¿QUÉ PASÓ? 😱",
+    "Logro de Jugador Clave en Mundial: [JUGADOR] HACE HISTORIA y ELIMINA a [PAÍS]! 🤯",
+    "Sorpresa Mundialista: ¡[PAÍS] ELIMINADO del MUNDIAL 2026 por [PAÍS RIVAL]! 😱"
   ],
   "avoid_hooks": [
-    "Títulos que implican fraude o cuestionan la integridad de eventos (e.g., '¿ES FRAUDE?').",
-    "Declaraciones genéricas de autoayuda o motivación ('NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Promesas financieras ambiguas o clickbait ('¡PAGA $200 O NADA!').",
-    "Comparaciones de valor empresarial/tecnológico sin impacto inmediato ('TRES EMPRESAS VALEN MÁS que 25 años de tech').",
-    "Consejos financieros genéricos ('El error de dinero que comete el 80%')."
+    "Consejos de autoayuda o finanzas genéricos sin anclaje en una noticia o evento viral.",
+    "Preguntas ambiguas o promesas financieras sin contexto claro.",
+    "Noticias deportivas específicas y de baja relevancia global, sin relación con grandes eventos como el Mundial."
   ],
-  "best_hora": 21,
-  "duracion_optima": 58,
+  "best_hora": 22,
+  "duracion_optima": -1,
   "recomendaciones": [
-    "Concentrar la creación de contenido en el sub-nicho 'Mundial 2026' dentro de `ia_noticias`, replicando el patrón de noticias de resultados sorprendentes, eliminaciones de equipos grandes y goles dramáticos, ya que es el único generador de virales. Utilizar países, jugadores y el año del mundial.",
-    "Eliminar la producción de videos de `ia_noticias` que aborden temas genéricos de finanzas, autoayuda o deportes no relacionados con el 'Mundial 2026', ya que estos consistentemente generan 0 vistas y arrastran el rendimiento general del nicho.",
-    "Aunque no generó virales esta iteración y no está explícitamente en los pesos, se recomienda mantener la observación y, si es posible, la experimentación moderada en el nicho de `productividad` (el que tiene 36 avg_views y trend positivo), ya que demuestra una base de rendimiento estable y de crecimiento a largo plazo.",
-    "Experimentar con los horarios de publicación alrededor de las 21:00 (9 PM) y 0:00 (medianoche), ya que estos han demostrado ser los momentos más recurrentes para los videos de mayor rendimiento."
+    "Priorizar la creación de contenido dentro del nicho de Deportes, específicamente eventos de alta relevancia global como el 'Mundial 2026', dado que son los únicos generadores de views virales.",
+    "Establecer un calendario de publicación que priorice las horas nocturnas (21:00-0:00) para el contenido viral, ya que este período acumula el 70% de las views del TOP 10.",
+    "Explorar y escalar el nicho de Productividad como base de contenido estable, dado su `avg_views` de 36 y la tendencia positiva de 9.333, complementando la estrategia viral con crecimiento orgánico sostenido.",
+    "Recopilar y analizar la duración de los Shorts para determinar la `duracion_optima` que maximiza la retención y el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es un nicho de alta varianza: es la única fuente de contenido viral (específicamente el sub-nicho 'Mundial 2026'), pero también la fuente principal del contenido de más bajo rendimiento cuando los temas se desvían de esta fórmula específica, acumulando el 100% de las vistas del TOP 10 pero también el 100% de los videos con 0 vistas."
+  "insight_semana": "El contenido viral está monopolizado por el sub-nicho 'Mundial 2026' dentro de `ia_noticias`, mientras que 'productividad' es el nicho más prometedor para el crecimiento estable y orgánico, a pesar de no generar hits virales."
 }
