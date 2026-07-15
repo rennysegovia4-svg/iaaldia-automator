@@ -1,36 +1,39 @@
 {
   "updated": "2026-07-15",
-  "iteracion": 155,
+  "iteracion": 156,
   "niche_weights": {
-    "deportes": 0.2,
-    "ia_noticias": 0.6,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "ia_noticias": 0.7,
+    "productividad": 0.2,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "deportes": 0.0,
+    "entretenimiento": 0.0,
+    "politica_latam": 0.0,
+    "cripto_inversiones": 0.0,
+    "productividad_ia": 0.0
   },
   "best_hooks": [
-    "[PAÍS/EQUIPO] + [ACCIÓN DRAMÁTICA: ELIMINA/EN SHOCK] + [RIVAL/JUGADOR] + [EVENTO CLAVE: MUNDIAL 2026] + [EMOJI DE IMPACTO]",
-    "[JUGADOR ESTRELLA] + [ACCIÓN CONTUNDENTE: ELIMINA/PARALIZA] + [EQUIPO RIVAL] + [EVENTO CLAVE: MUNDIAL 2026] + [EMOJI DE IMPACTO]",
-    "[RESULTADO INESPERADO: GOL AGÓNICO/0-0] + [EQUIPOS] + [EVENTO CLAVE: MUNDIAL 2026] + [PREGUNTA/IMPACTO] + [EMOJI]",
-    "¡[EQUIPO] + [ESTADO DRAMÁTICO: ELIMINADO/EN SHOCK] + [EVENTO CLAVE: MUNDIAL 2026]! + [HECHO HISTÓRICO]",
-    "El [EVENTO/GOL] que [ACCIÓN INUSUAL: PARÓ AL MUNDO] en el [EVENTO CLAVE: Mundial 2026] + [EMOJIS VISUALES]",
-    "[JUGADOR] + [ACCIÓN CLAVE: DOBLETE/GOL AL 90+1] que [IMPACTO: ELIMINÓ/CAMBIÓ TODO] a [EQUIPO RIVAL] del [EVENTO CLAVE: MUNDIAL 2026] + [EMOJI]"
+    "Evento Dramático + Eliminación + Equipos/Jugadores + Detalle Impactante + Emoji 😱/🤯",
+    "País/Equipo en Shock + Evento Clave + Reacción Impactante + Emoji 😱",
+    "Confrontación de Equipos + Resultado Agónico/Especial + Evento + Emoji 😱",
+    "Equipos + Marcador Sorpresivo + Evento + Pregunta Dramática + Emoji 😱",
+    "Declaración Global Impactante + Evento + Emojis de Relevancia (⚽🌍)",
+    "Equipo Eliminado + Evento + Hecho Histórico + Emoji 😱"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas personales sin un gancho único o una promesa clara, como 'El error de dinero que comete el 80%'.",
-    "Afirmaciones vagas o crípticas sobre negocios o valor que no contextualizan la relevancia o el beneficio inmediato para el espectador, como 'TRES EMPRESAS VALEN MÁS que 25 años de tech'.",
-    "Preguntas sensacionalistas o conspirativas sobre eventos específicos y poco conocidos, especialmente si no son de interés masivo o global, como 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?'"
+    "Títulos hiper-localizados o genéricamente preguntables sobre eventos no masivos",
+    "Títulos de autoayuda o motivación genérica sin un gancho directo o novedoso",
+    "Títulos abstractos o de 'factoide' empresarial/económico que no generan intriga inmediata"
   ],
   "best_hora": 21,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Reforzar la estrategia de contenido `ia_noticias` con foco en eventos deportivos de gran magnitud ('Mundial 2026'), utilizando títulos que generen intriga y dramatismo con nombres de equipos/jugadores, verbos de acción (ELIMINA, PARALIZA), resultados y emojis impactantes (😱, 🤯).",
-    "Optimizar los horarios de publicación concentrándose en las 21:00 y 22:00 horas, que han demostrado ser consistentemente las más efectivas para la viralización del contenido TOP.",
-    "Explorar y testear la creación de contenido en el nicho `productividad` (no `productividad_ia`), ya que es el único con un promedio de vistas positivo (36) y una tendencia creciente (9.333) fuera del dominio de las noticias deportivas, sugiriendo un potencial orgánico."
+    "Priorizar contenido de IA Noticiero de Deportes (específicamente 'Mundial 2026'): Concentrar al menos el 70% del esfuerzo en la simulación de noticias deportivas de alto drama y alcance global, utilizando los patrones de títulos identificados, dada su dominancia en el TOP 10.",
+    "Explorar el nicho de Productividad con cautela: Asignar un 20% del contenido a videos de productividad, buscando temas que generen tracción, dado que es el único nicho con un 'trend' positivo (9.333) fuera de las noticias de deportes.",
+    "Evitar títulos genéricos y localizados: Abstenerse de crear videos con títulos que sean demasiado genéricos (ej. 'El error de dinero...', 'NO TOMAR RIESGO...') o hiper-localizados y ambiguos (ej. 'PARTIDO COLOMBIA SÁBADO...'), ya que estos han mostrado 0 vistas.",
+    "Optimizar horarios de publicación: Publicar la mayoría de los videos más prometedores alrededor de las 21:00 y 22:00, ya que estas franjas horarias concentran el 41.8% de las vistas del TOP 10 con solo 4 videos.",
+    "Replicar formatos de título de alto impacto: Implementar consistentemente títulos que incluyan nombres de equipos/jugadores, acciones dramáticas (ej. 'ELIMINA', 'PARALIZA'), resultados específicos o preguntas impactantes, y emojis visuales como 😱, 🤯, ⚽🌍."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de `ia_noticias` enfocado en simulaciones o noticias dramatizadas del 'Mundial 2026' es el único generador de picos de vistas, acaparando el 100% del TOP 10 y confirmando la necesidad de capitalizar este formato y nicho."
+  "insight_semana": "La estrategia más efectiva es la hiper-especialización dentro de un sub-nicho (noticias simuladas de fútbol del 'Mundial 2026' bajo 'ia_noticias'), donde el drama, nombres de equipos/jugadores y emojis en los títulos son el motor principal de las vistas, a pesar de que el nicho 'ia_noticias' en general tenga una tendencia negativa (-0.9)."
 }
