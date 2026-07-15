@@ -1,38 +1,40 @@
 {
   "updated": "2026-07-15",
-  "iteracion": 153,
+  "iteracion": 154,
   "niche_weights": {
-    "ia_noticias": 0.65,
-    "productividad": 0.3,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
+    "deportes": 0.55,
+    "ia_noticias": 0.15,
+    "productividad": 0.2,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
     "cripto_inversiones": 0.01,
     "productividad_ia": 0.01,
-    "deportes": 0.0,
-    "entretenimiento": 0.005,
-    "politica_latam": 0.005
+    "entretenimiento": 0.01,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "PAÍS ELIMINA A PAÍS [MARCADOR] en EVENTO [EMOJI_DRAMA] ¡IMPACTO!",
-    "NOMBRE PROPIO ELIMINA A PAÍS DEL EVENTO [EMOJI_SHOCK]",
-    "PAÍS EN SHOCK: NOMBRE PROPIO PARALIZA! [EMOJI_DRAMA]",
-    "RESULTADO PAÍS VS PAÍS EN EVENTO! ¿QUÉ PASÓ? [EMOJI_PREGUNTA]",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (o variación con gol agónico/específico)",
-    "LOGRO ESPECÍFICO [JUGADOR/EQUIPO] que ELIMINÓ a PAÍS del EVENTO [EMOJI_ASOMBRO] ¡INCREÍBLE!"
+    "[EQUIPO A] ELIMINA A [EQUIPO B] en el Mundial 2026 [EMOJI DE SHOCK/IMPACTO] [DESCRIPCIÓN BREVE Y DRAMÁTICA]",
+    "[EQUIPO] EN SHOCK: [JUGADOR] [ACCIÓN PARALIZANTE]! 😱",
+    "[EQUIPO A] [RESULTADO] [EQUIPO B] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱",
+    "[JUGADOR] [LOGRO IMPACTANTE] que ELIMINÓ a [EQUIPO] del MUNDIAL 2026 🤯 ¡[ADJETIVO DE ASOMBRO]!",
+    "¡[EQUIPO] ELIMINADO del MUNDIAL 2026! 😱 [EQUIPO SORPRESA] HACE HISTORIA",
+    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (foco en evento único y global)"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de 'autoayuda' o consejos sin un evento, persona o acción específica ('NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Títulos excesivamente específicos o locales sin contexto global de curiosidad masiva ('PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')",
-    "Títulos que requieran conocimiento previo o sean abstractos/fríos, sin drama ni impacto inmediato ('TRES EMPRESAS VALEN MÁS que 25 años de tech')"
+    "Títulos genéricos de finanzas o autoayuda sin un evento noticioso o dramático (ej: 'El error de dinero que comete el 80% 💸')",
+    "Ganchos clickbait vagos o con montos específicos que no conectan con un evento masivo (ej: '¡PAGA $200 O NADA! 😱')",
+    "Preguntas sobre fraude o polémicas de eventos menores sin la magnitud de un 'Mundial' (ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Títulos analíticos o de negocios que carecen de inmediatez o impacto emocional (ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 21,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido dentro del sub-nicho de 'noticias dramáticas de Mundial 2026' (o eventos deportivos globales similares) bajo la categoría `ia_noticias`, ya que es el único generador consistente de picos de vistas.",
-    "Incrementar la inversión y experimentación en el nicho de `productividad`, capitalizando su alto `avg_views` (36) y `trend` positivo (9.333), para buscar su escalabilidad y conversión en un generador de vistas top.",
-    "Aplicar los patrones de títulos exitosos observados en los videos deportivos de alto rendimiento (lenguaje dramático, emojis, nombres específicos, exclamaciones) a los contenidos de `productividad` y a futuros testeos en `ia_noticias` para maximizar el CTR.",
-    "Minimizar los recursos dedicados a nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, deportes, entretenimiento, politica_latam) hasta que exista evidencia clara de tracción, reenfocando el esfuerzo en los nichos probados."
+    "Incrementar drásticamente la producción de contenido sobre 'Mundial 2026' (o similar evento deportivo de alto impacto) bajo la categoría `deportes`/`ia_noticias`, dado que generó el 100% del TOP 10 de esta iteración y los picos de vistas más altos.",
+    "Mantener y replicar la estrategia de títulos encontrada en el TOP 10, utilizando nombres de equipos/jugadores, verbos de acción fuertes (elimina, paraliza), resultados específicos y emojis de alto impacto como `😱` y `🤯`.",
+    "Asignar una porción significativa de recursos a la exploración y escalado del nicho `productividad`, ya que es el único fuera de `deportes` que muestra un `avg_views` positivo (36) y una `trend` de crecimiento (9.333).",
+    "Priorizar la publicación de videos de alto potencial entre las 21:00 y 22:00 (hora local), ya que estas horas concentran el mayor volumen de vistas en el TOP 10 (41.8%).",
+    "Detener la producción en nichos como `finanzas`, `negocios_digitales`, `cripto_inversiones`, `productividad_ia`, `entretenimiento` y `politica_latam` hasta que se redefina una estrategia clara, ya que registraron 0 vistas en esta iteración, resultando en un desperdicio de recursos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia de contenido debe pivotar radicalmente para capitalizar la probada demanda de noticias dramáticas de 'Mundial 2026' (dentro de `ia_noticias`) y la tendencia ascendente de `productividad`, mientras se minimizan los esfuerzos en nichos de rendimiento nulo."
+  "insight_semana": "El contenido de deportes ficticios del 'Mundial 2026', presentado como 'noticias IA' con títulos sensacionalistas y emocionales, es el ÚNICO impulsor de audiencia a gran escala, eclipsando por completo a todos los demás nichos en esta iteración."
 }
