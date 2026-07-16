@@ -1,39 +1,39 @@
 {
   "updated": "2026-07-16",
-  "iteracion": 160,
+  "iteracion": 161,
   "niche_weights": {
-    "deportes": 0.65,
-    "ia_noticias": 0.1,
+    "ia_noticias": 0.7,
     "productividad": 0.1,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
-    "entretenimiento": 0.02,
-    "politica_latam": 0.01
+    "finanzas": 0.035,
+    "negocios_digitales": 0.035,
+    "entretenimiento": 0.035,
+    "productividad_ia": 0.035,
+    "cripto_inversiones": 0.035,
+    "politica_latam": 0.025,
+    "deportes": 0.0
   },
   "best_hooks": [
-    "Evento + Resultado dramático + Emoji de sorpresa/impacto (ej: 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
-    "País/Jugador clave + Noticia impactante + Emoji de shock (ej: 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
-    "Eliminación/Victoria clave + Evento + Detalle agónico/jugador específico (ej: 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱')",
-    "Nombre de estrella + Verbo de eliminación + País + Evento + Emoji (ej: 'HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯')",
-    "Marcador inesperado + Evento + Pregunta/Exclamación (ej: 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Frase dramática + Evento + Emojis visuales (ej: 'El gol que paró al mundo en el Mundial 2026 ⚽🌍')"
+    "{PAÍS A} ELIMINA A {PAÍS B} {RESULTADO} en el Mundial {AÑO} 😱 ¡{EMOCIÓN}!",
+    "{PAÍS/JUGADOR} EN SHOCK: {NOMBRE JUGADOR} ¡{ACCIÓN CLAVE}!",
+    "{PAÍS A} ELIMINA A {PAÍS B}: ¡GOL {ADJETIVO} EN MUNDIAL! 😱",
+    "{JUGADOR} ELIMINA A {PAÍS} DEL MUNDIAL {AÑO}! 🤯",
+    "{PAÍS A} {SCORE} {PAÍS B} EN MUNDIAL {AÑO}! ¿QUÉ PASÓ? 😱",
+    "El gol que paró al mundo en el Mundial {AÑO} ⚽🌍"
   ],
   "avoid_hooks": [
-    "Títulos de autoayuda o consejos financieros genéricos (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', 'El error de dinero que comete el 80% 💸')",
-    "Noticias de eventos muy específicos y sin gran dramatismo (ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
-    "Declaraciones de negocios o tecnología muy abstractas sin un gancho claro (ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
+    "Preguntas ambiguas o clickbait genérico sin contexto (ej. '¡PAGA $200 O NADA! 😱')",
+    "Títulos de finanzas o autoayuda excesivamente genéricos (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', 'El error de dinero que comete el 80% 💸')",
+    "Comparaciones abstractas de negocios o tecnología que no generan intriga inmediata (ej. 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 21,
-  "duracion_optima": 0,
+  "duracion_optima": 30,
   "recomendaciones": [
-    "Priorizar la creación de contenido de 'noticias deportivas simuladas del Mundial 2026', dado que el 100% de los videos del TOP 10 pertenecen a esta subcategoría.",
-    "Diseñar títulos que incluyan nombres de jugadores específicos, países clave, y desenlaces dramáticos/sorpresivos, utilizando emojis de impacto (😱, 🤯) para maximizar el CTR.",
-    "Programar la publicación de Shorts principalmente en la franja horaria nocturna (21:00 a 00:00), complementando con pruebas en la franja matutina de las 11:00.",
-    "Evitar categóricamente la creación de Shorts sobre temas de autoayuda genérica, finanzas no especializadas, negocios abstractos o noticias de eventos sin gran drama, ya que han demostrado tener 0 vistas.",
-    "Comenzar a registrar la duración de los videos para identificar una duración óptima, ya que actualmente no se dispone de estos datos."
+    "Concentrar al menos el 70% del contenido en el sub-nicho de 'noticias deportivas simuladas del Mundial 2026' dentro de 'ia_noticias', dado su rendimiento abrumadoramente superior.",
+    "Priorizar la inclusión de nombres específicos de países y jugadores (ej. 'Haaland', 'Merino', 'Bélgica', 'Brasil') y detalles de eventos ('al 90+1', 'doblete', '4-1') en los títulos para maximizar el CTR.",
+    "Publicar la mayoría de los Shorts entre las 21:00 y 00:00, con pruebas adicionales en la franja de las 11:00-14:00, que mostró potencial para videos virales.",
+    "Evitar completamente la creación de contenido en nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, entretenimiento, politica_latam, deportes) hasta que se logre una masa crítica en el nicho dominante, o se realice una reestructuración profunda de la estrategia para esos nichos.",
+    "Dado que no hay datos sobre la duración de los videos, se recomienda probar con Shorts de entre 15 y 30 segundos, que suelen ser los más efectivos para la retención inicial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El sub-nicho de 'noticias deportivas simuladas del Mundial 2026', a pesar de estar categorizado como `ia_noticias`, es el único tipo de contenido que genera vistas significativas, capturando el 100% del TOP 10 y eclipsando por completo a cualquier otro tema."
+  "insight_semana": "El nicho de 'ia_noticias', específicamente el contenido de noticias deportivas simuladas del Mundial 2026, ha demostrado ser el ÚNICO impulsor de vistas del canal, con un rendimiento significativamente superior a cualquier otro tipo de contenido analizado."
 }
