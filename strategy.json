@@ -1,27 +1,36 @@
 {
   "updated": "2026-07-17",
-  "iteracion": 168,
+  "iteracion": 169,
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "finanzas": 0.06,
-    "negocios_digitales": 0.06,
-    "cripto_inversiones": 0.06,
-    "entretenimiento": 0.06,
-    "politica_latam": 0.06
+    "deportes": 0.6,
+    "ia_noticias": 0.3,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
-  "best_hooks": "No hay datos suficientes en esta iteración para identificar hooks efectivos.",
-  "avoid_hooks": "No hay datos suficientes en esta iteración para identificar hooks que fallan.",
+  "best_hooks": [
+    "PAÍS ELIMINA A PAÍS + MARC. + en el Mundial AÑO + ¡IMPACTO!",
+    "PAÍS EN SHOCK: EVENTO SUCESO + ¡EMOJI IMPACTO!",
+    "RESULTADO PARTIDO en Mundial AÑO + ¿QUÉ PASÓ?",
+    "El gol que paró al mundo en el Mundial AÑO ⚽🌍",
+    "JUGADOR + LOGRO CLAVE (ej: DOBLETE) que ELIMINÓ a PAÍS + ¡INCREÍBLE/IMPACTO!",
+    "PAÍS ELIMINA A PAÍS: ¡GOL DE JUGADOR al MINUTO!"
+  ],
+  "avoid_hooks": [
+    "Títulos vagos sobre eventos no claramente definidos (ej. 'PARTIDO COLOMBIA SÁBADO').",
+    "Consejos generales de finanzas o negocios sin un gancho viral (ej. 'NO TOMAR RIESGO...', 'TRES EMPRESAS VALEN...').",
+    "Ganchos de 'dinero fácil' o 'errores comunes' que resultaron en 0 vistas (ej. '¡PAGA $200 O NADA!', 'El error de dinero...')."
+  ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar duración óptima.",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' específicamente centrado en noticias de fútbol simulado del Mundial 2026, dada su eficacia probada como la única fuente de videos de alto rendimiento.",
-    "Continuar incorporando nombres de jugadores específicos y reconocibles (ej. HAALAND, CABRAL, MERINO) en los títulos de los videos de fútbol simulado, ya que es un patrón recurrente en el TOP 10.",
-    "Mantener el horario de publicación en la ventana nocturna/madrugada (entre las 21:00 y las 0:00), ya que 7 de los 10 videos con más vistas se publicaron en este rango.",
-    "Realizar pruebas controladas y estratégicas con el nicho 'productividad', dada su tendencia de crecimiento excepcionalmente alta (9.333), a pesar de sus vistas promedio bajas (36), para evaluar su potencial de escalabilidad.",
-    "Explorar variaciones y ángulos frescos dentro de la temática de fútbol simulado del Mundial 2026 para mantener el interés y evitar la saturación, a pesar de la tendencia positiva actual del nicho 'ia_noticias'."
+    "Maximizar la creación de contenido clasificado como 'ia_noticias' que se centre específicamente en eventos deportivos de alto impacto (ej. 'Mundial 2026', eliminaciones, resultados sorpresivos), ya que este subnicho genera consistentemente las vistas más altas.",
+    "Ajustar las horas de publicación para concentrarse en la ventana nocturna/madrugada, específicamente entre las 21:00 y las 0:00, ya que 7 de los 10 videos de mejor rendimiento fueron lanzados en este período.",
+    "Implementar activamente las fórmulas de ganchos identificadas del TOP 10, utilizando nombres de países, resultados, eventos eliminatorios y emojis de sorpresa/impacto (😱, 🤯) en los títulos para maximizar el CTR."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal ha descubierto una fórmula de contenido altamente efectiva y nicho-específica (noticias de fútbol simulado del Mundial 2026 bajo la etiqueta 'ia_noticias'), siendo la única fuente de rendimiento significativo, mientras que la mayoría de los demás nichos permanecen inexplorados o ineficaces."
+  "insight_semana": "El alto rendimiento del nicho 'ia_noticias' está impulsado casi exclusivamente por contenido deportivo de gran impacto (Mundial 2026), lo que indica que el factor viral es el 'deporte' más que el formato 'noticias IA' general."
 }
