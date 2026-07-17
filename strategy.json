@@ -1,39 +1,37 @@
 {
   "updated": "2026-07-17",
-  "iteracion": 165,
+  "iteracion": 166,
   "niche_weights": {
-    "deportes": 0.02,
-    "ia_noticias": 0.9,
-    "finanzas": 0.01,
+    "ia_noticias": 0.85,
+    "productividad": 0.05,
+    "deportes": 0.03,
     "entretenimiento": 0.02,
+    "finanzas": 0.01,
     "negocios_digitales": 0.01,
-    "productividad_ia": 0.02,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.01,
+    "productividad_ia": 0.01
   },
   "best_hooks": [
-    "[País] [Acción dramática] a [País] en [Evento] [Emojis de sorpresa/impacto] (ej. BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!)",
-    "[País] EN SHOCK: [Jugador] [Acción impactante]! 😱 (ej. ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
-    "[Jugador Famoso] [Acción dramática] a [País] del [Evento]! 🤯 (ej. HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯)",
-    "[País] [Resultado sorprendente] [País] EN [Evento]! ¿QUÉ PASÓ? 😱 (ej. BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱)",
-    "¡[País] [Acción definitiva] del [Evento]! 😱 [País/Jugador] [Logro Histórico] (ej. ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (Declaración dramática y universal)"
+    "Uso de emojis de alto impacto (😱, 🤯) en el título.",
+    "Mencionar equipos/países en escenarios de eliminación ('X ELIMINA A Y').",
+    "Inclusión de nombres de jugadores específicos y sus acciones clave ('JUGADOR + VERBO DE IMPACTO').",
+    "Formulación de preguntas que generen curiosidad o intriga ('¿QUÉ PASÓ?').",
+    "Referencia a eventos deportivos de gran magnitud, aunque simulados ('Mundial 2026').",
+    "Palabras clave que denoten sorpresa, dramatismo o historia ('EN SHOCK', 'GOL AGÓNICO', 'HACE HISTORIA')."
   ],
   "avoid_hooks": [
-    "Patrones de autoayuda o motivación genérica (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA)",
-    "Patrones de finanzas o negocios digitales genéricos (ej. ¡PAGA $200 O NADA!, El error de dinero que comete el 80% 💸)",
-    "Patrones de preguntas sensacionalistas de nicho sin alto impacto emocional general (ej. PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)"
+    "Títulos que ofrecen consejos financieros o de productividad genéricos y abstractos.",
+    "Preguntas ambiguas o sugerencias de fraude sin un contexto claro o impactante.",
+    "Declaraciones abstractas sobre empresas o economía que no conectan con un evento inmediato o una sorpresa."
   ],
-  "best_hora": 11,
-  "duracion_optima": 0,
+  "best_hora": 21,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Maximizar la producción de contenido en el nicho 'ia_noticias' con temática de fútbol simulado (Mundial 2026), ya que el 100% del TOP 10 pertenece exclusivamente a esta categoría y es la única que genera vistas significativas.",
-    "Incorporar consistentemente palabras clave de alto impacto emocional y dramatismo en los títulos, como 'ELIMINA', 'SHOCK', 'PARALIZA', 'AGÓNICO', 'DEVASTADOR', 'INCREÍBLE', dado su éxito probado en los videos del TOP 10.",
-    "Priorizar el horario de publicación de las 11:00 AM para al menos uno de los videos diarios, ya que fue la hora del video con mayor rendimiento individual (1045 vistas), complementando la franja nocturna exitosa.",
-    "Evitar completamente la creación de contenido en nichos como 'finanzas', 'negocios_digitales' y 'productividad' debido a su rendimiento consistentemente nulo (0 vistas en la mayoría de los casos) en iteraciones anteriores.",
-    "Explorar la inclusión de nombres de jugadores específicos (e.g., 'HAALAND', 'DE KETELAERE', 'CABRAL', 'MERINO') en los títulos de 'ia_noticias' para generar mayor interés y especificidad, siguiendo el patrón de los videos más vistos.",
-    "Dado que no se dispone de datos sobre la duración de los videos, se recomienda implementar pruebas A/B con duraciones variadas (e.g., 30-45s, 45-60s) para identificar la ventana óptima para este tipo de contenido de Shorts."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', específicamente sobre fútbol simulado (Mundial 2026), ya que este segmento generó el 100% de los videos en el TOP 10.",
+    "Incluir en los títulos nombres de jugadores específicos y resultados de partidos impactantes (ej., 'HAALAND ELIMINA', 'GOL DE MERINO al 90+1') junto con emojis de impacto (😱, 🤯) para maximizar la CTR.",
+    "Descontinuar la producción de videos en los nichos de 'finanzas', 'negocios_digitales' y 'productividad' (excepto si son 'ia_noticias' sobre productividad, aunque sin datos), dado su rendimiento de 0 vistas en los videos más bajos y promedios de vistas nulos o muy bajos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia actual de contenido es monocromática, con el 100% del éxito (TOP 10) concentrado exclusivamente en el nicho de 'ia_noticias' con temática de fútbol simulado del Mundial 2026, mientras que el resto de nichos son completamente ineficaces, registrando 0 vistas de promedio en 7 de 8 categorías."
+  "insight_semana": "El 100% del rendimiento superior del canal proviene exclusivamente del nicho 'ia_noticias' con temática de fútbol simulado (Mundial 2026), lo que resalta una fuerte especialización, pero también una alta dependencia de un único tipo de contenido para el éxito viral."
 }
