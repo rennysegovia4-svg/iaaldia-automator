@@ -1,36 +1,37 @@
 {
-  "updated": "2026-07-17",
-  "iteracion": 169,
+  "updated": "2026-07-18",
+  "iteracion": 170,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.3,
-    "finanzas": 0.02,
+    "deportes": 0.4,
+    "ia_noticias": 0.2,
+    "productividad": 0.15,
+    "finanzas": 0.08,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.04,
     "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "PAÍS ELIMINA A PAÍS + MARC. + en el Mundial AÑO + ¡IMPACTO!",
-    "PAÍS EN SHOCK: EVENTO SUCESO + ¡EMOJI IMPACTO!",
-    "RESULTADO PARTIDO en Mundial AÑO + ¿QUÉ PASÓ?",
-    "El gol que paró al mundo en el Mundial AÑO ⚽🌍",
-    "JUGADOR + LOGRO CLAVE (ej: DOBLETE) que ELIMINÓ a PAÍS + ¡INCREÍBLE/IMPACTO!",
-    "PAÍS ELIMINA A PAÍS: ¡GOL DE JUGADOR al MINUTO!"
+    "[EQUIPO/PAÍS] ELIMINA A [EQUIPO/PAÍS] en el Mundial [AÑO] [EMOJI_SHOCK]",
+    "[PAÍS] EN SHOCK: [EVENTO CLAVE]! [EMOJI_SHOCK]",
+    "[JUGADOR] ELIMINA A [PAÍS] del Mundial [AÑO]! [EMOJI_IMPACTO]",
+    "[PAÍS A] [MARCADOR] [PAÍS B] en Mundial [AÑO]! ¿QUÉ PASÓ? [EMOJI_CUESTIONAMIENTO]",
+    "El gol que paró al mundo en el Mundial [AÑO] ⚽🌍 [EMOJI_ASOMBRO]",
+    "[JUGADOR/EVENTO] [ACCIÓN CLAVE] que ELIMINÓ a [PAÍS] del Mundial [AÑO] 🤯 ¡[ADJETIVO_FUERTE]!"
   ],
   "avoid_hooks": [
-    "Títulos vagos sobre eventos no claramente definidos (ej. 'PARTIDO COLOMBIA SÁBADO').",
-    "Consejos generales de finanzas o negocios sin un gancho viral (ej. 'NO TOMAR RIESGO...', 'TRES EMPRESAS VALEN...').",
-    "Ganchos de 'dinero fácil' o 'errores comunes' que resultaron en 0 vistas (ej. '¡PAGA $200 O NADA!', 'El error de dinero...')."
+    "Preguntas de noticias locales o muy específicas sin un contexto global de impacto inmediato (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡').",
+    "Consejos genéricos de autoayuda o finanzas personales sin un gancho de urgencia o novedad (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', 'El error de dinero que comete el 80% 💸').",
+    "Afirmaciones financieras o de negocio vagas o que requieren mucho contexto para ser interesantes (ej. '¡PAGA $200 O NADA! 😱', 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')."
   ],
   "best_hora": 22,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Maximizar la creación de contenido clasificado como 'ia_noticias' que se centre específicamente en eventos deportivos de alto impacto (ej. 'Mundial 2026', eliminaciones, resultados sorpresivos), ya que este subnicho genera consistentemente las vistas más altas.",
-    "Ajustar las horas de publicación para concentrarse en la ventana nocturna/madrugada, específicamente entre las 21:00 y las 0:00, ya que 7 de los 10 videos de mejor rendimiento fueron lanzados en este período.",
-    "Implementar activamente las fórmulas de ganchos identificadas del TOP 10, utilizando nombres de países, resultados, eventos eliminatorios y emojis de sorpresa/impacto (😱, 🤯) en los títulos para maximizar el CTR."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que simule noticias deportivas de alto impacto (Mundial 2026, eliminatorias, figuras clave), ya que estos temas monopolizan el TOP 10 y generan la mayor viralidad.",
+    "Mantener el horario de publicación entre las 21:00 y las 0:00 (hora local), con un enfoque en las 22:00, para coincidir con la mayor actividad de la audiencia objetivo y aprovechar el patrón de éxito del 70% de los videos top.",
+    "Integrar emojis y lenguaje de shock/sorpresa (`😱`, `🤯`, `!`, `⚽🌍`) en todos los títulos para maximizar el CTR, replicando el patrón emocionalmente cargado de los videos más vistos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El alto rendimiento del nicho 'ia_noticias' está impulsado casi exclusivamente por contenido deportivo de gran impacto (Mundial 2026), lo que indica que el factor viral es el 'deporte' más que el formato 'noticias IA' general."
+  "insight_semana": "La viralidad del canal está casi exclusivamente ligada a las 'ia_noticias' de eventos deportivos hipotéticos (Mundial 2026), generando un rendimiento nulo o muy bajo para otros temas, incluso dentro del mismo nicho, aunque con una tendencia negativa reciente (-1.0) para el nicho general."
 }
