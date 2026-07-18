@@ -1,38 +1,36 @@
 {
   "updated": "2026-07-18",
-  "iteracion": 172,
+  "iteracion": 173,
   "niche_weights": {
-    "deportes": 0.65,
-    "ia_noticias": 0.15,
-    "productividad": 0.1,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
+    "deportes": 0.0,
+    "ia_noticias": 0.7,
+    "finanzas": 0.05,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.15,
     "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
-    "entretenimiento": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "Resultados impactantes de eventos deportivos con marcadores y emojis emocionales (e.g., 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
-    "Acciones de jugadores clave o equipos con desenlaces dramáticos y emojis de sorpresa (e.g., 'HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯')",
-    "Momentos de alta tensión con un giro inesperado y reacción pública (e.g., 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
-    "Cuestionamientos sobre resultados inesperados en partidos específicos (e.g., 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Descripciones de eventos deportivos que 'paralizan al mundo' o 'hacen historia', enfatizando su magnitud global (e.g., 'El gol que paró al mundo en el Mundial 2026 ⚽🌍')",
-    "Goles decisivos en momentos agónicos con mención de jugadores y tiempo (e.g., 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL DE MERINO al 90+1! 😱')"
+    "[PAÍS] ELIMINA A [PAÍS/EQUIPO] en el Mundial 2026 😱 ¡[ADJETIVO/EVENTO]!",
+    "[PAÍS] EN SHOCK: [JUGADOR] [ACCIÓN DRAMÁTICA]! 😱",
+    "[PAÍS] [SCORE]-[SCORE] [PAÍS] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱",
+    "¡[PAÍS] ELIMINADO del MUNDIAL 2026! 😱 [PAÍS/JUGADOR] HACE HISTORIA",
+    "[JUGADOR] [ACCIÓN] que ELIMINÓ a [PAÍS] del MUNDIAL 2026 🤯 ¡[ADJETIVO]!",
+    "El gol que paró al mundo en el Mundial 2026 ⚽🌍"
   ],
   "avoid_hooks": [
-    "Frases de superación personal o consejos genéricos sin un evento o historia específica (e.g., 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos que implican transacciones monetarias directas o clickbait financiero (e.g., '¡PAGA $200 O NADA! 😱')",
-    "Datos empresariales o tecnológicos complejos que requieren contexto y no generan emoción inmediata (e.g., 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')",
-    "Cuestionamientos sobre 'fraude' en eventos específicos que pueden carecer de atractivo viral o ser demasiado nicho (e.g., 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
+    "Patrones de preguntas vagas o específicas sin contexto viral (ej. '¿ES FRAUDE? ⚡')",
+    "Frases genéricas de autoayuda o motivación sin un evento/noticia concreta (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos sobre finanzas personales genéricos o con promesas vagas (ej. 'El error de dinero que comete el 80% 💸', '¡PAGA $200 O NADA! 😱')"
   ],
-  "best_hora": 15,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 21,
+  "duracion_optima": "insuficientes datos para duración óptima",
   "recomendaciones": [
-    "Priorizar masivamente la creación de contenido dentro del nicho de 'deportes' (particularmente la temática de 'Copa Mundial 2026' con IA), ya que es la única categoría que ha demostrado generar vistas virales en el canal.",
-    "Replicar de manera consistente los patrones de títulos exitosos observados en el TOP 10, utilizando nombres de equipos/jugadores, marcadores específicos, emojis de sorpresa y frases que denoten impacto o drama.",
-    "Experimentar estratégicamente con el nicho 'productividad', dada su excepcional tendencia de crecimiento (9.333), optimizando los títulos para captar la atención y ofrecer valor claro, posiblemente incorporando elementos de IA."
+    "Maximizar la producción de contenido en el nicho 'ia_noticias' enfocado en escenarios de fútbol mundial (ej. 'Mundial 2026'), replicando la estructura de títulos exitosos con eliminaciones, goles agónicos y nombres de jugadores/países, utilizando emojis 😱, 🤯, ⚽🌍.",
+    "Implementar una estrategia de prueba y expansión en el nicho 'productividad' (o 'productividad_ia'), capitalizando su alta tendencia de crecimiento (9.333), para diversificar la audiencia.",
+    "Concentrar las publicaciones durante las franjas horarias de mayor rendimiento identificadas: 11:00 AM y el bloque nocturno de 21:00 a 00:00, priorizando la hora 21:00 que muestra un alto promedio de vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La performance viral del canal está completamente monopolizada por los videos de 'ia_noticias' con temática de fútbol de la 'Copa Mundial 2026', siendo este el único factor comprobado para generar altas vistas en esta iteración y relegando a 0 vistas a la mayoría de los demás nichos."
+  "insight_semana": "La viralidad del canal está casi exclusivamente ligada a la sub-categoría de 'ia_noticias' que simula eventos deportivos impactantes del 'Mundial 2026', promediando 857.7 vistas en el TOP 10 y eclipsando completamente otros temas."
 }
