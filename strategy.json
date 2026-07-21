@@ -1,31 +1,38 @@
 {
   "updated": "2026-07-21",
-  "iteracion": 191,
+  "iteracion": 192,
   "niche_weights": {
-    "ia_noticias": 0.7,
-    "deportes": 0.02,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.01,
+    "ia_noticias": 0.94,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.005,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "insuficientes datos para determinar hooks efectivos; el impacto actual reside en los títulos llamativos y miniaturas."
+    "[País/Jugador] [Verbo dramático] [Oponente/Evento] [Detalle/Score] [Emoji/Exclamación]",
+    "[País A] vs [País B]: ¡[Evento Clave] Mundial 2026! [Emojis]",
+    "¡[Resultado impactante]! [Detalle inesperado] Mundial 2026 [Emojis]",
+    "[Evento clave] que paró al mundo en el Mundial 2026 [Emojis]",
+    "[País/Equipo] [Resultado Sorpresa] en Mundial 2026! ¿Qué pasó? [Emoji]",
+    "¡CAMPEÓN DEL MUNDO! [Descripción emotiva] Mundial 2026 [Emojis]"
   ],
   "avoid_hooks": [
-    "insuficientes datos para determinar hooks a evitar."
+    "[Afirmación General] sobre [Problema Común] [Emoji] (Ej: 'El error de dinero que comete el 80%')",
+    "¡[Cantidad monetaria] O NADA! [Emoji] (Demasiado transaccional y sin contexto amplio)",
+    "[Tema Negocios/Finanzas Abstracto] [Comparación/Dato] [Emoji] (Ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima.",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar el contenido de 'ia_noticias' específicamente sobre eventos deportivos dramáticos del 'Mundial 2026', dado que representa el 100% del top 10 de videos y el nicho más rentable.",
-    "Continuar utilizando títulos ultra-específicos y sensacionalistas con el formato 'PAÍS ACCIÓN PAÍS/EVENTO DETALLE + EMOTICÓN' (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱').",
-    "Concentrar las publicaciones en la ventana horaria de 21:00 a 00:00, con especial énfasis en las 22:00, que es la hora más frecuente de los videos exitosos.",
-    "Evitar activamente los nichos de 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'politica_latam' y 'entretenimiento' debido a su rendimiento consistentemente nulo.",
-    "Comenzar a experimentar con 'hooks' dentro de los videos, ya que es una métrica no explotada que podría mejorar el rendimiento, utilizando ganchos que refuercen la intriga generada por el título."
+    "Continuar la hiper-especialización en el nicho 'ia_noticias', centrando el 100% del contenido en simulaciones y noticias dramáticas del 'Mundial 2026', ya que esta temática genera todas las vistas top.",
+    "Reforzar la creación de títulos siguiendo la fórmula '[País/Jugador] [Verbo dramático] [Oponente/Evento]: ¡[Detalle] + [Emoción]!' con emojis, ya que es el patrón más exitoso para captar la atención.",
+    "Priorizar las horas de publicación entre las 21:00 y 00:00, con un enfoque particular en las 22:00, que ha demostrado ser consistentemente la más efectiva para los videos de alto rendimiento.",
+    "Evitar completamente los temas genéricos de finanzas, productividad o autoayuda, ya que no generan vistas y han sido asociados con los videos de más bajo rendimiento.",
+    "Implementar un sistema de tracking granular de los primeros segundos del video (hooks) para correlacionar su contenido con las vistas y identificar qué elementos visuales/narrativos son los más efectivos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de 'ia_noticias' que simula eventos deportivos futuros (específicamente 'Mundial 2026') es el único generador de vistas significativas, demostrando una demanda de narrativas dramáticas y específicas en este subnicho."
+  "insight_semana": "El éxito se encuentra en la creación de narrativas hiper-específicas y altamente dramáticas sobre eventos futuros (Mundial 2026) dentro del nicho 'ia_noticias', lo cual genera un alto engagement y curiosidad en la audiencia, mientras que otras temáticas son ignoradas."
 }
