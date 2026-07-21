@@ -1,38 +1,37 @@
 {
-  "updated": "2026-07-20",
-  "iteracion": 188,
+  "updated": "2026-07-21",
+  "iteracion": 189,
   "niche_weights": {
-    "ia_noticias": 0.9,
-    "productividad": 0.05,
-    "finanzas": 0.007,
-    "negocios_digitales": 0.007,
-    "cripto_inversiones": 0.007,
-    "productividad_ia": 0.007,
-    "deportes": 0.007,
-    "entretenimiento": 0.007,
-    "politica_latam": 0.008
+    "deportes": 0.02,
+    "ia_noticias": 0.86,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Eventos Impactantes + Outcome: '[País/Jugador] [Verbo de Acción Fuerte: ELIMINA/PARALIZA] a [País/Jugador] en [Evento: Mundial 2026]! [Emoji de Shock: 😱/🤯]'",
-    "Pregunta de Impacto + Evento: '[País] [Resultado] en [Evento: Mundial 2026]! ¿QUÉ PASÓ? [Emoji de Shock: 😱]'",
-    "Logro Histórico/Título: '¡CAMPEÓN DEL MUNDO! [Descripción: El nuevo rey del fútbol] [Evento: Mundial 2026] [Emojis de Celebración: 🏆👑🔥]'",
-    "Pregunta sobre Futuro/Potencial: '¿Por qué [Jugador] tiene un futuro BRILLANTE? [Emojis Positivos: 🌟⚽]'",
-    "Noticia de Devastación: '[País] ELIMINA a [País] [Marcador] en el Mundial 2026 😱 ¡DEVASTADOR!'",
-    "Declaración de Shock: '[País] EN SHOCK: [Nombre] PARALIZA! 😱'"
+    "[EQUIPO/JUGADOR] + [VERBO IMPACTO] + [CONSECUENCIA] + [EVENTO] + [EMOJI] (Ej: BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱)",
+    "[PAÍS] EN SHOCK: [NOMBRE] + [VERBO IMPACTO]! 😱 (Ej: ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
+    "[EVENTO/SITUACIÓN DRAMÁTICA] + [PREGUNTA/EXCLAMACIÓN] + [EMOJI] (Ej: BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱)",
+    "El [HECHO CLAVE] que [VERBO DE ACCIÓN] al mundo en el [EVENTO] ⚽🌍 (Ej: El gol que paró al mundo en el Mundial 2026 ⚽🌍)",
+    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [EVENTO] 🏆👑🔥 (Ej: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥)",
+    "¡[PAÍS] ELIMINADO del [EVENTO]! 😱 [EQUIPO] HACE HISTORIA (Ej: ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)"
   ],
   "avoid_hooks": [
-    "Afirmaciones Genéricas de Autoayuda/Finanzas Personales: Ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱' o 'El error de dinero que comete el 80% 💸', sin un anclaje específico o de evento.",
-    "Declaraciones Financieras Vagas o Abstractas: Ej. '¡PAGA $200 O NADA! 😱' o 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯', sin un contexto claro o historia definida.",
-    "Eventos Deportivos Locales sin un Gancho Global/Sensacionalista: Ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡', que carecen del atractivo del 'Mundial 2026'."
+    "Títulos genéricos de autoayuda o consejos abstractos (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Contenido deportivo local o de bajo impacto sin el contexto de un evento global masivo (Ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Títulos sobre conceptos complejos de finanzas o negocios sin un elemento de drama o urgencia clara (Ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": 15,
   "recomendaciones": [
-    "Concentrar la producción de contenido casi exclusivamente en el nicho 'ia_noticias', replicando la temática de 'Mundial 2026', ya que esta es la única fórmula probada de éxito (100% de los videos top).",
-    "Priorizar la publicación de videos entre las 21:00 y las 01:00, con especial énfasis en las 22:00, franja que concentra el 90% de los videos con mayor rendimiento.",
-    "Implementar ganchos y títulos que incluyan resultados sorprendentes ('ELIMINA', 'PARALIZA'), referencias directas a eventos clave ('Mundial 2026'), uso abundante de exclamaciones y emojis impactantes (`😱`, `🤯`), y preguntas que generen curiosidad.",
-    "IMPERATIVO: Comenzar a registrar la duración en segundos de cada Short para identificar la duración óptima, ya que esta métrica es actualmente inexistente y vital para el crecimiento."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' enfocado en eventos deportivos globales de alta expectación (ej. Mundiales), utilizando formatos de título sensacionalistas y dramáticos con exclamaciones y emojis de impacto.",
+    "Publicar videos entre las 21:00 y las 01:00 horas, siendo las 22:00 la hora más prometedora para maximizar el alcance inicial según los datos actuales.",
+    "Evitar títulos que aborden temas genéricos de autoayuda, finanzas personales abstractas, o eventos deportivos locales sin un contexto de impacto global, ya que consistentemente obtienen 0 vistas.",
+    "Implementar urgentemente el registro de la duración de cada video en los datos para poder determinar la duración óptima para los Shorts en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La única fórmula de éxito demostrada es el nicho 'ia_noticias' centrado específicamente en la temática de 'Mundial 2026', acaparando el 100% de los videos con más de 700 vistas y relegando a todos los demás nichos a un rendimiento nulo o mínimo."
+  "insight_semana": "El nicho 'ia_noticias', específicamente cuando trata sobre el 'Mundial 2026' con narrativas dramáticas y especulativas, es el único impulsor de vistas significativas, acaparando el 100% del TOP 10. Sin embargo, su tendencia negativa general (-0.9) sugiere que solo un subconjunto extremadamente específico y dramático de este nicho logra éxito, mientras el resto arrastra el promedio."
 }
