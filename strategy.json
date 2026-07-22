@@ -1,9 +1,9 @@
 {
   "updated": "2026-07-22",
-  "iteracion": 195,
+  "iteracion": 196,
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 0.95,
+    "ia_noticias": 0.92,
+    "deportes": 0.03,
     "finanzas": 0.01,
     "entretenimiento": 0.01,
     "negocios_digitales": 0.01,
@@ -12,25 +12,28 @@
     "politica_latam": 0.005
   },
   "best_hooks": [
-    "Impacto Directo: '[PAÍS] ELIMINA A [RIVAL] [RESULTADO] en el Mundial 2026 😱' (ej. BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱)",
-    "Noticia Shock: '[PAÍS] EN SHOCK: [JUGADOR/EVENTO] PARALIZA! 😱' (ej. ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
-    "Drama de Eliminación: '[PAÍS 1] ELIMINA A [PAÍS 2]: ¡GOL AGÓNICO EN MUNDIAL! 😱' (ej. ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱)",
-    "Héroe/Villano Mundial: '[JUGADOR] ELIMINA A [PAÍS] DEL MUNDIAL 2026! 🤯' (ej. HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯)",
-    "Momento Histórico: '¡[PAÍS] ELIMINADO del MUNDIAL 2026! 😱 [OTRO PAÍS] HACE HISTORIA' (ej. ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)",
-    "Consagración/Final Épica: '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥' o '[PAÍS A] vs [PAÍS B]: ¡GRAN FINAL Mundial 2026! 🏆🔥😱'"
+    "PAÍS ELIMINA A PAÍS [MARCADOR] en el Mundial 2026 ¡IMPACTANTE! 😱 (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
+    "PAÍS EN SHOCK: JUGADOR/EVENTO INESPERADO ¡Paraliza! 😱 (ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
+    "PAÍS vs PAÍS: ¡GRAN FINAL Mundial 2026! 🏆🔥😱",
+    "RESULTADO INESPERADO en Mundial 2026! ¿QUÉ PASÓ? 🤯 (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
+    "¡CAMPEÓN DEL MUNDO! [Título/Nombre] El nuevo rey del fútbol Mundial 2026 👑 (ej. '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')",
+    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (o similar evento impactante)"
   ],
   "avoid_hooks": [
-    "Títulos sobre finanzas personales o comparaciones empresariales específicas que carecen de drama o relevancia para el nicho deportivo (ej. 'El error de dinero que comete el 80% 💸').",
-    "Contenido de autoayuda o consejos genéricos, incluso si incluyen emojis de impacto, ya que no se alinea con la expectativa de 'noticias de IA' (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱').",
-    "Títulos de eventos deportivos demasiado específicos o localizados que no implican el alto drama de una fase de 'Mundial 2026' (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')."
+    "Títulos de autoayuda o motivación genérica sin contexto deportivo, como 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱'.",
+    "Contenido financiero o de negocios generalista, tipo 'El error de dinero que comete el 80% 💸' o 'TRES EMPRESAS VALEN MÁS...'.",
+    "Preguntas o afirmaciones sobre eventos deportivos reales ambiguos o sin la temática 'Mundial 2026 hipotético', como 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡'."
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar la producción de contenido exclusivamente en el sub-nicho 'Mundial 2026' dentro de `ia_noticias`, dado que este formato es responsable del 100% de los videos con más vistas y todos los demás nichos muestran 0 vistas promedio.",
-    "Implementar una estrategia de titulación que explote el dramatismo, incluyendo nombres de países/jugadores relevantes, verbos de acción fuerte y el identificador 'Mundial 2026', apoyado por emojis de impacto (ej. 😱, 🤯, 🏆, 🔥).",
-    "Ajustar el horario de publicación para maximizar el alcance, priorizando las horas entre las 21:00 y 22:00, con énfasis en las 22:00, que se ha demostrado como la más efectiva para el contenido de alto rendimiento, y considerar también la franja de las 0:00 que generó dos videos top."
+    "Hiper-enfocarse exclusivamente en el sub-nicho de 'noticias deportivas hipotéticas del Mundial 2026', dado que es el único que genera vistas consistentes y significativas.",
+    "Utilizar títulos que incorporen nombres de países/equipos populares, resultados dramáticos, eventos eliminatorios y emojis impactantes (😱🤯🏆🔥⚽🌍) para maximizar la CTR.",
+    "Experimentar activamente con las franjas horarias de mayor rendimiento: 22:00, 21:00 y 00:00, priorizando la de las 22:00 como la más efectiva.",
+    "Evitar categóricamente cualquier contenido fuera del sub-nicho identificado, incluyendo finanzas, autoayuda o noticias deportivas reales no hipotéticas, ya que han demostrado 0 vistas.",
+    "No se dispone de datos de duración de videos en esta iteración. Es crucial empezar a registrar esta métrica para poder optimizarla en futuras iteraciones.",
+    "A pesar del dominio, la tendencia negativa de -1.0 del nicho `ia_noticias` sugiere la necesidad de explorar nuevas narrativas o ángulos dentro del mismo sub-nicho (ej. 'sorpresas en fase de grupos', 'nuevos talentos emergentes en el mundial hipotético') para evitar la saturación y mantener el interés."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia de contenido debe ser hiper-focalizada en el sub-nicho 'Mundial 2026' dentro de `ia_noticias`, ya que es el único generador de tráfico significativo, mientras que cualquier otro tipo de contenido resulta en 0 vistas, aunque se observa una tendencia negativa de -1.0 en este nicho."
+  "insight_semana": "El éxito del canal depende completamente de un nicho ultra-específico: noticias deportivas hipotéticas sobre el 'Mundial 2026', con el 100% de los videos de alto rendimiento encajando en este patrón, mientras que cualquier desviación resulta en 0 vistas, indicando una polarización extrema en el rendimiento."
 }
