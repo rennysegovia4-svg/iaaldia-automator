@@ -28,7 +28,23 @@ from googleapiclient.http import MediaFileUpload
 import edge_tts, imageio_ffmpeg
 from mutagen.mp3 import MP3
 
-FFMPEG = shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
+def _pick_ffmpeg():
+    # En Linux (GitHub Actions) el ffmpeg del sistema siempre tiene drawtext.
+    # En macOS, /usr/local/bin/ffmpeg puede no tenerlo; preferir imageio_ffmpeg.
+    import platform
+    if platform.system() == "Linux":
+        return shutil.which("ffmpeg") or imageio_ffmpeg.get_ffmpeg_exe()
+    # macOS: probar cada candidato y elegir el que tenga drawtext
+    for candidate in filter(None, [shutil.which("ffmpeg"), imageio_ffmpeg.get_ffmpeg_exe()]):
+        try:
+            r = subprocess.run([candidate, "-filters"], capture_output=True, timeout=5)
+            if b"drawtext" in r.stdout:
+                return candidate
+        except Exception:
+            pass
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+FFMPEG = _pick_ffmpeg()
 
 BASE_DIR       = Path(__file__).parent
 ENV_FILE       = BASE_DIR / ".env"
@@ -76,9 +92,40 @@ from learning_loop import load_strategy, register_video
 
 # Estrategia aprendida — pesos dinámicos por nicho
 _STRATEGY  = load_strategy()
-_NICHE_KEY, _NICHE = get_niche(LANG_CODE, _STRATEGY.get("niche_weights"))
+_OVERRIDE_NICHE = os.environ.get("VIRAL_NICHE", "").strip()
+if _OVERRIDE_NICHE and _OVERRIDE_NICHE in NICHES:
+    _NICHE_KEY, _NICHE = _OVERRIDE_NICHE, NICHES[_OVERRIDE_NICHE]
+else:
+    _NICHE_KEY, _NICHE = get_niche(LANG_CODE, _STRATEGY.get("niche_weights"))
 PRESENTER_QUERIES = _NICHE["pexels_queries"]
-RSS_FEEDS         = _NICHE["rss_feeds"]
+_vq = os.environ.get("VIRAL_PEXELS_QUERIES", "")
+if _vq:
+    PRESENTER_QUERIES = [q.strip() for q in _vq.split("|")]
+else:
+    # Mejora 2: queries Pexels específicos al tema del Short
+    _vt_kw = os.environ.get("VIRAL_TOPIC", "").lower()
+    _smart = []
+    if any(w in _vt_kw for w in ["messi","argentina"]):
+        _smart += ["argentina football celebration crowd","soccer player dribbling stadium"]
+    if any(w in _vt_kw for w in ["españa","spain","oyarzabal"]):
+        _smart += ["spain football red jersey fans celebration","soccer goal net slow motion"]
+    if any(w in _vt_kw for w in ["france","francia","mbappé","mbappe"]):
+        _smart += ["france football blue jersey crowd","european soccer stadium"]
+    if any(w in _vt_kw for w in ["brasil","brazil","vinicius","neymar"]):
+        _smart += ["brazil football yellow jersey samba celebration"]
+    if any(w in _vt_kw for w in ["haaland","noruega","norway"]):
+        _smart += ["norway football player stadium goal"]
+    if any(w in _vt_kw for w in ["england","inglaterra","kane","bellingham"]):
+        _smart += ["england football white jersey wembley fans"]
+    if any(w in _vt_kw for w in ["final","semifinal","cuartos","campeón","champion"]):
+        _smart += ["world cup trophy celebration stadium confetti","football fans cheering big stadium"]
+    if any(w in _vt_kw for w in ["mundial","world cup","copa del mundo","gol","partido","futbol","fútbol","soccer","football"]):
+        _smart += ["football stadium crowd world cup","soccer goal celebration slow motion"]
+    if any(w in _vt_kw for w in ["inteligencia","artificial","robot","ia ","gpt","claude","tech"]):
+        _smart += ["artificial intelligence technology futuristic","robot computer digital network"]
+    if _smart:
+        PRESENTER_QUERIES = list(dict.fromkeys(_smart)) + PRESENTER_QUERIES  # deduplicar, smart primero
+RSS_FEEDS = _NICHE["rss_feeds"]
 print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {_STRATEGY.get('nivel_confianza',0):.0%}")
 
 # ── Personas narradoras — rotan cada día para máxima variedad ──────────────────
@@ -197,26 +244,32 @@ NARRATOR_PERSONAS = {
     },
     "narrador_deportivo": {
         "instruccion": (
-            "Sos el mejor narrador deportivo de América Latina. Tu estilo: datos precisos, "
-            "contexto histórico, y frases que fluyen sin cortarse. No sos un locutor de estadio, "
-            "sos el periodista que sabe más que todos y lo cuenta con calma y autoridad. "
-            "EJEMPLO REAL de cómo sonas: 'El autogol de Diney Borges en el minuto 111 "
-            "no fue un accidente de la suerte — fue la consecuencia de ocho minutos de presión "
-            "constante sobre el área de Cabo Verde, con cinco córners seguidos y Argentina "
-            "apostando todo a la pelota parada. Messi ejecutó el último tiro de esquina "
-            "con la misma calma de siempre, Cuti Romero ganó el salto, y el defensor africano "
-            "no tuvo salida. Tres a dos. Argentina sobrevivió, pero el partido dejó preguntas "
-            "que van a seguir dando vueltas antes de los octavos contra Egipto.' "
-            "Cada dato que usás tiene un número, un nombre, o un contexto que lo hace real. "
-            "Prohibido: 'Tendencia', 'explotó', 'viral', 'enloquece', 'las redes'. Solo fútbol."
+            "Sos el narrador estelar de ESPN Latinoamérica cubriendo el Mundial 2026. "
+            "Tu estilo es el de la transmisión en vivo: construís tensión, describís jugadas con precisión técnica, "
+            "y sabés cuándo subir la intensidad y cuándo bajarla para que el oyente sienta que está ahí. "
+            "ESTRUCTURA ESPN: arrancás situando el contexto del partido (minuto, marcador, lo que estaba en juego), "
+            "describís la jugada clave con detalle técnico (posición del jugador, tipo de jugada, reacción), "
+            "das el dato histórico que eleva la jugada, y cerrás con lo que viene. "
+            "EJEMPLO REAL de cómo sonas: "
+            "'Minuto noventa. El partido parecía ir directo al alargue. España no había podido romper "
+            "el muro de Diogo Costa, que había sacado cuatro manos providenciales en la tarde. "
+            "Hasta que Mikel Merino, ingresado apenas minutos antes desde el banco, recibió el balón "
+            "dentro del área, controló, y definió con la derecha al primer palo. "
+            "El guardameta portugués no llegó. Uno a cero. España a cuartos de final. "
+            "Es el tercer gol agónico de La Roja en este Mundial, y el hombre que los convierte "
+            "siempre parece ser el que menos lo esperabas.' "
+            "VOCABULARIO ESPN: guardameta, seleccionado, conjunto, el delantero, la zaga, "
+            "desde los doce pasos, el cabezazo, la volea, la media vuelta, al primer palo, al segundo palo. "
+            "RITMO: frases de 15-25 palabras, fluidas, con pausa dramática antes del gol o el dato clave. "
+            "Prohibido: 'Tendencia', 'viral', 'explotó en redes'. Solo fútbol con profundidad."
         ),
-        "conectores": ["El dato que explica esto:", "Lo que pocos saben es que", "Y el contexto que falta:"],
+        "conectores": ["Y aquí es donde cambia el partido:", "El dato que lo explica todo:", "Lo que viene ahora es esto:"],
         "cierre_opciones": [
-            "Seguime para cobertura del Mundial con los datos que otros no te cuentan.",
-            "Sígueme. Cada partido, los números reales.",
-            "Activá la campana. Hoy hay más.",
+            "Seguime para la cobertura más completa del Mundial 2026.",
+            "Sígueme. Cada partido, el análisis que no encontrás en otro lado.",
+            "Activá la campana. Hoy hay más partidos.",
         ],
-        "voice_edge": ("es-AR-TomasNeural", "-3%", "-1Hz"),
+        "voice_edge": ("es-MX-JorgeNeural", "+12%", "+2Hz"),
     },
 }
 
@@ -239,8 +292,11 @@ _TEMPLATE      = SCRIPT_TEMPLATES[_TEMPLATE_KEY]
 # Rotar el cierre dentro de cada persona (evitar el mismo CTA cada día)
 _cierre_opciones = _PERSONA.get("cierre_opciones", ["Sígueme para más contenido como este."])
 _PERSONA_CIERRE  = _cierre_opciones[(_day_num // len(_PERSONA_KEYS)) % len(_cierre_opciones)]
-# Modo SERIE: cada 3er día el video termina con cliffhanger "Parte 1 / mañana Parte 2"
-_IS_SERIE_PART1 = (_day_num % 3 == 0) and not os.environ.get("VIRAL_TOPIC", "")
+# Modo SERIE: env IS_SERIE_PART1=1 lo fuerza manualmente; automático cada 3er día sin tema viral
+_IS_SERIE_PART1 = (
+    os.environ.get("IS_SERIE_PART1", "0").strip() == "1"
+    or ((_day_num % 3 == 0) and not os.environ.get("VIRAL_TOPIC", ""))
+)
 
 
 def _validate_guion(guion: str) -> str:
@@ -278,6 +334,9 @@ _AFFILIATES_BY_NICHE = {
     "negocios_digitales":"\n\n💡 Herramientas para tu negocio:\n→ Shopify: https://shopify.com\n→ Canva: https://canva.com\n→ Dropi: https://dropi.co",
     "cripto_inversiones": "\n\n⚠️ No es consejo financiero.\n💡 Exchanges confiables:\n→ Binance: https://binance.com\n→ Buda: https://buda.com",
     "productividad_ia":  "\n\n💡 Herramientas gratis que uso:\n→ ChatGPT: https://chat.openai.com\n→ Canva IA: https://canva.com\n→ Notion AI: https://notion.so",
+    "deportes":          "\n\n⚽ Más contenido deportivo:\n→ Playlist Mundial 2026: https://youtube.com/@iaaldia-i\n→ Suscribite al canal: https://youtube.com/@iaaldia-i",
+    "mundial_2026":      "\n\n⚽ Más del Mundial 2026:\n→ Todos los resultados: https://youtube.com/@iaaldia-i\n→ Suscribite para no perderte nada: https://youtube.com/@iaaldia-i",
+    "entretenimiento":   "\n\n🎬 Seguí al día con la farándula:\n→ Canal IA al Día: https://youtube.com/@iaaldia-i",
 }
 AFFILIATES = _AFFILIATES_BY_NICHE.get(_NICHE_KEY, _AFFILIATES_BY_NICHE["ia_noticias"])
 
@@ -292,8 +351,9 @@ def load_env():
     return env
 
 ENV            = load_env()
-GEMINI_API_KEY = ENV["GEMINI_API_KEY"]
-PEXELS_API_KEY = ENV["PEXELS_API_KEY"]
+GEMINI_API_KEY  = ENV["GEMINI_API_KEY"]
+PEXELS_API_KEY  = ENV["PEXELS_API_KEY"]
+PIXABAY_API_KEY = ENV.get("PIXABAY_API_KEY", "")
 
 
 # ── Créditos ───────────────────────────────────────────────────────────────────
@@ -412,8 +472,8 @@ Tu trabajo: crear un Short de YouTube sobre este tema ahora mismo, con los datos
 
 RESPONDE JSON sin markdown:
 {{
-  "titulo": "Título viral máx 52 chars — CAPS + emoji 😱🤯💰⚡ — tema '{viral_topic}' presente",
-  "descripcion": "2 oraciones urgentes sobre {viral_topic}. Dato real. Termina con '¿Tú lo sabías? 👇' {' '.join(['#Shorts','#viral','#{}'.format(viral_topic.replace(' ','')[:15])])}",
+  "titulo": "Título SEO+viral máx 60 chars — '{viral_topic}' en primeras 4 palabras + CAPS + emoji 😱🤯💰⚡",
+  "descripcion": "ESTRUCTURA SEO: LÍNEA 1 (≤120 chars): {viral_topic} — [dato o resultado clave]. LÍNEA 2 (LSI): 2-3 términos relacionados de búsqueda. LÍNEA 3: '¿Tú lo sabías? 👇'. Al final MÁXIMO 5 hashtags: #Shorts #Mundial2026 #{viral_topic.replace(' ','')[:15]} #Futbol #FutbolLatam",
   "pregunta_comentarios": "Pregunta provocadora sobre {viral_topic} para fijar como comentario",
   "tags": ["viral","tendencias latam","shorts","noticias hoy","{viral_topic[:30]}","trending"],
   "guion": "guión 145-175 palabras en modo breaking news — urgente, con datos, termina con pregunta",
@@ -497,7 +557,7 @@ STRICT RULES:
 
 RESPOND JSON only (no markdown):
 {{
-  "titulo": "SEO title: main keyword at start, max 52 chars, 1 emoji at end",
+  "titulo": "SEO title: main keyword in first 4 words, max 60 chars, 1 emoji at end",
   "descripcion": "2 sentences with main keyword. Concrete data. #Shorts #AI #ArtificialIntelligence #ChatGPT #Technology #AINews",
   "tags": ["ai 2026","artificial intelligence news","chatgpt update","ai tools","machine learning","ai jobs","future of ai","automation","ai replacing jobs","tech news","ai daily","ai shorts"],
   "guion": "full script 155-170 words, ready to read",
@@ -611,8 +671,8 @@ OBLIGATORIO: 1+ palabra en MAYÚSCULAS + 1 emoji fuerte (😱🤯💰⚡🔥)
 
 RESPONDÉ JSON sin markdown:
 {{
-  "titulo": "Título viral máx 52 chars — CAPS + emoji fuerte{' + PARTE 1' if _IS_SERIE_PART1 else ''}",
-  "descripcion": "2 oraciones: dato concreto + impacto. Terminá con '¿Tú qué opinas? Cuéntame 👇' {niche_hash}",
+  "titulo": "Título SEO+viral máx 60 chars — keyword principal en primeras 4 palabras + CAPS + emoji{' + PARTE 1' if _IS_SERIE_PART1 else ''}",
+  "descripcion": "ESTRUCTURA SEO OBLIGATORIA: LÍNEA 1 (≤120 chars, above-the-fold): [keyword principal] — [dato o resultado clave en una oración directa]. LÍNEA 2 (LSI, ≤100 chars): 2-3 términos relacionados que buscaría alguien que no vio el título. LÍNEA 3: '¿Tú qué opinás? Cuéntame 👇'. Al final EXACTAMENTE estos 5 hashtags separados por espacio: {niche_hash}",
   "pregunta_comentarios": "Pregunta que genere opinión dividida (máx 15 palabras, sin signos de pregunta dobles)",
   "tags": {niche_tags},
   "guion": "guión 145-175 palabras, ritmo GOLPE-RESPIRO-EXPLICACIÓN, {'cliffhanger sin resolver + CTA suscripción a Parte 2' if _IS_SERIE_PART1 else 'CTA suscripción con razón concreta'} + pregunta final",
@@ -827,58 +887,50 @@ def generate_audio(text: str, path: str, persona_key: str = "periodista_urgente"
 
 # ── Paso 4: Presentador Pexels — multi-clip xfade (stable-diffusion-videos) ───
 
-def _veo2_prompt(pexels_query: str) -> str:
-    """Convierte una query corta de Pexels en un prompt cinematográfico para Veo 2."""
-    return (
-        f"{pexels_query}, vertical video 9:16, cinematic lighting, "
-        "smooth camera movement, high quality, no text, no watermark, "
-        "realistic footage style"
-    )
-
-
-def _generate_veo2_clip(prompt: str, tmp_dir: str, idx: int) -> str | None:
-    """
-    Genera un clip de 8s con Veo 2 (9:16 para Shorts).
-    Timeout 120s — si no termina, retorna None y el pipeline usa Pexels.
-    """
+def _download_pixabay_clip(query, tmp_dir, idx):
+    """Descarga y escala un clip de Pixabay a 1080x1920 (fallback de Pexels)."""
+    if not PIXABAY_API_KEY:
+        return None
     try:
-        from google.genai import types as _gtypes
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        operation = client.models.generate_videos(
-            model="veo-2.0-generate-001",
-            prompt=prompt,
-            config=_gtypes.GenerateVideosConfig(
-                aspect_ratio="9:16",
-                number_of_videos=1,
-                duration_seconds=8,
-            ),
+        r = requests.get(
+            "https://pixabay.com/api/videos/",
+            params={"key": PIXABAY_API_KEY, "q": query,
+                    "video_type": "all", "per_page": 15, "safesearch": "true"},
+            timeout=12
         )
-        deadline = time.time() + 120
-        while not operation.done:
-            if time.time() > deadline:
-                print(f"      [Veo 2] Timeout — usando Pexels")
-                return None
-            time.sleep(12)
-            operation = client.operations.get(operation)
+        hits = r.json().get("hits", [])
+        usable = [h for h in hits if h.get("duration", 0) >= 5]
+        if not usable:
+            return None
 
-        videos = (operation.response or {})
-        if hasattr(videos, "generated_videos") and videos.generated_videos:
-            video_bytes = videos.generated_videos[0].video.video_bytes
-            if video_bytes:
-                raw = os.path.join(tmp_dir, f"veo2_raw_{idx}.mp4")
-                with open(raw, "wb") as f:
-                    f.write(video_bytes)
-                scaled = os.path.join(tmp_dir, f"veo2_scaled_{idx}.mp4")
-                subprocess.run([
-                    FFMPEG, "-y", "-i", raw,
-                    "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
-                    "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an", scaled
-                ], capture_output=True)
-                if os.path.exists(scaled) and os.path.getsize(scaled) > 50000:
-                    print(f"      [Veo 2] Clip {idx+1} generado ✓")
-                    return scaled
-    except Exception as e:
-        print(f"      [Veo 2] Error: {str(e)[:60]} — usando Pexels")
+        hit = random.choice(usable[:8])
+        vids = hit.get("videos", {})
+        # Preferir large > medium > small
+        for quality in ("large", "medium", "small"):
+            url = vids.get(quality, {}).get("url", "")
+            if url:
+                break
+        if not url:
+            return None
+
+        raw = os.path.join(tmp_dir, f"pixabay_raw_{idx}.mp4")
+        dl = requests.get(url, stream=True, timeout=45)
+        with open(raw, "wb") as f:
+            for chunk in dl.iter_content(8192):
+                f.write(chunk)
+        if os.path.getsize(raw) < 50000:
+            return None
+
+        scaled = os.path.join(tmp_dir, f"pixabay_scaled_{idx}.mp4")
+        subprocess.run([
+            FFMPEG, "-y", "-i", raw,
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+            "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an", scaled
+        ], capture_output=True)
+        if os.path.exists(scaled) and os.path.getsize(scaled) > 10000:
+            return scaled
+    except Exception:
+        pass
     return None
 
 
@@ -920,20 +972,378 @@ def _download_pexels_clip(query, tmp_dir, idx):
     except: pass
     return None
 
+def _yt_player_clip(player_name, tmp_dir, duration):
+    """Busca en YouTube clips del jugador y descarga los primeros segundos usando cookies de Chrome."""
+    try:
+        import yt_dlp as ytdl
+        out_path = os.path.join(tmp_dir, "yt_player.mp4")
+        query = f"{player_name} FIFA World Cup 2026 highlights goles"
+        raw_tmpl = os.path.join(tmp_dir, "yt_raw.%(ext)s")
+
+        ydl_opts = {
+            "format": "best[height<=720][ext=mp4]/best[height<=720]/best",
+            "outtmpl": raw_tmpl,
+            "default_search": "ytsearch1",
+            "noplaylist": True,
+            "quiet": True,
+            "no_warnings": True,
+            "max_downloads": 1,
+            "cookiesfrombrowser": ("chrome",),
+            "ffmpeg_location": os.path.dirname(FFMPEG),
+        }
+        with ytdl.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([f"ytsearch1:{query}"])
+
+        raw_files = [f for f in os.listdir(tmp_dir) if f.startswith("yt_raw")]
+        if not raw_files:
+            return None
+        raw = os.path.join(tmp_dir, raw_files[0])
+        if os.path.getsize(raw) < 100_000:
+            return None
+
+        # Convertir 16:9 → 9:16 vertical, recortar primeros `duration` segundos
+        subprocess.run([
+            FFMPEG, "-y", "-i", raw,
+            "-t", str(duration + 1),
+            "-vf", "scale=-1:1920,crop=1080:1920,fps=25",
+            "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an", out_path
+        ], capture_output=True)
+
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 100_000:
+            print(f"      [YouTube] Clip de {player_name} ✓")
+            return out_path
+    except Exception as e:
+        print(f"      [YouTube] Error: {e}")
+    return None
+
+
+def _wiki_multi_photo_video(wiki_names, tmp_dir, duration):
+    """
+    Mejora 1: descarga N fotos de Wikipedia y las encadena con crossfade.
+    Cada foto recibe tiempo proporcional con efecto Ken Burns alternado.
+    """
+    _hdrs = {"User-Agent": "IaAlDiaBot/1.0 (YouTube Shorts automator; iaaldia-i)"}
+    n = len(wiki_names)
+    seg_dur = max(4.0, (duration + 0.5 * n) / n)
+    seg_fr  = int(seg_dur * 25) + 5
+    clips   = []
+
+    for i, name in enumerate(wiki_names):
+        try:
+            url = (f"https://en.wikipedia.org/w/api.php?action=query&titles="
+                   f"{name.replace(' ','_')}&prop=pageimages&format=json&pithumbsize=1200&redirects=1")
+            r = requests.get(url, headers=_hdrs, timeout=10)
+            if r.status_code != 200: continue
+            pages = r.json()["query"]["pages"]
+            img_url = list(pages.values())[0].get("thumbnail", {}).get("source", "")
+            if not img_url: continue
+
+            img_path = os.path.join(tmp_dir, f"wiki_img_{i}.jpg")
+            dl = requests.get(img_url, headers=_hdrs, timeout=20)
+            if dl.status_code != 200: continue
+            with open(img_path, "wb") as f: f.write(dl.content)
+            if os.path.getsize(img_path) < 5000: continue
+
+            clip_path = os.path.join(tmp_dir, f"wiki_clip_{i}.mp4")
+            # Alternar: par=zoom cara arriba, impar=zoom centro
+            y_expr = "max(0,ih*0.15-(ih/zoom/2))" if i % 2 == 0 else "max(0,ih*0.35-(ih/zoom/2))"
+            r2 = subprocess.run([
+                FFMPEG, "-y", "-loop", "1", "-i", img_path,
+                "-t", str(seg_dur + 0.6),
+                "-vf", (
+                    f"scale=1280:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+                    f"zoompan=z='min(zoom+0.0007,1.2)':x='iw/2-(iw/zoom/2)':y='{y_expr}'"
+                    f":d={seg_fr}:s=1080x1920,fps=25"
+                ),
+                "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an", clip_path
+            ], capture_output=True)
+            if os.path.exists(clip_path) and os.path.getsize(clip_path) > 50000:
+                clips.append(clip_path)
+                print(f"      [WikiMulti] {name} ✓")
+        except Exception as e:
+            print(f"      [WikiMulti] {name}: {e}")
+
+    if not clips: return None
+    if len(clips) == 1: return clips[0]
+
+    # Crossfade entre clips con xfade
+    xf  = 0.5
+    out = os.path.join(tmp_dir, "wiki_multi.mp4")
+    inputs_flat = []
+    for c in clips: inputs_flat += ["-i", c]
+
+    segs = []
+    prev = "[0:v]"
+    for i in range(1, len(clips)):
+        nxt  = f"[{i}:v]"
+        tag  = "[vout]" if i == len(clips) - 1 else f"[x{i}]"
+        off  = round(seg_dur * i - xf * i, 2)
+        segs.append(f"{prev}{nxt}xfade=transition=fade:duration={xf}:offset={off}{tag}")
+        prev = f"[x{i}]"
+    fc = ";".join(segs)
+
+    r3 = subprocess.run(
+        [FFMPEG, "-y"] + inputs_flat + [
+            "-filter_complex", fc, "-map", "[vout]",
+            "-t", str(duration + 0.5),
+            "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an", out
+        ], capture_output=True)
+    if os.path.exists(out) and os.path.getsize(out) > 50000:
+        print(f"      [WikiMulti] ✓ crossfade {len(clips)} fotos")
+        return out
+    return clips[0]
+
+
+def _build_wiki_composite_video(composite_spec, tmp_dir, duration):
+    """
+    Mejora 3: PIL composite automático para partidos/finales/enfrentamientos.
+    composite_spec = "WikiName1|WikiName2|Label1|Label2|Badge"
+    Ejemplo: "Lionel Messi|Kylian Mbappé|ARGENTINA|FRANCE|SEMIFINAL"
+    """
+    from PIL import Image, ImageDraw, ImageFont, ImageFilter
+    from io import BytesIO as _BytesIO
+
+    parts = [p.strip() for p in composite_spec.split("|")]
+    if len(parts) < 2: return None
+    name1  = parts[0]
+    name2  = parts[1]
+    label1 = parts[2] if len(parts) > 2 else name1.split()[-1].upper()
+    label2 = parts[3] if len(parts) > 3 else name2.split()[-1].upper()
+    badge  = parts[4] if len(parts) > 4 else "VS"
+
+    _hdrs = {"User-Agent": "IaAlDiaBot/1.0 (YouTube Shorts automator; iaaldia-i)"}
+
+    def _dl_wiki_img(title, size=700):
+        url = (f"https://en.wikipedia.org/w/api.php?action=query&titles={requests.utils.quote(title)}"
+               f"&prop=pageimages&pithumbsize={size}&format=json")
+        try:
+            r = requests.get(url, headers=_hdrs, timeout=10)
+            pages = r.json()["query"]["pages"]
+            src = list(pages.values())[0].get("thumbnail", {}).get("source", "")
+            if src:
+                ir = requests.get(src, headers=_hdrs, timeout=15)
+                if ir.status_code == 200:
+                    return Image.open(_BytesIO(ir.content)).convert("RGB")
+        except: pass
+        return None
+
+    img1 = _dl_wiki_img(name1)
+    img2 = _dl_wiki_img(name2)
+    # Intentar flag del país (label) si hay guión
+    flag1 = _dl_wiki_img(f"Flag of {label1.title()}", 400)
+    flag2 = _dl_wiki_img(f"Flag of {label2.title()}", 400)
+
+    W, H = 1080, 1920
+    canvas = Image.new("RGB", (W, H), (5, 5, 15))
+    draw   = ImageDraw.Draw(canvas)
+    col    = 540
+
+    def paste_cover(img, x, y, w, h, darken=0.15):
+        if img is None:
+            draw.rectangle([x, y, x+w, y+h], fill=(20, 20, 40))
+            return
+        img = img.copy()
+        rw, rh = w / img.width, h / img.height
+        ratio  = max(rw, rh)
+        nw, nh = int(img.width*ratio), int(img.height*ratio)
+        img = img.resize((nw, nh), Image.LANCZOS)
+        cx, cy = (nw-w)//2, (nh-h)//2
+        img = img.crop((cx, cy, cx+w, cy+h))
+        if darken:
+            ov = Image.new("RGB", (w,h), (0,0,0))
+            img = Image.blend(img, ov, darken)
+        canvas.paste(img, (x, y))
+
+    # Banderas
+    paste_cover(flag1, 0,   40, col, 210, darken=0.2)
+    paste_cover(flag2, col, 40, col, 210, darken=0.2)
+
+    # Gradiente flag→negro
+    for i in range(210, 275):
+        canvas.paste(Image.new("RGB", (W, 1), (5,5,15)), (0, i))
+
+    # Separador dorado
+    draw.rectangle([536, 40, 544, 1110], fill=(210, 175, 0))
+
+    # Badge central
+    draw.ellipse([445, 105, 635, 215], fill=(180, 0, 30))
+    draw.ellipse([449, 109, 631, 211], fill=(220, 10, 45))
+
+    try:
+        fb = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 44)
+        fl = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 26)
+        fn = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 30)
+        ft = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 42)
+        fs = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 22)
+    except:
+        fb = fl = fn = ft = fs = ImageFont.load_default()
+
+    draw.text((540, 160), badge[:8], font=fb, fill="white", anchor="mm")
+    draw.text((270, 285), label1,    font=fl, fill=(160,200,255), anchor="mm")
+    draw.text((810, 285), label2,    font=fl, fill=(160,200,255), anchor="mm")
+
+    # Fotos jugadores
+    paste_cover(img1, 0,   305, col, 790, darken=0.05)
+    paste_cover(img2, col, 305, col, 790, darken=0.05)
+
+    # Nombres
+    draw.text((270, 1065), name1.split()[-1].upper(), font=fn, fill=(255,215,0), anchor="mm")
+    draw.text((810, 1065), name2.split()[-1].upper(), font=fn, fill=(255,215,0), anchor="mm")
+
+    # Zona inferior
+    draw.rectangle([0, 1095, W, H], fill=(5,5,15))
+    draw.rectangle([0, 1098, W, 1102], fill=(210,175,0))
+    draw.text((540, 1150), f"{label1}  🆚  {label2}", font=ft, fill="white", anchor="mm")
+    draw.text((540, 1215), f"{badge} · MUNDIAL 2026",  font=fl, fill=(150,170,220), anchor="mm")
+    draw.text((540, 1285), "💬 ¿Quién ganará? Comenta 👇", font=fs, fill=(180,180,200), anchor="mm")
+
+    img_path = os.path.join(tmp_dir, "composite.jpg")
+    canvas.save(img_path, quality=95)
+
+    # Convertir a video
+    vid_path = os.path.join(tmp_dir, "composite.mp4")
+    subprocess.run([
+        FFMPEG, "-y", "-loop", "1", "-i", img_path,
+        "-t", str(duration + 1),
+        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "22", "-pix_fmt", "yuv420p", "-an", vid_path
+    ], capture_output=True)
+
+    if os.path.exists(vid_path) and os.path.getsize(vid_path) > 10000:
+        print(f"      [Composite] ✓ {name1} vs {name2}")
+        return vid_path
+    return None
+
+
+def _wiki_player_video(wiki_name, tmp_dir, duration):
+    """
+    Descarga foto del jugador desde Wikipedia y la convierte a video 1080x1920
+    con efecto Ken Burns (zoom + pan cinematográfico). Creative Commons.
+    """
+    try:
+        url = (
+            f"https://en.wikipedia.org/w/api.php?action=query&titles="
+            f"{wiki_name.replace(' ','_')}&prop=pageimages&format=json"
+            f"&pithumbsize=1200&redirects=1"
+        )
+        _hdrs = {"User-Agent": "IaAlDiaBot/1.0 (YouTube Shorts automator; iaaldia-i)"}
+        r = None
+        for _ in range(3):
+            try:
+                r = requests.get(url, timeout=10, headers=_hdrs)
+                if r.status_code == 200 and r.text.strip():
+                    break
+            except Exception:
+                pass
+            import time as _t; _t.sleep(2)
+        if not r or not r.text.strip():
+            return None
+        pages = r.json()["query"]["pages"]
+        img_url = list(pages.values())[0].get("thumbnail", {}).get("source", "")
+        if not img_url:
+            return None
+
+        img_path = os.path.join(tmp_dir, "player_photo.jpg")
+        dl = requests.get(img_url, timeout=20, headers=_hdrs)
+        with open(img_path, "wb") as f:
+            f.write(dl.content)
+        if os.path.getsize(img_path) < 5000:
+            return None
+
+        # Ken Burns: zoom-in suave enfocando la cara (tercio superior)
+        vid_path = os.path.join(tmp_dir, "player_vid.mp4")
+        dur_frames = int(duration * 25) + 10
+        subprocess.run([
+            FFMPEG, "-y", "-loop", "1", "-i", img_path,
+            "-t", str(duration + 1),
+            "-vf", (
+                f"scale=1280:1920:force_original_aspect_ratio=increase,"
+                f"crop=1080:1920,"
+                # Enfocar en el tercio superior donde está la cara del jugador
+                f"zoompan=z='min(zoom+0.0008,1.25)'"
+                f":x='iw/2-(iw/zoom/2)':y='max(0,ih*0.15-(ih/zoom/2))'"
+                f":d={dur_frames}:s=1080x1920,fps=25"
+            ),
+            "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an", vid_path
+        ], capture_output=True)
+
+        if os.path.exists(vid_path) and os.path.getsize(vid_path) > 50000:
+            print(f"      [Wikipedia] Foto de {wiki_name} ✓ (Ken Burns)")
+            return vid_path
+    except Exception as e:
+        print(f"      [Wikipedia] Error: {e}")
+    return None
+
+
 def get_multi_presenter_video(tmp_dir, duration):
     """
-    Genera 2 clips con Veo 2 (primario) o Pexels (fallback) y aplica crossfade.
+    Si PLAYER_WIKI_NAME está definido: usa foto de Wikipedia del jugador (Ken Burns).
+    Si PRESENTER_VIDEO_PATH está definido: escala/recorta ese video a 1080x1920.
+    Sino: Pexels (primario) → Pixabay (fallback) → crossfade.
     """
+    custom_path = os.environ.get("PRESENTER_VIDEO_PATH", "").strip()
+    if custom_path and os.path.exists(custom_path):
+        print(f"      [Custom] Video local: {os.path.basename(custom_path)}")
+        out = os.path.join(tmp_dir, "presenter_custom.mp4")
+        # Escalar a 1080x1920 (crop centrado si distinto ratio), loopear si más corto
+        subprocess.run([
+            FFMPEG, "-y",
+            "-stream_loop", "-1",
+            "-i", custom_path,
+            "-t", str(duration + 1),
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,"
+                   "crop=1080:1920",
+            "-c:v", "libx264", "-preset", "fast", "-crf", "20",
+            "-an", out
+        ], capture_output=True)
+        if os.path.exists(out) and os.path.getsize(out) > 1000:
+            print(f"      [Custom] ✓ ({duration:.1f}s)")
+            return out
+
+    # Mejora 3: composite PIL automático para enfrentamientos/finales
+    composite_spec = os.environ.get("WIKI_COMPOSITE", "").strip()
+    if composite_spec:
+        comp_vid = _build_wiki_composite_video(composite_spec, tmp_dir, duration)
+        if comp_vid:
+            return comp_vid
+
+    # Mejora 1: múltiples fotos Wikipedia en crossfade
+    wiki_names_str = os.environ.get("PLAYER_WIKI_NAMES", "").strip()
+    if wiki_names_str:
+        wiki_names = [n.strip() for n in wiki_names_str.split(",") if n.strip()]
+        if wiki_names:
+            multi_vid = _wiki_multi_photo_video(wiki_names, tmp_dir, duration)
+            if multi_vid:
+                return multi_vid
+
+    wiki_name = os.environ.get("PLAYER_WIKI_NAME", "").strip()
+    if wiki_name:
+        wiki_vid = _wiki_player_video(wiki_name, tmp_dir, duration)
+        if wiki_vid:
+            return wiki_vid
+        print(f"      [Player] Fallback a Pexels ({wiki_name})")
+        player_clip = _download_pexels_clip(f"{wiki_name} soccer football", tmp_dir, 0)
+        if not player_clip:
+            player_clip = _download_pixabay_clip(f"{wiki_name} soccer football", tmp_dir, 0)
+        if player_clip:
+            looped = os.path.join(tmp_dir, "presenter_loop.mp4")
+            subprocess.run([
+                FFMPEG, "-y", "-stream_loop", "-1", "-i", player_clip,
+                "-t", str(duration + 1),
+                "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an", looped
+            ], capture_output=True)
+            if os.path.exists(looped):
+                return looped
+
     queries = PRESENTER_QUERIES.copy()
     random.shuffle(queries)
     clips = []
 
     for query in queries:
         if len(clips) >= 2: break
-        # Intentar Veo 2 primero
-        clip = _generate_veo2_clip(_veo2_prompt(query), tmp_dir, len(clips))
+        clip = _download_pexels_clip(query, tmp_dir, len(clips))
         if not clip:
-            clip = _download_pexels_clip(query, tmp_dir, len(clips))
+            clip = _download_pixabay_clip(query, tmp_dir, len(clips))
         if clip:
             clips.append((query, clip))
 
@@ -988,7 +1398,11 @@ def get_multi_presenter_video(tmp_dir, duration):
 # ── Paso 5: Whisper captions ───────────────────────────────────────────────────
 def transcribe_whisper(audio_path):
     try:
-        from faster_whisper import WhisperModel
+        import warnings, importlib
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            fw = importlib.import_module("faster_whisper")
+        WhisperModel = fw.WhisperModel
         model = WhisperModel("tiny", device="cpu", compute_type="int8",
                              download_root="/tmp/whisper_models")
         lang = "en" if LANG_CODE == "en" else "es"
@@ -1001,8 +1415,9 @@ def transcribe_whisper(audio_path):
         if words:
             print(f"      Whisper: {len(words)} palabras ✓")
             return words
-    except Exception as e:
-        print(f"      Whisper no disponible: {str(e)[:50]}")
+    except BaseException as e:
+        # BaseException cubre RuntimeError/SystemError de incompatibilidad NumPy 1.x vs 2.x en torch
+        print(f"      Whisper no disponible ({type(e).__name__}): usando estimate_words")
     return []
 
 def estimate_words(script, duration):
@@ -1270,6 +1685,53 @@ def make_ambient(duration, path):
     except: return False
 
 
+def _make_subscribe_btn(tmp_dir):
+    """Genera botón SUSCRÍBETE estilo YouTube como PNG RGBA transparente."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+        BW, BH, pad, radius = 420, 96, 10, 48
+
+        img = Image.new('RGBA', (BW + pad*2, BH + pad*2), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(img)
+
+        def rr(box, fill):
+            x0, y0, x1, y1 = box
+            r = radius
+            draw.rectangle([x0+r, y0, x1-r, y1], fill=fill)
+            draw.rectangle([x0, y0+r, x1, y1-r], fill=fill)
+            draw.ellipse([x0, y0, x0+2*r, y0+2*r], fill=fill)
+            draw.ellipse([x1-2*r, y0, x1, y0+2*r], fill=fill)
+            draw.ellipse([x0, y1-2*r, x0+2*r, y1], fill=fill)
+            draw.ellipse([x1-2*r, y1-2*r, x1, y1], fill=fill)
+
+        # Sombra
+        rr([pad+4, pad+4, BW+pad+4, BH+pad+4], (0, 0, 0, 90))
+        # Fondo rojo YouTube
+        rr([pad, pad, BW+pad, BH+pad], (220, 0, 0, 245))
+
+        # Triángulo play blanco
+        cx, cy = pad + 52, pad + BH // 2
+        draw.polygon([(cx-17, cy-23), (cx-17, cy+23), (cx+22, cy)], fill='white')
+
+        # Separador vertical
+        sx = pad + 82
+        draw.rectangle([sx, pad+18, sx+2, BH+pad-18], fill=(255,255,255,120))
+
+        # Texto SUSCRÍBETE
+        try:
+            fnt = ImageFont.truetype(FONT_BOLD, 40)
+        except Exception:
+            fnt = ImageFont.load_default()
+        draw.text((pad + 98, pad + BH//2 - 22), "SUSCRÍBETE", font=fnt, fill='white')
+
+        path = os.path.join(tmp_dir, 'subscribe_btn.png')
+        img.save(path, 'PNG')
+        return path
+    except Exception as e:
+        print(f"      [CTA btn] {e}")
+        return None
+
+
 # ── Paso 7: Ensamblar con efectos PaddleGAN + captions PIL ────────────────────
 def assemble(presenter_vid, audio_path, music_path,
              words, hook_text, cap_vid, output_path, duration):
@@ -1332,35 +1794,74 @@ def assemble(presenter_vid, audio_path, music_path,
         "drawbox=x=36:y=78:w=165:h=4:color=0x00DCFF:t=fill",
     ]
 
-    has_music  = music_path and os.path.exists(music_path)
+    has_music     = music_path and os.path.exists(music_path)
     use_cap_strip = cap_vid and os.path.exists(cap_vid)
+
+    # Botón SUSCRÍBETE estilo YouTube (PNG RGBA)
+    btn_path = _make_subscribe_btn(os.path.dirname(output_path))
+    # Posición: centrado horizontalmente, en la zona del gradiente inferior
+    # El botón mide ~440x116 px (con padding). x=(1080-440)/2=320, y=1430
+    _btn_x, _btn_y = 320, 1430
+    # _btn_tail se concatena con "[N:v]" para formar el tramo del botón
+    _btn_tail = (
+        f"scale=440:-1[btn_sc];"
+        f"[bmid][btn_sc]overlay={_btn_x}:{_btn_y}:enable='gte(t,3.5)'[vout]"
+    )
 
     # ─── Con caption strip webm (overlay con alfa) ───────────────────────────
     if use_cap_strip:
-        vf_chain   = vf_grade + "," + ",".join(fixed_filters) + ",format=yuv420p"
-        cap_idx    = 3 if has_music else 2
+        vf_chain = vf_grade + "," + ",".join(fixed_filters) + ",format=yuv420p"
+        cap_idx  = 3 if has_music else 2
 
-        if has_music:
-            fc = (
-                f"[0:v]{vf_chain}[bg];"
-                f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[vout];"
-                f"[2:a]volume=0.07[mus];"
-                f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
-            )
-            cmd = [FFMPEG, "-y",
-                   "-i", presenter_vid, "-i", audio_path,
-                   "-i", music_path, "-i", cap_vid,
-                   "-t", str(duration), "-filter_complex", fc,
-                   "-map", "[vout]", "-map", "[aout]"]
+        if btn_path:
+            btn_idx = cap_idx + 1
+            if has_music:
+                fc = (
+                    f"[0:v]{vf_chain}[bg];"
+                    f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[bmid];"
+                    f"[{btn_idx}:v]{_btn_tail};"
+                    f"[2:a]volume=0.07[mus];"
+                    f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path,
+                       "-i", music_path, "-i", cap_vid, "-i", btn_path,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "[aout]"]
+            else:
+                fc = (
+                    f"[0:v]{vf_chain}[bg];"
+                    f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[bmid];"
+                    f"[{btn_idx}:v]{_btn_tail}"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path,
+                       "-i", cap_vid, "-i", btn_path,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "1:a"]
         else:
-            fc = (
-                f"[0:v]{vf_chain}[bg];"
-                f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[vout]"
-            )
-            cmd = [FFMPEG, "-y",
-                   "-i", presenter_vid, "-i", audio_path, "-i", cap_vid,
-                   "-t", str(duration), "-filter_complex", fc,
-                   "-map", "[vout]", "-map", "1:a"]
+            # Sin botón (fallback si PIL falla)
+            if has_music:
+                fc = (
+                    f"[0:v]{vf_chain}[bg];"
+                    f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[vout];"
+                    f"[2:a]volume=0.07[mus];"
+                    f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path,
+                       "-i", music_path, "-i", cap_vid,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "[aout]"]
+            else:
+                fc = (
+                    f"[0:v]{vf_chain}[bg];"
+                    f"[bg][{cap_idx}:v]overlay=0:H-h-40:shortest=1[vout]"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path, "-i", cap_vid,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "1:a"]
 
     # ─── Fallback: drawtext por palabra ──────────────────────────────────────
     else:
@@ -1379,21 +1880,45 @@ def assemble(presenter_vid, audio_path, music_path,
         all_filters = fixed_filters + word_filters
         vf = vf_grade + "," + ",".join(all_filters) + ",format=yuv420p"
 
-        if has_music:
-            fc = (
-                f"[0:v]{vf}[vout];"
-                f"[2:a]volume=0.07[mus];"
-                f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
-            )
-            cmd = [FFMPEG, "-y",
-                   "-i", presenter_vid, "-i", audio_path, "-i", music_path,
-                   "-t", str(duration), "-filter_complex", fc,
-                   "-map", "[vout]", "-map", "[aout]"]
+        if btn_path:
+            btn_idx = 3 if has_music else 2
+            if has_music:
+                fc = (
+                    f"[0:v]{vf}[bmid];"
+                    f"[{btn_idx}:v]{_btn_tail};"
+                    f"[2:a]volume=0.07[mus];"
+                    f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path,
+                       "-i", music_path, "-i", btn_path,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "[aout]"]
+            else:
+                fc = (
+                    f"[0:v]{vf}[bmid];"
+                    f"[{btn_idx}:v]{_btn_tail}"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path, "-i", btn_path,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "1:a"]
         else:
-            cmd = [FFMPEG, "-y",
-                   "-i", presenter_vid, "-i", audio_path,
-                   "-t", str(duration), "-vf", vf,
-                   "-map", "0:v", "-map", "1:a"]
+            if has_music:
+                fc = (
+                    f"[0:v]{vf}[vout];"
+                    f"[2:a]volume=0.07[mus];"
+                    f"[1:a][mus]amix=inputs=2:duration=first:weights=1 0.5[aout]"
+                )
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path, "-i", music_path,
+                       "-t", str(duration), "-filter_complex", fc,
+                       "-map", "[vout]", "-map", "[aout]"]
+            else:
+                cmd = [FFMPEG, "-y",
+                       "-i", presenter_vid, "-i", audio_path,
+                       "-t", str(duration), "-vf", vf,
+                       "-map", "0:v", "-map", "1:a"]
 
     cmd += ["-c:v", "libx264", "-preset", "fast", "-crf", "17",
             "-c:a", "aac", "-b:a", "192k",
@@ -1502,16 +2027,35 @@ def get_youtube():
 def upload_video(yt, video_path, title, description, tags):
     body = {
         "snippet": {"title": title, "description": description,
-                    "tags": tags + ["shorts","inteligenciaartificial","ia","iaaldia"],
+                    "tags": (tags + [
+                        "shorts", "youtubeshorts", "viral", "futbol",
+                        "mundial2026", "worldcup2026", "soccer", "deportes",
+                        "messi", "iaaldia",
+                    ])[:40],  # YouTube acepta hasta ~500 chars total
                     "categoryId": "28", "defaultLanguage": "es"},
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
     media   = MediaFileUpload(video_path, mimetype="video/mp4", resumable=True)
     request = yt.videos().insert(part="snippet,status", body=body, media_body=media)
     response = None
-    while response is None:
-        status, response = request.next_chunk()
-        if status: print(f"  Subiendo... {int(status.progress()*100)}%", end="\r")
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            while response is None:
+                status, response = request.next_chunk()
+                if status: print(f"  Subiendo... {int(status.progress()*100)}%", end="\r")
+            break
+        except Exception as e:
+            if attempt < max_retries - 1:
+                wait = 10 * (attempt + 1)
+                print(f"\n  Upload error ({type(e).__name__}), reintento {attempt+1}/{max_retries-1} en {wait}s...")
+                time.sleep(wait)
+                # Recrear request para reset del resumable upload
+                media   = MediaFileUpload(video_path, mimetype="video/mp4", resumable=True)
+                request = yt.videos().insert(part="snippet,status", body=body, media_body=media)
+                response = None
+            else:
+                raise
     print(); return response["id"]
 
 def upload_thumb(yt, video_id, thumb_path):
@@ -1605,7 +2149,21 @@ def main():
         print(f"      {len(headlines)} titulares | research: {bool(research)}")
 
         print("[2/7] Script (Gemini 2.5 Pro)...")
-        script, used_pro = generate_script(headlines, research)
+        _custom_guion = os.environ.get("VIRAL_GUION", "").strip()
+        if _custom_guion:
+            # Script directo — no pasar por Gemini
+            _vt = os.environ.get("VIRAL_TOPIC", "Script personalizado")
+            script = {
+                "titulo":               _vt[:60],
+                "descripcion":          _vt,
+                "pregunta_comentarios": "¿Tú qué opinas? Déjalo en los comentarios.",
+                "tags":                 ["shorts", "viral", "futbol"],
+                "guion":                _validate_guion(_custom_guion),
+                "hook_texto":           " ".join(_custom_guion.split()[:5]),
+            }
+            used_pro = False
+        else:
+            script, used_pro = generate_script(headlines, research)
         print(f"      Título: {script['titulo']}")
 
         print(f"[3/7] Voz (persona: {_PERSONA_KEY})...")

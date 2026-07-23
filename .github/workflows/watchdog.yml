@@ -1,8 +1,6 @@
 name: IA al Día — Watchdog Autocorrector
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'   # Cada 15 minutos, 24/7
   workflow_run:
     workflows:
       - "IA al Día — Publicación Automática"
@@ -10,6 +8,8 @@ on:
       - "IA al Día — Viral Learner"
       - "IA al Día — Analytics Semanal"
     types: [completed]
+  schedule:
+    - cron: '0 6 * * *'   # 1 vez/día a las 2AM Chile (chequeo diario)
   workflow_dispatch:
 
 permissions:
@@ -23,8 +23,9 @@ jobs:
     timeout-minutes: 10
 
     if: >
-      github.event_name != 'workflow_run' ||
-      github.event.workflow_run.conclusion == 'failure'
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'schedule' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure')
 
     steps:
       - uses: actions/checkout@v4
