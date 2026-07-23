@@ -290,7 +290,7 @@ ITERACIÓN: {memory.get('iteracion', 0) + 1}
 TOTAL VIDEOS ANALIZADOS: {len(memory.get('videos', []))}
 
 TOP 10 VIDEOS (más views):
-{json.dumps([{{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hora': v.get('hora','?'), 'hook': v.get('hook_formula','?')[:60]}} for v in top_videos], ensure_ascii=False, indent=2)}
+{json.dumps([{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hora': v.get('hora','?'), 'hook': v.get('hook_formula','?')[:60]} for v in top_videos], ensure_ascii=False, indent=2)}
 
 5 VIDEOS MÁS BAJOS (para evitar sus patrones):
 {json.dumps([{{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hook': v.get('hook_formula','?')[:60]}} for v in low_videos], ensure_ascii=False, indent=2)}
