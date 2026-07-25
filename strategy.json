@@ -1,39 +1,40 @@
 {
-  "updated": "2026-07-24",
-  "iteracion": 199,
+  "updated": "2026-07-25",
+  "iteracion": 200,
   "niche_weights": {
-    "deportes": 0.7,
-    "ia_noticias": 0.15,
+    "ia_noticias": 0.85,
     "productividad": 0.1,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "finanzas": 0.007,
+    "negocios_digitales": 0.007,
+    "cripto_inversiones": 0.007,
+    "productividad_ia": 0.007,
+    "deportes": 0.007,
+    "entretenimiento": 0.007,
+    "politica_latam": 0.008
   },
   "best_hooks": [
-    "Títulos que simulan resultados impactantes del Mundial 2026: '[PAÍS 1] ELIMINA A [PAÍS 2] en el Mundial 2026 😱 ¡DEVASTADOR!'",
-    "Títulos de shock sobre eventos inesperados en el Mundial: '[PAÍS] EN SHOCK: [EVENTO SORPRENDENTE]! 😱'",
-    "Títulos de finales o campeonatos con emojis de victoria: '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥'",
-    "Títulos que resaltan la historia y la sorpresa: '¡[PAÍS] ELIMINADO del MUNDIAL 2026! 😱 [PAÍS O JUGADOR] HACE HISTORIA'",
-    "Títulos en formato de pregunta o dilema sobre el Mundial: 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱'",
-    "Títulos que evocan momentos globales icónicos: 'El gol que paró al mundo en el Mundial 2026 ⚽🌍'"
+    "[PAÍS/JUGADOR] [ACCIÓN DRAMÁTICA: ELIMINA/PARALIZA] A [PAÍS] [EVENTO FUTURO] [EMOJI DE SHOCK/VICTORIA] (ej. \"HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯\")",
+    "[PAÍS] EN SHOCK: [SUJETO/EVENTO] [VERBO IMPACTANTE]! 😱 (ej. \"ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱\")",
+    "[PAÍS] [VERBO DE ACCIÓN] A [PAÍS]: ¡[EVENTO CLAVE] EN MUNDIAL! 😱 (ej. \"ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱\")",
+    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥 (Fórmula de celebración/proclamación)",
+    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (Fórmula de impacto global)",
+    "[PAÍS] [RESULTADO] [PAÍS] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱 (Fórmula de intriga con pregunta)"
   ],
   "avoid_hooks": [
-    "Títulos sobre eventos deportivos locales o de bajo perfil: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡'",
-    "Títulos genéricos de autoayuda o frases motivacionales: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱'",
-    "Títulos con afirmaciones financieras vagas o promesas de dinero sin contexto: '¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸'"
+    "Títulos sobre eventos deportivos locales o muy específicos con preguntas vagas (ej. \"PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡\")",
+    "Títulos genéricos de finanzas o productividad sin un gancho específico o noticioso (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\", \"El error de dinero que comete el 80% 💸\")",
+    "Títulos clickbait excesivamente vagos o transaccionales que no generan curiosidad sobre un evento o desenlace claro (ej. \"¡PAGA $200 O NADA! 😱\")"
   ],
-  "best_hora": 0,
-  "duracion_optima": 0,
+  "best_hora": 22,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Concentrar la mayor parte del esfuerzo en la creación de contenido del sub-nicho 'Mundial 2026', que ha demostrado ser el único generador de videos en el TOP 10 y el de mayor rendimiento general.",
-    "Reforzar el uso de títulos dramáticos y específicos que incluyan nombres de países, figuras clave (ej. Haaland), resultados hipotéticos del Mundial 2026 y emojis de sorpresa/impacto.",
-    "Experimentar con horarios de publicación alrededor de la medianoche (00:00) y la tarde-noche (21:00-23:00), ya que son los momentos con mayor concentración de videos exitosos.",
-    "Cese inmediato de la creación de contenido en nichos como finanzas, negocios digitales, cripto-inversiones, entretenimiento, y política Latam, ya que todos los videos en estas categorías tuvieron 0 vistas.",
-    "Aunque el nicho 'productividad' tiene un rendimiento bajo, su tendencia positiva (+9.333) sugiere un potencial; se recomienda una exploración limitada para identificar sub-nichos específicos dentro de 'productividad' que puedan resonar con la audiencia.",
-    "Empezar a registrar la duración de los videos para identificar una duración óptima que contribuya al rendimiento, ya que actualmente no se dispone de esta métrica."
+    "Continuar la producción de contenido hiper-focalizado en el nicho `ia_noticias`, específicamente sobre eventos dramáticos y resultados simulados/futuristas del Mundial 2026, dado su éxito consistente y dominante (100% del TOP 10).",
+    "Implementar los patrones de títulos identificados en `best_hooks` (combinando países, jugadores, resultados impactantes y emojis) para maximizar el CTR y la retención inicial.",
+    "Priorizar la publicación de Shorts alrededor de las 22:00 horas (GMT o local de la audiencia objetivo), que es la franja horaria con mayor número de videos exitosos en el TOP 10.",
+    "Evitar completamente la creación de contenido genérico sobre finanzas, negocios digitales, o eventos deportivos locales/obscuros, ya que consistentemente resultan en 0 vistas y diluyen la temática principal del canal.",
+    "Realizar pruebas controladas y limitadas dentro del nicho `productividad`, enfocándose en ángulos específicos o con IA para entender y capitalizar su tendencia positiva (+9.333), pero sin desviar recursos significativos del nicho principal.",
+    "Comenzar a registrar la duración de los Shorts para futuras iteraciones, ya que es un dato crítico que actualmente no está disponible para optimización."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El sub-nicho 'Mundial 2026' dentro de `ia_noticias` es el único motor de rendimiento del canal, generando el 100% de los videos top a pesar de una tendencia negativa general en `ia_noticias`, lo que subraya la importancia de la hiper-focalización en temáticas de alta demanda y especulación."
+  "insight_semana": "La clave del éxito del canal reside en la hiper-focalización en noticias generadas por IA sobre el Mundial 2026, utilizando títulos dramáticos y específicos que simulan resultados futuros, lo cual eclipsa por completo el rendimiento de cualquier otro nicho explorado, mostrando una estrategia de contenido altamente efectiva para este sub-nicho tan particular."
 }
