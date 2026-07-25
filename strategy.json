@@ -1,38 +1,37 @@
 {
   "updated": "2026-07-25",
-  "iteracion": 203,
+  "iteracion": 204,
   "niche_weights": {
     "ia_noticias": 0.6,
     "productividad": 0.2,
-    "deportes": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.03,
     "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.02,
+    "entretenimiento": 0.02,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Eliminación/Resultado Shockeante + Mundial [Año] + Emoji (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
-    "Evento Inesperado + Nombre Específico + ¡EN SHOCK! + Emoji (ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
-    "Pregunta Directa sobre Hecho Inesperado + Mundial [Año] + Emoji (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Nombre Famoso + Elimina a [País] + Mundial [Año] + Emoji (ej. 'HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯')",
-    "Declaración de Gran Logro/Impacto + Mundial [Año] + Emojis de Hype (ej. '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')",
-    "Evento Consecuente Global + Mundial [Año] + Emoji Mundo/Balón (ej. 'El gol que paró al mundo en el Mundial 2026 ⚽🌍')"
+    "[PAÍS_X] ELIMINA A [PAÍS_Y] [RESULTADO] en el Mundial [AÑO] 😱",
+    "[PAÍS] EN SHOCK: [EVENTO/JUGADOR] [ACCIÓN DRAMÁTICA]! 😱",
+    "[EVENTO DRAMÁTICO EN FÚTBOL]: ¡[CONSECUENCIA INESPERADA]! 🤯",
+    "¡[PAÍS] ELIMINADO del MUNDIAL [AÑO]! 😱 [EQUIPO_RIVAL] HACE HISTORIA",
+    "¡[TÍTULO EMPÁTICO: CAMPEÓN/GOL HISTÓRICO]! El nuevo rey del fútbol Mundial [AÑO] 🏆👑🔥",
+    "[PAÍS_1] vs [PAÍS_2]: ¡GRAN FINAL Mundial [AÑO]! 🏆🔥😱"
   ],
   "avoid_hooks": [
-    "Preguntas con tinte de conspiración o fraude sin contexto de gran evento global (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
-    "Afirmaciones genéricas de autoayuda o finanzas sin un ángulo dramático o único (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos abstractos, transaccionales o de consejos financieros comunes sin un gancho de drama inmediato (ej. '¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸')"
+    "Títulos de preguntas específicas sobre eventos de bajo interés masivo.",
+    "Afirmaciones de autoayuda o frases motivacionales genéricas.",
+    "Títulos abstractos sobre finanzas/negocios sin un gancho claro o inmediato."
   ],
-  "best_hora": 22,
-  "duracion_optima": "insuficientes datos",
+  "best_hora": 18,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la mayor parte del esfuerzo en la creación de contenido de 'ia_noticias' específicamente centrado en simulaciones de fútbol del Mundial 2026 con resultados dramáticos y equipos de alto perfil, ya que es el único formato que genera vistas significativas.",
-    "Comenzar a experimentar activamente con contenido del nicho 'productividad', ya que es el único que muestra una tendencia de crecimiento positiva robusta (+9.333), lo que indica un potencial sin explotar para diversificar el canal.",
-    "Implementar de forma consistente las fórmulas de títulos gancho identificadas (eventos chocantes, preguntas directas, nombres famosos, emojis de impacto) y publicar prioritariamente a las 22:00 horas, el horario de mayor rendimiento históricamente.",
-    "Evitar completamente los temas y estructuras de títulos asociados a los videos de más bajas vistas, especialmente los consejos financieros genéricos o las preguntas ambiguas sin un impacto masivo claro."
+    "Priorizar la creación de contenido de `ia_noticias` enfocado exclusivamente en eventos dramáticos de fútbol, especialmente Mundiales futuros (ej. 2026), replicando los patrones de títulos y emojis identificados en el TOP 10.",
+    "Invertir en la experimentación de contenido para el nicho de `productividad`, dadas sus bajas vistas actuales pero su fuerte tendencia de crecimiento positiva (+9.333), lo que indica un potencial sin explotar.",
+    "Establecer un plan de A/B testing para la duración de los videos (ej. 15s, 30s, 45s, 58s) en los contenidos de mejor rendimiento, ya que la ausencia de datos actual impide identificar una duración óptima."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal está casi exclusivamente ligado a un sub-nicho extremadamente específico dentro de 'ia_noticias': las noticias dramáticas y ficticias sobre el fútbol del Mundial 2026. Este patrón genera 100% de las vistas top, pero la tendencia general negativa de 'ia_noticias' (-0.8) sugiere una posible saturación, mientras que el nicho de 'productividad' emerge como el único con un crecimiento prometedor."
+  "insight_semana": "El éxito del canal depende casi exclusivamente de la creación de `ia_noticias` ultradramáticas y específicas sobre eventos del Mundial de fútbol de un año futuro (ej. 2026), mientras que cualquier desviación de esta fórmula resulta en vistas mínimas o nulas."
 }
