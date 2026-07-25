@@ -1,40 +1,39 @@
 {
   "updated": "2026-07-25",
-  "iteracion": 200,
+  "iteracion": 201,
   "niche_weights": {
     "ia_noticias": 0.85,
     "productividad": 0.1,
-    "finanzas": 0.007,
-    "negocios_digitales": 0.007,
-    "cripto_inversiones": 0.007,
-    "productividad_ia": 0.007,
-    "deportes": 0.007,
-    "entretenimiento": 0.007,
-    "politica_latam": 0.008
+    "deportes": 0.01,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.005,
+    "entretenimiento": 0.005,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "[PAÍS/JUGADOR] [ACCIÓN DRAMÁTICA: ELIMINA/PARALIZA] A [PAÍS] [EVENTO FUTURO] [EMOJI DE SHOCK/VICTORIA] (ej. \"HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯\")",
-    "[PAÍS] EN SHOCK: [SUJETO/EVENTO] [VERBO IMPACTANTE]! 😱 (ej. \"ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱\")",
-    "[PAÍS] [VERBO DE ACCIÓN] A [PAÍS]: ¡[EVENTO CLAVE] EN MUNDIAL! 😱 (ej. \"ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱\")",
-    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥 (Fórmula de celebración/proclamación)",
-    "El gol que paró al mundo en el Mundial 2026 ⚽🌍 (Fórmula de impacto global)",
-    "[PAÍS] [RESULTADO] [PAÍS] EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱 (Fórmula de intriga con pregunta)"
+    "Fórmula 1: [País/Jugador] ELIMINA A [País] [Marcador] en [Evento] 😱/[🤯]",
+    "Fórmula 2: [País] EN SHOCK: [Acción dramática]! 😱",
+    "Fórmula 3: ¡[País] ELIMINADO del [Evento]! 😱 [País/Acción] HACE HISTORIA",
+    "Fórmula 4: [País 1] vs [País 2]: ¡GRAN FINAL [Evento]! 🏆🔥😱",
+    "Fórmula 5: [Evento dramático] en el [Evento] ⚽🌍",
+    "Fórmula 6: [País 1] [Marcador] [País 2] en [Evento]! ¿QUÉ PASÓ? 😱"
   ],
   "avoid_hooks": [
-    "Títulos sobre eventos deportivos locales o muy específicos con preguntas vagas (ej. \"PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡\")",
-    "Títulos genéricos de finanzas o productividad sin un gancho específico o noticioso (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\", \"El error de dinero que comete el 80% 💸\")",
-    "Títulos clickbait excesivamente vagos o transaccionales que no generan curiosidad sobre un evento o desenlace claro (ej. \"¡PAGA $200 O NADA! 😱\")"
+    "Patrón 1: Títulos que prometen controversia vaga sin un claro valor noticioso (ej. '¿ES FRAUDE?').",
+    "Patrón 2: Títulos de autoayuda o consejos genéricos, abstractos o sobre finanzas comunes (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Patrón 3: Títulos con cifras monetarias directas o llamadas a la acción transaccionales vagas (ej. '¡PAGA $200 O NADA!')."
   ],
   "best_hora": 22,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Continuar la producción de contenido hiper-focalizado en el nicho `ia_noticias`, específicamente sobre eventos dramáticos y resultados simulados/futuristas del Mundial 2026, dado su éxito consistente y dominante (100% del TOP 10).",
-    "Implementar los patrones de títulos identificados en `best_hooks` (combinando países, jugadores, resultados impactantes y emojis) para maximizar el CTR y la retención inicial.",
-    "Priorizar la publicación de Shorts alrededor de las 22:00 horas (GMT o local de la audiencia objetivo), que es la franja horaria con mayor número de videos exitosos en el TOP 10.",
-    "Evitar completamente la creación de contenido genérico sobre finanzas, negocios digitales, o eventos deportivos locales/obscuros, ya que consistentemente resultan en 0 vistas y diluyen la temática principal del canal.",
-    "Realizar pruebas controladas y limitadas dentro del nicho `productividad`, enfocándose en ángulos específicos o con IA para entender y capitalizar su tendencia positiva (+9.333), pero sin desviar recursos significativos del nicho principal.",
-    "Comenzar a registrar la duración de los Shorts para futuras iteraciones, ya que es un dato crítico que actualmente no está disponible para optimización."
+    "Concentrar el 85% del esfuerzo en el nicho `ia_noticias`, priorizando la creación de contenido de noticias dramáticas de fútbol (ej. 'Mundial 2026') que ha demostrado ser el único formato de éxito.",
+    "Utilizar las fórmulas de título identificadas en 'best_hooks', que incorporan nombres de países, figuras clave, resultados dramáticos, eventos futuros (Mundial 2026) y emojis de impacto (😱, 🤯, 🔥, 🏆, 👑, ⚽, 🌍).",
+    "Continuar explorando el nicho `productividad` con el 10% del esfuerzo, optimizando el contenido para aprovechar su fuerte tendencia de crecimiento de +9.333, a pesar de su actual promedio de 36 vistas.",
+    "Evitar categóricamente los patrones de título que generaron 0 vistas, los cuales incluyen temas genéricos de autoayuda/finanzas o controversias vagas, incluso si se etiquetan como `ia_noticias`.",
+    "Programar publicaciones preferentemente a las 22:00 horas, que concentra el 30% de los videos más vistos, aunque explorar otros horarios de éxito comprobado (0:00, 11:00, 16:00, 21:00, 23:00) también puede ser válido."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito del canal reside en la hiper-focalización en noticias generadas por IA sobre el Mundial 2026, utilizando títulos dramáticos y específicos que simulan resultados futuros, lo cual eclipsa por completo el rendimiento de cualquier otro nicho explorado, mostrando una estrategia de contenido altamente efectiva para este sub-nicho tan particular."
+  "insight_semana": "El éxito dentro del nicho `ia_noticias` es exclusivamente dependiente de la temática de noticias dramáticas de fútbol (ej. Mundial 2026); otras temáticas dentro de `ia_noticias` han generado 0 vistas, lo que indica que el nicho es demasiado amplio y la clave está en el sub-género específico y el estilo de entrega."
 }
