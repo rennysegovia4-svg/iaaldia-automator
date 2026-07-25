@@ -1,39 +1,38 @@
 {
   "updated": "2026-07-25",
-  "iteracion": 201,
+  "iteracion": 202,
   "niche_weights": {
-    "ia_noticias": 0.85,
-    "productividad": 0.1,
-    "deportes": 0.01,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
-    "productividad_ia": 0.005,
-    "entretenimiento": 0.005,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.1,
+    "productividad": 0.25,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.05,
+    "entretenimiento": 0.05,
+    "politica_latam": 0.05,
+    "productividad_ia": 0.0
   },
   "best_hooks": [
-    "Fórmula 1: [País/Jugador] ELIMINA A [País] [Marcador] en [Evento] 😱/[🤯]",
-    "Fórmula 2: [País] EN SHOCK: [Acción dramática]! 😱",
-    "Fórmula 3: ¡[País] ELIMINADO del [Evento]! 😱 [País/Acción] HACE HISTORIA",
-    "Fórmula 4: [País 1] vs [País 2]: ¡GRAN FINAL [Evento]! 🏆🔥😱",
-    "Fórmula 5: [Evento dramático] en el [Evento] ⚽🌍",
-    "Fórmula 6: [País 1] [Marcador] [País 2] en [Evento]! ¿QUÉ PASÓ? 😱"
+    "Eliminación/Sorpresa Dramática (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
+    "Noticia Impactante/Paralizante (ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
+    "Evento Decisivo/Agónico (ej. 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱')",
+    "Resultado Inesperado + Pregunta (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
+    "Impacto Global/Hito Histórico (ej. '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')",
+    "Gran Enfrentamiento/Final Épica (ej. 'ARGENTINA vs ESPAÑA: ¡GRAN FINAL Mundial 2026! 🏆🔥😱')"
   ],
   "avoid_hooks": [
-    "Patrón 1: Títulos que prometen controversia vaga sin un claro valor noticioso (ej. '¿ES FRAUDE?').",
-    "Patrón 2: Títulos de autoayuda o consejos genéricos, abstractos o sobre finanzas comunes (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
-    "Patrón 3: Títulos con cifras monetarias directas o llamadas a la acción transaccionales vagas (ej. '¡PAGA $200 O NADA!')."
+    "Consejo Genérico de Autoayuda/Finanzas (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA', 'El error de dinero que comete el 80%')",
+    "Pregunta Específica y Vaga sin impacto global (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Declaraciones Crípticas/Transaccionales de Negocios (ej. '¡PAGA $200 O NADA! 😱', 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar el 85% del esfuerzo en el nicho `ia_noticias`, priorizando la creación de contenido de noticias dramáticas de fútbol (ej. 'Mundial 2026') que ha demostrado ser el único formato de éxito.",
-    "Utilizar las fórmulas de título identificadas en 'best_hooks', que incorporan nombres de países, figuras clave, resultados dramáticos, eventos futuros (Mundial 2026) y emojis de impacto (😱, 🤯, 🔥, 🏆, 👑, ⚽, 🌍).",
-    "Continuar explorando el nicho `productividad` con el 10% del esfuerzo, optimizando el contenido para aprovechar su fuerte tendencia de crecimiento de +9.333, a pesar de su actual promedio de 36 vistas.",
-    "Evitar categóricamente los patrones de título que generaron 0 vistas, los cuales incluyen temas genéricos de autoayuda/finanzas o controversias vagas, incluso si se etiquetan como `ia_noticias`.",
-    "Programar publicaciones preferentemente a las 22:00 horas, que concentra el 30% de los videos más vistos, aunque explorar otros horarios de éxito comprobado (0:00, 11:00, 16:00, 21:00, 23:00) también puede ser válido."
+    "**Redefinir Estrategia de Contenido:** Desplazar el foco del nicho `ia_noticias` general hacia `deportes` para cubrir específicamente noticias dramáticas de fútbol (Mundial 2026), que son el único contenido exitoso (100% del top 10).",
+    "**Explorar y Escalar Nicho de Productividad:** Aumentar la producción de contenido en el nicho de `productividad`, capitalizando su alta tendencia de crecimiento (+9.333) a pesar de sus vistas promedio actuales más bajas (36 vistas).",
+    "**Optimizar Horario de Publicación:** Concentrar las publicaciones en las horas pico consistentemente exitosas, siendo las 22:00 la principal, seguida de las 21:00 y 00:00, que juntas representan el 70% de los videos con más vistas.",
+    "**Recopilación de Datos Esencial:** Implementar la recolección de datos sobre la duración de los videos y los 'hooks' específicos dentro del contenido para refinar futuras iteraciones estratégicas, ya que esta información es actualmente nula."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito dentro del nicho `ia_noticias` es exclusivamente dependiente de la temática de noticias dramáticas de fútbol (ej. Mundial 2026); otras temáticas dentro de `ia_noticias` han generado 0 vistas, lo que indica que el nicho es demasiado amplio y la clave está en el sub-género específico y el estilo de entrega."
+  "insight_semana": "El éxito del nicho `ia_noticias` es un espejismo: sus vistas promedio son impulsadas enteramente por un subtema muy específico (noticias dramáticas de fútbol), mientras que el resto de los temas bajo este nicho y todos los demás nichos (excepto productividad con bajo volumen) generan 0 vistas, y la tendencia general de `ia_noticias` es negativa (-0.8)."
 }
