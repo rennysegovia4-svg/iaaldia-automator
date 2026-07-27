@@ -1,38 +1,37 @@
 {
-  "updated": "2026-07-26",
-  "iteracion": 211,
+  "updated": "2026-07-27",
+  "iteracion": 212,
   "niche_weights": {
-    "deportes": 0.01,
-    "ia_noticias": 0.94,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.01
+    "ia_noticias": 0.6,
+    "deportes": 0.15,
+    "productividad": 0.1,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "[País/Equipo] ELIMINA A [País/Equipo] en [Evento Mundial] [Emojis de sorpresa/drama]",
-    "[País/Equipo] EN SHOCK: [Jugador/Evento] PARALIZA! [Emoji de sorpresa]",
-    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [Evento Mundial] [Emojis de victoria]",
-    "El [Evento dramático: gol/partido] que paró al mundo en el [Evento Mundial] [Emojis relevantes]",
-    "[País/Equipo] [Marcador Inesperado] en [Evento Mundial]! ¿QUÉ PASÓ? [Emoji de intriga/sorpresa]",
-    "[Jugador/Equipo] ELIMINA A [País/Equipo] del [Evento Mundial]! [Emoji de Asombro]"
+    "[Equipo A] ELIMINA A [Equipo B] en [Mundial 2026] 😱",
+    "[País] EN SHOCK: [NOTICIA CLAVE]! 😱",
+    "[LIGA/EVENTO]: [EQUIPO] CEDE LIDERATO ¡SHOCK! 🤯",
+    "¡[PAÍS] ELIMINADO del [Mundial 2026]! 😱 [RAZÓN/IMPACTO]",
+    "[RESULTADO INESPERADO] en [Mundial 2026]! ¿QUÉ PASÓ? 😱",
+    "El gol que paró al mundo en el Mundial 2026 ⚽🌍"
   ],
   "avoid_hooks": [
-    "Títulos de autoayuda o consejos financieros genéricos (ej. 'NO TOMAR RIESGO...', 'El error de dinero...').",
-    "Clickbait transaccional o demasiado directo sin contexto dramático (ej. '¡PAGA $200 O NADA!').",
-    "Noticias deportivas hiper-locales o específicas que no involucren un evento global de gran impacto (ej. 'PARTIDO COLOMBIA SÁBADO...')."
+    "Títulos de finanzas/negocios con cifras o conceptos genéricos y sin impacto emocional (ej. '¡PAGA $200 O NADA!', 'El error de dinero que comete el 80%')",
+    "Afirmaciones genéricas de productividad o autoayuda sin un gancho claro o un evento concreto (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Preguntas sobre eventos específicos menores o con un tono débil y sin la escala de un 'Mundial' (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
   ],
   "best_hora": 22,
-  "duracion_optima": 30,
+  "duracion_optima": -1,
   "recomendaciones": [
-    "Concentrar la producción de contenido casi exclusivamente en el sub-nicho de 'ia_noticias' relacionado con fútbol mundial hipotético (especialmente 'Mundial 2026'), ya que 9 de los 10 videos más vistos pertenecen a este patrón y el nicho ahora muestra una tendencia positiva (1.95).",
-    "Priorizar la publicación en la ventana horaria de 21:00 a 23:00, con un enfoque particular en las 22:00, que ha demostrado ser la hora más efectiva y consistentemente el pico de atención (4 de los 10 videos principales).",
-    "Utilizar títulos que enfaticen la sorpresa, la eliminación, la victoria épica o el drama, empleando nombres de países/equipos, marcadores numéricos y emojis de alto impacto (😱, 🤯, 🏆, 🔥, ⚽, 🌍) para maximizar el CTR.",
-    "Eliminar la creación de contenido en los nichos de 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (fuera del sub-nicho identificado), 'entretenimiento' y 'politica_latam', ya que todos registran un promedio de 0 vistas y han demostrado ser ineficaces.",
-    "Dado que no se proporcionaron datos de duración, se recomienda experimentar con diferentes longitudes de Shorts (entre 15 y 59 segundos) para identificar la duración óptima para el contenido de fútbol mundial."
+    "Consolidar la estrategia en el sub-nicho de 'fútbol mundial ficticio/futurista' dentro de la categoría 'ia_noticias', ya que es el único generador de vistas significativas.",
+    "Priorizar la hora de publicación de las 22:00, que se consolida como la más efectiva al concentrar el 30% de los videos del TOP 10, y continuar probando dentro de la ventana de 21:00-23:00 que acumula el 60%.",
+    "Continuar utilizando títulos con elementos de shock, especulación sobre eventos futuros ('Mundial 2026'), resultados inesperados y emojis impactantes (😱, 🤯), mientras se evitan por completo las temáticas genéricas de finanzas o productividad."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de 'ia_noticias' ha revertido su tendencia negativa anterior a una positiva (1.95) y su éxito está casi enteramente anclado a un sub-nicho hiper-específico de noticias de fútbol global ficticias/futuristas (ej. 'Mundial 2026'), mientras que el resto del contenido no genera vistas."
+  "insight_semana": "A pesar de que 'ia_noticias' sigue siendo el único nicho con vistas consistentes (avg_views: 137), su tendencia negativa de -1.0 sugiere una posible saturación del sub-nicho de fútbol ficticio o una mayor dificultad en la distribución algorítmica."
 }
