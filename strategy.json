@@ -1,27 +1,38 @@
 {
   "updated": "2026-07-27",
-  "iteracion": 216,
+  "iteracion": 217,
   "niche_weights": {
-    "deportes": 0.015,
-    "ia_noticias": 0.9,
-    "finanzas": 0.014,
-    "entretenimiento": 0.014,
-    "negocios_digitales": 0.014,
-    "productividad_ia": 0.014,
-    "cripto_inversiones": 0.014,
-    "politica_latam": 0.015
+    "deportes": 0.75,
+    "ia_noticias": 0.02,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.03,
+    "productividad": 0.1
   },
-  "best_hooks": "insuficientes datos para hooks efectivos",
-  "avoid_hooks": "insuficientes datos para hooks a evitar",
+  "best_hooks": [
+    "Noticia Shockante de Resultado Deportivo: [EQUIPO/JUGADOR] [ACCIÓN ESPECTACULAR] en [EVENTO]! 🤯😱",
+    "Giro Inesperado en Liga/Mundial: [LIGA/TORNEO]: [EQUIPO] [CAMBIO DRÁSTICO] ¡[EMOCIÓN]! (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
+    "Evento Agónico/Definitivo: [EQUIPO 1] ELIMINA A [EQUIPO 2]: ¡[DETALLE CLAVE] EN [EVENTO]! 😱",
+    "Pregunta Abierta sobre Suceso: [EQUIPO 1] [SCORE] [EQUIPO 2] EN [EVENTO]! ¿QUÉ PASÓ? 😱",
+    "Impacto Global de un Suceso: El [SUCESO CLAVE] que paró al mundo en el [EVENTO] ⚽🌍",
+    "Declaración de Título/Campeón: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [EVENTO] 🏆👑🔥"
+  ],
+  "avoid_hooks": [
+    "Hooks genéricos de autoayuda/motivación (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA 😱)",
+    "Afirmaciones financieras abstractas o genéricas sin contexto (ej. TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯)",
+    "Noticias deportivas excesivamente específicas o con connotaciones negativas sin un gancho claro de resultado/emoción universal (ej. PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)"
+  ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Reforzar la creación de contenido en el nicho 'ia_noticias' enfocado exclusivamente en noticias deportivas hipotéticas, especialmente sobre escenarios del Mundial 2026 o ligas de fútbol, dado su rendimiento superior y constante en el TOP 10.",
-    "Mantener y optimizar el calendario de publicación en la franja horaria de 21:00 a 00:00, con especial atención a las 22:00, que es la hora con mayor concentración de videos exitosos.",
-    "Detener la creación de contenido o reevaluar completamente la estrategia para los nichos 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes', 'entretenimiento' y 'politica_latam', ya que continúan mostrando 0 vistas promedio.",
-    "Implementar un sistema de registro detallado de los hooks utilizados en títulos y/o miniaturas para empezar a recopilar datos y determinar patrones efectivos y a evitar en futuras iteraciones.",
-    "Comenzar a registrar la duración exacta de cada Short publicado para poder analizar en próximas iteraciones la duración óptima del contenido."
+    "Priorizar la creación de contenido en el sub-nicho de noticias deportivas hipotéticas (Mundial 2026), que actualmente se clasifica bajo 'ia_noticias', ya que es el único generador de vistas, pero monitorear activamente su tendencia negativa.",
+    "Ajustar el horario de publicación para concentrarse en la franja de 21:00 a 00:00, siendo las 22:00 la hora más frecuente de éxito observado.",
+    "Iniciar urgentemente la recolección de datos sobre la duración de los Shorts para permitir un análisis de la duración óptima, un factor crítico que actualmente es desconocido.",
+    "Suspender o reducir significativamente la producción de contenido en nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, entretenimiento, política_latam) para concentrar recursos donde hay rendimiento o potencial probado."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia más efectiva es extremadamente nicho-específica: noticias deportivas hipotéticas generadas por IA (principalmente sobre el Mundial 2026), publicadas en la franja nocturna/madrugada, lo que indica un público altamente comprometido con la especulación futbolística en este formato."
+  "insight_semana": "La estrategia actual depende casi exclusivamente del sub-nicho de noticias deportivas hipotéticas del Mundial 2026 (clasificado como 'ia_noticias'), concentrando el 80% del TOP 10 en horarios específicos (21:00-00:00), mientras que el resto de los nichos no genera vistas, lo que indica una falta de diversificación efectiva y una vulnerabilidad a la tendencia decreciente del nicho principal."
 }
