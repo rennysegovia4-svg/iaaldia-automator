@@ -1,39 +1,37 @@
 {
   "updated": "2026-07-28",
-  "iteracion": 218,
+  "iteracion": 219,
   "niche_weights": {
-    "deportes": 0.01,
+    "deportes": 0.03,
     "ia_noticias": 0.9,
-    "finanzas": 0.004,
-    "entretenimiento": 0.004,
-    "negocios_digitales": 0.004,
-    "productividad_ia": 0.004,
-    "cripto_inversiones": 0.002,
-    "politica_latam": 0.002,
-    "productividad": 0.07
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Shock de eliminación/resultado: '[EQUIPO] ELIMINA A [EQUIPO/JUGADOR] [MARCADOR OPCIONAL] en [EVENTO]! 😱'",
-    "Noticia impactante de liga/país: '[LIGA/PAÍS]: [NOTICIA SHOCK] ¡SHOCK! 🤯'",
-    "Pregunta de misterio o evento sorprendente: '[EQUIPO/MARCADOR] EN [EVENTO]! ¿QUÉ PASÓ? 😱'",
-    "Claims grandiosos y de impacto global: 'El gol que paró al mundo en el Mundial 2026 ⚽🌍'",
-    "Declaración de campeón/hazaña histórica: '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥'",
-    "Noticia de jugador/país con desenlace dramático: '[JUGADOR/PAÍS] ELIMINA A [PAÍS] DEL MUNDIAL 2026! 🤯'"
+    "PAÍS X ELIMINA A PAÍS Y en EVENTO [RESULTADO] [EMOJI_SHOCK] (ej: BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱)",
+    "LIGA/EVENTO: EQUIPO CEDE LIDERATO ¡SHOCK! 🤯 (ej: LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
+    "PAÍS EN SHOCK: NOTICIA PARALIZANTE! 😱 (ej: ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
+    "PAÍS X vs PAÍS Y en EVENTO! ¿QUÉ PASÓ? 😱 (ej: BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱)",
+    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol EVENTO 🏆👑🔥 (ej: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥)",
+    "El [OBJETO DRAMÁTICO] que [ACCIÓN MASIVA] al mundo en el [EVENTO] ⚽🌍 (ej: El gol que paró al mundo en el Mundial 2026 ⚽🌍)"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas sin un evento o impacto dramático claro (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA', 'El error de dinero que comete el 80%').",
-    "Promesas vagas o propuestas de valor poco específicas que no generan curiosidad inmediata (ej: '¡PAGA $200 O NADA!').",
-    "Preguntas de misterio sobre eventos de bajo impacto o sin una narrativa 'shock' (ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')."
+    "Preguntas directas sobre fraude sin contexto de drama deportivo: PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡",
+    "Afirmaciones genéricas de autoayuda o productividad sin relevancia actual: NO TOMAR RIESGO es tu MAYOR AMENAZA 😱, El error de dinero que comete el 80% 💸",
+    "Declaraciones financieras o de negocio abstractas o sobre cifras específicas: ¡PAGA $200 O NADA! 😱, TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯"
   ],
   "best_hora": 22,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Concentrar el 90% del esfuerzo en el nicho 'ia_noticias', específicamente en contenido de deportes hipotéticos o futuros de alto impacto (ej. Mundial 2026), dado su éxito probado y tendencia positiva (2.25).",
-    "Asignar un 7% de contenido experimental al nicho de 'productividad' debido a su alta tendencia (9.333), intentando replicar elementos de sorpresa o revelación de los éxitos de 'ia_noticias'.",
-    "Programar las publicaciones principalmente entre las 21:00 y las 00:00, con un enfoque en la hora 22:00, que ha demostrado ser la más efectiva para generar vistas.",
-    "Suspender o reducir significativamente la creación de contenido en los nichos 'finanzas', 'entretenimiento', 'negocios_digitales', 'productividad_ia', 'cripto_inversiones' y 'politica_latam' (y 'deportes' como categoría separada si no es AI), dado que han generado 0 vistas.",
-    "Implementar un sistema de seguimiento para registrar y analizar la duración de los Shorts, con el fin de determinar la duración óptima para futuros videos."
+    "Concentrar casi el 90% del esfuerzo en el micronicho de 'noticias deportivas hipotéticas con IA' (nicho 'ia_noticias'), específicamente sobre fútbol y eventos de alto perfil como el Mundial 2026 y la Liga MX, ya que es el único que genera vistas.",
+    "Priorizar la creación de títulos con lenguaje dramático, resultados inesperados, menciones de países/equipos, exclamaciones y emojis de impacto (😱, 🤯, 🏆, 🔥, ⚽, 🌍), siguiendo los patrones de los videos top.",
+    "Programar la publicación de los Shorts en las horas de mayor rendimiento observadas: principalmente entre las 21:00 y 23:00 (con foco en las 22:00) y también experimentar en la madrugada (0:00 y 6:00).",
+    "Pausar o minimizar drásticamente la creación de contenido para los nichos 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (como nicho independiente), 'entretenimiento' y 'politica_latam', dado que no han generado vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La eficacia del canal depende casi exclusivamente del nicho de 'ia_noticias' enfocado en deportes (Mundial 2026), lo cual, a pesar de su reciente tendencia positiva (2.25), muestra una extrema especialización que no se replica en ningún otro de los 7 nichos probados (0 vistas en la mayoría)."
+  "insight_semana": "La estrategia de diversificación es completamente ineficaz; el canal solo encuentra tracción y vistas significativas en un micronicho muy específico: 'noticias deportivas hipotéticas de fútbol con IA' (nicho ia_noticias), mientras que el 87.5% de los nichos explorados generan 0 vistas."
 }
