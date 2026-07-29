@@ -1,39 +1,37 @@
 {
   "updated": "2026-07-29",
-  "iteracion": 228,
+  "iteracion": 229,
   "niche_weights": {
-    "deportes": 0.02,
-    "ia_noticias": 0.86,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.01,
+    "ia_noticias": 0.85,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "[EQUIPO A] ELIMINA A [EQUIPO B] en [EVENTO FUTURO]! [EMOJI_SHOCK]",
-    "[LIGA/EQUIPO]: [SUCESO DRAMÁTICO] ¡[EMOCIÓN]!",
-    "¡[PAÍS/EQUIPO] ELIMINADO del [EVENTO FUTURO]! [EMOJI_SHOCK]",
-    "[JUGADOR] [ACCIÓN DRAMÁTICA] A [PAÍS/EQUIPO] [EMOJI_SHOCK]",
-    "La noticia deportiva que [IMPACTO FUERTE] [REGIÓN/HOY] ⚽",
-    "[EQUIPO A] [SCORE] [EQUIPO B] en [EVENTO FUTURO]! ¿QUÉ PASÓ? [EMOJI_SHOCK]"
+    "Dramatismo Regional/Urgencia: [Noticia deportiva] que sacude [Región] [Hoy/Ahora] [Emoji de Impacto]",
+    "Eliminación Impactante: [Equipo 1] ELIMINA A [Equipo 2] [Resultado] en [Evento] 😱 [Adjetivo de Impacto]",
+    "Shock por Cambio/Evento Inesperado: [Liga/Equipo]: [Evento] ¡SHOCK! 🤯",
+    "Crisis/Paralización Nacional: [País/Entidad] EN SHOCK: [Evento] PARALIZA! 😱",
+    "Hito Histórico/Triunfo Épico: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [Evento] 🏆👑🔥",
+    "Pregunta Abierta de Confusión/Drama: [Evento] [Resultado]! ¿QUÉ PASÓ? 😱"
   ],
   "avoid_hooks": [
-    "Títulos de autoayuda genéricos o motivacionales sin un evento específico (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Títulos de finanzas genéricos sobre errores o comparaciones sin urgencia o drama extremo (ej. 'El error de dinero que comete el 80%')",
-    "Títulos deportivos que mencionan eventos reales o preguntas de 'fraude' sin un resultado dramático hipotético (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')"
+    "Títulos genéricos de finanzas o autoayuda sin un gancho emocional o de urgencia claro.",
+    "Afirmaciones de valor monetario o empresarial vagas que no generan una curiosidad inmediata y específica.",
+    "Preguntas o acusaciones de fraude con poca especificidad o sin un evento dramático asociado."
   ],
   "best_hora": 22,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Doble down en `ia_noticias` (noticias deportivas ficticias): Concentrar la mayor parte del contenido en este nicho, que ha demostrado ser el único generador de vistas significativas, utilizando eventos futuros como 'Mundial 2026' y resultados dramáticos.",
-    "Optimizar títulos con ganchos emocionales y específicos: Incluir exclamaciones, emojis de shock (😱, 🤯) y menciones de equipos/jugadores populares para maximizar el CTR.",
-    "Programar publicaciones entre las 21:00 y 23:00 (hora pico 22:00): Esta ventana horaria concentra el 60% de los videos exitosos (6 de los 10 mejores).",
-    "Iniciar experimentación controlada con el nicho de `productividad`: Dada su tendencia de crecimiento positiva (+13.5) y rendimiento no nulo, representa una oportunidad de diversificación fuera de las noticias deportivas.",
-    "Evitar nichos de finanzas genéricas, negocios digitales, cripto_inversiones, productividad_ia, entretenimiento y política_latam: Estos temas han resultado consistentemente en 0 vistas bajo la estrategia actual.",
-    "Implementar seguimiento de la duración de los videos: Actualmente no se dispone de datos de duración, lo que impide determinar una duración óptima. Se recomienda empezar a registrarla para futuras iteraciones."
+    "Priorizar la creación de contenido bajo el nicho `ia_noticias` enfocado casi exclusivamente en noticias deportivas con alto dramatismo, resultados inesperados y menciones a eventos o ligas importantes.",
+    "Implementar títulos que utilicen lenguaje de shock, emociones fuertes, nombres específicos de equipos/jugadores/eventos y emojis que refuercen la sensación de urgencia o asombro.",
+    "Cesar completamente la producción de contenido sobre finanzas genéricas, autoayuda o negocios abstractos, ya que han demostrado un rendimiento nulo constante (0 vistas).",
+    "Concentrar las publicaciones en el horario nocturno, especialmente entre las 21:00 y 23:00, con la hora de las 22:00 como el pico óptimo de rendimiento para el contenido actual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia de `ia_noticias` basada en eventos deportivos hipotéticos y dramáticos (especialmente sobre el 'Mundial 2026') es la única que genera vistas significativas consistentemente, aunque muestra una tendencia de rendimiento ligeramente decreciente (-0.9), lo que sugiere la necesidad de explorar nuevas variantes o nichos secundarios."
+  "insight_semana": "El nicho `ia_noticias` es altamente exitoso solo cuando el contenido es de noticias deportivas con un fuerte componente de shock y drama, mientras que las variaciones del mismo nicho hacia temas de finanzas o autoayuda resultan en 0 vistas, lo que indica una clara preferencia de la audiencia por el contenido deportivo dramático."
 }
