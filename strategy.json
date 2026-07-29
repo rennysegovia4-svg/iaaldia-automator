@@ -1,40 +1,39 @@
 {
   "updated": "2026-07-29",
-  "iteracion": 227,
+  "iteracion": 228,
   "niche_weights": {
-    "deportes": 0.007,
-    "ia_noticias": 0.85,
-    "finanzas": 0.007,
-    "entretenimiento": 0.007,
-    "negocios_digitales": 0.007,
-    "productividad_ia": 0.007,
-    "cripto_inversiones": 0.007,
-    "politica_latam": 0.008,
-    "productividad": 0.1
+    "deportes": 0.02,
+    "ia_noticias": 0.86,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "BIG EVENT + SHOCKING OUTCOME + EMOTION! (e.g., 'BÉLGICA ELIMINA A USA... ¡DEVASTADOR!')",
-    "SURPRISING NEWS + REGIONAL IMPACT + EMOTION/QUESTION (e.g., 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "ICONIC PLAYER/TEAM + UNEXPECTED FAILURE/SUCCESS + FUTURE TENSE (MUNDIAL 2026) + EMOTION (e.g., 'HAALAND ELIMINA A BRASIL...!')",
-    "RIVALRY/HIGH STAKES + DRAMATIC MOMENT + EMOTION! (e.g., 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO!')",
-    "HYPERBOLIC CLAIM + GLOBAL IMPACT + SPECIFIC EVENT + EMOTION/EMOJI (e.g., 'El gol que paró al mundo... ⚽🌍')",
-    "UNBELIEVABLE SCORE/RESULT + QUESTION + EMOTION (e.g., 'BRASIL 0-0 NORUEGA... ¿QUÉ PASÓ? 😱')"
+    "[EQUIPO A] ELIMINA A [EQUIPO B] en [EVENTO FUTURO]! [EMOJI_SHOCK]",
+    "[LIGA/EQUIPO]: [SUCESO DRAMÁTICO] ¡[EMOCIÓN]!",
+    "¡[PAÍS/EQUIPO] ELIMINADO del [EVENTO FUTURO]! [EMOJI_SHOCK]",
+    "[JUGADOR] [ACCIÓN DRAMÁTICA] A [PAÍS/EQUIPO] [EMOJI_SHOCK]",
+    "La noticia deportiva que [IMPACTO FUERTE] [REGIÓN/HOY] ⚽",
+    "[EQUIPO A] [SCORE] [EQUIPO B] en [EVENTO FUTURO]! ¿QUÉ PASÓ? [EMOJI_SHOCK]"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda/motivación sin contexto claro o novedad (e.g., 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Afirmaciones abstractas de finanzas o negocios sin detalles específicos o un claro 'por qué importa' (e.g., 'TRES EMPRESAS VALEN MÁS que 25 años de tech')",
-    "Títulos ambiguos o excesivamente clickbait con promesa transaccional poco clara (e.g., '¡PAGA $200 O NADA!')"
+    "Títulos de autoayuda genéricos o motivacionales sin un evento específico (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Títulos de finanzas genéricos sobre errores o comparaciones sin urgencia o drama extremo (ej. 'El error de dinero que comete el 80%')",
+    "Títulos deportivos que mencionan eventos reales o preguntas de 'fraude' sin un resultado dramático hipotético (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')"
   ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', enfocándose específicamente en noticias deportivas debido a su dominancia en el top 10 (100% de los videos).",
-    "Mantener el horario de publicación entre las 21:00 y las 23:00 horas, con especial énfasis en las 22:00, ya que esta franja horaria concentra el 60% de los videos más exitosos.",
-    "Explorar el nicho 'productividad' como área de expansión, dado que es el único con vistas no nulas (56 vistas en promedio) y una tendencia de crecimiento positiva significativa (+13.5).",
-    "Diseñar títulos que incorporen elementos de sorpresa, emoción (usando emojis como 😱, 🤯), nombres de equipos o jugadores relevantes, y alusiones a grandes eventos deportivos futuros o hipotéticos (ej. Mundial 2026).",
-    "Evitar contenido genérico de autoayuda o financiero que no esté anclado en eventos actuales, resultados impactantes o beneficios claros, ya que estos resultan en 0 vistas.",
-    "Dado que el campo 'hook' está vacío en los datos actuales, implementar pruebas A/B de diferentes ganchos textuales en la descripción o primeros segundos del video para recopilar datos futuros."
+    "Doble down en `ia_noticias` (noticias deportivas ficticias): Concentrar la mayor parte del contenido en este nicho, que ha demostrado ser el único generador de vistas significativas, utilizando eventos futuros como 'Mundial 2026' y resultados dramáticos.",
+    "Optimizar títulos con ganchos emocionales y específicos: Incluir exclamaciones, emojis de shock (😱, 🤯) y menciones de equipos/jugadores populares para maximizar el CTR.",
+    "Programar publicaciones entre las 21:00 y 23:00 (hora pico 22:00): Esta ventana horaria concentra el 60% de los videos exitosos (6 de los 10 mejores).",
+    "Iniciar experimentación controlada con el nicho de `productividad`: Dada su tendencia de crecimiento positiva (+13.5) y rendimiento no nulo, representa una oportunidad de diversificación fuera de las noticias deportivas.",
+    "Evitar nichos de finanzas genéricas, negocios digitales, cripto_inversiones, productividad_ia, entretenimiento y política_latam: Estos temas han resultado consistentemente en 0 vistas bajo la estrategia actual.",
+    "Implementar seguimiento de la duración de los videos: Actualmente no se dispone de datos de duración, lo que impide determinar una duración óptima. Se recomienda empezar a registrarla para futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside en la combinación de la temática de noticias deportivas (dentro de 'ia_noticias') con un tono dramático, sensacionalista y de sorpresa, a menudo utilizando eventos futuros o hipotéticos (como el Mundial 2026) y emojis llamativos, concentrando la publicación entre las 21:00 y 23:00 horas."
+  "insight_semana": "La estrategia de `ia_noticias` basada en eventos deportivos hipotéticos y dramáticos (especialmente sobre el 'Mundial 2026') es la única que genera vistas significativas consistentemente, aunque muestra una tendencia de rendimiento ligeramente decreciente (-0.9), lo que sugiere la necesidad de explorar nuevas variantes o nichos secundarios."
 }
