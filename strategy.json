@@ -1,39 +1,33 @@
 {
-  "updated": "2026-07-28",
-  "iteracion": 223,
+  "updated": "2026-07-29",
+  "iteracion": 224,
   "niche_weights": {
-    "deportes": 0.001,
-    "ia_noticias": 0.99,
-    "finanzas": 0.001,
-    "entretenimiento": 0.001,
-    "negocios_digitales": 0.001,
-    "productividad_ia": 0.001,
-    "cripto_inversiones": 0.001,
-    "politica_latam": 0.004
+    "deportes": 0.007,
+    "ia_noticias": 0.95,
+    "finanzas": 0.007,
+    "entretenimiento": 0.007,
+    "negocios_digitales": 0.007,
+    "productividad_ia": 0.007,
+    "cripto_inversiones": 0.007,
+    "politica_latam": 0.008
   },
   "best_hooks": [
-    "¡[PAÍS/EQUIPO] [ACCIÓN ESPECTACULAR] A [PAÍS/EQUIPO] [MARCADOR]! 😱",
-    "[COMPETICIÓN]: [EQUIPO] [SITUACIÓN DRAMÁTICA] ¡SHOCK! 🤯",
-    "[PAÍS/JUGADOR] EN SHOCK: [EVENTO INESPERADO]! 😱",
-    "¡[PAÍS] ELIMINA A [PAÍS]: [MOMENTO CLAVE] EN [EVENTO]! 😱",
-    "La noticia [TIPO] que sacude [REGIÓN] hoy ⚽",
-    "¡[RESULTADO INESPERADO] en [EVENTO]? ¿QUÉ PASÓ? 😱"
+    "insuficientes datos para hooks efectivos (campo 'hook' vacío en TOP 10)"
   ],
   "avoid_hooks": [
-    "Títulos abstractos o filosóficos que no abordan un evento concreto (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Títulos que implican transacciones monetarias o promesas de pago (ej. '¡PAGA $200 O NADA!')",
-    "Títulos relacionados con finanzas, negocios digitales o tech (ej. 'TRES EMPRESAS VALEN MÁS...', 'El error de dinero...'), dado el nulo rendimiento de esos nichos",
-    "Preguntas de controversia muy específicas o con un alcance geográfico limitado que no generan interés masivo (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')"
+    "insuficientes datos para hooks que fallan (campo 'hook' vacío en videos más bajos)",
+    "patrones de títulos genéricos de autoayuda/motivación ('NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "títulos directos de ofertas financieras o avisos ('¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸')",
+    "títulos abstractos sobre negocios o comparaciones de empresas ('TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 22,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duración óptima",
   "recomendaciones": [
-    "Concentrar el 99% de la producción de contenido en el nicho 'ia_noticias', dado que es el único que genera vistas significativas y todos los videos top pertenecen a esta categoría.",
-    "Enfocarse en títulos que incluyan resultados deportivos específicos (a menudo de eventos futuros o hipotéticos como 'Mundial 2026'), menciones a equipos/países reconocibles y emojis de sorpresa/impacto (😱, 🤯) para maximizar el CTR.",
-    "Priorizar los horarios de publicación a las 22:00, 06:00 y 21:00, siendo las 22:00 el más consistente para los videos de alto rendimiento (apareciendo en 3 de los 10 videos top).",
-    "Abstenerse completamente de crear contenido en nichos como 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (como nicho separado del formato 'ia_noticias'), 'entretenimiento' y 'politica_latam' debido a su rendimiento consistentemente nulo.",
-    "Aunque no se dispone de datos de duración, mantener los videos entre 15 y 60 segundos es una práctica estándar para YouTube Shorts."
+    "Mantener la priorización en el nicho 'ia_noticias', que aunque muestra una tendencia negativa, sigue siendo el único con volumen de vistas significativo (228 promedio).",
+    "Explorar y experimentar con contenido del nicho 'productividad' (diferente de 'productividad_ia'), dado su repunte a 56 vistas de promedio y una fuerte tendencia positiva de 13.333, buscando adaptar su formato o temas.",
+    "Concentrar la publicación de contenido en los horarios de 22:00 (prioritario), 06:00 y 21:00, que consistentemente albergan los videos con más vistas.",
+    "Evitar categóricamente la creación de videos con temáticas genéricas de autoayuda, finanzas o negocios, ya que incluso cuando se les asigna erróneamente el nicho 'ia_noticias', registran 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias', específicamente aplicado a eventos deportivos sorprendentes (a menudo ficticios o futuros como 'Mundial 2026') y con un fuerte énfasis en la emoción y resultados inesperados en el título, es la ÚNICA estrategia de contenido funcional, capturando el 100% de la alta performance, mientras que todos los demás nichos rinden cero o vistas insignificantes."
+  "insight_semana": "El nicho 'ia_noticias', aunque mantiene el liderazgo en vistas absolutas, ha iniciado una tendencia negativa (-1.0), indicando una posible saturación o necesidad de evolución, mientras que el nicho 'productividad' (no incluido en los pesos del template) muestra un fuerte crecimiento de tendencia (13.333) a pesar de bajas vistas (56), sugiriendo una oportunidad emergente."
 }
