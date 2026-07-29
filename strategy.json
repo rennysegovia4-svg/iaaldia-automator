@@ -1,33 +1,39 @@
 {
   "updated": "2026-07-29",
-  "iteracion": 224,
+  "iteracion": 225,
   "niche_weights": {
-    "deportes": 0.007,
-    "ia_noticias": 0.95,
-    "finanzas": 0.007,
-    "entretenimiento": 0.007,
-    "negocios_digitales": 0.007,
-    "productividad_ia": 0.007,
-    "cripto_inversiones": 0.007,
-    "politica_latam": 0.008
+    "deportes": 0.02,
+    "ia_noticias": 0.8,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.03,
+    "productividad": 0.05
   },
   "best_hooks": [
-    "insuficientes datos para hooks efectivos (campo 'hook' vacío en TOP 10)"
+    "¡[EQUIPO/PAÍS] ELIMINA A [EQUIPO/PAÍS] en [EVENTO]! 😱/🤯",
+    "El [SUCESO] que paró al mundo en el [EVENTO] ⚽🌍",
+    "[LIGA/EVENTO]: [EQUIPO] [ACCIÓN SHOCK] ¡SHOCK! 🤯",
+    "[PAÍS/JUGADOR] EN SHOCK: [EVENTO CLAVE]! 😱",
+    "[EQUIPO] [SCORE] [EQUIPO] en [EVENTO]! ¿QUÉ PASÓ? 😱",
+    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [EVENTO] 🏆👑🔥"
   ],
   "avoid_hooks": [
-    "insuficientes datos para hooks que fallan (campo 'hook' vacío en videos más bajos)",
-    "patrones de títulos genéricos de autoayuda/motivación ('NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "títulos directos de ofertas financieras o avisos ('¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸')",
-    "títulos abstractos sobre negocios o comparaciones de empresas ('TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
+    "Títulos de autoayuda o consejos genéricos (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Títulos financieros abstractos o basados en porcentajes (ej. 'El error de dinero que comete el 80%')",
+    "Comparaciones de negocios/tecnología ambiguas (ej. 'TRES EMPRESAS VALEN MÁS que 25 años de tech')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para duración óptima",
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Mantener la priorización en el nicho 'ia_noticias', que aunque muestra una tendencia negativa, sigue siendo el único con volumen de vistas significativo (228 promedio).",
-    "Explorar y experimentar con contenido del nicho 'productividad' (diferente de 'productividad_ia'), dado su repunte a 56 vistas de promedio y una fuerte tendencia positiva de 13.333, buscando adaptar su formato o temas.",
-    "Concentrar la publicación de contenido en los horarios de 22:00 (prioritario), 06:00 y 21:00, que consistentemente albergan los videos con más vistas.",
-    "Evitar categóricamente la creación de videos con temáticas genéricas de autoayuda, finanzas o negocios, ya que incluso cuando se les asigna erróneamente el nicho 'ia_noticias', registran 0 vistas."
+    "Priorizar la creación de contenido enfocado en noticias deportivas hipotéticas (especialmente escenarios de 'Mundial 2026'), ya que este formato genera consistentemente las vistas más altas bajo la etiqueta 'ia_noticias'.",
+    "Mantener y optimizar el uso de emojis de sorpresa (😱, 🤯), drama (🏆👑🔥), y deporte (⚽🌍) en los títulos para maximizar el click-through rate.",
+    "Evitar por completo la producción de contenido de finanzas, negocios digitales o productividad genérica, incluso si se etiqueta como 'ia_noticias', ya que este tipo de videos registra 0 vistas.",
+    "Experimentar con la publicación en la franja horaria de 21:00 a 23:00, con especial atención a las 22:00, ya que concentra el mayor número de videos de alto rendimiento.",
+    "Monitorear de cerca la tendencia negativa de 'ia_noticias' (-0.8), a pesar de su alto volumen de vistas, y considerar pequeñas pruebas con el nicho de 'productividad' dado su incipiente crecimiento (trend 13.5)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias', aunque mantiene el liderazgo en vistas absolutas, ha iniciado una tendencia negativa (-1.0), indicando una posible saturación o necesidad de evolución, mientras que el nicho 'productividad' (no incluido en los pesos del template) muestra un fuerte crecimiento de tendencia (13.333) a pesar de bajas vistas (56), sugiriendo una oportunidad emergente."
+  "insight_semana": "El rendimiento del canal está casi totalmente impulsado por noticias deportivas hipotéticas bajo la etiqueta 'ia_noticias', siendo el 100% de los videos top 10 de esta temática, mientras que otros contenidos etiquetados similarmente o en otros nichos rinden 0 o muy pocas vistas, a pesar de una leve tendencia negativa general en 'ia_noticias'."
 }
