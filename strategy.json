@@ -1,32 +1,36 @@
 {
   "updated": "2026-07-30",
-  "iteracion": 232,
+  "iteracion": 233,
   "niche_weights": {
-    "deportes": 0.7,
-    "ia_noticias": 0.1,
-    "productividad": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.0,
+    "ia_noticias": 1.0,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Insuficientes datos de hooks en esta iteración."
+    "Noticia de Alto Impacto + Zona Geográfica/Evento + Emoji Emocional (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Resultado Inesperado/Eliminación + Equipos/Jugadores + Adjetivo Dramático + Emoji de Shock (ej. 'BÉLGICA ELIMINA A USA 4-1 ¡DEVASTADOR! 😱')",
+    "Liga/Torneo Específico + Giro Sorpresa + Exclamación + Emoji de Asombro (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "País/Figura Deportiva + Crisis/Acción Paralizante + Verbo Fuerte + Emoji de Impacto (ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
+    "Enfrentamiento Global/Clásico + Desenlace Agónico + Emoji de Drama (ej. 'ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱')",
+    "Pregunta de Intriga + Evento Inusual/Sorpresa + Emoji de Curiosidad/Shock (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')"
   ],
   "avoid_hooks": [
-    "Insuficientes datos de hooks en esta iteración."
+    "Preguntas ambiguas o especulativas sobre eventos deportivos sin una resolución clara o dramática (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Títulos abstractos de autoayuda o consejos financieros personales que no se alinean con el nicho de noticias de impacto (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Declaraciones financieras o empresariales con cifras específicas y genéricas que no generan interés masivo ni emoción (ej. '¡PAGA $200 O NADA! 😱')"
   ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Enfocarse casi exclusivamente en contenido deportivo dentro del nicho `ia_noticias`, replicando el éxito de títulos dramáticos sobre eliminaciones y resultados de grandes torneos como el Mundial 2026, ya que el 100% de los videos top pertenecen a esta categoría.",
-    "Concentrar las publicaciones en los horarios de mayor rendimiento detectados: 22h y 6h, con exploraciones adicionales en 21h, 23h y 0h, que también han mostrado ser efectivos para los videos más vistos.",
-    "Continuar utilizando emojis que denotan emoción y sorpresa (😱, 🤯, 🏆, 👑, 🔥, ⚽, 🌍) en los títulos, ya que 8 de los 10 videos top los emplean, aumentando la visibilidad y el CTR.",
-    "Evitar completamente títulos ambiguos, preguntas especulativas o temáticas genéricas sobre finanzas/autoayuda, ya que los videos con estos patrones han generado 0 vistas.",
-    "Dado el `trend` negativo de -0.3 en el nicho `ia_noticias`, es crucial innovar en la narrativa o el formato de las noticias deportivas para mantener el engagement y prevenir una disminución futura en las vistas."
+    "Consolidar la producción de contenido exclusivamente en el nicho 'ia_noticias', ya que es el único que ha demostrado generar vistas de manera consistente (promedio de 167 vistas por video) y tiene una tendencia positiva (0.25).",
+    "Maximizar el uso de títulos con alto impacto emocional, incorporando resultados deportivos dramáticos (eliminaciones, goles agónicos) y referencias a grandes eventos futuros como el 'Mundial 2026', siempre acompañados de emojis de sorpresa (😱, 🤯) o relacionados con el deporte (⚽).",
+    "Programar la publicación de videos Shorts principalmente en la franja horaria de 21:00h a 23:00h, con especial énfasis a las 22:00h, que es la hora más exitosa para los videos top analizados."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal depende exclusivamente de noticias deportivas generadas por IA con un enfoque dramático y centrado en eventos de gran magnitud (ej. Mundial 2026), mientras que cualquier otro nicho o tipo de título no genera vistas y debe ser descartado."
+  "insight_semana": "El canal encuentra su mayor tracción y engagement en noticias deportivas generadas por IA, particularmente aquellas con resultados inesperados o especulaciones de grandes torneos (Mundial 2026), impulsadas por títulos cargados de emoción y emojis. Otros nichos, incluyendo 'deportes' genérico, no generan vistas, lo que refuerza la necesidad de un enfoque ultra-especializado."
 }
