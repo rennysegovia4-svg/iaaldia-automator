@@ -1,37 +1,36 @@
 {
-  "updated": "2026-07-29",
-  "iteracion": 229,
+  "updated": "2026-07-30",
+  "iteracion": 230,
   "niche_weights": {
-    "deportes": 0.01,
-    "ia_noticias": 0.85,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
+    "deportes": 0.05,
+    "ia_noticias": 0.6,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
     "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.0
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Dramatismo Regional/Urgencia: [Noticia deportiva] que sacude [Región] [Hoy/Ahora] [Emoji de Impacto]",
-    "Eliminación Impactante: [Equipo 1] ELIMINA A [Equipo 2] [Resultado] en [Evento] 😱 [Adjetivo de Impacto]",
-    "Shock por Cambio/Evento Inesperado: [Liga/Equipo]: [Evento] ¡SHOCK! 🤯",
-    "Crisis/Paralización Nacional: [País/Entidad] EN SHOCK: [Evento] PARALIZA! 😱",
-    "Hito Histórico/Triunfo Épico: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol [Evento] 🏆👑🔥",
-    "Pregunta Abierta de Confusión/Drama: [Evento] [Resultado]! ¿QUÉ PASÓ? 😱"
+    "Evento Específico + Resultado Impactante + Emoción (ej. BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!)",
+    "Noticia Urgente + Geografía + Deporte (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
+    "Liga/Equipo + Giro Inesperado + Exclamación (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
+    "País/Equipo + Impacto + Verbo Fuerte (ej. ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱)",
+    "Torneo Clave + Enfrentamiento Directo + Drama (ej. ESPAÑA ELIMINA A PORTUGAL: ¡GOL AGÓNICO EN MUNDIAL! 😱)",
+    "Logro Máximo + Impacto Global + Emojis (ej. ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥)"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de finanzas o autoayuda sin un gancho emocional o de urgencia claro.",
-    "Afirmaciones de valor monetario o empresarial vagas que no generan una curiosidad inmediata y específica.",
-    "Preguntas o acusaciones de fraude con poca especificidad o sin un evento dramático asociado."
+    "Afirmaciones genéricas de autoayuda o motivación (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA 😱)",
+    "Preguntas abstractas o ambiguas sobre finanzas/negocios (ej. ¡PAGA $200 O NADA! 😱)",
+    "Preguntas abiertas o especulativas sobre posibles fraudes en eventos deportivos (ej. PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el nicho `ia_noticias` enfocado casi exclusivamente en noticias deportivas con alto dramatismo, resultados inesperados y menciones a eventos o ligas importantes.",
-    "Implementar títulos que utilicen lenguaje de shock, emociones fuertes, nombres específicos de equipos/jugadores/eventos y emojis que refuercen la sensación de urgencia o asombro.",
-    "Cesar completamente la producción de contenido sobre finanzas genéricas, autoayuda o negocios abstractos, ya que han demostrado un rendimiento nulo constante (0 vistas).",
-    "Concentrar las publicaciones en el horario nocturno, especialmente entre las 21:00 y 23:00, con la hora de las 22:00 como el pico óptimo de rendimiento para el contenido actual."
+    "Concentrar la producción de contenido `ia_noticias` exclusivamente en eventos deportivos con resultados dramáticos y específicos, como eliminaciones de grandes equipos o cambios de liderazgo en ligas importantes.",
+    "Publicar videos principalmente entre las 21:00 y 23:00 horas, identificando las 22:00 como la hora pico con mayor potencial de vistas basado en el rendimiento actual.",
+    "Utilizar títulos que incluyan nombres de equipos, torneos clave, resultados impactantes (ej. 'ELIMINA', 'SHOCK', 'DEVASTADOR') y emojis de emoción (😱, 🤯) para maximizar el engagement."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es altamente exitoso solo cuando el contenido es de noticias deportivas con un fuerte componente de shock y drama, mientras que las variaciones del mismo nicho hacia temas de finanzas o autoayuda resultan en 0 vistas, lo que indica una clara preferencia de la audiencia por el contenido deportivo dramático."
+  "insight_semana": "El nicho de `ia_noticias` enfocado en resultados deportivos dramáticos de torneos importantes es el único generador de vistas significativo (100% de videos top), pero su tendencia ligeramente negativa (-1.0) sugiere la necesidad de refrescar las narrativas o explorar sub-nichos dentro del deporte para mantener el engagement."
 }
