@@ -1,39 +1,39 @@
 {
   "updated": "2026-07-31",
-  "iteracion": 238,
+  "iteracion": 239,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.15,
+    "ia_noticias": 0.8,
     "productividad": 0.1,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.01,
+    "deportes": 0.02,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.0
+    "productividad_ia": 0.01,
+    "entretenimiento": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[EVENTO/EQUIPO] [ACCIÓN/RESULTADO DRAMÁTICO] [IMPACTO] [EMOJI SHOCK]",
-    "[LIGA/EQUIPO] [CAMBIO DE ESTADO SHOCK] ¡SHOCK! [EMOJI ASOMBRO]",
-    "¡[TÍTULO/LOGRO DRAMÁTICO]! [DESCRIPCIÓN EXAGERADA] [EMOJIS VICTORIA/FUEGO]",
-    "[EQUIPOS/RESULTADO] EN [EVENTO]! ¿QUÉ PASÓ? [EMOJI INCÓGNITA/SHOCK]",
-    "[PAÍS] EN SHOCK: [SUCESO CLAVE]! [EMOJI SHOCK]",
-    "La noticia deportiva que sacude [REGIÓN] hoy [EMOJI DEPORTE]"
+    "Noticia [deportiva/de actualidad] que sacude [región/comunidad] hoy [emoji de impacto]",
+    "[EQUIPO A] ELIMINA A [EQUIPO B] [marcador opcional] en el [Evento Importante] [emoji de shock] ¡[Adjetivo de impacto]!",
+    "[Liga/Equipo]: [Acción impactante] ¡SHOCK! [emoji de sorpresa]",
+    "[País/Región] EN SHOCK: [Personaje/Evento] [Verbo de impacto]! 😱",
+    "¡[Título de Logro]! El nuevo rey del [tema] [Año del evento] [emojis de celebración]",
+    "[EQUIPO A] [Resultado] [EQUIPO B] EN [Evento Importante]! ¿QUÉ PASÓ? 😱"
   ],
   "avoid_hooks": [
-    "[Tópico generalista/motivacional] [IMPACTO GENÉRICO] [EMOJI ASOMBRO]",
-    "[Afirmación financiera/negocio abstracta/genérica] [EMOJI FINANZAS/ASOMBRO]",
-    "[Evento deportivo menor/específico sin gran drama] ¿ES FRAUDE? [EMOJI ESPECÍFICO]"
+    "Títulos que utilizan el emoji `⚡`",
+    "Títulos genéricos de finanzas o autoayuda sin un evento noticioso o de alto impacto",
+    "Afirmaciones abstractas sobre negocios o dinero sin contexto o relevancia inmediata"
   ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Concentrar el 60% del contenido en noticias deportivas de alto impacto, especialmente aquellas que generen drama y anticipación sobre grandes eventos futuros (e.g., 'Mundial 2026'), replicando los patrones de los títulos exitosos.",
-    "Dada la alta volatilidad del nicho 'ia_noticias' (rendimiento polarizado entre miles de vistas y 0 vistas, y una tendencia negativa del -1.0), es crucial realizar pruebas A/B constantes en subtemas y ganchos, y estar preparado para adaptar rápidamente la estrategia si la audiencia pierde interés.",
-    "Publicar los videos más prometedores entre las 21:00 y las 23:00 (hora local de la audiencia principal), con una especial atención a las 22:00, que es el momento de mayor concentración de éxitos (30% de los videos top).",
-    "Evitar a toda costa los títulos y temas genéricos de autoayuda, finanzas abstractas o eventos deportivos de bajo impacto, ya que han demostrado consistentemente cero vistas.",
-    "Se recomienda encarecidamente comenzar a recolectar datos sobre la duración de los videos para identificar una duración óptima, ya que esta métrica es clave para el rendimiento de Shorts y actualmente no está disponible para análisis."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, centrándose exclusivamente en noticias deportivas de alto impacto, preferiblemente hipotéticas sobre eventos futuros como el 'Mundial 2026', dado su rendimiento dominante.",
+    "Asegurar el uso de emojis de shock (`😱`, `🤯`) y emoción (`🏆👑🔥`) en los títulos, ya que están presentes en el 100% de los videos top y demuestran alta efectividad para captar la atención.",
+    "Concentrar las publicaciones entre las 21:00 y las 23:00, con la hora de las 22:00 como la ventana de mayor potencial, basándose en la concentración de videos exitosos en ese rango.",
+    "Evitar completamente la publicación de contenido genérico de finanzas, autoayuda o negocios, así como el uso del emoji `⚡`, ya que han demostrado ser ineficaces y responsables de los videos con 0 vistas.",
+    "Dado que no hay datos sobre la duración óptima de los Shorts, se recomienda realizar pruebas A/B con duraciones variadas (ej. 15s, 30s, 45s) para identificar el punto dulce de retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia más efectiva para este canal es la creación de contenido de 'ia_noticias' centrado en eventos deportivos de alto impacto y anticipación (como el Mundial 2026), utilizando títulos con emojis de shock y publicando en la noche, a pesar de la extrema volatilidad del nicho."
+  "insight_semana": "El rendimiento del canal está casi por completo impulsado por contenido de `ia_noticias` específicamente temático sobre deportes de alto impacto (reales o simulados como el Mundial 2026), mientras que otros nichos y temas genéricos de finanzas/autoayuda no generan ningún engagement."
 }
