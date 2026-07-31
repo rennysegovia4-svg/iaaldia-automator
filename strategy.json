@@ -1,37 +1,40 @@
 {
-  "updated": "2026-07-30",
-  "iteracion": 235,
+  "updated": "2026-07-31",
+  "iteracion": 236,
   "niche_weights": {
-    "ia_noticias": 0.95,
-    "deportes": 0.01,
+    "deportes": 0.02,
+    "ia_noticias": 0.9,
     "finanzas": 0.01,
     "entretenimiento": 0.01,
     "negocios_digitales": 0.01,
-    "productividad_ia": 0.005,
+    "productividad_ia": 0.01,
     "cripto_inversiones": 0.005,
-    "politica_latam": 0.0
+    "politica_latam": 0.005,
+    "productividad": 0.03
   },
   "best_hooks": [
-    "[ENTIDAD] [VERBO IMPACTANTE/RESULTADO NEGATIVO] [EVENTO] [EMOJI SHOCK]",
-    "[PAÍS/EQUIPO] EN SHOCK: [SUCESO CLAVE]! [EMOJI SHOCK]",
-    "[NOTICIA DRAMÁTICA] ¡[EMOJI SHOCK/CELEBRACIÓN]!",
-    "¡[ENTIDAD] ELIMINADO/CAMPEÓN del [EVENTO]! [EMOJI SHOCK/VICTORIA]",
-    "[PREGUNTA IMPACTANTE] [RESULTADO] EN [EVENTO]! ¿QUÉ PASÓ? [EMOJI SHOCK]",
-    "La noticia [CATEGORÍA] que sacude [REGIÓN] hoy [EMOJI RELEVANTE]"
+    "Noticia deportiva que sacude [Región/Mundo] hoy [⚽]",
+    "[País A] ELIMINA A [País B] [Marcador] en [Evento Grande] [😱 ¡EMOCIÓN!]",
+    "[Liga/Equipo] [Acción Impactante] ¡[SHOCK/SORPRESA]! [🤯]",
+    "[País] EN SHOCK: [Jugador/Evento] PARALIZA! [😱]",
+    "[Jugador] ELIMINA A [País] DEL [Evento Grande]! [🤯]",
+    "¡[País] [Resultado] [País] en [Evento Grande]! ¿QUÉ PASÓ? [😱]"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas sin un evento o entidad específica (ej: 'NO TOMAR RIESGO...', 'El error de dinero...')",
-    "Títulos de finanzas/negocios abstractos o poco claros que no generen intriga inmediata (ej: '¡PAGA $200 O NADA!', 'TRES EMPRESAS VALEN MÁS...')",
-    "Uso de emojis de baja intensidad emocional o irrelevantes para la sorpresa/drama (ej: `⚡`, `💸` en lugar de `😱`, `🤯`)"
+    "Títulos de autoayuda o motivación genéricos sin anclaje deportivo global.",
+    "Títulos centrados en finanzas personales, empresariales o valoraciones de compañías.",
+    "Noticias deportivas hiperelegios o de fraude local que no apelan a una audiencia masiva ('¿ES FRAUDE?')."
   ],
   "best_hora": 22,
-  "duracion_optima": null,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido exclusivamente dentro del nicho `ia_noticias` (enfocado en deportes y con alta emocionalidad), dado que es el único con rendimiento positivo y una tendencia de crecimiento del +4.5, y detener la producción de otros nichos que resultan en 0 vistas.",
-    "Diseñar títulos utilizando las fórmulas de gancho identificadas, incorporando siempre al menos un emoji de alto impacto emocional (`😱`, `🤯`) y mencionando eventos o entidades deportivas específicas como 'Mundial 2026', países o jugadores clave, para maximizar el CTR.",
-    "Concentrar las publicaciones en la franja horaria de 21:00 a 23:00, haciendo especial énfasis en las 22:00, que es la hora pico para los videos de mayor rendimiento (6 de los 10 top videos).",
-    "Evitar completamente títulos o temáticas de finanzas genéricas, negocios abstractos o autoayuda, ya que han demostrado consistentemente una nula efectividad (0 views en el Top 5 más bajo)."
+    "Concentrar la producción de contenido en el nicho `ia_noticias` que abarque específicamente noticias deportivas globales de alto impacto, como las de 'Mundial 2026'.",
+    "Publicar la mayoría de los videos en la franja horaria de 21h a 23h, priorizando las 22h para la máxima exposición.",
+    "Asegurar la inclusión de emojis de alta intensidad emocional (ej., `😱`, `🤯`, `🏆👑🔥`) en todos los títulos de `ia_noticias` para optimizar el CTR.",
+    "Evitar categóricamente títulos de índole financiera, de autoayuda, de negocios o de noticias deportivas locales/específicas de bajo alcance, incluso si se etiquetan como `ia_noticias`, ya que resultan en 0 vistas.",
+    "Continuar utilizando y experimentando con nombres de países, jugadores y el año 'Mundial 2026' en los títulos para capitalizar el interés demostrado.",
+    "Establecer un sistema para registrar y analizar la duración de los videos, ya que es una métrica clave actualmente ausente que podría optimizar aún más el rendimiento de los Shorts."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La consolidación de 'ia_noticias' como el único nicho viable es total, con un repunte significativo en su tendencia (+4.5) y el 100% de los videos top siendo de esta categoría y temática deportiva, mientras el resto de nichos muestran nulo rendimiento (0 views)."
+  "insight_semana": "El éxito masivo dentro de `ia_noticias` proviene casi exclusivamente de noticias deportivas globales de alto impacto (ej. Mundial 2026), mientras que otros temas bajo la misma etiqueta resultan en 0 vistas, contradiciendo la hipótesis previa de que los fallos venían de nichos externos."
 }
