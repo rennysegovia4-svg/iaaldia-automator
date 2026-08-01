@@ -1,39 +1,40 @@
 {
   "updated": "2026-08-01",
-  "iteracion": 243,
+  "iteracion": 244,
   "niche_weights": {
     "ia_noticias": 0.9,
     "productividad": 0.05,
-    "deportes": 0.007,
     "finanzas": 0.007,
-    "entretenimiento": 0.007,
     "negocios_digitales": 0.007,
     "cripto_inversiones": 0.007,
     "productividad_ia": 0.007,
+    "deportes": 0.007,
+    "entretenimiento": 0.007,
     "politica_latam": 0.008
   },
   "best_hooks": [
-    "Noticias de último minuto [Deporte/Liga] que sacuden [Región/Mundo].",
-    "¡[Equipo/Jugador] ELIMINA a [Equipo/Jugador]! ¡[Marcador]! ¡[Emoción: SHOCK/DEVASTADOR]!",
-    "Escenario [Futuro/Hipótetico] del Mundial [Año]: ¡[Evento Dramático]!",
-    "[Partido/Evento]: ¿QUÉ PASÓ con [Equipo/Jugador]? 😱",
-    "El [Logro/Evento] que PARALIZÓ al [Mundo/País] en el Mundial [Año].",
-    "¡[Equipo/Jugador] es el CAMPEÓN DEL MUNDO! El nuevo rey del fútbol."
+    "[Equipo/Evento] ELIMINA A [Equipo/Entidad] [Marcador/Resultado] en el Mundial [Año] 😱 ¡[Adjetivo Impactante]!",
+    "[Tema/País] EN SHOCK: [Persona/Evento] ¡[Verbo Impactante]! 😱",
+    "[Liga/Evento]: [Equipo/Situación] [Verbo Acción] ¡[Reacción/Emoción]! 🤯",
+    "¡[Equipo] ELIMINADO del Mundial [Año]! 😱 [Otro Equipo/Hecho] HACE HISTORIA",
+    "[Jugador/Equipo] ELIMINA A [Equipo] DEL MUNDIAL [Año]! 🤯",
+    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial [Año] 🏆👑🔥"
   ],
   "avoid_hooks": [
-    "Consejos financieros genéricos o advertencias sobre 'errores comunes' sin un gancho de inmediatez o drama deportivo.",
-    "Títulos con enfoque transaccional o de oferta directa, que suenan a esquema 'rápido' o 'pagar'.",
-    "Noticias deportivas centradas en acusaciones de 'fraude' o controversias locales sin un impacto mundial dramático."
+    "Títulos de consejo genérico o autoayuda sin un evento específico ni entidades (e.g., 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱').",
+    "Preguntas que insinúan fraude sin contexto claro o con excesiva especificidad temporal (e.g., 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡').",
+    "Afirmaciones financieras o empresariales vagas y poco impactantes que no generan curiosidad inmediata (e.g., 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯', 'El error de dinero que comete el 80% 💸')."
   ],
   "best_hora": 22,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` enfocado exclusivamente en deportes (principalmente fútbol/mundiales), ya que es el único segmento que genera vistas significativas.",
-    "Implementar títulos que utilicen lenguaje dramático y emocional (ej. 'SHOCK', 'ELIMINA', 'DEVASTADOR') y referencias a eventos futuros o hipotéticos (ej. 'Mundial 2026') para maximizar la intriga.",
-    "Concentrar las publicaciones en la franja horaria de 21:00 a 23:00, siendo las 22:00 la hora óptima, para alcanzar a la audiencia más activa.",
-    "Evitar contenido de consejos financieros o negocios genéricos, y noticias deportivas con tono de fraude local, ya que han demostrado un rendimiento nulo.",
-    "Dado que no hay datos de duración, realizar pruebas A/B con duraciones de Shorts entre 15 y 58 segundos para identificar la duración óptima para la retención."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, específicamente enfocado en noticias deportivas hipotéticas o futuras (ej. 'Mundial 2026'), que demostraron una dominancia absoluta en vistas (100% del Top 10).",
+    "Implementar títulos con alto impacto emocional y dramático, utilizando palabras como 'SHOCK', 'ELIMINA', 'DEVASTADOR', 'PARALIZA' y emojis de sorpresa/drama (😱, 🤯) para maximizar el CTR, como se observa en el 90% de los videos más vistos.",
+    "Aprovechar la franja horaria de 21:00 a 23:00, con especial atención a las 22:00, para publicar los videos más importantes, ya que concentra la mayor parte del éxito (60% de los videos del Top 10).",
+    "Evitar títulos que sean consejos genéricos, preguntas sobre 'fraude' sin un contexto claro, o afirmaciones financieras/empresariales vagas, ya que han resultado en 0 vistas en los videos de menor rendimiento.",
+    "Incorporar al menos un emoji relevante en el 100% de los títulos, dado que todos los videos del Top 10 los utilizan, sugiriendo una mejora significativa en la visibilidad y el atractivo.",
+    "Recolectar datos sobre la duración de los videos para identificar una duración óptima, ya que esta métrica no pudo ser determinada con la información actual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La audiencia del canal responde de manera abrumadora y casi exclusiva a `ia_noticias` con temática deportiva (fútbol/mundiales), especialmente cuando los títulos emplean drama, sorpresa y escenarios hipotéticos o futuros (como 'Mundial 2026'), mientras que el contenido de otros nichos ha tenido un fracaso rotundo (0 vistas)."
+  "insight_semana": "La creación de narrativas sobre eventos deportivos hipotéticos o futuros (ej. 'Mundial 2026') dentro del nicho 'ia_noticias' es la estrategia más potente, responsable del 70% de los videos del Top 10 y superando a cualquier otro tipo de contenido."
 }
