@@ -1,38 +1,39 @@
 {
   "updated": "2026-08-01",
-  "iteracion": 245,
+  "iteracion": 246,
   "niche_weights": {
-    "deportes": 0.02,
-    "ia_noticias": 0.92,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
+    "ia_noticias": 0.85,
+    "productividad": 0.05,
+    "deportes": 0.03,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
     "negocios_digitales": 0.01,
     "productividad_ia": 0.01,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Evento deportivo dramático + Entidad específica + Reacción emocional intensa (ej: 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
-    "Entidad importante en shock + Acción paralizante específica (ej: 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
-    "Noticia global impactante + Tema deportivo que sacude (ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Eliminación/Derrota + Entidades específicas + Detalle agónico/histórico + Reacción (ej: '¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA')",
-    "Resultado inesperado/Empate + Pregunta + Reacción emocional (ej: 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Declaración de Campeón/Rey + Evento futuro + Emojis de celebración (ej: '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')"
+    "[Tema Deportivo][Acción Disruptiva/Sorprendente] [Resultado numérico opcional] [Contexto de Gran Evento] ¡[Emoción fuerte]!",
+    "[Equipo/Jugador] [Impacto Negativo/Positivo Inesperado] ¡[Emoción de Shock]!",
+    "[País/Equipo] EN SHOCK: [Jugador/Evento] [Verbo de Parálisis/Impacto]! 😱",
+    "[País/Equipo A] ELIMINA A [País/Equipo B]: ¡[Evento Decisivo] EN [Contexto]! 😱",
+    "¡[Campeón/Nuevo Rey] DEL MUNDO! El nuevo rey del fútbol [Contexto] 🏆👑🔥",
+    "[Evento/Suceso Inusual] [Verbo de Impacto] al mundo en el [Contexto de Gran Evento] ⚽🌍"
   ],
   "avoid_hooks": [
-    "Preguntas vagas sobre eventos no especificados o 'fraude' sin contexto ni gancho emocional (ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
-    "Declaraciones de autoayuda o motivación genéricas sin un evento o aplicabilidad específica (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Afirmaciones abstractas o clickbait sobre finanzas/negocios con números genéricos o errores comunes (ej: 'El error de dinero que comete el 80% 💸', 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
+    "Preguntas genéricas sin contexto dramático ni evento específico (Ej: 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')",
+    "Afirmaciones de autoayuda o consejo financiero abstracto (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', 'El error de dinero que comete el 80% 💸')",
+    "Declaraciones monetarias o comparativas sin una historia clara o relevancia inmediata (Ej: '¡PAGA $200 O NADA! 😱', 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` enfocado exclusivamente en noticias deportivas *hipotéticas o futuras* (ej. 'Mundial 2026') debido a su rendimiento superior (100% del Top 10).",
-    "Mantener la estrategia de incluir emojis dramáticos (😱, 🤯) y relevantes (⚽, 🏆, 🔥) en los títulos, ya que están presentes en el 100% del Top 10.",
-    "Optimizar las publicaciones para la franja horaria de 21:00 a 23:00, con especial atención a las 22:00, que concentra el mayor éxito (30% de los top videos).",
-    "Evitar completamente la creación de contenido de `ia_noticias` que aborde temas de finanzas, negocios digitales o autoayuda genérica, ya que estos resultaron en 0 vistas en los videos menos exitosos.",
-    "Diseñar títulos que combinen una entidad específica (equipo, jugador) con una acción dramática (elimina, cede liderato) y una reacción emocional explícita (shock, devastador)."
+    "Priorizar el contenido del nicho `ia_noticias` enfocado exclusivamente en deportes ficticios o hipotéticos con un alto nivel de drama y emoción.",
+    "Diseñar títulos que combinen una entidad específica (equipo, jugador, país) con una acción dramática (elimina, cede liderato, paraliza) y una reacción emocional explícita (shock, devastador, 😱, 🤯, 🔥).",
+    "Incluir referencias a eventos deportivos futuros y relevantes como 'Mundial 2026' para generar expectación y contextualizar el drama.",
+    "Evitar completamente la creación de contenido o títulos genéricos de autoayuda, finanzas abstractas o preguntas ambiguas, ya que han demostrado consistentemente 0 vistas.",
+    "Concentrar las publicaciones en el horario de 21:00 a 23:00, con especial énfasis en las 22:00, y considerar también las 6:00 AM para posibles picos de audiencia."
   ],
-  "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del nicho `ia_noticias` es altamente específico y depende de que el contenido sea sobre *deportes*, preferiblemente noticias hipotéticas o futuras de alto dramatismo. Cuando el contenido de `ia_noticias` se desvía a temas de finanzas o autoayuda, el rendimiento cae drásticamente a 0 vistas, confirmando que la 'IA' como método no garantiza vistas si el 'asunto' no es de interés probado."
+  "nivel_confianza": 0.65,
+  "insight_semana": "La estrategia de `ia_noticias` enfocada en deportes ficticios/hipotéticos con un tono dramático y títulos emocionales, incluyendo referencias a eventos futuros como el 'Mundial 2026', es la única que ha generado vistas significativas hasta el momento."
 }
