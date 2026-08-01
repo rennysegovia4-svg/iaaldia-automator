@@ -1,39 +1,30 @@
 {
-  "updated": "2026-07-31",
-  "iteracion": 241,
+  "updated": "2026-08-01",
+  "iteracion": 242,
   "niche_weights": {
-    "ia_noticias": 0.6,
-    "deportes": 0.2,
+    "ia_noticias": 0.85,
     "productividad": 0.1,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.005,
+    "politica_latam": 0.005,
+    "deportes": 0.0
   },
   "best_hooks": [
-    "[Equipo/Jugador A] [Acción Impactante] a [Equipo/Jugador B] [Evento]! [Emoji de Shock/Emoción]",
-    "[Noticia/Evento] que [Verbo Fuerte] a [País/Región] [Hoy/Ahora]! [Emoji]",
-    "¡[Resultado Sorprendente] en [Evento]! [Pregunta/Exclamación de Asombro] 😱",
-    "[Liga/Evento]: [Equipo] [Situación Dramática] ¡[Emoción Fuerte]! 🤯",
-    "El [Sustantivo Impactante] que [Acción Global] en el [Evento] [Emoji de Impacto]",
-    "¡[País/Equipo] [Resultado Épico/Devastador] del [Evento]! [Afirmación Histórica] [Emoji]"
+    "insuficientes datos para hooks"
   ],
   "avoid_hooks": [
-    "Títulos genéricos sobre dinero o errores financieros (Ej: 'El error de dinero...')",
-    "Títulos con consejos de vida o motivación abstracta sin aplicación específica (Ej: 'NO TOMAR RIESGO...')",
-    "Títulos con datos empresariales abstractos o promesas transaccionales (Ej: '¡PAGA $200 O NADA!', 'TRES EMPRESAS VALEN MÁS...')"
+    "insuficientes datos para evitar hooks"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": "insuficientes datos para duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de noticias deportivas, utilizando la metodología 'ia_noticias', dada su dominancia del 100% en los videos más vistos.",
-    "Continuar utilizando nombres específicos de equipos, países, jugadores y eventos (como 'Mundial 2026', 'HAALAND', 'BRASIL', 'LIGA MX') en los títulos para maximizar el engagement.",
-    "Concentrar las publicaciones en la franja horaria de 21:00 a 23:00, con énfasis en las 22:00 horas, que ha demostrado ser la más efectiva para captar la audiencia.",
-    "Descartar completamente la creación de contenido sobre finanzas genéricas, consejos de dinero, riesgos empresariales o datos abstractos de negocios, ya que consistentemente resultan en 0 vistas.",
-    "Considerar la exploración cautelosa del nicho 'productividad' o 'productividad_ia' con títulos más específicos, ya que es el único otro nicho con vistas (56 avg) y una tendencia positiva, aunque con baja puntuación."
+    "Priorizar la creación de Shorts bajo el nicho 'ia_noticias' enfocados exclusivamente en temáticas deportivas (fútbol, mundiales), dado que el 100% del Top 10 pertenece a esta categoría.",
+    "Integrar nombres específicos de equipos, países o jugadores clave (ej. 'HAALAND', 'BRASIL', 'AMÉRICA'), junto con emojis de impacto (`😱`, `🤯`, `🔥`), en los títulos para maximizar la visibilidad y el engagement.",
+    "Concentrar las publicaciones en la franja horaria de 21:00 a 23:00, con especial énfasis a las 22:00, ya que es la ventana de mayor rendimiento para los videos exitosos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento exitoso del canal se basa casi exclusivamente en la combinación de la metodología 'ia_noticias' aplicada a temas deportivos (específicamente fútbol y mundiales), acaparando el 100% de los videos en el Top 10, mientras que el resto de nichos no generan vistas, indicando una fuerte especialización del interés de la audiencia actual."
+  "insight_semana": "El éxito del canal está directamente ligado a la combinación del nicho 'ia_noticias' con contenido deportivo (fútbol/mundiales), mientras que el resto de los nichos probados han mostrado una nula o muy baja tracción, incluyendo el nicho 'deportes' genérico."
 }
