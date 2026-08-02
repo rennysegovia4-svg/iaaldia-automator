@@ -1,38 +1,38 @@
 {
   "updated": "2026-08-02",
-  "iteracion": 249,
+  "iteracion": 250,
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 0.95,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0,
-    "productividad": 0.05
+    "ia_noticias": 0.9,
+    "deportes": 0.05,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "entretenimiento": 0.005,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "[País/Equipo] + [Acción dramática] + [Resultado] + [Evento Futuro] [Emoji impacto]",
-    "[País/Equipo] en SHOCK: [Jugador/Evento clave] [Verbo impacto]! 😱",
-    "[Liga/Evento] + [País/Equipo] CEDE LIDERATO ¡SHOCK! 🤯",
-    "¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial [Año] 🏆👑🔥",
-    "El gol que paró al mundo en el Mundial [Año] ⚽🌍",
-    "¡[País/Equipo] ELIMINADO del [Evento Futuro]! 😱 [País/Equipo Secundario] HACE HISTORIA"
+    "[ENTIDAD ESPECÍFICA] [ACCIÓN DRAMÁTICA] ¡EMOCIÓN FUERTE! (Ej: BÉLGICA ELIMINA A USA 4-1 😱)",
+    "[EVENTO FUTURO/AÑO ESPECÍFICO]: [IMPACTO ENORME] ¡SHOCK/EMOCIÓN! (Ej: Mundial 2026: ¡DEVASTADOR! 🤯)",
+    "[ENTIDAD] [RESULTADO INESPERADO] ¿PREGUNTA DE INCERTIDUMBRE? 😱 (Ej: BRASIL 0-0 NORUEGA ¿QUÉ PASÓ? 😱)",
+    "[NOTICIA GENERAL DE ALTO IMPACTO EN LATAM/MUNDIAL] + EMOJIS RELEVANTES (Ej: La noticia deportiva que sacude LATAM hoy ⚽)",
+    "¡CAMPEÓN DEL MUNDO! [DESCRIPCIÓN ENFÁTICA] 🏆👑🔥 (Ej: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026)",
+    "[ENTIDAD] ELIMINADO/A del [EVENTO ESPECÍFICO]! 😱 [HECHO HISTÓRICO/IMPACTO] (Ej: ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)"
   ],
   "avoid_hooks": [
-    "Títulos que plantean preguntas ambiguas o negativas sobre 'riesgo' o 'fraude' sin un ancla deportiva o de evento específico (ej: '¿ES FRAUDE? ⚡').",
-    "Llamadas directas a la acción monetaria o afirmaciones de alto riesgo financiero sin contexto (ej: '¡PAGA $200 O NADA! 😱').",
-    "Afirmaciones genéricas sobre finanzas o negocios digitales sin un drama o evento inmediato (ej: 'El error de dinero que comete el 80% 💸')."
+    "Títulos genéricos de autoayuda o finanzas abstractas (Ej: NO TOMAR RIESGO es tu MAYOR AMENAZA)",
+    "Llamadas a la acción directas sobre dinero o transacciones (Ej: ¡PAGA $200 O NADA! 😱)",
+    "Noticias reales o eventos específicos que carecen del elemento 'hipotético dramático' exitoso del canal (Ej: PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Mantener el enfoque en el nicho `ia_noticias` con contenido exclusivamente de deportes dramáticos o hipotéticos, ya que es el único generador de vistas significativas.",
-    "Maximizar el uso de títulos con alto impacto emocional, emojis relevantes (😱, 🤯, 🏆👑🔥) y nombres específicos de países, equipos o jugadores, generando un claro drama o resultado.",
-    "Continuar incluyendo años específicos de eventos futuros importantes (ej: 'Mundial 2026') en los títulos para generar expectación y relevancia.",
-    "Concentrar las publicaciones de videos en el horario nocturno, priorizando las 22:00 (hora local del público objetivo) para captar la mayor atención."
+    "Mantener el enfoque exclusivo en el nicho 'ia_noticias' aplicado a eventos deportivos dramáticos e hipotéticos (ej. Mundial 2026), ya que es el único que genera vistas.",
+    "Continuar utilizando entidades específicas (equipos, países, jugadores) en los títulos, ya que el 100% de los videos Top 10 lo hacen.",
+    "Concentrar las publicaciones en el rango horario de 21:00 a 23:00, priorizando las 22:00, que es la hora de mayor rendimiento.",
+    "Evitar categóricamente contenido relacionado con finanzas genéricas, autoayuda o negocios abstractos, ya que han demostrado consistentemente 0 vistas.",
+    "Es crucial empezar a recopilar datos sobre la duración de los videos (duracion_optima) para identificar patrones de éxito y optimizar este factor crítico de Shorts."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito de la categoría `ia_noticias` es exclusivamente dependiente de su temática deportiva dramática y futurista; cualquier desviación hacia otros temas como finanzas o autoayuda, incluso dentro de la misma categoría, resulta en 0 vistas."
+  "insight_semana": "El éxito del canal es hiper-específico: el formato de 'ia_noticias' solo genera tracción significativa cuando se aplica a eventos deportivos dramáticos e hipotéticos (especialmente el Mundial 2026), usando equipos/jugadores específicos, emociones fuertes y emojis en los títulos, y siendo publicado en horario nocturno. Cualquier desviación de esta fórmula resulta en vistas nulas."
 }
