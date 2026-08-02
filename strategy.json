@@ -1,38 +1,40 @@
 {
   "updated": "2026-08-02",
-  "iteracion": 250,
+  "iteracion": 251,
   "niche_weights": {
-    "ia_noticias": 0.9,
-    "deportes": 0.05,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
-    "productividad_ia": 0.01,
-    "entretenimiento": 0.005,
-    "politica_latam": 0.005
+    "deportes": 0.85,
+    "ia_noticias": 0.05,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0,
+    "productividad": 0.1
   },
   "best_hooks": [
-    "[ENTIDAD ESPECÍFICA] [ACCIÓN DRAMÁTICA] ¡EMOCIÓN FUERTE! (Ej: BÉLGICA ELIMINA A USA 4-1 😱)",
-    "[EVENTO FUTURO/AÑO ESPECÍFICO]: [IMPACTO ENORME] ¡SHOCK/EMOCIÓN! (Ej: Mundial 2026: ¡DEVASTADOR! 🤯)",
-    "[ENTIDAD] [RESULTADO INESPERADO] ¿PREGUNTA DE INCERTIDUMBRE? 😱 (Ej: BRASIL 0-0 NORUEGA ¿QUÉ PASÓ? 😱)",
-    "[NOTICIA GENERAL DE ALTO IMPACTO EN LATAM/MUNDIAL] + EMOJIS RELEVANTES (Ej: La noticia deportiva que sacude LATAM hoy ⚽)",
-    "¡CAMPEÓN DEL MUNDO! [DESCRIPCIÓN ENFÁTICA] 🏆👑🔥 (Ej: ¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026)",
-    "[ENTIDAD] ELIMINADO/A del [EVENTO ESPECÍFICO]! 😱 [HECHO HISTÓRICO/IMPACTO] (Ej: ¡BRASIL ELIMINADO del MUNDIAL 2026! 😱 NORUEGA HACE HISTORIA)"
+    "Noticia [Tema] que sacude [Región] hoy [emoji_noticia/fuego]",
+    "[Equipo 1] ELIMINA A [Equipo 2] [Resultado] en [Evento] 😱 ¡[Adjetivo Fuerte]!",
+    "[Liga/Equipo]: [Evento dramático] ¡SHOCK! 🤯",
+    "[Equipo 1] [Resultado] [Equipo 2] en [Evento]! ¿QUÉ PASÓ? 😱",
+    "¡[Logro Máximo]! El nuevo rey de [Tema] [Evento] 🏆👑🔥",
+    "El [Evento Específico] que paró al mundo en [Evento Mayor] ⚽🌍"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas abstractas (Ej: NO TOMAR RIESGO es tu MAYOR AMENAZA)",
-    "Llamadas a la acción directas sobre dinero o transacciones (Ej: ¡PAGA $200 O NADA! 😱)",
-    "Noticias reales o eventos específicos que carecen del elemento 'hipotético dramático' exitoso del canal (Ej: PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)"
+    "Consejos genéricos de autoayuda/superación personal (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
+    "Afirmaciones o preguntas directas sobre dinero/finanzas abstractas (ej: '¡PAGA $200 O NADA!', 'El error de dinero que comete el 80%')",
+    "Hechos abstractos de negocios o tecnología (ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech')"
   ],
   "best_hora": 22,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Mantener el enfoque exclusivo en el nicho 'ia_noticias' aplicado a eventos deportivos dramáticos e hipotéticos (ej. Mundial 2026), ya que es el único que genera vistas.",
-    "Continuar utilizando entidades específicas (equipos, países, jugadores) en los títulos, ya que el 100% de los videos Top 10 lo hacen.",
-    "Concentrar las publicaciones en el rango horario de 21:00 a 23:00, priorizando las 22:00, que es la hora de mayor rendimiento.",
-    "Evitar categóricamente contenido relacionado con finanzas genéricas, autoayuda o negocios abstractos, ya que han demostrado consistentemente 0 vistas.",
-    "Es crucial empezar a recopilar datos sobre la duración de los videos (duracion_optima) para identificar patrones de éxito y optimizar este factor crítico de Shorts."
+    "Priorizar la creación de contenido de `ia_noticias` centrado exclusivamente en *deportes*, utilizando lenguaje dramático, resultados inesperados y eventos hipotéticos de alto impacto, ya que es el único nicho con éxito comprobado.",
+    "Incorporar emojis dramáticos (😱, 🤯) y temáticos (⚽, 🏆, 👑, 🔥, 🌍) en el 100% de los títulos para potenciar el atractivo visual y el CTR en el feed de Shorts, replicando el patrón del Top 10.",
+    "Publicar los Shorts en los horarios pico identificados: principalmente entre las 21:00 y 23:00, y secundariamente alrededor de las 06:00, para maximizar la visibilidad inicial en la audiencia LATAM.",
+    "Evitar completamente la producción de contenido sobre finanzas, negocios digitales, cripto, política o autoayuda, ya que han demostrado consistentemente 0 vistas, independientemente de la etiqueta de nicho.",
+    "Monitorear la categoría `productividad` con extrema cautela. Aunque generó algunas vistas (56 promedio), su rendimiento es significativamente inferior a las noticias deportivas. Considerar pruebas A/B en este nicho solo después de consolidar el éxito en `deportes`.",
+    "Implementar pruebas A/B para duraciones de Shorts entre 15 y 60 segundos, ya que la duración óptima actual (58 segundos) se basa en un valor predeterminado sin datos reales de rendimiento en esta iteración."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal es hiper-específico: el formato de 'ia_noticias' solo genera tracción significativa cuando se aplica a eventos deportivos dramáticos e hipotéticos (especialmente el Mundial 2026), usando equipos/jugadores específicos, emociones fuertes y emojis en los títulos, y siendo publicado en horario nocturno. Cualquier desviación de esta fórmula resulta en vistas nulas."
+  "insight_semana": "El rendimiento del canal es unidimensional: el éxito masivo reside exclusivamente en contenido de `ia_noticias` centrado en temáticas deportivas dramáticas e hipotéticas, mientras que cualquier desviación temática (incluso bajo la misma etiqueta 'ia_noticias') resulta en 0 vistas, indicando una segmentación de audiencia extremadamente específica."
 }
