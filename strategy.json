@@ -1,40 +1,31 @@
 {
   "updated": "2026-08-02",
-  "iteracion": 251,
+  "iteracion": 252,
   "niche_weights": {
-    "deportes": 0.85,
-    "ia_noticias": 0.05,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0,
-    "productividad": 0.1
+    "ia_noticias": 0.9,
+    "productividad": 0.05,
+    "deportes": 0.007,
+    "finanzas": 0.007,
+    "entretenimiento": 0.007,
+    "negocios_digitales": 0.007,
+    "productividad_ia": 0.007,
+    "cripto_inversiones": 0.007,
+    "politica_latam": 0.008
   },
   "best_hooks": [
-    "Noticia [Tema] que sacude [Región] hoy [emoji_noticia/fuego]",
-    "[Equipo 1] ELIMINA A [Equipo 2] [Resultado] en [Evento] 😱 ¡[Adjetivo Fuerte]!",
-    "[Liga/Equipo]: [Evento dramático] ¡SHOCK! 🤯",
-    "[Equipo 1] [Resultado] [Equipo 2] en [Evento]! ¿QUÉ PASÓ? 😱",
-    "¡[Logro Máximo]! El nuevo rey de [Tema] [Evento] 🏆👑🔥",
-    "El [Evento Específico] que paró al mundo en [Evento Mayor] ⚽🌍"
+    "No hay datos de hooks registrados para analizar patrones de efectividad."
   ],
   "avoid_hooks": [
-    "Consejos genéricos de autoayuda/superación personal (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA')",
-    "Afirmaciones o preguntas directas sobre dinero/finanzas abstractas (ej: '¡PAGA $200 O NADA!', 'El error de dinero que comete el 80%')",
-    "Hechos abstractos de negocios o tecnología (ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech')"
+    "No hay datos de hooks registrados para analizar patrones de ineficacia."
   ],
   "best_hora": 22,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias` centrado exclusivamente en *deportes*, utilizando lenguaje dramático, resultados inesperados y eventos hipotéticos de alto impacto, ya que es el único nicho con éxito comprobado.",
-    "Incorporar emojis dramáticos (😱, 🤯) y temáticos (⚽, 🏆, 👑, 🔥, 🌍) en el 100% de los títulos para potenciar el atractivo visual y el CTR en el feed de Shorts, replicando el patrón del Top 10.",
-    "Publicar los Shorts en los horarios pico identificados: principalmente entre las 21:00 y 23:00, y secundariamente alrededor de las 06:00, para maximizar la visibilidad inicial en la audiencia LATAM.",
-    "Evitar completamente la producción de contenido sobre finanzas, negocios digitales, cripto, política o autoayuda, ya que han demostrado consistentemente 0 vistas, independientemente de la etiqueta de nicho.",
-    "Monitorear la categoría `productividad` con extrema cautela. Aunque generó algunas vistas (56 promedio), su rendimiento es significativamente inferior a las noticias deportivas. Considerar pruebas A/B en este nicho solo después de consolidar el éxito en `deportes`.",
-    "Implementar pruebas A/B para duraciones de Shorts entre 15 y 60 segundos, ya que la duración óptima actual (58 segundos) se basa en un valor predeterminado sin datos reales de rendimiento en esta iteración."
+    "Priorizar la creación de contenido de 'ia_noticias' exclusivamente enfocado en noticias deportivas hipotéticas, dramáticas y de alto impacto (ej. resultados de mundiales, eliminaciones inesperadas), replicando el formato de los 10 videos con más vistas.",
+    "Publicar la mayoría del contenido entre las 21:00 y 23:00 horas, con especial énfasis a las 22:00, y también considerar la franja de madrugada (00:00 a 06:00), que ha demostrado ser efectiva.",
+    "Utilizar títulos concisos (aproximadamente 8-9 palabras), altamente dramatizados y con emojis relevantes (ej. 😱, 🤯, 🏆, 🔥, ⚽) para maximizar el CTR en el feed de Shorts.",
+    "Suspender la creación de contenido en nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, entretenimiento, política_latam, deportes como nicho separado de ia_noticias) y minimizar experimentos fuera del formato de ia_noticias deportivas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento del canal es unidimensional: el éxito masivo reside exclusivamente en contenido de `ia_noticias` centrado en temáticas deportivas dramáticas e hipotéticas, mientras que cualquier desviación temática (incluso bajo la misma etiqueta 'ia_noticias') resulta en 0 vistas, indicando una segmentación de audiencia extremadamente específica."
+  "insight_semana": "La estrategia actual es extremadamente polarizada: la única vía para obtener vistas significativas es la creación de noticias deportivas hipotéticas y dramáticas generadas por IA, dado que son el único tipo de contenido que ha demostrado rendimiento."
 }
