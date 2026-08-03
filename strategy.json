@@ -1,25 +1,29 @@
 {
   "updated": "2026-08-03",
-  "iteracion": 256,
+  "iteracion": 257,
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.2,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.025,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "deportes": 0.0086,
+    "ia_noticias": 0.94,
+    "finanzas": 0.0086,
+    "entretenimiento": 0.0086,
+    "negocios_digitales": 0.0086,
+    "productividad_ia": 0.0086,
+    "cripto_inversiones": 0.0086,
+    "politica_latam": 0.0084
   },
-  "best_hooks": "Insuficientes datos de hooks en los videos analizados para identificar patrones efectivos.",
-  "avoid_hooks": "Insuficientes datos de hooks en los videos analizados para identificar patrones a evitar.",
-  "best_hora": 22,
-  "duracion_optima": "Insuficientes datos sobre la duración de los videos para determinar un óptimo.",
+  "best_hooks": [
+    "No hay datos suficientes para identificar fórmulas de gancho efectivas."
+  ],
+  "avoid_hooks": [
+    "No hay datos suficientes para identificar patrones de gancho a evitar."
+  ],
+  "best_hora": 6,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias` enfocado exclusivamente en deportes con alto dramatismo y sensacionalismo, ya que el 100% de los videos con más de 800 vistas pertenecen a esta temática.",
-    "Mantener el uso consistente de MAYÚSCULAS y emojis de impacto (e.g., 😱, 🤯, 🏆👑🔥) en palabras clave dentro de los títulos, un patrón presente en el 100% de los videos exitosos.",
-    "Concentrar las publicaciones en los horarios de 21:00-23:00 y 06:00, con un énfasis particular en las 22:00, la hora con mayor número de videos en el top 10."
+    "Priorizar la creación de contenido dentro del nicho \"ia_noticias\" enfocado en eventos deportivos de gran impacto y titulares sensacionalistas (ej. \"ELIMINA\", \"SHOCK\", \"MUNDIAL\"), ya que este patrón representa el 100% de los videos con más de 800 vistas.",
+    "Mantener y optimizar el uso de MAYÚSCULAS en palabras clave de alto impacto y emojis dramáticos (😱, 🤯, 🏆, 🔥, ⚽) en los títulos para maximizar el click-through, siguiendo el patrón de todos los videos de alto rendimiento.",
+    "Concentrar las publicaciones en las franjas horarias de 6 AM y 11 AM, que han demostrado los promedios de vistas más altos (1085.5 y 1045 respectivamente) entre los videos top, sin descartar los picos de las 21-23 PM."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal depende casi exclusivamente de la intersección entre el nicho 'ia_noticias' y las noticias deportivas de alto impacto y dramatismo, siendo este el único patrón de éxito observable."
+  "insight_semana": "El éxito del canal está casi exclusivamente ligado a la generación de noticias deportivas sensacionalistas bajo la categoría 'ia_noticias', con el 100% de los videos top (>800 vistas) y un promedio de 313 vistas en el nicho, mientras que 7 de los 8 nichos priorizados en la estrategia no generaron ninguna vista, evidenciando una hiper-especialización del algoritmo para este contenido."
 }
