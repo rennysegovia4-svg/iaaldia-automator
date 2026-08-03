@@ -62,6 +62,11 @@ if not TOKEN_FILE.exists():
             TOKEN_FILE.write_text(decoded_token)
             print(f"{TOKEN_FILE.name} creado exitosamente.")
         except Exception as e:
+            print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
+            sys.exit(1) # Forzar el fallo si hay un error en el proceso de token
+    else:
+        print(f"Error: La variable de entorno '{env_var_name}' no está definida. No se puede crear '{TOKEN_FILE.name}'.", file=sys.stderr)
+        sys.exit(1) # Forzar el fallo si la variable de entorno falta
             print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
             sys.exit(1)
     else:
