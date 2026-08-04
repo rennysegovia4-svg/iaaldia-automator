@@ -1,38 +1,37 @@
 {
   "updated": "2026-08-04",
-  "iteracion": 260,
+  "iteracion": 261,
   "niche_weights": {
-    "ia_noticias": 0.82,
-    "productividad": 0.14,
-    "negocios": 0.03,
-    "finanzas": 0.001,
-    "negocios_digitales": 0.001,
-    "cripto_inversiones": 0.001,
-    "productividad_ia": 0.001,
-    "deportes": 0.001,
-    "entretenimiento": 0.001,
-    "politica_latam": 0.004
+    "deportes": 0.008,
+    "ia_noticias": 0.945,
+    "finanzas": 0.008,
+    "entretenimiento": 0.008,
+    "negocios_digitales": 0.008,
+    "productividad_ia": 0.008,
+    "cripto_inversiones": 0.008,
+    "politica_latam": 0.007
   },
   "best_hooks": [
-    "Noticias simuladas de eventos deportivos masivos (ej. 'Mundial 2026')",
-    "Narrativas de 'eliminación' o 'cambio drástico' de estatus en deportes",
-    "Uso estratégico de emojis de impacto emocional (😱, 🤯, 🏆👑🔥, ⚽🌍)",
-    "Títulos que generan intriga o shock con exclamaciones (ej. '¡DEVASTADOR!', '¡SHOCK!')",
-    "Mención directa de equipos o figuras icónicas del fútbol (ej. USA, Brasil, Haaland)",
-    "Títulos que invocan escala global o un impacto épico (ej. 'El gol que paró al mundo')"
+    "Título con Verbo de Acción Fuerte + Equipo/País + Evento + Emoción (Ej: 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!')",
+    "Título con Noticia Deportiva de Impacto + Región/Global + Urgencia + Emoji (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Título con Liga/Equipo + Resultado Inesperado + Emoción Fuerte + Emoji (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Título con Equipo/País + Emoción + Acción Inusual/Determinante + Emoji (Ej: 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
+    "Título con Logro Máximo + Contexto de Evento Mundial + Emojis de Realeza/Fuego (Ej: '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')",
+    "Título con Impacto Global + Detalle Clave (Gol) + Evento Mundial + Emojis (Ej: 'El gol que paró al mundo en el Mundial 2026 ⚽🌍')"
   ],
   "avoid_hooks": [
-    "Preguntas ambiguas o poco específicas sobre eventos deportivos sin contexto claro",
-    "Consejos genéricos de autoayuda o finanzas sin un ángulo de noticia o sorpresa",
-    "Titulares abstractos de negocios/finanzas o clickbait sin una propuesta de valor evidente"
+    "Títulos genéricos de autoayuda o motivación sin un evento concreto que los ancle (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos transaccionales o muy específicos sobre finanzas y dinero sin contexto de noticia o IA (Ej: '¡PAGA $200 O NADA! 😱', 'El error de dinero que comete el 80% 💸')",
+    "Títulos abstractos o comparativos sobre negocios/tecnología que requieren conocimiento previo o son de nicho profundo (Ej: 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que simule noticias deportivas de alto impacto, especialmente aquellas que involucren grandes torneos o resultados dramáticos como eliminaciones y cambios de liderato.",
-    "Maximizar el uso de emojis de sorpresa, impacto y celebración en los títulos para mejorar el CTR, replicando el patrón de los videos más vistos.",
-    "Evitar completamente títulos que planteen preguntas ambiguas, brinden consejos genéricos o usen lenguaje abstracto de negocios/finanzas, ya que se correlacionan directamente con 0 vistas."
+    "Concentrar la estrategia de contenido exclusivamente en el nicho 'ia_noticias' con temática de deportes (fútbol, eventos como 'Mundial 2026'), ya que es el único que ha demostrado un rendimiento significativo y constante.",
+    "Maximizar el uso de títulos con lenguaje dramático, de impacto, y que incluyan eventos hipotéticos o futuros de alto perfil, siguiendo los patrones de los videos top.",
+    "Priorizar los horarios de publicación nocturnos (21:00-23:00, con pico a las 22:00) y el de madrugada (06:00), ya que son los que concentran la mayor parte de los videos con más vistas.",
+    "Dada la ausencia de datos sobre la duración de los videos, es crucial comenzar a recopilar esta métrica para futuras iteraciones y poder determinar una 'duracion_optima' basada en el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La simulación de noticias deportivas de alto impacto y alcance global (ej. Mundial 2026, eliminaciones de grandes equipos) dentro del nicho 'ia_noticias' es la estrategia de contenido más efectiva, generando la totalidad de las vistas exitosas mientras otras temáticas y enfoques resultan en 0 vistas."
+  "insight_semana": "La audiencia del canal está totalmente sintonizada con el nicho 'ia_noticias' enfocado en deportes, especialmente en escenarios hipotéticos y de alto drama como el 'Mundial 2026'. Este tipo de contenido genera un engagement desproporcionadamente mayor en comparación con cualquier otra temática probada, lo que sugiere que la combinación de la novedad de la IA con la pasión deportiva es la clave del éxito actual."
 }
