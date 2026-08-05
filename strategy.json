@@ -1,40 +1,38 @@
 {
   "updated": "2026-08-05",
-  "iteracion": 263,
+  "iteracion": 264,
   "niche_weights": {
-    "ia_noticias": 0.9,
-    "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "politica_latam": 0.01,
-    "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "deportes": 0.0,
-    "entretenimiento": 0.0
+    "deportes": 0.01,
+    "ia_noticias": 0.85,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Noticia deportiva de alto impacto + ¡EMOJI SHOCK/EXCLAMACIÓN! (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Evento deportivo impactante + Resultado + ¡EMOJI SHOCK! (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱')",
-    "Gran equipo/liga + Suceso inesperado + ¡SHOCK/ASOMBRO! (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
-    "País/Estrella + Impacto/Evento + ¡EMOJI SHOCK! (ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱')",
-    "Pregunta abierta sobre un resultado inesperado + ¡EMOJI SHOCK! (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Celebración de logro/momento histórico + EMOJIS REY/TROFEO/FUEGO (ej. '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥')"
+    "[Evento] + ¡[Impacto Emocional/Negativo]! 😱 (ej. BÉLGICA ELIMINA A USA ¡DEVASTADOR!)",
+    "[Sujeto] EN SHOCK: [Acción Sorpresiva]! 🤯 (ej. ARGENTINA EN SHOCK: CABRAL PARALIZA!)",
+    "[Evento Futuro Clave] + [Verbo de Impacto]! (ej. HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026!)",
+    "La noticia [Adjetivo] que sacude [Región/Contexto] hoy ⚽ (ej. La noticia deportiva que sacude LATAM hoy)",
+    "¡[Sujeto] ELIMINADO del [Evento]! 😱 [Verbo de Impacto] HISTORIA (ej. ¡BRASIL ELIMINADO del MUNDIAL 2026! NORUEGA HACE HISTORIA)",
+    "[Resultado Inesperado] en [Evento]! ¿QUÉ PASÓ? 🤯 (ej. BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ?)"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de consejos de finanzas o negocios sin un evento actual o un giro noticioso impactante (ej. 'El error de dinero que comete el 80% 💸')",
-    "Afirmaciones abstractas o preguntas abiertas sobre dinero/riesgo sin un anclaje a un hecho o controversia específica (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Títulos que no evocan inmediatez, shock o un resultado deportivo dramático, ya que el éxito está en la novedad y el impacto emocional."
+    "Títulos de autoayuda o consejos de negocios genéricos sin un gancho de noticia (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA).",
+    "Frases con números o conceptos financieros abstractos sin contexto de impacto claro (ej. TRES EMPRESAS VALEN MÁS que 25 años de tech).",
+    "Preguntas retóricas sobre 'fraude' en eventos deportivos sin un desenlace dramático o una noticia concreta (ej. PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡)."
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Dada la especialización extrema, concentrar el 90% del esfuerzo en contenido de 'ia_noticias' enfocado en deportes, que es el único nicho con rendimiento probado.",
-    "Priorizar la creación de títulos que incorporen elementos de 'shock', sorpresa y un lenguaje de 'noticia de última hora' o 'evento devastador', acompañado de emojis relevantes (😱, 🤯, ⚽, 🏆).",
-    "Focalizar las publicaciones en el rango horario nocturno y de madrugada, específicamente entre las 21:00 y las 23:00, siendo las 22:00 la hora de mayor éxito, para maximizar la visibilidad inicial.",
-    "Evitar categóricamente la creación de contenido en nichos como 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (genérico) y 'entretenimiento', ya que han demostrado un 0% de efectividad en la atracción de vistas.",
-    "Utilizar referencias a grandes eventos (ej. 'Mundial 2026') y nombres de equipos/países o jugadores prominentes en los títulos para capitalizar el interés masivo."
+    "Concéntrate el 85% de la producción en el nicho 'ia_noticias', especializándote aún más en contenido deportivo (fútbol, Mundial 2026) con un enfoque en el impacto y la especulación de grandes eventos.",
+    "Prioriza la publicación de nuevos Shorts a las 22:00 (10 PM), extendiendo las pruebas al rango de 21:00 a 00:00 y las 06:00, que han demostrado ser los horarios más efectivos.",
+    "Utiliza de manera consistente emojis de sorpresa y emoción (😱, 🤯) y palabras de alto impacto como 'SHOCK', 'DEVASTADOR', 'ELIMINA' en los títulos para maximizar el CTR.",
+    "Elimina la creación de contenido en nichos como 'finanzas', 'negocios', 'productividad' o 'política' que no incorporan el formato 'ia_noticias' y que han mostrado un rendimiento nulo o marginal.",
+    "Continúa explotando la temática de grandes eventos deportivos futuros, como el 'Mundial 2026', ya que estos generan una alta curiosidad y engagement."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal exhibe una hiperspecialización extrema, donde el 100% de su éxito (medido por el top 10 de videos) proviene exclusivamente de contenido de 'ia_noticias' sobre eventos deportivos dramáticos o inesperados, mientras que cualquier desviación a otras temáticas resulta en vistas insignificantes o nulas."
+  "insight_semana": "La especialización extrema en el nicho 'ia_noticias' con enfoque en deportes de alto impacto y especulación (ej. Mundial 2026) es el único modelo de contenido que ha generado vistas significativas para el canal, mientras que el resto de nichos no logra conectar con la audiencia."
 }
