@@ -67,7 +67,8 @@ if not TOKEN_FILE.exists():
     else:
         print(f"Error: La variable de entorno '{env_var_name}' no está definida. No se puede crear '{TOKEN_FILE.name}'.", file=sys.stderr)
         sys.exit(1) # Forzar el fallo si la variable de entorno falta
-                    print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
+                    except Exception as e:
+            print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
             sys.exit(1)
     else:
         print(f"Error: {TOKEN_FILE.name} no encontrado y la variable de entorno {env_var_name} no está configurada.", file=sys.stderr)
