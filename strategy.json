@@ -1,36 +1,36 @@
 {
-  "updated": "2026-08-05",
-  "iteracion": 266,
+  "updated": "2026-08-06",
+  "iteracion": 267,
   "niche_weights": {
-    "deportes": 0.01,
-    "ia_noticias": 0.94,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.005,
-    "politica_latam": 0.005
+    "deportes": 0.0,
+    "ia_noticias": 1.0,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "[Evento/Liga] + [Equipo/País] + [Acción impactante] + [Emoji de sorpresa]",
-    "¡[País/Equipo] ELIMINADO/ELIMINA a [País/Equipo] en [Evento]! [Emoji de impacto]",
-    "La noticia [deportiva/de X] que sacude [Región/Hoy] [Emoji relevante]",
-    "[País/Equipo] en SHOCK: [Jugador/Evento] PARALIZA! 😱",
-    "[Resultado inesperado] en [Evento]: ¿QUÉ PASÓ? 😱",
-    "¡[Logro/Drama máximo] en [Evento]! [Emojis de celebración/impacto]"
+    "EVENTO_IMPACTANTE (ej. ELIMINA A) + EQUIPOS/PAÍSES + EMOJI_SHOCK/SORPRESA + ¡PALABRA_FUERTE! (ej. ¡DEVASTADOR!)",
+    "LIGA/EVENTO_GRANDE: EQUIPO_X CEDE/PIERDE/GANA + ¡SHOCK/IMPACTO! + EMOJI_SORPRESA/SHOCK",
+    "PAÍS_X EN SHOCK: JUGADOR/EVENTO_CLAVE ¡ACCIÓN_SORPRESA! + EMOJI_SHOCK",
+    "EQUIPO_A vs EQUIPO_B EN MUNDIAL_AÑO! ¿QUÉ PASÓ? 😱 (para resultados inesperados o empates)",
+    "¡TÍTULO_GRANDIOSO! El nuevo REY/CAMPEÓN del FÚTBOL Mundial AÑO 🏆👑🔥",
+    "La NOTICIA_DEPORTIVA que sacude REGIÓN/MUNDO + hoy/fecha_relevante ⚽"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o motivación sin contexto específico",
-    "Títulos con conceptos financieros o empresariales abstractos y poco claros",
-    "Títulos negativos o especulativos (ej. '¿ES FRAUDE?') sin un claro desarrollo de noticia"
+    "Títulos de autoayuda o motivación genéricos (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
+    "Títulos de finanzas abstractas o consejos de dinero sin un evento específico (ej. 'El error de dinero que comete el 80% 💸', 'TRES EMPRESAS VALEN MÁS que 25 años de tech 🤯')",
+    "Títulos deportivos con acusaciones o negatividad extrema sin base clara (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
   ],
   "best_hora": 22,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', específicamente enfocado en noticias deportivas de impacto y eventos reconocidos como 'Mundial 2026' o 'LIGA MX', ya que este nicho representa el 100% de los videos con mejores vistas y un promedio de 321 vistas.",
-    "Continuar y optimizar el uso de títulos que incluyan: mención explícita de países/equipos, resultados dramáticos ('ELIMINA', 'SHOCK'), eventos específicos y emojis de sorpresa (😱, 🤯) o relacionados con el deporte (⚽, 🏆), siguiendo el patrón observado en el 80% de los videos top.",
-    "Concentrar las publicaciones en la franja horaria de las 22:00, que alberga el mayor número de videos exitosos (30%), y explorar también las ventanas de las 6:00 y 21:00, que muestran un rendimiento significativo."
+    "Enfocarse casi exclusivamente en el nicho 'ia_noticias', específicamente noticias deportivas de alto impacto que involucren **eventos hipotéticos o futuros como el 'Mundial 2026'** (presente en 8 de 10 videos top), ya que es el único con rendimiento probado.",
+    "Crear títulos con **gran carga emocional y curiosidad**, incluyendo menciones explícitas de ligas/eventos, nombres de equipos/países, resultados impactantes, preguntas directas (e.g., '¿QUÉ PASÓ?'), y emojis de sorpresa (😱, 🤯), replicando patrones de los videos más vistos.",
+    "Descontinuar la producción de contenido en todos los nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, deportes, entretenimiento, politica_latam), y evitar títulos genéricos de autoayuda/finanzas abstractas, ya que no tienen ninguna conexión con la audiencia actual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal está casi por completo ligado al nicho de noticias deportivas de impacto (clasificado como 'ia_noticias'), evidenciando una desconexión total de la audiencia con cualquier otro tipo de contenido probado hasta la fecha, con 0 vistas en la mayoría de los demás nichos."
+  "insight_semana": "La clave del éxito del canal reside en la creación de **noticias deportivas sensacionalistas y mayoritariamente hipotéticas (Mundial 2026)** dentro del nicho 'ia_noticias', las cuales capturan la atención de la audiencia de manera consistente, mientras que otros tipos de contenido son ignorados por completo."
 }
