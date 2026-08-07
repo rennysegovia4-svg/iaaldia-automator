@@ -62,6 +62,7 @@ if not TOKEN_FILE.exists():
             TOKEN_FILE.write_text(decoded_token)
             print(f"{TOKEN_FILE.name} creado exitosamente.")
         except Exception as e:
+            pass
             print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
             sys.exit(1) # Forzar el fallo si hay un error en el proceso de token
     else:
