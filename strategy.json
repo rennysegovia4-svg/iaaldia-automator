@@ -1,38 +1,31 @@
 {
-  "updated": "2026-08-07",
-  "iteracion": 273,
+  "updated": "2026-08-08",
+  "iteracion": 274,
   "niche_weights": {
+    "ia_noticias": 0.7,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
     "deportes": 0.02,
-    "ia_noticias": 0.9,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
+    "entretenimiento": 0.02,
     "politica_latam": 0.03
   },
   "best_hooks": [
-    "[Equipo A/País] [Verbo de Impacto: ELIMINA/CEDE/PARALIZA] a [Equipo B/Sujeto] [Evento: Mundial 2026]! [Emoji de Shock/Sorpresa] [Frase de Exclamación]",
-    "[Liga/País] EN SHOCK: [Detalle Sorprendente] [Emoji de Shock/Intriga]",
-    "La noticia deportiva que [Verbo de Impacto: sacude/paró] [Audiencia: LATAM/el mundo] [Hoy/Evento] [Emoji Relevante]",
-    "[Equipo A] [Marcador] [Equipo B] en [Evento: Mundial 2026]! ¿QUÉ PASÓ? [Emoji de Intriga/Shock]",
-    "¡[Declaración de Éxito/Hito]! El nuevo rey del fútbol [Evento: Mundial 2026] [Emojis de Celebración]",
-    "[Jugador Estrella] [Verbo de Impacto: ELIMINA/PARALIZA] a [Equipo] del [Evento: Mundial 2026]! [Emoji de Shock/Drama]"
+    "1. Evento + Resultado contundente + Emoción + Emojis (ej. 'BÉLGICA ELIMINA A USA 4-1 en el Mundial 2026 😱 ¡DEVASTADOR!'); 2. Equipos/Jugadores/Países específicos + Acción clave + Evento + Emojis (ej. 'HAALAND ELIMINA A BRASIL DEL MUNDIAL 2026! 🤯'); 3. Afirmación de noticia sensacional + Impacto regional/global + Emojis (ej. 'La noticia deportiva que sacude LATAM hoy ⚽'); 4. Pregunta retórica de sorpresa ('¿QUÉ PASÓ?') + Evento inesperado + Emojis (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱'); 5. Logro/Estatus + Evento futuro/hipotético + Múltiples Emojis (ej. '¡CAMPEÓN DEL MUNDO! El nuevo rey del fútbol Mundial 2026 🏆👑🔥'); 6. Expresiones de shock/parálisis ('¡SHOCK!', 'PARALIZA!', '¡DEVASTADOR!') + Evento/Equipo/País específico + Emojis (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Títulos genéricos de autoayuda o finanzas/negocios (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA', 'El error de dinero que comete el 80%')",
-    "Afirmaciones vagas o monetarias sin contexto de drama deportivo masivo (ej. '¡PAGA $200 O NADA!', 'TRES EMPRESAS VALEN MÁS que 25 años de tech')",
-    "Preguntas directas sobre 'fraude' en partidos específicos, especialmente con emojis menos impactantes (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
+    "1. Temáticas no deportivas (finanzas, autoayuda, negocios), incluso con emojis impactantes; 2. Preguntas ambiguas o de bajo impacto sin una consecuencia clara o global (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?'); 3. Títulos genéricos de consejos de vida o advertencias sin contexto específico (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA')."
   ],
   "best_hora": 22,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar exclusivamente contenido de 'ia_noticias' enfocado en noticias deportivas sensacionalistas y/o hipotéticas de alto impacto (ej. sobre Mundiales, grandes ligas y resultados dramáticos), abandonando cualquier otro sub-tema bajo esta etiqueta.",
-    "Asegurar la inclusión de palabras clave de alto volumen como 'Mundial 2026' o 'Mundial' en los títulos para capturar la atención de la audiencia interesada en grandes torneos.",
-    "Utilizar consistentemente emojis de alto impacto y emoción (😱, 🤯, 🏆, 👑, 🔥, ⚽, 🌍) para mejorar la visibilidad en el feed y el click-through-rate, evitando emojis menos expresivos como '⚡'.",
-    "Concentrar las publicaciones en el rango horario de 21:00 a 23:00, con especial énfasis en las 22:00, para coincidir con el período de mayor engagement de la audiencia.",
-    "Implementar el registro de la duración de los videos para futuras iteraciones, con el fin de determinar la duración óptima para los Shorts."
+    "Enfocarse casi exclusivamente en contenido de noticias deportivas sensacionalistas y/o hipotéticas de alto impacto (tipo Mundial 2026, eliminaciones, etc.), utilizando la etiqueta 'ia_noticias' para su categorización.",
+    "Mantener la estrategia de incluir consistentemente emojis de alto impacto (😱, 🤯, 🏆, 👑, 🔥, ⚽, 🌍) en los títulos, combinándolos con eventos específicos y emociones fuertes para maximizar la CTR.",
+    "Priorizar la publicación entre las 21:00 y las 23:00, con un énfasis particular en las 22:00, que ha demostrado ser la franja horaria de mayor engagement para el contenido exitoso."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La efectividad del nicho 'ia_noticias' es altamente específica; solo los contenidos relacionados con 'noticias deportivas sensacionalistas y/o hipotéticas de alto impacto' (ej. Mundial 2026) logran vistas significativas, mientras que otros temas etiquetados bajo 'ia_noticias' (como finanzas o autoayuda) resultan en 0 vistas, subrayando la necesidad de hiper-foco en el sub-género deportivo."
+  "insight_semana": "La etiqueta 'ia_noticias' es la única con videos de alto rendimiento, pero su éxito está estrictamente ligado al sub-nicho de noticias deportivas sensacionalistas (reales o hipotéticas). Cualquier otro tipo de contenido bajo esta etiqueta (finanzas, autoayuda) resulta en 0 vistas, reforzando la necesidad de adherencia al contenido temático validado."
 }
