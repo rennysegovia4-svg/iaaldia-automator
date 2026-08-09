@@ -1,32 +1,41 @@
 {
-  "updated": "2026-08-08",
-  "iteracion": 277,
+  "updated": "2026-08-09",
+  "iteracion": 278,
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 0.81,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0,
-    "productividad": 0.14,
-    "negocios": 0.05
+    "ia_noticias": 0.85,
+    "productividad": 0.05,
+    "negocios": 0.02,
+    "deportes": 0.012,
+    "finanzas": 0.011,
+    "entretenimiento": 0.011,
+    "negocios_digitales": 0.011,
+    "productividad_ia": 0.011,
+    "cripto_inversiones": 0.011,
+    "politica_latam": 0.013
   },
   "best_hooks": [
-    "Insuficientes datos en los videos analizados"
+    "[PAÍS/EQUIPO] [VERBO DE IMPACTO] [OTRO PAÍS/EVENTO] en el Mundial 2026! [EMOJI DE SHOCK]",
+    "[LIGA/PAÍS] EN SHOCK: [SUCESO/PERSONA] [VERBO IMPACTANTE]! [EMOJI DE SHOCK]",
+    "¡[CLAIM GRANDE, EJ. CAMPEÓN DEL MUNDO]! El nuevo rey del fútbol Mundial 2026 [EMOJIS DE VICTORIA/IMPACTO]",
+    "La noticia deportiva que [VERBO DE IMPACTO] [REGIÓN] hoy [EMOJI DE PELOTA/SHOCK]",
+    "[PAÍSES/EQUIPOS] [RESULTADO SORPRENDENTE] en Mundial 2026! ¿QUÉ PASÓ? [EMOJI DE SHOCK]",
+    "¡[PAÍS/EQUIPO] ELIMINADO del Mundial 2026! [EMOJI DE SHOCK] [OTRO PAÍS/HECHO] HACE HISTORIA"
   ],
   "avoid_hooks": [
-    "Insuficientes datos en los videos analizados"
+    "Títulos que no están relacionados con noticias deportivas sensacionalistas (e.g., finanzas, negocios, autoayuda genérica), ya que consistentemente obtienen 0 vistas.",
+    "Títulos con clickbait vago o afirmaciones genéricas sin conexión a eventos o figuras deportivas de alto impacto (e.g., 'El error de dinero que comete el 80% 💸').",
+    "Títulos sobre eventos deportivos específicos de menor relevancia o sin el contexto de un evento masivo y ficticio como 'Mundial 2026' (e.g., 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')."
   ],
   "best_hora": 22,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' enfocado exclusivamente en deportes con narrativas dramáticas y sensacionalistas, especialmente sobre eventos ficticios de gran magnitud como el 'Mundial 2026', ya que el 100% de los top 10 videos y el 80% hacen referencia directa a este tipo de evento.",
-    "Concentrar las publicaciones de Shorts entre las 21:00 y 23:00, siendo las 22:00 la hora más efectiva, dado que el 60% del TOP 10 de videos se publicó en este rango y las 22:00 concentró la mayor cantidad de videos y vistas.",
-    "Evitar contenido de 'ia_noticias' que no sea deportivo y cualquier otro nicho como 'finanzas', 'productividad_ia', o 'negocios_digitales', ya que estos nichos o temáticas no relacionadas con deportes muestran un promedio de 0 vistas, indicando una baja o nula resonancia con la audiencia actual.",
-    "Continuar utilizando títulos que incluyan palabras de alto impacto emocional como 'SHOCK', 'DEVASTADOR', 'ELIMINA', 'PARALIZA', 'GOL AGÓNICO', 'HACE HISTORIA' y referencias a eventos deportivos globales o equipos/jugadores conocidos (LATAM, BÉLGICA, USA, AMÉRICA, ARGENTINA, ESPAÑA, PORTUGAL, BRASIL, NORUEGA, HAALAND)."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', enfocado exclusivamente en noticias deportivas sensacionalistas y ficticias, utilizando 'Mundial 2026' u otros eventos deportivos masivos como eje narrativo, dado que el 100% del TOP 10 se alinea con este patrón.",
+    "Optimizar los títulos incorporando verbos de impacto, exclamaciones y emojis que generen intriga y emoción (e.g., 'ELIMINA', 'SHOCK', 'PARALIZA', 😱, 🤯, 🏆), ya que 9 de cada 10 videos del TOP 10 los utilizan.",
+    "Publicar los videos preferentemente a las 22:00 (10 PM), que es la hora con el mayor número total de vistas en el TOP 10 (2646 vistas en 3 videos), con horarios secundarios fuertes a las 06:00 y 21:00.",
+    "Evitar completamente la creación de contenido no deportivo (ej., finanzas, negocios, autoayuda) incluso si se etiqueta bajo 'ia_noticias', ya que consistentemente resultan en 0 vistas, como se observa en los videos de menor rendimiento y aprendizajes previos.",
+    "Investigar y testear la duración óptima de los Shorts una vez que se pueda recopilar esta métrica, ya que actualmente no se dispone de datos para su análisis (duracion_optima se establece en 0 por falta de datos).",
+    "Para los nichos con 0 vistas (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, deportes, entretenimiento, politica_latam), se recomienda no destinar recursos hasta que se haya maximizado el rendimiento del nicho 'ia_noticias' y se pueda realizar un testeo controlado y con baja inversión."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal demuestra una hiper-especialización de éxito, donde el 100% de los videos top y el 80% de las vistas promedio provienen del nicho 'ia_noticias' enfocado en deportes con narrativas dramáticas sobre 'Mundial 2026' o noticias deportivas sensacionalistas."
+  "insight_semana": "El éxito del canal depende casi exclusivamente de la creación de noticias deportivas ficticias y sensacionalistas centradas en eventos como el 'Mundial 2026' dentro del nicho 'ia_noticias', con todos los demás temas y nichos mostrando un rendimiento nulo o extremadamente bajo."
 }
