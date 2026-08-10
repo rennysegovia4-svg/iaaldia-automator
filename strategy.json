@@ -1,33 +1,40 @@
 {
-  "updated": "2026-08-09",
-  "iteracion": 281,
+  "updated": "2026-08-10",
+  "iteracion": 282,
   "niche_weights": {
     "ia_noticias": 0.75,
     "productividad": 0.1,
     "negocios": 0.05,
     "finanzas": 0.02,
-    "deportes": 0.01,
-    "negocios_digitales": 0.01,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
     "cripto_inversiones": 0.01,
     "productividad_ia": 0.01,
-    "entretenimiento": 0.01,
+    "deportes": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "insuficientes datos para identificar hooks efectivos (el campo 'hook' está vacío en el TOP 10)"
+    "[PAÍS/EQUIPO] [VERBO IMPACTANTE: ELIMINA/SHOCK/CEDE] A [PAÍS/EQUIPO] EN [EVENTO GRANDE] [EMOJI SHOCK]",
+    "La noticia deportiva que [VERBO FUERTE: SACUDE/PARALIZA] [REGIÓN/MUNDO] [EMOJI DEPORTIVO/IMPACTO]",
+    "¡[FAVORITO/GRANDE] [CONSECUENCIA NEGATIVA: ELIMINADO/PIERDE] DEL [EVENTO GRANDE]! [EMOJI SHOCK]",
+    "[RESULTADO INESPERADO/CONTROVERSIAL] EN [EVENTO GRANDE]! ¿[PREGUNTA CORTA]? [EMOJI SHOCK]",
+    "¡[EVENTO DECISIVO/AGÓNICO] EN [COMPETICIÓN GRANDE]! [EMOJI SHOCK]",
+    "¡[LOGRO MÁXIMO: CAMPEÓN/REY] DEL [DEPORTE/EVENTO] [EMOJIS ÉXITO/FUEGO]"
   ],
   "avoid_hooks": [
-    "insuficientes datos para identificar hooks a evitar (el campo 'hook' está vacío en los videos de bajo rendimiento)"
+    "Títulos genéricos de autoayuda/finanzas (ej. 'NO TOMAR RIESGO', 'El error de dinero')",
+    "Preguntas o declaraciones vagas sobre finanzas/negocios sin un evento noticioso claro (ej. '¡PAGA $200 O NADA!')",
+    "Títulos de noticias deportivas que no generen alto drama o impacto ficticio (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE?')"
   ],
   "best_hora": 22,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": "insuficientes datos para determinar la duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', específicamente noticias deportivas ficticias y sensacionalistas de gran escala (ej. 'Mundial 2026'), ya que el 100% de los videos TOP 10 pertenecen a esta subcategoría.",
-    "Mantener y potenciar el uso de títulos con alto impacto emocional y emojis llamativos (ej. '😱', '🤯', '🏆', '👑', '🔥') que generen curiosidad y urgencia, como se observa en todos los videos de alto rendimiento.",
-    "Enfocar los esfuerzos de publicación en el horario de las 22:00, que es la hora con mayor concentración de videos en el TOP 10 (30% de los videos), seguido por las 06:00 y 21:00.",
-    "Evitar títulos que aborden temáticas genéricas de finanzas personales, negocios o productividad (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA', 'El error de dinero que comete el 80%'), ya que estos han demostrado un rendimiento de 0 vistas, incluso cuando se categorizan bajo 'ia_noticias'.",
-    "Explorar la posibilidad de introducir nuevos eventos deportivos ficticios o giros inesperados en competiciones existentes para mantener la frescura dentro del nicho dominante de 'ia_noticias' deportivas."
+    "Concentrarse exclusivamente en el sub-nicho de 'noticias deportivas ficticias de alto impacto' dentro de la categoría 'ia_noticias', ya que es el único contenido que ha demostrado rendimiento significativo y sostenible.",
+    "Maximizar el uso de elementos de shock, drama y referencias a equipos/países conocidos en los títulos de los videos, apoyándose en emojis de emoción (😱, 🤯) y éxito (🏆, 👑, 🔥).",
+    "Establecer un horario de publicación prioritario entre las 21:00 y 23:00, con especial atención a las 22:00, que es cuando se concentra el mayor volumen de videos de alto rendimiento.",
+    "Evitar completamente la creación de contenido para los nichos de 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes' (como categoría independiente), 'entretenimiento' y 'politica_latam', dado su rendimiento nulo o mínimo.",
+    "Experimentar con la creación de escenarios ficticios de otros grandes eventos deportivos más allá de los Mundiales de fútbol, manteniendo siempre el elemento de sorpresa y dramatismo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento del canal está casi exclusivamente impulsado por el nicho de 'ia_noticias' enfocadas en eventos deportivos ficticios y altamente dramáticos (ej. Mundial 2026), mostrando una polarización extrema donde este contenido es el único que genera vistas significativas, mientras que otros tipos de 'ia_noticias' o nichos alternativos no tienen tracción."
+  "insight_semana": "El canal demuestra una especialización extrema: el 100% de su éxito de vistas se concentra en el nicho 'ia_noticias', específicamente en contenido de noticias deportivas ficticias con alto drama ('Mundial 2026'), mientras que cualquier otra temática o sub-nicho, incluso dentro de la misma categoría 'ia_noticias', resulta en un rendimiento nulo."
 }
