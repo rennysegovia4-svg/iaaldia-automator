@@ -41,7 +41,7 @@ def _pick_ffmpeg():
             if b"drawtext" in r.stdout:
                 return candidate
         except Exception:
-                    decoded_token = base64.b64decode(os.environ[env_var_name]).decode('utf-8')
+            pass
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 FFMPEG = _pick_ffmpeg()
