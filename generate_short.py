@@ -61,7 +61,8 @@ if not TOKEN_FILE.exists():
             decoded_token = base64.b64decode(os.environ[env_var_name]).decode('utf-8')
             TOKEN_FILE.write_text(decoded_token)
             print(f"{TOKEN_FILE.name} creado exitosamente.")
-        except Exception as e: pass
+        except Exception as e:
+            print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
         pass
             print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
             sys.exit(1) # Forzar el fallo si hay un error en el proceso de token
