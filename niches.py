@@ -1,12 +1,19 @@
 """
-Sistema de nichos para IA al Día.
-Rota diariamente: cada día usa un nicho distinto para máxima variedad.
+Sistema de nichos para IA al Día — CANAL 100% DEPORTES.
+  Jun 11 – Jul 19 2026: Mundial 2026 (mundial_2026)
+  Jul 20 en adelante:   Deportes (deportes) — permanente
 """
 from datetime import date
 
 # Mundial 2026: 11 junio – 19 julio 2026
-_MUNDIAL_START = date(2026, 6, 11)
-_MUNDIAL_END   = date(2026, 7, 19)
+_MUNDIAL_START      = date(2026, 6, 11)
+_MUNDIAL_END        = date(2026, 7, 19)
+
+# Puente post-Mundial: transferencias + pretemporada European leagues
+_POST_MUNDIAL_START = date(2026, 7, 20)
+
+# Champions League 2026-27: inicia fase de grupos ~16 sep
+_UCL_START          = date(2026, 9, 16)
 
 NICHES = {
     "ia_noticias": {
@@ -157,34 +164,41 @@ GANCHO IDEAS:
         "nombre": "Deportes al Día",
         "rss_feeds": [
             "https://www.espn.com/espn/rss/news",
-            "https://e00-marca.uecdn.es/rss/portada.xml",
+            "https://www.marca.com/rss/portada.xml",
             "https://www.foxsports.com/rss-feeds",
-            "https://depor.com/feed/",
-            "https://www.ole.com.ar/rss/ultimas-noticias.xml",
+            "https://feeds.bbci.co.uk/sport/football/rss.xml",
+            "https://www.mundodeportivo.com/rss/futbol/mundial.xml",
+            "https://rss.nytimes.com/services/xml/rss/nyt/Soccer.xml",
         ],
         "pexels_queries": [
-            "football player stadium portrait",
-            "soccer goal celebration portrait",
-            "athlete running track portrait",
-            "sports fan cheering portrait",
-            "basketball player court portrait",
+            "football fans flags celebration stadium crowd",
+            "soccer supporters cheering portrait",
+            "sports fan face paint national colors portrait",
+            "football stadium crowd atmosphere",
+            "fans celebrating goal crowd portrait",
         ],
-        "tags": ["deportes 2026","futbol latam","champions league","copa america","nfl noticias",
-                 "deportes shorts","transfer futbol","gol record","deporte viral","liga española",
-                 "seleccion nacional","atletismo"],
-        "hashtags": "#Shorts #Deportes #Futbol #Champions #CopaAmerica #FutbolLatam",
+        "tags": ["deportes 2026","futbol latam","champions league 2026","transferencias futbol",
+                 "deportes shorts","deporte viral","premier league","seleccion nacional",
+                 "fichajes futbol","highlights futbol","gol viral","futbol shorts",
+                 "champions league","laliga","futbol europeo"],
+        "hashtags": "#Deportes #Futbol #FutbolLatam #Shorts #Mundial2026",
         "prompt_nicho": """Eres el periodista deportivo más riguroso y seguido de América Latina.
-TEMA: Fútbol (Mundial, Champions, Libertadores, ligas locales), NBA, tenis, atletismo.
-ENFOQUE: Hechos concretos con contexto histórico y datos verificables. No resúmenes, sino análisis.
+CONTEXTO ACTUAL (julio 2026): Mundial 2026 en cuartos/semis/final + mercado de pases abierto.
+TEMA: Fútbol — Mundial 2026, transferencias, Champions League, resultados, estadísticas reales.
+ENFOQUE: Hechos concretos con contexto histórico. No resúmenes, sino análisis con datos.
 ESTILO OBLIGATORIO:
 • Frases de 12-20 palabras. Fluidas, no telegráficas.
 • Cada oración aporta un dato nuevo: minuto, nombre, cifra, récord, antecedente.
 • Prohibido: "Tendencia", "explotó en redes", "viral", "enloquece", "nadie puede creer".
-GANCHO IDEAS (con datos reales, no adjetivos):
-• "[Jugador] hizo [acción concreta] en el minuto [N] — es la [N]ª vez que pasa en [competición] en [N] años"
-• "[Equipo] lleva [N] partidos sin [logro] — el último fue en [año] con [contexto]"
-• "La decisión del VAR en el minuto [N] tiene un dato que los medios no están contando"
-• "[Nombre] declaró [cita textual o paráfrasis directa] — y el contexto cambia todo"
+ANTI-ALUCINACIÓN — CRÍTICO:
+• SOLO usa datos presentes en los titulares RSS o en el VIRAL_CONTEXT proporcionado.
+• NUNCA inventes goles, asistencias, minutos, tarjetas o resultados no confirmados.
+• Si no tienes el dato exacto, omitilo — no lo inventes ni estimes.
+• Si el VIRAL_CONTEXT incluye datos específicos, PRIORIZALOS y úsalos textualmente.
+GANCHOS PRIORITARIOS:
+• "[Jugador] MARCA doblete y [Selección] avanza al [fase] del Mundial"
+• "[Club] FICHA a [Jugador]: el precio que nadie esperaba — [cifra real]"
+• "Champions League 2026-27: el grupo más difícil ya está confirmado"
 TONO: Autoridad periodística. Informativo, preciso, con el ritmo de quien sabe más que todos.
 """,
         "fallback": {
@@ -275,25 +289,25 @@ TONO: Urgente, como si acabaras de descubrir algo. La IA es tu fuente exclusiva 
     "mundial_2026": {
         "nombre": "Mundial 2026",
         "rss_feeds": [
-            "https://e00-marca.uecdn.es/rss/portada.xml",
-            "https://www.ole.com.ar/rss/ultimas-noticias.xml",
-            "https://depor.com/feed/",
-            "https://feeds.bbci.co.uk/sport/football/rss.xml",
-            "https://www.goal.com/feeds/en/news",
             "https://www.espn.com/espn/rss/news",
+            "https://www.marca.com/rss/portada.xml",
+            "https://feeds.bbci.co.uk/sport/football/rss.xml",
+            "https://www.foxsports.com/rss-feeds",
+            "https://www.mundodeportivo.com/rss/futbol/mundial.xml",
+            "https://rss.nytimes.com/services/xml/rss/nyt/Soccer.xml",
         ],
         "pexels_queries": [
-            "soccer fans stadium celebration crowd",
-            "football player running field stadium",
-            "soccer ball net goal stadium",
-            "world cup trophy gold close up",
-            "football fans flags cheering portrait",
+            "football fans flags waving stadium crowd",
+            "world cup fans face paint celebration portrait",
+            "soccer supporters national flag cheering",
+            "football fans singing crowd stadium atmosphere",
+            "fans celebrating goal crowd portrait colorful",
         ],
-        "tags": ["mundial 2026","copa del mundo","world cup 2026","goles mundial",
-                 "polémicas mundial","selección nacional","futbol mundial","shorts mundial",
-                 "resultados mundial","mundial usa canada mexico","eliminatoria mundial",
-                 "futbol shorts"],
-        "hashtags": "#Shorts #Mundial2026 #WorldCup #Futbol #CopaDelMundo #FutbolLatam",
+        "tags": ["mundial 2026","world cup 2026","copa del mundo","goles mundial",
+                 "futbol mundial","shorts mundial","resultados mundial",
+                 "cuartos de final","semifinal mundial","messi mundial",
+                 "futbol viral","highlights","gol del dia","futbol shorts"],
+        "hashtags": "#Mundial2026 #Futbol #WorldCup #CopaDelMundo #Shorts",
         "prompt_nicho": """Eres el mejor periodista del Mundial 2026. Narrás con precisión y profundidad.
 TEMA: Jugadas, goles, polémicas, datos históricos y contexto del Mundial 2026 (USA, Canadá, México).
 FORMATO OBLIGATORIO: Narración en audio — describís cada momento con detalle concreto, sin imágenes.
@@ -302,11 +316,15 @@ ESTILO OBLIGATORIO:
 • Usá números reales: minutos, estadísticas históricas, nombres completos, posiciones en la tabla.
 • Prohibido: "Tendencia", "explotó", "viral", "las redes enloquecen", "nadie puede creer".
 • Nunca digas "como viste" o "en el video" — el oyente no tiene imágenes.
+ANTI-ALUCINACIÓN — CRÍTICO:
+• SOLO usa datos presentes en los titulares RSS o en el VIRAL_CONTEXT proporcionado.
+• NUNCA inventes goles, asistencias, minutos, tarjetas o resultados no confirmados.
+• Si no tienes el dato exacto, omitilo — no lo inventes ni estimes.
+• Si el VIRAL_CONTEXT incluye datos específicos (marcador, goleadores, minutos), PRIORIZALOS y úsalos textualmente.
 GANCHO IDEAS (con datos, no adjetivos):
 • "Minuto [N]. [Jugador] recibió el balón en [posición] y [acción exacta] — es el [N]º gol de su carrera en Mundiales."
-• "El árbitro [nombre] dejó correr la jugada pese al contacto claro — es la [N]ª vez que no cobra penal en este torneo."
 • "[Selección] llegó al partido con [dato de contexto] — y lo que pasó en el área en el minuto [N] explica por qué."
-• "El autogol del minuto [N] tiene una historia detrás que arrancó [N] minutos antes con una decisión táctica."
+• "[Jugador] anotó en el [N]º gol de su carrera en Mundiales — solo [N] jugadores lo lograron antes."
 TONO: Periodista con autoridad y pasión contenida. Informativo y cinematográfico al mismo tiempo.
 """,
         "fallback": {
@@ -354,52 +372,16 @@ GANCHO IDEAS:
     },
 }
 
-# Orden de rotación diaria — 10 slots (deportes al 40% por performance)
-ROTATION_ORDER = [
-    "deportes",
-    "ia_noticias",
-    "deportes",
-    "finanzas",
-    "deportes",
-    "entretenimiento",
-    "deportes",
-    "negocios_digitales",
-    "cripto_inversiones",
-    "politica_latam",
-]
-
 def get_niche(lang_code="es", learned_weights: dict = None):
     """
-    Retorna el nicho del día.
-    - Inglés: siempre ia_noticias
-    - Durante el Mundial 2026: alterna mundial_2026 (2 de cada 3 días) con ia_noticias
-    - ES sin pesos aprendidos: rotación por día del año
-    - ES con pesos aprendidos: selección probabilística por performance
+    Canal 100% deportes.
+    Durante el Mundial (Jun 11 – Jul 19 2026) usa mundial_2026.
+    El resto del tiempo siempre deportes.
     """
-    import random
-    if lang_code == "en":
-        return "ia_noticias", NICHES["ia_noticias"]
-
     today = date.today()
-
-    # ── Prioridad Mundial 2026 ─────────────────────────────────────────────────
     if _MUNDIAL_START <= today <= _MUNDIAL_END:
-        # 2 de cada 3 días → mundial; 1 de cada 3 → nicho normal (variedad)
-        if today.toordinal() % 3 != 0:
-            return "mundial_2026", NICHES["mundial_2026"]
-
-    if learned_weights and any(v > 0 for v in learned_weights.values()):
-        keys    = [k for k in learned_weights if k in NICHES]
-        weights = [max(learned_weights[k], 0.05) for k in keys]
-        total   = sum(weights)
-        weights = [w / total for w in weights]
-        rng = random.Random(today.toordinal())
-        key = rng.choices(keys, weights=weights, k=1)[0]
-    else:
-        day_of_year = today.timetuple().tm_yday
-        key = ROTATION_ORDER[day_of_year % len(ROTATION_ORDER)]
-
-    return key, NICHES[key]
+        return "mundial_2026", NICHES["mundial_2026"]
+    return "deportes", NICHES["deportes"]
 
 def get_niche_by_key(key):
     return NICHES.get(key, NICHES["ia_noticias"])

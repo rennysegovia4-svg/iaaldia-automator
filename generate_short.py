@@ -62,14 +62,6 @@ if not TOKEN_FILE.exists():
             TOKEN_FILE.write_text(decoded_token)
             print(f"{TOKEN_FILE.name} creado exitosamente.")
         except Exception as e:
-            print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
-        pass
-            print(f"Error al decodificar o guardar el token: {e}", file=sys.stderr)
-            sys.exit(1) # Forzar el fallo si hay un error en el proceso de token
-    else:
-        print(f"Error: La variable de entorno '{env_var_name}' no está definida. No se puede crear '{TOKEN_FILE.name}'.", file=sys.stderr)
-        sys.exit(1) # Forzar el fallo si la variable de entorno falta
-                    except Exception as e:
             print(f"Error decodificando {env_var_name}: {e}", file=sys.stderr)
             sys.exit(1)
     else:
@@ -325,8 +317,9 @@ def _validate_guion(guion: str) -> str:
     guion = guion.strip()
 
     words = guion.split()
-    if len(words) > 178:
-        truncated = " ".join(words[:178])
+    _max_words = int(os.environ.get("MAX_GUION_WORDS", "178"))
+    if len(words) > _max_words:
+        truncated = " ".join(words[:_max_words])
         last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
         if last_punct > len(truncated) * 0.65:
             guion = truncated[:last_punct + 1]
