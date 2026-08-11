@@ -18,6 +18,28 @@ from datetime import datetime, timedelta, timezone
 
 BASE_DIR     = Path(__file__).parent
 WATCHDOG_LOG = BASE_DIR / "watchdog_log.json"
+
+# Archivos que el watchdog NUNCA puede modificar via Gemini AI fix
+# (solo los fixes hardcodeados y específicos pueden tocarlos)
+GEMINI_PROTECTED = {"generate_short.py"}
+
+
+def _safe_write_py(fpath: Path, new_src: str) -> bool:
+    """Escribe un archivo .py solo si pasa la validación de sintaxis. Retorna True si escribió."""
+    import py_compile, tempfile
+    with tempfile.NamedTemporaryFile(suffix=".py", mode="w", delete=False) as tmp:
+        tmp.write(new_src)
+        tmp_path = tmp.name
+    try:
+        py_compile.compile(tmp_path, doraise=True)
+    except py_compile.PyCompileError as e:
+        print(f"  ✗ _safe_write_py: sintaxis inválida en {fpath.name}, NO se escribe. ({e})")
+        Path(tmp_path).unlink(missing_ok=True)
+        return False
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
+    fpath.write_text(new_src)
+    return True
 ENV_FILE     = BASE_DIR / ".env"
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -133,8 +155,8 @@ def fix_invalid_scope(detail: str, logs: str):
             new_src = new_src.replace('["https://www.googleapis.com/auth/youtube.readonly"]',
                                       '["https://www.googleapis.com/auth/youtube"]')
             if new_src != src:
-                fpath.write_text(new_src)
-                print(f"  ✓ fix_invalid_scope → {fpath.name}")
+                if _safe_write_py(fpath, new_src):
+                    print(f"  ✓ fix_invalid_scope → {fpath.name}")
                 fixed = True
     return fixed
 
@@ -151,8 +173,7 @@ def fix_ffmpeg_filter(detail: str, logs: str):
     # Quitar vignette si falla
     if "Filter not found" in logs and "vignette" in logs:
         patched = re.sub(r",\s*vignette=angle=PI/4[^'\"]*", "", patched)
-    if patched != src:
-        target.write_text(patched)
+    if patched != src and _safe_write_py(target, patched):
         print("  ✓ fix_ffmpeg_filter → generate_short.py")
         return True
     return False
@@ -177,8 +198,7 @@ def fix_quota_exceeded(detail: str, logs: str):
         '["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash"]',
         '["gemini-2.5-flash", "gemini-2.0-flash", "gemini-2.5-pro"]'
     )
-    if patched != src:
-        target.write_text(patched)
+    if patched != src and _safe_write_py(target, patched):
         print("  ✓ fix_quota_exceeded → modelo rotado a gemini-2.5-flash primero")
         return True
     return False
@@ -194,8 +214,7 @@ def fix_timeout(detail: str, logs: str):
     if not target.exists(): return False
     src = target.read_text()
     patched = src.replace("timeout=12)", "timeout=25)").replace("timeout=45)", "timeout=60)")
-    if patched != src:
-        target.write_text(patched)
+    if patched != src and _safe_write_py(target, patched):
         print("  ✓ fix_timeout → timeouts aumentados")
         return True
     return True  # Retrigger igual
@@ -222,8 +241,7 @@ def fix_manim_missing(detail: str, logs: str):
             "make_manim_intro(output_path)",
             "make_manim_intro(output_path) if False else None  # disabled by watchdog"
         )
-    if patched != src:
-        target.write_text(patched)
+    if patched != src and _safe_write_py(target, patched):
         print("  ✓ fix_manim_missing → Manim deshabilitado")
         return True
     return True
@@ -333,13 +351,16 @@ REGLAS:
 
         if fix_plan.get("archivo_a_modificar") and fix_plan.get("buscar") and fix_plan.get("reemplazar"):
             target = BASE_DIR / fix_plan["archivo_a_modificar"]
-            if target.exists() and fix_plan["confianza"] >= 0.6:
+            if target.name in GEMINI_PROTECTED:
+                print(f"  ✗ Gemini fix bloqueado: {target.name} está en GEMINI_PROTECTED")
+            elif target.exists() and fix_plan["confianza"] >= 0.6:
                 src = target.read_text()
                 patched = src.replace(fix_plan["buscar"], fix_plan["reemplazar"], 1)
                 if patched != src:
-                    target.write_text(patched)
-                    print(f"  ✓ Gemini fix aplicado → {target.name}")
-                    return True
+                    wrote = _safe_write_py(target, patched) if target.suffix == ".py" else (target.write_text(patched) or True)
+                    if wrote:
+                        print(f"  ✓ Gemini fix aplicado → {target.name}")
+                        return True
         return True  # Retrigger de todas formas
     except Exception as e:
         print(f"  ! gemini_fix error: {str(e)[:80]}")
