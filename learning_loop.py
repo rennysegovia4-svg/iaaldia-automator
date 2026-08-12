@@ -299,7 +299,7 @@ RANKING DE NICHOS POR PERFORMANCE:
 {json.dumps([{'nicho': k, 'avg_views': v['avg_views'], 'score': v['score'], 'trend': v.get('trend',0)} for k,v in niche_ranking], ensure_ascii=False, indent=2)}
 
 HOOKS MÁS EFECTIVOS:
-{json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in top_hooks], ensure_ascii=False, indent=2)}
+{json.dumps([{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']} for h,s in top_hooks], ensure_ascii=False, indent=2)}
 
 HOOKS QUE FALLAN:
 {json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in low_hooks], ensure_ascii=False, indent=2)}
