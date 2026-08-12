@@ -1,35 +1,41 @@
 {
-  "updated": "2026-07-08",
-  "iteracion": 70,
+  "updated": "2026-08-12",
+  "iteracion": 69,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 1.0
+    "ia_noticias": 0.5,
+    "deportes": 0.25,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[JUGADOR] ELIMINA A [EQUIPO] DEL MUNDIAL! 🤯",
-    "[EQUIPO] EN SHOCK: [JUGADOR/ACCIÓN] PARALIZA! 😱",
-    "[EQUIPO1] [0-0|1-0|2-1] [EQUIPO2] EN MUNDIAL! ¿QUÉ PASÓ? 😱",
-    "¡[EQUIPO] ELIMINADO del MUNDIAL! 😱 [RIVAL] HACE HISTORIA",
-    "¡[EVENTO DEPORTIVO] EXPLOTA! 🤯 Esto DEBES saber YA",
-    "[Evento/Tema] HOY?! YA! 😱",
-    "¡[País1] vs [País2]! ¿[Evento] HOY? 😱",
-    "[Persona/Evento]: ¡[Cifra]! ¿VERDAD? 😱🤯"
+    "[Evento Dramático/Impactante]: [Sustantivo de impacto] en [Lugar/Sujeto]! 🤯/😱",
+    "[Noticia/Evento] que sacude [Región/Comunidad] hoy [Emoji relacionado]",
+    "[Sujeto]: [Acción dramática] ¡[Emoción/Shock]! 🤯",
+    "¡URGENTE! [Evento Clave] [Día]: ¡EXPLOTA YA! 🤯/🚨",
+    "[Sujeto Inesperado] [Verbo de Acción Extrema] [Objeto/Concepto] 🤯",
+    "[Cifra/Dato] en [Periodo]: [Crisis/Conflicto] explicada/¿dividira? 😱"
   ],
   "avoid_hooks": [
-    "Titulares genéricos de IA sin evento real ('IA 2026: lo que nadie te cuenta')",
-    "Promesas de ahorro o productividad sin intriga ('IA ahorra 3 horas diarias')",
-    "Afirmaciones de autoayuda o amenaza existencial sin ancla a evento real"
+    "Hooks que detallan resultados de partidos ficticios o simulados sin un gancho adicional ('Brasil y Noruega empatan 0-0').",
+    "Declaraciones motivacionales o filosóficas genéricas sin un evento noticioso ('NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Referencias a eventos muy específicos o internos de nichos de bajo rendimiento ('ARGENTINA EN SHOCK: CABRAL PARALIZA!')."
   ],
-  "best_hora": 20,
-  "duracion_optima": "60-90 segundos para deportes; 30-45 segundos para IA",
+  "best_hora": 6,
+  "duracion_optima": null,
   "recomendaciones": [
-    "PRIORIDAD MÁXIMA: Coberturas de partidos en vivo (HT + FT). Los 4 videos de Brasil vs Noruega generaron 3,603 vistas combinadas — el mejor batch de la historia del canal. Replicar este modelo para cada partido del Mundial.",
-    "Los videos deportivos generan 4.5x más vistas que los de IA: 237 vistas/video deportivo vs 53 vistas/video IA. Ajustar toda la rotación hacia deportes.",
-    "Jugadores top como gancho: 'HAALAND ELIMINA' (921v), 'CABRAL PARALIZA' (957v). El nombre del jugador + verbo de acción dramática es la fórmula más efectiva probada.",
-    "Publicar inmediatamente después de resultados mientras el tema está trending. El video de Noruega eliminando Brasil se publicó a minutos del final y capturó la ola de búsquedas.",
-    "Formato 'En SHOCK': '[EQUIPO/JUGADOR] EN SHOCK: [ACCIÓN]!' es la plantilla de título más replicable. Connotación de sorpresa más resultado inesperado.",
-    "El Mundial 2026 es el techo de oportunidad. Quedan 13 días de torneo (hasta el 19 julio). Cada partido de octavos/cuartos tiene potencial de 800-1000 vistas por video."
+    "Priorizar fuertemente el nicho 'ia_noticias', especialmente cuando cubre eventos deportivos o noticias de última hora con alto impacto emocional, ya que representa el 100% del Top 10.",
+    "Maximizar el uso de emojis de alto impacto (🤯, 😱, 💰, 🚨) y lenguaje dramático ('¡SHOCK!', 'URGENTE!', 'DEVATADOR!', 'EXPLOTA YA') en los títulos para aumentar la tasa de clics.",
+    "Evitar completamente el nicho 'mundial_2026' y cualquier contenido de resultados deportivos ficticios o simulados, dado su rendimiento de 0 vistas en la iteración actual.",
+    "Investigar y experimentar con el nicho de 'productividad', que muestra una tendencia de crecimiento muy positiva (13.5), a pesar de tener un promedio de vistas actual más bajo (56 vistas).",
+    "Implementar el seguimiento de la duración de los videos para identificar el rango óptimo que maximiza las vistas y la retención, ya que actualmente no se dispone de estos datos."
   ],
-  "nivel_confianza": 0.95,
-  "insight_semana": "DEPORTES DOMINA: 83.9% de las vistas totales del canal vienen de contenido deportivo (6,408/7,642 vistas), con solo el 54% de los videos. Durante el Mundial 2026, los videos de partido generan 800-957 vistas cada uno. El nicho IA sin evento deportivo ancla promedia 53 vistas. La estrategia debe ser: deportes primero, siempre."
+  "nivel_confianza": 0.9,
+  "insight_semana": "La combinación de noticias de IA con eventos deportivos de alta relevancia y urgencia es la fórmula de mayor éxito, capturando el interés de la audiencia a través del drama y la sorpresa, mientras que los nichos de contenido puramente ficcional o motivacional sin anclaje en noticias reales demuestran una ineficacia total."
 }
