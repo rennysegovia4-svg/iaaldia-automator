@@ -296,7 +296,7 @@ TOP 10 VIDEOS (más views):
 {json.dumps([{'titulo': v['titulo'], 'views': v['views'], 'nicho': v.get('nicho','?'), 'hook': v.get('hook_formula','?')[:60]} for v in low_videos], ensure_ascii=False, indent=2)}
 
 RANKING DE NICHOS POR PERFORMANCE:
-{json.dumps([{{'nicho': k, 'avg_views': v['avg_views'], 'score': v['score'], 'trend': v.get('trend',0)}} for k,v in niche_ranking], ensure_ascii=False, indent=2)}
+{json.dumps([{'nicho': k, 'avg_views': v['avg_views'], 'score': v['score'], 'trend': v.get('trend',0)} for k,v in niche_ranking], ensure_ascii=False, indent=2)}
 
 HOOKS MÁS EFECTIVOS:
 {json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in top_hooks], ensure_ascii=False, indent=2)}
