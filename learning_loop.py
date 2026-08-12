@@ -302,7 +302,7 @@ HOOKS MÁS EFECTIVOS:
 {json.dumps([{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']} for h,s in top_hooks], ensure_ascii=False, indent=2)}
 
 HOOKS QUE FALLAN:
-{json.dumps([{{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']}} for h,s in low_hooks], ensure_ascii=False, indent=2)}
+{json.dumps([{'hook': h[:80], 'avg_views': s['avg'], 'score': s['score']} for h,s in low_hooks], ensure_ascii=False, indent=2)}
 
 APRENDIZAJES PREVIOS:
 {json.dumps(prev_learnings, ensure_ascii=False)}
