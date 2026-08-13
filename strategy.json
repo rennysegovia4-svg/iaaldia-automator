@@ -1,40 +1,39 @@
 {
   "updated": "2026-08-13",
-  "iteracion": 73,
+  "iteracion": 74,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.8,
-    "productividad": 0.05,
-    "negocios": 0.03,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
-    "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
-    "deportes": 0.02,
-    "entretenimiento": 0.01,
-    "politica_latam": 0.01,
-    "mundial_2026": 0.0
+    "deportes": 0.009,
+    "ia_noticias": 0.94,
+    "finanzas": 0.009,
+    "entretenimiento": 0.009,
+    "negocios_digitales": 0.009,
+    "productividad_ia": 0.009,
+    "cripto_inversiones": 0.009,
+    "politica_latam": 0.006
   },
   "best_hooks": [
-    "[EVENTO IMPACTANTE] en [LUGAR]: [DATO CLAVE] y emergencia [NIVEL] 🚨",
-    "La noticia [TIPO] que sacude [REGIÓN] hoy [EMOJI_FUTBOL/SHOCK]",
-    "[PAÍS/EQUIPO] ENTREGÓ [EVENTO IMPORTANTE]? 🤯 (PARTE X)",
-    "[LIGA/EQUIPO]: [ACCIÓN DRAMÁTICA] ¡SHOCK! 🤯",
-    "[NÚMERO] [SUJETO] en [TIEMPO]: la crisis de [LUGAR] explicada",
-    "¡URGENTE! [EVENTO] [FECHA]: EXPLOTA YA 🤯 / ¡URGENTE! 🚨"
+    "[Evento impactante/Noticia urgente] + [Consecuencia dramática/Cifra clave] + [Emoji de sorpresa/alarma]",
+    "[Pregunta controversial] + [Entidad/Evento conocido] + [Emoji de asombro/pensamiento] + [Indicador de serie (Opcional)]",
+    "[Titular de alto impacto] + [Tema específico (Deportes/Política)] + [Temporalidad/Localización] + [Emoji relevante]",
+    "[Entidad clave] + [Situación crítica/sorpresiva] + [Interjección de impacto] + [Emoji de shock]",
+    "[Cifras impactantes] + [Problema global/regional] + [Explicación/Análisis]",
+    "[Alerta de urgencia] + [Evento futuro/Especulación sobre evento] + [Interjección de impacto] + [Emoji de explosión/sorpresa]"
   ],
   "avoid_hooks": [
-    "Anuncios de empates o resultados de eventos deportivos ficticios/futuros (e.g., 'X 0-0 Y' o contenido de 'Mundial 2026').",
-    "Descripciones literales y poco emocionantes sin un gancho claro o pregunta (e.g., 'Sidny Lopes Cabral acaba de').",
-    "Mensajes genéricos de autoayuda o motivación sin relevancia noticiosa o de actualidad (e.g., 'NO TOMAR RIESGO es tu MAYOR AMENAZA')."
+    "Resultados ficticios o futuros de eventos deportivos (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Frases incompletas o que terminan abruptamente sin generar intriga (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Cualquier contenido dentro del nicho 'mundial_2026' debido a su rendimiento nulo."
   ],
   "best_hora": 6,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Mantener el foco principal en el nicho 'ia_noticias', priorizando temas de impacto y urgencia como desastres naturales, crisis migratorias o noticias deportivas relevantes que generen controversia o sorpresa.",
-    "Utilizar títulos con ganchos emocionales fuertes, preguntas directas, números impactantes y emojis (🤯, 😱, 🚨) para generar curiosidad y urgencia en la audiencia.",
-    "Publicar preferentemente a las 6 AM y 21 PM, horas que han demostrado ser las más efectivas para captar la atención de la audiencia en esta iteración."
+    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', que es el único con rendimiento probado, especialmente si se enfoca en noticias deportivas de actualidad, controversias, o eventos globales/regionales de alto impacto.",
+    "Aprovechar los picos de audiencia publicando videos consistentemente a las 6 AM y 21 PM, siendo las 6 AM la hora de mayor concentración de videos exitosos.",
+    "Incorporar elementos de intriga, urgencia, números impactantes y emojis (`🤯`, `⚽`, `💰`, `😱`, `🚨`) directamente en los títulos de los videos, ya que estos actúan como el 'hook' principal.",
+    "Evitar por completo la creación de contenido relacionado con resultados deportivos ficticios o futuros, como el nicho 'mundial_2026', dado su historial de 0 vistas.",
+    "Monitorear de cerca la tendencia negativa (-1.0) del nicho 'ia_noticias' para identificar si es necesaria una adaptación en el tipo de contenido o formato dentro de este segmento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dominancia de 'ia_noticias' es incuestionable, acaparando el 100% del Top 10 y logrando altas vistas con contenido de actualidad impactante, mientras que el contenido ficticio o de baja relevancia (como 'mundial_2026') es un fracaso absoluto, indicando una clara preferencia de la audiencia por noticias verídicas y urgentes."
+  "insight_semana": "El nicho 'ia_noticias' es la única fuente de contenido exitoso, generando el 100% de los videos en el Top 10, con un promedio de 227 vistas, destacando la fuerte demanda por noticias de impacto y controversias deportivas. No obstante, su tendencia a la baja (-1.0) indica la necesidad de observación continua."
 }
