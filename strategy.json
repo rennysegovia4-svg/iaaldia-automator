@@ -1,42 +1,40 @@
 {
   "updated": "2026-08-13",
-  "iteracion": 72,
+  "iteracion": 73,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.015,
-    "ia_noticias": 0.7,
-    "finanzas": 0.015,
-    "entretenimiento": 0.015,
-    "negocios_digitales": 0.015,
-    "productividad_ia": 0.015,
-    "cripto_inversiones": 0.015,
-    "politica_latam": 0.005,
-    "productividad": 0.15,
-    "negocios": 0.05,
+    "ia_noticias": 0.8,
+    "productividad": 0.05,
+    "negocios": 0.03,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "deportes": 0.02,
+    "entretenimiento": 0.01,
+    "politica_latam": 0.01,
     "mundial_2026": 0.0
   },
   "best_hooks": [
-    "Crisis/Alarma + Dato Numérico Impactante + Localización/Sujeto: Ej. 'Terremoto devastador en Colombia: 132 muertos y emergencia n'",
-    "Noticia Deportiva de IMPACTO + Verbo de conmoción + Emojis de shock 🤯/⚽: Ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯'",
-    "Evento/Situación de ALTO RIESGO + Consecuencia Dramática (pregunta o afirmación) + Emojis de intriga/peligro 😱: Ej. 'ESPAÑA ACUSA: ¿Crisis migratoria dividirá a Europa? 😱'",
-    "¡URGENTE! 🚨/⚡ + Evento Futuro/Inminente + Verbo de acción/explosión + Emojis de impacto 🤯: Ej. '¡URGENTE! MUNDIAL 2026 VIERNES: EXPLOTA YA 🤯'",
-    "Equipo Deportivo Específico + Crossover Inesperado/Novedad + Verbo sorprendente + Emojis de asombro 🤯: Ej. 'FÚTBOL CLUB BARCELONA: ROBLOX ROMPE ESQUEMAS 🤯'",
-    "Cantidad Impactante + Grupo/Crisis + Explicación (palabra clave): Ej. '60.000 migrantes en 24 horas: la crisis de Ceuta explicada'"
+    "[EVENTO IMPACTANTE] en [LUGAR]: [DATO CLAVE] y emergencia [NIVEL] 🚨",
+    "La noticia [TIPO] que sacude [REGIÓN] hoy [EMOJI_FUTBOL/SHOCK]",
+    "[PAÍS/EQUIPO] ENTREGÓ [EVENTO IMPORTANTE]? 🤯 (PARTE X)",
+    "[LIGA/EQUIPO]: [ACCIÓN DRAMÁTICA] ¡SHOCK! 🤯",
+    "[NÚMERO] [SUJETO] en [TIEMPO]: la crisis de [LUGAR] explicada",
+    "¡URGENTE! [EVENTO] [FECHA]: EXPLOTA YA 🤯 / ¡URGENTE! 🚨"
   ],
   "avoid_hooks": [
-    "Resultados deportivos ficticios o futuros de eventos lejanos como 'Mundial 2026' (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱')",
-    "Ganchos genéricos de superación personal o riesgo abstracto en un canal de noticias (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Acusaciones de fraude vagas o no confirmadas en eventos deportivos recientes sin un impacto masivo y claro (ej. 'PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡')"
+    "Anuncios de empates o resultados de eventos deportivos ficticios/futuros (e.g., 'X 0-0 Y' o contenido de 'Mundial 2026').",
+    "Descripciones literales y poco emocionantes sin un gancho claro o pregunta (e.g., 'Sidny Lopes Cabral acaba de').",
+    "Mensajes genéricos de autoayuda o motivación sin relevancia noticiosa o de actualidad (e.g., 'NO TOMAR RIESGO es tu MAYOR AMENAZA')."
   ],
   "best_hora": 6,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho 'ia_noticias', ya que demostró ser el más efectivo, capturando el 100% del Top 10.",
-    "Dentro de 'ia_noticias', priorizar temas de noticias deportivas que generen impacto, conflicto o sorpresa, ya que 7 de los 10 videos principales eran de esta temática.",
-    "Utilizar titulares y ganchos que enfaticen la urgencia, crisis, números impactantes y elementos de shock, incorporando emojis relevantes.",
-    "Evitar completamente el nicho 'mundial_2026', especialmente con resultados deportivos ficticios o futuros, ya que todos los intentos registraron 0 vistas.",
-    "Experimentar con horarios de publicación concentrados en las 6 AM y 21 PM, que fueron los momentos con mayor número de videos en el Top 10."
+    "Mantener el foco principal en el nicho 'ia_noticias', priorizando temas de impacto y urgencia como desastres naturales, crisis migratorias o noticias deportivas relevantes que generen controversia o sorpresa.",
+    "Utilizar títulos con ganchos emocionales fuertes, preguntas directas, números impactantes y emojis (🤯, 😱, 🚨) para generar curiosidad y urgencia en la audiencia.",
+    "Publicar preferentemente a las 6 AM y 21 PM, horas que han demostrado ser las más efectivas para captar la atención de la audiencia en esta iteración."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias impactantes generadas por IA, particularmente sobre eventos deportivos y crisis con alta carga emocional o numérica, es la estrategia más efectiva. Los títulos con elementos de shock y urgencia son cruciales, mientras que los temas de resultados deportivos hipotéticos y contenidos genéricos de autoayuda son ineficaces."
+  "insight_semana": "La dominancia de 'ia_noticias' es incuestionable, acaparando el 100% del Top 10 y logrando altas vistas con contenido de actualidad impactante, mientras que el contenido ficticio o de baja relevancia (como 'mundial_2026') es un fracaso absoluto, indicando una clara preferencia de la audiencia por noticias verídicas y urgentes."
 }
