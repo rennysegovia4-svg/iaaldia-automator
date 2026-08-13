@@ -1,39 +1,40 @@
 {
   "updated": "2026-08-13",
-  "iteracion": 74,
+  "iteracion": 75,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.009,
-    "ia_noticias": 0.94,
-    "finanzas": 0.009,
-    "entretenimiento": 0.009,
-    "negocios_digitales": 0.009,
-    "productividad_ia": 0.009,
-    "cripto_inversiones": 0.009,
-    "politica_latam": 0.006
+    "deportes": 0.04,
+    "ia_noticias": 0.7,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.03,
+    "productividad": 0.03,
+    "negocios": 0.03,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "[Evento impactante/Noticia urgente] + [Consecuencia dramática/Cifra clave] + [Emoji de sorpresa/alarma]",
-    "[Pregunta controversial] + [Entidad/Evento conocido] + [Emoji de asombro/pensamiento] + [Indicador de serie (Opcional)]",
-    "[Titular de alto impacto] + [Tema específico (Deportes/Política)] + [Temporalidad/Localización] + [Emoji relevante]",
-    "[Entidad clave] + [Situación crítica/sorpresiva] + [Interjección de impacto] + [Emoji de shock]",
-    "[Cifras impactantes] + [Problema global/regional] + [Explicación/Análisis]",
-    "[Alerta de urgencia] + [Evento futuro/Especulación sobre evento] + [Interjección de impacto] + [Emoji de explosión/sorpresa]"
+    "[Evento impactante/Urgente] + [Tema específico/Cifra] + [Emoji de sorpresa/emoción]",
+    "[Controversia/Pregunta abierta] + [Evento grande/Equipo] + [Emoji de shock] + (Opcional: Serialización)",
+    "[Novedad/Urgencia] + [Nicho/Tema principal] + [Audiencia/Temporalidad] + [Emoji relevante]",
+    "[Actor/Evento Específico] + [Verbo de impacto/Emoción] + [Consecuencia/Dato clave] + [Emoji de alarma]",
+    "[Conflicto/Drama] + [Adjetivo de magnitud] + [Motivo/Elemento sorprendente] + [Emoji específico]",
+    "[Evento futuro/actual] + [Elemento inesperado] + [Resultado/Verbo explosivo] + [Emoji de impacto]"
   ],
   "avoid_hooks": [
-    "Resultados ficticios o futuros de eventos deportivos (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Frases incompletas o que terminan abruptamente sin generar intriga (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Cualquier contenido dentro del nicho 'mundial_2026' debido a su rendimiento nulo."
+    "Descripciones de resultados deportivos específicos y poco emocionantes (ej. 'Brasil y Noruega empatan 0-0').",
+    "Ganchos genéricos de autoayuda o motivación sin un contexto de noticia urgente (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA').",
+    "Mencionar nombres propios sin un contexto de alta relevancia o impacto inmediato (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 6,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', que es el único con rendimiento probado, especialmente si se enfoca en noticias deportivas de actualidad, controversias, o eventos globales/regionales de alto impacto.",
-    "Aprovechar los picos de audiencia publicando videos consistentemente a las 6 AM y 21 PM, siendo las 6 AM la hora de mayor concentración de videos exitosos.",
-    "Incorporar elementos de intriga, urgencia, números impactantes y emojis (`🤯`, `⚽`, `💰`, `😱`, `🚨`) directamente en los títulos de los videos, ya que estos actúan como el 'hook' principal.",
-    "Evitar por completo la creación de contenido relacionado con resultados deportivos ficticios o futuros, como el nicho 'mundial_2026', dado su historial de 0 vistas.",
-    "Monitorear de cerca la tendencia negativa (-1.0) del nicho 'ia_noticias' para identificar si es necesaria una adaptación en el tipo de contenido o formato dentro de este segmento."
+    "Concentrar la creación de contenido en el nicho 'ia_noticias', que ha demostrado ser 100% efectivo en el Top 10 de videos y con el mayor promedio de vistas (326).",
+    "Diseñar títulos que empleen lenguaje de urgencia, controversia, cifras impactantes y emojis (`🤯`, `⚽`, `💰`, `😱`) para maximizar el CTR, replicando el patrón del 80% de los videos más vistos.",
+    "Optimizar los horarios de publicación, priorizando las 6 AM y las 21 PM, ya que concentran el 50% de los videos con mejor rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es la única fuente de contenido exitoso, generando el 100% de los videos en el Top 10, con un promedio de 227 vistas, destacando la fuerte demanda por noticias de impacto y controversias deportivas. No obstante, su tendencia a la baja (-1.0) indica la necesidad de observación continua."
+  "insight_semana": "El nicho 'ia_noticias' es la única estrategia de contenido viable actualmente, demostrando su éxito al acaparar el 100% del Top 10 de videos, especialmente cuando aborda temas deportivos o noticias de alto impacto real, mientras que los intentos de diversificación en otros nichos han resultado en cero vistas."
 }
