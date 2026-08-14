@@ -1,40 +1,40 @@
 {
   "updated": "2026-08-14",
-  "iteracion": 81,
+  "iteracion": 82,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.86,
-    "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
-    "productividad_ia": 0.01,
     "deportes": 0.01,
+    "ia_noticias": 0.78,
+    "finanzas": 0.01,
     "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
     "politica_latam": 0.01,
+    "productividad": 0.1,
+    "negocios": 0.05,
     "mundial_2026": 0.0
   },
   "best_hooks": [
-    "Pregunta impactante con emoji: '¿[Evento polémico] HOY? 🤯'",
-    "Noticia de alto impacto con cifras: '[Catástrofe/Crisis] devastador: [Número] [afectados/migrantes]'",
-    "Alerta deportiva urgente con emoción: '¡LIGA MX/MUNDIAL: [Equipo/Jugador] [Suceso impactante]! ¡SHOCK! 😱'",
-    "Controversia económica/social: '[Conflicto/Tema] MILLONARIO: [Consecuencia]? 💰'",
-    "Contenido serializado para intriga: '[Noticia clave] (PARTE X)'",
-    "Giro inesperado con personaje/referencia: '[Personaje/Elemento Inesperado] revela [Gran suceso] 🤯'"
+    "[Evento/Sujeto] + [Pregunta Controversial/Intriga] + [Emoji Impactante] + (Opcional: Parte X/Y)",
+    "[Noticia Devastadora/Impactante] en [Lugar]: [Número/Consecuencia]",
+    "La Noticia [Tipo] que Sacude [Región] [Hoy/Ahora] [Emoji]",
+    "[Liga/Evento] + [Equipo/Sujeto] + [Acción/Resultado Shockeante] + [Emoji Impactante]",
+    "[Sujeto/Entidad] [Acción Drástica]: ¿[Conclusión Negativa]? [Emoji]",
+    "[Conflicto/Situación Controversial] por [Tema]: ¡[Impacto Millonario/Gran Consecuencia]! [Emoji]"
   ],
   "avoid_hooks": [
-    "Descripciones puramente factuales sin generar intriga o emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmaciones directas sin contexto de impacto ni relevancia inmediata (ej. 'Sidny Lopes Cabral acaba de')",
-    "Titulares sin preguntas, exclamaciones o emojis que provoquen curiosidad."
+    "Afirmaciones puramente descriptivas y sin emoción (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks que anticipan eventos futuros con resultados específicos sin base real (ej. resultados de 'Mundial 2026').",
+    "Frases incompletas o que no generan intriga suficiente (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 6,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, centrándose en noticias deportivas con elementos de controversia, urgencia y fuerte impacto emocional, ya que este nicho es la única fuente del top 10 de videos.",
-    "Maximizar el potencial de enganche del título, utilizando preguntas, palabras de alto impacto (SHOCK, DEVASTADOR), cifras significativas y emojis (🤯, 😱, ⚽, 💰), dado que los videos más exitosos no registran un 'hook' explícito.",
-    "Suspender la producción de contenido bajo el nicho `mundial_2026` debido a su rendimiento nulo (0 vistas y score de 0) en todos los videos analizados."
+    "Priorizar la creación de contenido en el nicho `ia_noticias`, el único con resultados probados (100% de los videos top) y con un alto promedio de 997 vistas por video en el top 10.",
+    "Diseñar títulos sensacionalistas, controversiales o informativos con emojis de impacto (🤯, 😱, ⚽, 💰) para funcionar como el 'hook' principal, dado que los campos de hook explícitos no han demostrado efectividad.",
+    "Mantener la publicación principal a las 6 AM (promedio de 1085.5 vistas en el top 10), pero también explorar las franjas de 1 AM, 16 PM y 21 PM que han mostrado buenos resultados, y evitar el nicho `mundial_2026` debido a su nulo rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dominancia del nicho `ia_noticias` es incuestionable, con el 100% de los videos en el Top 10. El éxito se atribuye a títulos que explotan la controversia, la urgencia y las emociones fuertes, especialmente en noticias deportivas, mientras que los ganchos descriptivos fracasan por completo."
+  "insight_semana": "La clave del éxito reside exclusivamente en títulos noticiosos, sensacionalistas y emocionales dentro del nicho 'ia_noticias', donde la ausencia de un 'hook' explícito en el campo 'hook' sugiere que el título mismo cumple esa función principal de captar la atención."
 }
