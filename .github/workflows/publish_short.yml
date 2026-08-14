@@ -83,6 +83,7 @@ jobs:
           echo "ELEVENLABS_VOICE_ANALISTA_FRIO=nPczCjzI2devNBz1zQrb" >> .env
           echo "ELEVENLABS_VOICE_STORYTELLER=JBFqnCBsd6RMkjVDRZzb" >> .env
           echo "ELEVENLABS_VOICE_COACH=TX3LPaxmHKxFdv7VOQHJ" >> .env
+          echo "FORCE_PERSONA=provocador" >> .env
 
       - name: Publicar Short ES
         env:
@@ -198,6 +199,7 @@ jobs:
         run: |
           echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env
           echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}" >> .env
+          echo "FORCE_PERSONA=provocador" >> .env
 
       - name: Publicar Short EN
         if: steps.check_en.outputs.skip == 'false'
