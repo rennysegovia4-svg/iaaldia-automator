@@ -1,37 +1,40 @@
 {
   "updated": "2026-08-14",
-  "iteracion": 79,
+  "iteracion": 80,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.8,
-    "ia_noticias": 0.2,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "[Sujeto/Evento] + [Verbo de Acción/Pregunta Inesperada] + [Impacto/Emoji de Shock/Sorpresa] (Ej: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "[Noticia Específica] + [Dato Concreto Impactante] + [Consecuencia Grave] (Ej: \"Terremoto devastador en Colombia: 132 muertos\")",
-    "\"La noticia [Adjetivo] que sacude [Región] hoy [Emoji clave]\" (Ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")",
-    "[Equipo/Entidad] + [Verbo de Acción Negativa] + [Título/Posición] + [Emoji de Shock] (Ej: \"AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
-    "[Evento Futbolístico] + [Pregunta Controversial] + [Parte del Video (opcional)] + [Emoji de Shock] (Ej: \"ARGENTINA Mundial 2026: ¿FINAL ENTREGADA? 🤯 (1/2)\")",
-    "[Entidad] + [Acción Inesperada/Drástica] + [Consecuencia en forma de pregunta] + [Emoji de Miedo/Shock] (Ej: \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\")"
+    "[Evento Inesperado/Controversial] + [Cifra/Detalle Clave]? 🤯 (Parte X)",
+    "[Noticia Devastadora/Impactante]: [Detalle_Clave] 🤯/😱",
+    "La noticia [Adjetivo Fuerte] que sacude [Lugar/Audiencia] hoy ⚽",
+    "[Evento/Entidad]: [Acción Impactante] ¡SHOCK! 🤯/😱",
+    "[Evento Importante]: [Situación Dramática] ¿[Pregunta Implicita]? 😱",
+    "[Sujeto/Evento] + [Acción Inesperada/Sorprendente] + 🤯/😱"
   ],
   "avoid_hooks": [
-    "Hooks que son declaraciones puramente factuales sin emociones, preguntas o emojis (Ej: \"Brasil y Noruega empatan 0-0\")",
-    "Hooks incompletos o demasiado vagos que no generan intriga (Ej: \"Sidny Lopes Cabral acaba de\")",
-    "Hooks genéricos sobre resultados futuros sin un elemento de shock o controversia."
+    "[Equipo1] y [Equipo2] empatan [Resultado] (Demasiado factual, sin emoción)",
+    "[Equipo1] y [Equipo2] empatan (Versión corta, mismo problema)",
+    "[Nombre] acaba de [Acción] (factual sin intriga inicial)"
   ],
   "best_hora": 6,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Maximizar la producción de contenido de noticias deportivas impactantes, especialmente sobre fútbol (Mundial, ligas LATAM), dado que representa el 80% de los videos con más vistas.",
-    "Implementar estrategias de títulos y hooks que incluyan preguntas retóricas, afirmaciones de shock y emojis (🤯, 😱, ⚽) para generar curiosidad y urgencia, evitando declaraciones puramente factuales.",
-    "Priorizar las horas de publicación tempranas, específicamente a las 6 AM y 1 AM, ya que el horario de las 6 AM ha demostrado el mejor rendimiento promedio de vistas."
+    "Focalizar el contenido: Priorizar la creación de Shorts sobre noticias deportivas y eventos futbolísticos, ya que este subgénero domina el Top 10 de videos más vistos dentro del nicho `ia_noticias`.",
+    "Optimizar el horario de publicación: Publicar los Shorts alrededor de las 6 AM (hora 6), ya que este horario ha demostrado el mejor rendimiento promedio en el Top 10 (1085.5 vistas por video).",
+    "Diseñar títulos y hooks emocionales y controversiales: Evitar ganchos puramente descriptivos y factuales (que obtuvieron 0 vistas). En su lugar, usar preguntas, exclamaciones (`🤯`, `😱`), y afirmaciones que generen shock, intriga o urgencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La performance del canal depende casi exclusivamente del nicho 'ia_noticias', donde las noticias deportivas con títulos sensacionalistas y emojis de shock son el motor principal de las vistas, mientras que otros nichos y hooks factuales no generan tracción."
+  "insight_semana": "El contenido de noticias deportivas, en particular sobre fútbol, es el motor principal de vistas en el canal, especialmente cuando se presenta con títulos que generan controversia o shock y se publica a primera hora de la mañana."
 }
