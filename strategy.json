@@ -1,38 +1,37 @@
 {
   "updated": "2026-08-15",
-  "iteracion": 88,
+  "iteracion": 89,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.25,
-    "ia_noticias": 0.55,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.05,
+    "ia_noticias": 0.7,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta controversial + Dato impactante + Emoji (ej. ¿FINAL ENTREGADA? 🤯)",
-    "Noticia urgente/impactante + Localización + Cifra/Detalle clave (ej. Terremoto devastador en Colombia: 132 muertos)",
-    "Evento deportivo clave + Consecuencia dramática + Emoji (ej. AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
-    "Declaración intrigante + Enfoque geográfico/temporal + Emoji (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
-    "Gran evento + Conflicto/Alta apuesta + Emoji (ej. GUERRA MILLONARIA POR DERECHOS 💰)",
-    "Actualidad + Pregunta retórica con emoción + Emoji (ej. LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱)"
+    "Preguntas controversiales/impactantes + Emojis de sorpresa (🤯, 😱)",
+    "Noticias de última hora/urgencia utilizando palabras como 'hoy', 'sacude', 'devastador'",
+    "Inclusión de cifras específicas de impacto o nombres clave (ej. '132 muertos', 'Gamezking')",
+    "Exclamaciones de shock/sorpresa para generar impacto emocional ('¡SHOCK!', '¡ELIMINADO!')",
+    "Temas que implican alto valor económico o conflicto ('GUERRA MILLONARIA', 'SE VENDE')",
+    "Indicadores de series o continuidad para fomentar la retención ('PARTE 1', '1/2')"
   ],
   "avoid_hooks": [
-    "Declaraciones directas de resultados sin intriga o emoción (ej. Brasil y Noruega empatan 0-0)",
-    "Nombres de jugadores poco conocidos sin contexto impactante (ej. Sidny Lopes Cabral acaba de)",
-    "Anuncios de empates sin un 'por qué' o 'consecuencia' dramática (ej. Brasil y Noruega empatan)"
+    "Hooks meramente descriptivos de un resultado sin emoción ni pregunta (ej. 'Brasil y Noruega empatan')",
+    "Hooks que no generan intriga o controversia, resultando en contenido plano",
+    "Hooks que usan nombres poco conocidos sin contexto o impacto inmediato (ej. 'Sidny Lopes Cabral')"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Consolidar la estrategia en el nicho `ia_noticias` con un enfoque prioritario en contenido deportivo, ya que este formato genera el 100% de los videos del Top 10 y las mayores vistas.",
-    "Optimizar los títulos de los videos para funcionar como ganchos principales, incorporando preguntas, controversias, nombres específicos y emojis impactantes para captar la atención inicial.",
-    "Abandonar o reevaluar profundamente la categorización `mundial_2026` y evitar sus patrones de hooks asociados, dado su fracaso total y 0 vistas en todos los videos analizados.",
-    "Implementar un sistema de recolección de datos sobre la duración de los videos, ya que esta métrica es crucial y actualmente no está disponible para determinar la duración óptima real del canal."
+    "**Priorizar la producción de contenido en el nicho `ia_noticias`**, replicando los patrones de títulos que incluyen preguntas controversiales, emojis de sorpresa (🤯, 😱), menciones de urgencia ('hoy', 'sacude') y datos específicos/cifras, ya que el 100% del Top 10 proviene de este nicho con un promedio de 358 vistas.",
+    "**Continuar utilizando el título como el gancho principal**, absteniéndose de hooks descriptivos en el video, los cuales han mostrado 0 vistas. En su lugar, integrar ganchos de intriga o cliffhangers como '(PARTE 1)' o '(1/2)' en títulos para fomentar la retención y la visualización de series.",
+    "**Establecer un programa de publicación agresivo en la 1 AM**, complementado con pruebas en otros picos de audiencia como 6 AM, 16 PM, 17 PM y 21 PM, para maximizar el alcance del contenido de `ia_noticias`."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La abrumadora dominancia del nicho `ia_noticias` (especialmente con temática deportiva) y la efectividad de los títulos como ganchos primarios, contrastan con el fracaso total de nichos deportivos específicos como `mundial_2026`, evidenciando la importancia crítica de la categorización y el enfoque del contenido."
+  "insight_semana": "El éxito del canal está casi enteramente anclado al nicho `ia_noticias`, donde los **títulos impactantes y el uso de emojis** funcionan como el gancho principal, superando la efectividad de los hooks internos del video que no generaron ninguna vista, y demostrando la total ineficacia del nicho `mundial_2026` con 0 vistas."
 }
