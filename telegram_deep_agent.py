@@ -10,6 +10,8 @@ Recibe instrucciones detalladas de Telegram y ejecuta el pipeline completo:
 
 import os, sys, re, json, time, subprocess, requests
 from pathlib import Path
+from google import genai
+from google.genai import types as gt
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 PIPELINE  = Path(__file__).parent / "generate_short.py"
@@ -37,18 +39,7 @@ def bash(cmd, timeout=180):
 
 # ─── Fase 1: Investigación con Gemini + Google Search ─────────────────────────
 def research(instruction):
-    import google.generativeai as genai
-    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-
-    try:
-        model = genai.GenerativeModel(
-            model_name="gemini-2.5-pro",
-            tools=[genai.protos.Tool(
-                google_search_retrieval=genai.protos.GoogleSearchRetrieval()
-            )]
-        )
-    except Exception:
-        model = genai.GenerativeModel(model_name="gemini-2.5-pro")
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
     prompt = f"""
 Eres un periodista investigador. El usuario pide: {instruction}
@@ -73,7 +64,13 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 }}
 """
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model="gemini-2.5-pro",
+        contents=prompt,
+        config=gt.GenerateContentConfig(
+            tools=[gt.Tool(google_search=gt.GoogleSearch())]
+        )
+    )
     raw = response.text.strip()
     raw = re.sub(r'^```(?:json)?\s*', '', raw)
     raw = re.sub(r'\s*```$', '', raw)
@@ -83,8 +80,6 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 # ─── Fase 2: Extraer imágenes de artículos ────────────────────────────────────
 def extract_images_from_article(url, out_dir, prefix, max_imgs=3):
     """Fetch article HTML, extract image URLs with auth tokens, download them."""
-    import google.generativeai as genai
-
     try:
         r = requests.get(url, headers={
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -96,7 +91,7 @@ def extract_images_from_article(url, out_dir, prefix, max_imgs=3):
         print(f"  Fetch error {url}: {e}")
         return []
 
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     prompt = f"""Del siguiente HTML de un artículo de noticias, extrae las URLs COMPLETAS
 de imágenes de contenido (no logos, no iconos, no avatares).
 Incluye los parámetros ?auth= exactamente como aparecen en el HTML.
@@ -107,7 +102,10 @@ HTML (primeros 50000 chars):
 {html[:50000]}"""
 
     try:
-        resp = model.generate_content(prompt)
+        resp = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt
+        )
         img_urls = [u.strip() for u in resp.text.strip().splitlines()
                     if u.strip().startswith("http") and any(
                         ext in u.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", ".jfif"]
