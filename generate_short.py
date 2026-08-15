@@ -477,7 +477,7 @@ RESPONDE JSON sin markdown:
   "titulo": "Título SEO+viral máx 60 chars — '{viral_topic}' en primeras 4 palabras + CAPS + emoji 😱🤯💰⚡",
   "descripcion": "ESTRUCTURA SEO: LÍNEA 1 (≤120 chars): {viral_topic} — [dato o resultado clave]. LÍNEA 2 (LSI): 2-3 términos relacionados de búsqueda. LÍNEA 3: '¿Tú lo sabías? 👇'. Al final MÁXIMO 5 hashtags: #Shorts #Mundial2026 #{viral_topic.replace(' ','')[:15]} #Futbol #FutbolLatam",
   "pregunta_comentarios": "Pregunta provocadora sobre {viral_topic} para fijar como comentario",
-  "tags": ["viral","tendencias latam","shorts","noticias hoy","{viral_topic[:30]}","trending"],
+  "tags": ["viral","noticias hoy","shorts","{viral_topic[:30]}","tendencias","colombia","venezuela","mexico","latam","breaking news"],
   "guion": "guión 180-220 palabras en modo breaking news — urgente, con datos, cierra con pregunta + invitación a comentar",
   "hook_texto": "primeras 5-6 palabras del guión — máx 25 caracteres en total"
 }}"""
@@ -2042,14 +2042,32 @@ def get_youtube():
         TOKEN_FILE.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)
 
+_BASE_TAGS = [
+    # Siempre presentes — virales globales
+    "shorts", "youtubeshorts", "viral", "viralvideo", "trending",
+    "noticias", "noticiashoy", "ultimahora", "breaking",
+    "iaaldia", "inteligenciaartificial", "ia",
+    # Países LATAM — maximiza alcance regional
+    "colombia", "venezuela", "mexico", "argentina", "chile",
+    "peru", "ecuador", "bolivia", "españa", "latinoamerica", "latam",
+    # Engagement
+    "comentarios", "opinion",
+]
+
 def upload_video(yt, video_path, title, description, tags):
+    # Combinar: tags del script + base siempre-presentes, sin duplicados, máx 40
+    seen = set()
+    merged = []
+    for t in (tags + _BASE_TAGS):
+        key = t.lower().replace(" ", "")
+        if key not in seen:
+            seen.add(key)
+            merged.append(t)
+        if len(merged) >= 40:
+            break
     body = {
         "snippet": {"title": title, "description": description,
-                    "tags": (tags + [
-                        "shorts", "youtubeshorts", "viral", "futbol",
-                        "mundial2026", "worldcup2026", "soccer", "deportes",
-                        "messi", "iaaldia",
-                    ])[:40],  # YouTube acepta hasta ~500 chars total
+                    "tags": merged,  # YouTube acepta hasta ~500 chars total
                     "categoryId": "28", "defaultLanguage": "es"},
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
