@@ -64,13 +64,28 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 }}
 """
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-        config=gt.GenerateContentConfig(
-            tools=[gt.Tool(google_search=gt.GoogleSearch())]
-        )
-    )
+    _research_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    response = None
+    for model in _research_models:
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=gt.GenerateContentConfig(
+                    tools=[gt.Tool(google_search=gt.GoogleSearch())]
+                )
+            )
+            print(f"  Modelo usado: {model}")
+            break
+        except Exception as e:
+            if "429" in str(e) or "quota" in str(e).lower() or "RESOURCE_EXHAUSTED" in str(e):
+                print(f"  {model} sin cuota, probando siguiente...")
+                continue
+            raise
+
+    if not response:
+        raise RuntimeError("Todos los modelos Gemini sin cuota disponible.")
+
     raw = response.text.strip()
     raw = re.sub(r'^```(?:json)?\s*', '', raw)
     raw = re.sub(r'\s*```$', '', raw)
@@ -102,10 +117,18 @@ HTML (primeros 50000 chars):
 {html[:50000]}"""
 
     try:
-        resp = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt
-        )
+        _img_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+        resp = None
+        for m in _img_models:
+            try:
+                resp = client.models.generate_content(model=m, contents=prompt)
+                break
+            except Exception as _e:
+                if "429" in str(_e) or "RESOURCE_EXHAUSTED" in str(_e):
+                    continue
+                raise
+        if not resp:
+            return []
         img_urls = [u.strip() for u in resp.text.strip().splitlines()
                     if u.strip().startswith("http") and any(
                         ext in u.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", ".jfif"]
