@@ -469,7 +469,7 @@ Tu trabajo: crear un Short de YouTube sobre este tema ahora mismo, con los datos
 3. Cada oración tiene entre 10 y 22 palabras. Fluido, no telegráfico.
 4. Usá datos verificables: minutos, nombres, cifras, países, fechas. Sin adjetivos vacíos.
 5. TÍTULO: directo al hecho central. Mínimo 1 palabra en CAPS + emoji fuerte.
-6. El guión termina con una pregunta que divida opiniones sobre el tema.
+6. El guión OBLIGATORIAMENTE termina con: pregunta específica que divida opiniones + invitación explícita a comentar. Ejemplo: "¿Vos lo harías? Decime en los comentarios." / "¿Estás de acuerdo? Cuéntame abajo."
 7. Español latinoamericano. 145-175 palabras exactas.
 
 RESPONDE JSON sin markdown:
@@ -657,7 +657,9 @@ Prohibido: lenguaje corporativo, calcos del inglés innecesarios, frases de auto
 ━━ CIERRE Y SUSCRIPCIÓN ━━
 {"MODO SERIE — PARTE 1:" if _IS_SERIE_PART1 else "MODO NORMAL:"}
 {"El guión de hoy es la PARTE 1 de 2. Debe terminar en el momento de mayor tensión, SIN RESOLVER la pregunta principal. El cierre OBLIGATORIO es: 'Suscríbete. Mañana publico la parte 2 con lo que nadie más te va a decir.' El título debe incluir 'PARTE 1' o '(1/2)'." if _IS_SERIE_PART1 else f"Terminá con: [{_PERSONA_CIERRE}] + CTA de suscripción CON RAZÓN CONCRETA. Ejemplos válidos: 'Suscríbete porque mañana publico algo que te va a cambiar la cabeza.' / 'Seguime — mañana continúo con el dato que más te va a sorprender.' / 'Activa la campana, esto sigue mañana.'"}
-Luego: pregunta corta al espectador que genere OPINIÓN DIVIDIDA (no pregunta genérica).
+OBLIGATORIO en el guión — última oración: pedile al espectador que comente su opinión sobre el tema. Ejemplos:
+"Cuéntame qué pensás en los comentarios." / "¿Vos lo harías? Decime abajo." / "Dejame tu opinión en los comentarios." / "¿Estás de acuerdo? Lo leo todo."
+La pregunta debe ser ESPECÍFICA al tema del video, no genérica.
 Buenas: "¿Vos lo hubieras hecho?" / "¿Esto te afecta o no?" / "¿Le creés o no?"
 Malas: "¿Qué opinás?" / "¿Te gustó?" / "¿Qué te pareció?"
 
@@ -1789,11 +1791,25 @@ def assemble(presenter_vid, audio_path, music_path,
             f":bordercolor=black:borderw=3"
             f":enable='between(t,0,4.0)'"
         )
+    _cta_start = max(duration - 5.0, duration * 0.70)
     fixed_filters += [
         f"drawtext=fontfile='{FONT_BOLD}':text='IA al Dia'"
         f":fontcolor=white:fontsize=38:x=36:y=30"
         f":shadowcolor=black@0.9:shadowx=3:shadowy=3",
         "drawbox=x=36:y=78:w=165:h=4:color=0x00DCFF:t=fill",
+        # Comment CTA — aparece en los últimos ~5 segundos
+        f"drawtext=fontfile='{FONT_BOLD}':text='Comenta tu opinion abajo'"
+        f":fontcolor=0xFFD700:fontsize=44"
+        f":x=(w-text_w)/2:y=1345"
+        f":shadowcolor=black@0.99:shadowx=4:shadowy=4"
+        f":bordercolor=black:borderw=3"
+        f":enable='gte(t,{_cta_start:.1f})'",
+        f"drawtext=fontfile='{FONT_BOLD}':text='Leo todos los comentarios'"
+        f":fontcolor=white:fontsize=34"
+        f":x=(w-text_w)/2:y=1398"
+        f":shadowcolor=black@0.95:shadowx=3:shadowy=3"
+        f":bordercolor=black:borderw=2"
+        f":enable='gte(t,{_cta_start:.1f})'",
     ]
 
     has_music     = music_path and os.path.exists(music_path)
