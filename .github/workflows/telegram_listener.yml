@@ -1,0 +1,105 @@
+name: Telegram Bot Listener
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # cada 10 minutos
+  workflow_dispatch:           # también activable manualmente
+
+jobs:
+  listen:
+    name: "Escuchar Telegram"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Instalar requests
+        run: pip install requests --quiet
+
+      - name: Procesar mensajes
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          GH_PAT:             ${{ secrets.GH_PAT }}
+          GH_REPO:            ${{ github.repository }}
+        run: |
+          cat << 'PYEOF' | python3
+          import os, time, requests
+
+          BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+          CHAT_ID   = int(os.environ.get("TELEGRAM_CHAT_ID", "0"))
+          GH_TOKEN  = os.environ.get("GH_PAT", "")
+          GH_REPO   = os.environ.get("GH_REPO", "")
+
+          if not BOT_TOKEN or not CHAT_ID:
+              print("Sin credenciales Telegram. Saliendo.")
+              raise SystemExit(0)
+
+          BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
+
+          def send(text):
+              try:
+                  requests.post(f"{BASE}/sendMessage", json={
+                      "chat_id": CHAT_ID, "text": text, "parse_mode": "HTML"
+                  }, timeout=10)
+              except Exception as e:
+                  print(f"send error: {e}")
+
+          def recent_messages(minutes=12):
+              cutoff = time.time() - (minutes * 60)
+              try:
+                  r = requests.get(f"{BASE}/getUpdates", params={"limit": 50, "timeout": 3}, timeout=10)
+                  r.raise_for_status()
+              except Exception as e:
+                  print(f"getUpdates error: {e}")
+                  return []
+              return [
+                  u["message"] for u in r.json().get("result", [])
+                  if "message" in u
+                  and u["message"].get("date", 0) > cutoff
+                  and u["message"].get("chat", {}).get("id") == CHAT_ID
+              ]
+
+          def trigger_short(topic=""):
+              if not GH_TOKEN or not GH_REPO:
+                  return False
+              url = f"https://api.github.com/repos/{GH_REPO}/actions/workflows/publish_short.yml/dispatches"
+              r = requests.post(url, json={
+                  "ref": "main",
+                  "inputs": {"tipo": "short", "viral_topic": topic}
+              }, headers={
+                  "Authorization": f"Bearer {GH_TOKEN}",
+                  "Accept": "application/vnd.github.v3+json"
+              }, timeout=10)
+              print(f"GitHub dispatch → HTTP {r.status_code}")
+              return r.status_code == 204
+
+          messages = recent_messages(minutes=12)
+          print(f"Mensajes nuevos: {len(messages)}")
+
+          for msg in messages:
+              text = msg.get("text", "").strip()
+              print(f"→ {text!r}")
+              lower = text.lower()
+
+              if lower.startswith("/short"):
+                  topic = text[6:].strip()
+                  if trigger_short(topic):
+                      tema = f"<b>{topic}</b>" if topic else "<i>(automático)</i>"
+                      send(f"✅ <b>Short en camino!</b>\nTema: {tema}\n\n⏱ Te mando el link en ~5 min.")
+                  else:
+                      send("❌ Error al lanzar el workflow. Revisa el secret <b>GH_PAT</b>.")
+
+              elif lower in ("/help", "/ayuda", "/start"):
+                  send(
+                      "🤖 <b>IA al Día Bot</b>\n\n"
+                      "📹 /short [tema] — Publica un Short ahora\n"
+                      "   Ej: <code>/short Terremoto Colombia</code>\n"
+                      "   Ej: <code>/short</code> (tema automático)\n\n"
+                      "❓ /help — Esta ayuda\n\n"
+                      "<i>Publicación en ~5 min</i>"
+                  )
+
+              elif len(text) > 3 and not text.startswith("/"):
+                  if trigger_short(text):
+                      send(f"✅ <b>Short en camino!</b>\nTema: <b>{text}</b>\n\n⏱ Te mando el link en ~5 min.")
+          PYEOF
