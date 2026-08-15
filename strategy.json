@@ -1,40 +1,42 @@
 {
   "updated": "2026-08-15",
-  "iteracion": 90,
+  "iteracion": 91,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.4,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "deportes": 0.15,
+    "ia_noticias": 0.72,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01,
+    "productividad": 0.05,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "Preguntas impactantes con emojis de sorpresa/conflicto y mención de serie: \"¿[EVENTO GRANDE] [ACCIÓN INESPERADA]? 🤯 (Parte X)\"",
-    "Noticias de última hora sobre tragedias con cifras y ubicación: \"[CATÁSTROFE] devastador en [LUGAR]: [CIFRA] muertos y [CONSECUENCIA INMEDIATA]\"",
-    "Anuncios deportivos con cambio de estatus y emoción: \"[LIGA/EQUIPO]: [CAMBIO DE ESTADO] ¡SHOCK! 🤯\"",
-    "Resumen de noticias deportivas de actualidad con alcance regional: \"La noticia deportiva que sacude [REGIÓN] hoy ⚽\"",
-    "Eventos de mercado o transferencias con urgencia y pregunta de futuro: \"[ENTIDAD/EQUIPO] SE VENDE HOY: ¿Adiós a [REFERENCIA CLAVE]? 😱\"",
-    "Conflictos de alto perfil con implicaciones económicas y drama: \"[TEMA POLÉMICO]: LA GUERRA MILLONARIA POR [OBJETO] 💰\""
+    "Pregunta Polémica/Conspiración (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Impactante/Desastre (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Urgencia/Hoy (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Drama/Shock/Sorpresa (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Conflicto/Guerra (ej. 'LA GUERRA MILLONARIA POR DERECHOS 💰')",
+    "Serialización/Continuación (ej. '(PARTE 1)', '(1/2)')"
   ],
   "avoid_hooks": [
-    "Declaraciones fácticas y sin emoción (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Afirmaciones simples de resultados (ej. \"Brasil y Noruega empatan\")",
-    "Introducciones genéricas de personajes/eventos sin contexto impactante (ej. \"Sidny Lopes Cabral acaba de\")"
+    "Descripciones meramente fácticas (ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones concisas sin intriga (ej. 'Brasil y Noruega empatan')",
+    "Menciones de figuras sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar la mayor parte del esfuerzo (75%) en `ia_noticias`, priorizando noticias deportivas de actualidad, controversias y eventos trágicos, ya que son los únicos temas que generan alto volumen de vistas.",
-    "Optimizar los títulos como principal 'hook' utilizando preguntas retóricas, lenguaje sensacionalista (ej. 'SHOCK', 'DEVIASTADOR'), emojis de impacto (🤯, 😱, ⚽, 💰) y, cuando sea aplicable, la segmentación en series (ej. '(PARTE 1)').",
-    "Descontinuar la creación de contenido en el nicho `mundial_2026` y evitar patrones de títulos/hooks puramente informativos o sin carga emocional, ya que han demostrado una ineficacia total con 0 vistas.",
-    "Asignar un porcentaje menor de recursos (25%) para experimentar con videos en nichos como `finanzas`, `entretenimiento`, `negocios_digitales`, `productividad_ia`, `cripto_inversiones` y `politica_latam` para recopilar datos, aplicando las estrategias de titulación exitosas del nicho `ia_noticias`.",
-    "Priorizar la publicación de Shorts en las franjas horarias de 1 AM, 6 AM y 21 PM, que han demostrado consistentemente los mayores volúmenes de vistas para los videos top.",
-    "Implementar la recolección de datos sobre la duración exacta de los videos para identificar la duración óptima de Shorts que maximice la retención y las vistas."
+    "**Priorizar `ia_noticias`**: Enfocarse en noticias de alto impacto (deportes, desastres, controversias), que representaron el 100% de los videos top y muestran una tendencia de crecimiento del 15.2%.",
+    "**Optimizar títulos como ganchos**: Emplear preguntas polémicas, palabras de impacto (e.g., 'SHOCK', 'DEVIASTADOR'), emojis (🤯, 😱, ⚽, 💰) y formatear como series (ej. 'PARTE 1') para maximizar la atracción.",
+    "**Evitar hooks internos explícitos descriptivos**: Los hooks registrados en los datos que son puramente descriptivos y carentes de emoción han demostrado ser ineficaces con 0 vistas. El título debe ser el gancho principal.",
+    "**Experimentar con horarios pico**: Priorizar las publicaciones a la 1 AM, 6 AM, 16 PM, 17 PM y 21 PM, con la 1 AM mostrando el promedio de vistas más alto en videos top.",
+    "**Descartar nichos de 'noticias falsas' específicas o poco probables**: El nicho `mundial_2026` ha sido un fracaso rotundo con 0 vistas, sugiriendo que la audiencia rechaza contenido de eventos deportivos futuros o ficticios presentados como noticias.",
+    "**Evitar contenido 'ia_noticias' genérico/motivacional**: Videos como 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', aunque categorizados como `ia_noticias`, fracasaron con 0 vistas, indicando que el foco debe ser en noticias concretas y eventos, no en reflexiones generales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal depende casi exclusivamente del nicho 'ia_noticias', especialmente de contenido noticioso deportivo o de tragedias, cuya efectividad recae en títulos altamente sensacionalistas y el uso de emojis como gancho principal. La ineficacia de los hooks explícitos y la falta de rendimiento en otros nichos, sumado a una tendencia negativa en 'ia_noticias', exige una estrategia urgente de diversificación controlada y análisis de la duración del contenido."
+  "insight_semana": "El nicho `ia_noticias` no solo continúa siendo el único de rendimiento positivo y el pilar del canal (acaparando el 100% del Top 10), sino que su `trend` ha mejorado de -1.0 a un crecimiento activo del 15.2%, consolidando su viabilidad a largo plazo."
 }
