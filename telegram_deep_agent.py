@@ -64,7 +64,7 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 }}
 """
 
-    _research_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+    _research_models = ["gemini-2.5-flash", "gemini-1.5-pro", "gemini-1.5-flash"]
     response = None
     for model in _research_models:
         try:
@@ -78,8 +78,9 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
             print(f"  Modelo usado: {model}")
             break
         except Exception as e:
-            if "429" in str(e) or "quota" in str(e).lower() or "RESOURCE_EXHAUSTED" in str(e):
-                print(f"  {model} sin cuota, probando siguiente...")
+            err = str(e)
+            if any(x in err for x in ["429", "quota", "RESOURCE_EXHAUSTED", "404", "NOT_FOUND", "no longer available"]):
+                print(f"  {model} no disponible ({err[:80]}), probando siguiente...")
                 continue
             raise
 
@@ -122,14 +123,15 @@ HTML (primeros 50000 chars):
 {html[:50000]}"""
 
     try:
-        _img_models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+        _img_models = ["gemini-2.5-flash", "gemini-1.5-pro", "gemini-1.5-flash"]
         resp = None
         for m in _img_models:
             try:
                 resp = client.models.generate_content(model=m, contents=prompt)
                 break
             except Exception as _e:
-                if "429" in str(_e) or "RESOURCE_EXHAUSTED" in str(_e):
+                err = str(_e)
+                if any(x in err for x in ["429", "RESOURCE_EXHAUSTED", "404", "NOT_FOUND", "no longer available"]):
                     continue
                 raise
         if not resp:
