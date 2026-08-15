@@ -37,65 +37,135 @@ def bash(cmd, timeout=180):
         print(out[:2000])
     return out
 
+# ─── Helpers ──────────────────────────────────────────────────────────────────
+def _fetch_rss_news(query, max_items=6):
+    """Busca noticias en Google News RSS — sin cuota, sin API key."""
+    import urllib.parse, xml.etree.ElementTree as ET
+    q = urllib.parse.quote(query)
+    url = f"https://news.google.com/rss/search?q={q}&hl=es&gl=CO&ceid=CO:es&num=10"
+    try:
+        r = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        root = ET.fromstring(r.content)
+        items = []
+        for item in root.findall(".//item")[:max_items]:
+            title = item.findtext("title", "")
+            link  = item.findtext("link", "")
+            desc  = item.findtext("description", "")
+            pub   = item.findtext("pubDate", "")
+            if link:
+                items.append({"title": title, "url": link, "desc": desc, "date": pub})
+        print(f"  RSS: {len(items)} artículos para '{query[:50]}'")
+        return items
+    except Exception as e:
+        print(f"  RSS error: {e}")
+        return []
+
+def _gemini_generate(client, prompt, use_search=True):
+    """Llama a Gemini con fallback automático de modelos y de herramienta."""
+    _models_with_search    = ["gemini-2.5-flash", "gemini-flash-lite-latest"]
+    _models_without_search = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
+
+    # Intento 1: con Google Search (noticias en tiempo real)
+    if use_search:
+        for model in _models_with_search:
+            try:
+                resp = client.models.generate_content(
+                    model=model, contents=prompt,
+                    config=gt.GenerateContentConfig(
+                        tools=[gt.Tool(google_search=gt.GoogleSearch())]
+                    )
+                )
+                print(f"  Modelo+Search: {model}")
+                return resp
+            except Exception as e:
+                err = str(e)
+                if any(x in err for x in ["429", "RESOURCE_EXHAUSTED", "404", "NOT_FOUND", "no longer"]):
+                    print(f"  {model}+search no disponible ({err[:60]})")
+                    continue
+                raise
+
+    # Intento 2: sin herramienta de búsqueda
+    for model in _models_without_search:
+        try:
+            resp = client.models.generate_content(model=model, contents=prompt)
+            print(f"  Modelo sin search: {model}")
+            return resp
+        except Exception as e:
+            err = str(e)
+            if any(x in err for x in ["429", "RESOURCE_EXHAUSTED", "404", "NOT_FOUND", "no longer"]):
+                print(f"  {model} no disponible ({err[:60]})")
+                continue
+            raise
+
+    return None
+
+
 # ─── Fase 1: Investigación con Gemini + Google Search ─────────────────────────
 def research(instruction):
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
-    prompt = f"""
+    def _parse_json(raw):
+        raw = raw.strip()
+        m = re.search(r'\{.*\}', raw, re.DOTALL)
+        if m:
+            return json.loads(m.group(0))
+        raw = re.sub(r'^```(?:json)?\s*', '', raw)
+        raw = re.sub(r'\s*```$', '', raw)
+        return json.loads(raw)
+
+    # ── Ruta A: Gemini con Google Search ────────────────────────────────────
+    prompt_a = f"""
 Eres un periodista investigador. El usuario pide: {instruction}
 
 TAREA:
-1. Investiga el tema usando fuentes verificadas y actualizadas de noticias.
-2. Recopila datos precisos: cifras, fechas, nombres, lugares.
-3. Identifica 4-6 artículos de noticias en español que tengan imágenes del tema
-   (preferir: infobae.com, elespectador.com, cooperativa.cl, elmundo.es, cnn.com/es, univision.com, elpais.com).
-4. Redacta un guion periodístico profesional de exactamente 300-340 palabras.
-   - Tono directo, contundente, sin filtros (estilo "provocador").
-   - Empieza fuerte con el hecho más impactante, sin saludos ni presentaciones.
-   - Incluye cifras reales, nombres concretos, contexto.
-   - Cierra con una pregunta o reflexión que genere comentarios.
+1. Investiga usando noticias verificadas y actualizadas.
+2. Identifica 4-5 artículos en español con imágenes
+   (preferir: infobae.com, elespectador.com, elmundo.es, cnn.com/es, elpais.com).
+3. Redacta un guion periodístico de 300-340 palabras, tono directo y contundente.
+   Empieza con el hecho más impactante. Cierra pidiendo opinión en comentarios.
 
-Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
-{{
-  "titulo": "Título corto para YouTube con palabras clave de búsqueda local (máx 70 chars)",
-  "guion": "Guion completo aquí... (300-340 palabras)",
-  "articulos": ["url_articulo_1", "url_articulo_2", "url_articulo_3", "url_articulo_4"],
-  "resumen": "Resumen del tema en 2 líneas"
-}}
-"""
+Responde SOLO este JSON sin markdown:
+{{"titulo":"Título YouTube máx 70 chars","guion":"guion aquí","articulos":["url1","url2","url3","url4"],"resumen":"2 líneas"}}"""
 
-    _research_models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
-    response = None
-    for model in _research_models:
+    resp = _gemini_generate(client, prompt_a, use_search=True)
+
+    if resp:
         try:
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-                config=gt.GenerateContentConfig(
-                    tools=[gt.Tool(google_search=gt.GoogleSearch())]
-                )
-            )
-            print(f"  Modelo usado: {model}")
-            break
+            return _parse_json(resp.text)
         except Exception as e:
-            err = str(e)
-            if any(x in err for x in ["429", "quota", "RESOURCE_EXHAUSTED", "404", "NOT_FOUND", "no longer available"]):
-                print(f"  {model} no disponible ({err[:80]}), probando siguiente...")
-                continue
-            raise
+            print(f"  JSON parse error ruta A: {e}")
 
-    if not response:
-        raise RuntimeError("Todos los modelos Gemini sin cuota disponible.")
+    # ── Ruta B: RSS + Gemini sin Search (cuando la cuota está agotada) ───────
+    print("  Cuota agotada — usando fallback RSS...")
+    rss_items = _fetch_rss_news(instruction)
 
-    raw = response.text.strip()
-    # Extraer bloque JSON aunque Gemini agregue texto antes/después
-    json_match = re.search(r'\{.*\}', raw, re.DOTALL)
-    if json_match:
-        raw = json_match.group(0)
-    else:
-        raw = re.sub(r'^```(?:json)?\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-    return json.loads(raw)
+    if not rss_items:
+        raise RuntimeError("Sin cuota Gemini y sin resultados RSS. Reintenta mañana.")
+
+    noticias_txt = "\n".join(
+        f"- [{it['date'][:16]}] {it['title']}\n  URL: {it['url']}\n  {it['desc'][:200]}"
+        for it in rss_items
+    )
+
+    prompt_b = f"""
+Eres un periodista. Basándote en estas noticias REALES publicadas hoy:
+
+{noticias_txt}
+
+El usuario pide: {instruction}
+
+Escribe un guion periodístico de 300-340 palabras, tono directo y contundente.
+Usa datos concretos de las noticias. Cierra pidiendo opinión en comentarios.
+
+Responde SOLO este JSON sin markdown:
+{{"titulo":"Título YouTube máx 70 chars con keyword principal","guion":"guion completo aquí","articulos":{json.dumps([it['url'] for it in rss_items[:4]])},"resumen":"2 líneas del tema"}}"""
+
+    resp_b = _gemini_generate(client, prompt_b, use_search=False)
+
+    if not resp_b:
+        raise RuntimeError("Todos los modelos Gemini sin cuota. Reintenta mañana.")
+
+    return _parse_json(resp_b.text)
 
 
 # ─── Fase 2: Extraer imágenes de artículos ────────────────────────────────────
