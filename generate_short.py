@@ -302,7 +302,7 @@ _IS_SERIE_PART1 = (
 
 def _validate_guion(guion: str) -> str:
     """
-    Valida que el guión encaje en 58-62 segundos (140-175 palabras a ~160 wpm).
+    Valida que el guión encaje en 75-85 segundos (180-220 palabras a ~160 wpm).
     Convierte saltos de línea en pausa natural (". ") para que el TTS respire.
     """
     # Saltos de línea → pausa natural en TTS (no borrar, convertir en punto-espacio)
@@ -318,7 +318,7 @@ def _validate_guion(guion: str) -> str:
     guion = guion.strip()
 
     words = guion.split()
-    _max_words = int(os.environ.get("MAX_GUION_WORDS", "178"))
+    _max_words = int(os.environ.get("MAX_GUION_WORDS", "230"))
     if len(words) > _max_words:
         truncated = " ".join(words[:_max_words])
         last_punct = max(truncated.rfind("."), truncated.rfind("!"), truncated.rfind("?"))
@@ -469,8 +469,8 @@ Tu trabajo: crear un Short de YouTube sobre este tema ahora mismo, con los datos
 3. Cada oración tiene entre 10 y 22 palabras. Fluido, no telegráfico.
 4. Usá datos verificables: minutos, nombres, cifras, países, fechas. Sin adjetivos vacíos.
 5. TÍTULO: directo al hecho central. Mínimo 1 palabra en CAPS + emoji fuerte.
-6. El guión OBLIGATORIAMENTE termina con: pregunta específica que divida opiniones + invitación explícita a comentar. Ejemplo: "¿Vos lo harías? Decime en los comentarios." / "¿Estás de acuerdo? Cuéntame abajo."
-7. Español latinoamericano. 145-175 palabras exactas.
+6. El guión OBLIGATORIAMENTE termina con: pregunta específica que divida opiniones + invitación a comentar. Ejemplo: "¿Vos lo harías? Decime en los comentarios."
+7. Español latinoamericano. 180-220 palabras exactas.
 
 RESPONDE JSON sin markdown:
 {{
@@ -478,7 +478,7 @@ RESPONDE JSON sin markdown:
   "descripcion": "ESTRUCTURA SEO: LÍNEA 1 (≤120 chars): {viral_topic} — [dato o resultado clave]. LÍNEA 2 (LSI): 2-3 términos relacionados de búsqueda. LÍNEA 3: '¿Tú lo sabías? 👇'. Al final MÁXIMO 5 hashtags: #Shorts #Mundial2026 #{viral_topic.replace(' ','')[:15]} #Futbol #FutbolLatam",
   "pregunta_comentarios": "Pregunta provocadora sobre {viral_topic} para fijar como comentario",
   "tags": ["viral","tendencias latam","shorts","noticias hoy","{viral_topic[:30]}","trending"],
-  "guion": "guión 145-175 palabras en modo breaking news — urgente, con datos, termina con pregunta",
+  "guion": "guión 180-220 palabras en modo breaking news — urgente, con datos, cierra con pregunta + invitación a comentar",
   "hook_texto": "primeras 5-6 palabras del guión — máx 25 caracteres en total"
 }}"""
 
@@ -616,7 +616,7 @@ Cierre de hoy — usá esta frase EXACTA al final: "{_PERSONA_CIERRE}"
 {r_block if r_block else "Si no tenés cifra exacta, usá 'según reportes recientes'."}
 
 ══ TAREA ══
-Escribí UN guión de YouTube Short de 58-62 segundos (145-175 palabras).
+Escribí UN guión de YouTube Short de 75-85 segundos (180-220 palabras).
 
 ━━ RITMO — fluido e informativo, no telegráfico ━━
 El error más común: frases de 3-4 palabras seguidas que suenan a telegrama. Evitalo.
@@ -679,7 +679,7 @@ RESPONDÉ JSON sin markdown:
   "descripcion": "ESTRUCTURA SEO OBLIGATORIA: LÍNEA 1 (≤120 chars, above-the-fold): [keyword principal] — [dato o resultado clave en una oración directa]. LÍNEA 2 (LSI, ≤100 chars): 2-3 términos relacionados que buscaría alguien que no vio el título. LÍNEA 3: '¿Tú qué opinás? Cuéntame 👇'. Al final EXACTAMENTE estos 5 hashtags separados por espacio: {niche_hash}",
   "pregunta_comentarios": "Pregunta que genere opinión dividida (máx 15 palabras, sin signos de pregunta dobles)",
   "tags": {niche_tags},
-  "guion": "guión 145-175 palabras, ritmo GOLPE-RESPIRO-EXPLICACIÓN, {'cliffhanger sin resolver + CTA suscripción a Parte 2' if _IS_SERIE_PART1 else 'CTA suscripción con razón concreta'} + pregunta final",
+  "guion": "guión 180-220 palabras, ritmo GOLPE-RESPIRO-EXPLICACIÓN, {'cliffhanger sin resolver + CTA suscripción a Parte 2' if _IS_SERIE_PART1 else 'CTA suscripción con razón concreta'} + pregunta final + invitación a comentar",
   "hook_texto": "primeras 4-5 palabras del guión — máx 25 caracteres"
 }}"""
 
