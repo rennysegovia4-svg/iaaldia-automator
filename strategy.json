@@ -1,40 +1,41 @@
 {
-  "updated": "2026-08-14",
-  "iteracion": 82,
+  "updated": "2026-08-15",
+  "iteracion": 83,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.01,
-    "ia_noticias": 0.78,
+    "deportes": 0.1,
+    "ia_noticias": 0.75,
     "finanzas": 0.01,
     "entretenimiento": 0.01,
     "negocios_digitales": 0.01,
     "productividad_ia": 0.01,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "mundial_2026": 0.0
+    "politica_latam": 0.02,
+    "productividad": 0.05,
+    "negocios": 0.03
   },
   "best_hooks": [
-    "[Evento/Sujeto] + [Pregunta Controversial/Intriga] + [Emoji Impactante] + (Opcional: Parte X/Y)",
-    "[Noticia Devastadora/Impactante] en [Lugar]: [Número/Consecuencia]",
-    "La Noticia [Tipo] que Sacude [Región] [Hoy/Ahora] [Emoji]",
-    "[Liga/Evento] + [Equipo/Sujeto] + [Acción/Resultado Shockeante] + [Emoji Impactante]",
-    "[Sujeto/Entidad] [Acción Drástica]: ¿[Conclusión Negativa]? [Emoji]",
-    "[Conflicto/Situación Controversial] por [Tema]: ¡[Impacto Millonario/Gran Consecuencia]! [Emoji]"
+    "Pregunta Controversial + Impacto Emocional: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
+    "Noticia Dramática + Cifra/Evento Clave: Ej. \"Terremoto devastador en Colombia: 132 muertos y emergencia n\"",
+    "Alerta Urgente + Consecuencia Global/Regional: Ej. \"La noticia deportiva que sacude LATAM hoy ⚽\"",
+    "Giro Inesperado + Exclamación de Shock: Ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\"",
+    "Evento Transaccional + Interrogante de Futuro: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
+    "Escándalo/Conflicto + Intereses Económicos: Ej. \"FUTBOL PARA TODOS: LA GUERRA MILLONARIA POR DERECHOS 💰\""
   ],
   "avoid_hooks": [
-    "Afirmaciones puramente descriptivas y sin emoción (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks que anticipan eventos futuros con resultados específicos sin base real (ej. resultados de 'Mundial 2026').",
-    "Frases incompletas o que no generan intriga suficiente (ej. 'Sidny Lopes Cabral acaba de')."
+    "Afirmaciones factuales directas de resultados sin intriga: Ej. \"Brasil y Noruega empatan 0-0\"",
+    "Declaraciones genéricas y sin gancho emocional: Ej. \"Brasil y Noruega empatan\"",
+    "Menciones de nombres o eventos sin contexto de alto impacto: Ej. \"Sidny Lopes Cabral acaba de\""
   ],
-  "best_hora": 6,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho `ia_noticias`, el único con resultados probados (100% de los videos top) y con un alto promedio de 997 vistas por video en el top 10.",
-    "Diseñar títulos sensacionalistas, controversiales o informativos con emojis de impacto (🤯, 😱, ⚽, 💰) para funcionar como el 'hook' principal, dado que los campos de hook explícitos no han demostrado efectividad.",
-    "Mantener la publicación principal a las 6 AM (promedio de 1085.5 vistas en el top 10), pero también explorar las franjas de 1 AM, 16 PM y 21 PM que han mostrado buenos resultados, y evitar el nicho `mundial_2026` debido a su nulo rendimiento."
+    "Mantener el enfoque predominante en el nicho `ia_noticias`, ya que es el único que ha demostrado un rendimiento exitoso, abarcando noticias deportivas y de actualidad de alto impacto.",
+    "Continuar utilizando títulos que incorporen elementos de shock (¡SHOCK!, 🤯, 😱), preguntas retóricas, y lenguaje urgente para maximizar la curiosidad y el click-through.",
+    "Evitar la creación de contenido bajo el nicho `mundial_2026` o cualquier framing similar que haya resultado en 0 vistas, y en su lugar, integrar temas de fútbol bajo el formato `ia_noticias`.",
+    "Experimentar con publicaciones en las múltiples franjas horarias de alto rendimiento identificadas: 1 AM, 6 AM, 16 PM, 17 PM y 21 PM, para captar diferentes segmentos de la audiencia.",
+    "Dada la falta de datos para `finanzas`, `negocios_digitales`, `cripto_inversiones`, `productividad_ia`, `entretenimiento` y `politica_latam` (0 vistas), se recomienda no invertir recursos significativos sin pruebas A/B previas, aplicando las estrategias de titulación exitosas de `ia_noticias`."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside exclusivamente en títulos noticiosos, sensacionalistas y emocionales dentro del nicho 'ia_noticias', donde la ausencia de un 'hook' explícito en el campo 'hook' sugiere que el título mismo cumple esa función principal de captar la atención."
+  "insight_semana": "El éxito del canal depende casi exclusivamente del nicho `ia_noticias` y su habilidad para formular títulos impactantes que generan curiosidad y emoción, mientras que los 'hooks' explícitos en la descripción han sido irrelevantes o perjudiciales."
 }
