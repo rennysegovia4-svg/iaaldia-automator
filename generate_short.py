@@ -70,7 +70,7 @@ if not TOKEN_FILE.exists():
 
 CREDITS_FILE   = BASE_DIR / "credits.json"
 SCOPES         = ["https://www.googleapis.com/auth/youtube"]
-GEMINI_MODELS  = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-2.5-pro"]
+GEMINI_MODELS  = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
 
 _MAC_FONT = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 _LIN_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -483,7 +483,7 @@ RESPONDE JSON sin markdown:
 }}"""
 
     response = None
-    for model in ["gemini-2.5-flash", "gemini-2.0-flash"]:
+    for model in ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]:
         for attempt in range(2):
             try:
                 response = client.models.generate_content(model=model, contents=prompt)

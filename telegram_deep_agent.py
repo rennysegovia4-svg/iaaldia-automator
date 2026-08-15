@@ -64,7 +64,7 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 }}
 """
 
-    _research_models = ["gemini-2.5-flash", "gemini-1.5-pro", "gemini-1.5-flash"]
+    _research_models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
     response = None
     for model in _research_models:
         try:
@@ -123,7 +123,7 @@ HTML (primeros 50000 chars):
 {html[:50000]}"""
 
     try:
-        _img_models = ["gemini-2.5-flash", "gemini-1.5-pro", "gemini-1.5-flash"]
+        _img_models = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-flash-lite-latest"]
         resp = None
         for m in _img_models:
             try:
