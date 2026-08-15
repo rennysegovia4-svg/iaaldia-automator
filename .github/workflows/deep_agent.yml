@@ -1,0 +1,63 @@
+name: Deep Agent — Investigación + Publicación
+
+on:
+  workflow_dispatch:
+    inputs:
+      instruction:
+        description: 'Instrucción detallada del usuario vía Telegram'
+        required: true
+        default: ''
+
+jobs:
+  deep_publish:
+    name: "Investigar y Publicar"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar sistema
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --fix-missing ffmpeg fonts-dejavu-core
+
+      - name: Instalar Python
+        run: pip install -r requirements.txt --quiet
+
+      - name: Restaurar credenciales
+        run: |
+          echo "${{ secrets.CLIENT_SECRETS_JSON }}" | base64 -d > client_secrets.json
+          echo "${{ secrets.TOKEN_JSON }}"          | base64 -d > token.json
+
+      - name: Restaurar .env
+        run: |
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"       >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}"       >> .env
+          echo "ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}" >> .env
+          echo "ELEVENLABS_VOICE_PROVOCADOR=IKne3meq5aSn9XLyUdCD"   >> .env
+          echo "FORCE_PERSONA=provocador"                             >> .env
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}"   >> .env
+
+      - name: Ejecutar Deep Agent
+        env:
+          GEMINI_API_KEY:       ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY:       ${{ secrets.PEXELS_API_KEY }}
+          ELEVENLABS_API_KEY:   ${{ secrets.ELEVENLABS_API_KEY }}
+          TELEGRAM_BOT_TOKEN:   ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:     ${{ secrets.TELEGRAM_CHAT_ID }}
+          FORCE_PERSONA:        provocador
+          INSTRUCTION:          ${{ github.event.inputs.instruction }}
+        run: python3 telegram_deep_agent.py "$INSTRUCTION"
+
+      - name: Guardar token renovado
+        if: always()
+        run: |
+          NEW_TOKEN=$(base64 -w 0 token.json 2>/dev/null || base64 token.json)
+          echo "TOKEN_ACTUALIZADO=$NEW_TOKEN" >> $GITHUB_STEP_SUMMARY
