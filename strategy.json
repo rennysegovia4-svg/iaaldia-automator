@@ -1,42 +1,40 @@
 {
   "updated": "2026-08-15",
-  "iteracion": 91,
+  "iteracion": 92,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.15,
-    "ia_noticias": 0.72,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01,
-    "productividad": 0.05,
-    "negocios": 0.02
+    "ia_noticias": 0.88,
+    "productividad": 0.07,
+    "negocios": 0.04,
+    "deportes": 0.003,
+    "finanzas": 0.001,
+    "entretenimiento": 0.001,
+    "negocios_digitales": 0.001,
+    "cripto_inversiones": 0.001,
+    "productividad_ia": 0.001,
+    "politica_latam": 0.001,
+    "mundial_2026": 0.001
   },
   "best_hooks": [
-    "Pregunta Polémica/Conspiración (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticia Impactante/Desastre (ej. 'Terremoto devastador en Colombia: 132 muertos')",
-    "Urgencia/Hoy (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Drama/Shock/Sorpresa (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
-    "Conflicto/Guerra (ej. 'LA GUERRA MILLONARIA POR DERECHOS 💰')",
-    "Serialización/Continuación (ej. '(PARTE 1)', '(1/2)')"
+    "¡[Noticia Devastadora/Impactante] HOY! 😱 (Ej: 'Terremoto devastador en Colombia: 132 muertos...')",
+    "¿[Evento Polémico/Deportivo] FUE [Verbo fuerte]? 🤯 (PARTE X) (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
+    "[Equipo/Liga]: [Resultado Inesperado] ¡SHOCK! ⚡ (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "CRISIS EN [Lugar]: [Número] MUERTOS Y [Situación] 🚨 (Ej: 'Temblor hoy Colombia y Venezuela: la tragedia sísmica...')",
+    "[Marca/Evento] SE VENDE HOY: ¿[Consecuencia Inminente]? 💰 (Ej: 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
+    "LA NOTICIA QUE SACUDE [LATAM/Región] HOY [⚽/🚨] (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')"
   ],
   "avoid_hooks": [
-    "Descripciones meramente fácticas (ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmaciones concisas sin intriga (ej. 'Brasil y Noruega empatan')",
-    "Menciones de figuras sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
+    "Declaraciones de resultados neutrales o esperados que no generan intriga (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Mención de nombres o situaciones muy específicas sin contexto que no apelan a una audiencia amplia (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Hooks que revelan la conclusión de una noticia sin un elemento de sorpresa o controversia."
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "**Priorizar `ia_noticias`**: Enfocarse en noticias de alto impacto (deportes, desastres, controversias), que representaron el 100% de los videos top y muestran una tendencia de crecimiento del 15.2%.",
-    "**Optimizar títulos como ganchos**: Emplear preguntas polémicas, palabras de impacto (e.g., 'SHOCK', 'DEVIASTADOR'), emojis (🤯, 😱, ⚽, 💰) y formatear como series (ej. 'PARTE 1') para maximizar la atracción.",
-    "**Evitar hooks internos explícitos descriptivos**: Los hooks registrados en los datos que son puramente descriptivos y carentes de emoción han demostrado ser ineficaces con 0 vistas. El título debe ser el gancho principal.",
-    "**Experimentar con horarios pico**: Priorizar las publicaciones a la 1 AM, 6 AM, 16 PM, 17 PM y 21 PM, con la 1 AM mostrando el promedio de vistas más alto en videos top.",
-    "**Descartar nichos de 'noticias falsas' específicas o poco probables**: El nicho `mundial_2026` ha sido un fracaso rotundo con 0 vistas, sugiriendo que la audiencia rechaza contenido de eventos deportivos futuros o ficticios presentados como noticias.",
-    "**Evitar contenido 'ia_noticias' genérico/motivacional**: Videos como 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱', aunque categorizados como `ia_noticias`, fracasaron con 0 vistas, indicando que el foco debe ser en noticias concretas y eventos, no en reflexiones generales."
+    "Continuar la estrategia de 'ia_noticias' con un enfoque casi exclusivo, ya que es el único nicho con tracción probada y crecimiento positivo. Es vital mantener la frescura y relevancia de las noticias, especialmente las de alto impacto y controversia.",
+    "Explorar la serialización de contenido (ej. '(PARTE 1)') para temas complejos o controversiales, replicando el éxito de videos como 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)' para fomentar la recurrencia.",
+    "Comenzar a recolectar datos sobre la duración de los videos para identificar un rango óptimo. Actualmente no hay datos para determinar la `duracion_optima`, por lo que se asigna 0. Implementar un proceso para registrar la duración de cada Short y analizar su correlación con las vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` no solo continúa siendo el único de rendimiento positivo y el pilar del canal (acaparando el 100% del Top 10), sino que su `trend` ha mejorado de -1.0 a un crecimiento activo del 15.2%, consolidando su viabilidad a largo plazo."
+  "insight_semana": "El nicho 'ia_noticias' no solo mantiene su liderazgo con un promedio de 405 vistas y una tendencia positiva del 15.65%, sino que su éxito está fuertemente impulsado por noticias deportivas controversiales o de gran impacto y catástrofes, demostrando que la emoción y la actualidad son claves para la viralidad en este formato."
 }
