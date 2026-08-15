@@ -44,20 +44,29 @@ jobs:
               except Exception as e:
                   print(f"send error: {e}")
 
-          def recent_messages(minutes=12):
-              cutoff = time.time() - (minutes * 60)
+          def get_updates():
+              """Obtiene todos los updates pendientes (no ACK aún)."""
               try:
-                  r = requests.get(f"{BASE}/getUpdates", params={"limit": 50, "timeout": 3}, timeout=10)
+                  r = requests.get(f"{BASE}/getUpdates",
+                                   params={"limit": 100, "timeout": 3}, timeout=10)
                   r.raise_for_status()
+                  return r.json().get("result", [])
               except Exception as e:
                   print(f"getUpdates error: {e}")
                   return []
-              return [
-                  u["message"] for u in r.json().get("result", [])
-                  if "message" in u
-                  and u["message"].get("date", 0) > cutoff
-                  and u["message"].get("chat", {}).get("id") == CHAT_ID
-              ]
+
+          def ack_updates(updates):
+              """Marca todos los updates como procesados para no repetirlos."""
+              if not updates:
+                  return
+              max_id = max(u["update_id"] for u in updates)
+              try:
+                  requests.get(f"{BASE}/getUpdates",
+                               params={"offset": max_id + 1, "limit": 1, "timeout": 1},
+                               timeout=5)
+                  print(f"ACK updates hasta {max_id}")
+              except Exception as e:
+                  print(f"ACK error: {e}")
 
           def trigger_workflow(workflow, inputs):
               if not GH_TOKEN or not GH_REPO:
@@ -69,8 +78,17 @@ jobs:
               print(f"Dispatch {workflow} → HTTP {r.status_code}")
               return r.status_code == 204
 
-          messages = recent_messages(minutes=12)
-          print(f"Mensajes nuevos: {len(messages)}")
+          # Obtener updates pendientes
+          all_updates = get_updates()
+          print(f"Updates pendientes: {len(all_updates)}")
+
+          # Filtrar mensajes del chat autorizado (descartar updates irrelevantes)
+          messages = [
+              u["message"] for u in all_updates
+              if "message" in u
+              and u["message"].get("chat", {}).get("id") == CHAT_ID
+          ]
+          print(f"Mensajes del chat: {len(messages)}")
 
           for msg in messages:
               text = msg.get("text", "").strip()
@@ -130,4 +148,7 @@ jobs:
               elif len(text) > 3 and not text.startswith("/"):
                   if trigger_workflow("publish_short.yml", {"tipo": "short", "viral_topic": text}):
                       send(f"✅ Short en camino!\nTema: <b>{text}</b>\n\n⏱ ~5 min.")
+
+          # ACK siempre — marcar TODOS los updates como procesados
+          ack_updates(all_updates)
           PYEOF
