@@ -39,13 +39,18 @@ jobs:
 
       - name: Restaurar .env
         run: |
-          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"       >> .env
-          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}"       >> .env
-          echo "ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}" >> .env
-          echo "ELEVENLABS_VOICE_PROVOCADOR=IKne3meq5aSn9XLyUdCD"   >> .env
-          echo "FORCE_PERSONA=provocador"                             >> .env
-          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}" >> .env
-          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}"   >> .env
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}"             >> .env
+          echo "PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY }}"             >> .env
+          echo "ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}"     >> .env
+          echo "ELEVENLABS_VOICE_PERIODISTA_URGENTE=onwK4e9ZLuTAKqWW03F9" >> .env
+          echo "ELEVENLABS_VOICE_AMIGO_QUE_SABE=cjVigY5qzO86Huf0OWal"    >> .env
+          echo "ELEVENLABS_VOICE_PROVOCADOR=IKne3meq5aSn9XLyUdCD"         >> .env
+          echo "ELEVENLABS_VOICE_ANALISTA_FRIO=nPczCjzI2devNBz1zQrb"      >> .env
+          echo "ELEVENLABS_VOICE_STORYTELLER=JBFqnCBsd6RMkjVDRZzb"        >> .env
+          echo "ELEVENLABS_VOICE_COACH=TX3LPaxmHKxFdv7VOQHJ"              >> .env
+          echo "FORCE_PERSONA=provocador"                                   >> .env
+          echo "TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}"     >> .env
+          echo "TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}"         >> .env
 
       - name: Ejecutar Deep Agent
         env:

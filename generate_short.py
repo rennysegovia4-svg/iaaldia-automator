@@ -1797,16 +1797,16 @@ def assemble(presenter_vid, audio_path, music_path,
         f":fontcolor=white:fontsize=38:x=36:y=30"
         f":shadowcolor=black@0.9:shadowx=3:shadowy=3",
         "drawbox=x=36:y=78:w=165:h=4:color=0x00DCFF:t=fill",
-        # Comment CTA — aparece en los últimos ~5 segundos
+        # Comment CTA — dentro del gradiente oscuro, aparece en los últimos ~5 segundos
         f"drawtext=fontfile='{FONT_BOLD}':text='Comenta tu opinion abajo'"
         f":fontcolor=0xFFD700:fontsize=44"
-        f":x=(w-text_w)/2:y=1345"
+        f":x=(w-text_w)/2:y=1575"
         f":shadowcolor=black@0.99:shadowx=4:shadowy=4"
         f":bordercolor=black:borderw=3"
         f":enable='gte(t,{_cta_start:.1f})'",
         f"drawtext=fontfile='{FONT_BOLD}':text='Leo todos los comentarios'"
         f":fontcolor=white:fontsize=34"
-        f":x=(w-text_w)/2:y=1398"
+        f":x=(w-text_w)/2:y=1630"
         f":shadowcolor=black@0.95:shadowx=3:shadowy=3"
         f":bordercolor=black:borderw=2"
         f":enable='gte(t,{_cta_start:.1f})'",

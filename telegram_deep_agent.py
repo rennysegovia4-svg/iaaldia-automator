@@ -87,8 +87,13 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
         raise RuntimeError("Todos los modelos Gemini sin cuota disponible.")
 
     raw = response.text.strip()
-    raw = re.sub(r'^```(?:json)?\s*', '', raw)
-    raw = re.sub(r'\s*```$', '', raw)
+    # Extraer bloque JSON aunque Gemini agregue texto antes/después
+    json_match = re.search(r'\{.*\}', raw, re.DOTALL)
+    if json_match:
+        raw = json_match.group(0)
+    else:
+        raw = re.sub(r'^```(?:json)?\s*', '', raw)
+        raw = re.sub(r'\s*```$', '', raw)
     return json.loads(raw)
 
 
@@ -233,25 +238,34 @@ def publish(guion, titulo, slideshow_path):
 
 
 # ─── Orquestador principal ────────────────────────────────────────────────────
+def _esc(text):
+    """Escapa caracteres HTML para mensajes de Telegram."""
+    return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
 def run(instruction):
-    tg(f"🔍 <b>Investigando...</b>\n<i>{instruction[:120]}</i>")
+    tg(f"🔍 <b>Investigando...</b>\n<i>{_esc(instruction[:120])}</i>")
 
     # 1. Research
     print("\n=== FASE 1: Investigación ===")
     try:
         data = research(instruction)
     except Exception as e:
-        tg(f"❌ Error en investigación: {e}")
+        tg(f"❌ Error en investigación: {_esc(str(e)[:300])}")
         raise
 
-    guion  = data["guion"]
-    titulo = data["titulo"]
+    guion     = data.get("guion", "")
+    titulo    = data.get("titulo", "Sin título")
     articulos = data.get("articulos", [])
+
+    if not guion:
+        tg("❌ Gemini no devolvió guion. Reintenta.")
+        raise ValueError("guion vacío en respuesta de research()")
+
     print(f"Título: {titulo}")
     print(f"Guion: {len(guion.split())} palabras")
     print(f"Artículos: {len(articulos)}")
 
-    tg(f"📰 Investigación lista.\nTema: <b>{titulo}</b>\nBuscando imágenes en {len(articulos)} fuentes...")
+    tg(f"📰 Investigación lista.\nTema: <b>{_esc(titulo)}</b>\nBuscando imágenes en {len(articulos)} fuentes...")
 
     # 2. Download images
     print("\n=== FASE 2: Imágenes ===")
@@ -281,7 +295,7 @@ def run(instruction):
     yt_url = publish(guion, titulo, slideshow)
 
     if yt_url:
-        tg(f"✅ <b>Short publicado!</b>\n\n📺 <b>{titulo}</b>\n\n{yt_url}")
+        tg(f"✅ <b>Short publicado!</b>\n\n📺 <b>{_esc(titulo)}</b>\n\n{yt_url}")
         print(f"\n✓ URL: {yt_url}")
     else:
         tg("⚠️ Publicado pero no se encontró el URL. Revisa YouTube Studio.")
