@@ -342,6 +342,40 @@ _AFFILIATES_BY_NICHE = {
 }
 AFFILIATES = _AFFILIATES_BY_NICHE.get(_NICHE_KEY, _AFFILIATES_BY_NICHE["ia_noticias"])
 
+# ── Hashtags que YouTube muestra ENCIMA del título en búsquedas ───────────────
+_HASHTAGS_PAISES = "#Colombia #Venezuela #Mexico #Argentina #Chile #Peru #Latam #España"
+_HASHTAGS_VIRALES = "#Shorts #YouTubeShorts #Viral #Noticias #NoticiasHoy #UltimaHora #Trending"
+
+def _build_hashtags(titulo: str) -> str:
+    """Genera hashtags temáticos + países + virales para maximizar descubrimiento."""
+    titulo_l = titulo.lower()
+    tematicos = []
+    # Detectar tema y agregar hashtags específicos
+    if any(w in titulo_l for w in ["terremoto","sismo","temblor","seísmo"]):
+        tematicos = ["#Terremoto","#Sismo","#Temblor","#AlertaSismica"]
+    elif any(w in titulo_l for w in ["ia","inteligencia artificial","chatgpt","gemini","claude","robot","ai"]):
+        tematicos = ["#InteligenciaArtificial","#IA","#ChatGPT","#Tecnologia"]
+    elif any(w in titulo_l for w in ["futbol","fútbol","mundial","champions","messi","ronaldo","copa"]):
+        tematicos = ["#Futbol","#Mundial","#Champions","#DeportesLatam"]
+    elif any(w in titulo_l for w in ["cripto","bitcoin","ethereum","crypto","inversión"]):
+        tematicos = ["#Bitcoin","#Cripto","#Inversiones","#FinanzasPersonales"]
+    elif any(w in titulo_l for w in ["política","elección","presidente","gobierno","congreso"]):
+        tematicos = ["#Politica","#Noticias","#BreakingNews","#ActualidadLatam"]
+    elif any(w in titulo_l for w in ["economia","dólar","inflación","recesión","bolsa"]):
+        tematicos = ["#Economia","#Dolar","#Finanzas","#Inflacion"]
+    else:
+        tematicos = ["#BreakingNews","#NoticiasLatam","#ActualidadMundial","#Informacion"]
+
+    # Los primeros 3 hashtags son los que YouTube muestra sobre el título — los más importantes
+    bloques = [
+        " ".join(tematicos[:3]),          # los 3 temáticos más fuertes
+        _HASHTAGS_PAISES,
+        _HASHTAGS_VIRALES,
+        " ".join(tematicos[3:]),          # resto temáticos
+        "#IaAlDia #NoticiasDiarias #VideoCorto",
+    ]
+    return "\n" + "\n".join(b for b in bloques if b.strip())
+
 def load_env():
     env = {}
     with open(ENV_FILE) as f:
@@ -2241,7 +2275,8 @@ def main():
             script["descripcion"] + AFFILIATES +
             "\n\n━━━━━━━━━━━━━━━━\n"
             "🤖 IA al Día — Inteligencia Artificial para LATAM, todos los días.\n"
-            "⚠️ Contenido creado con asistencia de IA con fines educativos."
+            "⚠️ Contenido creado con asistencia de IA con fines educativos." +
+            _build_hashtags(script["titulo"])
         )
 
         print("[7/7] Subiendo a YouTube...")
