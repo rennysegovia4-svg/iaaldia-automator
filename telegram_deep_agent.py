@@ -65,7 +65,7 @@ Responde ÚNICAMENTE con este JSON (sin bloques de código, sin markdown):
 """
 
     response = client.models.generate_content(
-        model="gemini-2.5-pro",
+        model="gemini-2.5-flash",
         contents=prompt,
         config=gt.GenerateContentConfig(
             tools=[gt.Tool(google_search=gt.GoogleSearch())]
