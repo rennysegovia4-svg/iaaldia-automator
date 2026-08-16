@@ -86,6 +86,69 @@ ALERT_THRESHOLD = 30.0
 # ── Wav2Lip (repo 3) — deshabilitado por defecto; requiere ~700MB modelo ──────
 USE_WAV2LIP = False
 
+
+def _queries_from_text(text: str) -> list:
+    """Genera queries Pexels relevantes al tema del Short detectando categoría automáticamente."""
+    t = text.lower()
+    queries = []
+    if any(w in t for w in ["terremoto","sismo","temblor","huracán","huracan","inundación",
+                              "inundacion","tsunami","volcán","volcan","tornado","desastre"]):
+        queries += ["earthquake rubble rescue emergency","natural disaster aftermath destruction",
+                    "emergency rescue team disaster zone"]
+    if any(w in t for w in ["incendio","fuego","quema","forestal"]):
+        queries += ["wildfire firefighter forest fire","fire emergency flames dramatic"]
+    if any(w in t for w in ["messi","argentina"]):
+        queries += ["argentina football celebration crowd","soccer player dribbling stadium"]
+    if any(w in t for w in ["españa","spain","oyarzabal"]):
+        queries += ["spain football red jersey fans celebration","soccer goal slow motion"]
+    if any(w in t for w in ["france","francia","mbappé","mbappe"]):
+        queries += ["france football blue jersey crowd","european soccer stadium"]
+    if any(w in t for w in ["brasil","brazil","vinicius","neymar"]):
+        queries += ["brazil football yellow jersey samba celebration"]
+    if any(w in t for w in ["futbol","fútbol","soccer","football","mundial","gol","partido",
+                              "champions","liga","premier","serie a","bundesliga","copa","campeón"]):
+        queries += ["football stadium crowd cheering","soccer goal celebration slow motion",
+                    "football players training pitch"]
+    if any(w in t for w in ["guerra","conflicto","bombardeo","ataque","soldado","militar",
+                              "ucrania","rusia","israel","gaza","palestina","nato","otan"]):
+        queries += ["military conflict war soldiers","protest march crowd street city",
+                    "military vehicle armored war zone"]
+    if any(w in t for w in ["elección","elecciones","presidente","congreso","gobierno","político",
+                              "voto","campaña","senado","parlamento","dictadura","golpe","democracia"]):
+        queries += ["politician speaking podium audience","election vote ballot democracy",
+                    "government building parliament flag"]
+    if any(w in t for w in ["dólar","dollar","inflación","inflacion","economía","economia","bolsa",
+                              "mercado","desempleo","banco","pib","recesión","recesion","quiebra"]):
+        queries += ["stock market financial charts trading","economy money crisis business",
+                    "business financial graphs rising falling"]
+    if any(w in t for w in ["bitcoin","cripto","ethereum","blockchain","crypto","binance"]):
+        queries += ["bitcoin cryptocurrency digital finance","crypto trading charts technology"]
+    if any(w in t for w in ["inteligencia artificial","ia ","robot","gpt","claude","gemini",
+                              "openai","anthropic","automatización","automatizacion","algoritmo"]):
+        queries += ["artificial intelligence technology futuristic","robot computer digital network",
+                    "ai holographic interface technology"]
+    if any(w in t for w in ["tecnología","tecnologia","app","startup","iphone","google","apple",
+                              "microsoft","software","hackeo","ciberseguridad"]):
+        queries += ["technology innovation digital modern","smartphone tech startup office"]
+    if any(w in t for w in ["salud","vacuna","pandemia","enfermedad","hospital","médico","medico",
+                              "virus","cáncer","cancer","cirugía","cirugia"]):
+        queries += ["hospital medical doctor healthcare","medicine laboratory science"]
+    if any(w in t for w in ["crimen","robo","asesinato","narco","cartel","policía","policia",
+                              "arrestado","detenido","prisión","prision","violencia","secuestro"]):
+        queries += ["police arrest law enforcement city","crime security dramatic night"]
+    if any(w in t for w in ["migrante","migración","migracion","deportación","deportacion",
+                              "frontera","refugiado","asilo","inmigrante"]):
+        queries += ["immigration border migrants crowd","refugee people walking road"]
+    if any(w in t for w in ["clima","calentamiento","cambio climático","medio ambiente",
+                              "contaminación","contaminacion","reciclaje","carbono"]):
+        queries += ["climate change environment nature green","pollution industrial environmental"]
+    if any(w in t for w in ["empresa","despido","fusión","fusion","ceo","corporativo","startup",
+                              "amazon","tesla","meta","facebook","twitter","tiktok"]):
+        queries += ["business meeting office corporate","company boardroom executive"]
+    seen = set()
+    return [q for q in queries if not (q in seen or seen.add(q))]
+
+
 # Nichos: se cargan dinámicamente según el día
 from niches import get_niche, NICHES
 from learning_loop import load_strategy, register_video
@@ -102,29 +165,10 @@ _vq = os.environ.get("VIRAL_PEXELS_QUERIES", "")
 if _vq:
     PRESENTER_QUERIES = [q.strip() for q in _vq.split("|")]
 else:
-    # Mejora 2: queries Pexels específicos al tema del Short
+    # Pre-populate con VIRAL_TOPIC si existe (se refinará después de generar el guion)
     _vt_kw = os.environ.get("VIRAL_TOPIC", "").lower()
-    _smart = []
-    if any(w in _vt_kw for w in ["messi","argentina"]):
-        _smart += ["argentina football celebration crowd","soccer player dribbling stadium"]
-    if any(w in _vt_kw for w in ["españa","spain","oyarzabal"]):
-        _smart += ["spain football red jersey fans celebration","soccer goal net slow motion"]
-    if any(w in _vt_kw for w in ["france","francia","mbappé","mbappe"]):
-        _smart += ["france football blue jersey crowd","european soccer stadium"]
-    if any(w in _vt_kw for w in ["brasil","brazil","vinicius","neymar"]):
-        _smart += ["brazil football yellow jersey samba celebration"]
-    if any(w in _vt_kw for w in ["haaland","noruega","norway"]):
-        _smart += ["norway football player stadium goal"]
-    if any(w in _vt_kw for w in ["england","inglaterra","kane","bellingham"]):
-        _smart += ["england football white jersey wembley fans"]
-    if any(w in _vt_kw for w in ["final","semifinal","cuartos","campeón","champion"]):
-        _smart += ["world cup trophy celebration stadium confetti","football fans cheering big stadium"]
-    if any(w in _vt_kw for w in ["mundial","world cup","copa del mundo","gol","partido","futbol","fútbol","soccer","football"]):
-        _smart += ["football stadium crowd world cup","soccer goal celebration slow motion"]
-    if any(w in _vt_kw for w in ["inteligencia","artificial","robot","ia ","gpt","claude","tech"]):
-        _smart += ["artificial intelligence technology futuristic","robot computer digital network"]
-    if _smart:
-        PRESENTER_QUERIES = list(dict.fromkeys(_smart)) + PRESENTER_QUERIES  # deduplicar, smart primero
+    if _vt_kw:
+        PRESENTER_QUERIES = _queries_from_text(_vt_kw) + PRESENTER_QUERIES
 RSS_FEEDS = _NICHE["rss_feeds"]
 print(f"[Nicho del día] {_NICHE['nombre']} ({_NICHE_KEY}) | confianza modelo: {_STRATEGY.get('nivel_confianza',0):.0%}")
 
@@ -2235,6 +2279,14 @@ def main():
         else:
             script, used_pro = generate_script(headlines, research)
         print(f"      Título: {script['titulo']}")
+
+        # Refinar queries Pexels con el título real del guion (más descriptivo que VIRAL_TOPIC)
+        if not os.environ.get("VIRAL_PEXELS_QUERIES", ""):
+            _title_queries = _queries_from_text(script["titulo"])
+            if _title_queries:
+                global PRESENTER_QUERIES
+                PRESENTER_QUERIES = list(dict.fromkeys(_title_queries + PRESENTER_QUERIES))
+                print(f"      Pexels queries: {PRESENTER_QUERIES[:3]}")
 
         print(f"[3/7] Voz (persona: {_PERSONA_KEY})...")
         used_tts = generate_audio(script["guion"], audio_path, _PERSONA_KEY)
