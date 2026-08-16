@@ -1,39 +1,38 @@
 {
   "updated": "2026-08-16",
-  "iteracion": 98,
+  "iteracion": 99,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.3,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.1,
+    "ia_noticias": 0.7,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "[País/Equipo] [Verbo impactante] [Evento/Resultado]? [Emoji Shock]",
-    "[Noticia Impactante] que sacude [Región] [Hoy] ⚽",
-    "[Evento Trágico] en [Lugar]: [Cifra/Detalle] y [Consecuencia]",
-    "[Equipo/Liga]: [Acción Impactante] ¡SHOCK! 🤯",
-    "[Figura/Entidad] [Acción Negativa/Sorpresa] 😱",
-    "[Equipo/Evento]: [Fecha Límite/Decisión Inesperada] 🤯"
+    "¿[Sujeto] [Verbo en pasado] [Objeto]? 🤯",
+    "[Evento] hoy [Lugar/LATAM] ⚽/📈",
+    "[Entidad] ELIMINADO/CEDE LIDERATO ¡SHOCK! 😱/🤯",
+    "Tragedia [Lugar]: [Número] muertos",
+    "[Entidad] se vende hoy: ¿[Consecuencia]? 😱",
+    "[Entidad]: [Evento crítico] INESPERADO 🤯"
   ],
   "avoid_hooks": [
-    "Hooks sobre eventos ficticios o futuros (ej. 'Mundial 2026')",
-    "Hooks que dependen de nombres o detalles específicos no universalmente populares",
-    "Hooks puramente descriptivos o factuales que no generen curiosidad (ej. 'Brasil y Noruega empatan 0-0')"
+    "Hooks de eventos ficticios o futuros (ej. 'Mundial 2026')",
+    "Hooks excesivamente descriptivos o con información factual sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que inician con el nombre del protagonista sin contexto o misterio (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de la temática de noticias deportivas, la cual ha demostrado ser consistentemente la de mayor rendimiento, representando 8 de los 10 videos más vistos.",
-    "Concentrar las publicaciones en el horario de las 1 AM, que ha sido el más efectivo en términos de vistas acumuladas en el top 10 y el video individual más exitoso.",
-    "Implementar estrategias de titulación que generen shock, urgencia y curiosidad, utilizando emojis de impacto (🤯, 😱, ⚽) y palabras clave negativas/sorpresivas, evitando descripciones planas o eventos ficticios.",
-    "Explorar la viabilidad de series de contenido divididas en partes (ej. 'PARTE 1', '1/2') dado su buen rendimiento en el top 10.",
-    "Evitar categóricamente la publicación de videos sobre eventos deportivos o noticias futuras/ficticias, ya que estos han resultado consistentemente en 0 vistas."
+    "Concentrar la creación de contenido en el nicho 'ia_noticias', que es el único que muestra rendimiento significativo y consistente.",
+    "Priorizar las noticias deportivas y de catástrofes dentro del nicho 'ia_noticias', utilizando títulos que generen intriga, preguntas retóricas, urgencia y emojis de sorpresa (🤯, 😱) para maximizar la curiosidad y el click-through.",
+    "Evitar categóricamente la publicación de videos sobre eventos ficticios o futuros (ej. 'Mundial 2026') y los hooks puramente descriptivos, ya que han demostrado un fracaso absoluto con 0 vistas.",
+    "Mantener la publicación de videos alrededor de la 1 AM, que ha demostrado ser el slot horario más efectivo, especialmente para videos de alto rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La temática de noticias deportivas con un enfoque sensacionalista, categorizada bajo 'ia_noticias', es el motor de crecimiento y engagement del canal, mientras que el contenido sobre eventos futuros o ficticios genera cero interés."
+  "insight_semana": "El nicho 'ia_noticias' ha demostrado ser el único motor de tráfico, con especial éxito en noticias deportivas y de catástrofes, mientras que la estrategia de contenido ficticio ('mundial_2026') y hooks descriptivos es un fracaso absoluto, confirmando la necesidad de hiperfoco en noticias de actualidad impactantes."
 }
