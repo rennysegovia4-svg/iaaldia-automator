@@ -1,42 +1,39 @@
 {
   "updated": "2026-08-16",
-  "iteracion": 97,
+  "iteracion": 98,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.7,
-    "productividad": 0.08,
-    "negocios": 0.02,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "deportes": 0.03,
-    "entretenimiento": 0.03,
-    "politica_latam": 0.02,
-    "mundial_2026": 0.0
+    "deportes": 0.6,
+    "ia_noticias": 0.3,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡[EVENTO] en SHOCK! 🤯",
-    "¿[EQUIPO/PAÍS] [ACCIÓN CONTROVERTIDA/DRAMÁTICA]? 😱",
-    "[NOTICIA TRÁGICA/IMPACTANTE]: ¡[CONSECUENCIA]!",
-    "La noticia [TEMA] que sacude [REGIÓN] hoy ⚡",
-    "[ENTIDAD] [VERBO ACCIÓN] [DETALLE ESPECÍFICO]: ¡INESPERADO! 🤯",
-    "¡[NOMBRE] ELIMINADO! 😱"
+    "[País/Equipo] [Verbo impactante] [Evento/Resultado]? [Emoji Shock]",
+    "[Noticia Impactante] que sacude [Región] [Hoy] ⚽",
+    "[Evento Trágico] en [Lugar]: [Cifra/Detalle] y [Consecuencia]",
+    "[Equipo/Liga]: [Acción Impactante] ¡SHOCK! 🤯",
+    "[Figura/Entidad] [Acción Negativa/Sorpresa] 😱",
+    "[Equipo/Evento]: [Fecha Límite/Decisión Inesperada] 🤯"
   ],
   "avoid_hooks": [
-    "Hooks que describen resultados de eventos futuros/ficticios.",
-    "Hooks que son meramente descriptivos y carecen de emoción/intriga.",
-    "Hooks basados en personajes/eventos poco conocidos o irrelevantes para la audiencia."
+    "Hooks sobre eventos ficticios o futuros (ej. 'Mundial 2026')",
+    "Hooks que dependen de nombres o detalles específicos no universalmente populares",
+    "Hooks puramente descriptivos o factuales que no generen curiosidad (ej. 'Brasil y Noruega empatan 0-0')"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', con un fuerte énfasis en noticias deportivas de última hora y alto impacto regional (Latinoamérica).",
-    "Continuar experimentando con los horarios de publicación de alta visibilidad identificados, especialmente 1 AM (hora de mayor frecuencia y rendimiento individual), 16 PM (hora de mayor promedio puntual) y 21 PM.",
-    "Diseñar hooks que generen intriga, controversia o urgencia, utilizando preguntas retóricas, signos de exclamación y palabras de shock ('¡SHOCK!', '¡INESPERADO!', '😱', '🤯') inspirándose en los títulos de los videos de mayor rendimiento.",
-    "Evitar categóricamente la creación de contenido sobre eventos ficticios o futuros, como la temática 'mundial_2026' con resultados concretos, ya que esta estrategia consistently resulta en 0 vistas.",
-    "Implementar el seguimiento de la duración de los videos para poder determinar una 'duracion_optima' basada en datos reales en futuras iteraciones."
+    "Priorizar la creación de contenido dentro de la temática de noticias deportivas, la cual ha demostrado ser consistentemente la de mayor rendimiento, representando 8 de los 10 videos más vistos.",
+    "Concentrar las publicaciones en el horario de las 1 AM, que ha sido el más efectivo en términos de vistas acumuladas en el top 10 y el video individual más exitoso.",
+    "Implementar estrategias de titulación que generen shock, urgencia y curiosidad, utilizando emojis de impacto (🤯, 😱, ⚽) y palabras clave negativas/sorpresivas, evitando descripciones planas o eventos ficticios.",
+    "Explorar la viabilidad de series de contenido divididas en partes (ej. 'PARTE 1', '1/2') dado su buen rendimiento en el top 10.",
+    "Evitar categóricamente la publicación de videos sobre eventos deportivos o noticias futuras/ficticias, ya que estos han resultado consistentemente en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de noticias de última hora, particularmente en el ámbito deportivo y con un fuerte componente emocional o de controversia, es el motor principal del rendimiento del canal, mientras que el contenido sobre eventos futuros o ficticios demuestra una ineficacia total, resultando en cero vistas."
+  "insight_semana": "La temática de noticias deportivas con un enfoque sensacionalista, categorizada bajo 'ia_noticias', es el motor de crecimiento y engagement del canal, mientras que el contenido sobre eventos futuros o ficticios genera cero interés."
 }

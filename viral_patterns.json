@@ -1,190 +1,202 @@
 {
   "updated": "2026-08-16",
   "hook_formulas": [
+    "[Personaje/Concepto] en [Situación Extrema/Inusual] + Emoji (Ej: \"JUNIOR en LAVA 🔥\")",
     "Situación Relatable Cómica/Exagerada + Reacción Emocional/Emoji (Ej: \"Mis sueños cuando me como toda la olla de frijoles 🤣\")",
     "Declaración Impactante/Intrigante sobre un Objeto/Concepto + Emoji (Ej: \"La Impresora de Dinero 💸\")",
     "Pregunta Directa/Retórica sobre una Decisión/Situación + Emoji (Ej: \"¿Así Son Los Negocios? 🧐💼\")",
     "POV: Escenario Hipotético/Cómico con Desenlace + Emoji (Ej: \"POV: Si El Mundial 2026 Fueran Estudiantes... 😂🚀\")",
-    "Acción Inesperada/Desafío Personal + Consecuencia/Emoción Fuerte + Emoji (Ej: \"Convencí a mi hermano de hacer esto!! 🥵🔥\")",
+    "Acción Inesperada/Desafío Personal + Consecuencia/Emoción Fuerte + Emoji (Ej: \"Convencí a mi hermano de hacer esto!! 🥵🔥\", \"I DEFEATED ChatGPT !!!\")",
     "Consejo/Hack Directo + Beneficio/Problema Revelador + Emoji (Ej: \"Try this on Amazon! 🤯\")",
-    "Impacto Emocional Máximo (Tristeza, Epicidad, Sorpresa) + Objeto/Evento (Ej: \"Lo más triste que verás hoy\", \"Epic Gender Reveal\")",
-    "Revelación de Identidad/Afirmación de Poder/Motivación con Figura Icónica (Ej: \"Yo soy el Dueño - Batman\")",
-    "Misterio/Verificación de un Producto/Fenómeno + Prueba (Ej: \"CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA\")",
-    "Reacción Genuina a Video/Evento Cómico/Dramático (Ej: \"Funny Video Reaction part 1\", \"El Abrahaham trolea a la IA😂\")",
-    "Comparación/Contraste Inesperado de Conceptos/Personajes (Ej: \"I.A igual o JARVIS do HOMEM DE FERRO\")",
-    "Giro Irónico/Paradójico en una Situación de Conflicto/Engaño (Ej: \"Scammer Watches $455K Disappear After Wasting 48 Hours\")"
+    "[Adjetivo Positivo/Negativo] [Concepto/Evento] + Emoji (Ej: \"Genius Marketing Strategy by Zomato😬\", \"Epic Gender Reveal\")",
+    "[Verbo de Inicio] [Tipo de Negocio/Actividad] [Detalle Atractivo] + Emoji (Ej: \"Start Mop Making Business From Home At Low Cost 😱\")",
+    "Declaración de Transformación/Evolución por Tecnología (Ej: \"Evolucion Del Ser Humano Por Una Inteligencia Artificial\")",
+    "Mensaje Motivacional/Filosófico con Referencia Popular (Ej: \"Puedes Lograrlo - Nemo\", \"Hacer el bien Siempre\")",
+    "Escenario de Conflicto/Pérdida con Cifra/Tiempo (Ej: \"Scammer Watches $455K Disappear...\")"
   ],
   "title_patterns": [
-    "[Declaración de Impacto Emocional/Superlativa] + [Sujeto/Verbo] + [Emoji] (Ej: \"Lo más triste que verás hoy #shorts\")",
-    "[Situación Relatable/Humorística] + [Reacción/Consecuencia] + [Emoji] (Ej: \"Mis sueños cuando me como toda la olla de frijoles 🤣\")",
-    "[Pregunta Directa/Retórica] + [Tema Central] + [Emoji] (Ej: \"¿Así Son Los Negocios? 🧐💼\")",
-    "[Afirmación Corta e Impactante] + [Sujeto/Concepto] + [Emoji] (Ej: \"La Impresora de Dinero 💸\")",
-    "POV: [Escenario Ficticio/Hiperbólico] + [Comentario/Desenlace] + [Emoji] (Ej: \"POV: Si El Mundial 2026 Fueran Estudiantes... 😂🚀\")",
-    "[Consejo/Hack/Acción] + [Beneficio/Intriga] + [Formato/Verificación] (Ej: \"Try this on Amazon! 🤯\")",
-    "[Figura Icónica/Nombre Propio] + [Declaración/Acción] + [Tema] (Ej: \"ANDREW TATE SAYS THIS ABOUT CRYPTO FUTURE #shorts\")",
-    "[Número] + [Elemento/Acción] + [Beneficio/Resultado] (Ej: \"Top 4 Business In India\")"
+    "[Sujeto/Concepto] [Verbo Impactante] [Objeto/Situación] + [Emoji] (Ej: \"JUNIOR en LAVA 🔥\", \"I DEFEATED ChatGPT !!!\")",
+    "[Situación Relatable/Cómica] + [Emoji de Reacción] (Ej: \"Mis sueños cuando me como toda la olla de frijoles 🤣\")",
+    "[Pregunta Directa/Retórica] sobre [Tema] + [Emoji Intriga/Reflexión] (Ej: \"¿Así Son Los Negocios? 🧐💼\")",
+    "[Adjetivo] [Sustantivo Impactante] + [Emoji/Referencia] (Ej: \"La Impresora de Dinero 💸\", \"Epic Gender Reveal\")",
+    "[Tecnología/Herramienta] [Verbo de Habilidad] [Resultado] (Ej: \"Esta inteligencia artificial hace magia con tus dibujos\")",
+    "[Declaración de Problema/Solución] + [Detalle Atractivo] + [Emoji] (Ej: \"Try this on Amazon! 🤯\", \"CARTERA PARA AHORRAR DINERO, SERA VERDAD?\")",
+    "[Personaje/Entidad] [Acción Inesperada/Resultado] + [Emoji] (Ej: \"Mamá quería ahorrar 🙈🤭\", \"Genius Marketing Strategy by Zomato😬\")",
+    "[Concepto Dramático/Global] + [Emoji] (Ej: \"Extinción masiva 🌎\")"
   ],
   "palabras_prohibidas": [
-    "El dataset proporcionado solo contiene videos virales, lo que impide identificar palabras que 'matan' el CTR al no haber ejemplos de bajo rendimiento."
+    "tutorial",
+    "completo",
+    "explicación",
+    "largo",
+    "guía",
+    "suscríbete",
+    "episodio",
+    "pasos",
+    "detalles",
+    "información"
   ],
   "palabras_clave_virales": [
     "shorts",
     "viral",
     "humor",
-    "ia",
-    "inteligenciaartificial",
-    "comedia",
-    "tiktokvideo",
+    "ai",
+    "inteligencia artificial",
     "funny",
-    "fyp",
-    "finanzas",
-    "negocios",
-    "emprendimiento",
+    "comedia",
+    "dinero",
+    "money",
     "bitcoin",
+    "emprendedor",
+    "negocios",
+    "finanzas",
+    "tiktokvideo",
+    "fyp",
+    "scam",
     "trending",
-    "money"
+    "risa"
   ],
-  "estructura_gancho_optima": "La estructura óptima del gancho se basa en presentar una Situación de Alta Emoción (relatable, humorística, trágica, sorprendente o intrigante) que genera una Reacción o Consecuencia Inesperada, amplificada por un Emoji Visual Impactante en el título. El objetivo es captar la atención y generar curiosidad o una conexión emocional inmediata.",
+  "estructura_gancho_optima": "El gancho óptimo comienza con un enunciado o pregunta que genera una fuerte emoción (curiosidad, shock, risa, asombro) o que presenta una situación relatable o dramática de forma inmediata. Se apoya en elementos visuales impactantes o sonidos sorprendentes que complementan el título y a menudo incluye uno o varios emojis que amplifican el sentimiento del gancho.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "La viralidad en Shorts se fundamenta en la capacidad de activar emociones universales y la identificación personal de forma casi instantánea. Los videos más exitosos no solo informan, sino que provocan una reacción visceral (risa, sorpresa, nostalgia, empatía) en los primeros segundos, lo que fomenta el re-visionado y la compartición masiva, incluso sin una 'utilidad' aparente más allá del entretenimiento.",
-  "recomendacion_thumbnail": "Los thumbnails más efectivos presentan caras humanas con expresiones de emociones fuertes y claras (sorpresa, risa, angustia) o imágenes intrigantes y ligeramente ambiguas que generan curiosidad, directamente relacionadas con el gancho del título. Para contenido de valor, un texto superpuesto claro y conciso que prometa un beneficio ('GRATIS', '🤯') sobre un fondo relevante o una imagen de la interfaz de la herramienta, maximiza el CTR. Colores vibrantes y un punto focal evidente son cruciales para destacar en el feed.",
+  "insight_clave": "La clave de la viralidad reside en la capacidad de generar una reacción emocional intensa (asombro, risa, shock, intriga) en los primeros 1-3 segundos del video, utilizando un lenguaje hiperbólico y visuales que prometen una revelación o un desenlace sorprendente, combinando conceptos universales (dinero, IA, humor, éxito) con formatos ultra-condensados y dinámicos que maximizan el 'impacto por segundo'.",
+  "recomendacion_thumbnail": "La recomendación es utilizar una captura de pantalla del momento más climáctico, sorprendente o emocionalmente cargado del video. Debe ser visualmente impactante, con colores brillantes y alto contraste. Incorporar una cara con una expresión fuerte (sorpresa, risa, enfado) o un elemento visual clave que genere misterio o curiosidad (ej. una pila de dinero, un robot, una explosión). Idealmente, se debe sobreponer un emoji pertinente o 1-3 palabras clave del título en una tipografía grande y legible para reforzar el gancho visual y textual.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Situación Relatable/Humorística con IA + Reacción Emocional + Emoji",
-        "Afirmación Impactante sobre IA + Consecuencia/Sorpresa + Emoji",
-        "Interacción Humana vs. IA (Troleo/Desafío) + Desenlace"
+        "[Concepto de IA] [Verbo de Acción/Transformación] [Objeto/Sujeto] (Ej: \"Evolucion Del Ser Humano Por Una Inteligencia Artificial\")",
+        "[Personaje/Sujeto] en [Situación Extrema/Cómica con IA] + Emoji (Ej: \"JUNIOR en LAVA 🔥\")",
+        "Desafío/Logro Personal contra una IA + Puntuación Impactante (Ej: \"I DEFEATED ChatGPT !!!\")"
       ],
       "topics": [
-        "Humor y memes relacionados con la IA",
-        "Demostraciones sorprendentes de la IA",
-        "Interacciones cómicas o desafiantes con la IA"
+        "Capacidades sorprendentes y creativas de la IA",
+        "Interacción humorística o dramática con IA",
+        "IA y el futuro (impacto en humanos)"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Declaración Impactante sobre Dinero/Negocios + Emoji",
-        "Pregunta Directa/Hipotética sobre Decisiones Financieras + Emoji",
-        "Situación de Ahorro/Dinero con Giro Inesperado/Humor + Emoji"
+        "Declaración Impactante sobre Dinero/Ahorro + Emoji (Ej: \"La Impresora de Dinero 💸\")",
+        "Pregunta Directa sobre Decisiones Financieras/Negocios + Emoji (Ej: \"¿Así Son Los Negocios? 🧐💼\")",
+        "Situación Relatable Cómica de Ahorro/Dinero + Emojis (Ej: \"Mamá quería ahorrar 🙈🤭\")"
       ],
       "topics": [
-        "Conceptos financieros intrigantes o complejos (ej. impresora de dinero)",
-        "Toma de decisiones en negocios y finanzas",
-        "Humor y situaciones cotidianas sobre ahorro y dinero"
+        "Ahorro y manejo de dinero",
+        "Emprendimiento y negocios",
+        "Dilemas y decisiones financieras"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Estrategia/Idea de Negocio 'Genius'/Inesperada + Tema",
-        "Desafío Personal de Emprendimiento + Resultado",
-        "Pregunta sobre Problemas de Negocio + Solución Implícita"
+        "Estrategia/Idea de Negocio [Adjetivo Positivo] + Marca + Emoji (Ej: \"Genius Marketing Strategy by Zomato😬\")",
+        "Idea de Negocio [Detalle Atractivo de Costo/Inicio] + Emoji (Ej: \"Start Mop Making Business From Home At Low Cost 😱\")",
+        "Declaración de Estafa/Scam en Negocios + Marca/Concepto (Ej: \"D Mart Scam\")"
       ],
       "topics": [
-        "Estrategias de marketing y casos de éxito empresarial",
-        "Ideas de negocios innovadoras (ej. 3D printing, handmade)",
-        "Retos y experiencias personales en emprendimiento digital"
+        "Estrategias de marketing y negocios exitosas",
+        "Ideas de emprendimiento (bajo costo o nicho)",
+        "Advertencias o exposiciones de estafas/fraudes en negocios"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Mensajes Motivacionales/Filosóficos de películas + Referencia a Cripto",
-        "Situaciones Dramáticas/Tensas con Scammers/Dinero + Desenlace",
-        "Declaraciones de Figuras Influyentes sobre Cripto"
+        "Mensaje Motivacional/Empoderador con Referencia a Cultura Pop (Ej: \"Puedes Lograrlo - Nemo\")",
+        "Situación de Alto Riesgo/Pérdida Financiera con Cifras (Ej: \"Scammer Watches $455K Disappear...\")",
+        "Pregunta Hipotética Extrema con Recompensa Monetaria (Ej: \"Would you slap him for 20 Trillion Dollars ?\")"
       ],
       "topics": [
-        "Citas motivacionales y de mentalidad para la inversión",
-        "Historias de estafas y ciberseguridad en el espacio cripto",
-        "Opiniones de celebridades o expertos sobre el futuro cripto"
+        "Motivación y éxito personal (asociado a la libertad financiera)",
+        "Riesgos y estafas en el ámbito de las inversiones",
+        "Dilemas éticos/hipotéticos con grandes sumas de dinero"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Beneficio Inmediato con Herramienta IA/Web GRATIS + Resultado",
-        "Cómo Hacer [Tarea Específica] con IA/Tecnología + Solución",
-        "Hack/Tip de Productividad + Beneficio Claro"
+        "[Herramienta/IA] [Verbo de Habilidad] [Beneficio/Resultado] (Ej: \"This AI tool translates video to ANY language\")",
+        "[Tipo de IA] [Acción] con [Objeto] + Beneficio (Ej: \"Crear tablas con IA (ChatGPT)\")",
+        "Afirmación de Superioridad/Mejor Herramienta de IA para [Tarea] (Ej: \"La mejor herramienta para humanizar tus textos es Bypass AI\")"
       ],
       "topics": [
-        "Herramientas de IA gratuitas para tareas específicas (música, texto)",
-        "Optimización de procesos de trabajo con IA (Excel, CVs)",
-        "Hacks y consejos para mejorar la productividad personal"
+        "Herramientas de IA para generación de contenido (música, imágenes, texto)",
+        "IA para optimización de tareas (traducción, transcripción, tablas)",
+        "Uso práctico y gratuito de la IA"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "La Impresora de Dinero 💸 #shorts",
-      "views": 124882513,
+      "views": 124882540,
       "id": "w483cRons3Q"
     },
     {
       "titulo": "Genius Marketing Strategy by Zomato😬 #shorts #marketing #zomato",
-      "views": 65054263,
+      "views": 65054312,
       "id": "wJ1-eR_hAV0"
     },
     {
       "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 64943475,
+      "views": 64955328,
       "id": "qEBPaKp0kKA"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 52187283,
+      "views": 52190279,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44166504,
+      "views": 44166619,
       "id": "qrfrPlEGrdw"
     },
     {
-      "titulo": "Calling a Scammer by his Real Name #shorts",
-      "views": 43564030,
-      "id": "OE6PiIcDud0"
+      "titulo": "JUNIOR en LAVA 🔥 #lava #filtro #viral #junior #fuego #aliens #shorts #short #funny",
+      "views": 43021201,
+      "id": "LtYzjl5w-YY"
     },
     {
       "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42220550,
+      "views": 42220600,
       "id": "IKXiyApvKjI"
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 35545460,
+      "views": 35546657,
       "id": "59AAoa8l064"
     },
     {
-      "titulo": "Lo más triste que verás hoy #shorts",
-      "views": 29125138,
-      "id": "HwpwN5bQ4t4"
+      "titulo": "Incredible Wonder Studio Ai | Humans VS Robot ~ Fair Fight? #shorts",
+      "views": 26955739,
+      "id": "WLifoj5-Xog"
     },
     {
-      "titulo": "Mis traumas, mis chistes 😂🥹🫂 #shorts #tiktokvideo #humor #comedia #viral #peru #latina",
-      "views": 23143872,
-      "id": "3iiKnLWx8Pc"
+      "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
+      "views": 23163281,
+      "id": "D53HF_okHi8"
+    },
+    {
+      "titulo": "Start Mop Making Business From Home At Low Cost 😱 #ytshorts #shorts",
+      "views": 15831549,
+      "id": "DX90HlZtW9I"
     },
     {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15262868,
+      "views": 15263051,
       "id": "gDn_SQU6YZE"
     },
     {
-      "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
-      "views": 9834120,
-      "id": "GITF0gO6W3Q"
+      "titulo": "This AI tool translates video to ANY language #shorts #videotips #videomarketingtips",
+      "views": 650629,
+      "id": "os7nUVOZ_0E"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 514450,
+      "views": 514454,
       "id": "14URUL4nBkA"
     },
     {
       "titulo": "Crear tablas con IA (ChatGPT) #shorts #excel #excelgratis #openai",
       "views": 265445,
       "id": "T98pgCMMN8o"
-    },
-    {
-      "titulo": "5 páginas web GRATIS para hacer tu CV #shorts #hacks",
-      "views": 69232,
-      "id": "2l6BLxRTz4E"
     }
   ],
   "aprendizajes_externos": {
