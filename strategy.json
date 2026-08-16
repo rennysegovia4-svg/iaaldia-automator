@@ -1,38 +1,43 @@
 {
   "updated": "2026-08-16",
-  "iteracion": 95,
+  "iteracion": 96,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.03,
-    "ia_noticias": 0.85,
-    "finanzas": 0.02,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
     "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "politica_latam": 0.02,
+    "finanzas": 0.015,
+    "negocios_digitales": 0.015,
+    "cripto_inversiones": 0.015,
+    "productividad_ia": 0.015,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "Noticia Urgente: [Evento/Equipo] ¡[Resultado Impactante]! 😱",
-    "¿[Pregunta controvertida sobre Evento/Equipo]? 🤯",
-    "[Tipo de Desastre] [Localidad]: [Detalle Impactante]",
-    "La noticia deportiva que sacude [Región] hoy ⚽",
-    "[Equipo]: [Situación Crítica/Inesperada] 🤯",
-    "[Evento Deportivo] [Equipo/Jugador] ¡[Acción/Resultado Impactante]! 😱"
+    "Evento + Pregunta impactante + Emoji (Parte X)",
+    "Evento impactante + Cantidad/Sujeto + Consecuencia/Estado + Emoji",
+    "Tipo de Noticia + Verbo de impacto + Lugar/Sujeto + Urgencia + Emoji",
+    "Sujeto/Equipo + Detalle específico + Resultado/Impacto + Emoji",
+    "Sujeto/Equipo + Evento Inesperado + Exclamación + Emoji",
+    "Sujeto/Tema + Detalle crítico/Fecha límite + Impacto + Emoji"
   ],
   "avoid_hooks": [
-    "Hooks que exponen resultados de eventos deportivos futuros o ficticios (ej. 'Brasil y Noruega empatan 0-0').",
-    "Declaraciones puramente fácticas sin emoción ni intriga para contenido especulativo (ej. 'Sidny Lopes Cabral acaba de').",
-    "Cualquier hook que provenga de nichos con rendimiento nulo como 'mundial_2026', dado su 0% de efectividad en todas las instancias."
+    "Descripción neutral de un evento/resultado sin impacto ni emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmación genérica y sin gancho sobre una acción (ej. 'Sidny Lopes Cabral acaba de')",
+    "Contenido ligado al nicho 'mundial_2026' con hooks factuales y sin dramatismo."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', enfocándose en noticias deportivas de gran impacto y noticias generales urgentes (ej. desastres), dado que representan el 80% de los videos más vistos.",
-    "Enfocar la estrategia de titulación en formatos que incluyan preguntas controvertidas, resultados impactantes o noticias urgentes con emojis emotivos (🤯, 😱, ⚽), ya que los títulos son el principal gancho para los videos exitosos con hooks vacíos.",
-    "Publicar el contenido prioritariamente en los horarios de 1 AM y 16 PM, que han demostrado ser los momentos de mayor actividad y rendimiento para los videos del canal, siendo la 1 AM la franja más potente.",
-    "Evitar categóricamente la creación de contenido especulativo o ficticio (ej. 'Mundial 2026') y hooks meramente fácticos para este tipo de temas, ya que sistemáticamente resultan en 0 vistas."
+    "Priorizar la creación de contenido de noticias deportivas, enmarcadas bajo el nicho `ia_noticias` (o `deportes` si la categorización interna lo permite), dada su clara dominancia en rendimiento.",
+    "Implementar de forma consistente los patrones de título/gancho identificados en los videos top: utilizar preguntas impactantes, destacar la urgencia, mencionar eventos inesperados o resultados dramáticos y asegurar el uso de emojis relevantes.",
+    "Evitar categóricamente hooks descriptivos, blandos o sin emoción, y abstenerse de producir contenido bajo el nicho `mundial_2026`, ya que ha demostrado una eficacia nula.",
+    "Experimentar con la publicación en las franjas horarias de mayor rendimiento (1 AM, 6 AM, 16 PM, 17 PM, 21 PM), con un énfasis especial en la 1 AM para el contenido de mayor potencial.",
+    "Empezar a registrar la duración de cada video publicado para poder identificar la 'duracion_optima' en futuras iteraciones y optimizar la retención de audiencia.",
+    "Asegurarse de que el campo 'hook' se complete en todos los videos, incluso si es una variación directa del título, para permitir un análisis directo de su impacto en el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Los títulos son el gancho definitivo: la ausencia de hooks explícitos en los videos más exitosos (todos 'ia_noticias') resalta que el formato y contenido del título, junto con emojis de impacto, son la clave para atraer vistas, superando a cualquier otro nicho o estrategia de gancho fallida."
+  "insight_semana": "El contenido de noticias deportivas, enmarcado bajo el nicho 'ia_noticias' y utilizando títulos dramáticos con emojis, es el claro impulsor del rendimiento del canal, generando un promedio de 400 vistas y una tendencia positiva de 16.75, mientras que el contenido más directo y genérico (como 'mundial_2026') con hooks blandos falla rotundamente."
 }
