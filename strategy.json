@@ -1,42 +1,38 @@
 {
   "updated": "2026-08-16",
-  "iteracion": 94,
+  "iteracion": 95,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.9,
-    "productividad": 0.05,
-    "negocios": 0.03,
-    "finanzas": 0.0025,
-    "negocios_digitales": 0.0025,
-    "cripto_inversiones": 0.0025,
-    "productividad_ia": 0.0025,
-    "deportes": 0.0025,
-    "entretenimiento": 0.0025,
-    "politica_latam": 0.0025,
-    "mundial_2026": 0.0025
+    "deportes": 0.03,
+    "ia_noticias": 0.85,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Noticia [deporte/evento] + Pregunta sensacional + Emoji 🤯 (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Evento de actualidad [trágico/impactante] + Ubicación + Urgencia ('hoy') + Detalle clave (ej. 'Terremoto devastador en Colombia...')",
-    "La noticia deportiva que sacude LATAM hoy ⚽",
-    "Evento deportivo + Consecuencia drástica + Nombre + Emoji 😱 (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Equipo/Liga + Acción impactante + Urgencia ('HOY') + Pregunta + Emoji 😱 (ej. 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
-    "Liga/Equipo + Resultado chocante + ¡SHOCK! 🤯 (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "Noticia Urgente: [Evento/Equipo] ¡[Resultado Impactante]! 😱",
+    "¿[Pregunta controvertida sobre Evento/Equipo]? 🤯",
+    "[Tipo de Desastre] [Localidad]: [Detalle Impactante]",
+    "La noticia deportiva que sacude [Región] hoy ⚽",
+    "[Equipo]: [Situación Crítica/Inesperada] 🤯",
+    "[Evento Deportivo] [Equipo/Jugador] ¡[Acción/Resultado Impactante]! 😱"
   ],
   "avoid_hooks": [
-    "Afirmaciones puramente factuales sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0').",
-    "Ganchos sobre eventos hipotéticos o futuros con resultados ficticios (relacionados con 'Mundial 2026').",
-    "Frases incompletas o que solo inician una narración sin generar curiosidad (ej. 'Sidny Lopes Cabral acaba de')."
+    "Hooks que exponen resultados de eventos deportivos futuros o ficticios (ej. 'Brasil y Noruega empatan 0-0').",
+    "Declaraciones puramente fácticas sin emoción ni intriga para contenido especulativo (ej. 'Sidny Lopes Cabral acaba de').",
+    "Cualquier hook que provenga de nichos con rendimiento nulo como 'mundial_2026', dado su 0% de efectividad en todas las instancias."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido 100% en el nicho `ia_noticias`, dado que es el único con rendimiento probado y consistente, absorbiendo sub-temas deportivos y de actualidad.",
-    "Replicar las estructuras de títulos de los videos TOP 10, que incluyen preguntas sensacionalistas, uso de emojis (🤯, 😱, ⚽) y palabras de urgencia ('hoy', 'eliminado', 'shock').",
-    "Evitar categóricamente la creación de contenido sobre eventos deportivos futuros o hipotéticos con resultados inventados, ya que consistentemente resultan en 0 vistas.",
-    "Concentrar las publicaciones en las horas pico de 1 AM y, secundariamente, entre 16 PM y 17 PM para maximizar la visibilidad inicial, enfocándose principalmente en el pico de la 1 AM.",
-    "Profundizar en sub-temas dentro de `ia_noticias` que han demostrado éxito: noticias deportivas (fútbol de ligas importantes y selecciones) y noticias de desastres naturales/emergencias, siempre con un enfoque sensacionalista en el título."
+    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', enfocándose en noticias deportivas de gran impacto y noticias generales urgentes (ej. desastres), dado que representan el 80% de los videos más vistos.",
+    "Enfocar la estrategia de titulación en formatos que incluyan preguntas controvertidas, resultados impactantes o noticias urgentes con emojis emotivos (🤯, 😱, ⚽), ya que los títulos son el principal gancho para los videos exitosos con hooks vacíos.",
+    "Publicar el contenido prioritariamente en los horarios de 1 AM y 16 PM, que han demostrado ser los momentos de mayor actividad y rendimiento para los videos del canal, siendo la 1 AM la franja más potente.",
+    "Evitar categóricamente la creación de contenido especulativo o ficticio (ej. 'Mundial 2026') y hooks meramente fácticos para este tipo de temas, ya que sistemáticamente resultan en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal depende casi exclusivamente de la capacidad de transformar noticias reales (especialmente deportivas y de actualidad) en títulos altamente sensacionalistas y urgentes, mientras que cualquier desviación hacia contenido especulativo o ganchos planos resulta en un fracaso total."
+  "insight_semana": "Los títulos son el gancho definitivo: la ausencia de hooks explícitos en los videos más exitosos (todos 'ia_noticias') resalta que el formato y contenido del título, junto con emojis de impacto, son la clave para atraer vistas, superando a cualquier otro nicho o estrategia de gancho fallida."
 }
