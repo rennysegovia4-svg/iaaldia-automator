@@ -1,37 +1,39 @@
 {
   "updated": "2026-08-17",
-  "iteracion": 106,
+  "iteracion": 107,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.02,
-    "ia_noticias": 0.9,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.0,
+    "ia_noticias": 1.0,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "{Evento Crítico} + {Consecuencia Grave/Número Impactante}",
-    "{Sujeto} + {Acción Inesperada} + {Pregunta Sorprendente}? 🤯",
-    "{Tipo de Noticia} que sacude {Región} hoy ⚽",
-    "{Noticia Específica} + ¡{Verbo Fuerte}! 😱",
-    "{Sujeto} + {Impacto Negativo}: ¡{Expresión de Asombro}! 🤯",
-    "¡{Evento} + HOY! 🚨"
+    "¿[Tema Controversial/Conflicto] ENTREGÓ [Resultado Deseado]? 🤯",
+    "[Evento Devastador] en [País/Región] HOY: ¡[Número/Impacto] muertos! 🚨",
+    "La noticia [Deportiva/Impactante] que sacude [LATAM/País] hoy ⚽",
+    "[Entidad/Jugador] [Verbo Fuerte] [Evento]: ¡[Adjetivo de Shock]! 😱",
+    "[Liga/Equipo] CEDE LIDERATO: ¡SHOCK TOTAL! 🤯",
+    "¡CAÍDA mundial de [Servicio/Plataforma] HOY! 🚨"
   ],
   "avoid_hooks": [
-    "{Sujeto} y {Sujeto} empatan {Marcador}",
-    "{Sujeto} y {Sujeto} empatan",
-    "{Nombre Personal} acaba de"
+    "Noticias hipotéticas o simulaciones de eventos futuros: ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!'",
+    "Menciones de nombres o eventos poco conocidos sin contexto de alto impacto: ej. 'ARGENTINA EN SHOCK: CABRAL PARALIZA!'",
+    "Contenido de autoayuda o mensajes genéricos en un contexto de noticias: ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA'"
   ],
   "best_hora": 1,
-  "duracion_optima": "No hay datos de duración de video para analizar.",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar el 90% de la producción de contenido en el nicho `ia_noticias`, ya que es el único que genera vistas significativas y el 100% del TOP 10.",
-    "Optimizar los títulos para que funcionen como hooks de alto impacto, utilizando preguntas de incredulidad, verbos de acción fuerte y emojis (🤯, 😱, ⚽, 🚨) directamente en el título.",
-    "Eliminar completamente la creación de contenido hipotético o simulado (ej. `mundial_2026` y ganchos asociados), ya que consistentemente resulta en 0 vistas, y experimentar con horarios de publicación en la madrugada (1 AM - 6 AM) para `ia_noticias` dado su demostrado potencial."
+    "Concentrar el 100% de los esfuerzos en el nicho `ia_noticias` dado su rendimiento exclusivo en el TOP 10 y sus altas vistas promedio (294 views), siendo el único nicho efectivo de la plantilla.",
+    "Priorizar noticias de actualidad con un alto componente de controversia, shock, urgencia o eventos deportivos/desastres naturales, utilizando un lenguaje dramático y emojis pertinentes (🤯, 😱, 🚨, ⚽) en los títulos.",
+    "Optimizar las publicaciones para las franjas de madrugada (especialmente 1 AM, 2 AM, 3 AM, 6 AM) y tarde/noche (16 PM, 17 PM, 21 PM), con 1 AM siendo el horario de mayor pico de vistas (1324 views).",
+    "Evitar completamente la publicación de contenido hipotético, simulaciones de eventos futuros (ej. resultados de `mundial_2026`), o temas genéricos/de autoayuda, ya que consistentemente obtienen 0 vistas.",
+    "Incluir elementos de curiosidad o pregunta directa en el título, junto con emojis de sorpresa/alerta, para maximizar la intriga y el click-through, como se observa en los videos de mayor rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal depende enteramente del nicho `ia_noticias` (100% del TOP 10), con un rechazo absoluto del público hacia el contenido no fáctico o hipotético (0 vistas). Las franjas de madrugada (1 AM - 6 AM) han demostrado ser cruciales para el éxito de videos noticiosos de impacto."
+  "insight_semana": "La absoluta dominancia del nicho `ia_noticias` para noticias de última hora (frecuentemente deportivas o de desastres) es el único motor de vistas, impulsado por títulos controversiales, impactantes y urgentes con emojis, mientras que todos los demás nichos de la plantilla y el contenido hipotético carecen de tracción."
 }
