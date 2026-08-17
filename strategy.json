@@ -1,41 +1,37 @@
 {
   "updated": "2026-08-17",
-  "iteracion": 105,
+  "iteracion": 106,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.7,
-    "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "deportes": 0.03,
-    "entretenimiento": 0.03,
-    "politica_latam": 0.05,
-    "mundial_2026": 0.0
+    "deportes": 0.02,
+    "ia_noticias": 0.9,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "[Sujeto/Evento] [Verbo de Impacto] ¡[Consecuencia/Emoción]! 🤯/😱 (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "[Noticia Urgente] [Geografía/Entidad] HOY: [Impacto] 🚨 (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
-    "La noticia [Tipo] que sacude [Región] hoy ⚽ (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
-    "[Entidad] [Verbo de Acción/Estado] ¡[Adjetivo de Sorpresa]! 😱 (ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\")",
-    "[Evento] [Geografía] HOY: la [Tragedia/Noticia] que [Verbo de Impacto] (ej. \"Temblor hoy Colombia y Venezuela: la tragedia sísmica que sa\")",
-    "¡[Crisis/Evento Inesperado] [Entidad] HOY! 🚨 (ej. \"¡CAÍDA mundial de Pokémon GO HOY! 🚨\")"
+    "{Evento Crítico} + {Consecuencia Grave/Número Impactante}",
+    "{Sujeto} + {Acción Inesperada} + {Pregunta Sorprendente}? 🤯",
+    "{Tipo de Noticia} que sacude {Región} hoy ⚽",
+    "{Noticia Específica} + ¡{Verbo Fuerte}! 😱",
+    "{Sujeto} + {Impacto Negativo}: ¡{Expresión de Asombro}! 🤯",
+    "¡{Evento} + HOY! 🚨"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "{Sujeto} y {Sujeto} empatan {Marcador}",
+    "{Sujeto} y {Sujeto} empatan",
+    "{Nombre Personal} acaba de"
   ],
-  "best_hora": 16,
-  "duracion_optima": "insuficientes datos",
+  "best_hora": 1,
+  "duracion_optima": "No hay datos de duración de video para analizar.",
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho 'ia_noticias', que es el único con videos en el TOP 10 y un rendimiento promedio de 344 views, explorando temas de deportes actuales y noticias de alto impacto.",
-    "Priorizar títulos que generen intriga y urgencia utilizando exclamaciones, preguntas, emojis de sorpresa (🤯, 😱, 🚨) y la palabra clave 'HOY' para captar la atención inmediatamente.",
-    "Evitar por completo la creación de contenido dentro del nicho 'mundial_2026' y cualquier hook o título que simule o fabrique resultados de eventos futuros, ya que consistently resultan en 0 vistas.",
-    "Experimentar con horarios de publicación que han demostrado éxito: la hora 16 PM (con un promedio de 1276 views) y la hora 1 AM (que produjo el video más visto con 1324 views)."
+    "Concentrar el 90% de la producción de contenido en el nicho `ia_noticias`, ya que es el único que genera vistas significativas y el 100% del TOP 10.",
+    "Optimizar los títulos para que funcionen como hooks de alto impacto, utilizando preguntas de incredulidad, verbos de acción fuerte y emojis (🤯, 😱, ⚽, 🚨) directamente en el título.",
+    "Eliminar completamente la creación de contenido hipotético o simulado (ej. `mundial_2026` y ganchos asociados), ya que consistentemente resulta en 0 vistas, y experimentar con horarios de publicación en la madrugada (1 AM - 6 AM) para `ia_noticias` dado su demostrado potencial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito rotundo radica en la entrega de noticias 'IA' actuales, impactantes y con un gancho que despierte curiosidad o alarma, mientras que el contenido hipotético o simulado es completamente rechazado por la audiencia."
+  "insight_semana": "El canal depende enteramente del nicho `ia_noticias` (100% del TOP 10), con un rechazo absoluto del público hacia el contenido no fáctico o hipotético (0 vistas). Las franjas de madrugada (1 AM - 6 AM) han demostrado ser cruciales para el éxito de videos noticiosos de impacto."
 }
