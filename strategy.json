@@ -1,42 +1,41 @@
 {
-  "updated": "2026-08-16",
-  "iteracion": 102,
+  "updated": "2026-08-17",
+  "iteracion": 103,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.7,
-    "productividad": 0.2,
+    "ia_noticias": 0.6,
+    "productividad": 0.15,
     "negocios": 0.05,
-    "finanzas": 0.007,
-    "negocios_digitales": 0.007,
-    "cripto_inversiones": 0.007,
-    "productividad_ia": 0.007,
-    "deportes": 0.007,
-    "entretenimiento": 0.007,
-    "politica_latam": 0.008,
+    "deportes": 0.05,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025,
     "mundial_2026": 0.0
   },
   "best_hooks": [
-    "[EVENTO DEPORTIVO/EQUIPO] [VERBO PASADO CONTROVERSIAL]? 🤯",
-    "[EQUIPO/LIGA]: [SITUACIÓN IMPACTANTE] ¡SHOCK! 🤯",
-    "[DESASTRE] devastador en [LUGAR]: [CONSECUENCIAS] grave",
-    "La noticia deportiva que sacude [REGIÓN] hoy ⚽",
-    "[ENTIDAD]: [EVENTO INESPERADO] 😱",
-    "[FENÓMENO] hoy [LUGAR]: la tragedia [ADJETIVO]"
+    "¿[Sujeto] ENTREGÓ [Evento]? 🤯",
+    "¡Última Hora! [Noticia] sacude [Lugar] hoy 💥",
+    "¡[Sujeto/Evento] ELIMINADO/CEDE LIDERATO! 😱",
+    "[Tipo de desastre] devastador en [Lugar]: [Cifra/Consecuencia]",
+    "[Sujeto]: FECHA LÍMITE INESPERADA ⏳",
+    "[Sujeto] CEDE LIDERATO ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Patrones de títulos que simplemente informan un resultado o hecho sin emoción/pregunta (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks incompletos o demasiado vagos (ej. 'Sidny Lopes Cabral acaba de').",
-    "Cualquier texto explícito en el campo 'hook' del video."
+    "Resultados de partidos sin contexto o emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases incompletas o demasiado descriptivas sin un cierre impactante (ej. 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones poco claras o de bajo impacto sin el uso de emojis/palabras fuertes"
   ],
   "best_hora": 16,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar el nicho 'ia_noticias' con contenido de actualidad y alta carga emocional, utilizando títulos que generen intriga y urgencia con emojis (🤯, 😱) y mayúsculas.",
-    "Concentrar el 'hook' exclusivamente en el título del video, ya que la efectividad reside totalmente en un título bien formulado, evitando el uso de hooks explícitos en la descripción o comentarios.",
-    "Mantener la hora de publicación principal en las 16:00, dado su consistente alto promedio de vistas en el top 10, aunque la hora 01:00 también ha producido el video con más vistas de la iteración.",
-    "Experimentar con contenido en el nicho 'productividad' dada su tendencia positiva (+13.5), explorando áreas de valor a pesar de sus bajos volúmenes de vistas iniciales (56 views).",
-    "Descartar por completo el nicho 'mundial_2026' y sus patrones de hook asociados, ya que ha demostrado ser un fracaso absoluto con 0 vistas en todos los intentos."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', especialmente aquellos con enfoque en deportes, controversias y noticias de última hora, ya que monopoliza el TOP 10.",
+    "Experimentar con el nicho 'productividad' debido a su tendencia de crecimiento significativa (+13.5), buscando replicar la estructura de 'noticia impactante' vista en el nicho principal.",
+    "Concentrar las publicaciones en las horas de mayor rendimiento, priorizando la hora 16 para el lanzamiento de contenido principal y considerando la hora 1 para noticias de alto impacto y urgencia.",
+    "Desarrollar títulos y ganchos (hooks) que incluyan preguntas controversiales, noticias urgentes del día, palabras de shock (😱, 🤯) y la promesa de una revelación inesperada, siguiendo los patrones de los videos más vistos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La efectividad del contenido se centra exclusivamente en títulos con alta carga emocional, urgencia y controversia dentro del nicho 'ia_noticias', mientras que cualquier 'hook' explícito fuera del título y el nicho 'mundial_2026' son patrones de fracaso consistente. Además, el nicho de 'productividad' muestra una prometedora tendencia de crecimiento."
+  "insight_semana": "El nicho 'ia_noticias' mantiene un dominio absoluto en el TOP 10, demostrando que las noticias de impacto (especialmente deportivas y controversiales) son extremadamente efectivas. Sin embargo, su tendencia negativa (-1.0) y la disminución del promedio de vistas de 312 a 235 sugieren la necesidad de innovar constantemente dentro de este nicho para evitar la fatiga de la audiencia o la saturación."
 }
