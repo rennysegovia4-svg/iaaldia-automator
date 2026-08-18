@@ -1,38 +1,43 @@
 {
   "updated": "2026-08-18",
-  "iteracion": 110,
+  "iteracion": 111,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
+    "ia_noticias": 0.75,
+    "productividad": 0.1,
+    "negocios": 0.05,
     "deportes": 0.02,
-    "ia_noticias": 0.9,
-    "finanzas": 0.01,
-    "entretenimiento": 0.02,
+    "finanzas": 0.03,
+    "entretenimiento": 0.01,
     "negocios_digitales": 0.01,
     "productividad_ia": 0.01,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.02
+    "politica_latam": 0.01,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "¿[Afirmación impactante o pregunta controversial]?",
-    "¡ALERTA! [Evento devastador/noticia urgente] en [Lugar]...",
-    "La noticia [adjetivo: deportiva/impactante] que sacude [Lugar/Ámbito] hoy [emoji]!",
-    "[Tema] [Verbo de impacto: se vende, cae, etc.] HOY: ¡[Consecuencia impactante]! 😱",
-    "[Tema/Entidad] en SHOCK: [Evento que paraliza/impacta]! 🤯",
-    "¡CAÍDA [adjetivo: mundial, masiva] de [Servicio/Producto] HOY! 🚨"
+    "Uso de preguntas retóricas o controversiales con emojis de impacto (ej. ¿FINAL ENTREGADA? 🤯)",
+    "Inclusión de palabras de alto impacto emocional o sorpresa (ej. DEVASTADOR, SHOCK, ELIMINADO 😱)",
+    "Énfasis en la urgencia y actualidad del evento (ej. HOY, AHORA, ¡CAÍDA mundial! 🚨)",
+    "Mención de cifras impactantes o de gran magnitud (ej. 132 muertos, Terremoto devastador)",
+    "Especificidad del evento o tema principal (ej. ARGENTINA, LIGA MX, POKÉMON GO)",
+    "Relevancia regional o de gran audiencia (ej. LATAM, Colombia y Venezuela)"
   ],
   "avoid_hooks": [
-    "Declaraciones de resultados planas o sin drama (ej. 'Brasil y Noruega empatan 0-0')",
-    "Inicios de frase incompletos o demasiado vagos ('Sidny Lopes Cabral acaba de')",
-    "Contenido sobre eventos simulados o futuros sin anclaje a la actualidad (ej. temáticas de 'Mundial 2026' que no generaron interés)."
+    "Ganchos que solo describen un hecho sin emoción ni controversia (ej. Brasil y Noruega empatan 0-0)",
+    "Ganchos demasiado descriptivos o largos que no generan curiosidad inicial (ej. Sidny Lopes Cabral acaba de)",
+    "Ganchos que no incluyen elementos de urgencia, sorpresa o pregunta, resultando en nulas vistas"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar la mayor parte de la producción de contenido en el nicho `ia_noticias`, ya que es el único que consistentemente genera vistas significativas.",
-    "Mantener el uso de interrogantes directos y emojis de sorpresa/alerta (🤯, 😱, 🚨) en los títulos, dado que esto ha demostrado una fuerte correlación con la tasa de click-through en el 70% de los videos más vistos.",
-    "Aprovechar las franjas horarias de publicación óptimas extendidas, que incluyen tanto la madrugada (1-6 AM) como la tarde/noche (16-21 PM), para maximizar el alcance de los videos de `ia_noticias`.",
-    "Realizar pruebas controladas con un pequeño porcentaje del contenido en nichos como 'deportes' y 'entretenimiento' (asignándoles un peso mínimo), pero solo si están directamente relacionados con las noticias de impacto para Latam, para explorar potenciales sinergias o expandir la audiencia."
+    "Mantener el enfoque predominante en el nicho `ia_noticias`, ya que acapara el 100% de los videos con más vistas y es el único generador de engagement relevante en el canal.",
+    "Implementar un sistema robusto para registrar y analizar los hooks de video reales, ya que actualmente no hay datos utilizables para esta métrica crítica y los hooks registrados tienen 0 efectividad.",
+    "Priorizar las franjas horarias de publicación matutinas (1 AM y 6 AM) y vespertinas/nocturnas (16 PM, 17 PM y 21 PM), con especial atención a la 1 AM que generó el pico de vistas (1324).",
+    "Experimentar con el nicho `productividad` de forma controlada, dado su 'trend' positivo de 13.5, y considerar la integración de noticias de 'deportes' dentro del formato 'ia_noticias'.",
+    "Evitar categóricamente la creación de contenido bajo el nicho `mundial_2026`, ya que todos los videos relacionados han obtenido 0 vistas y figuran entre los de peor rendimiento.",
+    "Comenzar a recolectar datos sobre la duración de los Shorts para identificar la 'duración óptima', ya que esta métrica es crucial para el rendimiento y actualmente no está disponible (valor 0 indica falta de datos)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` no solo mantiene su hegemonía absoluta como el único generador de engagement relevante (100% del Top 10), sino que la efectividad de sus horarios de publicación se ha consolidado y expandido, cubriendo picos de audiencia tanto en la madrugada como en la tarde/noche, mientras que el resto de nichos del template siguen sin generar vistas."
+  "insight_semana": "La dominancia de `ia_noticias` es incuestionable, pero su tendencia negativa de -0.8, junto con la ausencia crítica de datos de hooks y duración, indica una inminente necesidad de optimización interna y de probar nuevos formatos dentro del nicho principal para mantener el engagement."
 }
