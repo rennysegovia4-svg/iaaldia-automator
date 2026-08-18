@@ -1,26 +1,39 @@
 {
   "updated": "2026-08-18",
-  "iteracion": 113,
+  "iteracion": 114,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.25,
-    "ia_noticias": 0.25,
-    "finanzas": 0.1,
-    "entretenimiento": 0.08,
-    "negocios_digitales": 0.1,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.05,
+    "deportes": 0.03,
+    "ia_noticias": 0.8,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
-  "best_hooks": "insuficientes datos para determinar ganchos efectivos debido a la falta de registro de vistas asociadas directamente a los hooks.",
-  "avoid_hooks": "insuficientes datos para determinar ganchos a evitar por la misma razón.",
-  "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "best_hooks": [
+    "Pregunta intrigante con emoji de sorpresa (🤯)",
+    "Noticia de urgencia con 'HOY' y alcance geográfico (🚨)",
+    "Evento deportivo clave con mención de equipo/liga y emoji (⚽)",
+    "Declaración impactante con ¡SHOCK! o ¡ELIMINADO! (😱)",
+    "Actualización de crisis/caída de servicio con nombre de marca y 'HOY' (🚨)",
+    "Título con dato numérico sorprendente y consecuencia grave"
+  ],
+  "avoid_hooks": [
+    "Noticias de resultados deportivos no concluyentes (empates o sin un claro ganador).",
+    "Hooks excesivamente genéricos o descriptivos que no generan intriga ('X acaba de Y').",
+    "Contenido del nicho 'mundial_2026', que generó 0 vistas."
+  ],
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de `ia_noticias` que aborde temas deportivos urgentes, controversiales o de alto drama, replicando el éxito de los videos del Top 10.",
-    "Aumentar la inversión de contenido en el nicho `productividad_ia` (o `productividad`) para capitalizar su tendencia de crecimiento del 13.5% y explorar su verdadero potencial.",
-    "Implementar una estrategia de publicación distribuida, apuntando a las horas pico identificadas: 1 AM, 16 PM y 21 PM, en lugar de una única 'mejor hora', para maximizar el alcance."
+    "Concentrar los esfuerzos de contenido en el nicho `ia_noticias`, el cual domina las métricas de vistas (100% del Top 10), especialmente en temas de actualidad deportiva y eventos de alto impacto.",
+    "Priorizar las publicaciones a las 16 PM, que registra el promedio de vistas más alto (1295 vistas) entre los videos top, y también considerar las franjas de 1 AM y 21 PM como horarios efectivos.",
+    "Implementar fórmulas de títulos/ganchos que incluyan preguntas con emojis de sorpresa (🤯), menciones de urgencia como 'HOY', nombres de entidades específicas, y palabras de impacto como '¡SHOCK!' o '¡ELIMINADO!'.",
+    "Evitar completamente la creación de contenido para el nicho `mundial_2026` y los patrones de hooks asociados, dado que consistentemente generaron 0 vistas y un rendimiento nulo.",
+    "Considerar la creación de contenido dentro de los nichos `productividad` o `productividad_ia` a pesar de sus bajas vistas actuales, dada la tendencia de crecimiento del 13.5% observada en `productividad`, lo que sugiere un potencial sin explotar."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Mientras que `ia_noticias` sigue siendo el único nicho generador de vistas, su tendencia a la baja (-1.0%) y el fuerte crecimiento del nicho `productividad` (13.5% de tendencia) señalan una necesidad crítica de diversificación y prueba de nuevos enfoques para el crecimiento sostenido del canal."
+  "insight_semana": "La abrumadora dominancia del nicho `ia_noticias` en la captación de vistas es innegable (100% del Top 10), pero su tendencia ligeramente negativa (-0.9%) y la inoperancia de los hooks explícitos sugieren que la estrategia de contenido debe refinar la captación de atención y explorar activamente nichos con tendencias positivas como `productividad`."
 }
