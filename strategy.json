@@ -1,38 +1,38 @@
 {
-  "updated": "2026-08-17",
-  "iteracion": 109,
+  "updated": "2026-08-18",
+  "iteracion": 110,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.05,
-    "ia_noticias": 0.7,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "deportes": 0.02,
+    "ia_noticias": 0.9,
+    "finanzas": 0.01,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Noticia [Impacto/Crisis] en [Lugar/Tema] HOY [Emoji de alerta] (ej. Terremoto devastador en Colombia HOY 🚨)",
-    "[Entidad] [Verbo de impacto] [Resultado/Evento]? [Emoji de sorpresa] (ej. ARGENTINA ENTREGÓ la Final? 🤯)",
-    "La noticia [Tipo] que sacude [Región] hoy [Emoji relacionado] (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
-    "¡[Evento Impactante] [Entidad]! [Emoji de shock] (ej. ¡CAÍDA mundial de Pokémon GO! 🚨)",
-    "[Evento/Entidad] [Noticia clave]: ¡[Reacción/Impacto]! [Emoji de sorpresa] (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
-    "URGENTE: [Evento/Noticia] en [Lugar] con [Consecuencia numérica] [Emoji de tragedia] (ej. URGENTE: Terremoto en Colombia con 132 muertos 😱)"
+    "¿[Afirmación impactante o pregunta controversial]?",
+    "¡ALERTA! [Evento devastador/noticia urgente] en [Lugar]...",
+    "La noticia [adjetivo: deportiva/impactante] que sacude [Lugar/Ámbito] hoy [emoji]!",
+    "[Tema] [Verbo de impacto: se vende, cae, etc.] HOY: ¡[Consecuencia impactante]! 😱",
+    "[Tema/Entidad] en SHOCK: [Evento que paraliza/impacta]! 🤯",
+    "¡CAÍDA [adjetivo: mundial, masiva] de [Servicio/Producto] HOY! 🚨"
   ],
   "avoid_hooks": [
-    "Anunciar resultados hipotéticos o no fácticos (ej. 'Brasil y Noruega empatan 0-0')",
-    "Iniciar con una descripción de un suceso sin generar intriga o sorpresa (ej. 'Sidny Lopes Cabral acaba de...')",
-    "Gancho demasiado neutral o descriptivo que no provoca una emoción (ej. 'Brasil y Noruega empatan')"
+    "Declaraciones de resultados planas o sin drama (ej. 'Brasil y Noruega empatan 0-0')",
+    "Inicios de frase incompletos o demasiado vagos ('Sidny Lopes Cabral acaba de')",
+    "Contenido sobre eventos simulados o futuros sin anclaje a la actualidad (ej. temáticas de 'Mundial 2026' que no generaron interés)."
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la producción de contenido bajo el nicho `ia_noticias`, centrándose especialmente en noticias deportivas de actualidad y eventos de alto impacto, que constituyen el 70% de los videos más exitosos.",
-    "Utilizar los títulos como ganchos principales, incorporando sistemáticamente preguntas directas, emojis de sorpresa o alerta (🤯, 😱, 🚨) y palabras de impacto ('SHOCK', 'CAÍDA', 'DEVATADOR'), patrón presente en el 70% de los top videos.",
-    "Evitar categóricamente la creación de videos que simulen resultados futuros o hipotéticos (como el nicho `mundial_2026`), ya que estos consistently registran 0 vistas, indicando una fuerte aversión del público a contenido no fáctico.",
-    "Aprovechar la expansión de franjas horarias óptimas, publicando contenido de `ia_noticias` tanto en madrugada (1 AM, 2 AM, 6 AM) como en tarde/noche (16 PM, 17 PM, 21 PM), para maximizar la visibilidad."
+    "Concentrar la mayor parte de la producción de contenido en el nicho `ia_noticias`, ya que es el único que consistentemente genera vistas significativas.",
+    "Mantener el uso de interrogantes directos y emojis de sorpresa/alerta (🤯, 😱, 🚨) en los títulos, dado que esto ha demostrado una fuerte correlación con la tasa de click-through en el 70% de los videos más vistos.",
+    "Aprovechar las franjas horarias de publicación óptimas extendidas, que incluyen tanto la madrugada (1-6 AM) como la tarde/noche (16-21 PM), para maximizar el alcance de los videos de `ia_noticias`.",
+    "Realizar pruebas controladas con un pequeño porcentaje del contenido en nichos como 'deportes' y 'entretenimiento' (asignándoles un peso mínimo), pero solo si están directamente relacionados con las noticias de impacto para Latam, para explorar potenciales sinergias o expandir la audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La inmediatez y el impacto de noticias reales, especialmente deportivas, bajo el nicho `ia_noticias`, son el único motor de crecimiento del canal, dominando el 100% del Top 10 y expandiendo sus franjas horarias óptimas de publicación a lo largo del día."
+  "insight_semana": "El nicho `ia_noticias` no solo mantiene su hegemonía absoluta como el único generador de engagement relevante (100% del Top 10), sino que la efectividad de sus horarios de publicación se ha consolidado y expandido, cubriendo picos de audiencia tanto en la madrugada como en la tarde/noche, mientras que el resto de nichos del template siguen sin generar vistas."
 }
