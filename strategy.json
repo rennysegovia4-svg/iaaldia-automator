@@ -1,39 +1,41 @@
 {
   "updated": "2026-08-18",
-  "iteracion": 115,
+  "iteracion": 116,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.03,
-    "ia_noticias": 0.8,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "ia_noticias": 0.5,
+    "productividad": 0.2,
+    "negocios": 0.05,
+    "deportes": 0.04,
+    "finanzas": 0.04,
+    "negocios_digitales": 0.04,
+    "cripto_inversiones": 0.04,
+    "productividad_ia": 0.04,
+    "entretenimiento": 0.04,
+    "politica_latam": 0.01,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "Pregunta intrigante con emoji de sorpresa (🤯)",
-    "Noticia de urgencia con 'HOY' y alcance geográfico (🚨)",
-    "Evento deportivo clave con mención de equipo/liga y emoji (⚽)",
-    "Declaración impactante con ¡SHOCK! o ¡ELIMINADO! (😱)",
-    "Actualización de crisis/caída de servicio con nombre de marca y 'HOY' (🚨)",
-    "Título con dato numérico sorprendente y consecuencia grave"
+    "¿[Evento/Situación] [Verbo Intrigante]? 🤯",
+    "[Noticia Impactante] HOY: [Consecuencia Grave] 🚨",
+    "¡[Nombre Propio/Evento] en [Estado de Shock/Problema]! 😱",
+    "La noticia [deportiva/tema] que sacude [Región] hoy ⚽",
+    "[Evento Reciente]: ¡[Resultado Inesperado]! 🤯",
+    "¡Última Hora! [Tema Relevante] [Verbo de Impacto] ⚡"
   ],
   "avoid_hooks": [
-    "Noticias de resultados deportivos no concluyentes (empates o sin un claro ganador).",
-    "Hooks excesivamente genéricos o descriptivos que no generan intriga ('X acaba de Y').",
-    "Contenido del nicho 'mundial_2026', que generó 0 vistas."
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 16,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Concentrar los esfuerzos de contenido en el nicho `ia_noticias`, el cual domina las métricas de vistas (100% del Top 10), especialmente en temas de actualidad deportiva y eventos de alto impacto.",
-    "Priorizar las publicaciones a las 16 PM, que registra el promedio de vistas más alto (1295 vistas) entre los videos top, y también considerar las franjas de 1 AM y 21 PM como horarios efectivos.",
-    "Implementar fórmulas de títulos/ganchos que incluyan preguntas con emojis de sorpresa (🤯), menciones de urgencia como 'HOY', nombres de entidades específicas, y palabras de impacto como '¡SHOCK!' o '¡ELIMINADO!'.",
-    "Evitar completamente la creación de contenido para el nicho `mundial_2026` y los patrones de hooks asociados, dado que consistentemente generaron 0 vistas y un rendimiento nulo.",
-    "Considerar la creación de contenido dentro de los nichos `productividad` o `productividad_ia` a pesar de sus bajas vistas actuales, dada la tendencia de crecimiento del 13.5% observada en `productividad`, lo que sugiere un potencial sin explotar."
+    "Priorizar el nicho `ia_noticias` para asegurar vistas constantes, pero empezar a invertir más en `productividad` debido a su fuerte tendencia positiva (13.5%), buscando diversificación y crecimiento a largo plazo.",
+    "Eliminar completamente el nicho `mundial_2026` y sus patrones de hook asociados, ya que han demostrado una efectividad nula (0 vistas).",
+    "Focalizar los esfuerzos en la creación de títulos con patrones de intriga, urgencia y shock (ej. preguntas, 'HOY', '🤯', '😱', '🚨') ya que los videos con mejor rendimiento no utilizan un campo 'hook' específico, siendo el título el gancho principal.",
+    "Experimentar la publicación en la franja de las 16 PM, que ha mostrado el promedio más alto de vistas entre los videos del Top 10, y considerar también las 1 AM y 21 PM por su alto rendimiento en videos individuales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La abrumadora dominancia del nicho `ia_noticias` en la captación de vistas es innegable (100% del Top 10), pero su tendencia ligeramente negativa (-0.9%) y la inoperancia de los hooks explícitos sugieren que la estrategia de contenido debe refinar la captación de atención y explorar activamente nichos con tendencias positivas como `productividad`."
+  "insight_semana": "La estrategia debe evolucionar de la dependencia en `ia_noticias` (alto rendimiento actual pero con tendencia negativa) hacia una inversión controlada en nichos emergentes con tendencias positivas como `productividad`, mientras se descartan categóricamente los nichos sin tracción como `mundial_2026`."
 }
