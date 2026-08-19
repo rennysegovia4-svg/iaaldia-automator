@@ -1,37 +1,40 @@
 {
   "updated": "2026-08-19",
-  "iteracion": 119,
+  "iteracion": 120,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.06,
-    "ia_noticias": 0.45,
-    "finanzas": 0.06,
-    "entretenimiento": 0.06,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.2,
-    "cripto_inversiones": 0.06,
-    "politica_latam": 0.06
+    "deportes": 0.3,
+    "ia_noticias": 0.4,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "Preguntas impactantes + Emojis de Shock (🤯, 😱): Ej. \"¿[Noticia] ENTREGADA? 🤯\"",
-    "Urgencia con \"HOY\" + Evento Crítico: Ej. \"[Evento] HOY: ¡[Impacto]! 🚨\"",
-    "Eventos globales/regionales + Consecuencia Severa: Ej. \"Terremoto devastador en [Lugar]: [Cifra] muertos\"",
-    "Noticias deportivas con énfasis en impacto: Ej. \"La noticia deportiva que sacude [Región] ⚽\"",
-    "Exclamaciones de grandes sucesos/cambios: Ej. \"¡[Entidad] SE VENDE HOY! 😱\"",
-    "Palabras clave de conflicto/eliminación: Ej. \"¡[Sujeto] ELIMINADO! 😱\""
+    "Pregunta con Controversia/Shock y Emojis: `¿[Afirmación Impactante/Controversial]? 🤯`",
+    "Urgencia (\"HOY\") con Hecho Impactante y Emojis: `[Evento Crítico] HOY! 😱/🚨`",
+    "Noticia Global/Regional de Impacto + Urgencia + Emojis: `La noticia [tipo] que sacude LATAM HOY ⚽`",
+    "Evento Específico con Resultado Inesperado + Emojis: `[Liga/Torneo]: [Equipo] [Acción Inesperada] ¡SHOCK! 🤯`",
+    "Noticia de Tragedia/Desastre con Cifras Clave: `[Desastre] en [Ubicación]: [Cifra Impactante] muertos`",
+    "Anuncio de Eliminación/Venta/Caída de Entidad + Emojis: `[Sujeto/Entidad] [Verbo Impactante] HOY! 😱`"
   ],
   "avoid_hooks": [
-    "Hooks meramente descriptivos del contenido, sin elementos de intriga o urgencia (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks incompletos o demasiado vagos que generan confusión (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Hooks que reportan un resultado sin contextualizar el impacto o la sorpresa."
+    "Declaraciones fácticas y descriptivas sin emoción ni intriga (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Títulos sin indicadores de urgencia o novedad (ej. \"HOY\", \"AHORA\", \"ÚLTIMA HORA\")",
+    "Ausencia de emojis de shock o curiosidad (😱, 🤯, 🚨, ⚽) que refuercen visualmente el mensaje"
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar el contenido del nicho `ia_noticias` en **noticias deportivas sensacionalistas y de última hora**, ya que este tipo de contenido constituye el 80% de los videos en el Top 10 de rendimiento.",
-    "Implementar sistemáticamente preguntas intrigantes, indicadores de urgencia como 'HOY', y emojis de shock (🤯, 😱, 🚨) directamente en los títulos de los videos, ya que estos elementos han demostrado ser más efectivos que los 'hooks' separados y descriptivos.",
-    "Explorar y aumentar la inversión en el nicho `productividad_ia`, dado que el nicho relacionado `productividad` muestra la tendencia de crecimiento más significativa (13.5%), indicando un potencial sin explotar y una audiencia en desarrollo."
+    "Priorizar la creación de contenido de `ia_noticias`, con un fuerte enfoque en noticias deportivas de última hora o controversiales, para capitalizar el rendimiento actual del nicho.",
+    "Implementar los patrones de títulos más exitosos identificados, centrando los 'hooks' directamente en el título con preguntas, urgencia (\"HOY\"), eventos impactantes y emojis de shock.",
+    "Comenzar a experimentar activamente con el nicho de `productividad_ia`, dado el prometedor crecimiento en tendencia del nicho `productividad`, utilizando las mismas estrategias de titulación efectivas.",
+    "Diversificar la publicación en franjas horarias, probando la hora 16:00 (4 PM) como principal debido a su rendimiento máximo individual, pero también explotando las ventanas de 1 AM, 2 AM y 6 AM que han demostrado consistencia con múltiples videos de alto rendimiento.",
+    "Monitorizar de cerca la tendencia negativa del nicho `ia_noticias` para identificar si es una fluctuación o un indicio de saturación, y estar preparado para ajustar la estrategia de contenido si el declive continúa.",
+    "Implementar un sistema de seguimiento para la duración de los videos y su correlación con las vistas, ya que este es un dato crítico que actualmente no se está registrando."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias`, a pesar de una tendencia general ligeramente negativa (-0.8%), es el único motor actual de alto rendimiento, con sus videos más exitosos (80% del Top 10) concentrados en noticias deportivas de última hora y sensacionalistas, lo que subraya una dependencia crítica en este subgénero."
+  "insight_semana": "El nicho `ia_noticias` es el único generador de alto rendimiento, acaparando el 100% del Top 10 de videos y el promedio más alto de vistas, pero su **tendencia de -0.8** indica un riesgo inminente de declive que requiere diversificación y optimización urgente para el futuro del canal."
 }
