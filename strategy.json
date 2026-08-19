@@ -1,40 +1,37 @@
 {
   "updated": "2026-08-19",
-  "iteracion": 120,
+  "iteracion": 121,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.4,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "deportes": 0.15,
+    "ia_noticias": 0.7,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta con Controversia/Shock y Emojis: `¿[Afirmación Impactante/Controversial]? 🤯`",
-    "Urgencia (\"HOY\") con Hecho Impactante y Emojis: `[Evento Crítico] HOY! 😱/🚨`",
-    "Noticia Global/Regional de Impacto + Urgencia + Emojis: `La noticia [tipo] que sacude LATAM HOY ⚽`",
-    "Evento Específico con Resultado Inesperado + Emojis: `[Liga/Torneo]: [Equipo] [Acción Inesperada] ¡SHOCK! 🤯`",
-    "Noticia de Tragedia/Desastre con Cifras Clave: `[Desastre] en [Ubicación]: [Cifra Impactante] muertos`",
-    "Anuncio de Eliminación/Venta/Caída de Entidad + Emojis: `[Sujeto/Entidad] [Verbo Impactante] HOY! 😱`"
+    "Preguntas dramáticas con emojis de shock (ej. ¿FINAL ENTREGADA? 🤯)",
+    "Noticias impactantes con MAYÚSCULAS y exclamaciones (ej. ¡SHOCK! 🤯)",
+    "Urgencia temporal y geográfica (ej. HOY en Colombia 🚨)",
+    "Inclusión de datos específicos o números (ej. 132 muertos)",
+    "Mención de eventos o marcas populares (ej. Mundial, Pokémon GO)",
+    "Verbos de acción y consecuencia (ej. ENTREGÓ, CEDE, ELIMINADO)"
   ],
   "avoid_hooks": [
-    "Declaraciones fácticas y descriptivas sin emoción ni intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Títulos sin indicadores de urgencia o novedad (ej. \"HOY\", \"AHORA\", \"ÚLTIMA HORA\")",
-    "Ausencia de emojis de shock o curiosidad (😱, 🤯, 🚨, ⚽) que refuercen visualmente el mensaje"
+    "Declaraciones puramente factuales sin elementos de misterio o emoción (ej. Brasil y Noruega empatan 0-0)",
+    "Contenido sobre eventos futuros simulados o hipotéticos que no tienen base real (ej. Mundial 2026 con resultados específicos)",
+    "Títulos sin emojis o símbolos visuales de impacto para Shorts"
   ],
-  "best_hora": 16,
-  "duracion_optima": 58,
+  "best_hora": 1,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias`, con un fuerte enfoque en noticias deportivas de última hora o controversiales, para capitalizar el rendimiento actual del nicho.",
-    "Implementar los patrones de títulos más exitosos identificados, centrando los 'hooks' directamente en el título con preguntas, urgencia (\"HOY\"), eventos impactantes y emojis de shock.",
-    "Comenzar a experimentar activamente con el nicho de `productividad_ia`, dado el prometedor crecimiento en tendencia del nicho `productividad`, utilizando las mismas estrategias de titulación efectivas.",
-    "Diversificar la publicación en franjas horarias, probando la hora 16:00 (4 PM) como principal debido a su rendimiento máximo individual, pero también explotando las ventanas de 1 AM, 2 AM y 6 AM que han demostrado consistencia con múltiples videos de alto rendimiento.",
-    "Monitorizar de cerca la tendencia negativa del nicho `ia_noticias` para identificar si es una fluctuación o un indicio de saturación, y estar preparado para ajustar la estrategia de contenido si el declive continúa.",
-    "Implementar un sistema de seguimiento para la duración de los videos y su correlación con las vistas, ya que este es un dato crítico que actualmente no se está registrando."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, ya que el 100% de los videos con mayor rendimiento provienen de este segmento, prestando especial atención a las noticias deportivas.",
+    "Diseñar títulos que funcionen como gancho principal: incorporar preguntas, el uso de MAYÚSCULAS, palabras que denoten urgencia ('HOY'), menciones geográficas y emojis de alto impacto (🤯, 😱, 🚨, ⚽).",
+    "Concentrar las publicaciones en las franjas horarias de 1 AM (hora de mayor rendimiento individual) y como alternativa, en el bloque de 16:00-17:00 (4-5 PM), que también muestra un rendimiento consistente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el único generador de alto rendimiento, acaparando el 100% del Top 10 de videos y el promedio más alto de vistas, pero su **tendencia de -0.8** indica un riesgo inminente de declive que requiere diversificación y optimización urgente para el futuro del canal."
+  "insight_semana": "El éxito del canal depende exclusivamente de la capacidad de generar intriga y urgencia en los títulos de `ia_noticias` mediante preguntas, mayúsculas y emojis, mientras que los 'hooks' separados y los nichos sin contenido actual no generan vistas."
 }
