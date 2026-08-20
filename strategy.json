@@ -1,38 +1,44 @@
 {
   "updated": "2026-08-20",
-  "iteracion": 128,
+  "iteracion": 129,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.01,
-    "ia_noticias": 0.8,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "ia_noticias": 0.85,
+    "productividad": 0.1,
+    "negocios": 0.03,
+    "deportes": 0.003,
+    "finanzas": 0.003,
+    "negocios_digitales": 0.003,
+    "cripto_inversiones": 0.003,
+    "productividad_ia": 0.003,
+    "entretenimiento": 0.003,
+    "politica_latam": 0.002,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "[Evento/Entidad] [Verbo de impacto/controversia] [HOY/AHORA/MUNDIAL]? 🤯",
-    "¡[Palabra clave CAPITALIZADA] [Impacto/Consecuencia]! 😱",
-    "La noticia [temática] que sacude [Región/Mundo] hoy ⚽",
-    "[Catástrofe/Evento] [Adjetivo Fuerte] en [Lugar]: [Número] [Detalle] y emergencia [Tipo]",
-    "[Liga/Marca]: [Equipo/Entidad] [Acción impactante] ¡SHOCK! 🤯",
-    "¡[Evento Negativo] mundial de [Marca/Juego] HOY! 🚨"
+    "[Evento/Entidad] + ¿Pregunta Controversial/Impactante? + 🤯/😱 (ej. ARGENTINA ENTREGÓ la Final del Mundial? 🤯)",
+    "[Noticia Impactante] + [Dato específico/Lugar] + [Descriptor Emocional/Magnitud] (ej. Terremoto devastador en Colombia: 132 muertos)",
+    "La noticia [tipo] que sacude [Región] hoy ⚽ (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
+    "¡[Acción Drástica] + [Entidad/Nombre Propio] + [Verbo Fuerte]! 😱 (ej. ¡Gamezking ELIMINADO! 😱)",
+    "[Evento] + hoy + [Lugar] + [Consecuencia/Descripción Dramática] (ej. Temblor hoy Colombia y Venezuela: la tragedia...)",
+    "[Entidad] + se [Acción] HOY: ¿Pregunta de Impacto? 😱 (ej. LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱)"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "[Entidad 1] y [Entidad 2] empatan [resultado exacto] (ej. Brasil y Noruega empatan 0-0)",
+    "[Entidad 1] y [Entidad 2] empatan (ej. Brasil y Noruega empatan)",
+    "[Nombre Propio] acaba de (ej. Sidny Lopes Cabral acaba de)",
+    "Afirmaciones genéricas o filosóficas, incluso con emoji (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA 😱)"
   ],
-  "best_hora": 16,
+  "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de Shorts bajo el nicho `ia_noticias`, con énfasis particular en noticias deportivas de alto impacto, controversiales o con giros inesperados, ya que esta temática domina 6 de los 10 videos más vistos.",
-    "Diseñar títulos y hooks utilizando un lenguaje emotivo y directo, incorporando preguntas que generen intriga, mayúsculas para enfatizar, emojis relevantes (🤯, 😱, ⚽, 🚨) y marcadores de urgencia ('HOY', 'AHORA').",
-    "Publicar contenido prioritariamente alrededor de las 16:00 (4 PM), horario que mostró el video individual más visto (1297 views), y también considerar los horarios de la 1:00 AM y 6:00 AM que han generado un alto volumen de vistas promedio.",
-    "Implementar inmediatamente la recolección de la métrica `duracion_video` para cada Short publicado, ya que la ausencia de estos datos impide determinar la duración óptima y limita la profundidad del análisis estratégico."
+    "Concentrar la estrategia en el nicho `ia_noticias`, ya que ha demostrado ser el único con rendimiento significativo, especialmente al cubrir temas deportivos y de actualidad con un enfoque sensacionalista.",
+    "Diseñar títulos que funcionen como hooks primarios, incorporando preguntas retóricas, uso estratégico de mayúsculas, emojis de impacto (🤯, 😱, ⚽, 🚨) y palabras que denoten inmediatez ('HOY').",
+    "Evitar los nichos o sub-temas que se han asociado con 0 vistas, como `mundial_2026`, y los hooks que son demasiado descriptivos o carecen de dramatismo e intriga.",
+    "Experimentar con horarios de publicación, priorizando la `hora 1` (1 AM) por el video de mayor rendimiento individual (1324 vistas), pero también explorando las `horas 16` (4 PM), `21` (9 PM), `6` (6 AM) y `2` (2 AM), que también han mostrado éxito en el top 10.",
+    "A pesar de no tener videos en el top 10, se recomienda monitorear y realizar pruebas controladas en el nicho `productividad` debido a su promedio de vistas no nulo (56) y su fuerte tendencia positiva (13.5%).",
+    "Se requiere recolectar datos sobre la duración de los videos para establecer una `duracion_optima` basada en evidencia, ya que actualmente no se dispone de esta métrica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el único que genera vistas significativas, y su éxito se potencia al enfocarse en **noticias deportivas de alto impacto y controversiales**, evidenciado por la dominancia de esta temática en los videos con mejor rendimiento. Esto sugiere que el contenido noticioso debe ser actual, relevante para LATAM y generar una fuerte reacción emocional en el título."
+  "insight_semana": "La clave del éxito en YouTube Shorts, basada en esta iteración, reside en la ejecución de contenido `ia_noticias` (particularmente deportivo o de sucesos globales/regionales) donde el título opera como un gancho principal altamente dramático, urgente y emocional, utilizando preguntas retóricas, mayúsculas, emojis de impacto y referencias temporales directas (`HOY`) para captar la atención de inmediato."
 }
