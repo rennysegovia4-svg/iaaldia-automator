@@ -1,37 +1,39 @@
 {
-  "updated": "2026-08-19",
-  "iteracion": 122,
+  "updated": "2026-08-20",
+  "iteracion": 123,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.15,
-    "ia_noticias": 0.7,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.014,
+    "ia_noticias": 0.9,
+    "finanzas": 0.014,
+    "entretenimiento": 0.014,
+    "negocios_digitales": 0.014,
+    "productividad_ia": 0.014,
+    "cripto_inversiones": 0.014,
+    "politica_latam": 0.016
   },
   "best_hooks": [
-    "Preguntas dramáticas con emojis de shock (ej. ¿FINAL ENTREGADA? 🤯)",
-    "Noticias impactantes con MAYÚSCULAS y exclamaciones (ej. ¡SHOCK! 🤯)",
-    "Urgencia temporal y geográfica (ej. HOY en Colombia 🚨)",
-    "Inclusión de datos específicos o números (ej. 132 muertos)",
-    "Mención de eventos o marcas populares (ej. Mundial, Pokémon GO)",
-    "Verbos de acción y consecuencia (ej. ENTREGÓ, CEDE, ELIMINADO)"
+    "[Tópico/Evento]: ¿Pregunta Controversial/Impactante? 🤯",
+    "[Noticia Shock] en [Lugar]: [Cifra/Impacto Grave] [Emoji]",
+    "La noticia [Tipo] que sacude [Región] hoy [Emoji]",
+    "[Evento Específico] HOY: ¡[Sujeto/Verbo de Impacto]! 😱",
+    "¡[Evento Negativo Global/Famoso] HOY! 🚨",
+    "[Liga/Evento Específico]: [Equipo/Persona] [Acción de Alto Impacto] ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Declaraciones puramente factuales sin elementos de misterio o emoción (ej. Brasil y Noruega empatan 0-0)",
-    "Contenido sobre eventos futuros simulados o hipotéticos que no tienen base real (ej. Mundial 2026 con resultados específicos)",
-    "Títulos sin emojis o símbolos visuales de impacto para Shorts"
+    "[Equipo] y [Equipo] [Resultado Genérico] (ej. 'Brasil y Noruega empatan')",
+    "[Nombre Persona] acaba de... (ej. 'Sidny Lopes Cabral acaba de')",
+    "Ganchos para eventos futuros/hipotéticos (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!')"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, ya que el 100% de los videos con mayor rendimiento provienen de este segmento, prestando especial atención a las noticias deportivas.",
-    "Diseñar títulos que funcionen como gancho principal: incorporar preguntas, el uso de MAYÚSCULAS, palabras que denoten urgencia ('HOY'), menciones geográficas y emojis de alto impacto (🤯, 😱, 🚨, ⚽).",
-    "Concentrar las publicaciones en las franjas horarias de 1 AM (hora de mayor rendimiento individual) y como alternativa, en el bloque de 16:00-17:00 (4-5 PM), que también muestra un rendimiento consistente."
+    "Maximizar la creación de contenido dentro del nicho `ia_noticias`, centrándose especialmente en 'noticias deportivas de actualidad' y 'eventos de impacto global/regional' que generen controversia o sorpresa, ya que este nicho abarca el 100% de los videos más vistos.",
+    "Diseñar títulos que funcionen como ganchos integrados, utilizando preguntas controvertidas, palabras de urgencia ('HOY'), nombres de eventos/personalidades específicas y emojis de alta emoción (🤯, 😱, 🚨) para captar la atención inmediatamente.",
+    "Programar publicaciones priorizando las 1 AM y las 16 PM (4 PM) por sus picos de rendimiento individual (1324 y 1296 vistas respectivamente), y considerar las franjas de 2 AM, 6 AM y 21 PM para una estrategia de publicación más consistente y complementaria.",
+    "Evitar completamente la creación de contenido hipotético o simulado sobre eventos futuros (ej. Mundial 2026 con resultados ficticios), ya que este tipo de temática ha resultado en 0 vistas y debe ser descartada.",
+    "Descontinuar el uso de un campo `hook` separado, ya que los datos muestran un rendimiento nulo (0 vistas) en todos los casos. La efectividad del gancho debe estar íntegramente en el título del video."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal depende exclusivamente de la capacidad de generar intriga y urgencia en los títulos de `ia_noticias` mediante preguntas, mayúsculas y emojis, mientras que los 'hooks' separados y los nichos sin contenido actual no generan vistas."
+  "insight_semana": "La clara dominancia del nicho `ia_noticias`, particularmente en noticias deportivas y eventos de alto impacto, combinada con títulos que funcionan como ganchos integrados y explosivos, es la estrategia clave para el éxito, mientras que los 'hooks' en campo separado y el contenido hipotético no generan vistas."
 }
