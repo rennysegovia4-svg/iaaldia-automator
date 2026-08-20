@@ -1,37 +1,38 @@
 {
   "updated": "2026-08-20",
-  "iteracion": 127,
+  "iteracion": 128,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.1,
+    "deportes": 0.01,
     "ia_noticias": 0.8,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
     "cripto_inversiones": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta incendiaria/retórica sobre un evento polémico o impactante, complementada con un emoji (🤯, 😱).",
-    "Noticia de última hora o desastre con datos concretos y un calificador de impacto (ej. 'Terremoto devastador en Colombia: 132 muertos').",
-    "Noticia deportiva de gran relevancia para la región (LATAM) con énfasis en la urgencia y un emoji (⚽).",
-    "Evento deportivo específico con un resultado o giro inesperado que genere 'shock', acompañado de un emoji (😱, 🤯).",
-    "Anuncio urgente sobre el futuro de una entidad deportiva popular, formulado como pregunta con consecuencia, y un emoji (😱).",
-    "Exclamación de alerta sobre la caída o fallo de un servicio o juego popular a nivel global, enfatizando la inmediatez (HOY) y un emoji de alarma (🚨)."
+    "[Evento/Entidad] [Verbo de impacto/controversia] [HOY/AHORA/MUNDIAL]? 🤯",
+    "¡[Palabra clave CAPITALIZADA] [Impacto/Consecuencia]! 😱",
+    "La noticia [temática] que sacude [Región/Mundo] hoy ⚽",
+    "[Catástrofe/Evento] [Adjetivo Fuerte] en [Lugar]: [Número] [Detalle] y emergencia [Tipo]",
+    "[Liga/Marca]: [Equipo/Entidad] [Acción impactante] ¡SHOCK! 🤯",
+    "¡[Evento Negativo] mundial de [Marca/Juego] HOY! 🚨"
   ],
   "avoid_hooks": [
-    "Descripciones factuales y sin dramatismo de resultados deportivos (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks incompletos o que no revelan el impacto/noticia principal, generando indiferencia (ej. 'Sidny Lopes Cabral acaba de').",
-    "Noticias sobre eventos futuros (ficcionales como 'Mundial 2026') presentadas como hechos actuales, lo que puede confundir al público y no enganchar."
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 16,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, capitalizando especialmente en noticias deportivas de impacto y eventos de última hora que generen controversia o sorpresa, siguiendo el patrón de los videos TOP 10.",
-    "Diseñar títulos/hooks utilizando preguntas incendiarias, exclamaciones impactantes y emojis (🤯, 😱, 🚨, ⚽) que capturen la atención y generen curiosidad inmediata, evitando descripciones planas o hechos sin dramatismo.",
-    "Implementar urgentemente la recopilación de datos sobre la duración de los videos para poder determinar una `duracion_optima` en futuras iteraciones, ya que actualmente es una métrica clave ausente en el análisis."
+    "Priorizar la creación de Shorts bajo el nicho `ia_noticias`, con énfasis particular en noticias deportivas de alto impacto, controversiales o con giros inesperados, ya que esta temática domina 6 de los 10 videos más vistos.",
+    "Diseñar títulos y hooks utilizando un lenguaje emotivo y directo, incorporando preguntas que generen intriga, mayúsculas para enfatizar, emojis relevantes (🤯, 😱, ⚽, 🚨) y marcadores de urgencia ('HOY', 'AHORA').",
+    "Publicar contenido prioritariamente alrededor de las 16:00 (4 PM), horario que mostró el video individual más visto (1297 views), y también considerar los horarios de la 1:00 AM y 6:00 AM que han generado un alto volumen de vistas promedio.",
+    "Implementar inmediatamente la recolección de la métrica `duracion_video` para cada Short publicado, ya que la ausencia de estos datos impide determinar la duración óptima y limita la profundidad del análisis estratégico."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal se concentra abrumadoramente en el nicho `ia_noticias`, donde las noticias deportivas de alto impacto y eventos globales polémicos, presentados con títulos sensacionalistas, preguntas retóricas y emojis, son el motor principal de las vistas."
+  "insight_semana": "El nicho `ia_noticias` es el único que genera vistas significativas, y su éxito se potencia al enfocarse en **noticias deportivas de alto impacto y controversiales**, evidenciado por la dominancia de esta temática en los videos con mejor rendimiento. Esto sugiere que el contenido noticioso debe ser actual, relevante para LATAM y generar una fuerte reacción emocional en el título."
 }
