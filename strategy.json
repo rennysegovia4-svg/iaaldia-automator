@@ -1,39 +1,42 @@
 {
   "updated": "2026-08-20",
-  "iteracion": 123,
+  "iteracion": 124,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.014,
-    "ia_noticias": 0.9,
-    "finanzas": 0.014,
-    "entretenimiento": 0.014,
-    "negocios_digitales": 0.014,
-    "productividad_ia": 0.014,
-    "cripto_inversiones": 0.014,
-    "politica_latam": 0.016
+    "ia_noticias": 0.7,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "deportes": 0.05,
+    "politica_latam": 0.04,
+    "productividad_ia": 0.02,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "mundial_2026": 0.0
   },
   "best_hooks": [
-    "[Tópico/Evento]: ¿Pregunta Controversial/Impactante? 🤯",
-    "[Noticia Shock] en [Lugar]: [Cifra/Impacto Grave] [Emoji]",
-    "La noticia [Tipo] que sacude [Región] hoy [Emoji]",
-    "[Evento Específico] HOY: ¡[Sujeto/Verbo de Impacto]! 😱",
-    "¡[Evento Negativo Global/Famoso] HOY! 🚨",
-    "[Liga/Evento Específico]: [Equipo/Persona] [Acción de Alto Impacto] ¡SHOCK! 🤯"
+    "¿[Evento impactante] + [Emoción]?",
+    "¡[Noticia urgente] HOY! [Cifra/Impacto] 🚨",
+    "[Evento deportivo/noticia] que sacude [Región/LATAM] ⚽",
+    "¡[Sujeto/Equipo] ELIMINADO/CEDE LIDERATO/SE VENDE! 😱",
+    "[Tema de actualidad]: [Drama] + [Urgencia]",
+    "Terremoto devastador en [Lugar]: [Número] muertos y emergencia"
   ],
   "avoid_hooks": [
-    "[Equipo] y [Equipo] [Resultado Genérico] (ej. 'Brasil y Noruega empatan')",
-    "[Nombre Persona] acaba de... (ej. 'Sidny Lopes Cabral acaba de')",
-    "Ganchos para eventos futuros/hipotéticos (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!')"
+    "Afirmaciones de hechos planos o empates sin drama (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases incompletas o sin un impacto inmediato claro (ej. 'Sidny Lopes Cabral acaba de')",
+    "Noticias sobre eventos futuros o hipotéticos presentados como reales (ej. 'Mundial 2026: ¿QUÉ PASÓ?')"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Maximizar la creación de contenido dentro del nicho `ia_noticias`, centrándose especialmente en 'noticias deportivas de actualidad' y 'eventos de impacto global/regional' que generen controversia o sorpresa, ya que este nicho abarca el 100% de los videos más vistos.",
-    "Diseñar títulos que funcionen como ganchos integrados, utilizando preguntas controvertidas, palabras de urgencia ('HOY'), nombres de eventos/personalidades específicas y emojis de alta emoción (🤯, 😱, 🚨) para captar la atención inmediatamente.",
-    "Programar publicaciones priorizando las 1 AM y las 16 PM (4 PM) por sus picos de rendimiento individual (1324 y 1296 vistas respectivamente), y considerar las franjas de 2 AM, 6 AM y 21 PM para una estrategia de publicación más consistente y complementaria.",
-    "Evitar completamente la creación de contenido hipotético o simulado sobre eventos futuros (ej. Mundial 2026 con resultados ficticios), ya que este tipo de temática ha resultado en 0 vistas y debe ser descartada.",
-    "Descontinuar el uso de un campo `hook` separado, ya que los datos muestran un rendimiento nulo (0 vistas) en todos los casos. La efectividad del gancho debe estar íntegramente en el título del video."
+    "Priorizar la creación de contenido bajo el nicho `ia_noticias`, enfocándose en noticias deportivas de impacto y noticias de última hora sobre eventos reales (desastres naturales, caídas de servicios importantes).",
+    "Evitar la creación de contenido sobre eventos deportivos futuros o hipotéticos (e.g., Mundial 2026 simulado), ya que consistentemente resultaron en 0 vistas. La audiencia busca relevancia y veracidad inmediata.",
+    "Experimentar con la publicación de videos en la franja de la 1 AM, que ha mostrado el mayor rendimiento individual, y también en otras horas pico identificadas (2, 6, 16, 17, 21 PM), para optimizar la visibilidad.",
+    "Implementar ganchos en títulos que generen intriga, incluyan preguntas dramáticas, exclamaciones, y emojis de emoción, y mencionen datos específicos o de urgencia.",
+    "Monitorear de cerca la tendencia negativa (-1.0) del nicho `ia_noticias` e iniciar pruebas controladas en sub-nichos adyacentes como `productividad` y `deportes` (si se categoriza distinto) para diversificar la audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clara dominancia del nicho `ia_noticias`, particularmente en noticias deportivas y eventos de alto impacto, combinada con títulos que funcionan como ganchos integrados y explosivos, es la estrategia clave para el éxito, mientras que los 'hooks' en campo separado y el contenido hipotético no generan vistas."
+  "insight_semana": "El nicho `ia_noticias` es el único con rendimiento probado, impulsado por noticias deportivas y eventos urgentes. Sin embargo, su tendencia a la baja (-1.0) y el fracaso rotundo de contenido hipotético (`mundial_2026`) indican la necesidad crítica de mantener la relevancia, la veracidad y una posible diversificación controlada del contenido."
 }
