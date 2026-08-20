@@ -1,39 +1,41 @@
 {
   "updated": "2026-08-20",
-  "iteracion": 125,
+  "iteracion": 126,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.5,
+    "ia_noticias": 0.6,
     "productividad": 0.2,
     "negocios": 0.1,
-    "deportes": 0.05,
-    "entretenimiento": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "politica_latam": 0.02,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
     "cripto_inversiones": 0.01,
-    "productividad_ia": 0.01
+    "productividad_ia": 0.01,
+    "deportes": 0.02,
+    "entretenimiento": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¿[Evento Controvertido/Conspiración] en [Lugar/Evento] HOY? 🤯",
-    "[Tipo de Desastre] devastador en [Ubicación] HOY 🚨",
-    "¡[Entidad/Equipo] [Acción Drástica] HOY! ¿[Consecuencia Inesperada]? 😱",
-    "[Liga/Industria]: [Evento Inesperado] ¡SHOCK! 🤯",
-    "La noticia [Tipo] que sacude [Región] hoy ⚽",
-    "¡[Sistema/Juego] CAYÓ a nivel mundial HOY! 🚨"
+    "Pregunta con Intriga/Conspiración y Emoji (ej. '¿ARGENTINA ENTREGÓ la Final? 🤯')",
+    "Noticia de Última Hora de Desastre con Cifras/Impacto (ej. 'Terremoto en X: [Cifra] muertos 🚨')",
+    "Noticia Deportiva Impactante con Localización/Consecuencia (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Alerta Dramática en Deportes/Gaming con Emoji (ej. '¡X ELIMINADO! 😱')",
+    "Cambio Radical/Crisis de Famoso/Organización (ej. 'X SE VENDE HOY: ¿Adiós a Y? 📉')",
+    "Giro Inesperado/Shock en Competencia + Emoji (ej. 'LIGA X: Y CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Frases sobre resultados hipotéticos de partidos o eventos futuros (ej: 'X y Y empatan').",
-    "Declaraciones fácticas sin carga emocional, urgencia o intriga (ej: 'X acaba de hacer Y').",
-    "Menciones a figuras o eventos nicho sin suficiente contexto o impacto masivo."
+    "Narrativas de eventos hipotéticos o futuros (ej. 'Brasil y Noruega empatan 0-0').",
+    "Revelación de resultados poco emocionantes o sin tensión (ej. 'Brasil y Noruega empatan').",
+    "Menciones de nombres o eventos muy específicos sin un gancho inicial que genere interés amplio (ej. 'Sidny Lopes Cabral acaba de')."
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el nicho `ia_noticias` enfocándose exclusivamente en noticias *reales, actuales y de alto impacto*, especialmente deportivas y de última hora. La tendencia negativa (-1.0) indica la necesidad de constante frescura y relevancia.",
-    "Asignar más recursos a la creación de contenido para `productividad` y `negocios`, dados sus resultados positivos y tendencia ascendente en el caso de productividad (13.5). Se recomienda testear diferentes ángulos y subtemas.",
-    "Refinar la estrategia de hooks para generar intriga, shock y urgencia (usando '🤯', '😱', '🚨'), y evitar por completo la creación de contenido hipotético o simulado, como lo demuestra el fracaso total del nicho `mundial_2026` (0 vistas)."
+    "Priorizar el nicho `ia_noticias` al 100% de la producción dado que es el único con rendimiento significativo y representa la totalidad del TOP 10 de videos. Explorar sub-nichos dentro de `ia_noticias` (deportes, desastres, gaming) que demuestren tracción.",
+    "Refinar las estrategias de titulación utilizando preguntas incendiarias, noticias de última hora, palabras como 'SHOCK', 'ELIMINADO', 'TRAGEDIA' y emojis de impacto (🤯, 😱, 🚨) para maximizar el CTR.",
+    "Eliminar completamente el contenido sobre eventos hipotéticos o futuros (ej. 'mundial_2026'), ya que consistentemente genera 0 vistas, confirmando la aversión de la audiencia a lo no-factual.",
+    "Implementar una estrategia de 'hooks' textuales explícitos en la descripción o primeros segundos del video, ya que la ausencia de datos en los videos exitosos no permite analizar su impacto real. Si se utilizan, deben seguir los patrones de éxito identificados en los títulos.",
+    "A pesar de la tendencia negativa (-1.0) en `ia_noticias`, el canal debe seguir la actualidad y las noticias virales para mantener la relevancia, ya que es el único motor de crecimiento actual. Se recomienda experimentar con nuevos ángulos o formatos dentro de este nicho."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal depende casi exclusivamente del nicho `ia_noticias` centrado en eventos *reales, actuales y de alto impacto* (especialmente deportes y noticias de última hora), mientras que el contenido hipotético o simulado genera 0 vistas, subrayando una preferencia crítica de la audiencia por la realidad tangible y urgente."
+  "insight_semana": "La audiencia de Shorts responde abrumadoramente a la inmediatez, el sensacionalismo y la intriga de 'noticias IA' con títulos impactantes sobre eventos actuales (especialmente deportivos y desastres), mientras rechaza categóricamente cualquier contenido hipotético o no factual, sin importar el tema."
 }
