@@ -1,39 +1,39 @@
 {
   "updated": "2026-08-22",
-  "iteracion": 142,
+  "iteracion": 143,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
+    "deportes": 0.45,
     "ia_noticias": 0.35,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "entretenimiento": 0.05,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Anticipación + Urgencia + Evento Impactante (ej. '¡Se acabó la espera! ¡El [evento] que cambiará todo...')",
-    "Dato Específico + Logro/Curiosidad + Nombre Propio (ej. 'Con solo [edad], [nombre] [logro sorprendente]...')",
-    "Formato Noticiero + Bienvenida + Tema Principal (ej. 'Buenas tardes. Bienvenidos al reporte de [noticia clave]...')",
-    "Pregunta Controversial/Impactante + Evento Clave + Emoción (ej. '¿[Evento X] fue [acción polémica]? 🤯')",
-    "Alerta/Emergencia + Tema del Momento + Indicador Temporal (ej. '¡ALERTA MUNDIAL! [Noticia grave] hoy...')",
-    "Declaración de Shock + Consecuencia/Impacto + Emoción (ej. '[Equipo/Evento] en shock: ¡[Resultado inesperado]! 😱')"
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "Noticia de ÚLTIMA HORA que sacude [REGIÓN/DEPORTE/MUNDO] ¡HOY! 🚨",
+    "¿[SUJETO] ENTREGÓ/FRAUDE/SHOCK la [EVENTO]? 🤯",
+    "¡[EVENTO/NOTICIA] MUNDIAL HOY! [DETALLE CLAVE] 😱",
+    "[PAÍS/CIUDAD] sufre [DESASTRE/NOTICIA]: [CONSECUENCIA]..."
   ],
   "avoid_hooks": [
-    "Declaraciones fácticas simples y sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks incompletos o que no generan curiosidad (ej. 'Sidny Lopes Cabral acaba de')",
-    "Narrativa sin gancho emocional o de urgencia"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Concentrar la creación de contenido en los nichos de `deportes` (incluyendo temas de `mundial_2026`) e `ia_noticias`, ya que estos demuestran el mayor potencial de viralidad y vistas consistentemente altas, respectivamente.",
-    "Desarrollar hooks basados en controversia, sorpresa y urgencia, utilizando formatos de pregunta o declaraciones impactantes con emojis como '🤯' y '😱' para captar la atención inmediatamente.",
-    "Evitar hooks que sean meras declaraciones fácticas, incompletas o sin un claro disparador emocional, ya que estos se correlacionan directamente con 0 vistas.",
-    "Experimentar con la publicación de videos en la franja horaria de la 1 AM, que ha demostrado ser la más efectiva en el Top 10 de esta iteración, y monitorear el rendimiento en otras horas pico como 2 AM, 6 AM y 4-5 PM.",
-    "Implementar la recolección de datos sobre la duración de los videos para identificar la `duracion_optima` en futuras iteraciones, ya que actualmente no se dispone de esta métrica crucial."
+    "Priorizar la creación de contenido para el nicho de 'deportes' (especialmente temas tipo 'mundial_2026') e 'ia_noticias'. Aunque 'deportes' es volátil, su 'trend' de 867.0 y 'avg_views' de 258 indican el mayor potencial de viralidad.",
+    "Diseñar hooks utilizando preguntas retóricas, expresiones de shock (🤯, 😱), íconos de alerta (🚨) y palabras clave de inmediatez ('HOY', 'ÚLTIMA HORA') para generar intriga y urgencia, basándose en los patrones de los videos más vistos.",
+    "Continuar publicando y experimentando en la franja horaria de la 1 AM, ya que ha demostrado ser la más propicia para alcanzar las vistas más altas, incluyendo el video con 1325 vistas y un promedio superior en el top 10.",
+    "Implementar de inmediato la recopilación de datos sobre la duración de los Shorts para identificar la 'duracion_optima', un factor crítico actualmente desconocido que limita la optimización de la retención.",
+    "Para los nichos con 0 vistas (finanzas, negocios_digitales, etc.), realizar pruebas con bajo volumen de contenido, asegurando que los hooks sean extremadamente atractivos para evaluar su viabilidad antes de asignar mayores recursos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clara polarización del rendimiento: mientras `ia_noticias` domina el Top 10 con contenido de alto impacto, el prometedor nicho `mundial_2026` (englobado en 'deportes') muestra un potencial excepcional (avg_views 258, trend 867) pero también una alta tasa de fracaso total (0 views), enfatizando la necesidad de una ejecución impecable en nichos de alto riesgo/recompensa."
+  "insight_semana": "La extrema polarización de resultados en el nicho de 'deportes' (ej. 'mundial_2026') es el factor más crítico: demuestra el mayor potencial de viralidad con un `trend` de 867.0 y `avg_views` de 258, pero también el mayor riesgo de fracaso total con múltiples videos de 0 vistas, requiriendo una ejecución de hook y contenido impecable para el éxito."
 }
