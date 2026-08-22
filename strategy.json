@@ -1,38 +1,37 @@
 {
   "updated": "2026-08-22",
-  "iteracion": 138,
+  "iteracion": 139,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
+    "deportes": 0.35,
+    "ia_noticias": 0.4,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta con Controversia + Emoji de Shock: \"¿[Evento/Noticia Impactante] + [Verbo de duda/controversia]? 🤯\"",
-    "Noticia de Última Hora/Urgencia + Emoji de Alerta/Shock: \"¡[Evento Crítico/Venta/Caída] HOY! [Exclamación/Pregunta] 🚨/😱/🤯\"",
-    "Hecho Impactante con Número/Detalle Específico + Consecuencia: \"[Hecho con Número/Nombre Propio]: [Impacto/Drama]!\"",
-    "Alerta Deportiva con Urgencia: \"[Liga/Equipo/Jugador]: [Evento dramático] ¡HOY! ⚽\"",
-    "Anticipación de Gran Evento: \"¡Se acabó la espera! ¡El [Evento clave]...\"",
-    "Human Interest/Joven Talento: \"Con solo [Edad], [Nombre]... [Logro/Impacto]\""
+    "Pregunta Dramática con Emoji de Shock: ¿[Evento Impactante]? 🤯",
+    "Declaración de Urgencia/Escándalo con Nombre Propio/Entidad: [Nombre/Entidad] [Verbo dramático] HOY! 😱",
+    "Noticia Explosiva y Concreta con Impacto Regional/Global: [Evento/Noticia] que sacude [Región/LATAM] HOY ⚽",
+    "Revelación Sorprendente sobre Figura Joven: Con solo [Edad] años, [Nombre Propio]...",
+    "Declaración de Hecho Impactante con Cifras: [Evento Devastador]: [Cifras] muertos y emergencia...",
+    "Gancho de Expectativa/Culminación Inminente: ¡Se acabó la espera! ¡El..."
   ],
   "avoid_hooks": [
-    "Resultados de eventos poco emocionantes: Títulos que informan resultados planos (ej., empates 0-0) aunque se intente añadir dramatismo con emojis o preguntas.",
-    "Afirmaciones vagas o genéricas de 'shock': Utilizar palabras como 'SHOCK', 'ALERTA', 'PARALIZA' sin un contexto claro y creíble de un evento realmente impactante.",
-    "Temas genéricos de autoayuda/motivación: Títulos que ofrecen consejos o reflexiones sin un anclaje en una noticia o evento específico y urgente."
+    "Resultados Planos o Hechos Simples sin Intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Declaraciones Incompletas o Demasiado Vagas sin Contexto Dramático (ej. 'Sidny Lopes Cabral acaba de')",
+    "Enunciados Descriptivos que Carecen de Urgencia o Impacto Emocional (ej. 'Brasil y Noruega empatan')"
   ],
-  "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 16,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Priorizar contenido de deportes (tipo 'mundial_2026'): Dada la 'avg_views' significativamente más alta (258) y 'trend' masivo (867.0) del nicho 'mundial_2026' (bajo deportes) frente a 'ia_noticias' (62 avg_views), se debe aumentar la producción de Shorts sobre noticias deportivas *virales* o *controversiales* que generen intriga.",
-    "Maximizar la intriga y el impacto en títulos y hooks: Incorporar preguntas retóricas de alto impacto, declaraciones dramáticas y emojis de shock (🤯, 😱, 🚨) en los primeros segundos del video y en el título. Evitar simplemente reportar hechos planos o predecibles.",
-    "Enfocarse en noticias de última hora y controversias para 'ia_noticias': Aunque el nicho es volátil, los éxitos en 'ia_noticias' demuestran que temas de *actualidad urgente* (ej., terremotos, caídas de servicios masivos, controversias deportivas específicas) son los que realmente rinden, no la constancia temática general.",
-    "Experimentar con publicación en la madrugada: Dada la 'best_hora' identificada en la hora 1 (con el promedio de vistas más alto en el top 10), se recomienda probar la publicación alrededor de la 01:00 AM (considerando el huso horario local de la audiencia objetivo) y monitorear el rendimiento."
+    "Priorizar contenido que combine el nicho `ia_noticias` con temas de alto impacto como deportes controversiales (ej. 'mundial_2026') o desastres naturales, dado que estas intersecciones temáticas dominan consistentemente el Top 10.",
+    "Diseñar hooks iniciales con preguntas dramáticas, emojis de shock (🤯, 😱, 🚨), y menciones específicas de nombres o cifras (ej. '132 muertos', 'Gamezking') para maximizar la intriga y la captación inmediata.",
+    "Optimizar la estrategia de publicación enfocándose en la Hora 16, que demostró el mayor promedio de vistas en el Top 10 (1297 vistas), y explorar también las franjas de la Hora 1 (1194 vistas) y Hora 21 (1244 vistas)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de 'deportes' (particularmente los temas de 'mundial_2026') posee un potencial de rendimiento por video significativamente mayor (avg_views de 258 y trend de 867.0) que 'ia_noticias' (avg_views de 62), a pesar de que este último domina la cantidad de videos en el Top 10, indicando que la calidad y la intriga de la *noticia específica* dentro de un nicho de alto engagement supera la mera cantidad de publicaciones."
+  "insight_semana": "El éxito en Shorts se consolida al crear intriga y controversia en torno a noticias deportivas de alto perfil o eventos globales dramáticos, utilizando ganchos directos con emojis y especificidad, siendo la Hora 16 el momento de mayor resonancia con la audiencia."
 }
