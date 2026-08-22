@@ -1,41 +1,38 @@
 {
-  "updated": "2026-08-21",
-  "iteracion": 136,
+  "updated": "2026-08-22",
+  "iteracion": 137,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.45,
     "ia_noticias": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.03,
     "cripto_inversiones": 0.02,
-    "productividad_ia": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Fórmula de Anticipación/Urgencia: `¡Se acabó la espera! ¡El [evento]!` (avg: 733 views)",
-    "Fórmula de Destaque de Talento Joven: `Con solo [número] años, [nombre propio]...` (avg: 626 views)",
-    "Fórmula de Apertura Noticiosa Formal: `Muy buenas tardes. Bienvenidos a [noticia]...` (avg: 316 views)",
-    "Fórmula de Pregunta Controversial con Emoji: `[Tema polémico]? 🤯` (observado en títulos top como 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Fórmula de Impacto Numérico Dramático: `[Evento catastrófico] en [Lugar]: [Número] muertos...` (observado en títulos top como 'Terremoto devastador en Colombia: 132 muertos')",
-    "Fórmula de Noticia Rápida con Alerta/Shock y Emoji: `[Entidad]: ¡[Acción/Resultado]! 😱/🚨` (observado en títulos top como 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "¡[Evento Impactante]! ¡El [Sujeto/Situación Sorprendente]!",
+    "Con solo [Número] [Unidad], [Sujeto] [Acción o Logro Impactante]",
+    "[Saludo/Introducción]. Bienvenidos a [Tema de Interés/Controversia]",
+    "¿[Pregunta controversial o dramática]? 🤯 / 😱",
+    "[Noticia de alto impacto] [Detalle Clave/Número]. [Consecuencia dramática]",
+    "¡[Evento Inesperado] HOY! 🚨 / 😱"
   ],
   "avoid_hooks": [
-    "Descripciones genéricas de eventos: `Brasil y Noruega empatan 0-0` (0 views)",
-    "Menciones de resultados sin intriga: `Brasil y Noruega empatan` (0 views)",
-    "Nombres propios sin contexto o impacto claro: `Sidny Lopes Cabral acaba de` (0 views)"
+    "Hechos planos o resúmenes de resultados sin generar intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones genéricas sin contexto de impacto que las justifique (ej. 'Sidny Lopes Cabral acaba de')",
+    "Gancho que revela la conclusión sin un 'twist' o pregunta dramática"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar el contenido de `deportes` (especialmente temas de eventos mundiales y controversias como 'mundial_2026') debido a su excepcional rendimiento promedio y tendencia de crecimiento.",
-    "Implementar activamente las fórmulas de ganchos más efectivas, combinando elementos de intriga, urgencia, cifras impactantes y el uso estratégico de emojis en títulos y primeros segundos.",
-    "Realizar una curación de temas aún más precisa dentro del nicho `ia_noticias`, enfocándose en noticias de última hora o controversias masivas para replicar el éxito viral y mitigar la alta variabilidad.",
-    "Continuar experimentando con horarios de publicación, aprovechando los múltiples picos de audiencia identificados (1 AM, 4 PM, 9 PM, 6 AM) para maximizar la visibilidad a lo largo del día.",
-    "Dado que no se dispone de datos sobre la duración óptima de los Shorts, se recomienda iniciar pruebas A/B con videos de diferentes longitudes (e.g., 15s, 30s, 45s, 58s) para identificar el punto ideal de retención."
+    "Priorizar la creación de contenido dentro del nicho 'deportes', enfocándose en temas de 'Mundial' que generen controversia, expectación o preguntas de alto impacto, dado su rendimiento superior en promedio de vistas (258) y tendencia de crecimiento (867.0).",
+    "Para el nicho 'ia_noticias', es crucial enfocar los títulos y hooks en 'noticias de última hora o controversias masivas' para replicar el éxito de los videos virales, dado que la mayoría del contenido en este nicho muestra bajo rendimiento a pesar de algunos éxitos notables.",
+    "Implementar de forma consistente el uso de preguntas de alto impacto o declaraciones dramáticas en los títulos, rematando con emojis de shock (🤯, 😱, 🚨), ya que este patrón se asocia directamente con los videos de mayor rendimiento para captar la atención en el feed.",
+    "Publicar contenido estratégicamente en las ventanas horarias de 1 AM, 2 AM, 6 AM, 4 PM (16 PM), 5 PM (17 PM) y 9 PM (21 PM), ya que el análisis revela picos de actividad para videos de alto rendimiento en estos momentos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `mundial_2026` (categorizado bajo `deportes`) demuestra el mayor potencial de crecimiento con un `avg_views` cinco veces superior (258) y una `trend` masiva (+867.0) respecto a `ia_noticias`, confirmando que el contenido deportivo altamente tópico y trending es el motor más potente para la virality y el crecimiento general del canal, a pesar de la presencia de `ia_noticias` en la mayoría de los videos top individuales."
+  "insight_semana": "Mientras que el nicho 'deportes' (particularmente temas de 'Mundial') muestra el mayor potencial de promedio y tendencia, su rendimiento es binario: temas de alta controversia o resultado incierto generan vistas elevadas, mientras que resultados planos o específicos de poco impacto (ej. un 0-0) resultan en 0 vistas, requiriendo una curación de historias muy aguda para evitar el fracaso total."
 }
