@@ -1,39 +1,37 @@
 {
-  "updated": "2026-08-22",
-  "iteracion": 143,
+  "updated": "2026-08-23",
+  "iteracion": 144,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.35,
-    "entretenimiento": 0.05,
     "finanzas": 0.03,
+    "entretenimiento": 0.03,
     "negocios_digitales": 0.03,
     "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Noticia de ÚLTIMA HORA que sacude [REGIÓN/DEPORTE/MUNDO] ¡HOY! 🚨",
-    "¿[SUJETO] ENTREGÓ/FRAUDE/SHOCK la [EVENTO]? 🤯",
-    "¡[EVENTO/NOTICIA] MUNDIAL HOY! [DETALLE CLAVE] 😱",
-    "[PAÍS/CIUDAD] sufre [DESASTRE/NOTICIA]: [CONSECUENCIA]..."
+    "¡Exclamación + Evento Impactante + Incertidumbre?",
+    "Mención de detalle sorprendente (edad/rasgo) + Logro o suceso",
+    "Noticia directa + 'sacude X' / 'sacude LATAM'",
+    "Evento dramático + Ubicación + Consecuencia clave",
+    "Nombre/Evento principal + Acción clave + Shock",
+    "Problema global/conocido + 'HOY' + Alerta!"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Resultados de partidos sin contexto ni intriga ('0-0')",
+    "Frases incompletas o demasiado genéricas sin un gancho claro ('Brasil y Noruega empatan')",
+    "Nombres propios poco conocidos sin contexto inmediato ('Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido para el nicho de 'deportes' (especialmente temas tipo 'mundial_2026') e 'ia_noticias'. Aunque 'deportes' es volátil, su 'trend' de 867.0 y 'avg_views' de 258 indican el mayor potencial de viralidad.",
-    "Diseñar hooks utilizando preguntas retóricas, expresiones de shock (🤯, 😱), íconos de alerta (🚨) y palabras clave de inmediatez ('HOY', 'ÚLTIMA HORA') para generar intriga y urgencia, basándose en los patrones de los videos más vistos.",
-    "Continuar publicando y experimentando en la franja horaria de la 1 AM, ya que ha demostrado ser la más propicia para alcanzar las vistas más altas, incluyendo el video con 1325 vistas y un promedio superior en el top 10.",
-    "Implementar de inmediato la recopilación de datos sobre la duración de los Shorts para identificar la 'duracion_optima', un factor crítico actualmente desconocido que limita la optimización de la retención.",
-    "Para los nichos con 0 vistas (finanzas, negocios_digitales, etc.), realizar pruebas con bajo volumen de contenido, asegurando que los hooks sean extremadamente atractivos para evaluar su viabilidad antes de asignar mayores recursos."
+    "Concentrar la mayoría de la producción de contenido en `deportes` (con énfasis en eventos como `mundial_2026` por su alta volatilidad y potencial) e `ia_noticias` por su consistencia en el TOP 10, representando un 80% de las nuevas publicaciones combinadas.",
+    "Optimizar los ganchos (hooks) utilizando fórmulas que generen urgencia, intriga o presenten noticias impactantes de manera directa, siguiendo los patrones identificados en los videos de mayor rendimiento.",
+    "Priorizar la publicación de Shorts alrededor de la `hora 1` (1 AM) dado que ha albergado el video con más vistas (1325) y es consistentemente exitoso, y explorar también `hora 16` (4 PM) y `hora 21` (9 PM) por su alto rendimiento individual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La extrema polarización de resultados en el nicho de 'deportes' (ej. 'mundial_2026') es el factor más crítico: demuestra el mayor potencial de viralidad con un `trend` de 867.0 y `avg_views` de 258, pero también el mayor riesgo de fracaso total con múltiples videos de 0 vistas, requiriendo una ejecución de hook y contenido impecable para el éxito."
+  "insight_semana": "El nicho `ia_noticias` domina consistentemente el TOP 10 (100% de los videos), demostrando su fiabilidad para generar vistas, mientras que el sub-nicho `mundial_2026` dentro de `deportes` muestra el mayor potencial de viralidad (avg_views 258, trend 867) a pesar de una alta volatilidad, sugiriendo una estrategia dual de consistencia y apuesta por tendencias."
 }
