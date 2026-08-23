@@ -1,37 +1,37 @@
 {
   "updated": "2026-08-23",
-  "iteracion": 144,
+  "iteracion": 145,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "deportes": 0.3,
+    "ia_noticias": 0.4,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Exclamación + Evento Impactante + Incertidumbre?",
-    "Mención de detalle sorprendente (edad/rasgo) + Logro o suceso",
-    "Noticia directa + 'sacude X' / 'sacude LATAM'",
-    "Evento dramático + Ubicación + Consecuencia clave",
-    "Nombre/Evento principal + Acción clave + Shock",
-    "Problema global/conocido + 'HOY' + Alerta!"
+    "¡Se acabó la espera! ¡[Noticia clave]!",
+    "[Número] años, [Nombre]...",
+    "Muy buenas tardes. Bienvenidos a [Noticia urgente].",
+    "¿[Evento Inesperado] + [Verbo Fuerte]? 🤯",
+    "[Evento devastador] en [Lugar]: ¡[Impacto]!",
+    "¡[Tema/Marca] [Problema] HOY! 🚨"
   ],
   "avoid_hooks": [
-    "Resultados de partidos sin contexto ni intriga ('0-0')",
-    "Frases incompletas o demasiado genéricas sin un gancho claro ('Brasil y Noruega empatan')",
-    "Nombres propios poco conocidos sin contexto inmediato ('Sidny Lopes Cabral acaba de')"
+    "Resultados de partidos sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Nombres propios o declaraciones sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones planas sin emoción o pregunta que genere curiosidad"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la mayoría de la producción de contenido en `deportes` (con énfasis en eventos como `mundial_2026` por su alta volatilidad y potencial) e `ia_noticias` por su consistencia en el TOP 10, representando un 80% de las nuevas publicaciones combinadas.",
-    "Optimizar los ganchos (hooks) utilizando fórmulas que generen urgencia, intriga o presenten noticias impactantes de manera directa, siguiendo los patrones identificados en los videos de mayor rendimiento.",
-    "Priorizar la publicación de Shorts alrededor de la `hora 1` (1 AM) dado que ha albergado el video con más vistas (1325) y es consistentemente exitoso, y explorar también `hora 16` (4 PM) y `hora 21` (9 PM) por su alto rendimiento individual."
+    "Maximizar la creación de contenido dentro del nicho `ia_noticias`, con especial énfasis en noticias deportivas de última hora y eventos críticos con elementos de 'shock' o 'crisis', dado su dominio del 100% en el TOP 10 de videos.",
+    "Implementar ganchos que generen intriga y urgencia, utilizando preguntas impactantes, lenguaje emocional y emojis relevantes, replicando los patrones de los títulos y hooks con mejor rendimiento.",
+    "Priorizar la recolección de datos sobre la duración óptima de los Shorts. La ausencia actual de esta métrica es una brecha crítica que impide optimizar la retención y la viralidad del contenido."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` domina consistentemente el TOP 10 (100% de los videos), demostrando su fiabilidad para generar vistas, mientras que el sub-nicho `mundial_2026` dentro de `deportes` muestra el mayor potencial de viralidad (avg_views 258, trend 867) a pesar de una alta volatilidad, sugiriendo una estrategia dual de consistencia y apuesta por tendencias."
+  "insight_semana": "El nicho `ia_noticias` es el motor exclusivo de contenido de alto rendimiento, acaparando el 100% del TOP 10 de videos de esta iteración. Su consistencia en generar vistas (avg_views: 134) supera la volatilidad de nichos con mayor potencial promedio (ej. `mundial_2026` con 258 avg_views pero también 0 vistas en fallos), haciendo de la noticia urgente y el deporte de actualidad la estrategia más fiable."
 }
