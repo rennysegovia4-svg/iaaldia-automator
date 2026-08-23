@@ -1,42 +1,39 @@
 {
   "updated": "2026-08-23",
-  "iteracion": 147,
+  "iteracion": 148,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.37,
-    "ia_noticias": 0.27,
-    "productividad": 0.08,
-    "negocios": 0.03,
-    "finanzas": 0.04,
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
     "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "deportes": 0.03,
-    "entretenimiento": 0.03,
-    "politica_latam": 0.03
+    "productividad_ia": 0.06,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Título con pregunta intrigante y emoji de shock (ej. '? 🤯')",
-    "Noticias urgentes de alto impacto (ej. 'Terremoto devastador', '¡CAÍDA mundial!')",
-    "Declaraciones dramáticas sobre eventos en desarrollo (ej. '¡Se acabó la espera! ¡El')",
-    "Introducción a talentos emergentes/noticias de último minuto (ej. 'Con solo 17 años, Lamine')",
-    "Resumen de noticias deportivas impactantes con emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Bienvenida general a un informe de noticias (ej. 'Muy buenas tardes. Bienvenidos a')"
+    "Declaración directa y urgente sobre evento/figura dramática (ej. '¡Se acabó la espera! ¡El', 'Con solo 17 años, Lamine')",
+    "Noticia de impacto con título directo y alarmante (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Pregunta intrigante + tema de alto riesgo + emoji de shock (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Urgencia deportiva + impacto regional/nacional + emoji relevante (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Evento específico dramático + emoji de shock/alerta (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Actualización deportiva con giro inesperado + emoji de shock (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Declaraciones puramente factuales sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones simples de eventos sin dramatismo (ej. 'Brasil y Noruega empatan')",
+    "Comentarios genéricos sin contexto o impacto inmediato (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', enfocándose en noticias deportivas urgentes, controvertidas o de alto impacto, dado que representa el 100% del TOP 10.",
-    "Utilizar títulos que incorporen una pregunta intrigante y un emoji de 'shock' (ej. '? 🤯'), ya que son consistentemente efectivos para captar la atención inmediata y se correlacionan con los videos de mayor rendimiento.",
-    "Experimentar con horarios de publicación tempranos (1 AM, 2 AM, 6 AM) y tardíos (16 PM, 21 PM), prestando especial atención a la hora 1 AM que ha demostrado el promedio de vistas más alto para múltiples videos en el TOP 10.",
-    "Evitar ganchos iniciales que revelen resultados directos o información muy específica de eventos deportivos sin crear intriga, como 'Brasil y Noruega empatan 0-0', ya que han resultado en 0 vistas.",
-    "Implementar urgentemente la recolección de la métrica 'duración del Short' para poder analizar la retención y determinar la duración óptima de los videos, una laguna crítica actual en los datos."
+    "Prioriza la creación de contenido dentro del nicho 'ia_noticias' con un fuerte enfoque en noticias deportivas de alto impacto o controversia (ej. resultados de mundiales, transferencias de equipos), y eventos noticiosos de gran magnitud (ej. desastres naturales), ya que estos temas dominan el TOP 10 de videos.",
+    "Implementa una estrategia de publicación que contemple las franjas horarias de mayor rendimiento, priorizando las 16:00 (4 PM) por su alta efectividad promedio, y considerando también las 01:00 (1 AM) y 21:00 (9 PM) como momentos secundarios de gran potencial.",
+    "Asegura que cada video, ya sea a través de su título o un gancho explícito, contenga un elemento de intriga, urgencia, o shock (usando preguntas, exclamaciones y emojis como 🤯, 😱, 🚨, ⚽) para maximizar la captación inicial de la audiencia y distinguirse en el feed.",
+    "Elimina de inmediato el uso de ganchos que son meramente descriptivos o factuales, ya que la data muestra consistentemente que resultan en 0 vistas, y en su lugar, enfócate en narrativas que prometan un desarrollo o un impacto significativo.",
+    "Es crítico comenzar a recolectar datos sobre la duración de los Shorts para todos los videos publicados, ya que esta métrica es fundamental para entender la retención y optimizar la longitud del contenido para futuros lanzamientos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La temática de noticias urgentes y de alto impacto, especialmente controversias deportivas o eventos chocantes (cubiertas bajo el nicho 'ia_noticias' o 'mundial_2026'), es la que consistentemente genera mayor volumen de vistas, aunque el nicho 'mundial_2026' presenta una alta volatilidad con videos de 0 vistas a pesar de su elevado promedio."
+  "insight_semana": "La temática de 'noticias deportivas generadas por IA' (dentro del nicho 'ia_noticias'), específicamente aquellas que abordan controversias, resultados inesperados o eventos de alto impacto regional (Latinoamérica), es el motor de crecimiento principal, acaparando el 100% del TOP 10 de videos y demostrando ser la combinación más potente para la viralidad en el canal."
 }
