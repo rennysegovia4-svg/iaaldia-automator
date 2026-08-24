@@ -1,37 +1,39 @@
 {
   "updated": "2026-08-24",
-  "iteracion": 152,
+  "iteracion": 153,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "productividad": 0.05,
+    "finanzas": 0.04,
+    "negocios_digitales": 0.04,
+    "cripto_inversiones": 0.04,
+    "productividad_ia": 0.04,
+    "entretenimiento": 0.04,
+    "politica_latam": 0.03,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "Preguntas impactantes/controversiales con emoji: Ej. '¿FINAL ENTREGADA? 🤯'",
-    "Noticias de urgencia 'HOY' con impacto global/geográfico y emoji: Ej. 'sacude LATAM hoy ⚽'",
-    "Eventos deportivos específicos con consecuencia dramática y emoji: Ej. '¡Gamezking ELIMINADO! 😱'",
-    "Anticipación extrema o revelación inminente: Ej. '¡Se acabó la espera! ¡El'",
-    "Datos sorprendentes/inesperados con cifras o nombres: Ej. 'Con solo 17 años, Lamine'",
-    "Desastres/tragedias con cifras clave y sensación de urgencia: Ej. 'Terremoto devastador en Colombia: 132 muertos'"
+    "¡[Afirmación de Evento/Noticia]! ¡[Impacto/Exclusiva]",
+    "[Dato Clave] + [Sujeto] + [Acción/Logro Sorprendente]",
+    "[Pregunta Controversial/Especulativa]? [Emoji Emocional]",
+    "[Noticia de Alto Impacto]: [Dato Clave] y [Consecuencia/Emoción]",
+    "[Tipo de Noticia] que sacude [Región/Ámbito] [Hoy/Ahora] [Emoji Relevante]",
+    "¡[Alerta/Problema] + [Sujeto/Evento] + [Urgencia/Emoción]!"
   ],
   "avoid_hooks": [
-    "Hooks puramente descriptivos de resultados o eventos sin generar intriga: Ej. 'Brasil y Noruega empatan 0-0'",
-    "Hooks que no inyectan emoción ni curiosidad: Ej. 'Brasil y Noruega empatan'",
-    "Hooks que son meras afirmaciones de hechos sin implicar un desarrollo o consecuencia importante: Ej. 'Sidny Lopes Cabral acaba de'"
+    "Hooks puramente descriptivos que revelan el resultado o información clave sin generar intriga (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks incompletos o demasiado breves que no contextualizan la noticia ni el gancho (ej. 'Sidny Lopes Cabral acaba de').",
+    "Hooks que son declarativos y no provocan una reacción emocional o una pregunta en la audiencia."
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar fuertemente el nicho de 'deportes', especialmente temas relacionados con eventos futuros o especulativos como el 'Mundial 2026', dado su rendimiento superior y su masiva tendencia de 867.0.",
-    "Diseñar títulos y hooks que generen intriga, controversia o expectativa inmediata, utilizando preguntas directas, palabras de urgencia ('HOY') y emojis de alto impacto (`🤯`, `😱`, `🚨`) para maximizar el CTR.",
-    "Asegurar que los videos de 'ia_noticias' se centren en eventos de alto impacto, ya sean deportivos, desastres naturales o sucesos globales, e incorporen cifras y ubicaciones específicas para anclar la relevancia de la noticia."
+    "Priorizar la creación de contenido dentro del nicho 'deportes', con un enfoque particular en eventos o especulaciones de gran magnitud como 'mundial_2026', capitalizando su alta tendencia y engagement.",
+    "Desarrollar títulos y hooks que generen intriga y expectativa, utilizando preguntas directas, exclamaciones y emojis, y evitando la divulgación inmediata del desenlace de la noticia.",
+    "Optimizar los horarios de publicación, experimentando activamente entre las ventanas de madrugada (1-6 AM) y tarde/noche (16-21 PM), con un fuerte enfoque en la hora 16 (4 PM) dado su alto rendimiento promedio."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'mundial_2026' (mapeado a 'deportes') ha mostrado una explosión de tendencia sin precedentes (867.0), consolidándose como la categoría más viral y prometedora, mientras que los hooks meramente descriptivos (con 0 vistas) confirman la necesidad crítica de elementos de intriga y emoción para el éxito de un Short."
+  "insight_semana": "El nicho 'mundial_2026' (parte de 'deportes') ha demostrado un potencial de viralidad explosivo con un 'trend' de 867.0, superando drásticamente a todas las demás categorías y confirmando la alta demanda por contenido deportivo especulativo y de gran magnitud."
 }
