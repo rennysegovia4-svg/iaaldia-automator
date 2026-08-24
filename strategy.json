@@ -1,40 +1,39 @@
 {
   "updated": "2026-08-24",
-  "iteracion": 156,
+  "iteracion": 157,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.35,
-    "ia_noticias": 0.3,
+    "ia_noticias": 0.45,
+    "deportes": 0.3,
     "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.04,
-    "negocios_digitales": 0.04,
-    "cripto_inversiones": 0.04,
-    "productividad_ia": 0.04,
-    "deportes": 0.04,
-    "entretenimiento": 0.04,
-    "politica_latam": 0.04
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento/Noticia Impactante]",
-    "Con solo [Edad] años, [Nombre] [Acción sorprendente]",
-    "Muy buenas tardes. Bienvenidos a [Espacio/Noticia]",
-    "[Evento/Hecho] ¿[Pregunta Dramática]? 🤯 (Parte X)",
-    "[Noticia Impactante] hoy [Región/Contexto] [Emoji/Alerta]",
-    "[Equipo/Entidad] [Verbo Fuerte] [Estado/Noticia Inesperada] ¡[Exclamación]! 😱"
+    "¡[Noticia Impactante] HOY! [Emoji de shock/alerta]",
+    "[Evento] [Verbo de controversia/pregunta]? [Emoji de sorpresa/duda]",
+    "[Evento Trágico] en [Lugar]: [Cifra/Efecto] y [Consecuencia]",
+    "La noticia deportiva que sacude [Región] hoy [Emoji deportivo]",
+    "[Evento Específico]: ¡[Protagonista] [Estado dramático]! [Emoji de shock]",
+    "Con solo [Edad] años, [Nombre] [acción impactante/historia que capta la atención]"
   ],
   "avoid_hooks": [
-    "Hooks que anuncian resultados deportivos 'planos' o empates sin drama (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks que inician con nombres de personas poco conocidas sin contexto de gran impacto inmediato (ej. 'Sidny Lopes Cabral acaba de').",
-    "Declaraciones informativas simples que carecen de elementos de sorpresa, urgencia o controversia."
+    "Resultados deportivos poco dramáticos o sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Resultados deportivos genéricos sin contexto o impacto (ej. 'Brasil y Noruega empatan')",
+    "Mención de nombres desconocidos sin un contexto de alto drama inmediato (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 16,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de **noticias de alto impacto y controversia, especialmente en el ámbito deportivo y eventos de actualidad, utilizando el formato `ia_noticias`** para garantizar un alto engagement consistente, como demuestra su presencia en el 100% de los videos del TOP 10.",
-    "Enfocarse en el diseño de **hooks y títulos que generen intriga, incluyan preguntas dramáticas, exclamaciones, emojis de impacto y mencionen la urgencia ('hoy') o la relevancia regional** (ej. LATAM, Colombia), patrones observados en los videos de mayor rendimiento.",
-    "Mantener y optimizar la publicación en la **ventana de madrugada (1-6 AM)**, que consistentemente produce múltiples videos en el TOP 10, y estratégicamente experimentar con la **hora 16 PM** para capturar picos de audiencia de alto rendimiento, dado su potencial para generar el mayor número de vistas individualmente."
+    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', especialmente aquellos que cubran noticias deportivas de alto impacto, controversia o eventos trágicos, dado que el 100% de los videos en el TOP 10 provienen de esta categoría.",
+    "Maximizar el uso de hooks que generen urgencia, incorporen preguntas controvertidas, usen emojis de impacto (🤯, 😱, 🚨, ⚽) y mencionen datos específicos o nombres relevantes, replicando los patrones de los videos más vistos.",
+    "Concentrar las publicaciones en las horas de la madrugada (1 AM - 6 AM), con especial énfasis en la 1 AM, que ha demostrado ser el horario más consistente en generar alto engagement con múltiples videos en el TOP 10 y el promedio de vistas más alto para ese grupo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar del alto `trend` (867.0) y `avg_views` del nicho 'mundial_2026' en el ranking de performance, la totalidad de los videos en el TOP 10 (100%) pertenecen al nicho 'ia_noticias', confirmando que este formato de noticias es el más fiable y consistente para generar alto volumen de vistas, incluso si el tema subyacente es deportivo."
+  "insight_semana": "Aunque el nicho 'mundial_2026' muestra picos de rendimiento con un avg_views de 258 y un trend de 867.0, el 100% de los videos en el TOP 10 son del nicho 'ia_noticias', confirmando su dominancia en la generación consistente de alto engagement, especialmente con noticias deportivas de alto impacto."
 }
