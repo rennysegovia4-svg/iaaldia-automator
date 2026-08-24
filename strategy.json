@@ -1,38 +1,39 @@
 {
-  "updated": "2026-08-23",
-  "iteracion": 150,
+  "updated": "2026-08-24",
+  "iteracion": 151,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.4,
+    "ia_noticias": 0.45,
+    "deportes": 0.35,
+    "productividad": 0.05,
+    "negocios": 0.03,
     "finanzas": 0.02,
-    "entretenimiento": 0.02,
     "negocios_digitales": 0.02,
-    "productividad_ia": 0.05,
     "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "entretenimiento": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Declaración Directa y Dramática: Ej. '¡Se acabó la espera! ¡El...', 'Con solo 17 años, Lamine...' (867 avg_views)",
-    "Pregunta Controversial/Impactante + Emoji: Ej. '¿FINAL ENTREGADA? 🤯', '¿Adiós a la Premier League? 😱'",
-    "Noticia Urgente Regional + Drama: Ej. 'Terremoto devastador en Colombia:', 'Temblor hoy Colombia y Venezuela:'",
-    "Actualidad Deportiva + Urgencia + Región/Global + Emoji: Ej. 'La noticia deportiva que sacude LATAM hoy ⚽', 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯'",
-    "Evento Específico Dramático + Emojis: Ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱', '¡CAÍDA mundial de Pokémon GO HOY! 🚨'",
-    "'HOY' + Evento Crítico/Impactante + Emoji: Ej. 'LEICESTER SE VENDE HOY: ¿Adiós...😱'"
+    "¡Se acabó la espera! ¡El [TEMA_DE_ANTICIPACIÓN]...!",
+    "Con solo [EDAD] años, [NOMBRE_PRODIGIO]...",
+    "[EVENTO_CONTROVERSIAL_O_INQUIETANTE]? 🤯",
+    "[NOTICIA_DEPORTIVA_DRAMÁTICA]: ¡[RESULTADO_SHOCK]! 😱",
+    "[TEMA_DE_ÚLTIMA_HORA] en [LUGAR]: [CONSECUENCIA_IMPACTANTE]",
+    "¡[CRISIS_O_FALLO_GLOBAL] HOY! 🚨"
   ],
   "avoid_hooks": [
-    "Afirmaciones Factuales Blandas sobre Eventos Hipotéticos/Menores: Ej. 'Brasil y Noruega empatan 0-0'",
-    "Mención Específica sin Contexto o Drama: Ej. 'Sidny Lopes Cabral acaba de'",
-    "Contenido sin Tensión ni Urgencia: Ej. hooks que no generen intriga o emoción."
+    "Anuncios de resultados deportivos futuros o hipotéticos sin dramatismo (Ej. 'Brasil y Noruega empatan 0-0')",
+    "Introducción abrupta de nombres o eventos desconocidos sin contexto intrigante (Ej. 'Sidny Lopes Cabral acaba de')",
+    "Títulos/ganchos de autoayuda genéricos fuera del nicho de noticias/deportes (Ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente los nichos de 'deportes' (especialmente eventos globales y controversiales como el Mundial) e 'ia_noticias' con temas de alto impacto, controversia o urgencia.",
-    "Utilizar un lenguaje dramático, urgente y emojis específicos (🤯, 😱, ⚽, 🚨) en los títulos y ganchos para generar intriga y captar la atención inmediatamente.",
-    "Experimentar con declaraciones directas y dramáticas en los primeros segundos del video como ganchos, evitando descripciones puramente factuales o blandas, especialmente para eventos hipotéticos.",
-    "Concentrar las publicaciones en las franjas horarias de 01:00 y 16:00 (hora del canal), ya que estas demostraron ser consistentemente las más efectivas para los videos de mayor rendimiento."
+    "Priorizar el contenido de 'ia_noticias' enfocado en deportes (especialmente eventos globales como el Mundial 2026), aprovechando su alto potencial de viralidad (trend de 867.0) y la capacidad de generar las vistas más altas.",
+    "Diseñar ganchos que generen intriga, anticipación o shock, utilizando preguntas dramáticas y emojis de impacto (🤯, 😱, 🚨, ⚽) directamente en los títulos para Shorts.",
+    "Consolidar la hora de publicación alrededor de la 01:00 (hora del canal) para maximizar el alcance inicial, dado que alberga el video con más vistas (1325) y la mejor consistencia en el TOP 10."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Los sub-nichos que combinan la controversia/especulación deportiva (ej. 'Mundial 2026') con el formato de 'noticias' (ia_noticias) tienen un potencial viral extremo, generando picos de vistas y tendencias significativamente mayores que las noticias generales o temas menos dramáticos."
+  "insight_semana": "El performance de 'ia_noticias' está fuertemente impulsado por sub-nichos de alto impacto y especulación en deportes globales (ej. Mundial 2026), que aunque categorizados bajo 'ia_noticias', muestran un 'trend' excepcional (867.0) y una mejor media de vistas (258 vs 192) que el 'ia_noticias' general, sugiriendo la necesidad de una granularidad temática."
 }
