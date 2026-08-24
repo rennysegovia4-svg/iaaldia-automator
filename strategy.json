@@ -1,42 +1,40 @@
 {
   "updated": "2026-08-24",
-  "iteracion": 155,
+  "iteracion": 156,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "mundial_2026": 0.35,
     "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01,
-    "productividad": 0.01,
-    "negocios": 0.01
+    "productividad": 0.05,
+    "negocios": 0.02,
+    "finanzas": 0.04,
+    "negocios_digitales": 0.04,
+    "cripto_inversiones": 0.04,
+    "productividad_ia": 0.04,
+    "deportes": 0.04,
+    "entretenimiento": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "Pregunta Controversial + Emoji de Shock/Misterio: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
-    "Noticia Impactante + Urgencia + Geografía/Impacto Global + Emoji: Ej. \"Terremoto devastador en Colombia: 132 muertos\" o \"La noticia deportiva que sacude LATAM hoy ⚽\"",
-    "Evento Específico + Exclamación + Drama + Emoji: Ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\"",
-    "Suspense + Promesa de Revelación Inmediata: Ej. \"¡Se acabó la espera! ¡El\" (del gancho más efectivo)",
-    "Dato Sorprendente/Intrigante + Detalle Específico: Ej. \"Con solo 17 años, Lamine\" (del gancho más efectivo)",
-    "Última Hora + Sujeto Relevante + Consecuencia Dramática + Emoji: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\""
+    "¡Se acabó la espera! ¡El [Evento/Noticia Impactante]",
+    "Con solo [Edad] años, [Nombre] [Acción sorprendente]",
+    "Muy buenas tardes. Bienvenidos a [Espacio/Noticia]",
+    "[Evento/Hecho] ¿[Pregunta Dramática]? 🤯 (Parte X)",
+    "[Noticia Impactante] hoy [Región/Contexto] [Emoji/Alerta]",
+    "[Equipo/Entidad] [Verbo Fuerte] [Estado/Noticia Inesperada] ¡[Exclamación]! 😱"
   ],
   "avoid_hooks": [
-    "Resultados de partidos poco atractivos o sin gran implicación (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Mención de nombres propios desconocidos o sin contexto dramático inicial (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Afirmaciones planas y meramente descriptivas que carecen de emoción o intriga"
+    "Hooks que anuncian resultados deportivos 'planos' o empates sin drama (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks que inician con nombres de personas poco conocidas sin contexto de gran impacto inmediato (ej. 'Sidny Lopes Cabral acaba de').",
+    "Declaraciones informativas simples que carecen de elementos de sorpresa, urgencia o controversia."
   ],
   "best_hora": 16,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Maximizar la producción de contenido en el nicho 'deportes', especialmente noticias de última hora o controversias de fútbol (Mundiales, ligas), ya que 'mundial_2026' tiene un 'trend' de 867.0 y gran parte de 'ia_noticias' exitosa es deportiva.",
-    "Concentrar las publicaciones en las franjas horarias de mayor rendimiento: 16:00 y 17:00 horas (por su alta eficiencia individual), y la madrugada (1:00, 2:00, 3:00 y 6:00 horas) por su consistencia de vistas en el TOP 10.",
-    "Implementar de forma rigurosa las fórmulas de hooks exitosos, combinando exclamaciones, preguntas, urgencia, nombres relevantes y emojis para generar intriga y shock.",
-    "Evitar completamente los patrones de hooks fallidos, como resultados deportivos sin drama o la mención de nombres sin contexto inmediato de relevancia o controversia.",
-    "Considerar la creación de contenido en formato de 'PARTE 1' para temas de alta controversia, como se ve en el video más visto (1325 vistas), para fomentar la curiosidad y el seguimiento.",
-    "Establecer un sistema para registrar la duración de los Shorts, ya que esta métrica vital no está disponible actualmente y es crucial para determinar la 'duracion_optima'."
+    "Priorizar la creación de contenido de **noticias de alto impacto y controversia, especialmente en el ámbito deportivo y eventos de actualidad, utilizando el formato `ia_noticias`** para garantizar un alto engagement consistente, como demuestra su presencia en el 100% de los videos del TOP 10.",
+    "Enfocarse en el diseño de **hooks y títulos que generen intriga, incluyan preguntas dramáticas, exclamaciones, emojis de impacto y mencionen la urgencia ('hoy') o la relevancia regional** (ej. LATAM, Colombia), patrones observados en los videos de mayor rendimiento.",
+    "Mantener y optimizar la publicación en la **ventana de madrugada (1-6 AM)**, que consistentemente produce múltiples videos en el TOP 10, y estratégicamente experimentar con la **hora 16 PM** para capturar picos de audiencia de alto rendimiento, dado su potencial para generar el mayor número de vistas individualmente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias deportivas urgentes (especialmente fútbol de alto perfil o controversias de mundiales) y ganchos altamente emocionales/intrigantes, potenciada por el formato de 'breaking news' de IA, es la fórmula más explosiva para generar vistas masivas y 'trend' en el canal, superando consistentemente a cualquier otro tipo de contenido."
+  "insight_semana": "A pesar del alto `trend` (867.0) y `avg_views` del nicho 'mundial_2026' en el ranking de performance, la totalidad de los videos en el TOP 10 (100%) pertenecen al nicho 'ia_noticias', confirmando que este formato de noticias es el más fiable y consistente para generar alto volumen de vistas, incluso si el tema subyacente es deportivo."
 }
