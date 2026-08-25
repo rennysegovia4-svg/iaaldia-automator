@@ -1,39 +1,40 @@
 {
   "updated": "2026-08-25",
-  "iteracion": 158,
+  "iteracion": 159,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.45,
-    "deportes": 0.3,
+    "ia_noticias": 0.6,
+    "mundial_2026": 0.2,
     "productividad": 0.05,
     "finanzas": 0.03,
-    "entretenimiento": 0.03,
     "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
     "cripto_inversiones": 0.03,
-    "politica_latam": 0.03,
-    "negocios": 0.02
+    "productividad_ia": 0.03,
+    "deportes": 0.02,
+    "entretenimiento": 0.01,
+    "politica_latam": 0.0,
+    "negocios": 0.0
   },
   "best_hooks": [
-    "¡[Noticia Impactante] HOY! [Emoji de shock/alerta]",
-    "[Evento] [Verbo de controversia/pregunta]? [Emoji de sorpresa/duda]",
-    "[Evento Trágico] en [Lugar]: [Cifra/Efecto] y [Consecuencia]",
-    "La noticia deportiva que sacude [Región] hoy [Emoji deportivo]",
-    "[Evento Específico]: ¡[Protagonista] [Estado dramático]! [Emoji de shock]",
-    "Con solo [Edad] años, [Nombre] [acción impactante/historia que capta la atención]"
+    "Pregunta controversial/impactante con emoji de shock/drama (ej. '¿FINAL ENTREGADA? 🤯', '¿Adiós a X? 😱')",
+    "Noticia urgente/devastadora con números o impacto directo (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Noticia deportiva de alto impacto/drama con mención de liga/equipo y emoji (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Anuncio emocionante de un evento largamente esperado (ej. '¡Se acabó la espera! ¡El')",
+    "Reconocimiento de talento joven o historia personal impactante (ej. 'Con solo 17 años, Lamine')",
+    "Alerta de evento global/masivo con urgencia y emoji (ej. '¡CAÍDA mundial de Pokémon GO HOY! 🚨')"
   ],
   "avoid_hooks": [
-    "Resultados deportivos poco dramáticos o sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Resultados deportivos genéricos sin contexto o impacto (ej. 'Brasil y Noruega empatan')",
-    "Mención de nombres desconocidos sin un contexto de alto drama inmediato (ej. 'Sidny Lopes Cabral acaba de')"
+    "Hooks que anuncian resultados deportivos planos o poco dramáticos (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que mencionan nombres o eventos sin un contexto de alto impacto o relevancia masiva (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks genéricos de autoayuda o que no encajan con el nicho principal de noticias de impacto/deportes (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
   ],
-  "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 16,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el nicho 'ia_noticias', especialmente aquellos que cubran noticias deportivas de alto impacto, controversia o eventos trágicos, dado que el 100% de los videos en el TOP 10 provienen de esta categoría.",
-    "Maximizar el uso de hooks que generen urgencia, incorporen preguntas controvertidas, usen emojis de impacto (🤯, 😱, 🚨, ⚽) y mencionen datos específicos o nombres relevantes, replicando los patrones de los videos más vistos.",
-    "Concentrar las publicaciones en las horas de la madrugada (1 AM - 6 AM), con especial énfasis en la 1 AM, que ha demostrado ser el horario más consistente en generar alto engagement con múltiples videos en el TOP 10 y el promedio de vistas más alto para ese grupo."
+    "Concentrar la creación de contenido en el nicho 'ia_noticias', específicamente en noticias deportivas con elementos de drama, controversia, eventos impactantes o rupturas (ej. 'ARGENTINA ENTREGÓ...', 'TARJETA ROJA...', 'LIGA MX: SHOCK!'), dado que el 100% del TOP 10 se alinea con esta estrategia.",
+    "Optimizar los hooks y títulos utilizando preguntas impactantes, términos como 'HOY', 'SHOCK', 'DEVATADOR', 'CAÍDA', y emojis de sorpresa (🤯, 😱, 🚨, ⚽), ya que estos elementos están presentes en la mayoría de los videos más vistos y generan engagement.",
+    "Evitar temáticas o hooks que presenten resultados planos (ej. empates 0-0), menciones de nombres o eventos desconocidos sin contexto dramático inmediato, o contenido genérico de autoayuda, ya que han demostrado un fracaso rotundo (0 vistas) incluso en nichos de alto rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho 'mundial_2026' muestra picos de rendimiento con un avg_views de 258 y un trend de 867.0, el 100% de los videos en el TOP 10 son del nicho 'ia_noticias', confirmando su dominancia en la generación consistente de alto engagement, especialmente con noticias deportivas de alto impacto."
+  "insight_semana": "La estrategia más efectiva radica en la combinación de un formato de 'ia_noticias' con contenido de alta intensidad, priorizando eventos deportivos cargados de drama, controversia o urgencia. Esto se evidencia en que el 100% de los videos del TOP 10 pertenecen al nicho 'ia_noticias', de los cuales el 70% son de temática deportiva."
 }
