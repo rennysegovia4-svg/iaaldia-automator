@@ -1,37 +1,41 @@
 {
   "updated": "2026-08-25",
-  "iteracion": 162,
+  "iteracion": 163,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.3,
-    "finanzas": 0.06,
-    "entretenimiento": 0.06,
-    "negocios_digitales": 0.06,
-    "productividad_ia": 0.06,
-    "cripto_inversiones": 0.06,
-    "politica_latam": 0.05
+    "ia_noticias": 0.45,
+    "mundial_2026": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.015,
+    "negocios_digitales": 0.015,
+    "cripto_inversiones": 0.015,
+    "productividad_ia": 0.015,
+    "deportes": 0.015,
+    "entretenimiento": 0.015,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Anuncio de un evento esperado con alta anticipación (ej. '¡Se acabó la espera! ¡El')",
-    "Noticia impactante sobre un logro o suceso sorprendente de una figura/entidad específica (ej. 'Con solo 17 años, Lamine')",
-    "Pregunta controversial/conspirativa sobre un evento de gran magnitud (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticia de último minuto con impacto devastador/global y cifras específicas (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Urgencia y drama sobre un evento deportivo de alto perfil (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Alerta de caída/problema global de un servicio o plataforma popular (ej. '¡CAÍDA mundial de Pokémon GO HOY! 🚨')"
+    "¡[Anuncio impactante]! ¡[Evento/Noticia clave]!",
+    "[Dato sorprendente] sobre [Persona/Evento clave]...",
+    "Atención: [Breve saludo formal]. [Noticia urgente/Impactante]...",
+    "¿[Sujeto/Evento] [Verbo de acción controversial] [Objeto/Resultado]? 🤯",
+    "[Evento impactante]: [Consecuencia numérica] y [estado de emergencia]!",
+    "[Noticia/Acción dramática] + [Sujeto/Objeto] ¡[Resultado chocante]! 😱"
   ],
   "avoid_hooks": [
-    "Resultado directo y sin dramatismo de un partido (ej. 'Brasil y Noruega empatan 0-0')",
-    "Resumen breve y sin emociones de un evento (ej. 'Brasil y Noruega empatan')",
-    "Introducción que carece de información clave o gancho inicial (ej. 'Sidny Lopes Cabral acaba de')"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Enfocar la creación de contenido en **noticias de alta controversia deportiva y eventos de impacto global**, ya que estos temas dominan consistentemente el TOP 10 de videos con más vistas, especialmente en el nicho 'ia_noticias'.",
-    "Priorizar la publicación de videos de alto impacto en los **horarios de madrugada (1 AM - 3 AM) y tarde/noche (16 PM - 21 PM)**, que han demostrado los rendimientos más altos y consistentes, con la 1 AM mostrando el pico individual más alto.",
-    "Implementar **títulos y hooks que generen intriga y planteen preguntas dramáticas** sobre la integridad o el desenlace de eventos clave, utilizando emojis de sorpresa (🤯, 😱, 🚨) para amplificar la urgencia y el impacto emocional."
+    "Priorizar la creación de contenido dentro de la categoría 'ia_noticias' que cubra eventos deportivos controversiales de último minuto y noticias globales de alto impacto (ej. desastres naturales, caídas de servicios), ya que estas son las que consistentemente generan las vistas más altas.",
+    "Implementar títulos y ganchos que formulen preguntas polémicas y cargadas de emoción (usando emojis como 🤯, 😱, 🚨) en los primeros segundos del video para maximizar la intriga y el click-through, siguiendo el patrón de los videos top.",
+    "Aprovechar las franjas horarias de madrugada (1 AM - 3 AM) y las primeras horas de la mañana (6 AM) para publicar contenido de alta relevancia y urgencia, complementando con publicaciones en picos nocturnos (16 PM - 21 PM) que también muestran alto rendimiento.",
+    "Considerar la recolección de datos sobre la duración óptima de los videos para cada nicho, ya que esta métrica es crucial para el rendimiento de Shorts y actualmente no está disponible para análisis."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La volatilidad extrema del nicho 'mundial_2026' (integrado en deportes) revela que el éxito masivo (videos con más de 1298 vistas) está intrínsecamente ligado a la **creación de narrativas de controversia o traición sobre eventos clave**, mientras que la ausencia de este dramatismo lleva a fracasos totales (0 vistas), subrayando la necesidad de una curación de temas altamente específica."
+  "insight_semana": "La combinación de noticias deportivas controversiales y de última hora con eventos de impacto global (terremotos, caídas de servicios), ambos presentados con títulos y ganchos que generan intriga y urgencia, es la fórmula más efectiva para captar audiencias, especialmente en las horas de madrugada (1-3 AM)."
 }
