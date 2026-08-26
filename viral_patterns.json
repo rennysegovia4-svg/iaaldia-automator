@@ -1,206 +1,199 @@
 {
   "updated": "2026-08-26",
   "hook_formulas": [
-    "Humor o Relatabilidad con Escenario Común + Reacción Emocional",
-    "Afirmación Sorprendente o Dramática + Intrigante Conclusión",
-    "Pregunta Directa que Desafía o Invita a la Reflexión (financiera/moral)",
-    "Llamada a la Acción o Solución Directa con Beneficio Explícito",
-    "Declaración Audaz o Controversial sobre un Tema Específico",
-    "Cita o Referencia a Cultura Pop/Personaje con Mensaje Subyacente",
-    "Revelación de un Secreto, Hack o Proceso Inesperado",
-    "Introducción de un Personaje o Situación Específica con un Giro Humorístico",
-    "Manifestación de Asombro o Intriga sobre un Fenómeno o Evento",
-    "Formato de Lista o Recuento de Ideas/Hechos (con beneficio o intriga)",
-    "Contenido Basado en Reacciones (ajenas o propias)",
-    "Demostración de Habilidad o Logro con Herramienta/Tecnología"
+    "Escenario cotidiano relatable con reacción humorística/exagerada (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣')",
+    "Declaración impactante o misteriosa que genera curiosidad o emoción (ej. 'Lo más triste que verás hoy', 'Algo se Aproxima a la Tierra')",
+    "Pregunta directa o dilema personal que interpela al espectador (ej. '¿Qué Camino Tomarías Tú? 🛣️', 'How much money is in your bank account? 🤔💰')",
+    "Demostración de una habilidad, suceso o resultado sorprendente (ej. 'TIREI FOTOS COM FAMOSOS', 'Wow 😮🚀')",
+    "Problema común o frustración con una promesa implícita de solución/truco (ej. 'What To Do If Shopkeeper Charges More Than MRP?', '✅TRUCO para PRESENTACIONES')",
+    "Revelación de una estrategia 'genial' o 'secreto' de un tema específico (ej. 'Genius Marketing Strategy by Zomato😬', 'Why Boring Businesses Make More Profit')",
+    "Interacción o comparación sorprendente con IA o figuras reconocibles (ej. 'El Abrahaham trolea a la IA😂', 'I.A igual o JARVIS')",
+    "Uso de personajes icónicos o de cultura pop para transmitir un mensaje (ej. 'Puedes Lograrlo - Nemo', 'Yo soy el Dueño - Batman')",
+    "Afirmación de valor o beneficio directo (especialmente 'GRATIS' o 'FREE') para una herramienta/método (ej. 'Esta es la IA definitiva para crear música GRATIS')",
+    "Contraste o comparación inesperada de dos elementos (ej. 'Las frutas verdaderas sin IA🍓', 'Youtube Earning VS Facebook Earning')",
+    "Dilema hipotético o pregunta controversial que genera debate (ej. 'Would you slap him for 20 Trillion Dollars ?')",
+    "Escena dramática o de clímax que promete un 'final épico' (ej. 'EL FINAL MAS EPICO QUE VERAS😂')"
   ],
   "title_patterns": [
-    "Declaración Humorística/Relatable + Emoji de Reacción",
-    "Afirmación Impactante/Intrigante + (A menudo) Emoji",
-    "Pregunta Directa/Hipotética + Emoji de Reflexión/Intriga",
-    "Imperativo/Llamada a la Acción + Beneficio/Sorpresa + Emoji",
-    "Tema + Afirmación Controversial/Sorprendente + Emoji",
-    "Número + Beneficio/Idea (a menudo negocios/finanzas)",
-    "Referencia a Personaje/Cultura Pop + Mensaje/Declaración",
-    "Superlativo/Adjetivo de Calidad + Herramienta/Idea + Beneficio"
+    "[Escenario Cómico/Relatable] + [Emoji de Reacción/Humor]",
+    "[Afirmación Sorprendente/Dramática] + [Emoji de Impacto/Verbo Emocional]",
+    "[Pregunta Directa/Retórica] + [Emoji de Intrigra]",
+    "[Verbo de Acción/Resultado] + [Tema Específico o Personaje]",
+    "[Palabra Impactante (ej. 'Wow', 'Genius')] + [Emoji de Asombro/Poder]",
+    "[Utilidad/Beneficio Directo] + [Herramienta/Concepto] + [Palabra Clave (ej. 'GRATIS', 'AI')]",
+    "[Mención de Personaje/Marca Reconocible] + [Acción/Cita]",
+    "[Problema Común] + [Solución Implicada/Pregunta de Verificación]"
   ],
   "palabras_prohibidas": [
-    "Tutorial",
-    "Explicación",
-    "Detallado",
-    "Parte",
-    "Documental",
-    "Sesión",
-    "Completo",
-    "Análisis",
-    "Introducción",
-    "Lección"
+    "Excesivamente Formal/Académico (ej. 'Análisis', 'Metodología')",
+    "Demasiado Genérico/Vago sin Emoción (ej. 'Cosas', 'Información', 'Hechos')",
+    "Sin Pregunta o Declaración Impactante (títulos meramente descriptivos)",
+    "Falta de Emojis/Símbolos Visuales (en títulos donde el contexto los permite)",
+    "Exceso de Jargon Técnico Específico sin Contexto Aclaratorio",
+    "Títulos muy Largos y Complicados (más de 60-70 caracteres sin pausas visuales)",
+    "Promesas Obvias o Clickbait sin Entrega de Valor",
+    "Negatividad Pura sin Resolución, Humor o Noticia de Shock",
+    "Repetitivo o Redundante con el Contenido Visual",
+    "Enfocado Exclusivamente en el Creador sin Beneficio para el Espectador"
   ],
   "palabras_clave_virales": [
-    "#shorts",
-    "#humor",
-    "#comedia",
-    "#funny",
-    "#ia",
-    "AI",
-    "inteligenciaartificial",
-    "#viral",
-    "#trending",
-    "dinero",
-    "money",
-    "negocios",
-    "business",
-    "emprender",
-    "tiktokvideo",
-    "reaccion",
-    "reaction",
-    "herramienta",
-    "tool",
-    "gratis",
-    "free",
-    "scam"
+    "IA",
+    "Humor",
+    "Viral",
+    "Dinero",
+    "Negocios",
+    "Finanzas",
+    "Gratis",
+    "Truco",
+    "Comedia",
+    "Ahorrar",
+    "Trending",
+    "Emprender",
+    "Bitcoin",
+    "Video",
+    "Final"
   ],
-  "estructura_gancho_optima": "El gancho óptimo combina una declaración inicial impactante, una pregunta directa que genera curiosidad o una situación de alta identificación emocional, presentada en los primeros 1-3 segundos del video. Se apoya en un título que refuerza esta intriga o emoción inicial y en elementos visuales sorprendentes o humorísticos de forma inmediata.",
+  "estructura_gancho_optima": "El gancho óptimo inicia con una escena o declaración que genera una emoción fuerte (asombro, humor, intriga, sorpresa) o presenta un escenario relatable/una pregunta directa que interpela al espectador, prometiendo una revelación o solución rápida. Suele ir acompañado de un elemento visual impactante en el primer segundo.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "Los Shorts más virales, incluso en nichos específicos, trascienden su audiencia principal al integrar su contenido especializado con emociones humanas universales (humor, sorpresa, asombro, inspiración, curiosidad). Esto se logra presentando el nicho como un contexto para una historia o emoción relatable, en lugar de ser el foco exclusivo del gancho, lo que amplifica drásticamente su atractivo a una audiencia más amplia.",
-  "recomendacion_thumbnail": "Los thumbnails que generan más CTR son aquellos que capturan la 'cumbre emocional' o el 'punto de giro' visual del video. Esto incluye: 1) Rostros con expresiones exageradas de sorpresa, risa o preocupación. 2) Imágenes de alto contraste o momentos dramáticos clave (explosiones, revelaciones). 3) Elementos visuales intrigantes o símbolos directos del contenido (pilas de dinero, iconos de IA, flechas direccionales). 4) Textos superpuestos breves y llamativos que refuerzan la pregunta o declaración del título. La clave es generar intriga o una emoción fuerte de forma instantánea.",
+  "insight_clave": "Los Shorts más virales no solo informan o entretienen, sino que provocan una *reacción emocional visceral e inmediata* (risa, asombro, intriga, tristeza) al conectar con escenarios universalmente identificables o deseos aspiracionales. El éxito radica en la capacidad del video para resonar a un nivel emocional profundo, haciéndolo altamente compartible y propenso a activar los algoritmos. La clave es el 'payoff' emocional o intelectual en los primeros segundos.",
+  "recomendacion_thumbnail": "La miniatura debe contener: 1) una cara con una emoción fuerte y exagerada (sorpresa, risa, asombro, preocupación), 2) un objeto o elemento visual clave del video (ej. dinero, símbolo de IA, personaje reconocible) en primer plano y con alto contraste, y 3) un texto superpuesto muy conciso con la 'frase gancho' principal o una palabra clave impactante y un emoji relevante. Esto crea un contraste visual y emocional inmediato que se destaca en el feed.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Humor o Relatabilidad sobre la IA o Tecnología",
-        "Afirmación Dramática/Intrigante sobre Fenómenos Tech o IA",
-        "Revelación de Experiencias Personales (e.g., con famosos o IA)"
+        "Escenario relatable + Reacción humorística exagerada sobre IA",
+        "Declaración impactante/misteriosa sobre avances o impacto de la IA",
+        "Interacción o comparación sorprendente con la IA o personajes reconocibles"
       ],
       "topics": [
-        "Humor y Comedia con IA",
-        "Noticias y Avances de la IA (especialmente inesperados)",
-        "Reacciones y Troles relacionados con la IA"
+        "Humor y comedia relacionados con la IA",
+        "Avances y capacidades sorprendentes de la IA",
+        "Impacto emocional o social de la IA (futuro, eventos)"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Escenario Financiero Común + Giro Inesperado/Humorístico",
-        "Pregunta Directa sobre Decisiones Financieras o Ahorro",
-        "Solución Práctica/Hack para Ahorro o Inversión"
+        "Pregunta directa/dilema personal sobre dinero o ahorro",
+        "Escenario relatable de ahorro/gasto con giro humorístico",
+        "Revelación impactante sobre la gestión del dinero o inversiones"
       ],
       "topics": [
-        "Ahorro y Gestión de Dinero",
-        "Humor Financiero y Comedia de Parejas/Familias",
-        "Consejos Prácticos sobre Finanzas y Derechos del Consumidor"
+        "Consejos y trucos de ahorro y finanzas personales",
+        "Humor y situaciones cotidianas relacionadas con el dinero",
+        "Dilemas o decisiones de inversión y emprendimiento"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Declaración Audaz/Controversial sobre Estrategias o Fraudes",
-        "Ideas de Negocio Rentables (a menudo con bajo costo)",
-        "Revelación de Estrategias de Marketing Geniales o Scams"
+        "Revelación de una estrategia de marketing 'genial' o 'secreto'",
+        "Idea de negocio práctica/innovadora con potencial de ganancia",
+        "Historia o experimento personal de emprendimiento/dropshipping"
       ],
       "topics": [
-        "Ideas de Negocio (manuales, digitales, bajo costo)",
-        "Estrategias de Marketing y Emprendimiento",
-        "Alertas de Fraudes y Casos de Estudio de Negocios"
+        "Estrategias de marketing y modelos de negocio",
+        "Ideas de emprendimiento y generación de ingresos",
+        "Experiencias y desafíos en negocios digitales"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Cita/Diálogo de Cultura Pop con Mensaje Inspirador/Motivacional",
-        "Pregunta Hipotética Extrema sobre Dinero o Valores",
-        "Escenario Humorístico/Relatable (a menudo contrastando IA con realidad)"
+        "Declaración inspiradora/motivacional con referencia a cultura pop y dinero",
+        "Dilema moral/financiero que provoca debate y alta participación",
+        "Historias dramáticas/impactantes relacionadas con dinero, estafas o inversiones"
       ],
       "topics": [
-        "Motivación e Inspiración (a menudo vinculado a Bitcoin/éxito)",
-        "Debates Morales o Dilemas Financieros",
-        "Humor General (a veces tangencial a cripto)"
+        "Filosofía e inspiración ligada al éxito financiero (a menudo Bitcoin)",
+        "Preguntas éticas o situaciones hipotéticas extremas con grandes sumas de dinero",
+        "Anécdotas o casos reales de inversión/trading/riesgos financieros"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Problema Común + Herramienta/Solución IA Inmediata",
-        "Beneficio Directo de una Herramienta IA (gratis, fácil, etc.)",
-        "Instrucción Clara sobre Cómo Usar IA para una Tarea Específica"
+        "Promesa de un 'truco' o 'herramienta' con beneficio claro y GRATIS usando IA",
+        "Revelación de una capacidad sorprendente de una herramienta de IA específica",
+        "Solución práctica a un problema común usando IA (ej. crear tablas, transcribir)"
       ],
       "topics": [
-        "Herramientas de IA para Crear Contenido (música, texto, imágenes)",
-        "Optimización de Productividad con IA (Excel, idiomas)",
-        "Tutoriales Breves de Herramientas AI"
+        "Herramientas y trucos de IA para productividad (texto, imágenes, video, audio)",
+        "Automatización y optimización de tareas con inteligencia artificial",
+        "Aplicaciones prácticas y gratuitas de la IA en el día a día o trabajo"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "La Impresora de Dinero 💸 #shorts",
-      "views": 124892263,
+      "views": 124892293,
       "id": "w483cRons3Q"
     },
     {
       "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 67288969,
+      "views": 67294941,
       "id": "qEBPaKp0kKA"
     },
     {
       "titulo": "Genius Marketing Strategy by Zomato😬 #shorts #marketing #zomato",
-      "views": 65059285,
+      "views": 65059455,
       "id": "wJ1-eR_hAV0"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 53379816,
+      "views": 53385956,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44214808,
+      "views": 44215190,
       "id": "qrfrPlEGrdw"
     },
     {
       "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42227352,
+      "views": 42227458,
       "id": "IKXiyApvKjI"
     },
     {
       "titulo": "¿Qué Camino Tomarías Tú? 🛣️ #Ahorro #Finanzas #Inversiones #InterésCompuesto #Invertir #Shorts",
-      "views": 38130146,
+      "views": 38130159,
       "id": "t4JnOP6atKs"
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 36264126,
+      "views": 36265030,
       "id": "59AAoa8l064"
     },
     {
       "titulo": "Lo más triste que verás hoy #shorts",
-      "views": 29381197,
+      "views": 29382107,
       "id": "HwpwN5bQ4t4"
     },
     {
       "titulo": "TIREI FOTOS COM FAMOSOS #shorts",
-      "views": 16033834,
+      "views": 16034243,
       "id": "Z4mucmpZGvM"
     },
     {
-      "titulo": "Start Mop Making Business From Home At Low Cost 😱 #ytshorts #shorts",
-      "views": 15836722,
-      "id": "DX90HlZtW9I"
-    },
-    {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15284951,
+      "views": 15285348,
       "id": "gDn_SQU6YZE"
     },
     {
+      "titulo": "Why Boring Businesses Make More Profit #shorts",
+      "views": 7760365,
+      "id": "pKlUy-ofka0"
+    },
+    {
+      "titulo": "✅TRUCO para PRESENTACIONES con AI en CANVA #shorts #canva",
+      "views": 882083,
+      "id": "ztzpmCOf0e4"
+    },
+    {
       "titulo": "This AI tool translates video to ANY language #shorts #videotips #videomarketingtips",
-      "views": 660225,
+      "views": 660401,
       "id": "os7nUVOZ_0E"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 521308,
+      "views": 521389,
       "id": "14URUL4nBkA"
-    },
-    {
-      "titulo": "Crear tablas con IA (ChatGPT) #shorts #excel #excelgratis #openai",
-      "views": 267924,
-      "id": "T98pgCMMN8o"
     }
   ],
   "aprendizajes_externos": {
