@@ -1,40 +1,40 @@
 {
   "updated": "2026-08-26",
-  "iteracion": 170,
+  "iteracion": 171,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
+    "mundial_2026": 0.4,
+    "ia_noticias": 0.3,
     "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "deportes": 0.05,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.03,
+    "productividad_ia": 0.03,
+    "entretenimiento": 0.03,
+    "politica_latam": 0.03,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "Pregunta Controversial/Impactante con Emoción: '¿[Tema controvertido/impactante] hoy? 🤯/😱'",
-    "Noticia de Impacto con Datos y Lugar: '[Tipo de evento] devastador en [Lugar]: [Dato clave] y emergencia...'",
-    "Anuncio Urgente de Cambio Inesperado: '¡[Noticia clave] HOY! 🚨/😱'",
-    "Evento Deportivo con Consecuencia Directa: '[Evento deportivo]: ¡[Protagonista/Resultado] [Acción impactante]! 😱/🤯'",
-    "Anticipación Dramática: '¡Se acabó la espera! ¡El [Evento esperado] ha llegado!'",
-    "Hecho Sorprendente/Personalidad Joven: 'Con solo [Edad] años, [Nombre]...'"
+    "Título: Pregunta controversial [Evento] + Emoji de impacto (🤯/😱)",
+    "Título: Noticia urgente [Temática] hoy + Ubicación/Marca + Emoji (⚽/🚨)",
+    "Título: [Sustantivo de impacto] devastador en [Lugar]: [Cifra] + [Estado]",
+    "Título: [Liga/Equipo] + Acción dramática + ¡[Emoción fuerte]! + Emoji (🤯/😱)",
+    "Título: ¡[Problema] mundial de [Marca/Producto] HOY! 🚨",
+    "Título: La noticia deportiva que sacude LATAM hoy ⚽"
   ],
   "avoid_hooks": [
-    "Revelar el desenlace completamente, como 'Brasil y Noruega empatan 0-0'",
-    "Ser excesivamente descriptivo sin generar intriga, como 'Brasil y Noruega empatan'",
-    "Iniciar con un hecho consumado sin un gancho emocional o de misterio, como 'Sidny Lopes Cabral acaba de'"
+    "Hooks que describen resultados deportivos de manera simple y sin emoción (ej. \"[Equipo1] y [Equipo2] empatan [Marcador]\")",
+    "Hooks incompletos o que cortan la frase antes de generar intriga (ej. \"[Nombre] acaba de...\")",
+    "Mensajes genéricos de autoayuda o desarrollo personal en un canal de noticias rápidas."
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Maximizar la creación de contenido en el nicho de 'deportes', capitalizando la alta tendencia y rendimiento del sub-nicho 'mundial_2026', y continuar con 'ia_noticias' que permite incorporar noticias deportivas virales.",
-    "Diseñar los títulos como ganchos principales, utilizando preguntas impactantes, emojis de emoción (🤯, 😱, 🚨), y palabras que denoten urgencia ('hoy', 'devastador', 'shock'), replicando el éxito del 90% de los videos top.",
-    "Priorizar la publicación en dos franjas horarias clave: la madrugada (1-3 AM, con el pico más alto a la 1 AM) y la tarde/noche (16-21 PM), para captar la audiencia en ambos momentos de alta actividad demostrada.",
-    "Implementar la recolección de datos sobre la duración exacta de los videos para identificar la 'duración_óptima' con base en métricas reales en futuras iteraciones."
+    "Priorizar nichos de noticias deportivas de última hora y eventos virales, dado que 8 de 10 videos top están relacionados con estos temas y 'mundial_2026' tiene la tendencia más alta (867.0).",
+    "Continuar optimizando los títulos como el principal gancho, incorporando preguntas controversiales, noticias urgentes y emojis de alto impacto (🤯, 😱, 🚨, ⚽) para maximizar la curiosidad y el CTR.",
+    "Experimentar con publicaciones en franjas horarias de doble pico: madrugada (1-3 AM, con el video más visto a la 1 AM) y tarde/noche (16-21 PM, siendo las 16 PM la hora con el promedio más alto por video en el top 10), para capturar audiencias en diferentes momentos del día."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido noticioso de índole deportiva (abarcando 'mundial_2026' y noticias deportivas en 'ia_noticias'), cuando se formula con títulos que generan intriga o shock y emplean emojis, es el de mayor rendimiento, obteniendo picos de vistas significativos tanto en la madrugada (1-3 AM) como en la tarde/noche (16-21 PM)."
+  "insight_semana": "La eficacia del título como gancho principal (con preguntas controversiales y emojis como 🤯, 😱, 🚨) es fundamental, demostrando ser más crítico que el campo 'hook' explícito para el 90% de los videos top. Este enfoque, combinado con la publicación de noticias deportivas urgentes (como el `mundial_2026` con 258 avg_views y una tendencia de 867.0) y de última hora, impulsa significativamente el rendimiento, operando con éxito en picos tanto de madrugada (1-3 AM) como de tarde-noche (16-21 PM)."
 }
