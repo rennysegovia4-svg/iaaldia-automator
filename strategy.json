@@ -1,37 +1,40 @@
 {
   "updated": "2026-08-27",
-  "iteracion": 174,
+  "iteracion": 175,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.75,
+    "ia_noticias": 0.2,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.005,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "Pregunta Controversial/Impactante con Emoji: Ej: \"¿FINAL ENTREGADA? 🤯\", \"¿Adiós a X? 😱\" (Intriga/Controversia + Puntuación emocional).",
-    "Noticia de Última Hora con Urgencia y Localización/Tema: Ej: \"Terremoto devastador en Colombia: X muertos\", \"Temblor hoy Colombia y Venezuela: la tragedia...\". (Actualidad + Detalle + Impacto).",
-    "Titular Deportivo con Sorpresa/Conflicto y Emoji: Ej: \"La noticia deportiva que sacude LATAM hoy ⚽\", \"AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\". (Deporte + Evento + Emoción).",
-    "Evento Específico con Consecuencia Inmediata y Emoji: Ej: \"¡Gamezking ELIMINADO! 😱\", \"¡CAÍDA mundial de Pokémon GO HOY! 🚨\". (Quién/Qué + Qué pasó + Urgencia).",
-    "Gancho de Anticipación/Revelación: \"¡Se acabó la espera! ¡El [gran evento]...\" (Genera expectativa sobre un evento clave).",
-    "Destacar Hazaña/Hecho Sorprendente con Dato Específico: \"Con solo 17 años, Lamine [hizo X]...\" (Resalta un logro o particularidad con un dato concreto)."
+    "Pregunta intrigante con emoji de sorpresa/impacto (ej. 'ARGENTINA ENTREGÓ... 🤯')",
+    "Anuncio de última hora/urgencia (ej. 'La noticia deportiva que sacude LATAM HOY ⚽')",
+    "Generación de anticipación (ej. '¡Se acabó la espera! ¡El...')",
+    "Resaltar talento emergente/hazaña (ej. 'Con solo 17 años, Lamine...')",
+    "Afirmación impactante de resultado/situación (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Noticia de interrupción/caída de servicio (ej. '¡CAÍDA mundial de Pokémon GO HOY! 🚨')"
   ],
   "avoid_hooks": [
-    "Revelar el resultado principal de un evento o noticia en el hook (ej: \"Brasil y Noruega empatan 0-0\").",
-    "Comenzar la frase revelando directamente el sujeto o la acción sin generar intriga (ej: \"Sidny Lopes Cabral acaba de\").",
-    "Utilizar hooks redundantes o que simplemente repiten el título sin añadir valor o intriga (ej: \"Brasil y Noruega empatan\")."
+    "Revelar el resultado completo de un evento sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Revelar el resultado parcial de un evento sin intriga (ej. 'Brasil y Noruega empatan')",
+    "Inicios de frase vagos o incompletos que carecen de contexto inmediato (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 17,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima",
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Incrementar significativamente la producción de contenido en el nicho de `deportes`, capitalizando la alta tendencia y el interés demostrado por eventos como el 'mundial_2026' y noticias deportivas de actualidad.",
-    "Diseñar títulos que funcionen como potentes ganchos por sí mismos, incorporando preguntas que generen controversia o curiosidad, menciones de urgencia (ej. 'hoy'), números específicos y emojis de sorpresa o impacto (🤯, 😱, 🚨).",
-    "Asegurar que los hooks de audio o texto iniciales no revelen la información principal o el desenlace, sino que construyan intriga y mantengan al espectador enganchado hasta el final."
+    "Priorizar contenido deportivo: Invertir masivamente en contenido deportivo, especialmente eventos de gran escala con alto potencial viral, dado el rendimiento excepcional del nicho 'mundial_2026' (avg_views 258, trend 867.0).",
+    "Optimizar títulos para intriga: Los videos con mejores vistas a menudo usaron el título como gancho principal (hooks vacíos en Top 10), sugiriendo que un título que genere curiosidad, sorpresa o una pregunta impactante es crucial.",
+    "Evitar spoilers en hooks iniciales: Los hooks que revelan el resultado de un evento de forma anticipada y sin intriga resultaron en 0 vistas, confirmando su ineficacia para generar clics.",
+    "Experimentar con horarios de tarde: Los horarios como 16:00, 17:00 y 21:00 mostraron un rendimiento sólido en los videos del Top 10, con 16:00 destacándose por su promedio de vistas, sugiriendo una audiencia receptiva en la tarde.",
+    "Integrar emojis estratégicamente: El uso de emojis (🤯, 😱, ⚽, 🚨) en títulos de videos exitosos demuestra ser efectivo para captar la atención y aumentar el CTR.",
+    "Implementar seguimiento de duración: No se dispone de datos sobre la duración óptima de los Shorts; es vital empezar a registrar esta métrica para futuras iteraciones y optimización."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La actualidad deportiva, especialmente ligada a grandes eventos como el 'mundial_2026', demuestra ser el nicho con mayor potencial de crecimiento explosivo y atracción de vistas (tendencia de 867.0), superando el rendimiento base de las noticias de IA."
+  "insight_semana": "El nicho de deportes, especialmente ligado a grandes eventos ('mundial_2026'), muestra un potencial explosivo con una tendencia de 867.0, superando drásticamente a otros nichos, y la efectividad del título como gancho principal es un factor crítico para su rendimiento."
 }
