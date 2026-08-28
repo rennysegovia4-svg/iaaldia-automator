@@ -1,39 +1,39 @@
 {
   "updated": "2026-08-28",
-  "iteracion": 176,
+  "iteracion": 177,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "ia_noticias": 0.3,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta Controversial + Emoji: ¿[Evento] + [Verbo] + [Sujeto]? + 🤯/😱",
-    "Noticia de Impacto + Cifra/Detalle: [Evento Devastador]: [Consecuencia] + [Detalle]",
-    "Noticia Deportiva Urgente + Emoji: La noticia deportiva que sacude [Región] hoy + ⚽",
-    "Evento Deportivo Específico + Resultado Sorpresa + Emoji: [Liga/Torneo]: [Equipo] + [Acción] ¡[Impacto]! + 🤯/😱",
-    "Gancho de Expectativa/Inicio Fuerte: ¡Se acabó la espera! ¡El...",
-    "Gancho de Logro/Talento Joven Específico: Con solo [Edad] años, [Nombre]"
+    "Pregunta Controversial + Emoji (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Impactante/Shock + Emoji (Ej: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Urgencia/Actualidad + Evento Específico (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Detalle Específico/Interés Humano (Ej: 'Con solo 17 años, Lamine')",
+    "Introducción de Alta Energía/Expectación (Ej: '¡Se acabó la espera! ¡El')",
+    "Resultado Inesperado/Disruptivo (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Descriptivos sin intriga: Evitar hooks que solo describen un evento sin generar misterio o emoción (ej. 'Brasil y Noruega empatan').",
-    "Anuncio prematuro del desenlace: Evitar dar el resultado principal o la sorpresa de forma directa y plana al inicio.",
-    "Demasiado específicos sin atractivo universal: Evitar mencionar nombres o detalles que no sean inmediatamente reconocibles o interesantes sin un contexto inicial."
+    "Afirmaciones de Resultados Planas (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Anuncios de Eventos sin Intriga (Ej: 'Brasil y Noruega empatan')",
+    "Declaraciones Directas sin Contexto Emocional (Ej: 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 16,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 1,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `deportes`, enfocándose en eventos de gran impacto o controversia (como el `mundial_2026`), dado su alto rendimiento y tendencia de crecimiento (867.0).",
-    "Utilizar títulos que planteen una pregunta controversial y que incluyan emojis de sorpresa (🤯, 😱) para maximizar el CTR, replicando el éxito de videos con más de 1200 vistas.",
-    "Programar las publicaciones de contenido más viral entre las 16:00 y 17:00 horas, identificando este período como el de mayor promedio de vistas en el top 10.",
-    "Desarrollar hooks que generen expectativa o presenten un hecho sorprendente, y evitar aquellos que solo describen resultados de forma plana o sin emoción, para no caer en patrones de 0 vistas.",
-    "Incorporar elementos de actualidad y urgencia en los títulos (ej. 'hoy', 'sacude LATAM') para capitalizar el interés en noticias de última hora, especialmente en deportes."
+    "Priorizar contenido de noticias deportivas que genere controversia, sorpresa o urgencia, capitalizando el éxito de 'mundial_2026' y gran parte de los videos de 'ia_noticias' en el top 10.",
+    "Implementar preguntas retóricas controversiales y emojis de impacto (🤯, 😱, ⚽) en los títulos y ganchos para maximizar el Click-Through Rate (CTR) y la retención inicial.",
+    "Experimentar con horarios de publicación a la 1:00 AM y en el rango de 16:00 a 21:00, dado el rendimiento excepcional de videos en estos períodos en el top 10.",
+    "Evitar categóricamente hooks y títulos que sean meramente descriptivos o anuncien resultados de forma plana, ya que han demostrado tener 0 vistas consistentemente.",
+    "Comenzar a recolectar datos sobre la duración de los Shorts para determinar la 'duracion_optima', ya que actualmente no hay información disponible para este parámetro."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de `deportes` centrado en controversias, preguntas impactantes y noticias de última hora, especialmente si se vincula a grandes eventos como el Mundial, es el motor principal del crecimiento actual del canal, con una tendencia de 867.0 en `mundial_2026` y dominando los videos de alto rendimiento."
+  "insight_semana": "La confirmación de la nula efectividad (0 vistas) de los hooks puramente descriptivos y sin intriga, contrasta drásticamente con el éxito de los títulos emocionales y de pregunta, haciendo del gancho el factor más crítico para el rendimiento."
 }
