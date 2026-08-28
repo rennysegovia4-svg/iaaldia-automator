@@ -1,39 +1,39 @@
 {
   "updated": "2026-08-28",
-  "iteracion": 181,
+  "iteracion": 182,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
+    "ia_noticias": 0.36,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
     "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.05
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Frase de Urgencia/Expectativa]! ¡El [Evento/Noticia]...",
-    "Con solo [Edad] años, [Nombre Propio]...",
-    "Muy buenas [Momento del día]. Bienvenidos a [Tema]...",
-    "¿[Pregunta impactante sobre un evento/hecho]? 🤯",
-    "[Evento/Noticia Impactante]: ¡[Cifra/Detalle Clave] y [Consecuencia]!",
-    "La noticia [adjetivo: deportiva/impactante] que sacude [Región] hoy ⚽"
+    "Pregunta Retórica + Emoji Emocional (ej. '¿ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Impactante + Cifra/Detalle Clave (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Urgencia/Sentencia Impactante + Emoji (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Anticipación de Evento/Noticia (ej. '¡Se acabó la espera! ¡El')",
+    "Hecho Específico de Interés + Consecuencia (ej. 'Con solo 17 años, Lamine...')",
+    "Actualidad con Impacto Regional + Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado completo o la noticia principal de inmediato.",
-    "Hooks que son puramente descriptivos, sin elementos de misterio, emoción o urgencia.",
-    "Hooks que se centran en datos específicos (e.g., marcadores '0-0', nombres de jugadores) sin un contexto intrigante."
+    "Revelar el resultado/noticia principal de inmediato (ej. 'Brasil y Noruega empatan 0-0')",
+    "Ser excesivamente descriptivo sin intriga (ej. 'Brasil y Noruega empatan')",
+    "Información fragmentada sin contexto atractivo (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido altamente específico y de actualidad sobre eventos deportivos (e.g., Mundial 2026), dada la tendencia de crecimiento excepcional del nicho 'mundial_2026' (867.0 de trend).",
-    "Programar publicaciones clave para la 1:00 AM (GMT), ya que esta hora alberga el video con más vistas (1325 views) y demuestra un rendimiento consistente en el top 10.",
-    "Implementar títulos y hooks que generen intriga y emoción, utilizando preguntas impactantes y emojis (🤯, 😱, ⚽), en lugar de revelar la noticia por completo.",
-    "Evitar la creación de contenido en nichos con 0 vistas (finanzas, entretenimiento, negocios_digitales, productividad_ia, cripto_inversiones, politica_latam) hasta que se observe un cambio en la demanda o se realicen pruebas específicas con una estrategia clara.",
-    "Considerar la división de noticias impactantes en partes (e.g., PARTE 1, 1/2) para fomentar la curiosidad y potencialmente la retención, como se observa en los videos de mayor rendimiento sobre el Mundial."
+    "Priorizar la creación de contenido en el nicho 'deportes' (particularmente sub-nichos de alta resonancia como 'mundial_2026') y 'ia_noticias', asignando un 45% y 36% del esfuerzo respectivamente, dado su alto rendimiento.",
+    "Implementar ganchos en títulos y descripciones que generen intriga y emoción, utilizando preguntas retóricas, datos impactantes y emojis emocionales (🤯, 😱, ⚽) para maximizar el CTR.",
+    "Mantener la hora de publicación a la 1 AM (GMT), ya que ha demostrado ser consistentemente el horario con mejor rendimiento para los videos más vistos, incluyendo el video con el mayor número de vistas (1325 vistas).",
+    "Eliminar por completo los ganchos que revelan el resultado o la noticia principal, ya que consistentemente resultan en 0 vistas y anulan la curiosidad del espectador, como se observa en los 'HOOKS QUE FALLAN'.",
+    "Es crucial comenzar a recolectar datos sobre la duración de los videos para identificar la 'duracion_optima', ya que actualmente no se dispone de esta información para una recomendación basada en datos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La especialización en noticias deportivas altamente actuales y específicas (e.g., Mundial 2026) genera una demanda y un crecimiento exponencial (>800% trend) superior a la cobertura noticiosa general de IA."
+  "insight_semana": "La especialización en eventos deportivos de alta resonancia como 'mundial_2026' (promedio de 258 vistas) es un motor de crecimiento superior, consolidándose como la estrategia más efectiva en comparación con las noticias de IA (211 vistas promedio), validado por su alto 'trend' de 867.0."
 }
