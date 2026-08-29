@@ -1,42 +1,39 @@
 {
   "updated": "2026-08-29",
-  "iteracion": 191,
+  "iteracion": 192,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.3,
-    "productividad": 0.05,
-    "negocios": 0.02,
-    "finanzas": 0.06,
-    "negocios_digitales": 0.06,
-    "cripto_inversiones": 0.06,
-    "productividad_ia": 0.06,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "productividad": 0.08,
+    "negocios": 0.05,
+    "finanzas": 0.03,
     "entretenimiento": 0.02,
-    "politica_latam": 0.02
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta Controversial + Emoji: `¿PREGUNTA EXPLOSIVA? 🤯/😱` (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticia Urgente/Actualidad + Emoji: `[Evento] HOY: ¡[Conclusión IMPACTANTE]! 😱/⚽` (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Anuncio de Gran Evento/Inicio Expectante: `¡Se acabó la espera! ¡El [Evento/Noticia]` (ej. '¡Se acabó la espera! ¡El...')",
-    "Impacto/Shock + Emoji: `[Evento]: ¡[Detalle CLAVE]! 😱/🤯` (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
-    "Dato Específico + Logro/Historia: `Con solo [Número] años, [Nombre]` (ej. 'Con solo 17 años, Lamine...')",
-    "Magnitud de Tragedia/Crisis: `[Evento devastador] en [Lugar]: [Número] muertos...` (ej. 'Terremoto devastador en Colombia: 132 muertos...')"
+    "Gancho de Urgencia/Anticipación: Inicia con frases que generan expectativa o fin de espera. (Ej: \"¡Se acabó la espera!\")",
+    "Gancho de Dato Sorprendente/Personalidad Clave: Resalta una característica inusual o un actor principal. (Ej: \"Con solo 17 años, Lamine...\")",
+    "Gancho de Pregunta Intrigante/Conflicto: Plantea una cuestión impactante o un posible conflicto. (Ej: \"¿ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Gancho de Noticia Dramática con Cifra: Presenta un evento serio con un número significativo. (Ej: \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Gancho de Noticia Deportiva \"Shocker\": Anuncia un resultado o situación deportiva inesperada con exclamaciones. (Ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "Gancho de Evento de Alto Impacto Regional: Destaca una noticia con consecuencias en una región específica. (Ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")"
   ],
   "avoid_hooks": [
-    "Afirmaciones planas sin emoción o pregunta (ej. 'Brasil y Noruega empatan 0-0')",
-    "Inicio de frase genérico sin un elemento disruptivo (ej. 'Sidny Lopes Cabral acaba de')",
-    "Contenido predictivo o aburrido que revela el resultado sin intriga (ej. 'Brasil y Noruega empatan')"
+    "Declaración de Resultados Secos: Simplemente enuncia un resultado sin generar intriga o sorpresa. (Ej: \"Brasil y Noruega empatan 0-0\")",
+    "Inicios con Nombres Propios sin Contexto Atractivo: Introduce a una persona sin un evento o característica intrigante de inmediato. (Ej: \"Sidny Lopes Cabral acaba de\")",
+    "Hooks Descriptivos sin Emoción: Describen un evento de forma plana y sin adjetivos o exclamaciones que generen interés. (Ej: \"Brasil y Noruega empatan\")"
   ],
   "best_hora": 16,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar Nichos de Alta Tendencia y Rendimiento: Concentrar la creación de contenido en `deportes` (especialmente `mundial_2026` por su tendencia 867.0) e `ia_noticias` (por su dominancia en el TOP 10 y rendimiento consistente).",
-    "Optimizar Títulos con Preguntas Controversiales y Emojis: Utilizar ganchos en los títulos que planteen interrogantes impactantes (`¿PREGUNTA SHOCK?`) y emojis relevantes (`🤯`, `😱`, `⚽`) para maximizar la curiosidad.",
-    "Implementar Estrategia de Contenido Fragmentado: Desarrollar series de videos con etiquetas como `(PARTE 1)` o `(1/2)` para capitalizar la alta retención y el interés en la continuación, como se observó en varios videos del TOP 10.",
-    "Enfocar Noticias de Impacto con Datos Cuantificables: Para el nicho `ia_noticias`, destacar eventos de gran magnitud y la inclusión de cifras específicas (ej., '132 muertos') para amplificar la urgencia y el interés.",
-    "Evitar Hooks Genéricos o Demasiado Explicativos: Descartar el uso de ganchos que revelen el desenlace de forma directa o carezcan de emoción, ya que esto ha correlacionado con videos de bajo rendimiento.",
-    "Recopilar Datos sobre la Duración Óptima: Dado que no se dispone de datos de duración, es crucial empezar a registrar esta métrica para identificar la duración ideal de los Shorts en futuras iteraciones."
+    "Priorizar el contenido relacionado con el fútbol y noticias deportivas de alto impacto, especialmente si giran en torno a eventos como el Mundial 2026, dado su \"score\" de 1.089 y \"trend\" de 867.0.",
+    "Continuar con el formato de noticias de impacto del nicho `ia_noticias`, utilizando títulos que incluyan interrogantes (ej: \"¿FINAL ENTREGADA? 🤯\") o alusiones a partes (ej: \"(PARTE 1)\"), ya que este patrón ha generado las vistas más altas y consistentemente ocupa el TOP 10.",
+    "Implementar ganchos que generen urgencia, anticipación o revelen detalles sorprendentes de figuras clave, como \"¡Se acabó la espera!\" o \"Con solo X años, Y...\", basándose en los hooks más efectivos con altas `avg_views`."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La tendencia de crecimiento del nicho `mundial_2026` (867.0) es un indicador crítico de su potencial viral, sugiriendo una demanda extremadamente alta por contenido relacionado con futuros eventos deportivos de gran escala y la necesidad de capitalizar este tipo de noticias en auge."
+  "insight_semana": "La tendencia de crecimiento explosivo del nicho `mundial_2026` (867.0) lo posiciona como la mayor oportunidad de contenido, superando en proyección al consistente `ia_noticias`, cuya tendencia es ligeramente negativa (-0.95)."
 }
