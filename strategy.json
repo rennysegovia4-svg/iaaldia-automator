@@ -1,38 +1,42 @@
 {
   "updated": "2026-08-29",
-  "iteracion": 190,
+  "iteracion": 191,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "productividad": 0.05,
+    "negocios": 0.02,
+    "finanzas": 0.06,
+    "negocios_digitales": 0.06,
+    "cripto_inversiones": 0.06,
+    "productividad_ia": 0.06,
+    "entretenimiento": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Preguntas controversiales/conspirativas + Emoji de emoción (ej., '¿FINAL ENTREGADA? 🤯')",
-    "Urgencia + Evento específico/ubicación + Emoji de emoción (ej., 'LEICESTER SE VENDE HOY: ¿Adiós...? 😱')",
-    "Noticia de crisis de alto impacto + Cifras/magnitud específica (ej., 'Terremoto devastador en Colombia: 132 muertos')",
-    "Frases que generan anticipación/noticias de última hora (ej., '¡Se acabó la espera! ¡El')",
-    "Enfoque en talento emergente o narrativa específica (ej., 'Con solo 17 años, Lamine')",
-    "Reacción emocional fuerte + Liga/evento específico + Emoji (ej., 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "Pregunta Controversial + Emoji: `¿PREGUNTA EXPLOSIVA? 🤯/😱` (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Urgente/Actualidad + Emoji: `[Evento] HOY: ¡[Conclusión IMPACTANTE]! 😱/⚽` (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Anuncio de Gran Evento/Inicio Expectante: `¡Se acabó la espera! ¡El [Evento/Noticia]` (ej. '¡Se acabó la espera! ¡El...')",
+    "Impacto/Shock + Emoji: `[Evento]: ¡[Detalle CLAVE]! 😱/🤯` (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Dato Específico + Logro/Historia: `Con solo [Número] años, [Nombre]` (ej. 'Con solo 17 años, Lamine...')",
+    "Magnitud de Tragedia/Crisis: `[Evento devastador] en [Lugar]: [Número] muertos...` (ej. 'Terremoto devastador en Colombia: 132 muertos...')"
   ],
   "avoid_hooks": [
-    "Declaraciones puramente fácticas y poco dramáticas de resultados (ej., 'Brasil y Noruega empatan 0-0')",
-    "Introducciones genéricas y sin intriga a eventos (ej., 'Sidny Lopes Cabral acaba de')",
-    "Afirmaciones fácticas vagas que carecen de impacto o urgencia (ej., 'Brasil y Noruega empatan')"
+    "Afirmaciones planas sin emoción o pregunta (ej. 'Brasil y Noruega empatan 0-0')",
+    "Inicio de frase genérico sin un elemento disruptivo (ej. 'Sidny Lopes Cabral acaba de')",
+    "Contenido predictivo o aburrido que revela el resultado sin intriga (ej. 'Brasil y Noruega empatan')"
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar contenido deportivo controversial, especialmente temas relacionados con el 'Mundial 2026' y eventos impactantes en 'ia_noticias', dada su alta tendencia y dominio en el TOP 10.",
-    "Diseñar ganchos que generen intriga o controversia (preguntas con emojis 🤯), usen cifras impactantes (ej., '132 muertos'), o enfaticen la urgencia (ej., 'HOY', 'sacude LATAM').",
-    "Evitar ganchos meramente informativos o genéricos de resultados (ej., '0-0', 'acaba de'), ya que consistentemente resultan en 0 vistas.",
-    "Experimentar con horarios de publicación que han demostrado ser picos de audiencia, como la 1 AM (hora del video más visto) y el rango de 4-5 PM (16-17), ajustando según la audiencia objetivo."
+    "Priorizar Nichos de Alta Tendencia y Rendimiento: Concentrar la creación de contenido en `deportes` (especialmente `mundial_2026` por su tendencia 867.0) e `ia_noticias` (por su dominancia en el TOP 10 y rendimiento consistente).",
+    "Optimizar Títulos con Preguntas Controversiales y Emojis: Utilizar ganchos en los títulos que planteen interrogantes impactantes (`¿PREGUNTA SHOCK?`) y emojis relevantes (`🤯`, `😱`, `⚽`) para maximizar la curiosidad.",
+    "Implementar Estrategia de Contenido Fragmentado: Desarrollar series de videos con etiquetas como `(PARTE 1)` o `(1/2)` para capitalizar la alta retención y el interés en la continuación, como se observó en varios videos del TOP 10.",
+    "Enfocar Noticias de Impacto con Datos Cuantificables: Para el nicho `ia_noticias`, destacar eventos de gran magnitud y la inclusión de cifras específicas (ej., '132 muertos') para amplificar la urgencia y el interés.",
+    "Evitar Hooks Genéricos o Demasiado Explicativos: Descartar el uso de ganchos que revelen el desenlace de forma directa o carezcan de emoción, ya que esto ha correlacionado con videos de bajo rendimiento.",
+    "Recopilar Datos sobre la Duración Óptima: Dado que no se dispone de datos de duración, es crucial empezar a registrar esta métrica para identificar la duración ideal de los Shorts en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación explosiva de noticias deportivas de gran escala (Mundial, ligas principales) y noticias de crisis/actualidad (terremotos, eventos inesperados), ambas presentadas con ganchos emocionales y sensacionalistas, es la estrategia más efectiva para generar vistas masivas en Shorts, dominando por completo el TOP 10 de esta iteración."
+  "insight_semana": "La tendencia de crecimiento del nicho `mundial_2026` (867.0) es un indicador crítico de su potencial viral, sugiriendo una demanda extremadamente alta por contenido relacionado con futuros eventos deportivos de gran escala y la necesidad de capitalizar este tipo de noticias en auge."
 }
