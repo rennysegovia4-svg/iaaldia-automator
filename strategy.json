@@ -1,39 +1,37 @@
 {
   "updated": "2026-08-29",
-  "iteracion": 186,
+  "iteracion": 187,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.03,
+    "deportes": 0.5,
+    "ia_noticias": 0.4,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
     "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡[Evento] hoy! ¡[Impacto]!",
-    "¿[Hecho sorprendente]? 🤯",
-    "[Tema]: ¡[Noticia impactante]! 😱",
-    "La noticia de [tipo] que [verbo] [región] hoy ⚽",
-    "Con solo [Número] años, [Nombre] [Acción sorprendente]...",
-    "URGENTE: [Noticia principal] en [Lugar/Tema]"
+    "**[Pregunta/Afirmación impactante sobre evento o resultado] + [Emoji 🤯/😱]** (Ej. '¿FINAL ENTREGADA? 🤯', 'AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
+    "**[Noticia urgente/desastre] + [Ubicación/Número] + [Impacto]** (Ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "**[Acontecimiento deportivo clave] + [Sujeto/Equipo] + [Resultado Inesperado] + [Emoji ⚽/😱]** (Ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "**[Anticipación/Urgencia] + [Evento clave]** (Ej. '¡Se acabó la espera! ¡El', 'LEICESTER SE VENDE HOY')",
+    "**[Hecho sorprendente/Logro] + [Sujeto/Edad] + [Intriga]** (Ej. 'Con solo 17 años, Lamine')",
+    "**[Introducción directa y formal] + [Promesa de contenido relevante]** (Ej. 'Muy buenas tardes. Bienvenidos a')"
   ],
   "avoid_hooks": [
-    "Afirmaciones de hechos planos sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Introducciones genéricas o sin un gancho claro (ej. 'Sidny Lopes Cabral acaba de')",
-    "Oraciones incompletas o que no generan curiosidad inmediata"
+    "**Simplemente enunciar un hecho o resultado sin intriga, impacto o pregunta.** (Ej. 'Brasil y Noruega empatan 0-0')",
+    "**Hooks que son demasiado genéricos o incompletos, sin contexto suficiente para enganchar.** (Ej. 'Sidny Lopes Cabral acaba de')",
+    "**Descripciones literales y planas del contenido, sin generar curiosidad o urgencia ni usar emojis de impacto.**"
   ],
-  "best_hora": 1,
-  "duracion_optima": 0,
+  "best_hora": 16,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el desarrollo de contenido enfocado en noticias deportivas de alto impacto, especialmente aquellas relacionadas con eventos principales como el Mundial, dado que el nicho `mundial_2026` (absorbido por 'deportes' en la distribución de pesos) muestra la mayor tendencia (867.0) y `ia_noticias` (que incluye estos temas) domina el top 10.",
-    "Continuar e intensificar el uso de títulos y hooks que generen intriga y emoción, incorporando preguntas impactantes, exclamaciones y emojis relevantes (🤯, 😱, ⚽), un patrón consistente en los videos con más vistas.",
-    "Evitar categóricamente hooks que presenten hechos de forma plana o incompleta, ya que resultaron en 0 vistas, confirmando la necesidad de captar la atención desde el primer segundo con una narrativa que genere curiosidad o sorpresa.",
-    "Explorar la publicación de videos en la franja horaria de la 01:00 AM, que concentró la mayor cantidad de vistas agregadas en los videos top, sugiriendo una oportunidad para captar una audiencia nocturna o de madrugada.",
-    "Implementar la recopilación de datos sobre la duración de los Shorts de manera urgente para poder determinar la duración óptima y afinar la estrategia de contenido basada en el comportamiento real de la audiencia."
+    "**Priorizar contenido de Deportes/Mundial 2026 con hooks de alta intriga:** La combinación del nicho `mundial_2026` (avg_views 258, trend 867.0) con hooks impactantes como '¿FINAL ENTREGADA? 🤯' es la fórmula de mayor potencial actual.",
+    "**Maximizar el uso de ganchos basados en el 'shock' o la 'urgencia' para cualquier noticia:** Los emojis (🤯, 😱, ⚽) y palabras como 'SHOCK', 'DEVATADOR', 'SACUDE' en títulos y hooks son clave para el engagement, evidenciado por el TOP 10 de `ia_noticias`.",
+    "**Experimentar con horarios de publicación, incluyendo la tarde (16:00-17:00) y madrugada (01:00-02:00):** La hora 16 ha mostrado el mayor promedio de vistas (1298) por video individual en el top 10, mientras que la madrugada (01:00 y 02:00) concentra un alto volumen de vistas en múltiples videos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El interés en noticias de alto impacto y deportivas, particularmente sobre el Mundial, cuando se presenta con ganchos emocionales y títulos intrigantes, es el motor de crecimiento más significativo, reflejado en la tendencia de 867.0 para `mundial_2026` y la dominancia de `ia_noticias` en el top 10."
+  "insight_semana": "La extrema sensibilidad del contenido a la calidad del gancho es crucial: el nicho `mundial_2026`, a pesar de su enorme potencial (trend 867.0), muestra que un hook descriptivo resulta en 0 vistas, mientras que uno intrigante asegura alto rendimiento."
 }
