@@ -1,37 +1,39 @@
 {
   "updated": "2026-08-29",
-  "iteracion": 184,
+  "iteracion": 185,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.65,
     "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "finanzas": 0.008,
+    "entretenimiento": 0.008,
+    "negocios_digitales": 0.008,
+    "productividad_ia": 0.008,
+    "cripto_inversiones": 0.008,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¿[Evento Impactante]? 🤯 (PARTE X)",
-    "[Noticia o Hecho Impactante] ¡[Emoción/Reacción]! 😱",
-    "[Tipo de Noticia] que sacude LATAM hoy ⚽",
-    "¡Se acabó la espera! ¡El [Evento/Noticia]...",
-    "Con solo [Edad] años, [Nombre]...",
-    "[Hecho Sorprendente]: ¿Qué pasó? 🤯"
+    "¡[Exclamación de anticipación/expectativa]! [Tema clave/evento] (ej. '¡Se acabó la espera! ¡El')",
+    "[Dato o figura específica], [Generador de intriga o pregunta] (ej. 'Con solo 17 años, Lamine...')",
+    "[Noticia impactante/pregunta dramática sobre evento] 🤯 (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "[Declaración dramática/inesperada] ¡[Consecuencia impactante]! 😱 (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "La noticia [adjetivo] que sacude [lugar/tema] hoy ⚽ (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "[Evento actual] [ubicación]: [Consecuencia dramática/tragedia] (ej. 'Terremoto devastador en Colombia: ...')"
   ],
   "avoid_hooks": [
-    "Revelar el resultado completo: [Equipo A] [Score A]-[Score B] [Equipo B]",
-    "Revelar el resultado parcial/climax: [Equipo A] y [Equipo B] empatan",
-    "Declaraciones descriptivas sin intriga: [Nombre] acaba de [Acción]"
+    "Hooks que solo enuncian un hecho o resultado sin generar intriga o emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que son oraciones incompletas o genéricas que no captan la atención de inmediato (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que revelan el clímax o el desenlace sin ofrecer un 'por qué' o un 'cómo' intrigante."
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "**Priorizar el Contenido Deportivo de Actualidad y Controversia:** El nicho 'mundial_2026' y las noticias deportivas de 'ia_noticias' dominan el TOP 10, con el video de mayor rendimiento alcanzando 1325 vistas. Enfocarse en fútbol, rumores de mundiales y noticias que generen debate en LATAM es clave.",
-    "**Maximizar la Intriga en Títulos y Hooks:** Es fundamental utilizar preguntas retóricas y emojis emocionales (🤯, 😱, ⚽) en los títulos y hooks. 7 de los 10 videos más vistos emplean esta estrategia. Los hooks deben ser breves, generar expectativa ('¡Se acabó la espera!') y *nunca* revelar el resultado de la noticia.",
-    "**Experimentar con Horarios de Publicación Tempranos/Tardíos y Mediodía (UTC):** Aunque no hay una hora única dominante, los videos de alto rendimiento se distribuyen entre la 1 AM, 2 AM, 6 AM, 4 PM (16), 5 PM (17) y 9 PM (21) (horas UTC). Se recomienda probar distintos picos de actividad de la audiencia hispanohablante."
+    "Priorizar fuertemente el contenido del nicho de `deportes`, especialmente temas de actualidad tipo 'mundial_2026', dado su sobresaliente promedio de vistas (258) y su tendencia exponencial (867.0).",
+    "Implementar los patrones de ganchos más efectivos identificados, enfocándose en la anticipación, la intriga con datos específicos, preguntas dramáticas y el uso de emojis emocionales (🤯, 😱, ⚽) en los títulos.",
+    "Revisar la estrategia del nicho `ia_noticias` para contrarrestar su tendencia negativa (-0.6), buscando ángulos más novedosos o especializados que puedan revitalizar el interés del público.",
+    "Monitorear y probar publicaciones alrededor de la hora 16, ya que un video publicado en este horario obtuvo el promedio más alto de vistas individuales entre los top 10 (1298 vistas).",
+    "Es crucial comenzar a recolectar datos sobre la duración de los videos Shorts, ya que esta métrica es fundamental para optimizar el rendimiento y no está disponible actualmente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de temas deportivos altamente polémicos o noticiosos (especialmente fútbol y eventos como el Mundial), presentados con preguntas retóricas y emojis emocionales de impacto (🤯, 😱) en los títulos, es el motor principal del rendimiento, superando consistentemente a otros tipos de contenido y generando los videos con más vistas."
+  "insight_semana": "El rendimiento masivo del nicho 'deportes' (particularmente 'mundial_2026') con una tendencia de 867.0, combinado con ganchos de alta intriga y emoción, es el motor principal del crecimiento, mientras que la falta de intriga o la simple enunciación de hechos en los hooks resulta en fallos totales."
 }
