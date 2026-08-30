@@ -1,39 +1,39 @@
 {
-  "updated": "2026-08-29",
-  "iteracion": 192,
+  "updated": "2026-08-30",
+  "iteracion": 193,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.08,
-    "negocios": 0.05,
-    "finanzas": 0.03,
+    "ia_noticias": 0.4,
+    "finanzas": 0.02,
     "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.08,
     "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
-    "politica_latam": 0.01
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Gancho de Urgencia/Anticipación: Inicia con frases que generan expectativa o fin de espera. (Ej: \"¡Se acabó la espera!\")",
-    "Gancho de Dato Sorprendente/Personalidad Clave: Resalta una característica inusual o un actor principal. (Ej: \"Con solo 17 años, Lamine...\")",
-    "Gancho de Pregunta Intrigante/Conflicto: Plantea una cuestión impactante o un posible conflicto. (Ej: \"¿ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Gancho de Noticia Dramática con Cifra: Presenta un evento serio con un número significativo. (Ej: \"Terremoto devastador en Colombia: 132 muertos\")",
-    "Gancho de Noticia Deportiva \"Shocker\": Anuncia un resultado o situación deportiva inesperada con exclamaciones. (Ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
-    "Gancho de Evento de Alto Impacto Regional: Destaca una noticia con consecuencias en una región específica. (Ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")"
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "Muy buenas tardes. Bienvenidos a",
+    "¡URGENTE! [Noticia Impactante] que [efecto] 🤯",
+    "¿[Sujeto] [Verbo Fuerte] la [Evento]? 😱 (Parte X)",
+    "[Evento] hoy: ¡[Resultado Impactante]! ⚡"
   ],
   "avoid_hooks": [
-    "Declaración de Resultados Secos: Simplemente enuncia un resultado sin generar intriga o sorpresa. (Ej: \"Brasil y Noruega empatan 0-0\")",
-    "Inicios con Nombres Propios sin Contexto Atractivo: Introduce a una persona sin un evento o característica intrigante de inmediato. (Ej: \"Sidny Lopes Cabral acaba de\")",
-    "Hooks Descriptivos sin Emoción: Describen un evento de forma plana y sin adjetivos o exclamaciones que generen interés. (Ej: \"Brasil y Noruega empatan\")"
+    "Hooks que revelan directamente el resultado (ej: 'Brasil y Noruega empatan 0-0')",
+    "Hooks puramente descriptivos sin intriga (ej: 'Brasil y Noruega empatan')",
+    "Hooks que inician con un nombre propio sin contexto intrigante (ej: 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el contenido relacionado con el fútbol y noticias deportivas de alto impacto, especialmente si giran en torno a eventos como el Mundial 2026, dado su \"score\" de 1.089 y \"trend\" de 867.0.",
-    "Continuar con el formato de noticias de impacto del nicho `ia_noticias`, utilizando títulos que incluyan interrogantes (ej: \"¿FINAL ENTREGADA? 🤯\") o alusiones a partes (ej: \"(PARTE 1)\"), ya que este patrón ha generado las vistas más altas y consistentemente ocupa el TOP 10.",
-    "Implementar ganchos que generen urgencia, anticipación o revelen detalles sorprendentes de figuras clave, como \"¡Se acabó la espera!\" o \"Con solo X años, Y...\", basándose en los hooks más efectivos con altas `avg_views`."
+    "Priorizar la creación de contenido de `ia_noticias` y `deportes` (noticias de fútbol, Mundial), asignando una alta ponderación estratégica debido a su rendimiento consistente y potencial de tendencia.",
+    "Implementar la fragmentación de contenido utilizando '(PARTE X)' o '(X/X)' en los títulos, una táctica que ha demostrado generar vistas consistentemente altas (1325, 1298, 938 views).",
+    "Optimizar la hora de publicación para las 16h, ya que este horario ha mostrado el promedio de vistas más alto (1298 views) entre los videos de alto rendimiento.",
+    "Desarrollar títulos y hooks que generen intriga y urgencia mediante preguntas provocativas, exclamaciones y el uso estratégico de emojis (🤯, 😱, ⚽, ⚡).",
+    "Evitar hooks que revelen la información principal o el resultado directamente al inicio, como 'Brasil y Noruega empatan', ya que estos han resultado en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La tendencia de crecimiento explosivo del nicho `mundial_2026` (867.0) lo posiciona como la mayor oportunidad de contenido, superando en proyección al consistente `ia_noticias`, cuya tendencia es ligeramente negativa (-0.95)."
+  "insight_semana": "La marcada dicotomía entre la consistencia en el rendimiento del nicho `ia_noticias` (todos los TOP 10 videos) y el explosivo pero volátil `trend` de `mundial_2026` (867.0, pero con videos de 0 vistas) resalta la importancia de una estrategia de contenido dual: consolidar el éxito probado mientras se experimenta con temas de alta tendencia con un enfoque en ganchos de alta intriga."
 }
