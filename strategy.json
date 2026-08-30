@@ -1,39 +1,37 @@
 {
   "updated": "2026-08-30",
-  "iteracion": 196,
+  "iteracion": 197,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.45,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "finanzas": 0.1,
+    "negocios_digitales": 0.1,
+    "productividad_ia": 0.05,
+    "entretenimiento": 0.05,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡X sorprendió a Y! ¿Qué pasó realmente? 🤯",
-    "¡ÚLTIMA HORA! [Evento Impactante] sacude [Lugar] ⚡",
-    "¡SHOCK! [Sujeto] ELIMINADO: ¿Adiós a [Objetivo]? 😱",
-    "El secreto detrás de [Evento clave] (Parte 1)",
-    "¡Se acabó la espera! ¡El momento ha llegado...",
-    "Con solo [Edad], [Nombre] ha logrado lo imposible..."
+    "¿[Sujeto/Evento] [Verbo impactante]? 🤯 (Parte X)",
+    "[Noticia/Evento] [Adjetivo impactante]: [Cifra/Detalle impactante] y [consecuencia]!",
+    "¡[Evento dramático/Noticia] HOY: ¿[Consecuencia/Pregunta dramática]? 😱",
+    "La noticia [tipo] que sacude [región] hoy ⚽",
+    "¡Se acabó la espera! ¡El [evento/noticia impactante]!",
+    "Con solo [edad/condición única], [nombre/sujeto] logra [resultado sorprendente]"
   ],
   "avoid_hooks": [
-    "Hooks que revelan directamente el resultado (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Hooks que anticipan el desenlace sin generar intriga (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Hooks demasiado genéricos o que no transmiten urgencia/drama."
+    "Hooks que revelan directamente el resultado final de un evento o partido (ej. 'X empatan 0-0').",
+    "Hooks que inician una frase de forma incompleta o sin generar intriga (ej. 'X acaba de').",
+    "Hooks genéricos o declarativos que no utilicen elementos de sorpresa, urgencia o preguntas."
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido para el nicho 'ia_noticias' por su consistencia y dominio en el TOP 10 de videos.",
-    "Explorar contenido de 'deportes' (específicamente 'mundial_2026') con ganchos de alta intriga, dado su potencial viral ('trend' de 867.0) a pesar del riesgo de 0 views si el gancho falla.",
-    "Implementar títulos con la estrategia 'PARTE X' (Ej: '(PARTE 1)', '(1/2)') para fomentar la curiosidad y la visualización de series.",
-    "Enfocarse en ganchos y títulos que generen misterio, controversia o urgencia utilizando emojis como 🤯, 😱, ⚡, ⚽.",
-    "Publicar videos consistentemente alrededor de las 16:00 (4 PM), el horario que ha demostrado el promedio de vistas más alto en los videos top."
+    "Mantener una fuerte presencia en el nicho 'ia_noticias', ya que domina consistentemente los videos con más vistas y tiene un alto promedio de vistas (265 avg_views).",
+    "Explorar intensivamente el nicho 'deportes' (particularmente eventos con alto 'trend' como 'mundial_2026'), pero con una estrategia de hooks que generen intriga y eviten revelar el desenlace, dada su volatilidad y alto potencial (trend 867.0).",
+    "Priorizar la publicación de contenido a las 16:00 (4 PM), ya que este horario ha demostrado ser consistentemente el más efectivo para maximizar las vistas iniciales de los videos de alto rendimiento (1298 avg_views en TOP 10)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dicotomía entre el alto potencial viral de nichos trending (como 'mundial_2026') y su extrema sensibilidad al gancho: el éxito o fracaso (0 views) depende críticamente de la estrategia de intriga en el hook y título, mientras que 'ia_noticias' ofrece una base de rendimiento más estable y predecible."
+  "insight_semana": "El nicho 'mundial_2026' demuestra ser el de mayor potencial de crecimiento (mayor 'trend' con 867.0) pero también el más volátil, lo que subraya que la calidad del hook es el factor CRÍTICO para explotar su audiencia y evitar el fracaso total (3 de 5 videos con 0 views fueron de este nicho con hooks reveladores)."
 }
