@@ -1,37 +1,39 @@
 {
   "updated": "2026-08-31",
-  "iteracion": 205,
+  "iteracion": 206,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
     "productividad_ia": 0.05,
-    "cripto_inversiones": 0.04,
+    "cripto_inversiones": 0.02,
     "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "Argentina entregó la final del Mundial? 🤯",
-    "Terremoto devastador en [Lugar]: [Número] muertos",
-    "TARJETA ROJA MUNDIAL: ¡[Jugador/Equipo] ELIMINADO! 😱"
+    "[Pregunta emocional impactante] + [Emoji] + [Indicador de serie (opcional)] (Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)\")",
+    "[Noticia devastadora/chocante] en [Lugar]: [Dato clave/número] y [Consecuencia] (Ej. \"Terremoto devastador en Colombia: 132 muertos y emergencia n\")",
+    "[Anuncio de gran noticia deportiva/novedad regional] + [Emoji] (Ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
+    "[Acción dramática/impactante] + [Sujeto] + [Emoji] (Ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\")",
+    "[Declaración de urgencia/anticipación] + [Detalle del evento] (Basado en \"¡Se acabó la espera! ¡El\")",
+    "[Dato sorprendente/inesperado] sobre [Sujeto/Evento] (Basado en \"Con solo 17 años, Lamine\")"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Hooks puramente descriptivos sin emoción o pregunta (Ej. \"Brasil y Noruega empatan 0-0\")",
+    "Inicios de frase sin contexto o gancho claro (Ej. \"Sidny Lopes Cabral acaba de\")",
+    "Hechos simples sin implicación o dramatismo (Ej. \"Brasil y Noruega empatan\")"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar el nicho `deportes` (especialmente `mundial_2026`) y `ia_noticias` para contenido de alto impacto, controversia o noticias de última hora, ya que estos dominan el top 10 y los nichos con mejor rendimiento y tendencia.",
-    "Utilizar títulos con preguntas intrigantes, exclamaciones de sorpresa y la indicación de series o partes (ej. \"(PARTE 1)\", \"(1/2)\") para maximizar el engagement y el deseo de ver la continuación, como se observó en los videos de 1325 y 1298 vistas.",
-    "Publicar estratégicamente en las horas 1, 16 y 21, que han demostrado ser los momentos con mayor éxito para los videos con más vistas (1325, 1298 y 1244 vistas respectivamente), ofreciendo múltiples ventanas de oportunidad."
+    "Priorizar la creación de contenido en el nicho de deportes (especialmente temas de 'mundial_2026') y noticias generales de IA, dada su alta tasa de visualizaciones y tendencia positiva, aun con la volatilidad de los 0-views en el nicho de deportes.",
+    "Implementar títulos y hooks que generen fuerte emoción (uso de 🤯, 😱, ⚽) y que planteen preguntas intrigantes o anuncien noticias impactantes, como se observa en el TOP 10 de videos.",
+    "Experimentar con la publicación de más videos a la 1 AM (hora local), ya que este horario ha demostrado el mayor potencial para generar picos de vistas individuales.",
+    "Explorar la estrategia de series o partes (ej. '(PARTE 1)', '(1/2)') para temas complejos o de alto interés, con el fin de capitalizar la intriga y fomentar el seguimiento.",
+    "Investigar la duración óptima de los Shorts, ya que esta métrica no está disponible en los datos actuales, pero es crucial para el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `mundial_2026`, aunque volátil (con videos de 0 vistas), muestra el mayor potencial explosivo y una tendencia de crecimiento excepcional (867.0), indicando que el contenido sobre eventos deportivos masivos y controversias puede generar picos de audiencia significativos."
+  "insight_semana": "El canal depende en gran medida de noticias deportivas y generales generadas por IA, donde una ejecución precisa en los hooks y títulos (con emoción, intriga y datos clave) es fundamental para evitar videos con 0 vistas, especialmente en nichos de alto riesgo/alta recompensa como 'mundial_2026' que, aunque volátil, domina el rendimiento."
 }
