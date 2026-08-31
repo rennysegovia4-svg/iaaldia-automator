@@ -1,37 +1,42 @@
 {
   "updated": "2026-08-31",
-  "iteracion": 200,
+  "iteracion": 201,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
     "ia_noticias": 0.5,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.02,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Hooks que generan anticipación/urgencia (ej. \"¡Se acabó la espera! ¡El\")",
-    "Hooks que revelan un dato sorprendente o una estadística clave (ej. \"Con solo X años, Y...\")",
-    "Hooks en formato de titular noticioso directo y conciso (ej. \"Muy buenas tardes. Bienvenidos a...\")",
-    "Hooks en forma de pregunta impactante que generan misterio o controversia (ej. \"¿[Evento polémico]? 🤯\")",
-    "Hooks que anuncian un suceso dramático o un resultado inesperado con una exclamación (ej. \"[Sujeto] en SHOCK / ELIMINADO! 😱\")",
-    "Hooks que enfatizan el impacto o la magnitud de una noticia (ej. \"[Sujeto] que sacude [Región]...\")"
+    "Pregunta controversial/impactante + emoji (🤯, 😱)",
+    "Anuncio de evento crítico/inesperado + ubicación + impacto",
+    "Noticia urgente/relevante + área geográfica + hoy ⚽",
+    "Detalle sorprendente/récord + nombre/hecho específico",
+    "Urgencia/Anticipación + Evento clave (ej. ¡Se acabó la espera! El X)",
+    "Actualización de última hora/en vivo (ej. Muy buenas tardes/días)"
   ],
   "avoid_hooks": [
-    "Hooks puramente descriptivos de un evento sin impacto, controversia o pregunta (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks que carecen de elementos emocionales como intriga, sorpresa o urgencia",
-    "Hooks basados en información hipotética o no factual, que carecen de credibilidad y relevancia inmediata"
+    "Hooks que solo describen el contenido sin generar intriga o emoción",
+    "Hooks basados en eventos hipotéticos o no factuales",
+    "Hooks incompletos o demasiado genéricos"
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de noticias impactantes y actuales, especialmente en el ámbito deportivo o eventos de gran escala (ej. terremotos), categorizándolos bajo `ia_noticias` dado su dominio en el TOP 10.",
-    "Maximizar el uso de emojis de sorpresa (🤯, 😱) y un lenguaje dramático o controvertido en los títulos de los Shorts para generar intriga y aumentar la tasa de clics.",
-    "Implementar ganchos iniciales que creen anticipación, revelen un dato sorprendente o presenten la noticia con un tono urgente y directo para captar la atención en los primeros segundos."
+    "Priorizar la creación de contenido dentro de la categoría `ia_noticias` con un fuerte enfoque en noticias deportivas de actualidad, controversiales o de alto impacto, ya que todos los videos del TOP 10 pertenecen a esta categoría.",
+    "Utilizar títulos que generen intriga o controversia (ej. ¿ARGENTINA ENTREGÓ la Final...?) y considerar el formato de 'partes' (ej. `(PARTE 1)`, `(1/2)`) para fomentar la curiosidad y la visualización continua.",
+    "Programar las publicaciones predominantemente a las 16h, que registró el promedio de views más alto (1298) entre los videos del TOP 10, y explorar también los picos de las 1h y 21h.",
+    "Evitar categóricamente la creación de contenido hipotético o no factual y el uso de hooks puramente descriptivos, ya que resultaron consistentemente en 0 views y dañan la credibilidad.",
+    "Incorporar emojis relevantes y de alto impacto (🤯, 😱, ⚽) en los títulos y ganchos para aumentar la visibilidad y el atractivo emocional del short.",
+    "Dada la falta de datos sobre la duración de los videos, se recomienda comenzar a registrar esta métrica para futuras iteraciones y optimizar la estrategia de duración."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito dominante de la categoría `ia_noticias` se consolida cuando se enfoca en noticias deportivas de alta relevancia o controversia (ej. \"ARGENTINA ENTREGÓ la Final del Mundial?\") y eventos noticiosos impactantes (ej. \"Terremoto devastador en Colombia\"), utilizando títulos con emojis y lenguaje emocional para captar la atención de manera efectiva, lo que sugiere una fuerte preferencia de la audiencia por el contenido noticioso con un ángulo dramático y verificable."
+  "insight_semana": "La intersección de la categoría `ia_noticias` con temas deportivos de alta controversia y relevancia actual (ej. \"ARGENTINA ENTREGÓ la Final del Mundial?\") es la fórmula más potente para alcanzar picos de visualización en el canal, dominando el TOP 10 y superando significativamente a otros nichos."
 }
