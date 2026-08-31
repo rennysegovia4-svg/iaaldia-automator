@@ -525,7 +525,7 @@ def main():
 
         print(f"[4/6] Generando fondo con imágenes IA...")
         bg_path = generate_background(
-            script["guion"], script["keyword_video"], duration, tmp
+            script["guion"], script.get("keyword_video", ""), duration, tmp
         )
 
         print("[5/6] Ensamblando video...")
