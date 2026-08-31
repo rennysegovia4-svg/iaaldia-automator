@@ -1,41 +1,40 @@
 {
   "updated": "2026-08-31",
-  "iteracion": 203,
+  "iteracion": 204,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.45,
-    "mundial_2026": 0.35,
-    "productividad": 0.08,
-    "negocios": 0.02,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "cripto_inversiones": 0.01,
-    "productividad_ia": 0.01,
-    "deportes": 0.02,
+    "mundial_2026": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.05,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "deportes": 0.03,
     "entretenimiento": 0.02,
-    "politica_latam": 0.02
+    "politica_latam": 0.01,
+    "productividad": 0.05,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "Pregunta controversial con emoji de impacto (ej. \"¿ARGENTINA ENTREGÓ la Final? 🤯\")",
-    "Urgencia + Noticia relevante + Emoji (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
-    "Impacto directo con números y ubicación (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
-    "Evento/Persona específica + Consecuencia dramática + Emoji (ej. \"TARJETA ROJA MUNDIAL: ¡[Nombre] ELIMINADO! 😱\")",
-    "Gancho de anticipación o inicio de serie (ej. \"¡Se acabó la espera! ¡El [Evento]\" o \"(PARTE 1)\")",
-    "Gancho basado en edad/logro de figura relevante (ej. \"Con solo 17 años, Lamine [Logro]\")"
+    "Fórmula: Pregunta Controvertida con Emoji (Ej. \"¿FINAL ENTREGADA? 🤯\")",
+    "Fórmula: Noticia Shock/Tragedia con Detalles Numéricos y Geográficos (Ej. \"Terremoto devastador en [Lugar]: [Cifra] muertos...\")",
+    "Fórmula: Urgencia y Relevancia Geográfica en Deportes (Ej. \"La noticia deportiva que sacude [Región] hoy ⚽\")",
+    "Fórmula: Evento Clave + Consecuencia Dramática + Emoción (Ej. \"TARJETA ROJA MUNDIAL: ¡[Resultado Impactante]! 😱\")",
+    "Fórmula: Actualidad Inmediata (HOY) + Suceso Relevante + Pregunta de Intriga (Ej. \"LEICESTER SE VENDE HOY: ¿Adiós...? 😱\")",
+    "Fórmula: Declaración de Anticipación (Ej. \"¡Se acabó la espera! ¡El...\")"
   ],
   "avoid_hooks": [
-    "Demasiado descriptivo sin gancho emocional/sorpresa (Ej: \"Brasil y Noruega empatan 0-0\")",
-    "Mención de nombres poco conocidos sin contexto o impacto inmediato (Ej: \"Sidny Lopes Cabral acaba de\")",
-    "Resultado o hecho directo sin generar curiosidad o drama (Ej: \"Brasil y Noruega empatan\")"
+    "Patrón: Puramente descriptivos y sin emoción/intriga (Ej. \"Brasil y Noruega empatan 0-0\")",
+    "Patrón: Incompletos o demasiado vagos al inicio (Ej. \"Sidny Lopes Cabral acaba de\")",
+    "Patrón: Anuncio de falta de acción sin enmarcarlo como 'shock' o 'sorpresa' intriga."
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrarse en contenido de noticias deportivas controversiales y de última hora bajo los nichos `ia_noticias` y `mundial_2026`, que generaron el 100% del TOP 10 de videos.",
-    "Implementar hooks de intriga, pregunta o fuerte emoción (con emojis como 🤯, 😱) para maximizar el CTR, ya que los hooks descriptivos resultaron en 0 vistas.",
-    "Probar horarios de publicación en la madrugada y la tarde-noche (ej. 1, 16, 21) para captar múltiples segmentos de audiencia y replicar los picos de vistas observados (hasta 1325).",
-    "Experimentar con series de videos o contenido en partes (ej. \"(PARTE 1)\", \"(1/2)\") para ciertos temas, replicando la estrategia de videos de alto rendimiento y fomentando la retención."
+    "Capitalizar el potencial del nicho `mundial_2026` creando más contenido, dado su alto promedio de vistas (258) y su masiva tendencia positiva (867.0), identificando patrones de los videos exitosos dentro de este nicho.",
+    "Continuar utilizando títulos que contengan preguntas controvertidas, emojis de sorpresa (🤯, 😱) y marcadores de serie (ej. \"(PARTE 1)\", \"(1/2)\"), ya que consistentemente aparecen en los videos de `ia_noticias` con más vistas.",
+    "Priorizar las horas de publicación alrededor de la 1, 16 y 21, con un enfoque particular en la 1 AM, que ha mostrado el pico de vistas individual más alto (1325), para maximizar la visibilidad inicial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito del canal está casi exclusivamente ligado a noticias deportivas controversiales y de alta urgencia, principalmente categorizadas como `ia_noticias` o `mundial_2026`, demostrando que el *tema* y el *gancho* son más críticos que la categoría amplia en sí misma, con un énfasis claro en eventos globales como el Mundial."
+  "insight_semana": "El nicho `mundial_2026` muestra una tendencia de crecimiento extraordinariamente alta (867.0) y el promedio de vistas más alto (258), lo que indica un potencial de viralidad significativo a pesar de la presencia de videos con 0 vistas, y contradice la tendencia negativa del nicho `ia_noticias` (-1.0) que actualmente domina el TOP 10."
 }
