@@ -1,38 +1,41 @@
 {
   "updated": "2026-08-31",
-  "iteracion": 202,
+  "iteracion": 203,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.2,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "ia_noticias": 0.45,
+    "mundial_2026": 0.35,
+    "productividad": 0.08,
+    "negocios": 0.02,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "deportes": 0.02,
+    "entretenimiento": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Urgencia/Exclamación]! ¡[Evento Anticipado/Promesa]!",
-    "[Dato Específico/Edad/Nombre] + [Logro/Impacto Inesperado]",
-    "[Pregunta Controversial] + [Evento] + [Emoji Emocional]",
-    "[Tipo de Noticia] + [Lugar] + [Consecuencia/Cifra] + [Urgencia]",
-    "[Noticia Específica] + [Impacto Regional/Tiempo] + [Emoji Relevante]",
-    "[Evento Clave] + [Sujeto/Resultado] + [Emoji Shock]"
+    "Pregunta controversial con emoji de impacto (ej. \"¿ARGENTINA ENTREGÓ la Final? 🤯\")",
+    "Urgencia + Noticia relevante + Emoji (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
+    "Impacto directo con números y ubicación (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Evento/Persona específica + Consecuencia dramática + Emoji (ej. \"TARJETA ROJA MUNDIAL: ¡[Nombre] ELIMINADO! 😱\")",
+    "Gancho de anticipación o inicio de serie (ej. \"¡Se acabó la espera! ¡El [Evento]\" o \"(PARTE 1)\")",
+    "Gancho basado en edad/logro de figura relevante (ej. \"Con solo 17 años, Lamine [Logro]\")"
   ],
   "avoid_hooks": [
-    "Purely Descriptive Factual (for non-factual content)",
-    "Short, Incomplete Descriptive",
-    "Ambiguous/Incomplete Context"
+    "Demasiado descriptivo sin gancho emocional/sorpresa (Ej: \"Brasil y Noruega empatan 0-0\")",
+    "Mención de nombres poco conocidos sin contexto o impacto inmediato (Ej: \"Sidny Lopes Cabral acaba de\")",
+    "Resultado o hecho directo sin generar curiosidad o drama (Ej: \"Brasil y Noruega empatan\")"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar noticias deportivas de alta controversia o tendencia, como eventos de Mundiales o ligas importantes, ya que 9 de los 10 videos principales son 'ia_noticias' con temática deportiva.",
-    "Evitar categóricamente la publicación de contenido hipotético o no factual, especialmente en el ámbito deportivo, dado que este tipo de videos consistently ha resultado en 0 views.",
-    "Desarrollar hooks que generen intriga, urgencia, emoción o planteen una pregunta controversial, capitalizando el impacto inmediato de noticias específicas y virales.",
-    "Considerar la publicación en horas tempranas del día (como la 1 AM o 6 AM), ya que estas franjas han demostrado ser efectivas para los videos de mayor visualización en el TOP 10."
+    "Concentrarse en contenido de noticias deportivas controversiales y de última hora bajo los nichos `ia_noticias` y `mundial_2026`, que generaron el 100% del TOP 10 de videos.",
+    "Implementar hooks de intriga, pregunta o fuerte emoción (con emojis como 🤯, 😱) para maximizar el CTR, ya que los hooks descriptivos resultaron en 0 vistas.",
+    "Probar horarios de publicación en la madrugada y la tarde-noche (ej. 1, 16, 21) para captar múltiples segmentos de audiencia y replicar los picos de vistas observados (hasta 1325).",
+    "Experimentar con series de videos o contenido en partes (ej. \"(PARTE 1)\", \"(1/2)\") para ciertos temas, replicando la estrategia de videos de alto rendimiento y fomentando la retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito masivo se concentra en 'ia_noticias' cuando el tema es deportivo y controvertido (especialmente Mundiales), contrastando fuertemente con el fracaso total del contenido hipotético, lo que subraya la primacía de la veracidad y la relevancia temática en YouTube Shorts."
+  "insight_semana": "El éxito del canal está casi exclusivamente ligado a noticias deportivas controversiales y de alta urgencia, principalmente categorizadas como `ia_noticias` o `mundial_2026`, demostrando que el *tema* y el *gancho* son más críticos que la categoría amplia en sí misma, con un énfasis claro en eventos globales como el Mundial."
 }
