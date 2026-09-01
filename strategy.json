@@ -1,40 +1,37 @@
 {
   "updated": "2026-09-01",
-  "iteracion": 208,
+  "iteracion": 209,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.45,
-    "finanzas": 0.04,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.04,
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
     "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Exclamación de urgencia o anticipación! Ej: \"¡Se acabó la espera! ¡El...\"",
-    "Pregunta retórica o conspirativa con emoji de impacto. Ej: \"¿[Hecho impactante] ocurrió así? 🤯\"",
-    "Noticia de impacto con dato numérico clave. Ej: \"[Evento devastador]: [Número] muertos y [consecuencia]\"",
-    "Urgencia y actualidad deportiva. Ej: \"La noticia deportiva que sacude [región] hoy ⚽\"",
-    "Anuncio de eliminación o suceso dramático con emoji de shock. Ej: \"¡[Nombre/Equipo] ELIMINADO! 😱\"",
-    "Hecho sorprendente o logro personal inesperado. Ej: \"Con solo [edad], [nombre] [logro sorprendente]\""
+    "¡Se acabó la espera! [Evento clave]",
+    "Con solo [edad/condición], [Nombre] [logro/noticia impactante]",
+    "[Afirmación impactante o pregunta]? 🤯/😱",
+    "La noticia [categoría] que sacude [región/tema] hoy ⚽",
+    "[Evento devastador] en [lugar]: [número] [consecuencia]",
+    "[Sujeto] [Verbo de acción drástica] HOY: ¡[Consecuencia]! 😱"
   ],
   "avoid_hooks": [
-    "Resultados de empate sin emoción o contexto. Ej: \"[Equipo1] y [Equipo2] empatan 0-0\"",
-    "Afirmaciones blandas o meramente descriptivas sin intriga. Ej: \"[Equipo1] y [Equipo2] empatan\"",
-    "Inicios de noticia descriptivos y sin gancho emocional. Ej: \"[Nombre] acaba de [acción neutral]\""
+    "Declaraciones de resultados deportivos sin impacto emocional (ej. 'Brasil y Noruega empatan 0-0')",
+    "Presentación de un nombre sin contexto o relevancia inmediata (ej. 'Sidny Lopes Cabral acaba de')",
+    "Descripciones de eventos que no generan curiosidad o urgencia (ej. 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' enfocado en deportes polémicos, resultados impactantes o noticias de tragedias/eventos de gran escala, dado que el 100% de los videos en el Top 10 pertenecen a este nicho.",
-    "Implementar la estrategia de dividir temas complejos o controversiales en partes (ej. 'PARTE 1', '(1/2)') en los títulos para generar intriga y fomentar el visionado de contenido relacionado, como se observó en los videos de Argentina con 1325 y 1298 vistas.",
-    "Utilizar de forma consistente emojis de impacto (🤯, 😱, ⚽) en los títulos, ya que se encuentran en la mayoría de los videos de alto rendimiento, para captar la atención rápidamente en el feed de Shorts.",
-    "Aprovechar las franjas horarias de mayor rendimiento, que se concentran en la madrugada (horas 1, 2, 6) y al final de la tarde/noche (horas 16, 17, 21, 23), para la publicación de contenido de alto impacto.",
-    "Evitar la creación de hooks genéricos o puramente descriptivos de resultados sin generar intriga o emoción, ya que este patrón se asocia con los videos de 0 vistas.",
-    "Iniciar la recolección de datos sobre la duración de los videos para poder determinar una 'duracion_optima' basada en evidencia, ya que actualmente no se dispone de esta métrica crucial."
+    "Priorizar la creación de contenido de noticias de alto impacto, especialmente en el ámbito deportivo y de eventos con giros sorprendentes o controversias, replicando el éxito de los temas de 'Argentina entregó la Final' con más de 1200 vistas.",
+    "Emplear títulos con emojis de fuerte impacto (🤯, 😱, ⚽) y que formulen preguntas o anuncien eventos chocantes para captar la atención inmediatamente, como se observa en 8 de los 10 videos más vistos.",
+    "Estrategia de lanzamiento: Aprovechar la inmediatez de las noticias incluyendo 'hoy' en los títulos y considerar la división de historias complejas en 'partes' (ej. (1/2)) para mantener el interés y la expectativa, emulando los videos de Argentina que usaron esta táctica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside en la consistencia del nicho 'ia_noticias' con enfoque en controversias deportivas y noticias de impacto, utilizando preguntas retóricas, datos numéricos y una clara segmentación en 'partes' para maximizar la intriga y la retención, priorizando la publicación en horarios de alta actividad de la audiencia."
+  "insight_semana": "La viralidad en Shorts se impulsa fuertemente por la capacidad de transformar noticias de último momento, especialmente deportivas o de eventos dramáticos, en un relato intrigante con títulos que evocan urgencia y sorpresa. Esto es evidente ya que el 100% del top 10 proviene del nicho 'ia_noticias', con picos de vistas muy superiores al promedio general."
 }
