@@ -1,38 +1,42 @@
 {
   "updated": "2026-09-01",
-  "iteracion": 211,
+  "iteracion": 212,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.46,
     "ia_noticias": 0.35,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.05
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02,
+    "productividad": 0.05,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "Anticipación Extrema / Anuncio Urgente (ej. '¡Se acabó la espera! El...')",
-    "Pregunta Controversial con Emoción (ej. '¿[Evento/País] entregó la final? 🤯')",
-    "Dato Específico Sorprendente / Revelación (ej. 'Con solo [edad/cifra], [nombre/evento]...')",
-    "Noticia de Tragedia/Desastre con Cifras (ej. 'Terremoto devastador: [muertes/consecuencia]...')",
-    "Anuncio de Eliminación/Venta Drástica (ej. '[Equipo/Persona] ELIMINADO/SE VENDE HOY! 😱')",
-    "Afirmación de Shock / Cambio de Liderazgo (ej. '[Equipo] CEDE LIDERATO ¡SHOCK! 🤯')"
+    "Gancho de Anticipación y Noticia Urgente: Frases que generan expectativa para un evento clave (ej. \"¡Se acabó la espera! ¡El\" - 867 views).",
+    "Gancho de Logro Inesperado o Joven Talento: Destaca hazañas individuales o el impacto de la juventud (ej. \"Con solo 17 años, Lamine\" - 740 views).",
+    "Gancho de Introducción Noticiosa Estándar: Apertura directa y profesional para contenido informativo (ej. \"Muy buenas tardes. Bienvenidos a\" - 374 views).",
+    "Gancho de Pregunta Retórica Controversial: Usa una pregunta que insinúa una conspiración o un resultado inesperado sobre un evento masivo.",
+    "Gancho de Impacto con Emoción/Exclamación: Incluye palabras de shock o exclamaciones sobre un evento deportivo o noticioso clave, a menudo con emojis.",
+    "Gancho de Noticia de Última Hora o Catástrofe Localizada: Comienza mencionando un evento actual de gran impacto, frecuentemente geolocalizado."
   ],
   "avoid_hooks": [
-    "Descripción plana de un evento sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmación directa de un hecho sin contexto dramático (ej. 'Brasil y Noruega empatan')",
-    "Noticia factual sin generar curiosidad o emoción (ej. 'Sidny Lopes Cabral acaba de')"
+    "Resultados de partidos poco atractivos o sin impacto: Anunciar un empate sin goles de forma directa y sin generar expectativa (ej. \"Brasil y Noruega empatan 0-0\").",
+    "Nombres/Eventos desconocidos sin contexto impactante: Introducir un nombre propio o un evento sin un gancho que justifique su importancia (ej. \"Sidny Lopes Cabral acaba de\").",
+    "Declaraciones planas que revelan el clímax: Ganchos que desvelan el resultado completo o el punto clave sin dejar intriga."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar contenido de Noticias de Alto Impacto Deportivo (nicho 'deportes', especialmente 'mundial_2026') y 'ia_noticias' que cubran eventos deportivos o tragedias con gran resonancia, ya que generan las mayores vistas y tendencias de viralidad (trend de 867.0).",
-    "Diseñar títulos y ganchos que generen intriga y emoción desde el primer segundo, utilizando preguntas controversiales, exclamaciones de shock (🤯, 😱) y palabras clave como 'ENTREGÓ', 'ELIMINADO', 'SE VENDE', 'SACUDE', 'SHOCK'. Evitar ganchos descriptivos o planos.",
-    "Experimentar con la publicación de videos en horas de madrugada, específicamente alrededor de la Hora 1 (1 AM), ya que ha demostrado ser consistentemente exitosa, produciendo los videos con el rendimiento individual más alto (1325 y 1065 vistas).",
-    "Enfocarse en la actualidad y relevancia inmediata de las noticias. Los temas más exitosos son aquellos que están ocurriendo en el momento o que tienen un impacto directo en la audiencia de LATAM (ej. Terremotos, Mundial, Ligas deportivas)."
+    "Priorizar fuertemente el nicho de deportes (especialmente sub-nichos como 'mundial_2026') debido a su excepcional `trend` de 867.0 y buen promedio de vistas (258), enfocándose en eventos de alta relevancia en tiempo real.",
+    "Mantener una estrategia consistente en 'ia_noticias', pero con un enfoque más agudo en noticias deportivas o catástrofes de alto impacto, ya que dominan el TOP 10 de videos y demuestran un fuerte potencial de vistas.",
+    "Implementar ganchos altamente efectivos de anticipación y logro/sorpresa, que han demostrado generar un promedio de vistas significativamente superior (hasta 867 vistas) en comparación con ganchos genéricos.",
+    "Concentrar la publicación de videos en la Hora 1 (1 AM), la Hora 16 (4 PM) y la Hora 21 (9 PM), ya que estas franjas horarias han producido los videos con mayor rendimiento individual en el TOP 10.",
+    "Evitar categóricamente ganchos que revelen resultados deportivos de forma plana o introduzcan temas poco conocidos sin un contexto que genere intriga, dado su rendimiento nulo en vistas.",
+    "Comenzar a recopilar datos detallados sobre la duración de los videos para identificar una `duracion_optima` basada en evidencia empírica en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' demuestra una consistencia excepcional al acaparar el 100% del top 10 de videos con un alto promedio de vistas (242). Sin embargo, el nicho 'mundial_2026' (dentro de 'deportes') exhibe un potencial viral explosivo mucho mayor, con un 'trend' de 867.0 frente al 9.55 de 'ia_noticias', indicando que si bien 'ia_noticias' es una apuesta segura para views constantes, 'mundial_2026' es el nicho de alto riesgo y alta recompensa para videos que pueden volverse masivamente virales."
+  "insight_semana": "A pesar de que el nicho 'ia_noticias' domina el TOP 10 de videos, su `trend` actual negativo (-1.0) y un `avg_views` de 208, contrasta con el nicho de deportes (ej. `mundial_2026`) que, aunque con menos volumen, presenta un `trend` viral de 867.0 y un `avg_views` de 258, indicando un cambio en el potencial de crecimiento explosivo hacia contenido deportivo específico y altamente relevante."
 }
