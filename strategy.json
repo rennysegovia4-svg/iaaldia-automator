@@ -1,42 +1,37 @@
 {
   "updated": "2026-09-01",
-  "iteracion": 212,
+  "iteracion": 213,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.46,
-    "ia_noticias": 0.35,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
+    "ia_noticias": 0.45,
+    "deportes": 0.25,
+    "finanzas": 0.1,
+    "entretenimiento": 0.07,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.04,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.02,
-    "productividad": 0.05,
-    "negocios": 0.02
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Gancho de Anticipación y Noticia Urgente: Frases que generan expectativa para un evento clave (ej. \"¡Se acabó la espera! ¡El\" - 867 views).",
-    "Gancho de Logro Inesperado o Joven Talento: Destaca hazañas individuales o el impacto de la juventud (ej. \"Con solo 17 años, Lamine\" - 740 views).",
-    "Gancho de Introducción Noticiosa Estándar: Apertura directa y profesional para contenido informativo (ej. \"Muy buenas tardes. Bienvenidos a\" - 374 views).",
-    "Gancho de Pregunta Retórica Controversial: Usa una pregunta que insinúa una conspiración o un resultado inesperado sobre un evento masivo.",
-    "Gancho de Impacto con Emoción/Exclamación: Incluye palabras de shock o exclamaciones sobre un evento deportivo o noticioso clave, a menudo con emojis.",
-    "Gancho de Noticia de Última Hora o Catástrofe Localizada: Comienza mencionando un evento actual de gran impacto, frecuentemente geolocalizado."
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "Muy buenas tardes. Bienvenidos a",
+    "Pregunta Controversial + Impacto Emocional (ej. ¿[Evento] ENTREGADO? 🤯)",
+    "Noticia Urgente + Shock + Emoji (ej. [Equipo] [Suceso] ¡SHOCK! 😱)",
+    "Noticia de Alto Impacto Factual (ej. Terremoto devastador en [Lugar]: [Número] muertos)"
   ],
   "avoid_hooks": [
-    "Resultados de partidos poco atractivos o sin impacto: Anunciar un empate sin goles de forma directa y sin generar expectativa (ej. \"Brasil y Noruega empatan 0-0\").",
-    "Nombres/Eventos desconocidos sin contexto impactante: Introducir un nombre propio o un evento sin un gancho que justifique su importancia (ej. \"Sidny Lopes Cabral acaba de\").",
-    "Declaraciones planas que revelan el clímax: Ganchos que desvelan el resultado completo o el punto clave sin dejar intriga."
+    "Descripciones demasiado fácticas y sin emoción (ej. Brasil y Noruega empatan 0-0)",
+    "Descripciones breves y genéricas de eventos (ej. Brasil y Noruega empatan)",
+    "Frases que inician una narración sin intriga (ej. Sidny Lopes Cabral acaba de)"
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el nicho de deportes (especialmente sub-nichos como 'mundial_2026') debido a su excepcional `trend` de 867.0 y buen promedio de vistas (258), enfocándose en eventos de alta relevancia en tiempo real.",
-    "Mantener una estrategia consistente en 'ia_noticias', pero con un enfoque más agudo en noticias deportivas o catástrofes de alto impacto, ya que dominan el TOP 10 de videos y demuestran un fuerte potencial de vistas.",
-    "Implementar ganchos altamente efectivos de anticipación y logro/sorpresa, que han demostrado generar un promedio de vistas significativamente superior (hasta 867 vistas) en comparación con ganchos genéricos.",
-    "Concentrar la publicación de videos en la Hora 1 (1 AM), la Hora 16 (4 PM) y la Hora 21 (9 PM), ya que estas franjas horarias han producido los videos con mayor rendimiento individual en el TOP 10.",
-    "Evitar categóricamente ganchos que revelen resultados deportivos de forma plana o introduzcan temas poco conocidos sin un contexto que genere intriga, dado su rendimiento nulo en vistas.",
-    "Comenzar a recopilar datos detallados sobre la duración de los videos para identificar una `duracion_optima` basada en evidencia empírica en futuras iteraciones."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', especialmente si aborda temas deportivos de alta controversia o actualidad, dado que el 100% del TOP 10 pertenece a esta categoría.",
+    "Diseñar títulos que incorporen elementos de shock, preguntas controvertidas y emojis de sorpresa (🤯, 😱) para maximizar el engagement, siguiendo el patrón de los videos más vistos.",
+    "Experimentar con hooks que generen anticipación (\"¡Se acabó la espera! ¡El\") o que destaquen logros/detalles intrigantes sobre personas (\"Con solo 17 años, Lamine\"), ya que son los que mayor rendimiento han demostrado."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de que el nicho 'ia_noticias' domina el TOP 10 de videos, su `trend` actual negativo (-1.0) y un `avg_views` de 208, contrasta con el nicho de deportes (ej. `mundial_2026`) que, aunque con menos volumen, presenta un `trend` viral de 867.0 y un `avg_views` de 258, indicando un cambio en el potencial de crecimiento explosivo hacia contenido deportivo específico y altamente relevante."
+  "insight_semana": "La combinación ganadora es la difusión de 'ia_noticias' con un fuerte enfoque en temas deportivos de actualidad y controversia, utilizando títulos sensacionalistas y ganchos que evocan anticipación o intriga personal. Este formato y temática supera consistentemente a otros contenidos."
 }
