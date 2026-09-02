@@ -1,36 +1,41 @@
 {
   "updated": "2026-09-02",
-  "iteracion": 218,
+  "iteracion": 219,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.3,
-    "finanzas": 0.06,
-    "entretenimiento": 0.06,
-    "negocios_digitales": 0.06,
-    "productividad_ia": 0.06,
-    "cripto_inversiones": 0.06,
-    "politica_latam": 0.05
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "productividad": 0.05,
+    "finanzas": 0.04,
+    "negocios_digitales": 0.03,
+    "entretenimiento": 0.03,
+    "productividad_ia": 0.03,
+    "negocios": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta con intriga y emoji de shock: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
-    "Noticia impactante con emoción/exclamación: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\"",
-    "Gancho de anticipación o urgencia: \"¡Se acabó la espera! ¡El\"",
-    "Dato específico sorprendente o récord: \"Con solo 17 años, Lamine\"",
-    "Declaración alarmante o de crisis: \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\"",
-    "Actualidad con verbo de impacto: \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\""
+    "Anticipación e Impacto: \"¡Se acabó la espera! ¡El [evento crucial]...\" (promedio 867 vistas)",
+    "Dato Sorprendente o Logro Excepcional: \"Con solo [edad/condición], [persona/evento]...\" (promedio 740 vistas)",
+    "Introducción Directa y Profesional con Enfoque Noticioso: \"Muy buenas tardes. Bienvenidos a [información clave]...\" (promedio 374 vistas)",
+    "Pregunta Abierta que Genera Intriga Inmediata: \"¿[Evento/resultado sorprendente]? 🤯\"",
+    "Noticia de Impacto Geopolítico/Deportivo con Consecuencia Inmediata: \"[Evento grave/noticia deportiva] que sacude [región/comunidad]...\"",
+    "Declaración Controversial/Shock que Implica Consecuencias: \"[Entidad/persona] en [Situación Drástica]: ¡[Consecuencia Shock]! 😱\""
   ],
   "avoid_hooks": [
-    "Meramente descriptivos o informativos sin emoción/intriga: \"Brasil y Noruega empatan 0-0\"",
-    "Información incompleta o sin contexto inmediato de impacto: \"Sidny Lopes Cabral acaba de\""
+    "Información directa del resultado sin intriga: \"Brasil y Noruega empatan 0-0\" (0 vistas)",
+    "Información simplificada del resultado: \"Brasil y Noruega empatan\" (0 vistas)",
+    "Detalle específico sin contexto intrigante: \"Sidny Lopes Cabral acaba de\" (0 vistas)"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente los nichos de `deportes` (especialmente sub-nichos de alto trend como `mundial_2026`) y `ia_noticias`, ya que son los que demuestran el mayor potencial de vistas y consistencia, respectivamente.",
-    "Enfocarse en la creación de hooks que generen intriga, utilicen preguntas, incorporen emojis de sorpresa/shock, o creen una fuerte anticipación, evitando las descripciones planas que han demostrado resultar en 0 vistas.",
-    "Optimizar el horario de publicación para la Hora 1, ya que se ha consolidado como la ventana de mayor rendimiento, incluyendo el video más visto y la mayor concentración de videos en el TOP 10."
+    "Priorizar la producción de contenido en el nicho de `deportes` (específicamente `mundial_2026`) debido a su alto `trend` (867.0) y `avg_views` (258), aprovechando su potencial explosivo para generar picos de rendimiento.",
+    "Mantener una estrategia robusta en `ia_noticias`, ya que demuestra ser el nicho más fiable y consistente, dominando el 100% de los videos principales en el TOP 10 con un `avg_views` sólido de 257.",
+    "Optimizar las publicaciones para la Hora 1, que se consolida como la ventana de oportunidad con el video de mayor rendimiento individual (1325 vistas) y la mayor presencia consistente en el TOP 10 (3 videos).",
+    "Integrar ganchos que generen anticipación, sorpresa o intriga inmediata, siguiendo las fórmulas de los hooks más efectivos, y evitar descripciones planas o resultados directos que no motivan al swipe-up.",
+    "Empezar a registrar la duración de los videos para analizar su correlación con las vistas y determinar una `duracion_optima` en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de un nicho con alto potencial de tendencia (como `mundial_2026` dentro de `deportes`), junto con hooks que generan fuerte anticipación o impacto emocional, es el motor principal para alcanzar picos de vistas significativos, superando la consistencia de nichos como `ia_noticias` y dejando en evidencia la ineficacia de los hooks puramente descriptivos (0 vistas)."
+  "insight_semana": "El nicho `deportes` (específicamente `mundial_2026`) exhibe un `trend` de 867.0, un valor extraordinariamente alto en comparación con el resto de nichos (ej. `ia_noticias` con 9.9), lo que indica un potencial explosivo y la capacidad de generar picos de vistas masivos si se combinan con ganchos altamente efectivos, a pesar de que su promedio de vistas (258) es solo marginalmente superior al de `ia_noticias` (257)."
 }
