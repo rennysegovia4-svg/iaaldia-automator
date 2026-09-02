@@ -1,42 +1,37 @@
 {
   "updated": "2026-09-02",
-  "iteracion": 214,
+  "iteracion": 215,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.424,
-    "ia_noticias": 0.348,
-    "productividad": 0.092,
-    "negocios": 0.035,
-    "finanzas": 0.014,
-    "negocios_digitales": 0.014,
-    "cripto_inversiones": 0.014,
-    "productividad_ia": 0.014,
-    "deportes": 0.014,
-    "entretenimiento": 0.014,
-    "politica_latam": 0.014
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Gancho de urgencia y expectación con exclamación inicial (ej. \"¡Se acabó la espera! ¡El\")",
-    "Gancho de detalle específico y sorprendente con mención de edad/logro (ej. \"Con solo 17 años, Lamine\")",
-    "Gancho de bienvenida formal para noticias/información (ej. \"Muy buenas tardes. Bienvenidos a\")",
-    "Fórmula de pregunta impactante con emoji de emoción (ej. \"¿FINAL ENTREGADA? 🤯\")",
-    "Fórmula de noticia urgente y de gran impacto/localización (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
-    "Fórmula de evento específico de alto riesgo/desenlace con emoji de asombro (ej. \"¡Gamezking ELIMINADO! 😱\")"
+    "¡[Exclamación de Urgencia/Anticipación]! ¡[Evento clave o novedad]!",
+    "[Hecho Sorprendente/Específico] de [Persona/Objeto] [Detalle impactante].",
+    "¿[Evento o Rumor Impactante] [Verbo de Acción/Duda] [Sujeto]? 🤯",
+    "La noticia [Tipo] que sacude [Lugar/Momento] [Emoji relevante]!",
+    "[Nombre de Liga/Equipo]: [Acción Impactante] ¡[Emoción Fuerte]! 😱",
+    "[Evento Catastrófico] en [Lugar]: [Número/Impacto] y [Consecuencia]!"
   ],
   "avoid_hooks": [
-    "Hooks demasiado descriptivos sin intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks genéricos y puramente informativos (ej. \"Brasil y Noruega empatan\")",
-    "Hooks con información incompleta o poco relevante para generar interés inmediato (ej. \"Sidny Lopes Cabral acaba de\")"
+    "Hooks que solo enuncian un resultado deportivo directo y sin intriga (ej. \"Brasil y Noruega empatan 0-0\").",
+    "Hooks que inician con un nombre propio poco conocido sin contexto inmediato de relevancia o impacto (ej. \"Sidny Lopes Cabral acaba de\").",
+    "Hooks excesivamente descriptivos o informativos que no generan una pregunta o emoción (ej. \"Brasil y Noruega empatan\")."
   ],
-  "best_hora": 16,
-  "duracion_optima": -1,
+  "best_hora": 1,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho `ia_noticias`, específicamente en noticias deportivas de alto impacto, dado que constituye el 100% de los videos del TOP 10.",
-    "Priorizar el uso de ganchos que generen urgencia, intriga o emoción intensa, incorporando preguntas y emojis de asombro/impacto, como se observa en los títulos de alto rendimiento y hooks efectivos.",
-    "Experimentar con el nicho `mundial_2026` únicamente cuando se tenga un gancho extremadamente potente y disruptivo, dada su alta volatilidad (promedio alto pero también videos con 0 vistas).",
-    "Optimizar las horas de publicación, priorizando la Hora 16 (con el promedio más alto en el TOP 10) y también considerando la Hora 1 y Hora 21 para alcanzar picos de audiencia.",
-    "Implementar un seguimiento de la duración de los videos para identificar un rango óptimo, ya que esta métrica no está disponible en los datos actuales."
+    "Priorizar la creación de contenido dentro de los nichos de 'deportes' (aprovechando el potencial de 'mundial_2026') e 'ia_noticias', que han demostrado ser los más efectivos en términos de vistas.",
+    "Enfocar la estrategia de hooks en generar intriga, urgencia y sorpresa, utilizando preguntas polémicas o revelaciones impactantes para captar la atención inmediata del espectador.",
+    "Concentrar las publicaciones en las franjas horarias de mayor rendimiento, específicamente a la Hora 1, Hora 16 y Hora 21, con una atención especial a la Hora 1 por su pico de rendimiento individual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La consistencia de la temática `ia_noticias` (especialmente deportiva) es el motor principal de los videos de alto rendimiento, mientras que nichos de alto potencial como `mundial_2026` exigen ganchos extremadamente efectivos para superar una alta probabilidad de 0 vistas."
+  "insight_semana": "El nicho 'mundial_2026' presenta el mayor potencial viral, evidenciado por su 'avg_views' de 258 y un 'trend' de 867, pero su éxito es extremadamente dependiente de la calidad del gancho, con ejemplos de 0 vistas que confirman la alta volatilidad del tema."
 }
