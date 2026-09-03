@@ -1,39 +1,37 @@
 {
-  "updated": "2026-09-02",
-  "iteracion": 220,
+  "updated": "2026-09-03",
+  "iteracion": 221,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "deportes": 0.4,
     "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
     "productividad_ia": 0.04,
     "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Fórmula 1: Exclamación de Urgencia/Expectación (ej. \"¡Se acabó la espera! ¡El\")",
-    "Fórmula 2: Destacar Logro Sorprendente/Personalidad Joven con Datos Concretos (ej. \"Con solo 17 años, Lamine\")",
-    "Fórmula 3: Apertura Formal de Noticiero con Tono Serio (ej. \"Muy buenas tardes. Bienvenidos a\")",
-    "Fórmula 4: Pregunta de Intriga con Emoji de Shock/Misterio (ej. \"¿FINAL ENTREGADA? 🤯\")",
-    "Fórmula 5: Noticia de Impacto con Datos Numéricos y Ubicación (ej. \"Terremoto devastador en Colombia: 132 muertos...\")",
-    "Fórmula 6: Afirmación Impactante sobre Deporte/Evento con Consecuencia Directa y Emoji de Shock (ej. \"¡Gamezking ELIMINADO! 😱\")"
+    "¡[Exclamación de Urgencia/Anticipación]! [Tema impactante]",
+    "[Dato sorprendente] sobre [Persona/Entidad]: [Consecuencia impactante]",
+    "¿[Pregunta Controversial/Afirmación impactante] [Evento/Sujeto]? 🤯",
+    "[Noticia Trágica/Catastrófica] en [Lugar]: [Dato/Consecuencia] [Emoji de tragedia/impacto]",
+    "[Evento Deportivo Específico]: ¡[Resultado/Acción Sorpresiva]! 😱",
+    "La noticia deportiva que sacude [Región/Hoy] ⚽"
   ],
   "avoid_hooks": [
-    "Revelar el resultado o el hecho principal directamente sin generar intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Ganchos excesivamente descriptivos o literales (ej. \"Brasil y Noruega empatan\")",
-    "Carencia de elementos emocionales o generadores de curiosidad (ej. \"Sidny Lopes Cabral acaba de\")"
+    "[Hecho noticioso sin emoción ni contexto ni resultado inesperado]",
+    "[Introducción de persona] + [Acción genérica/incompleta]",
+    "[Afirmación motivacional/autoayuda no relacionada con noticias/deportes]"
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` que abarque noticias deportivas de alto impacto, dado que 10 de 10 videos del TOP 10 se categorizan allí, muchos con temática deportiva.",
-    "Aprovechar la `Hora 1` como el principal momento de publicación, ya que consistentemente alberga el video más visto y la mayor cantidad de videos de alto rendimiento en el TOP 10.",
-    "Desarrollar ganchos que generen intriga, urgencia o sorpresa, utilizando exclamaciones, preguntas y emojis, evitando la revelación directa del contenido.",
-    "Explorar estratégicamente el nicho `mundial_2026` con ganchos de alta intriga y temática impactante, reconociendo su alto potencial viral (`trend` 867.0) pero también su volatilidad si el gancho no es efectivo.",
-    "Continuar monitoreando y experimentando con las Horas 16 y 21, que han demostrado tener potencial para videos individuales de alto rendimiento (1298 y 1244 vistas respectivamente), aunque con menor consistencia que la Hora 1."
+    "Priorizar el contenido de noticias deportivas que incorpore controversia, intriga o dramatismo, capitalizando el alto `trend` del nicho 'mundial_2026' y el éxito de 'ia_noticias' en esta temática.",
+    "Implementar ganchos que generen urgencia, sorpresa o formulen preguntas impactantes, replicando las estructuras de los `best_hooks` identificados para maximizar la retención inicial.",
+    "Concentrar la publicación de los videos de mayor potencial en la `Hora 16` para capitalizar su demostrado rendimiento pico por video, mientras se mantiene una estrategia en la `Hora 1` para un volumen consistente de visualizaciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La viralidad en temas deportivos de gran escala (como `mundial_2026` o noticias deportivas dentro de `ia_noticias`) es exponencialmente superior (trend de 867.0 para `mundial_2026` vs 10.0 para `ia_noticias`), lo que debe guiar la priorización de contenido para picos de audiencia, a pesar de la consistencia que `ia_noticias` ofrece."
+  "insight_semana": "El contenido de noticias deportivas, especialmente si incorpora controversia, dramatismo o resultados inesperados (como se ve en el éxito de 'ia_noticias' y el alto `trend` de 'mundial_2026'), es el impulsor principal de las vistas, pero exige ganchos de alta calidad para capitalizar su volatilidad y evitar rendimientos nulos."
 }
