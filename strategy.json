@@ -1,37 +1,41 @@
 {
   "updated": "2026-09-04",
-  "iteracion": 228,
+  "iteracion": 229,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "ia_noticias": 0.45,
+    "deportes": 0.35,
+    "productividad": 0.05,
+    "negocios": 0.03,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "entretenimiento": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Exclamación de anticipación/impacto]! ¡El [Evento Importante/Noticia clave]...",
-    "Con solo [Edad], [Nombre]: [Acción/Impacto relevante].",
-    "[Evento/Sujeto] [Verbo de intriga/controversia] [Objeto]? 🤯",
-    "[Noticia impactante/trágica]: [Consecuencia/Dato Numérico]...",
-    "[Ámbito/Liga]: [Sujeto] [Acción sorprendente] ¡[Reacción emotiva]! 😱/🤯",
-    "La noticia [Tipo] que [Verbo de impacto] [Región] hoy [Emoji clave]."
+    "Fórmula de Anticipación de Gran Evento (ej. '¡Se acabó la espera! ¡El')",
+    "Fórmula de Dato Impactante/Específico (ej. 'Con solo 17 años, Lamine', '132 muertos')",
+    "Fórmula de Pregunta Controversial/Explosiva + Emoji (ej. '¿FINAL ENTREGADA? 🤯', '¿Adiós a la Premier League? 😱')",
+    "Fórmula de Noticia Dramática con Localización y Cifra (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Fórmula de Shock/Cambio Inesperado en Deporte + Emoji (ej. 'AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯', '¡Gamezking ELIMINADO! 😱')",
+    "Fórmula de Noticia de Impacto Actual con Alcance y Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')"
   ],
   "avoid_hooks": [
-    "Hooks que son meramente descriptivos del resultado final (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks incompletos o que no generan intriga sobre el 'por qué' o 'cómo' (ej. 'Sidny Lopes Cabral acaba de').",
-    "Hooks que no incluyen elementos de sorpresa, controversia o urgencia."
+    "Reporte de resultado neutral sin drama (ej. 'Brasil y Noruega empatan 0-0')",
+    "Reporte de resultado genérico (ej. 'Brasil y Noruega empatan')",
+    "Mencionar un nombre sin contexto claro de impacto (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 16,
-  "duracion_optima": "insuficientes datos",
+  "best_hora": 1,
+  "duracion_optima": 55,
   "recomendaciones": [
-    "Priorizar contenido deportivo con intriga y controversia: Los videos sobre fútbol (Mundial, ligas, escándalos) dominan el TOP 10 cuando se formulan como preguntas o revelan resultados inesperados.",
-    "Optimizar ganchos para la intriga y la urgencia: Utilizar exclamaciones, anticipación y datos sorprendentes al inicio del video, evitando descripciones blandas que demuestran ser ineficaces.",
-    "Programar lanzamientos en horarios pico: La Hora 16 se confirma como el horario de mejor rendimiento promedio para videos en el TOP 10, seguido de cerca por la Hora 1 y la Hora 21."
+    "Priorizar la producción de contenido en el nicho 'ia_noticias', especialmente aquellos relacionados con noticias deportivas de controversia o eventos inesperados, ya que este nicho acapara el 100% del TOP 10 de videos.",
+    "Implementar activamente las fórmulas de ganchos identificadas como exitosas, enfocándose en la anticipación, datos específicos, preguntas controversiales, y emociones fuertes (shock, alarma), complementando con emojis de impacto.",
+    "Experimentar con la hora de publicación a la 1 AM, ya que es el horario más frecuente entre los videos con mejor rendimiento, sugiriendo una ventana algorítmica o de audiencia específica para el inicio de la viralización.",
+    "Aunque el nicho 'mundial_2026' muestra una alta volatilidad (alto potencial de vistas pero también alta tasa de fracaso), no debe descartarse; en su lugar, asegurar que los videos en este nicho utilicen los ganchos más potentes y temas de alta controversia o sorpresa.",
+    "Evitar ganchos que reportan resultados directos o poco dramáticos, así como menciones de nombres sin un contexto de impacto inmediato o controversial, para reducir la probabilidad de videos con 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias deportivas de alto impacto (controversia, resultados inesperados) y una ejecución de gancho que genere intriga o anticipe un gran evento es la fórmula más potente para generar vistas, como se observa en la dominancia de este tipo de contenido en el TOP 10 y la alta tendencia del nicho 'mundial_2026'."
+  "insight_semana": "La dicotomía en el rendimiento del contenido deportivo es clave: mientras 'ia_noticias' demuestra ser un formato consistentemente exitoso para noticias de impacto (especialmente deportivas), el nicho 'mundial_2026' presenta un alto potencial de vistas (trend de 867 para un hook) pero con un riesgo extremo de fracaso (todos los videos con 0 vistas son de este nicho), evidenciando que el tema y la ejecución del gancho son determinantes para el éxito."
 }
