@@ -1,39 +1,39 @@
 {
   "updated": "2026-09-04",
-  "iteracion": 233,
+  "iteracion": 234,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 0.9,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
     "productividad_ia": 0.05,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta controversial e impactante con emoji (ej. ¿FINAL ENTREGADA? 🤯)",
-    "Noticia bombazo o de shock con emoji de sorpresa/alarma (ej. ¡Gamezking ELIMINADO! 😱)",
-    "Anuncio de urgencia o fin de espera (ej. ¡Se acabó la espera! ¡El)",
-    "Mención de logro o situación inusual de figura clave (ej. Con solo 17 años, Lamine)",
-    "Noticia de tragedia o evento de gran impacto (ej. Terremoto devastador en Colombia)",
-    "Noticia deportiva relevante con efecto a nivel LATAM (ej. La noticia deportiva que sacude LATAM hoy ⚽)"
+    "Gancho de Anticipación Extrema / Anuncio Urgente (ej. '¡Se acabó la espera! ¡El')",
+    "Pregunta Controversial + Emoji de Impacto (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Impactante + Cifras/Hecho Específico (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Actualidad Deportiva + Relevancia Regional + Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Resultado Inesperado/Choque + Emoji (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Foco en Talento/Historia Individual Sobresaliente (ej. 'Con solo 17 años, Lamine')"
   ],
   "avoid_hooks": [
-    "Hooks que reportan empates o resultados no decisivos (ej. Brasil y Noruega empatan 0-0)",
-    "Hooks meramente informativos sin generar intriga o impacto emocional (ej. Sidny Lopes Cabral acaba de)",
-    "Hooks con información vaga o poco contextualizada que no invitan al clic."
+    "Anuncios de empates sin goles (ej. 'Brasil y Noruega empatan 0-0')",
+    "Resúmenes de eventos sin drama ni intriga (ej. 'Brasil y Noruega empatan')",
+    "Menciones de nombres o eventos poco conocidos sin contexto dramático ni explicación (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias deportivas, especialmente fútbol y eventos masivos como el Mundial 2026, dado que el 80% del TOP 10 pertenece a esta temática dentro de 'ia_noticias'.",
-    "Maximizar el uso de títulos y hooks que generen intriga o planteen preguntas impactantes, complementándolos con emojis de sorpresa (🤯, 😱) para aumentar la curiosidad y el engagement inicial.",
-    "Evitar rigurosamente la creación de contenido que reporte resultados de empate, particularmente 0-0, ya que han demostrado consistentemente cero vistas, indicando una falta total de interés de la audiencia.",
-    "Concentrar las publicaciones durante las primeras horas del día, específicamente la 1 AM (y probar 2 AM y 6 AM), ya que la mayoría de los videos más exitosos se publicaron en estas franjas horarias.",
-    "Explorar a fondo el nicho 'mundial_2026' o temáticas similares de eventos deportivos de gran escala, dado su excepcional 'trend' de 867.0, lo que sugiere un potencial de viralización explosivo."
+    "Priorizar la creación de contenido dentro del nicho de 'deportes' (especialmente fútbol y eventos de alto perfil como el Mundial) y 'ia_noticias' con un enfoque en noticias impactantes y de actualidad (tanto deportivas como de sucesos relevantes), ya que estos han demostrado ser los de mayor rendimiento.",
+    "Implementar títulos que contengan una pregunta controversial y/o un emoji de impacto (🤯, 😱) para generar intriga y clic, siguiendo el patrón de los videos de mayor rendimiento.",
+    "Evitar hooks y títulos que anuncien empates sin goles (ej. '0-0') o resúmenes poco emotivos, ya que estos han demostrado consistentemente no generar vistas, sugiriendo que la audiencia busca drama y resultados decisivos.",
+    "Mantener la hora de publicación alrededor de la 1 AM (GMT-X de la audiencia objetivo) y realizar pruebas en las horas de las 16 PM y 21 PM, ya que estas también muestran picos de rendimiento individual alto.",
+    "Establecer un sistema de seguimiento para la duración óptima de los Shorts y otras métricas de interacción, ya que esta información es crucial para afinar la estrategia y no está disponible en los datos actuales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El 'trend' de 867.0 del nicho 'mundial_2026' es exponencialmente mayor que cualquier otro, validando que el contenido ultra-específico y altamente temporal sobre eventos deportivos masivos tiene un potencial de alcance sin precedentes."
+  "insight_semana": "La clave del éxito en YouTube Shorts reside en explotar la controversia y el dramatismo en noticias deportivas o sucesos impactantes, utilizando preguntas retóricas y emojis de shock en los títulos para generar curiosidad instantánea, mientras que la ausencia de estas narrativas (ej. empates 0-0) resulta en un fracaso total de vistas."
 }
