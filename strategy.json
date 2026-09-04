@@ -1,41 +1,39 @@
 {
   "updated": "2026-09-04",
-  "iteracion": 229,
+  "iteracion": 230,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.45,
-    "deportes": 0.35,
-    "productividad": 0.05,
-    "negocios": 0.03,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
-    "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
-    "entretenimiento": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.45,
+    "ia_noticias": 0.4,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "Fórmula de Anticipación de Gran Evento (ej. '¡Se acabó la espera! ¡El')",
-    "Fórmula de Dato Impactante/Específico (ej. 'Con solo 17 años, Lamine', '132 muertos')",
-    "Fórmula de Pregunta Controversial/Explosiva + Emoji (ej. '¿FINAL ENTREGADA? 🤯', '¿Adiós a la Premier League? 😱')",
-    "Fórmula de Noticia Dramática con Localización y Cifra (ej. 'Terremoto devastador en Colombia: 132 muertos')",
-    "Fórmula de Shock/Cambio Inesperado en Deporte + Emoji (ej. 'AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯', '¡Gamezking ELIMINADO! 😱')",
-    "Fórmula de Noticia de Impacto Actual con Alcance y Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')"
+    "**[Tema Controversial/Evento] + Pregunta + Emoción Extrema 🤯/😱**: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
+    "**[Evento/Noticia Impactante] + Números/Detalles Clave + Urgencia**: Ej. \"Terremoto devastador en Colombia: 132 muertos y emergencia...\"",
+    "**Urgencia Temporal + [Evento/Situación] + Pregunta/Impacto 😱**: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
+    "**Anticipación Alta + [Gran Anuncio/Evento]**: Ej. \"¡Se acabó la espera! ¡El [gran evento]!\" (avg_views: 867)",
+    "**[Logro/Fallo Específico de Persona/Equipo] + Impacto Inmediato 😱**: Ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\"",
+    "**[Noticia/Análisis] + (PARTE X) para Serie**: Ej. \"ARGENTINA SANCIONES: ¡FIFA CEDIÓ! 🤯 PARTE 1\""
   ],
   "avoid_hooks": [
-    "Reporte de resultado neutral sin drama (ej. 'Brasil y Noruega empatan 0-0')",
-    "Reporte de resultado genérico (ej. 'Brasil y Noruega empatan')",
-    "Mencionar un nombre sin contexto claro de impacto (ej. 'Sidny Lopes Cabral acaba de')"
+    "**Revelar el Desenlace Inmediatamente**: Hooks que anuncian el resultado o la conclusión de la noticia desde el inicio, eliminando la curiosidad (e.g., \"Brasil y Noruega empatan 0-0\" con 0 views).",
+    "**Iniciar con Frases Genéricas o Incompletas**: Hooks que empiezan sin un impacto directo o que requieren un contexto extenso para entender su relevancia (e.g., \"Sidny Lopes Cabral acaba de...\" con 0 views).",
+    "**Contenido Genérico de 'Consejo de Vida' sin Relevancia Noticiosa**: Hooks que no se alinean con la naturaleza de noticias/eventos impactantes del canal (e.g., \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\" con 0 views)."
   ],
   "best_hora": 1,
-  "duracion_optima": 55,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la producción de contenido en el nicho 'ia_noticias', especialmente aquellos relacionados con noticias deportivas de controversia o eventos inesperados, ya que este nicho acapara el 100% del TOP 10 de videos.",
-    "Implementar activamente las fórmulas de ganchos identificadas como exitosas, enfocándose en la anticipación, datos específicos, preguntas controversiales, y emociones fuertes (shock, alarma), complementando con emojis de impacto.",
-    "Experimentar con la hora de publicación a la 1 AM, ya que es el horario más frecuente entre los videos con mejor rendimiento, sugiriendo una ventana algorítmica o de audiencia específica para el inicio de la viralización.",
-    "Aunque el nicho 'mundial_2026' muestra una alta volatilidad (alto potencial de vistas pero también alta tasa de fracaso), no debe descartarse; en su lugar, asegurar que los videos en este nicho utilicen los ganchos más potentes y temas de alta controversia o sorpresa.",
-    "Evitar ganchos que reportan resultados directos o poco dramáticos, así como menciones de nombres sin un contexto de impacto inmediato o controversial, para reducir la probabilidad de videos con 0 vistas."
+    "Priorizar fuertemente el contenido deportivo y de noticias de última hora/controversiales dentro del nicho 'ia_noticias' y 'deportes', dado que abarcan el 100% de los videos del TOP 10 y muestran el mayor potencial (e.g., 'mundial_2026' con un 'trend' de 867.0).",
+    "Implementar la estrategia de series de videos ('Parte 1', '1/2') para temas de alta controversia o interés, ya que 3 de los 10 videos más vistos emplearon esta táctica, sugiriendo un fuerte potencial para fomentar la visualización de contenido secuencial.",
+    "Mantener la publicación alrededor de la 1 AM, que ha demostrado ser la hora más frecuente (3 de 10 TOP videos) para los videos más exitosos. Sin embargo, explorar también las ventanas de las 16 PM y 21 PM, que también produjeron videos con más de 1200 vistas.",
+    "Se recomienda encarecidamente investigar por qué los nichos 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'entretenimiento' y 'politica_latam' están generando 0 vistas. Esto podría deberse a la calidad del contenido, relevancia de los temas, efectividad de los ganchos o falta de volumen de publicación, ya que no hay datos de rendimiento disponibles más allá de la ausencia de vistas.",
+    "No hay datos disponibles sobre la duración óptima de los videos en este conjunto. La duración de 58 segundos se sugiere como un valor predeterminado para Shorts, maximizando el contenido dentro del límite de 60 segundos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dicotomía en el rendimiento del contenido deportivo es clave: mientras 'ia_noticias' demuestra ser un formato consistentemente exitoso para noticias de impacto (especialmente deportivas), el nicho 'mundial_2026' presenta un alto potencial de vistas (trend de 867 para un hook) pero con un riesgo extremo de fracaso (todos los videos con 0 vistas son de este nicho), evidenciando que el tema y la ejecución del gancho son determinantes para el éxito."
+  "insight_semana": "El éxito en este canal es extremadamente dependiente de la combinación de una temática controversial o de última hora (predominantemente deportes y desastres naturales) con ganchos impactantes que generen intriga, a menudo usando preguntas y emojis potentes. El nicho 'mundial_2026' dentro de 'deportes' presenta la mayor volatilidad, con el 'trend' más alto (867.0), pero también el 100% de los videos con 0 vistas, lo que indica un potencial de viralidad inmenso si se ejecuta con precisión, pero un alto riesgo de fracaso si el contenido o el gancho no resuenan instantáneamente."
 }
