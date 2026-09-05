@@ -1,40 +1,35 @@
 {
   "updated": "2026-09-05",
-  "iteracion": 236,
+  "iteracion": 237,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "productividad": 0.05,
-    "finanzas": 0.04,
-    "negocios_digitales": 0.04,
-    "cripto_inversiones": 0.04,
-    "productividad_ia": 0.04,
-    "entretenimiento": 0.04,
-    "negocios": 0.02,
-    "politica_latam": 0.03
+    "deportes": 0.5,
+    "ia_noticias": 0.35,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "**Urgencia/Expectativa Extrema:** Frases que denotan el fin de una espera o un anuncio inminente (ej. '¡Se acabó la espera! ¡El')",
-    "**Logro/Dato Específico Impresionante:** Destaca un dato concreto, una edad o un número que genera asombro, a menudo ligado a un nombre propio (ej. 'Con solo 17 años, Lamine')",
-    "**Introducción de Noticia Formal/Impactante:** Un comienzo que establece el tono de una noticia importante, preparando al espectador (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "**Pregunta Controversial + Emoticono Explosivo:** Genera debate o especulación con una pregunta impactante y un emoji que amplifica la emoción (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "**Evento Catastrófico + Cifra/Dato Concreto:** Describe un suceso trágico con un número específico de víctimas o consecuencias para subrayar su magnitud (ej. 'Terremoto devastador en Colombia: 132 muertos')",
-    "**Metáfora Dramática + Consecuencia Inesperada:** Usa un término fuerte (como 'tarjeta roja') para un evento inesperado y revela una consecuencia sorprendente (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
+    "Fórmula de Anticipación/Urgencia (ej. '¡Se acabó la espera! ¡El')",
+    "Fórmula de Hecho Sorprendente/Talento Joven (ej. 'Con solo 17 años, Lamine')",
+    "Fórmula de Introducción Directa y Atenta (ej. 'Muy buenas tardes. Bienvenidos a')"
   ],
   "avoid_hooks": [
-    "**Descripción Literal del Evento con Resultado Final:** No genera intriga, revela todo desde el inicio (ej. 'Brasil y Noruega empatan 0-0')",
-    "**Descripción Simplificada del Evento sin Detalle o Intriga:** Breve y plana, sin elementos que inviten a seguir viendo (ej. 'Brasil y Noruega empatan')",
-    "**Inicio de Noticia Incompleto o Demasiado Vago:** Comienza una frase sin un gancho claro o un final que cree curiosidad (ej. 'Sidny Lopes Cabral acaba de')"
+    "Ganchos que revelan directamente el resultado (ej. 'Brasil y Noruega empatan 0-0')",
+    "Ganchos que son demasiado específicos sin crear intriga (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 16,
+  "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de los nichos de `deportes` e `ia_noticias`, con un enfoque especial en noticias deportivas de gran impacto y eventos trending como 'Mundial 2026', ya que demuestran el mayor potencial de viralidad y crecimiento.",
-    "Implementar activamente las fórmulas de ganchos identificadas como más efectivas, especialmente aquellas que combinan una pregunta controversial con un emoticono o que presentan cifras impactantes para noticias de gran magnitud.",
-    "Experimentar con los horarios de publicación de las 16:00 y 21:00 horas para el contenido de mayor calidad y relevancia, dado su excepcional rendimiento promedio por video en el TOP 10, lo que sugiere ventanas de máxima audiencia para contenido premium.",
-    "Es crucial comenzar a recopilar datos sobre la duración específica de los videos. Sin esta métrica, es imposible optimizar la retención, una de las claves de YouTube Shorts."
+    "Priorizar la creación de contenido del nicho 'deportes' (englobando 'mundial_2026') debido a su rendimiento superior (avg_views: 258, trend: 867.0) y su fuerte presencia en el TOP 10 de videos.",
+    "Para el nicho 'ia_noticias', centrarse en temas controvertidos o de alto impacto, especialmente en el ámbito deportivo (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?'). Continuar con la estrategia de fragmentación en 'partes' para maximizar la curiosidad.",
+    "Experimentar con los horarios de publicación de 1 AM (el video con más vistas, 1325), 16 PM (segundo más alto, 1298), 17 PM (1117) y 21 PM (1244), ya que todos han mostrado picos de vistas individuales elevados.",
+    "Desarrollar ganchos que generen anticipación, urgencia o destaquen hechos sorprendentes. Evitar ganchos que revelen el desenlace de la noticia o sean demasiado específicos sin un factor de intriga para el espectador.",
+    "Es crucial comenzar a recopilar datos sobre la duración específica de los videos publicados para poder determinar una 'duracion_optima' basada en evidencia y no en suposiciones, ya que actualmente este dato es inexistente (valor 0 es un placeholder)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La explotación de nichos específicos y altamente trending dentro del paraguas 'deportes' (como 'mundial_2026') muestra un potencial explosivo, superando el rendimiento de las noticias generales con un promedio de 258 vistas y una tendencia de crecimiento masiva de 867.0."
+  "insight_semana": "El nicho de noticias deportivas de eventos de gran escala (como el 'Mundial 2026') y las narrativas controversiales o especulativas dentro de 'ia_noticias' tienen el mayor potencial viral, mostrando un crecimiento de tendencia excepcional y picos de visualización significativos, incluso en horarios no convencionales (1 AM)."
 }
