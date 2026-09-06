@@ -1,38 +1,40 @@
 {
-  "updated": "2026-09-05",
-  "iteracion": 241,
+  "updated": "2026-09-06",
+  "iteracion": 242,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.3,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
     "productividad_ia": 0.05,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Ganchos de revelación/urgencia (Ej: '¡Se acabó la espera! ¡El')",
-    "Ganchos de hito/personaje sorprendente (Ej: 'Con solo 17 años, Lamine')",
-    "Ganchos de pregunta controversial/intrigante (Ej: '¿FINAL ENTREGADA? 🤯')",
-    "Ganchos de shock/giro inesperado (Ej: '¡SHOCK! 🤯')",
-    "Ganchos de tragedia/alerta inmediata (Ej: 'Terremoto devastador en Colombia')",
-    "Ganchos de impacto regional/exclusiva (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')"
+    "¡[Verbo de Impacto/Evento]! + [Emoji de Shock/Sorpresa]",
+    "[Sujeto] + [Verbo que Cuestiona] + [Objeto]? + [Emoji de Intriga]",
+    "La Noticia [Tipo] que Sacude [Región] Hoy ⚽",
+    "[Evento Devastador] en [Lugar]: [Cifra/Efecto]...",
+    "¡[Sujeto/Entidad] en SHOCK! + [Emoji de Impacto]",
+    "Con solo [Cifra] años, [Nombre Propio]"
   ],
   "avoid_hooks": [
-    "Ganchos puramente descriptivos y sin emoción (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Ganchos incompletos o contextualizados (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Ganchos genéricos de autoayuda sin anclaje en noticias (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
+    "Ganchos puramente descriptivos que no generan intriga ni emoción (ej: 'Brasil y Noruega empatan 0-0')",
+    "Ganchos incompletos o que cortan la frase abruptamente (ej: 'Sidny Lopes Cabral acaba de')",
+    "Ganchos que revelan el resultado final sin generar expectación (ej: 'Brasil y Noruega empatan')"
   ],
-  "best_hora": 1,
-  "duracion_optima": 0,
+  "best_hora": 16,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar el nicho de 'deportes' (específicamente 'mundial_2026' y temas de fútbol de LATAM) debido a su excepcional 'trend' de 867.0, invirtiendo en contenido de alta calidad y controversial dentro de esta categoría.",
-    "Mantener una producción sólida en 'ia_noticias', enfocándose en ganchos impactantes y titulares que generen controversia o revelaciones, para contrarrestar su 'trend' negativo y capitalizar su alto volumen de visualizaciones actuales.",
-    "Implementar la estrategia de 'PARTE 1' o '(1/2)' en títulos de temas complejos o polémicos para fomentar la visualización de múltiples Shorts, una táctica observada en 3 de los 10 videos con más views.",
-    "Optimizar la publicación de contenido en los horarios de 1 AM, 2 AM, 6 AM, 16 PM, 17 PM y 21 PM, ya que estos han demostrado ser picos de audiencia para los videos de mayor rendimiento."
+    "Priorizar la creación de contenido para el nicho de `deportes` (aprovechando la tendencia del `mundial_2026` y noticias deportivas controversiales) y `ia_noticias`, asignando al menos el 75% del esfuerzo combinado a estos nichos.",
+    "Diseñar títulos y ganchos visuales que generen shock, urgencia o intriga inmediata, utilizando exclamaciones, preguntas retóricas y emojis de impacto (`🤯`, `😱`) en los primeros segundos del video.",
+    "Evitar ganchos descriptivos o incompletos que no generen una pregunta o emoción inicial, ya que la data muestra que resultan en 0 vistas.",
+    "Concentrar las publicaciones alrededor de las 16:00 (4 PM) y experimentar también con las 1:00 (1 AM) y 21:00 (9 PM), ya que estas franjas han mostrado el mejor rendimiento en el TOP 10.",
+    "Implementar la estrategia de dividir contenido en 'Partes' (ej: 'Parte 1', '(1/2)') para temas complejos o de alto interés, capitalizando el patrón de éxito observado en el 30% de los videos top.",
+    "**CRÍTICO:** Incorporar la recolección de datos sobre la duración de cada video para poder determinar la `duracion_optima` en futuras iteraciones de análisis y optimizar la retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La magnitud del 'trend' (867.0) en el nicho 'mundial_2026' es el indicador más potente de crecimiento a largo plazo, superando el 'avg_views' y la estabilidad de otros nichos, demostrando la importancia de identificar tendencias emergentes con alta proyección."
+  "insight_semana": "La enorme proyección de crecimiento del nicho `mundial_2026` (trend 867.0), consolidado bajo `deportes`, lo posiciona como la oportunidad más lucrativa a futuro, superando la estabilidad actual de `ia_noticias` y sugiriendo una fuerte demanda por contenido deportivo controversial y anticipatorio."
 }
