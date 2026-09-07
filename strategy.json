@@ -1,37 +1,40 @@
 {
   "updated": "2026-09-07",
-  "iteracion": 253,
+  "iteracion": 254,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "Hooks de Urgencia/Novedad: Utilizan palabras como 'HOY', 'AHORA' o frases de inmediatez (ej. '¡Se acabó la espera! ¡El')",
-    "Hooks de Controversia/Pregunta Impactante: Plantean una duda o teoría polémica con exclamaciones o emojis (ej. '¿FINAL ENTREGADA? 🤯')",
-    "Hooks de Datos Sorprendentes/Específicos: Resaltan una cifra, edad o hecho inusual (ej. 'Con solo 17 años, Lamine', '132 muertos')",
-    "Hooks de Reacción Emocional Intensa: Emplean exclamaciones fuertes y emojis para denotar shock o sorpresa (ej. '¡SHOCK! 🤯', '¡ELIMINADO! 😱')",
-    "Hooks de Impacto Geográfico/Regional: Conectan la noticia con una ubicación específica y su repercusión (ej. 'Terremoto devastador en Colombia', 'sacude LATAM')",
-    "Hooks de Nombres Propios/Entidades Clave + Acción: Mencionan directamente a un protagonista o institución y su evento clave (ej. 'LEICESTER SE VENDE', 'FIFA CEDIÓ')"
+    "Hooks que generen urgencia o anticipación (ej. '¡Se acabó la espera!')",
+    "Hooks que resalten logros sorprendentes o talentos jóvenes (ej. 'Con solo 17 años, [nombre]')",
+    "Hooks con aperturas estilo noticiero formal (ej. 'Muy buenas tardes. Bienvenidos a')",
+    "Hooks que planteen preguntas retóricas o impliquen controversia (ej. '¿FINAL ENTREGADA? 🤯')",
+    "Hooks centrados en noticias impactantes o devastadoras (ej. 'Terremoto devastador...', '¡SHOCK!')",
+    "Hooks que empleen emojis emocionales fuertes (🤯, 😱, ⚡, ⚽) para amplificar el mensaje"
   ],
   "avoid_hooks": [
-    "Hooks con Resultados Fríos/Sin Contexto: Simples datos sin intriga ni relevancia (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks Incompletos o Demasiado Vagones: Frases que no ofrecen información suficiente para enganchar (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks Sin Componente Emocional o de Urgencia: Aquellos meramente descriptivos que no generan curiosidad o asombro"
+    "Hooks que revelen el desenlace completo o el hecho principal directamente, sin crear suspenso.",
+    "Hooks excesivamente descriptivos o factuales que carezcan de intriga o emotividad.",
+    "Hooks que presenten figuras o entidades poco conocidas sin un contexto inmediatamente cautivador."
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de 'ia_noticias' enfocado en deportes, especialmente fútbol, y temas de alta controversia o inmediatez, ya que esta combinación es la única generadora de videos top.",
-    "Experimentar activamente con la publicación en las horas de la tarde, particularmente a las 16 PM y 17 PM, ya que han demostrado un potencial significativo para generar videos con un número de vistas individuales muy alto.",
-    "Desarrollar títulos y hooks que exploten la curiosidad y la emoción, utilizando preguntas impactantes, datos numéricos concretos, nombres propios reconocibles y emojis que refuercen la sensación de urgencia o shock."
+    "Priorizar la creación de contenido en el nicho de `deportes` (especialmente noticias tipo Mundial y grandes ligas) y `ia_noticias` con enfoque deportivo, dado su alto potencial de vistas y presencia dominante en el top 10.",
+    "Implementar ganchos que generen urgencia, curiosidad a través de preguntas, o que resalten hechos sorprendentes y controversiales, tal como los videos con más de 1200 vistas.",
+    "Evitar ganchos que revelen directamente el desenlace de la noticia o sean excesivamente descriptivos, ya que han demostrado ser ineficaces, resultando en 0 vistas.",
+    "Publicar los videos principalmente a las `16 PM` para maximizar el potencial de impacto individual, y seguir experimentando con las `1 AM` y `21 PM` como ventanas de oportunidad adicionales para alta viralidad.",
+    "Considerar la estrategia de contenido en partes para temas de alta controversia ('PARTE 1', '1/2'), ya que 3 de los videos top usan esta metodología.",
+    "Realizar un seguimiento de la duración de los videos para identificar un rango óptimo, ya que actualmente no se dispone de datos para una recomendación precisa de `duracion_optima`."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La capacidad de las 'ia_noticias' para dominar los videos más vistos, especialmente cuando abordan temas deportivos con un toque de controversia o urgencia (ej. 'Argentina entregó la final'), subraya que el engagement máximo se logra al combinar actualidad, emocionalidad y preguntas que incitan a la curiosidad, aunque este enfoque también conlleva el riesgo de videos con 0 views si el gancho no es potente."
+  "insight_semana": "El nicho `mundial_2026` (bajo la categoría de `deportes`) presenta un alto riesgo y alta recompensa, con el promedio de vistas más elevado (258) y un `trend` de 867.0, pero también concentra el 60% de los videos con 0 vistas. En contraste, la fusión de `ia_noticias` con temas deportivos controversial y preguntas retóricas (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯') demuestra ser una estrategia de bajo riesgo y alta recompensa, produciendo los videos más vistos consistentemente (hasta 1325 views)."
 }
