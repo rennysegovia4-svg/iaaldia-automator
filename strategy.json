@@ -1,38 +1,39 @@
 {
   "updated": "2026-09-07",
-  "iteracion": 250,
+  "iteracion": 251,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.35,
-    "finanzas": 0.04,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "Anticipación y Urgencia: Frases que generen expectativa sobre un evento inminente o revelación (ej. '¡Se acabó la espera!', '¿Estás listo para...?')",
-    "Dato Sorprendente y Contexto Inmediato: Iniciar con un hecho impactante o un detalle específico sobre un protagonista (ej. 'Con solo X años, Y...', 'El mayor descubrimiento en Z...')",
-    "Noticia Impactante con Consecuencia: Describir un evento crucial y su impacto directo o potencial (ej. 'Terremoto devastador en X...', 'La noticia que sacude Y...')",
-    "Pregunta Controvertida/Shock: Formular una pregunta directa que genere intriga o desafíe percepciones, a menudo con un emoji de impacto (ej. '¿[Evento] fue entregado? 🤯', '¿[Equipo] CEDIÓ LIDERATO? 😱')",
-    "Declaración de Crisis/Alerta: Anunciar una situación crítica o un cambio drástico (ej. '¡[Sujeto] ELIMINADO! 😱', '[Lugar] SE VENDE HOY...')",
-    "Introducción Temática Directa y Atractiva: Un saludo o frase introductoria que prepare al espectador para una noticia o análisis importante (ej. 'Muy buenas tardes. Bienvenidos a...', 'Hoy analizamos el shock de...')"
+    "¡[Declaración emocionante/anticipación]!",
+    "[Logro/evento sorprendente] de [persona/entidad] con solo [dato clave]",
+    "¿[Pregunta impactante/conspirativa] sobre [evento]?",
+    "[Noticia de última hora/urgente] que sacude [lugar/audiencia] HOY [⚽/🤯/😱]",
+    "[Evento/Cifra impactante]: [Consecuencia/Descripción breve]",
+    "[Sujeto] [Verbo de acción impactante] ¡[Consecuencia/Emoción]! [😱/🤯]"
   ],
   "avoid_hooks": [
-    "Hooks que revelan la conclusión de una noticia sin generar intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que introducen sujetos o eventos sin contexto inmediato que justifique su importancia (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks puramente informativos que carecen de un elemento de urgencia, controversia o emoción."
+    "Declaraciones demasiado directas que no generan intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Ganchos incompletos o ambiguos que no ofrecen un cierre o un llamado a la acción inicial (ej. 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones puramente factuales sin carga emocional o indicio de sorpresa/impacto"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', enfocándose en noticias deportivas de alto impacto, controversias o eventos noticiosos críticos, ya que este nicho monopoliza el TOP 10 de videos.",
-    "Implementar títulos y hooks que exploten la curiosidad y generen shock o anticipación, utilizando preguntas directas y emojis impactantes (🤯, 😱). Es crucial evitar hooks demasiado directos o carentes de contexto.",
-    "Experimentar activamente con horarios de publicación, dando especial énfasis a la 1 AM (hora de mayor concentración de videos top) y explorando también las franjas de la tarde (16 PM, 17 PM, 21 PM) que han mostrado potencial para videos de alto rendimiento individual.",
-    "Monitorizar de cerca el nicho 'mundial_2026' (dentro de deportes). A pesar de sus fracasos puntuales (0 views), su altísimo 'trend' positivo y 'avg_views' sugieren un potencial viral explosivo cuando el contenido resuena correctamente."
+    "Priorizar la creación de contenido en los nichos 'deportes' (especialmente temas de 'mundial_2026') e 'ia_noticias', ya que son los únicos que han demostrado capacidad para generar vistas masivas.",
+    "Implementar ganchos que generen curiosidad, intriga o impacto emocional, utilizando preguntas retóricas, datos sorprendentes, referencias a última hora y emojis relevantes (🤯, 😱, ⚽) en los primeros segundos del video y en el título.",
+    "Publicar estratégicamente a la 1 AM para aprovechar la mayor frecuencia de éxitos en el top 10, pero también experimentar con horas como 16 PM, 17 PM y 21 PM, que han demostrado picos de rendimiento excepcionales para videos individuales.",
+    "Analizar el contenido y la narrativa de los videos con 0 vistas en el nicho 'mundial_2026' para identificar patrones de temas o enfoques que no resuenan y mejorar la precisión en la selección de historias de alto riesgo/alta recompensa.",
+    "Dado que no hay datos disponibles sobre la duración de los videos, es crucial comenzar a registrar y analizar esta métrica para futuras iteraciones y determinar la duración óptima."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave para un alto rendimiento en YouTube Shorts reside en la capacidad de los títulos y hooks para crear intriga y emoción intensa en noticias de alto impacto (especialmente deportivas o eventos críticos), capitalizando la controversia, la anticipación y el shock, mientras se evita la información plana y prematuramente conclusiva."
+  "insight_semana": "La alta volatilidad del nicho 'mundial_2026' (mayor promedio de vistas pero también la mayoría de los videos fallidos) subraya que, aunque posee un enorme potencial de viralidad, la ejecución del gancho y la intriga son absolutamente críticas para evitar el fracaso total, un factor que también es clave para maximizar los picos de 'ia_noticias'."
 }
