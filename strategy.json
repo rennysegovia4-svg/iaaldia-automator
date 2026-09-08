@@ -1,41 +1,37 @@
 {
   "updated": "2026-09-08",
-  "iteracion": 261,
+  "iteracion": 262,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "finanzas": 0.1,
+    "entretenimiento": 0.08,
+    "negocios_digitales": 0.07,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta con shock y emoji: \"[Tema impactante] [Verbo de acción] [Sustantivo clave]? 🤯\"",
-    "Noticia de última hora con localización e impacto: \"[Evento devastador] en [Lugar]: [Cifra/Impacto] [Palabra de Urgencia]!\"",
-    "Controversia deportiva con nombre/liga: \"[Liga/Equipo]: [Acción impactante] ¡[Emoción]! 🤯\"",
-    "Serie de contenido en desarrollo: \"[Tema Controversial]: [Detalle clave] (PARTE X)\"",
-    "Noticia deportiva de gran alcance: \"La noticia deportiva que sacude [Región] hoy ⚽\"",
-    "Declaración de fin de espera o inicio de evento: \"¡Se acabó la espera! ¡El [evento]...\""
+    "Gancho de Expectación Urgente: Inicia con una frase que genere anticipación sobre un evento inminente o una revelación, como \"¡Se acabó la espera! ¡El\" (avg_views: 867).",
+    "Gancho de Dato Sorprendente/Personalidad Clave: Destaca un hecho inusual, una edad impresionante o el nombre de una figura relevante (ej. \"Con solo 17 años, Lamine\" (avg_views: 740)).",
+    "Gancho de Noticia de Última Hora/Introducción Directa: Utiliza un saludo formal o una declaración directa que indique que se trata de una noticia importante y reciente (\"Muy buenas tardes. Bienvenidos a\" (avg_views: 374)).",
+    "Gancho de Conflicto/Drama con Emoji: Plantea una situación de conflicto o un giro inesperado, acompañado de un emoji que potencie la emoción (ej. \"¡SHOCK!\" o \"¿ES FRAUDE? 😱\").",
+    "Gancho de Ubicación/Equipo Específico: Menciona un país, región o equipo que sea de interés masivo para la audiencia hispanohablante (ej. \"ARGENTINA en...\" o \"Noticia que sacude LATAM...\").",
+    "Gancho de Pregunta Directa: Formula una pregunta retórica o directa que incite a la curiosidad y a buscar la respuesta en el video (ej. \"¿FINAL ENTREGADA?\")."
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un resultado o evento sin generar curiosidad (Ej: 'Brasil y Noruega empatan 0-0').",
-    "Hooks que son declaraciones de hecho concisas y sin contexto emotivo (Ej: 'Brasil y Noruega empatan').",
-    "Hooks que introducen un nombre o evento poco conocido sin un calificativo impactante inmediato (Ej: 'Sidny Lopes Cabral acaba de')."
+    "Revelar el resultado o el desenlace principal al inicio del hook (ej. \"Brasil y Noruega empatan 0-0\", 0 views).",
+    "Enunciar hechos de manera plana o descriptiva sin generar intriga o emoción (ej. \"Sidny Lopes Cabral acaba de\", 0 views).",
+    "Hooks que no plantean una pregunta ni crean un vacío de información que el usuario desee llenar."
   ],
-  "best_hora": 16,
-  "duracion_optima": 0,
+  "best_hora": 1,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', prestando especial atención a sub-nichos de alto rendimiento como 'mundial_2026' y noticias deportivas controversiales, aprovechando su alto promedio de vistas y tendencia explosiva.",
-    "Utilizar títulos que incluyan preguntas directas o retóricas (70% de los top 10 videos) y emojis de sorpresa (🤯, 😱) para captar la atención y generar curiosidad en la audiencia.",
-    "Implementar una estrategia de contenido seriado con marcadores como 'PARTE 1' o '(1/2)' para temas de alto interés, ya que se correlaciona con un alto rendimiento en los videos top.",
-    "Enfocarse en noticias con fuerte resonancia en LATAM, especialmente aquellas que mencionan 'Argentina' (40% de los top videos) o 'Colombia', para maximizar el alcance y la interacción.",
-    "Optimizar los horarios de publicación, dando prioridad a las 16 PM (con el promedio de vistas más alto entre los horarios con videos top) y explorando también las 1 AM y 21 PM, que muestran picos de rendimiento.",
-    "Evitar hooks y títulos que sean meramente descriptivos o que solo presenten un resultado final sin generar intriga, ya que estos patrones se asocian consistentemente con 0 vistas.",
-    "Se recomienda comenzar a registrar y analizar la duración de los videos cortos para identificar un rango óptimo que maximice la retención y las vistas, ya que actualmente no se dispone de estos datos para establecer una 'duracion_optima'."
+    "Priorizar la creación de contenido en el nicho de **deportes** (especialmente sub-nichos como 'mundial_2026') y **ia_noticias** que generen polémica o intriga, dado que 'mundial_2026' tiene la mayor 'avg_views' (258) y 'trend' (867.0), y 'ia_noticias' domina el TOP 10.",
+    "Diseñar **títulos que incluyan preguntas directas o retóricas y emojis de impacto** (ej. '?', '🤯', '😱'), ya que el **70% de los videos del TOP 10** usan '?' y estos elementos demuestran generar alta curiosidad y clics.",
+    "Crear **hooks que generen expectación y eviten revelar el desenlace de la noticia**, utilizando frases de anticipación o datos sorprendentes al inicio, ya que los hooks que revelan el final obtienen consistentemente **0 views**."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Mientras que 'ia_noticias' alberga la totalidad de los videos individuales más vistos, el nicho 'mundial_2026' demuestra un promedio de vistas (258) 2.8 veces superior a 'ia_noticias' (91) y una tendencia de crecimiento excepcionalmente alta (867.0), consolidándose como la categoría con mayor potencial de crecimiento explosivo para el canal."
+  "insight_semana": "La explosiva 'trend' de 867.0 en el nicho 'mundial_2026', combinada con su 'avg_views' de 258, sugiere un sub-nicho dentro de deportes con un potencial de crecimiento masivo que supera con creces el rendimiento promedio actual de 'ia_noticias', a pesar de que este último domina el TOP 10."
 }
