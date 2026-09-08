@@ -1,40 +1,36 @@
 {
   "updated": "2026-09-08",
-  "iteracion": 256,
+  "iteracion": 257,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.55,
-    "ia_noticias": 0.29,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.12,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Anuncio Exclamativo de Evento/Noticia Inminente (ej. '¡Se acabó la espera! ¡El')",
-    "Introducción a Protagonista Clave con Dato Sorprendente (ej. 'Con solo 17 años, Lamine')",
-    "Saludo Formal con Invitación a Noticia Relevante (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "Pregunta Controversial + Emoji de Impacto + Indicador de Parte (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
-    "Noticia de Alto Impacto con Datos Específicos (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Afirmación Impactante y Urgente + Emoji de Shock (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
+    "¡[Verbo de Impacto/Anticipación]! ¡[Sujeto/Evento]...",
+    "Con solo [Edad] años, [Nombre Propio]...",
+    "[Saludo Formal]. Bienvenidos a [Tema/Contexto]...",
+    "[Sujeto] [Acción sorpresiva] [Pregunta/Impacto]? 🤯 (PARTE X)",
+    "[Tipo de Noticia] devastador en [Lugar]: [Cifra] [Consecuencia]",
+    "La noticia deportiva que sacude [Región] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Revelar el resultado principal o la conclusión de la noticia de forma directa (ej. 'Brasil y Noruega empatan 0-0')",
-    "Enunciados planos sin intriga ni impacto emocional (ej. 'Brasil y Noruega empatan')",
-    "Afirmaciones de hechos concretos sin un 'call to curiosity' (ej. 'Sidny Lopes Cabral acaba de')"
+    "Resultados de partidos poco atractivos/sin contexto (ej: Brasil y Noruega empatan 0-0)",
+    "Nombres propios sin contexto o impacto inmediato (ej: Sidny Lopes Cabral acaba de)"
   ],
-  "best_hora": 16,
-  "duracion_optima": "insuficientes datos",
+  "best_hora": 1,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentrar el 84% del esfuerzo en la creación de contenido dentro de los nichos de 'Deportes' (priorizando subcategorías como 'Mundial_2026') y 'IA Noticias' con temática deportiva, dada su dominancia en el rendimiento del canal.",
-    "Priorizar la publicación de videos en el horario de las 16 PM por su alto promedio de vistas individuales (1298) entre los videos de alto rendimiento, complementando con el horario de las 1 AM que consistentemente genera múltiples videos exitosos.",
-    "Implementar estrategias de titulación que generen intriga y expectación, utilizando preguntas controvertidas, emojis de impacto (🤯, 😱) y la segmentación en partes (ej. 'PARTE 1', '1/2').",
-    "Evitar categóricamente ganchos (hooks) que revelen el desenlace o la información clave de forma inmediata, ya que esta práctica ha resultado en un 100% de fracaso (0 vistas).",
-    "Explorar la creación de contenido que destaque a 'personajes' o 'eventos' clave en los primeros segundos del video (hook), como se observó en el éxito de 'Con solo 17 años, Lamine'.",
-    "Abstenerse de invertir recursos en nichos como 'Finanzas', 'Entretenimiento', 'Cripto Inversiones' y 'Política LATAM' hasta obtener datos claros de interés por parte de la audiencia, dado su actual rendimiento nulo."
+    "Priorizar la creación de contenido dentro de la categoría 'ia_noticias' con un fuerte enfoque en noticias deportivas, especialmente aquellas relacionadas con eventos clave como el 'Mundial 2026', dado que este sub-nicho mostró la mayor tendencia (867.0) y promedio de vistas (258) a pesar de la consistencia de 'ia_noticias' en el TOP 10.",
+    "Mantener la hora de publicación de la 1 AM, ya que, aunque las 16 PM tuvo el promedio de vistas más alto para un solo video (1298 vistas), la 1 AM demostró una efectividad más consistente al albergar la mayor cantidad de videos en el TOP 10 (3 videos) y el video de mayor rendimiento absoluto (1325 vistas).",
+    "Implementar ganchos que generen intriga o anticipación, utilizando las fórmulas identificadas en 'best_hooks', y asegurarse de que los títulos incluyan preguntas controvertidas y emojis de impacto (🤯, 😱) para maximizar la curiosidad y el CTR, como se observa en el 60% de los videos más vistos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque 'mundial_2026' es el nicho con mayor promedio de vistas y score, 'ia_noticias' es la categoría que agrupa todos los 10 videos más vistos, destacando que el enfoque en noticias deportivas generadas por IA es la combinación más efectiva y consistente para el canal."
+  "insight_semana": "El contenido deportivo dentro de la categoría 'ia_noticias', particularmente los temas relacionados con el 'Mundial 2026', representa un nicho de alto riesgo y alta recompensa; mientras que posee el mayor promedio de vistas (258) y una tendencia de crecimiento masiva (867.0), también es propenso a videos con 0 vistas si el gancho o la relevancia no son ejecutados correctamente."
 }
