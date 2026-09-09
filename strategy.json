@@ -1,39 +1,41 @@
 {
   "updated": "2026-09-09",
-  "iteracion": 265,
+  "iteracion": 266,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Preguntas Controversiales con Énfasis Emocional (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticias de Alto Impacto y Urgencia (ej. 'Terremoto devastador en Colombia: 132 muertos y emergencia n')",
-    "Ganchos de Anticipación Extrema (ej. '¡Se acabó la espera! ¡El')",
-    "Hitos o Logros Específicos e Impactantes (ej. 'Con solo 17 años, Lamine')",
-    "Temas de Gran Relevancia Regional con Urgencia (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Declaraciones Shockeantes con Emojis de Emoción (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "[Evento Mayor/Controversia] + Pregunta Audaz + Emoción (🤯/😱)",
+    "[Noticia Urgente/Impactante]: ¡Consecuencia Inesperada! + Emoción (😱/🤯)",
+    "La noticia [temática] que sacude [Región/Hoy] + Emoji Temático",
+    "[Evento Específico]: [Situación Inesperada] ¡SHOCK! 🤯",
+    "¡Se acabó la espera! ¡El [Evento Importante]",
+    "Con solo [Edad], [Nombre] [Logro/Hecho Asombroso]"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el desenlace o son puramente fácticos sin generar intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks incompletos o demasiado breves que no contextualizan la noticia (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks con temáticas genéricas o de autoayuda que no resuenan con la actualidad y el drama de los nichos exitosos (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
+    "Descripciones fácticas sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Revelación prematura del desenlace (ej. 'Brasil y Noruega empatan')",
+    "Comienzos demasiado descriptivos y carentes de emoción (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 16,
+  "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho de Deportes (especialmente 'mundial_2026') debido a su excepcional `avg_views` (258) y alta tendencia de crecimiento (867.0).",
-    "Integrar preguntas controversiales, palabras de alto impacto y emojis emocionales (🤯, 😱) en los títulos, siguiendo el patrón de 7 de los 10 videos más vistos para maximizar la intriga y el CTR.",
-    "Experimentar con la hora de publicación a las 16 PM (4 PM), ya que este horario albergó el video con el pico de vistas más alto (1298 views) en el TOP 10.",
-    "Implementar formatos de serie (ej. '(PARTE 1)', '(1/2)') en títulos para historias complejas, como lo hicieron 3 de los videos top, para fomentar la continuidad del visionado.",
-    "Evitar categóricamente ganchos que revelen el desenlace de la noticia o sean demasiado fácticos y genéricos, ya que consistentemente resultan en 0 vistas."
+    "Priorizar la creación de contenido altamente emocional y controversial en el nicho de `deportes`, especialmente temas relacionados con `mundial_2026`, explotando su alto potencial de `trend` (867.0).",
+    "Integrar emojis de impacto (🤯, 😱, ⚽) en los títulos y miniaturas para maximizar la intriga y la tasa de clics, como se observa en 7 de los 10 videos más vistos.",
+    "Implementar la estrategia de 'series' o 'partes' (ej., '(PARTE 1)') para historias complejas o muy impactantes, fomentando la retención y el visionado de múltiples videos.",
+    "Enfocarse en noticias de última hora y alto impacto con un fuerte componente regional (LATAM) para `ia_noticias`, manteniendo la relevancia y urgencia.",
+    "Evitar estrictamente títulos y hooks que sean puramente fácticos o que revelen el resultado principal sin generar intriga, ya que consistentemente resultan en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito masivo de videos especulativos y controversiales relacionados con grandes eventos deportivos históricos o futuros, amplificado por el uso estratégico de lenguaje emocional y emojis, demuestra una fuerte demanda por narrativas de 'alto riesgo' y 'gran revelación' en Shorts."
+  "insight_semana": "La intriga, la controversia y la emoción extrema en el contenido, especialmente en noticias deportivas de gran escala (Mundial, eventos de LATAM), son los factores más decisivos para generar altos volúmenes de vistas, con los hooks fácticos y sin emoción resultando en un fracaso total."
 }
