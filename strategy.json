@@ -1,39 +1,41 @@
 {
   "updated": "2026-09-10",
-  "iteracion": 271,
+  "iteracion": 272,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.5,
+    "ia_noticias": 0.4,
+    "finanzas": 0.017,
+    "entretenimiento": 0.017,
+    "negocios_digitales": 0.017,
+    "productividad_ia": 0.017,
+    "cripto_inversiones": 0.016,
+    "politica_latam": 0.016
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [EVENTO/NOTICIA]...",
-    "Con solo [EDAD] años, [NOMBRE]...",
-    "Muy buenas tardes. Bienvenidos a [EVENTO/ANÁLISIS]...",
-    "[ENTIDAD] [ACCIÓN IMPACTANTE/PREGUNTA] HOY: ¡[CONSECUENCIA]! 😱/🤯",
-    "[TIPO DE NOTICIA] que sacude [REGIÓN] hoy: [DETALLE CLAVE] ⚽/🚨",
-    "[EVENTO/TRAGEDIA] en [LUGAR]: [CIFRA] y [IMPACTO] ⚡/🤯"
+    "¡[Emoción Fuerte]! ¡[Evento de alto interés]!",
+    "[Edad sorprendente] años, [Nombre propio] [Acción destacada/logro inesperado]",
+    "[Saludo/Bienvenida formal] a [Noticia/Evento Importante]",
+    "[Entidad/Evento popular] [Verbo polémico] la [Sustantivo clave]? 🤯",
+    "[Tipo de desastre] [Adjetivo fuerte] en [Lugar]: [Número] [Víctimas/Impacto] y [Consecuencia]",
+    "La noticia [Deporte/Tema] que sacude [Región] hoy [Emoji relacionado]"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Hooks que solo enuncian un hecho sin intriga o pregunta (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que terminan abruptamente o dejan una idea incompleta (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks excesivamente específicos sin contexto o relevancia implícita"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de `deportes`, con énfasis en eventos de gran magnitud como `mundial_2026` y noticias de ligas importantes, capitalizando su alta tendencia y promedio de vistas.",
-    "Implementar una estrategia de contenido serializado, utilizando explícitamente la etiqueta '(PARTE X)' en los títulos para generar intriga y fomentar la continuidad del visionado.",
-    "Dentro del nicho `ia_noticias`, concentrarse en temas altamente virales, controversiales o de gran impacto noticioso (ej. sismos, noticias deportivas con giros inesperados) que generen una fuerte emoción o curiosidad inmediata.",
-    "Publicar los Shorts preferentemente a la `hora 1` (01:00 AM), que ha demostrado ser la franja horaria con mayor acumulación de vistas para los videos top.",
-    "Los nichos de `finanzas`, `entretenimiento`, `negocios_digitales`, `productividad_ia`, `cripto_inversiones` y `politica_latam` muestran insuficientes datos (0 vistas promedio) para establecer patrones efectivos; se recomienda experimentar con bajo volumen o pausar su producción hasta obtener más información."
+    "Priorizar la publicación de Shorts a la hora 1, ya que consistentemente concentra el mayor número de videos de alto rendimiento y el total más alto de vistas.",
+    "Continuar utilizando títulos serializados explícitamente con '(PARTE 1)' para captar la atención y fomentar el consumo continuado de contenido.",
+    "Combinar eventos deportivos de gran repercusión (Mundiales, ligas populares) con preguntas controversiales o giros inesperados en los títulos para generar altos niveles de engagement.",
+    "Para noticias de desastres naturales dentro del nicho `ia_noticias`, incluir cifras impactantes o el número de afectados para incrementar significativamente el engagement.",
+    "Aplicar la estructura de título 'ENTIDAD + ACCIÓN IMPACTANTE + HOY + PREGUNTA/EMOCIÓN' para noticias de actualidad que buscan generar clics rápidos.",
+    "Enfocarse en el nicho de 'deportes', especialmente con contenido relacionado a eventos deportivos globales como el Mundial, dado su alto potencial de viralidad y vistas.",
+    "Implementar un sistema de recolección de datos sobre la duración de los Shorts para determinar la duración óptima y ajustar la estrategia en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de `deportes` (específicamente `mundial_2026`) presenta una tendencia de crecimiento explosiva y un alto rendimiento promedio, indicando que el contenido deportivo controversial y de gran envergadura tiene un potencial de escalabilidad significativamente mayor que el resto, a pesar de que videos específicos de `ia_noticias` pueden alcanzar picos de vistas con temas muy selectos y sensacionalistas."
+  "insight_semana": "Los picos de rendimiento más altos provienen de noticias deportivas de gran calibre (como el Mundial), que, al ser presentadas con hooks de alta expectación, generan un impacto de vistas desproporcionadamente mayor en comparación con el rendimiento promedio de otros temas en 'ia_noticias'."
 }
