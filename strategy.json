@@ -1,41 +1,38 @@
 {
   "updated": "2026-09-10",
-  "iteracion": 272,
+  "iteracion": 273,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.4,
-    "finanzas": 0.017,
-    "entretenimiento": 0.017,
-    "negocios_digitales": 0.017,
-    "productividad_ia": 0.017,
-    "cripto_inversiones": 0.016,
-    "politica_latam": 0.016
+    "deportes": 0.55,
+    "ia_noticias": 0.2,
+    "productividad_ia": 0.1,
+    "negocios_digitales": 0.05,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Emoción Fuerte]! ¡[Evento de alto interés]!",
-    "[Edad sorprendente] años, [Nombre propio] [Acción destacada/logro inesperado]",
-    "[Saludo/Bienvenida formal] a [Noticia/Evento Importante]",
-    "[Entidad/Evento popular] [Verbo polémico] la [Sustantivo clave]? 🤯",
-    "[Tipo de desastre] [Adjetivo fuerte] en [Lugar]: [Número] [Víctimas/Impacto] y [Consecuencia]",
-    "La noticia [Deporte/Tema] que sacude [Región] hoy [Emoji relacionado]"
+    "Pregunta Controversial + Entidad/Evento + Emoción (🤯): Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
+    "Impacto Numérico de Desastre/Evento + Consecuencia: Ej. \"Terremoto devastador en Colombia: 132 muertos...\"",
+    "Noticia Deportiva de Urgencia + Entidad + Consecuencia/Pregunta (😱): Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
+    "Actualidad Deportiva Regional + Impacto + Emojis (⚽): Ej. \"La noticia deportiva que sacude LATAM hoy ⚽\"",
+    "Urgencia por Evento Inminente/Esperado: Ej. \"¡Se acabó la espera! ¡El\"",
+    "Protagonista Joven + Logro/Historia: Ej. \"Con solo 17 años, Lamine\""
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un hecho sin intriga o pregunta (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que terminan abruptamente o dejan una idea incompleta (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks excesivamente específicos sin contexto o relevancia implícita"
+    "Resultados deportivos planos o sin drama: Ej. \"Brasil y Noruega empatan 0-0\"",
+    "Inicios de frase incompletos o demasiado genéricos: Ej. \"Sidny Lopes Cabral acaba de\"",
+    "Afirmaciones planas sin elemento de sorpresa o intriga"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar la publicación de Shorts a la hora 1, ya que consistentemente concentra el mayor número de videos de alto rendimiento y el total más alto de vistas.",
-    "Continuar utilizando títulos serializados explícitamente con '(PARTE 1)' para captar la atención y fomentar el consumo continuado de contenido.",
-    "Combinar eventos deportivos de gran repercusión (Mundiales, ligas populares) con preguntas controversiales o giros inesperados en los títulos para generar altos niveles de engagement.",
-    "Para noticias de desastres naturales dentro del nicho `ia_noticias`, incluir cifras impactantes o el número de afectados para incrementar significativamente el engagement.",
-    "Aplicar la estructura de título 'ENTIDAD + ACCIÓN IMPACTANTE + HOY + PREGUNTA/EMOCIÓN' para noticias de actualidad que buscan generar clics rápidos.",
-    "Enfocarse en el nicho de 'deportes', especialmente con contenido relacionado a eventos deportivos globales como el Mundial, dado su alto potencial de viralidad y vistas.",
-    "Implementar un sistema de recolección de datos sobre la duración de los Shorts para determinar la duración óptima y ajustar la estrategia en futuras iteraciones."
+    "Enfocarse en Deportes Controversiales y de Alto Impacto: Priorizar la creación de contenido alrededor de especulaciones, controversias y eventos futuros de deportes importantes (mundiales, ligas principales), dado que el nicho de deportes (integrando 'mundial_2026') posee un `avg_views` de 258 y un `trend` de 867.0.",
+    "Optimizar Títulos y Hooks con Preguntas Emocionales y Números Impactantes: Desarrollar títulos que generen intriga y emoción extrema (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\") y hooks que incluyan cifras concretas de impacto (ej. \"132 muertos\"), ya que estos patrones se encuentran en los videos más vistos (>1200 views).",
+    "Reforzar la Publicación en Horas de la Madrugada: Considerar la hora 1 (1 AM) como un momento óptimo de publicación, donde se concentran múltiples videos de alto rendimiento, incluyendo el más visto de esta iteración (1325 views).",
+    "Evitar Hooks o Títulos con Resultados Planos/Incompletos: Descartar ganchos que simplemente enuncian un resultado sin drama (ej. \"Brasil y Noruega empatan 0-0\" con 0 views) o son genéricos e incompletos (ej. \"Sidny Lopes Cabral acaba de\" con 0 views)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Los picos de rendimiento más altos provienen de noticias deportivas de gran calibre (como el Mundial), que, al ser presentadas con hooks de alta expectación, generan un impacto de vistas desproporcionadamente mayor en comparación con el rendimiento promedio de otros temas en 'ia_noticias'."
+  "insight_semana": "La controversia y las especulaciones sobre grandes eventos deportivos (especialmente mundiales) presentadas con un tono de shock y pregunta abierta, como 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯', son el motor de viralidad más potente, superando los 1200 views y mostrando un `trend` de 867.0 en el nicho de deportes."
 }
