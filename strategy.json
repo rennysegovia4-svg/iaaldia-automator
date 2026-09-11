@@ -1,41 +1,40 @@
 {
-  "updated": "2026-09-10",
-  "iteracion": 275,
+  "updated": "2026-09-11",
+  "iteracion": 276,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.025,
-    "negocios_digitales": 0.025,
-    "cripto_inversiones": 0.025,
-    "productividad_ia": 0.025,
-    "entretenimiento": 0.025,
-    "politica_latam": 0.025
+    "deportes": 0.55,
+    "ia_noticias": 0.2,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Gancho de Anticipación y Drama Inminente: \"¡Se acabó la espera! ¡El [evento/noticia] ha llegado!\" (Avg 867 views)",
-    "Gancho de Pregunta Controversial/Conspirativa: \"[Evento/Equipo] ¿[Acción Inesperada/Fraude]? 🤯\" (Ej. ARGENTINA ENTREGÓ la Final del Mundial? 🤯)",
-    "Gancho de Noticia Impactante con Datos Clave: \"[Desastre/Situación] en [Lugar]: [Número] [Detalle clave] y [Consecuencia]!\" (Ej. Terremoto devastador en Colombia: 132 muertos)",
-    "Gancho de Noticia Deportiva Urgente/Crisis: \"[Equipo/Liga] [Verbo de Crisis/Drama] ¡[Emoción]!\" (Ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
-    "Gancho de Logro Sorprendente de Joven Talento: \"Con solo [Edad] años, [Nombre]...\" (Avg 740 views)",
-    "Gancho de Noticia General de Alto Impacto Regional: \"La noticia [Tema] que sacude [Región] hoy ⚽\" (Ej. La noticia deportiva que sacude LATAM hoy ⚽)"
+    "¡Se acabó la espera! ¡El [Evento Importante]...",
+    "[Sujeto/Equipo] [Verbo de Impacto] [Evento/Resultado]! 🤯/😱",
+    "[Tema Urgente] HOY: ¿[Consecuencia Negativa]? 😱",
+    "[Noticia Geográfica/Deportiva] que sacude [Región] [Hoy/Ahora] ⚽",
+    "Con solo [Edad] años, [Nombre] [Logro/Hecho Impresionante]...",
+    "¡[Hecho Sorpresa] en [Liga/Evento]! ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Hooks que revelan un resultado deportivo poco emocionante sin intriga ni sorpresa (ej. \"Brasil y Noruega empatan 0-0\" con 0 views).",
-    "Hooks que introducen nombres propios desconocidos sin contexto dramático inmediato (ej. \"Sidny Lopes Cabral acaba de\" con 0 views).",
-    "Hooks con afirmaciones genéricas o motivacionales que no generan urgencia o curiosidad inmediata (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\" con 0 views)."
+    "Descripción de resultado sin drama (Ej: Brasil y Noruega empatan 0-0)",
+    "Declaraciones blandas o ambiguas sin intriga (Ej: NO TOMAR RIESGO es tu MAYOR AMENAZA)",
+    "Nombres propios desconocidos sin contexto impactante (Ej: Sidny Lopes Cabral acaba de)"
   ],
-  "best_hora": 16,
-  "duracion_optima": 0,
+  "best_hora": 17,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el contenido de deportes, especialmente aquellos que involucran controversias, especulaciones sobre futuros eventos (ej. Mundial 2026), o dramas de ligas/equipos específicos, dado el rendimiento sobresaliente del nicho 'mundial_2026' (avg_views 258, trend 867.0).",
-    "Mantener el uso consistente de títulos que plantean preguntas controvertidas y emocionales, acompañados de emojis de alto impacto (🤯, 😱, ¡SHOCK!) para maximizar la curiosidad y el click-through.",
-    "Incorporar datos numéricos específicos y de alto impacto en los títulos o hooks de noticias (ej. '132 muertos') para captar la atención sobre la gravedad o singularidad del evento.",
-    "Evitar ganchos que simplemente anuncian resultados de partidos o introducen nombres desconocidos sin un elemento dramático o de intriga inmediato, ya que estos patrones han demostrado cero engagement.",
-    "Realizar A/B testing en los horarios de publicación, priorizando las ventanas de 1 AM, 6 AM, 16 PM y 21 PM, ya que cada una ha producido videos con más de 900 vistas, con 16 PM registrando el promedio más alto (1298 views) en esta iteración."
+    "Priorizar fuertemente la creación de contenido dentro del nicho 'deportes', enfocándose en narrativas especulativas, controversiales o de crisis sobre eventos futuros (Ej. Mundial 2026) o actuales de ligas específicas.",
+    "Mantener y potenciar el uso de emojis de alto impacto (🤯, 😱, ⚽) y palabras de urgencia ('hoy', 'SHOCK', 'ELIMINADO', 'ADIÓS') en los títulos para maximizar la CTR en el feed de Shorts.",
+    "Aunque el nicho 'ia_noticias' tiene una tendencia negativa general, replicar los formatos y subtemas de alto rendimiento (noticias deportivas con drama/controversia) es crucial para revertir la tendencia y aprovechar su potencial de vistas.",
+    "Evitar ganchos iniciales o títulos que se limiten a describir un resultado o un hecho de manera plana y sin drama, ya que consistently resultan en 0 vistas.",
+    "Explorar las horas de publicación alrededor de la 1-2 AM y 16-21 PM, ya que los videos con más vistas se concentran en estas franjas horarias, indicando picos de audiencia para el consumo de noticias virales.",
+    "Considerar la reintroducción o expansión cautelosa de temas de 'productividad' (avg_views: 56) y 'negocios' (avg_views: 21), ya que demuestran un engagement, aunque moderado, a diferencia de otros nichos sin vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El insight más importante es que el contenido deportivo en español, cuando se enfoca en la controversia, la especulación sobre eventos futuros o el drama de ligas/equipos específicos, domina absolutamente el engagement, demostrando un potencial viral y una tendencia de crecimiento (867.0 en 'mundial_2026') que supera con creces a cualquier otro nicho analizado."
+  "insight_semana": "El contenido deportivo especulativo y de controversia, especialmente sobre eventos futuros como el 'Mundial 2026', demuestra ser un imán de vistas con una tendencia de crecimiento (867.0) y rendimiento muy superior (avg_views 258) a otros nichos, incluso cuando las noticias generales del mismo 'ia_noticias' muestran una tendencia negativa (-0.8), revelando la necesidad de hiper-focalización en nichos de altísimo engagement emocional."
 }
