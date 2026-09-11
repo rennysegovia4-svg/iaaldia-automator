@@ -1,40 +1,37 @@
 {
   "updated": "2026-09-11",
-  "iteracion": 279,
+  "iteracion": 280,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.3,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Gancho de Anticipación Extrema (ej. \"¡Se acabó la espera! ¡El\")",
-    "Gancho de Dato Sorprendente o Biográfico Relevante (ej. \"Con solo 17 años, Lamine\")",
-    "Gancho de Formato Noticiero Clásico (ej. \"Muy buenas tardes. Bienvenidos a\")",
-    "Gancho de Pregunta Explosiva o Teoría Controversial (ej. \"¿ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Gancho de Noticia de Última Hora con Impacto Numérico (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
-    "Gancho de Impacto Emocional o Sorpresa Inmediata (ej. \"¡SHOCK!\", \"¡ELIMINADO! 😱\")"
+    "Pregunta impactante/controversial con emoji: `[Hecho Inesperado]? 🤯`",
+    "Anuncio urgente/revelación con sorpresa: `¡[Evento Crítico] HOY! 😱`",
+    "Noticia de impacto con efecto regional: `[Hecho] que sacude [Región/Contexto] ⚡`",
+    "Intriga por figura clave/evento específico: `Con solo [característica única], [Nombre/Evento] [acción sorprendente]`",
+    "Anticipación de evento esperado: `¡Se acabó la espera! ¡El [evento esperado]...`",
+    "Noticia catastrófica/gran impacto: `[Evento] devastador en [Lugar]: [consecuencia] y emergencia [Tipo]`"
   ],
   "avoid_hooks": [
-    "Patrón de declaración de resultado directo sin intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Patrón de inicio de narración genérico o descriptivo (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Patrón de información sin un elemento de misterio o 'shock' que justifique el click (ej. \"Brasil y Noruega empatan\")"
+    "Hooks que se limitan a describir un resultado o hecho simple sin intriga (ej. `[Equipo A] y [Equipo B] empatan [0-0]`).",
+    "Hooks que introducen un personaje o evento de forma directa sin generar curiosidad o impacto emocional (ej. `[Nombre] acaba de [acción]`).",
+    "Títulos/Hooks genéricos o vagos sin un elemento de shock, urgencia o pregunta abierta, como afirmaciones motivacionales descontextualizadas."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes' (incluyendo 'mundial_2026') y sub-temas deportivos controversiales dentro de 'ia_noticias', ya que demuestran el mayor potencial de views y tendencia.",
-    "Aprovechar la categoría 'ia_noticias' para cubrir eventos de alto impacto y urgencia (ej. desastres naturales) utilizando datos numéricos y lenguaje dramático en títulos y ganchos.",
-    "Concentrar las publicaciones en el horario de la 1 AM (madrugada), que ha demostrado ser consistentemente el de mayor rendimiento para videos de alto impacto e intriga.",
-    "Diseñar títulos y ganchos que generen intriga, anticipación, controversia o revelen un dato sorprendente, evitando la simple exposición de hechos o resultados.",
-    "Realizar pruebas controladas para los nichos 'finanzas', 'entretenimiento', 'negocios_digitales', 'productividad_ia', 'cripto_inversiones' y 'politica_latam' con bajos pesos, ya que los datos actuales son insuficientes para evaluar su verdadero potencial.",
-    "Es crucial investigar y definir una 'duracion_optima' para los Shorts, ya que este dato no está disponible y podría optimizar significativamente el rendimiento."
+    "Priorizar fuertemente las 'noticias deportivas controversiales' y 'desastres naturales urgentes' dentro del nicho `ia_noticias` (o `deportes`), ya que estas subcategorías son las únicas que consistentemente logran views superiores a 900.",
+    "Enfatizar la urgencia, el shock y la pregunta abierta en títulos y hooks, utilizando signos de exclamación/interrogación y emojis como `🤯`, `😱`, `⚡`, `⚽` para maximizar el CTR, incluso para temas repetidos.",
+    "Aprovechar la hora de la 1 AM como una ventana de publicación de alto potencial, dado que 3 de los videos más vistos (incluyendo el de mayor rendimiento) fueron publicados en este horario."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación ganadora es el contenido de alto impacto (deportes controversiales, noticias urgentes) presentado con ganchos altamente intrigantes y publicado estratégicamente en las horas de la madrugada, superando con creces a la información directa y sin emoción."
+  "insight_semana": "El rendimiento general del nicho `ia_noticias` es engañoso; su bajo promedio esconde el hecho de que *todos* los videos de alto rendimiento provienen de él, pero solo cuando tratan 'noticias deportivas con polémica' o 'desastres naturales urgentes', demostrando una extrema sensibilidad al sub-tema y la ejecución del gancho."
 }
