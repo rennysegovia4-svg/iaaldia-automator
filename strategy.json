@@ -1,39 +1,37 @@
 {
   "updated": "2026-09-13",
-  "iteracion": 290,
+  "iteracion": 291,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.66,
-    "ia_noticias": 0.15,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.14,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.25,
+    "finanzas": 0.07,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.07,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia]...",
-    "Con solo [edad/condición], [Nombre] [acción impactante]...",
-    "[Afirmación impactante]? 🤯",
-    "[Evento] devastador/sacude [lugar]: [consecuencia]...",
-    "[País/Equipo] [acción negativa]: ¿FINAL ENTREGADA? 🤯",
-    "La noticia deportiva que sacude LATAM hoy ⚽"
+    "Gancho de Anticipación / Urgencia (Ej: '¡Se acabó la espera! El', '¡Última hora! Descubre')",
+    "Gancho de Logro Sorprendente / Excepcional (Ej: 'Con solo X años, [Nombre] logró', 'Increíble hazaña de [Nombre]:')",
+    "Gancho de Pregunta Controversial / Revelación (Ej: '¿[Sujeto] entregó [Evento]?', '¿Es esto un fraude?', 'La verdad detrás de [Situación]')",
+    "Gancho de Noticia Impactante / Crisis (Ej: '[Desastre] devastador en [Lugar]:', 'La tragedia de [Evento] que sacude')",
+    "Gancho de Evento/Resultado Dramático con Emoji (Ej: '[Evento] en [Lugar]: ¡[Sujeto] ELIMINADO! 😱', 'SHOCK en [Competencia]: ¡[Equipo] cede! 🤯')",
+    "Gancho de Noticia Deportiva Reciente con Impacto LATAM (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽', 'Terremoto futbolístico en [Región]:')"
   ],
   "avoid_hooks": [
-    "[Equipo X] [marcador] [Equipo Y] (resultados directos sin emoción)",
-    "[Nombre] acaba de [acción] (afirmaciones descriptivas sin gancho)",
-    "[Equipo X] y [Equipo Y] empatan (información incompleta sin intriga)"
+    "Descripción directa y plana del resultado o evento sin intriga ('Brasil y Noruega empatan 0-0')",
+    "Declaraciones neutras y sin carga emocional sobre una acción ('Sidny Lopes Cabral acaba de')",
+    "Cualquier gancho que carezca de emoción, pregunta o emoji impactante, enfocándose solo en hechos concretos"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "**Priorizar el nicho de deportes (anteriormente mundial_2026):** Este nicho muestra el avg_views más alto (258) y la trend más fuerte (867.0), indicando un potencial masivo. La estrategia debe centrarse en ganchos de alto impacto para capitalizar esta oportunidad.",
-    "**Implementar series de contenido en Shorts:** El 30% de los videos del Top 10 utilizan marcadores de continuidad ('PARTE 1', '(1/2)'), lo que sugiere que la fragmentación del contenido para generar intriga es una táctica efectiva.",
-    "**Optimizar la hora de publicación para la madrugada:** El 70% de los videos del Top 10 fueron publicados entre la 1h y las 6h, siendo la 1h la franja más efectiva. Se recomienda consolidar la estrategia de publicación en estas horas.",
-    "**Desarrollar ganchos emocionales y de intriga:** Evitar completamente los ganchos puramente informativos o descriptivos que generaron 0 vistas. Enfocarse en preguntas, exclamaciones (🤯, 😱) y un lenguaje que genere anticipación o choque.",
-    "**Aprovechar el formato de 'noticia urgente' para IA Noticias:** A pesar de su tendencia negativa, el nicho 'ia_noticias' monopoliza el Top 10, lo que indica que su formato de entrega rápida de noticias con elementos de sorpresa o pregunta sigue siendo muy efectivo para captar la atención."
+    "**Priorizar contenido de Deportes (Mundial 2026):** Enfocar la creación en grandes eventos deportivos como el Mundial 2026, dado su `avg_views` de 258 y un `trend` de 867.0, lo que señala un alto potencial de crecimiento y engagement.",
+    "**Estrategia de Ganchos Emocionales y de Intriga:** Crear ganchos que generen anticipación, resalten logros sorprendentes o planteen preguntas controversiales, utilizando emojis relevantes (🤯, 😱, ⚽) para aumentar el Click-Through Rate (CTR).",
+    "**Optimización Horaria de Publicación en Madrugada/Mañana:** Concentrar las publicaciones de alto impacto entre las 1h, 2h y 6h, ya que estas horas acumulan el 70% de los videos más vistos, maximizando la visibilidad de la audiencia objetivo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La iteración revela una dualidad crítica: mientras el nicho 'ia_noticias' sigue siendo un pilar constante al monopolizar el Top 10 de videos, el nicho 'deportes' (mundial_2026) es la mayor oportunidad de crecimiento, con un 'trend' de 867.0, pero también la mayor volatilidad, ya que sus fallos resultan en 0 vistas, enfatizando la necesidad de una ejecución de gancho y tema impecable para capitalizar su alto potencial."
+  "insight_semana": "Aunque 'ia_noticias' domina el 100% de los videos del Top 10, su 'trend' negativo (-1.0) contrasta fuertemente con la tendencia positiva y el `avg_views` superior de 'mundial_2026' (ahora `deportes` con 258 `avg_views` y 867.0 `trend`), indicando que el canal debe migrar progresivamente su foco hacia `deportes` para capitalizar el crecimiento a largo plazo."
 }
