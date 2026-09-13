@@ -1,41 +1,39 @@
 {
   "updated": "2026-09-13",
-  "iteracion": 294,
+  "iteracion": 295,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Anticipación y Urgencia (ej: '¡Se acabó la espera! ¡El')",
-    "Dato Impactante/Edad Sorprendente (ej: 'Con solo 17 años, Lamine')",
-    "Preguntas Retóricas o Controversiales (ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticias de Última Hora con Cifras Clave (ej: 'Terremoto devastador en Colombia: 132 muertos')",
-    "Reacción Emocional Directa y Emojis (ej: '¡SHOCK! 🤯', '¡Gamezking ELIMINADO! 😱')",
-    "Promesa de Noticia Deportiva Relevante (ej: 'La noticia deportiva que sacude LATAM hoy ⚽')"
+    "Preguntas Retóricas o Controversiales con Emojis de Impacto (ej: '¿FINAL ENTREGADA? 🤯')",
+    "Noticias de Última Hora con Indicadores de Urgencia (ej: 'sacude LATAM hoy ⚽', 'SE VENDE HOY')",
+    "Hechos Sorprendentes o Datos Clave (ej: 'Con solo 17 años, Lamine', '132 muertos')",
+    "Eventos Negativos o Tragedias con Localización/Impacto (ej: 'Terremoto devastador en Colombia', 'tragedia sísmica que sa')",
+    "Menciones Específicas de Entidades o Figuras Populares (ej: 'ARGENTINA', 'LEICESTER', 'LIGA MX: AMÉRICA')",
+    "Frases de Anticipación o Introducción Directa (ej: '¡Se acabó la espera! ¡El', 'Muy buenas tardes.')"
   ],
   "avoid_hooks": [
-    "Resultados Conclusivos sin Intriga Inicial (ej: 'Brasil y Noruega empatan 0-0')",
-    "Mencionar Nombres o Eventos Específicos sin Contexto Impactante (ej: 'Sidny Lopes Cabral acaba de')",
-    "Hooks Demasiado Genéricos o Repetitivos (ej: 'Brasil y Noruega empatan')"
+    "Hooks que solo enuncian un hecho sin generar curiosidad o impacto emocional (ej: 'Brasil y Noruega empatan 0-0')",
+    "Hooks que son declaraciones incompletas o carecen de contexto inmediato (ej: 'Sidny Lopes Cabral acaba de')",
+    "Hooks basados en resultados deportivos poco emocionantes (ej. empates sin goles sin un giro dramático)"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Maximizar la producción de contenido en el nicho 'ia_noticias', replicando los patrones de títulos y ganchos controversiales o de última hora relacionados con deportes que dominan el Top 10.",
-    "Investigar y explotar el potencial del nicho 'deportes' (mundial_2026), dada su alta puntuación media y tendencia positiva, a pesar de no figurar en el Top 10 actual, buscando temas con alto engagement y controversia como los encontrados en 'ia_noticias'.",
-    "Establecer la 1 AM (hora local) como el horario de publicación prioritario, seguido de las 2 AM y 6 AM, para aprovechar el pico de visibilidad que demuestra la data de los videos más exitosos.",
-    "Implementar un sistema de seguimiento de la duración de los Shorts para identificar el punto óptimo de retención y completitud, ya que actualmente no se dispone de este dato crítico.",
-    "Mantener la experimentación en 'productividad' y 'negocios', que muestran un rendimiento modesto, pero evitar invertir recursos significativos en nichos sin vistas registradas."
+    "Priorizar la creación de contenido para el nicho de 'deportes' (enfocado en 'mundial_2026') debido a su alto promedio de vistas (258) y fuerte tendencia (867.0).",
+    "Mantener una estrategia de contenido de alta viralidad para 'ia_noticias', enfocándose en temas controversiales, urgentes o de 'última hora' con hooks impactantes, dado que es el único nicho que genera videos en el Top 10.",
+    "Consolidar la hora de publicación de la 1 AM como la franja prioritaria para lanzamientos de alto impacto, ya que consistentemente concentra la mayor cantidad de vistas exitosas (3363 vistas de videos top).",
+    "Implementar los patrones de hooks más efectivos (preguntas controversiales, urgencia, hechos sorprendentes y emojis de impacto) y evitar los patrones de hooks que han demostrado bajo rendimiento (declaraciones blandas, incompletas o resultados poco emocionantes).",
+    "Dado que no se dispone de datos sobre la duración óptima de los videos ('duracion_optima'), se recomienda implementar pruebas A/B con diferentes longitudes de Shorts (ej. 15s, 30s, 45s) para recopilar métricas internas y optimizar este factor en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de que el nicho 'mundial_2026' (deportes) presenta la mayor media de vistas y una tendencia explosiva, el nicho 'ia_noticias' es el único que consistentemente produce videos en el TOP 10, lo que indica que, si bien hay potencial latente en deportes, la estrategia de noticias sensacionalistas y controversiales de 'ia_noticias' es actualmente la más efectiva para generar picos de visualización individuales, a pesar de su bajo promedio general y tendencia negativa."
+  "insight_semana": "El nicho 'ia_noticias' presenta una dualidad clave: a pesar de tener un promedio de vistas bajo (38) y una tendencia negativa (-0.85), es el único nicho responsable del 100% de los videos en el Top 10 de esta iteración, evidenciando un alto potencial de viralidad en temas específicos y controversiales que pueden compensar su rendimiento general."
 }
