@@ -1,40 +1,37 @@
 {
   "updated": "2026-09-14",
-  "iteracion": 297,
+  "iteracion": 298,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "productividad": 0.1,
+    "productividad_ia": 0.1,
     "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.05,
-    "productividad_ia": 0.03,
-    "entretenimiento": 0.02,
-    "politica_latam": 0.0
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta con Controversia/Asombro y Emoji: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯'",
-    "Noticia Impactante con Cifras Claras: 'Terremoto devastador en Colombia: 132 muertos'",
-    "Actualidad y Urgencia con Contexto Regional: 'La noticia deportiva que sacude LATAM hoy ⚽'",
-    "Evento Específico con Drama y Sorpresa: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱'",
-    "Anticipación y Urgencia: '¡Se acabó la espera! ¡El' (Gancho directo que genera expectativa)",
-    "Hecho Sorprendente con Dato Específico: 'Con solo 17 años, Lamine' (Destaca un logro inusual)"
+    "Preguntas retóricas y afirmaciones impactantes con emojis de sorpresa (🤯, 😱)",
+    "Inclusión de urgencia temporal ('HOY') y verbos de acción ('sacude', 'entregó')",
+    "Mención explícita de entidades o eventos específicos y relevantes (ej. 'ARGENTINA', 'Mundial')",
+    "Detalles concretos o cifras significativas que generen curiosidad ('132 muertos', 'Con solo 17 años')",
+    "Uso de indicadores de serie ('PARTE 1', '1/2') para anticipar continuidad",
+    "Introducciones de alto impacto que generen expectación ('¡Se acabó la espera!', 'La noticia deportiva que...')"
   ],
   "avoid_hooks": [
-    "Declaraciones Factuales sin Emoción ni Intriga: 'Brasil y Noruega empatan 0-0'",
-    "Frases Genéricas de Superación Personal sin Contexto: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱'",
-    "Nombres Propios Desconocidos sin Impacto Inmediato: 'Sidny Lopes Cabral acaba de' o 'ARGENTINA EN SHOCK: CABRAL PARALIZA! 😱'"
+    "Hooks que anuncian directamente resultados poco emocionantes o empates sin un giro dramático",
+    "Frases genéricas o incompletas que no establecen un gancho claro al inicio",
+    "Contenido de autoayuda o motivacional fuera del nicho principal de noticias/deportes"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente el nicho de 'deportes', enfocándose en eventos de alto impacto como 'mundial_2026', dado su excepcional `avg_views` (258) y `trend` (867.0).",
-    "Mantener una producción estratégica en 'ia_noticias' para capitalizar su alta capacidad de viralidad (100% del TOP 10), utilizando hooks de controversia, sorpresa y urgencia, a pesar de su tendencia general negativa.",
-    "Consolidar la hora de publicación a la 1 AM, ya que esta franja sigue siendo la más efectiva, concentrando el mayor volumen de vistas (3363 vistas) y albergando el video más exitoso (1325 vistas).",
-    "Explorar la estrategia de contenido serializado utilizando '(PARTE 1)' en títulos de temas virales para fomentar la retención y la anticipación de futuras entregas.",
-    "Evitar hooks y títulos que sean meramente descriptivos o carezcan de elementos de emoción, sorpresa o urgencia, como se observó en los videos de bajo rendimiento."
+    "Priorizar `deportes` (vía `mundial_2026`) y `ia_noticias` para la creación de contenido, asignando al menos el 70% del esfuerzo, ya que `deportes` lidera en promedio (258 vistas) y `ia_noticias` genera todos los videos virales del Top 10.",
+    "Concentrar las publicaciones a la 1 AM, la franja horaria que consistentemente acumula el mayor volumen de vistas (3363 vistas en el Top 10) y alberga el video más visto (1325 vistas).",
+    "Diseñar hooks que enfaticen la urgencia con 'HOY', utilicen preguntas retóricas directas y añadan emojis de impacto (🤯, 😱) para maximizar el Click-Through Rate (CTR) inicial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'mundial_2026' (integrado en 'deportes') se ha consolidado como el más prometedor, con el mayor promedio de vistas (258) y una tendencia de crecimiento explosiva (867.0), indicando una oportunidad masiva para capitalizar eventos deportivos específicos con alto nivel de anticipación y engagement, superando la volatilidad del contenido de 'ia_noticias' en términos de consistencia y crecimiento."
+  "insight_semana": "El nicho `ia_noticias`, a pesar de su bajo promedio de vistas (31) y tendencia negativa (-0.9), es el motor exclusivo de los videos más virales (100% del Top 10), destacando su perfil de alto riesgo/alta recompensa, mientras `mundial_2026` (deportes) emerge como una apuesta más segura con rendimiento promedio alto (258 vistas) y fuerte tendencia (867.0)."
 }
