@@ -1,36 +1,39 @@
 {
   "updated": "2026-09-14",
-  "iteracion": 301,
+  "iteracion": 302,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.4,
-    "deportes": 0.35,
-    "productividad": 0.05,
-    "negocios": 0.05,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "negocios_digitales": 0.025,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a"
+    "¡Se acabó la espera! ¡El [evento/noticia] ha llegado!",
+    "Con solo [edad/número], [nombre/dato] [acción impactante]...",
+    "Muy buenas tardes. Bienvenidos a [evento/noticia urgente].",
+    "¿[Pregunta impactante sobre evento]? 🤯",
+    "¡[Noticia devastadora/impactante]: [consecuencia]!",
+    "La noticia deportiva que sacude [región/comunidad] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Descriptivo del resultado (ej. 'Brasil y Noruega empatan 0-0')",
-    "Informativo sin intriga (ej. 'Brasil y Noruega empatan')",
-    "Nombres desconocidos sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
+    "Descripciones meramente factuales (ej. 'Brasil y Noruega empatan 0-0')",
+    "Ganchos demasiado genéricos o incompletos (ej. 'Brasil y Noruega empatan')",
+    "Introducciones abruptas sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` que se enfoque específicamente en noticias deportivas de alto impacto, controversia o eventos masivos (ej. Mundiales, ligas importantes, escándalos), ya que esta combinación es la que consistentemente produce los videos más virales.",
-    "Concentrar las publicaciones en la franja de la 1 AM (hora 1), dado que esta hora agrupa el mayor volumen de vistas y la mayor cantidad de videos en el Top 10, sugiriendo un pico de audiencia o una ventaja algorítmica.",
-    "Utilizar ganchos que generen urgencia, intriga mediante la mención de detalles específicos (edades, nombres) o imiten una apertura de noticias formal y directa, evitando a toda costa los ganchos meramente descriptivos o que revelan el desenlace de la noticia."
+    "Priorizar la creación de contenido en el nicho de `deportes`, asimilando el éxito de `mundial_2026` y los videos virales de `ia_noticias` de temática deportiva. Enfocarse en noticias de último momento, controversias o grandes eventos populares.",
+    "Mantener una alta frecuencia de publicación en el nicho `ia_noticias` para capitalizar su potencial de virulencia, especialmente con noticias de alto impacto (deportivas o catastróficas), a pesar de que su promedio general de vistas sea bajo.",
+    "Publicar los videos consistentemente a la 1 AM (hora 1) para maximizar el alcance inicial, ya que este horario alberga la mayor cantidad de videos top y vistas acumuladas.",
+    "Diseñar ganchos (hooks) que generen urgencia, intriga o impacten directamente con la noticia, utilizando preguntas con emojis (ej. '🤯'), menciones específicas de edad/nombres, o declaraciones de alto impacto, y siempre evitando ganchos puramente descriptivos.",
+    "Experimentar con el formato de contenido 'PARTE 1' para noticias complejas o de alto interés, dado su éxito en videos virales del nicho `ia_noticias`."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría `ia_noticias`, a pesar de un bajo rendimiento promedio general y tendencia negativa, posee un potencial viral extremo y específico cuando se combina con temas deportivos de alto impacto y controversia. Este nicho es el único generador de los videos más vistos, lo que indica que la clave no es la consistencia general del nicho, sino la identificación y ejecución de temas 'hit' dentro de él."
+  "insight_semana": "El nicho `ia_noticias` exhibe una marcada paradoja: aunque su `avg_views` y `trend` generales son bajos o negativos, es el único nicho responsable de generar todos los videos en el Top 10, lo que demuestra su inigualable potencial de virulencia para temas específicos de alto impacto (principalmente deportes y catástrofes), superando a categorías con mejores promedios generales."
 }
