@@ -1,38 +1,39 @@
 {
   "updated": "2026-09-15",
-  "iteracion": 308,
+  "iteracion": 309,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.25,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
+    "deportes": 0.45,
+    "ia_noticias": 0.2,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.05,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "Hooks de urgencia/anticipación (Ej: '¡Se acabó la espera! ¡El')",
-    "Hooks de intriga con detalles específicos (Ej: 'Con solo [Edad/Característica], [Nombre]...')",
-    "Hooks con formato de noticia formal/breaking news (Ej: 'Muy buenas tardes. Bienvenidos a...')",
-    "Hooks en formato de pregunta impactante con emoji (Ej: '¿[Evento Impactante]? 🤯')",
-    "Hooks que inician con referencias geográficas o de eventos trending (Ej: '[País/Liga]: ¡[Noticia Shock]!')",
-    "Hooks que resaltan la actualidad y relevancia (Ej: 'La noticia deportiva que sacude [Región] HOY ⚽')"
+    "¡Se acabó la espera! [Evento clave]",
+    "Con solo [Edad] años, [Nombre/Sujeto]",
+    "Muy buenas tardes. Bienvenidos a [Noticia/Programa]",
+    "¿[Evento/Acción sorprendente]? 🤯",
+    "[Evento dramático] en [Lugar]: [Cifra impacto]",
+    "[Evento de alto impacto]: ¡[Consecuencia]! 😱"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado completo inmediatamente (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Hooks demasiado genéricos o sin gancho emocional (Ej: 'Brasil y Noruega empatan')",
-    "Hooks que mencionan nombres específicos sin contexto o impacto claro (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Hooks sobre eventos deportivos hipotéticos o no reales ('MUNDIAL 2026' en contextos falsos)"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar noticias deportivas de alto impacto y actualidad (fútbol, mundiales, ligas LATAM): El 80% de los videos en el Top 10 son noticias deportivas, y el nicho 'mundial_2026' muestra un alto potencial (a pesar de su volatilidad), indicando una fuerte demanda por este contenido.",
-    "Diseñar hooks que generen fuerte curiosidad y urgencia, incorporando emojis impactantes: Analizando los hooks más efectivos y los títulos de videos exitosos, el uso de preguntas, frases de anticipación ('¡Se acabó la espera!'), y emojis (🤯, 😱, ⚽) es crucial para captar la atención en los primeros segundos.",
-    "Evitar categóricamente hooks que revelen el desenlace o traten temas hipotéticos sin base real: Los hooks fallidos y los videos con 0 vistas suelen dar demasiada información de entrada o referirse a eventos que no han ocurrido, lo que anula la intriga y la relevancia noticiosa."
+    "Priorizar la creación de contenido de noticias deportivas de alto impacto dentro del nicho `ia_noticias`, ya que el 100% de los videos del Top 10 pertenecen a esta categoría, con un promedio de 1131.1 vistas para los videos exitosos.",
+    "Experimentar activamente con las horas de publicación entre la 1 AM y las 6 AM, dado que 7 de los 10 videos con más vistas fueron publicados en este rango, siendo la 1 AM la hora con mayor frecuencia de hits y el video más visto.",
+    "Implementar las fórmulas de hooks más efectivas, basadas en la anticipación, detalles sorprendentes, y formatos de noticia impactante, para captar la atención inicial de la audiencia.",
+    "Evitar el uso de hooks que anuncian eventos hipotéticos o sin impacto real, o que son demasiado vagos, ya que están asociados directamente a videos con 0 vistas.",
+    "Iniciar la recopilación de datos sobre la duración de los Shorts para determinar la duración óptima, ya que esta métrica clave no se encuentra disponible actualmente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' demuestra ser un motor de contenido viral extremadamente efectivo cuando el tema es una noticia deportiva de alto impacto o un evento noticioso real, a pesar de que su promedio general de vistas es bajo debido a la alta variabilidad en el rendimiento. La selección precisa del tema es crítica."
+  "insight_semana": "El 100% de los videos del Top 10 provienen del nicho `ia_noticias` (específicamente noticias deportivas de alto impacto), lo que demuestra que, a pesar de su bajo promedio general (17 vistas), este nicho tiene el mayor potencial viral para el canal, produciendo picos de vistas superiores a 900."
 }
