@@ -1,37 +1,39 @@
 {
   "updated": "2026-09-16",
-  "iteracion": 315,
+  "iteracion": 316,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.0125,
-    "entretenimiento": 0.0125,
-    "negocios_digitales": 0.05,
+    "ia_noticias": 0.4,
+    "deportes": 0.3,
     "productividad_ia": 0.1,
-    "cripto_inversiones": 0.0125,
-    "politica_latam": 0.0125
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante] ha llegado...",
-    "¡[Evento] que sacude [Región] hoy! 😱",
-    "¿[Sujeto] [Acción controversial]? 🤯",
-    "Con solo [Edad/Número] [Sujeto/Dato], [Logro/Hecho] que sorprende.",
-    "Terremoto devastador en [Lugar]: [Número] muertos y emergencia [Tipo].",
-    "¡[Nombre/Equipo] [Acción clave] HOY: [Consecuencia]! 😱"
+    "¡[Verbo de acción en pasado] el [Sustantivo de gran impacto]? 🤯",
+    "¡[Noticia deportiva/evento] que sacude [Región] hoy! ⚽",
+    "¡Se acabó la espera! ¡El [Evento Importante]!",
+    "Con solo [Número] años, [Nombre]...",
+    "ÚLTIMA HORA: [Noticia impactante con números/lugar] 😱",
+    "LIGA [NOMBRE]: [EQUIPO] [ACCIÓN SHOCK] ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian el resultado de un evento (Ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que son demasiado genéricos y no generan curiosidad (Ej. 'Brasil y Noruega empatan')",
-    "Hooks que son frases incompletas o no revelan intriga (Ej. 'Sidny Lopes Cabral acaba de')"
+    "Anuncios genéricos de resultados deportivos (ej. 'X y Y empatan A-B')",
+    "Introducciones subestimadas o neutrales (ej. 'X acaba de...')",
+    "Información redundante o poco concisa sin generar intriga"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de `deportes` (particularmente temas de 'mundial_2026') y `ia_noticias`. Aunque `deportes` presenta alta volatilidad, su potencial de vistas es el más alto (avg_views 258) y `ia_noticias` domina el Top 10, lo que indica un fuerte potencial viral con el gancho correcto.",
-    "Aprovechar la hora de publicación de la 1 AM, ya que este horario consistentemente ha albergado el video con más vistas (1325) y el 30% de los videos en el Top 10, optimizando la visibilidad inicial.",
-    "Diseñar títulos y hooks que generen intriga, utilicen preguntas polémicas, presenten datos impactantes o anuncien noticias urgentes y dramáticas, incluyendo emojis de impacto (🤯, 😱, ⚡) para captar la atención instantáneamente."
+    "Enfocarse en noticias deportivas de alto impacto, especialmente fútbol latinoamericano y temas de Mundial, utilizando el formato de 'noticias IA' que produce los videos más virales.",
+    "Incorporar en los títulos y hooks elementos de controversia, preguntas directas, nombres/lugares específicos, y emojis de alto impacto (🤯, 😱, ⚡, ⚽) para captar la atención inmediatamente.",
+    "Mantener la publicación consistente a la 1 AM hora local, ya que este horario ha demostrado la mayor frecuencia de éxito entre los videos top y alberga el video con más vistas.",
+    "Desarrollar contenido en formato de series o partes ('PARTE 1', '(1/2)') para temas de gran interés, aprovechando el patrón exitoso observado en los videos top.",
+    "Explorar la replicación de patrones exitosos de títulos como 'ARGENTINA ENTREGÓ la Final del Mundial?' y 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO!' combinando evento, sujeto y emoción."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` sigue siendo la fuente exclusiva de videos virales (100% del Top 10), confirmando que su potencial de éxito reside en la capacidad de generar hits excepcionales con ganchos potentes y temas de alta relevancia/controversia, a pesar de que su rendimiento promedio general (23 vistas) no es el más alto."
+  "insight_semana": "La clave para el éxito viral reside en la intersección de noticias deportivas de alto impacto (especialmente fútbol latinoamericano y temas de Mundial) con el formato de 'noticias IA', a pesar de la alta volatilidad general del nicho `ia_noticias`."
 }
