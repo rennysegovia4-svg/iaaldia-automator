@@ -1,38 +1,37 @@
 {
   "updated": "2026-09-16",
-  "iteracion": 313,
+  "iteracion": 314,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.25,
-    "ia_noticias": 0.45,
+    "deportes": 0.35,
+    "ia_noticias": 0.35,
     "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.15,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante]...",
-    "[Evento/Personaje Destacado] y su impacto en [Región]: [Número] [Detalle Clave]...",
-    "¿[Sujeto Polémico] [Acción Controversial] la [Evento Principal]? 🤯 (Parte X)",
-    "La noticia [Adjetivo Impactante] que sacude [Región/Hoy] ⚽/😱",
-    "[Sujeto Específico] [Verbo Fuerte] HOY: ¿[Consecuencia Drástica]? 😱",
-    "Muy buenas tardes. Bienvenidos a [Noticia con Gran Relevancia]"
+    "¡Se acabó la espera! ¡El [evento esperado]...",
+    "Con solo [edad/condición], [nombre] [logro impactante]...",
+    "[Sujeto/Evento] + [Verbo impactante] + [Pregunta/Exclamación] + 🤯/😱",
+    "[Noticia urgente/Tragedia] + [Localización/Impacto] + [Cifra/Consecuencia grave]",
+    "[Headline deportivo/impactante] + [Urgencia: Hoy/Ahora] + ⚽/😱",
+    "[Evento Específico] + [Consecuencia inesperada] + ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Declaraciones de hechos planos sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Inicios de frase genéricos que no anticipan un conflicto o noticia relevante (ej. 'Sidny Lopes Cabral acaba de')",
-    "Ganchos que revelan el desenlace completo de la noticia sin generar curiosidad (ej. 'Brasil y Noruega empatan')"
+    "Resultados de partidos sin un giro o impacto extra (ej. 'Brasil y Noruega empatan 0-0')",
+    "Anuncios de eventos o hechos sin un gancho emocional o de intriga (ej. 'Sidny Lopes Cabral acaba de')",
+    "Frases incompletas o que no generan suficiente curiosidad por sí solas (ej. 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el nicho `ia_noticias` como contenedor principal, ya que produce el 100% de los videos virales, y dentro de este, explotar temas de alto impacto como deportes (especialmente fútbol tipo 'Mundial 2026') que generen controversia o expectación.",
-    "Diseñar hooks que enfaticen la urgencia, la sorpresa o la controversia, utilizando preguntas impactantes, números específicos, nombres de lugares/equipos y emojis (🤯, 😱, ⚽) para captar la atención de inmediato.",
-    "Programar la publicación de los videos con mayor potencial viral en el horario de la 1 AM, ya que ha demostrado ser el momento más efectivo para la visibilidad inicial de los éxitos.",
-    "Evitar los hooks que simplemente enuncian un hecho sin crear intriga o que revelan el final de la noticia, ya que están correlacionados con el fracaso total de vistas."
+    "Priorizar la creación de contenido bajo el nicho `ia_noticias`, especialmente cuando se abordan temas de actualidad deportiva o noticias de alto impacto, dado que el 100% de los videos en el Top 10 provienen de este nicho.",
+    "Implementar ganchos con preguntas directas, exclamaciones, emojis (🤯, 😱, ⚽) y palabras que denotan urgencia ('HOY', 'SHOCK', 'ELIMINADO', 'CEDIO'), ya que estos patrones son consistentes en los títulos y hooks más exitosos.",
+    "Aprovechar el alto potencial del nicho `deportes` (representado por `mundial_2026` con 258 avg_views) enfocándose en la narrativa de 'noticia de último momento' o 'gran revelación' para mitigar el riesgo de 0 vistas, replicando el éxito de los videos virales de `ia_noticias` que tratan temas deportivos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el motor exclusivo de la viralidad (100% del Top 10), demostrando que, a pesar de un promedio bajo (24 vistas), posee una capacidad excepcional para generar hits masivos cuando el contenido y el gancho son potentes. Paralelamente, los temas de `mundial_2026` (dentro de `deportes`) ofrecen el mayor potencial de vistas promedio, pero con una alta volatilidad que puede resultar en 0 vistas si el gancho no es efectivo."
+  "insight_semana": "El nicho `ia_noticias` sigue siendo el principal impulsor de virales, capturando el 100% de los videos en el Top 10 y logrando su mayor impacto al abordar *noticias deportivas* y eventos de última hora con un enfoque de urgencia e intriga, evidenciando que el framing noticioso es clave para la viralidad."
 }
