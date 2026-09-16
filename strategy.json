@@ -1,37 +1,38 @@
 {
   "updated": "2026-09-16",
-  "iteracion": 311,
+  "iteracion": 312,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.25,
     "ia_noticias": 0.45,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.05,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "ÚLTIMA HORA: [Noticia impactante] 🤯",
-    "¿[Sujeto/Evento] [Verbo polémico/inesperado]? 😱",
-    "La tragedia que sacude [Lugar/Área] hoy 🚨"
+    "¡Se acabó la espera! ¡El [Evento Importante]...",
+    "[Evento/Personaje Destacado] y su impacto en [Región]: [Número] [Detalle Clave]...",
+    "¿[Sujeto Polémico] [Acción Controversial] la [Evento Principal]? 🤯 (Parte X)",
+    "La noticia [Adjetivo Impactante] que sacude [Región/Hoy] ⚽/😱",
+    "[Sujeto Específico] [Verbo Fuerte] HOY: ¿[Consecuencia Drástica]? 😱",
+    "Muy buenas tardes. Bienvenidos a [Noticia con Gran Relevancia]"
   ],
   "avoid_hooks": [
-    "Descripciones neutrales de eventos como 'Brasil y Noruega empatan 0-0'",
-    "Frases incompletas o sin impacto inmediato como 'Sidny Lopes Cabral acaba de'",
-    "Hooks puramente descriptivos sin emoción o intriga, como 'Brasil y Noruega empatan'"
+    "Declaraciones de hechos planos sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Inicios de frase genéricos que no anticipan un conflicto o noticia relevante (ej. 'Sidny Lopes Cabral acaba de')",
+    "Ganchos que revelan el desenlace completo de la noticia sin generar curiosidad (ej. 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "**Priorizar el nicho `ia_noticias`**: El 100% de los videos en el Top 10 pertenecen a este nicho, demostrando su alta capacidad para generar contenido viral. Se recomienda enfocar la producción en noticias impactantes, controversiales o de última hora, especialmente en temas deportivos y eventos de gran magnitud.",
-    "**Optimizar horarios de publicación en la madrugada**: La franja de 1 AM a 6 AM es crítica. El horario de la 1 AM ha sido el más efectivo, albergando el video más visto (1325 views) y la mayor cantidad de éxitos (3 videos) dentro del Top 10. Se sugiere concentrar la mayor parte de las publicaciones en este bloque, aunque también se deben testear 16 PM y 21 PM que mostraron picos individuales altos.",
-    "**Reforzar la intriga y emoción en títulos y ganchos**: Utilizar en el título y en el primer segundo del video elementos como preguntas, exclamaciones (`🤯`, `😱`), palabras de urgencia (`ÚLTIMA HORA`, `hoy`) y menciones a figuras o hechos sorprendentes, tal como lo hacen los ganchos más efectivos y los títulos del Top 10."
+    "Priorizar el nicho `ia_noticias` como contenedor principal, ya que produce el 100% de los videos virales, y dentro de este, explotar temas de alto impacto como deportes (especialmente fútbol tipo 'Mundial 2026') que generen controversia o expectación.",
+    "Diseñar hooks que enfaticen la urgencia, la sorpresa o la controversia, utilizando preguntas impactantes, números específicos, nombres de lugares/equipos y emojis (🤯, 😱, ⚽) para captar la atención de inmediato.",
+    "Programar la publicación de los videos con mayor potencial viral en el horario de la 1 AM, ya que ha demostrado ser el momento más efectivo para la visibilidad inicial de los éxitos.",
+    "Evitar los hooks que simplemente enuncian un hecho sin crear intriga o que revelan el final de la noticia, ya que están correlacionados con el fracaso total de vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el motor principal de viralidad, demostrando que su alta variabilidad (con promedio bajo pero picos muy altos) y la capacidad de captar la atención con noticias impactantes superan a la consistencia de nichos con promedios más altos pero sin éxitos virales."
+  "insight_semana": "El nicho `ia_noticias` es el motor exclusivo de la viralidad (100% del Top 10), demostrando que, a pesar de un promedio bajo (24 vistas), posee una capacidad excepcional para generar hits masivos cuando el contenido y el gancho son potentes. Paralelamente, los temas de `mundial_2026` (dentro de `deportes`) ofrecen el mayor potencial de vistas promedio, pero con una alta volatilidad que puede resultar en 0 vistas si el gancho no es efectivo."
 }
