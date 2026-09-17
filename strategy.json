@@ -1,37 +1,37 @@
 {
   "updated": "2026-09-17",
-  "iteracion": 322,
+  "iteracion": 323,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.05
+    "deportes": 0.6,
+    "ia_noticias": 0.3,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El {evento} ha llegado! (Basado en 867 views)",
-    "Con solo {edad/número}, {nombre/evento} ha sorprendido a todos. (Basado en 740 views)",
-    "{Tema Controversial} ¿ENTREGÓ {evento/resultado}? 🤯 (Basado en Top 10 títulos)",
-    "¡{Evento/Noticia} SHOCK/ELIMINADO! 😱 (Basado en Top 10 títulos)",
-    "La noticia {categoría} que sacude {región} hoy ⚽ (Basado en Top 10 títulos)",
-    "Muy buenas tardes. Bienvenidos a {tema clave/análisis}. (Basado en 375 views)"
+    "¡[Hecho Sorprendente/Urgente]! [Sujeto/Evento] [Impacto] 😱",
+    "¿[Pregunta Controversial] [Evento]? 🤯 (PARTE X)",
+    "[Evento/Noticia Impactante] en [Lugar/Región]: [Detalle clave/Cifra] 🔥",
+    "La noticia [adjetivo: deportiva/impactante] que sacude [Lugar/Momento] ⚽",
+    "[Nombre/Detalle Específico] [Edad/Cualidad] [Acción/Logro sorprendente]",
+    "¡[Equipo/Sujeto] [Acción/Resultado Inesperado]! ¡[Emoción/Shock]! 🤯"
   ],
   "avoid_hooks": [
-    "{Sujeto} y {Sujeto2} empatan {resultado} (Excesivamente factual y sin intriga, 0 views)",
-    "{Nombre} acaba de {verbo simple} (Introducción vaga o incompleta, 0 views)",
-    "{Evento} sin drama ni emoción (Ej. 'Brasil y Noruega empatan', 0 views)"
+    "Hooks que son meramente descriptivos de un resultado sin generar intriga o emoción (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks que mencionan nombres o eventos específicos sin contexto o una narrativa impactante (ej. 'Sidny Lopes Cabral acaba de').",
+    "Hooks que solo enuncian un hecho común o poco relevante sin prometer un 'shock' o una revelación."
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de noticias deportivas controversiales o de alto impacto, ya que el nicho `mundial_2026` (bajo deportes) tiene el mejor `avg_views` (258) y `trend` (867.0).",
-    "Implementar una estrategia de titulación en 'Partes' o series (ej. 'PARTE 1', '(1/2)') para temas complejos o de alto interés, dado que los dos videos con más vistas utilizan este formato (1325 y 1298 views).",
-    "Diseñar títulos y hooks que generen intriga, incluyan preguntas directas o utilicen palabras de alto impacto emocional (ej. '🤯', '😱', 'ENTREGÓ', 'SHOCK') para captar la atención de inmediato."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que se enfoque en noticias deportivas de alto impacto o controversia (especialmente fútbol y grandes torneos) y eventos de emergencia/desastres naturales, ya que el 100% de los videos del Top 10 provienen de esta categoría.",
+    "Desarrollar títulos y hooks que generen intriga y anticipación, utilizando preguntas directas sobre controversias, menciones a figuras clave, o cifras impactantes, combinados con emojis de shock (🤯, 😱) para maximizar el CTR inicial, siguiendo el patrón de los hooks más efectivos.",
+    "Implementar una estrategia de contenido 'en partes' para historias que puedan ser extendidas, como se observa en los títulos 'PARTE 1' o '(1/2)' en videos con hasta 1325 views, para fomentar la visualización de contenido relacionado y la retención de audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias de alto impacto y contenido deportivo controversial (ej. sobre el Mundial) dentro del nicho 'ia_noticias' es la estrategia de mayor rendimiento, demostrando el potencial para alcanzar las vistas más altas y una tendencia de crecimiento significativa."
+  "insight_semana": "La clave del éxito reside en la hiper-especialización dentro de 'ia_noticias' hacia eventos deportivos controversiales o grandes catástrofes, utilizando títulos con ganchos emocionales y numeración de partes, ya que estos temas representan la totalidad de los videos con mayor rendimiento a pesar de la baja media general de la categoría."
 }
