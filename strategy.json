@@ -1,38 +1,37 @@
 {
   "updated": "2026-09-17",
-  "iteracion": 319,
+  "iteracion": 320,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.4,
-    "finanzas": 0.05,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.01,
+    "deportes": 0.45,
+    "ia_noticias": 0.45,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.0,
-    "productividad": 0.1
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [gran evento/noticia]...",
-    "Con solo [edad] años, [nombre] [logro/noticia]...",
-    "[Evento de alto impacto] en [Lugar]: ¡[Número/Consecuencia clave]!",
-    "¿[Sujeto/Equipo] [Acción polémica] la [Resultado]? 🤯",
-    "[Deporte/Liga]: ¡[Equipo/Jugador] [Acción sorprendente]! 😱",
-    "La noticia [Adjetivo] que sacude [Región] hoy ⚽"
+    "Fórmula de Urgencia/Anticipación (ej. '¡Se acabó la espera! ¡El')",
+    "Fórmula de Detalle Específico Impactante (ej. 'Con solo 17 años, Lamine')",
+    "Fórmula de Introducción Formal de Noticias (ej. 'Muy buenas tardes. Bienvenidos a')",
+    "Fórmula de Pregunta Controversial (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Fórmula de Noticia de Alto Impacto/Tragedia (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Fórmula de Choque Deportivo/Giro Inesperado (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Revelar el resultado principal prematuramente, como '[Sujeto] [Acción] [Resultado final]'",
-    "Declaraciones genéricas sin gancho de intriga, como '[Sujeto] acaba de [acción simple]'",
-    "Frases que carecen de urgencia o impacto emocional inmediato."
+    "Hooks blandos y descriptivos (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que simplemente informan un resultado (ej. 'Brasil y Noruega empatan')",
+    "Hooks con inicio de frase genérico y poco intrigante (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "best_hora": 16,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar contenido de noticias de alto impacto y controversia, especialmente en el ámbito deportivo y regional (LATAM/Argentina), dada la alta correlación con los videos más vistos y el nicho `mundial_2026`.",
-    "Optimizar los horarios de publicación hacia la madrugada, con especial atención a la 1 AM, que ha demostrado ser el horario más estratégico para captar picos de audiencia.",
-    "Diseñar títulos y ganchos (hooks) que generen intriga, incluyan preguntas polémicas, presenten resultados impactantes o revelaciones, y hagan uso efectivo de emojis para captar la atención, evitando dar el desenlace de forma directa."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias` que aborde noticias de alto impacto y controversiales, especialmente en el ámbito deportivo (e.g., polémicas de Argentina, shocks en ligas), ya que esta categoría genera el 100% de los videos con más views.",
+    "Aprovechar la fuerte demanda por el nicho `mundial_2026` (bajo la categoría `deportes`), que muestra el mayor `avg_views` (258) y un `trend` muy alto (867.0), indicando una audiencia muy comprometida y en crecimiento para este tema específico.",
+    "Diseñar ganchos que generen intriga, urgencia o planteen una pregunta controversial, siguiendo patrones de éxito como '¡Se acabó la espera! ¡El' (867 views) o preguntas en el título como '¿FINAL ENTREGADA? 🤯'. Evitar hooks puramente descriptivos que consistentemente resultan en 0 views."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia de contenido en el nicho `ia_noticias` es inherentemente de 'todo o nada', donde, a pesar de un bajo `avg_views` general (27) y un `trend` negativo, este nicho monopoliza el 100% de los videos más virales (Top 10), confirmando que las noticias polémicas o de alto impacto pueden compensar la inconsistencia general."
+  "insight_semana": "El nicho `ia_noticias` es un nicho de 'todo o nada': si bien produce el 100% de los videos en el Top 10, su `avg_views` general es muy bajo (27) y su `trend` es negativo (-0.05), lo que indica una alta variabilidad y la necesidad de identificar temas de alto impacto con alta probabilidad de viralidad para capitalizar su potencial."
 }
