@@ -1,39 +1,38 @@
 {
   "updated": "2026-09-17",
-  "iteracion": 318,
+  "iteracion": 319,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
+    "deportes": 0.35,
     "ia_noticias": 0.4,
-    "deportes": 0.3,
-    "productividad_ia": 0.1,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "finanzas": 0.05,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.0,
+    "productividad": 0.1
   },
   "best_hooks": [
-    "¡[Verbo de acción en pasado] el [Sustantivo de gran impacto]? 🤯",
-    "¡[Noticia deportiva/evento] que sacude [Región] hoy! ⚽",
-    "¡Se acabó la espera! ¡El [Evento Importante]!",
-    "Con solo [Número] años, [Nombre]...",
-    "ÚLTIMA HORA: [Noticia impactante con números/lugar] 😱",
-    "LIGA [NOMBRE]: [EQUIPO] [ACCIÓN SHOCK] ¡SHOCK! 🤯"
+    "¡Se acabó la espera! ¡El [gran evento/noticia]...",
+    "Con solo [edad] años, [nombre] [logro/noticia]...",
+    "[Evento de alto impacto] en [Lugar]: ¡[Número/Consecuencia clave]!",
+    "¿[Sujeto/Equipo] [Acción polémica] la [Resultado]? 🤯",
+    "[Deporte/Liga]: ¡[Equipo/Jugador] [Acción sorprendente]! 😱",
+    "La noticia [Adjetivo] que sacude [Región] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Anuncios genéricos de resultados deportivos (ej. 'X y Y empatan A-B')",
-    "Introducciones subestimadas o neutrales (ej. 'X acaba de...')",
-    "Información redundante o poco concisa sin generar intriga"
+    "Revelar el resultado principal prematuramente, como '[Sujeto] [Acción] [Resultado final]'",
+    "Declaraciones genéricas sin gancho de intriga, como '[Sujeto] acaba de [acción simple]'",
+    "Frases que carecen de urgencia o impacto emocional inmediato."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Enfocarse en noticias deportivas de alto impacto, especialmente fútbol latinoamericano y temas de Mundial, utilizando el formato de 'noticias IA' que produce los videos más virales.",
-    "Incorporar en los títulos y hooks elementos de controversia, preguntas directas, nombres/lugares específicos, y emojis de alto impacto (🤯, 😱, ⚡, ⚽) para captar la atención inmediatamente.",
-    "Mantener la publicación consistente a la 1 AM hora local, ya que este horario ha demostrado la mayor frecuencia de éxito entre los videos top y alberga el video con más vistas.",
-    "Desarrollar contenido en formato de series o partes ('PARTE 1', '(1/2)') para temas de gran interés, aprovechando el patrón exitoso observado en los videos top.",
-    "Explorar la replicación de patrones exitosos de títulos como 'ARGENTINA ENTREGÓ la Final del Mundial?' y 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO!' combinando evento, sujeto y emoción."
+    "Priorizar contenido de noticias de alto impacto y controversia, especialmente en el ámbito deportivo y regional (LATAM/Argentina), dada la alta correlación con los videos más vistos y el nicho `mundial_2026`.",
+    "Optimizar los horarios de publicación hacia la madrugada, con especial atención a la 1 AM, que ha demostrado ser el horario más estratégico para captar picos de audiencia.",
+    "Diseñar títulos y ganchos (hooks) que generen intriga, incluyan preguntas polémicas, presenten resultados impactantes o revelaciones, y hagan uso efectivo de emojis para captar la atención, evitando dar el desenlace de forma directa."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave para el éxito viral reside en la intersección de noticias deportivas de alto impacto (especialmente fútbol latinoamericano y temas de Mundial) con el formato de 'noticias IA', a pesar de la alta volatilidad general del nicho `ia_noticias`."
+  "insight_semana": "La estrategia de contenido en el nicho `ia_noticias` es inherentemente de 'todo o nada', donde, a pesar de un bajo `avg_views` general (27) y un `trend` negativo, este nicho monopoliza el 100% de los videos más virales (Top 10), confirmando que las noticias polémicas o de alto impacto pueden compensar la inconsistencia general."
 }
