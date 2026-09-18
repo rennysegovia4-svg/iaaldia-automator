@@ -1,41 +1,40 @@
 {
   "updated": "2026-09-18",
-  "iteracion": 329,
+  "iteracion": 330,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "productividad": 0.15,
-    "negocios": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.5,
+    "ia_noticias": 0.2,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Urgencia/Anticipación + Evento Impactante (ej. '¡Se acabó la espera! ¡El...')",
-    "Dato Específico + Logro/Impacto de Persona (ej. 'Con solo [Edad] años, [Nombre]...')",
-    "Noticia Directa + Tono Formal (ej. 'Muy buenas tardes. Bienvenidos a...')",
-    "Pregunta Hipótesis Controversial + Evento Clave + Emoción (ej. 'ARGENTINA ENTREGÓ la Final...? 🤯')",
-    "Evento Catastrófico/Crítico + Dato Numérico Impactante (ej. 'Terremoto devastador en [Lugar]: [Número] muertos...')",
-    "Declaración General de Impacto Regional + Temática + Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')"
+    "¡Se acabó la espera! [Evento clave]...",
+    "Con solo [edad], [nombre] [logro sorprendente]...",
+    "¡[Evento Impactante] HOY: [Consecuencia Grave]! 😱",
+    "¿[Hecho clave] entregó [evento]? 🤯",
+    "[Noticia] devastador en [lugar]: [Cifra/Dato impactante]",
+    "[Equipo/Liga]: [Evento inesperado] ¡SHOCK! 😱"
   ],
   "avoid_hooks": [
-    "Hooks sobre 'partidos sin goles' o 'empates triviales' (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks excesivamente específicos y sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que describen eventos ficticios o irrelevantes sin generar intriga o urgencia (ej. los de 'mundial_2026' con 0 vistas)"
+    "Resultados triviales/sin sorpresa (ej. empates 0-0)",
+    "Frases vagas o incompletas sin impacto (ej. 'acaba de')",
+    "Anuncios sin conflicto o relevancia inmediata"
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 17,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el nicho 'deportes' (mundial_2026) dadas sus métricas dominantes (avg_views de 258 y trend de 867.0), enfocándose en eventos de alto impacto y especulación.",
-    "Aprovechar la alta viralidad potencial del nicho 'ia_noticias' cuando se enfoca en temas deportivos controvertidos (ej. 'ARGENTINA') o eventos catastróficos con datos impactantes (ej. 'Terremoto en Colombia').",
-    "Implementar los ganchos de inicio identificados como 'best_hooks', prestando especial atención a la formulación de preguntas controversiales, datos numéricos de impacto y expresiones de urgencia o asombro.",
-    "Concentrar las publicaciones en la franja de la 1 AM, que ha demostrado ser la más efectiva y recurrente en el TOP 10, pero también explorar las ventanas de oportunidad de las 16 PM, 17 PM y 21 PM para maximizar alcance.",
-    "Se recomienda encarecidamente la recopilación de datos sobre la duración media de los videos, el CTR de las miniaturas y la retención de audiencia para determinar la 'duracion_optima', ya que esta información es inexistente en los datos actuales."
+    "Priorizar fuertemente el contenido de noticias deportivas (especialmente Mundial y equipos de LATAM) y noticias de impacto catastrófico, dado su predominio en el TOP 10 y el alto rendimiento del nicho 'mundial_2026'.",
+    "Crear ganchos y títulos que generen controversia, urgencia, emoción (usando emojis 🤯, 😱) o que resalten un hecho/número impactante, como se observa en los videos de alto rendimiento.",
+    "Experimentar activamente con las franjas horarias de 16 PM, 17 PM y 21 PM, ya que demuestran un potencial de vistas similar a las horas de madrugada y podrían captar una audiencia más amplia.",
+    "Considerar la implementación de formatos 'Parte 1' en narrativas complejas o que generen suspenso, ya que 3 de los TOP 10 videos utilizaron esta estrategia.",
+    "Re-evaluar y probar enfoques de contenido, títulos y ganchos radicalmente diferentes para los nichos con 0 vistas, o considerar pausar su publicación hasta definir una estrategia efectiva.",
+    "Recopilar datos sobre la duración de los videos para identificar una duración óptima que maximice el rendimiento, ya que esta métrica no está disponible en la iteración actual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La sinergia entre los temas de 'deportes' (particularmente 'mundial_2026') y los videos de 'ia_noticias' que abordan eventos deportivos controvertidos o catástrofes con datos duros, es la fórmula de mayor impacto viral, a pesar de la inconsistencia general de 'ia_noticias'."
+  "insight_semana": "A pesar de la baja media general, el contenido de noticias deportivas (especialmente sobre el Mundial y equipos populares de LATAM) o eventos catastróficos, demuestra un potencial de viralidad explosivo y desproporcionado en Shorts, generando los picos de vistas más altos del canal (hasta 1325 vistas) y un 'trend' de nicho de 867.0."
 }
