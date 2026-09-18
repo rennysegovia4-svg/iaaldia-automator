@@ -1,38 +1,39 @@
 {
   "updated": "2026-09-18",
-  "iteracion": 326,
+  "iteracion": 327,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.4,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.01,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.15,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia/Excitación + Anuncio de evento crucial: \"¡Se acabó la espera! ¡El [evento]...\"",
-    "Presentación de talento joven + hito: \"Con solo [edad] años, [nombre] [logro]...\"",
-    "Saludo formal + Introducción de tema: \"Muy buenas tardes. Bienvenidos a [tema]...\"",
-    "Pregunta retórica controversial + Evento + Emoción + Continuidad: \"¿[Pregunta Controversial sobre Evento Clave]? 🤯 (PARTE X)\"",
-    "Noticia de alto impacto/desastre + Ubicación + Datos concretos: \"[Noticia de Desastre] en [Lugar]: [Cifra Impactante] y [Consecuencia]...\"",
-    "Evento crítico + Actor clave + Acción dramática + Emoción: \"[Evento Deportivo Crítico]: ¡[Sujeto] [Acción Drástica]! 😱\""
+    "¡Se acabó la espera! ¡El [TEMA_EMOCIONANTE] ha llegado/comenzado!",
+    "Con solo [EDAD] años, [NOMBRE_PROPIO] [LOGRO_IMPACTANTE]",
+    "Muy buenas tardes. Bienvenidos a [EVENTO/NOTICIA CLAVE]",
+    "[PAÍS/ENTIDAD] [VERBO_IMPACTO] [EVENTO_CRÍTICO]? 🤯",
+    "[DESASTRE/NOTICIA] devastador en [LUGAR]: [CONSECUENCIA] y [ESTADO_EMERGENCIA]",
+    "La noticia [TIPO_DEPORTE] que sacude [REGIÓN] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Resultados directos sin misterio ni emoción: \"[Equipo A] y [Equipo B] empatan [Marcador]\"",
-    "Afirmaciones neutrales sin gancho: \"[Nombre] acaba de [acción]\"",
-    "Información incompleta o poco intrigante sin contexto explícito."
+    "[EQUIPO_1] vs [EQUIPO_2] [MARCADOR]: [RESULTADO_SIMPLE]",
+    "[EQUIPO_1] y [EQUIPO_2] empatan",
+    "[NOMBRE_PERSONA] acaba de [ACCIÓN_GENÉRICA]"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar temas de `ia_noticias` de alto impacto emocional o controversia (ej. escándalos deportivos, desastres naturales) ya que estos generan los picos de vistas más altos y dominan el Top 10, a pesar de la baja media general del nicho.",
-    "Explorar activamente el nicho de `deportes`, específicamente sub-nichos como `mundial_2026`, que muestran una `avg_views` alta (258) y una tendencia de crecimiento excepcional (867.0), indicando un interés base robusto.",
-    "Implementar una estrategia de titulación que combine preguntas retóricas controversiales, emojis emocionales (🤯, 😱) y la segmentación de contenido (ej. 'PARTE 1', '1/2') para maximizar el click-through rate.",
-    "Evitar ganchos (hooks) que revelen directamente el desenlace, sean puramente descriptivos o carezcan de emoción, ya que han demostrado no generar vistas."
+    "Priorizar el nicho 'deportes' (basado en el rendimiento de 'mundial_2026') dada su alta tendencia de crecimiento (`trend`: 867.0) y potencial de viralidad.",
+    "En el nicho 'ia_noticias', enfocarse exclusivamente en temas de alto impacto emocional o controversia (ej. noticias deportivas de gran calibre o desastres naturales), ya que estos son los únicos que generan vistas significativas.",
+    "Utilizar títulos que incluyan nombres propios de países, entidades deportivas o eventos específicos, combinados con verbos de impacto y emojis (🤯, 😱, ⚡, ⚽) para maximizar el CTR.",
+    "Implementar la estrategia de segmentación de contenido para noticias complejas, utilizando marcadores como 'PARTE 1' o '1/2' en los títulos para generar intriga y fomentar la visualización de la continuación.",
+    "Realizar pruebas A/B constantes con ganchos de inicio que generen una alta expectativa o presenten una declaración impactante, como '¡Se acabó la espera! ¡El...!', evitando resúmenes directos de la noticia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento de un nicho es bifacial: mientras que `ia_noticias` muestra una `avg_views` baja (33) y una tendencia negativa, es el único nicho que consistentemente produce los picos de vistas más altos (1325 vistas) al acertar con temas de alta controversia deportiva o impacto noticioso urgente, lo que revela que la elección temática específica dentro de este nicho es más crítica que el promedio general del nicho mismo."
+  "insight_semana": "Aunque el nicho 'ia_noticias' muestra un rendimiento general bajo (avg_views=28, trend=-1.0), su dominancia total en el Top 10 videos (100%) revela que la clave del éxito reside en la *hiper-segmentación temática* hacia noticias deportivas controversiales o desastres de alto impacto, permitiendo picos de vistas excepcionales a pesar de una base débil."
 }
