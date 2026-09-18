@@ -1,39 +1,38 @@
 {
   "updated": "2026-09-18",
-  "iteracion": 327,
+  "iteracion": 328,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.02
+    "deportes": 0.5,
+    "ia_noticias": 0.25,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [TEMA_EMOCIONANTE] ha llegado/comenzado!",
-    "Con solo [EDAD] años, [NOMBRE_PROPIO] [LOGRO_IMPACTANTE]",
-    "Muy buenas tardes. Bienvenidos a [EVENTO/NOTICIA CLAVE]",
-    "[PAÍS/ENTIDAD] [VERBO_IMPACTO] [EVENTO_CRÍTICO]? 🤯",
-    "[DESASTRE/NOTICIA] devastador en [LUGAR]: [CONSECUENCIA] y [ESTADO_EMERGENCIA]",
-    "La noticia [TIPO_DEPORTE] que sacude [REGIÓN] hoy ⚽"
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "Muy buenas tardes. Bienvenidos a",
+    "[Exclamación de gran impacto] + [Anuncio de acontecimiento clave]",
+    "[Dato inesperado/contraste] + [Sujeto/Personaje clave]",
+    "[Inicio formal/informativo] + [Tema principal]"
   ],
   "avoid_hooks": [
-    "[EQUIPO_1] vs [EQUIPO_2] [MARCADOR]: [RESULTADO_SIMPLE]",
-    "[EQUIPO_1] y [EQUIPO_2] empatan",
-    "[NOMBRE_PERSONA] acaba de [ACCIÓN_GENÉRICA]"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el nicho 'deportes' (basado en el rendimiento de 'mundial_2026') dada su alta tendencia de crecimiento (`trend`: 867.0) y potencial de viralidad.",
-    "En el nicho 'ia_noticias', enfocarse exclusivamente en temas de alto impacto emocional o controversia (ej. noticias deportivas de gran calibre o desastres naturales), ya que estos son los únicos que generan vistas significativas.",
-    "Utilizar títulos que incluyan nombres propios de países, entidades deportivas o eventos específicos, combinados con verbos de impacto y emojis (🤯, 😱, ⚡, ⚽) para maximizar el CTR.",
-    "Implementar la estrategia de segmentación de contenido para noticias complejas, utilizando marcadores como 'PARTE 1' o '1/2' en los títulos para generar intriga y fomentar la visualización de la continuación.",
-    "Realizar pruebas A/B constantes con ganchos de inicio que generen una alta expectativa o presenten una declaración impactante, como '¡Se acabó la espera! ¡El...!', evitando resúmenes directos de la noticia."
+    "Amplificar la creación de contenido dentro del nicho de 'deportes' (especialmente temas de fútbol como mundiales o ligas importantes de LATAM), dado su `avg_views` de 258 y un `trend` de 867.0, el más alto de todos.",
+    "Implementar una estrategia de titulación que combine nombres de países/equipos (ej. 'ARGENTINA', 'COLOMBIA'), eventos clave y preguntas controvertidas/emojis (`🤯`, `😱`) para generar intriga, como se observa en los títulos de mayor rendimiento (ej. 'ARGENTINA ENTREGÓ...', 'Terremoto devastador...').",
+    "Perfeccionar los hooks para generar alta expectativa o presentar un hecho sorprendente desde el inicio, siguiendo los patrones de los hooks más efectivos como '¡Se acabó la espera! ¡El' (867 avg_views) y 'Con solo 17 años, Lamine' (740 avg_views), evitando descripciones planas de resultados.",
+    "Recopilar datos sobre la duración de los videos, especialmente de los de alto rendimiento, ya que actualmente no se dispone de información sobre la `duracion_optima` para Shorts."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho 'ia_noticias' muestra un rendimiento general bajo (avg_views=28, trend=-1.0), su dominancia total en el Top 10 videos (100%) revela que la clave del éxito reside en la *hiper-segmentación temática* hacia noticias deportivas controversiales o desastres de alto impacto, permitiendo picos de vistas excepcionales a pesar de una base débil."
+  "insight_semana": "La efectividad de los hooks es el factor más crítico y no lineal para el rendimiento individual de un video, con hooks exitosos generando hasta 867 vistas promedio, mientras que los fallidos producen 0 vistas, lo que subraya la necesidad de una estrategia de apertura altamente optimizada."
 }
