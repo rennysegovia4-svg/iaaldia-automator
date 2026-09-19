@@ -1,40 +1,37 @@
 {
   "updated": "2026-09-19",
-  "iteracion": 331,
+  "iteracion": 332,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.2,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! [Evento clave]...",
-    "Con solo [edad], [nombre] [logro sorprendente]...",
-    "¡[Evento Impactante] HOY: [Consecuencia Grave]! 😱",
-    "¿[Hecho clave] entregó [evento]? 🤯",
-    "[Noticia] devastador en [lugar]: [Cifra/Dato impactante]",
-    "[Equipo/Liga]: [Evento inesperado] ¡SHOCK! 😱"
+    "Gancho de Urgencia/Novedad (Ej: '¡Se acabó la espera! ¡El...')",
+    "Gancho de Hito/Talento Sorprendente (Ej: 'Con solo 17 años, Lamine...')",
+    "Gancho de Noticia Crítica Directa (Ej: 'Terremoto devastador en [Lugar]:...')",
+    "Gancho de Pregunta Retórica Controversial + Emoji (Ej: '[Evento] [País] ¿[Acción]? 🤯')",
+    "Gancho de Shock Deportivo + Emoji (Ej: '[Liga]: [Equipo] CEDE LIDERATO ¡SHOCK! 🤯')",
+    "Gancho de Noticia Deportiva Regional Impactante (Ej: 'La noticia deportiva que sacude [Región] hoy ⚽')"
   ],
   "avoid_hooks": [
-    "Resultados triviales/sin sorpresa (ej. empates 0-0)",
-    "Frases vagas o incompletas sin impacto (ej. 'acaba de')",
-    "Anuncios sin conflicto o relevancia inmediata"
+    "Resultados deportivos triviales/sin impacto (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Frases vagas o incompletas sin contexto intrigante (Ej: 'Sidny Lopes Cabral acaba de...')",
+    "Hooks de autoayuda/motivación genéricos sin conexión a noticias/deportes (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
   ],
-  "best_hora": 17,
-  "duracion_optima": 0,
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias deportivas (especialmente Mundial y equipos de LATAM) y noticias de impacto catastrófico, dado su predominio en el TOP 10 y el alto rendimiento del nicho 'mundial_2026'.",
-    "Crear ganchos y títulos que generen controversia, urgencia, emoción (usando emojis 🤯, 😱) o que resalten un hecho/número impactante, como se observa en los videos de alto rendimiento.",
-    "Experimentar activamente con las franjas horarias de 16 PM, 17 PM y 21 PM, ya que demuestran un potencial de vistas similar a las horas de madrugada y podrían captar una audiencia más amplia.",
-    "Considerar la implementación de formatos 'Parte 1' en narrativas complejas o que generen suspenso, ya que 3 de los TOP 10 videos utilizaron esta estrategia.",
-    "Re-evaluar y probar enfoques de contenido, títulos y ganchos radicalmente diferentes para los nichos con 0 vistas, o considerar pausar su publicación hasta definir una estrategia efectiva.",
-    "Recopilar datos sobre la duración de los videos para identificar una duración óptima que maximice el rendimiento, ya que esta métrica no está disponible en la iteración actual."
+    "Priorizar contenido de deportes de alto impacto (ej. fútbol de LATAM, Mundiales) y noticias con potencial viral (ej. controversias, desastres naturales), dado su rendimiento superior en vistas y tendencias.",
+    "Implementar títulos y ganchos que generen intriga, shock o urgencia, usando preguntas retóricas, menciones a países específicos y emojis de impacto (🤯, 😱, ⚡, ⚽) para maximizar el CTR.",
+    "Explorar formatos de contenido serializado (ej. '(PARTE 1)') para historias complejas que puedan mantener la atención en Shorts, como se observa en 3 de los 10 videos más vistos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de la baja media general, el contenido de noticias deportivas (especialmente sobre el Mundial y equipos populares de LATAM) o eventos catastróficos, demuestra un potencial de viralidad explosivo y desproporcionado en Shorts, generando los picos de vistas más altos del canal (hasta 1325 vistas) y un 'trend' de nicho de 867.0."
+  "insight_semana": "El nicho 'mundial_2026' (como parte de 'deportes') no solo mantiene el rendimiento más alto en `avg_views` (258), sino que también presenta una `trend` de 867.0, lo que lo convierte en la categoría con el mayor potencial de crecimiento y replicabilidad a corto plazo."
 }
