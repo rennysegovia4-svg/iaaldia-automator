@@ -1,37 +1,40 @@
 {
   "updated": "2026-09-19",
-  "iteracion": 333,
+  "iteracion": 334,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "mundial_2026": 0.4,
     "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "productividad": 0.15,
+    "negocios": 0.05,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "deportes": 0.01,
+    "entretenimiento": 0.01,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [TEMA] ha llegado!",
-    "Con solo [EDAD], [NOMBRE] [HECHO SORPRENDENTE]...",
-    "Muy buenas tardes. Bienvenidos a [TEMA]",
-    "¿[AFIRMACIÓN POLÉMICA/PREGUNTA]?",
-    "¡[EVENTO] en [LUGAR]: [CONSECUENCIA]!",
-    "¡[SUJETO] [VERBO IMPACTANTE]: [CONSECUENCIA]! 😱"
+    "Pregunta Controversial + País/Evento + Emoción (ej. ¿ARGENTINA ENTREGÓ la Final del Mundial? 🤯)",
+    "Noticia Urgente/Devastadora + País + Datos Clave (ej. Terremoto devastador en Colombia: 132 muertos)",
+    "Impacto Regional/Actualidad + Temática (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
+    "Evento Específico + Nombre Propio + Reacción (ej. TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
+    "Urgencia/Anticipación (ej. ¡Se acabó la espera! ¡El...)",
+    "Enfoque en Figura/Hecho sorprendente con dato (ej. Con solo 17 años, Lamine...)"
   ],
   "avoid_hooks": [
-    "Declaraciones fácticas y sin emoción, ej. '[SUJETO] y [SUJETO] empatan [RESULTADO]'",
-    "Inicios de oración incompletos o demasiado genéricos, ej. '[NOMBRE] acaba de...'",
-    "Descripciones planas de eventos sin intriga o dramatismo, ej. '[Evento] [resultado]'"
+    "Anuncios de resultado simple sin emoción/intriga (ej. Brasil y Noruega empatan 0-0)",
+    "Inicio de noticia con nombre propio sin contexto o intriga previa (ej. Sidny Lopes Cabral acaba de)",
+    "Títulos genéricos de autoayuda fuera del nicho principal (ej. NO TOMAR RIESGO es tu MAYOR AMENAZA)"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Maximizar la producción de contenido en el sub-nicho 'mundial_2026' dentro de la categoría 'deportes', dado su rendimiento superior con un avg_views de 258 y una trend de 867.0.",
-    "Crear títulos y ganchos que incorporen preguntas impactantes, exclamaciones (🤯, 😱), y referencias a países de LATAM con noticias de alto impacto (ej., 'ARGENTINA', 'COLOMBIA') para capitalizar el potencial viral de 'ia_noticias'.",
-    "Experimentar con la publicación de contenido en franjas horarias tempranas de la mañana (ej. 1 AM, 2 AM) y la tarde/noche (ej. 16 PM, 17 PM), que han demostrado alojar los videos con más vistas."
+    "Enfocar la creación de contenido en el nicho 'mundial_2026', dada su alta `avg_views` (258), `score` (8.795) y `trend` (867.0), lo que sugiere un potencial de crecimiento sostenido y audiencia comprometida.",
+    "Optimizar horarios de publicación en la madrugada. Las horas 1 AM, 2 AM y 6 AM concentran la mayoría de los videos más vistos (7 de 10), con 1 AM teniendo el pico de vistas (1325).",
+    "Priorizar ganchos y títulos con intriga, urgencia y relevancia regional (menciones a 'ARGENTINA', 'COLOMBIA', 'LATAM'), incorporando preguntas controvertidas y emojis para captar la atención inmediatamente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Mientras el nicho 'ia_noticias' es la fuente exclusiva de los videos más virales (todos en el TOP 10), su baja media de vistas (22) y tendencia negativa (-1.0) indican una alta volatilidad, contrastando con el rendimiento consistentemente fuerte y creciente del sub-nicho 'mundial_2026' (258 avg_views, 867.0 trend) dentro de 'deportes'."
+  "insight_semana": "Aunque el nicho 'ia_noticias' produce los videos con picos de vistas más altos (dominando el TOP 10), su bajo rendimiento promedio (29 vistas) y tendencia negativa (-0.95) contrastan con el nicho 'mundial_2026', que, sin dominar el TOP 10, muestra un rendimiento promedio (258 vistas) y tendencia (867.0) significativamente superiores, indicando un potencial de crecimiento más estable."
 }
