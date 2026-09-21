@@ -1,37 +1,41 @@
 {
   "updated": "2026-09-21",
-  "iteracion": 348,
+  "iteracion": 349,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.25,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.03,
+    "productividad": 0.05,
+    "negocios": 0.03
   },
   "best_hooks": [
-    "Fórmula de Urgencia y Expectativa: Iniciando con exclamaciones de espera o revelación inminente (ej. \"¡Se acabó la espera! ¡El\")",
-    "Fórmula de Dato Específico y Curiosidad: Presentando un detalle único o sorprendente para generar intriga (ej. \"Con solo 17 años, Lamine\")",
-    "Fórmula de Pregunta Retórica Impactante: Utilizando preguntas directas y emocionales con emojis de sorpresa (ej. \"¿FINAL ENTREGADA? 🤯\")",
-    "Fórmula de Noticia Impactante Localizada: Describiendo un evento devastador o que sacude una región con un emoji relevante (ej. \"Terremoto devastador en Colombia...\")",
-    "Fórmula de Conflicto/Eliminación en Mayúsculas: Anunciando una situación drástica con impacto y un emoji de shock (ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\")",
-    "Fórmula de Consecuencia Inesperada: Mencionando un evento crucial y sus posibles repercusiones con un emoji de sorpresa (ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\")"
+    "¡[Evento/Acción impactante]! 😱/🤯 (Ej: ¡Gamezking ELIMINADO! 😱)",
+    "[Tema controversial] [Pregunta retórica]? (PARTE X) (Ej: ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1))",
+    "[Dato sorprendente/Edad] + [Figura clave] + [Consecuencia] (Ej: Con solo 17 años, Lamine...)",
+    "[Noticia de alto impacto] en [Lugar]: [Cifra clave] (Ej: Terremoto devastador en Colombia: 132 muertos)",
+    "¡[Objeto/Situación] [Verbo de Urgencia] HOY! 🔥 (Ej: LEICESTER SE VENDE HOY: ¿Adiós...?)",
+    "[Liga/Equipo] + [Verbo de Shock] ¡SHOCK! 🤯 (Ej: LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)"
   ],
   "avoid_hooks": [
-    "Revelar el desenlace o el resultado completo de un evento (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks incompletos o sin contexto claro que no generan intriga (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Ausencia de elementos emocionales o de misterio, siendo meramente informativos y planos"
+    "Revelar el resultado completo de un evento (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Afirmar un hecho sin generar intriga (Ej: 'Brasil y Noruega empatan')",
+    "Detallar el desenlace de un evento clave al inicio (Ej: 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', especialmente temas relacionados con eventos de gran magnitud como 'mundial_2026', dado su score de 3.044 y tendencia de 867.0, el más alto del canal.",
-    "Aprovechar la franja horaria de 1 AM para la publicación, ya que concentra la mayor cantidad de videos en el TOP 10 y el video más visto (1325 views), demostrando la más alta receptividad inicial.",
-    "Diseñar títulos y hooks que exploten la intriga, usando preguntas retóricas, datos sorprendentes, mayúsculas para el énfasis, y emojis (🤯, 😱) para evocar emociones, y considerando la estrategia de serialización de contenido (ej. 'PARTE 1') para fomentar la continuidad."
+    "Priorizar el nicho de Deportes (específicamente 'mundial_2026') debido a su rendimiento superior (avg_views de 258) y su fuerte tendencia de crecimiento (867.0).",
+    "Optimizar títulos utilizando elementos de sorpresa y urgencia con emojis (🤯, 😱, 🔥) y palabras clave como 'SHOCK', 'HOY', 'Devastador', ya que son una constante en el TOP 10.",
+    "Implementar la estrategia de contenido serializado ('PARTE 1', '(1/2)') para temas de alto interés, lo que ha demostrado ser efectivo al aparecer en 3 de los TOP 10 videos con un promedio de ~1199 vistas.",
+    "Evitar categóricamente ganchos o inicios de video que revelen el desenlace o resultado final, ya que esto ha llevado consistentemente a 0 vistas.",
+    "Experimentar con la publicación en horarios pico como las 16 PM (promedio de 1298 vistas en TOP 10), 21 PM (1244 vistas) y 1 AM (1121 vistas) para capturar audiencias clave."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El factor determinante del éxito radica en la combinación de un nicho de alta relevancia y actualidad (como el fútbol en 'mundial_2026') con títulos que generen intriga intensa y usen marcadores emocionales (🤯, 😱), evitando revelar el desenlace, y publicado en franjas de alta receptividad (especialmente 1 AM)."
+  "insight_semana": "El nicho 'mundial_2026' (parte de deportes) no solo domina en vistas promedio (258 vs 74 de ia_noticias) sino que presenta una tendencia de crecimiento masiva (867.0), mientras que 'ia_noticias' muestra una tendencia negativa (-1.0), lo que indica una clara dirección estratégica hacia contenido deportivo de gran escala."
 }
