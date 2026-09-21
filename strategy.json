@@ -1,40 +1,40 @@
 {
-  "updated": "2026-09-20",
-  "iteracion": 344,
+  "updated": "2026-09-21",
+  "iteracion": 345,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.55,
+    "deportes": 0.45,
     "ia_noticias": 0.3,
-    "finanzas": 0.01,
-    "entretenimiento": 0.0,
+    "productividad": 0.05,
+    "productividad_ia": 0.05,
+    "finanzas": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.01
+    "entretenimiento": 0.02,
+    "cripto_inversiones": 0.02,
+    "negocios": 0.01,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Pregunta Retórica Impactante con Emoji de Sorpresa (🤯, 😱)",
-    "Noticia Alarmante con Datos Clave y Ubicación (ej. '132 muertos')",
-    "Giro Inesperado en Evento Deportivo con Palabra de Impacto (ej. '¡SHOCK!', 'ELIMINADO!')",
-    "Declaración de Urgencia y Relevancia Geográfica/Temporal con Emoji (ej. 'LATAM hoy ⚽')",
-    "Exclamación de Inicio Rápido y Decisivo (ej. '¡Se acabó la espera! ¡El...')",
-    "Introducción de Personaje o Dato Sorprendente (ej. 'Con solo 17 años, Lamine...')"
+    "¡[Verbo de Impacto/Evento]!",
+    "[Sujeto/Evento Controversial]: ¿Pregunta Polémica? [Emoji]",
+    "[Noticia Impactante] en [Lugar/Contexto]: [Consecuencia/Dato Numérico]",
+    "[Noticia X] que sacude [Región] hoy [Emoji]",
+    "[Dato Sorprendente] + [Sujeto/Evento]",
+    "[Evento/Situación] ¡[Emoción Fuerte]! [Emoji]"
   ],
   "avoid_hooks": [
-    "Declaraciones planas o triviales sin carga emocional/interrogante",
-    "Hooks que revelan el desenlace o resultado crucial al inicio (ej. 'Brasil y Noruega empatan 0-0')",
-    "Iniciar con nombres propios desconocidos sin contexto impactante previo (ej. 'Sidny Lopes Cabral acaba de')"
+    "[Enunciado descriptivo sin generar curiosidad/conflicto]",
+    "[Inicio genérico o con nombre poco relevante sin gancho inmediato]",
+    "[Frases que anticipan un resultado o suceso sin añadir intriga o impacto]"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Enfocarse prioritariamente en el nicho de `deportes` (representado por `mundial_2026`), dada su robusta media de vistas (258) y su tendencia de crecimiento explosiva (867.0), indicando el mayor potencial de retorno.",
-    "Para el nicho `ia_noticias`, priorizar la creación de contenido altamente dramático y urgente que genere controversia o sorpresa, evitando temas genéricos, para replicar el éxito de los Top 10 y contrarrestar su tendencia negativa general (-0.85).",
-    "Implementar ganchos (hooks) que incluyan preguntas impactantes, datos alarmantes y emojis visuales, ya que estas fórmulas son consistentes en los videos de mayor rendimiento.",
-    "Evitar ganchos que simplemente informan un resultado o un hecho sin generar curiosidad o emoción, ya que han demostrado ser inefectivos.",
-    "Es crucial comenzar a monitorear y analizar la duración de los videos de Shorts para optimizar el tiempo de visualización y la retención de la audiencia, ya que actualmente no se dispone de estos datos.",
-    "Experimentar con la publicación de contenido en la franja horaria de la 1 AM (Hora 1), que es la más frecuente y con el video de mayor vista en el Top 10, y también considerar horarios de tarde/noche como la 4 PM y 9 PM."
+    "Maximizar la creación de contenido dentro del nicho 'deportes', enfocándose en grandes eventos (como el `mundial_2026`) y temas controversiales o impactantes, dado su rendimiento superior y su tendencia de crecimiento exponencial (score 2.388, trend 867.0).",
+    "Implementar activamente las fórmulas de `hooks` más efectivas identificadas, que generen urgencia, sorpresa o formulen preguntas polémicas, y usar emojis de alto impacto (🤯, 😱, ⚽) para captar la atención de inmediato.",
+    "Priorizar las publicaciones en la franja de 1 AM (UTC+0 o similar) ya que concentra el mayor número de videos de alto rendimiento y el video con más vistas, y experimentar con picos secundarios en las franjas de 16, 17 y 21 PM, donde también se han observado videos individuales de éxito.",
+    "Es crucial comenzar a recolectar datos sobre la duración de los videos de Shorts para identificar la longitud óptima que maximice las vistas y la retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de que los videos individuales más vistos provienen del nicho 'ia_noticias', el nicho 'mundial_2026' (englobado en 'deportes') presenta el mayor potencial de crecimiento consistente y rendimiento promedio, con una tendencia de 867.0 que eclipsa a todos los demás, sugiriendo una oportunidad de capitalización masiva."
+  "insight_semana": "El nicho `mundial_2026` (parte de `deportes`) ha demostrado ser el de mayor proyección y rendimiento constante, con un crecimiento exponencial (score 2.388, trend 867.0), contrastando con `ia_noticias` que, aunque genera picos de vistas con temas sensacionalistas, es altamente volátil y mantiene una tendencia general negativa (-1.0)."
 }
