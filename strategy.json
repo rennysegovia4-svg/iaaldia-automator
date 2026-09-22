@@ -1,39 +1,39 @@
 {
   "updated": "2026-09-22",
-  "iteracion": 355,
+  "iteracion": 356,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.6,
     "ia_noticias": 0.35,
-    "productividad": 0.08,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.005,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "Ganchos de Anticipación Extrema o Revelación Urgente (ej. '¡Se acabó la espera!')",
-    "Ganchos de Impacto por Hecho Inesperado/Controversial (ej. 'ARGENTINA ENTREGÓ la Final?')",
-    "Ganchos de Presentación de Noticia de Última Hora/Relevante (ej. 'La noticia deportiva que sacude LATAM hoy')",
-    "Ganchos que Resaltan Logros o Datos Sorprendentes de Personajes (ej. 'Con solo 17 años, Lamine...')",
-    "Ganchos con Preguntas Impactantes o Revelaciones Parciales (ej. '¿FINAL ENTREGADA? 🤯')",
-    "Ganchos que Generan Curiosidad sobre Eventos Masivos o Catastróficos (ej. 'Terremoto devastador en Colombia:')"
+    "¡Se acabó la espera! ¡[Gran Evento] ha llegado/está por cambiarlo todo!",
+    "Con solo [Edad], [Nombre] desafía las expectativas con [Logro Asombroso]!",
+    "¿[Afirmación Impactante] fue un FRAUDE? La verdad detrás de [Evento/Situación] te dejará helado.",
+    "ÚLTIMA HORA: [Tipo de Evento Catastrófico] sacude [Lugar] con [Consecuencia Inmediata]!",
+    "¡[Nombre/Equipo] ELIMINADO en [Competencia]! El impactante giro que nadie vio venir 😱",
+    "[Equipo/Liga] en CRISIS: [Situación Negativa] sacude [Lugar/Competición] ¡IMPACTO!"
   ],
   "avoid_hooks": [
-    "Descripciones literales y sin gancho inicial (ej. 'Brasil y Noruega empatan 0-0')",
-    "Ganchos que simplemente enuncian un hecho sin intriga (ej. 'Brasil y Noruega empatan')",
-    "Comienzos narrativos sin impacto inmediato (ej. 'Sidny Lopes Cabral acaba de')"
+    "Hooks que revelan el desenlace de la noticia en el inicio (ej., 'Brasil y Noruega empatan 0-0').",
+    "Hooks incompletos o demasiado genéricos que no generan curiosidad (ej., 'Sidny Lopes Cabral acaba de').",
+    "Hooks que carecen de elementos emocionales o de urgencia, dejando al espectador sin intriga o impacto."
   ],
-  "best_hora": 16,
+  "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', enfocándose en subtemas de alto impacto como 'mundial_2026' y noticias deportivas controversiales, dado su alto promedio de vistas (258) y tendencia de crecimiento (867.0).",
-    "Integrar consistentemente emojis de impacto (🤯, 😱, 🔥, ⚡, ⚽) en los títulos. El 80% de los videos más vistos los utilizaron, logrando un promedio de 1120 vistas por video.",
-    "Experimentar con horarios de publicación cercanos a la Hora 16 (4 PM) o la Hora 1 (1 AM), que han mostrado picos de rendimiento en los videos más vistos. Sin embargo, dado el limitado dataset de horas, se recomienda testear otros slots con los patrones de contenido identificados.  Es necesario recopilar datos de duración de videos para determinar el 'duracion_optima'."
+    "Priorizar fuertemente la creación de contenido de deportes de alto impacto, especialmente si involucra controversias, giros inesperados o eventos cruciales (como mundiales), dado el rendimiento superior del nicho 'mundial_2026' y la naturaleza de los videos más vistos.",
+    "Diseñar títulos que generen intriga y emoción, utilizando estratégicamente emojis de impacto (🤯, 😱, 🔥, ⚡, ⚽) y evitando revelar la conclusión en el título para maximizar el CTR.",
+    "Implementar ganchos (hooks) de video que creen anticipación, presenten una pregunta controversial o insinuen un giro sorprendente en los primeros segundos, sin dar detalles completos del desenlace para mantener la curiosidad.",
+    "Experimentar con las horas de publicación, concentrándose en las ventanas de 1 AM, 6 AM y 5 PM (17:00), ya que estas agrupan la mayoría de los videos con alto rendimiento en el TOP 10.",
+    "Establecer un sistema de seguimiento para recopilar datos sobre la duración de los Shorts, ya que esta métrica crítica es actualmente inexistente y fundamental para optimizar el engagement y las vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La performance explosiva del nicho 'mundial_2026' y la prevalencia de noticias deportivas controvertidas o de gran escala entre las 'ia_noticias' más exitosas, demuestran que el factor 'novedad y drama deportivo' es el principal motor de engagement y vistas, eclipsando otras categorías de noticias dentro de 'ia_noticias'."
+  "insight_semana": "La clave para un alto rendimiento en YouTube Shorts se encuentra en capitalizar temas deportivos (o de catástrofe) altamente polarizantes o de shock, utilizando títulos y ganchos que generen intensa curiosidad y emoción, a pesar de que la categoría general 'ia_noticias' muestre una tendencia negativa."
 }
