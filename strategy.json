@@ -1,37 +1,38 @@
 {
-  "updated": "2026-09-21",
-  "iteracion": 351,
+  "updated": "2026-09-22",
+  "iteracion": 352,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.45,
     "ia_noticias": 0.3,
-    "productividad_ia": 0.1,
     "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
     "cripto_inversiones": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "Fórmula: Preguntas intriga/controversia (ej. ¿ENTREGÓ?, ¿ES FRAUDE?)",
-    "Fórmula: Urgencia y actualidad con 'HOY' (ej. HOY, sacude LATAM hoy)",
-    "Fórmula: Shock, sorpresa o eventos inesperados (ej. ¡SHOCK!, ELIMINADO! 😱)"
+    "¡Se acabó la espera! ¡El [Evento Importante] está aquí!",
+    "Con solo [Número] años, [Nombre/Hecho sorprendente]...",
+    "[Situación Impactante]: la tragedia [adjetivo] que sacude [lugar/tema]",
+    "¿[Sujeto] [Verbo polémico] la [Situación]? 🤯",
+    "La noticia deportiva que sacude [Región] hoy ⚽",
+    "[Sujeto] [Acción] HOY: ¿[Consecuencia/Pregunta]? 😱"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Hooks puramente descriptivos o factuales sin emoción o pregunta (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks incompletos o que dejan al espectador sin entender la relevancia (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks sin un claro 'por qué me debería importar', con narrativa plana."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias deportivas, especialmente aquellos relacionados con eventos de gran magnitud como el Mundial (aunque categorizados como 'ia_noticias' en el TOP 10, el nicho 'mundial_2026' muestra una tendencia explosiva), utilizando títulos que generen intriga o controversia.",
-    "Implementar la publicación estratégica de videos a la 1 AM (hora local/UTC) para capturar el pico de engagement observado, especialmente para noticias de última hora o contenido viral.",
-    "Maximizar el uso de emojis de alto impacto (🤯, 😱, 🔥, ⚡) y palabras clave de urgencia como 'HOY' en los títulos para mejorar significativamente el CTR y la relevancia percibida del contenido."
+    "Priorizar el contenido de noticias deportivas y eventos de última hora altamente controvertidos o impactantes dentro del nicho 'ia_noticias' y 'deportes' (cubriendo 'mundial_2026'), dado que esta combinación domina el TOP 10 y el nicho 'mundial_2026' tiene la tendencia de crecimiento más alta (867.0).",
+    "Integrar elementos de urgencia y emoción en los títulos, como la palabra clave 'HOY' (presente en 2 de los TOP 10) y emojis de impacto (🤯, 😱, 🔥, ⚡), que son una constante en 7 de los 10 videos más vistos.",
+    "Diseñar hooks que generen anticipación, curiosidad o resalten un hecho sorprendente/específico (ej. '¡Se acabó la espera!', 'Con solo 17 años...'), evitando frases meramente descriptivas o incompletas que tuvieron 0 vistas.",
+    "Programar las publicaciones para la 1 AM (hora del público objetivo), ya que esta franja horaria alberga el video más visto (1325 views) y la mayor cantidad de videos en el TOP 10 (3 videos)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La demanda por contenido de noticias deportivas, especialmente sobre el Mundial (`mundial_2026`), es excepcionalmente alta y representa el mayor potencial de crecimiento, a pesar de que algunos intentos específicos dentro de ese nicho hayan fallado, y que el nicho general 'ia_noticias' muestre una tendencia negativa en promedio."
+  "insight_semana": "El nicho de 'Deportes' (particularmente a través de noticias urgentes y controversiales, como las del 'mundial_2026' y ciertos temas de 'ia_noticias') es el motor de crecimiento más potente, demostrando una alta propensión a obtener vistas masivas a pesar de la volatilidad en el rendimiento de videos individuales dentro de la categoría 'ia_noticias'."
 }
