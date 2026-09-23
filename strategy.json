@@ -1,37 +1,38 @@
 {
   "updated": "2026-09-23",
-  "iteracion": 359,
+  "iteracion": 360,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.3,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "finanzas": 0.05,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "[Evento Importante/Controversia]: ¡[Reacción Impactante]! 🤯",
-    "[Sujeto/Lugar] [Verbo de Acción/Evento] hoy [Lugar adicional]: [Impacto]",
-    "[Sujeto/Equipo] [Noticia impactante/Controversia]: ¿[Pregunta Controversial]? ⚡",
-    "¡Se acabó la espera! ¡El [Evento Importante]...",
-    "Con solo [Edad] años, [Nombre]...",
-    "Muy buenas tardes. Bienvenidos a [Tema/Noticia]..."
+    "Fórmula de Urgencia/Anticipación: Construye expectativa o la resolución de una espera ('¡Se acabó la espera! ¡El')",
+    "Fórmula de Intriga con Detalle Específico: Comienza con un dato cautivador o un protagonista singular ('Con solo 17 años, Lamine...')",
+    "Fórmula de Apertura de Noticia Directa y Autoritaria: Un inicio claro y profesional que anuncia el evento ('Muy buenas tardes. Bienvenidos a')",
+    "Fórmula de Pregunta Controversial: Plantea una incógnita o desafía una percepción común para generar debate (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯' - basado en títulos exitosos)",
+    "Fórmula de Impacto Emocional/Shock: Utiliza lenguaje o emojis que transmitan sorpresa o intensidad (ej. '¡SHOCK! 🤯', '😱', '🔥' - basado en títulos exitosos)",
+    "Fórmula de Actualidad/Alerta de Última Hora: Resalta la relevancia y la inmediatez de la noticia (ej. 'La noticia deportiva que sacude LATAM hoy ⚽' - basado en títulos exitosos)"
   ],
   "avoid_hooks": [
-    "[Equipo A] [Puntuación] [Equipo B]",
-    "[Sujeto] y [Sujeto] [Verbo]",
-    "[Sujeto] acaba de [Acción]"
+    "Hooks que revelan el desenlace o el resultado directamente sin generar intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que son frases incompletas o se cortan abruptamente, dejando al espectador sin contexto completo (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que carecen de elementos emocionales, preguntas o llamados a la curiosidad, siendo puramente descriptivos y planos (ej. 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de 'ia_noticias' enfocado en deportes controversiales o de alto impacto (ej. fútbol internacional y ligas importantes), dado que estos representan el 80% de los videos más vistos y el nicho 'mundial_2026' es el de mejor performance.",
-    "Publicar contenido entre la 1 AM y 6 AM (hora local de la audiencia principal) y a las 5 PM (17:00), con especial énfasis en la 1 AM debido a su consistencia en atraer altos views y concentración de videos exitosos.",
-    "Desarrollar ganchos (en el título o en el primer segundo del video) que generen intriga, utilicen preguntas polémicas o resalten hechos inesperados, y evitar inicios de video o títulos puramente descriptivos o factuales que revelen el desenlace sin generar curiosidad."
+    "Concentrar la estrategia de contenido en el nicho de 'deportes', especialmente en noticias de actualidad y controversias de alto impacto (ej. 'mundial_2026'), ya que este sub-nicho ha demostrado ser el más rentable con un promedio de 258 vistas y una fuerte tendencia positiva de 867.0.",
+    "Priorizar la creación de hooks que generen intriga, urgencia o apelen a la emoción, evitando por completo hooks descriptivos o que revelen el contenido de forma directa, los cuales se correlacionan con 0 vistas.",
+    "Mantener la franja horaria de publicación de la 1 AM, que agrupa el mayor número de videos exitosos en el TOP 10 (3 videos con un promedio de 1121 vistas), y considerar también los horarios de 6 AM y 17 PM como ventanas de oportunidad secundarias.",
+    "Es crítico empezar a recolectar datos sobre la 'duración óptima' de los videos para fundamentar futuras decisiones, ya que esta métrica clave aún no está disponible."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dominancia absoluta de las noticias deportivas controversiales y de alto impacto dentro de la categoría `ia_noticias` es el factor clave de rendimiento, con el 80% de los top 10 videos centrándose en esta temática y superando significativamente el promedio general de la categoría."
+  "insight_semana": "El rendimiento excepcional del contenido de 'ia_noticias' se concentra casi exclusivamente en el sub-nicho de noticias deportivas (8 de 10 videos TOP), especialmente aquellas con elementos controversiales o de gran actualidad (como el 'mundial_2026'), lo que sugiere que la clave del éxito reside en identificar y explotar eventos noticiosos de alto impacto dentro de un nicho específico, no en la generalidad de las 'ia_noticias'."
 }
