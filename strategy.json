@@ -1,39 +1,37 @@
 {
-  "updated": "2026-09-22",
-  "iteracion": 358,
+  "updated": "2026-09-23",
+  "iteracion": 359,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.6,
+    "ia_noticias": 0.3,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia impactante]!",
-    "Con solo [edad], [persona/equipo] [logro/noticia impactante]",
-    "Muy buenas [mañanas/tardes/noches]. Bienvenidos a [tema noticioso relevante]",
-    "[Evento/noticia controversial] + [Impacto/Pregunta retórica] + [Emoji de sorpresa/crisis]",
-    "¡[Tema urgente/noticia de última hora]: [Detalle clave] HOY! [Emoji de urgencia/sorpresa]",
-    "¡[Nombre propio/evento] [verbo de acción] [consecuencia impactante]! 😱"
+    "[Evento Importante/Controversia]: ¡[Reacción Impactante]! 🤯",
+    "[Sujeto/Lugar] [Verbo de Acción/Evento] hoy [Lugar adicional]: [Impacto]",
+    "[Sujeto/Equipo] [Noticia impactante/Controversia]: ¿[Pregunta Controversial]? ⚡",
+    "¡Se acabó la espera! ¡El [Evento Importante]...",
+    "Con solo [Edad] años, [Nombre]...",
+    "Muy buenas tardes. Bienvenidos a [Tema/Noticia]..."
   ],
   "avoid_hooks": [
-    "[Hecho deportivo] + [Resultado exacto] (ej. 'Brasil y Noruega empatan 0-0')",
-    "[Hecho deportivo] + [Verbo pasivo/neutro] (ej. 'Brasil y Noruega empatan')",
-    "[Nombre propio] acaba de [acción incompleta/sin intriga] (ej. 'Sidny Lopes Cabral acaba de')"
+    "[Equipo A] [Puntuación] [Equipo B]",
+    "[Sujeto] y [Sujeto] [Verbo]",
+    "[Sujeto] acaba de [Acción]"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho de 'deportes', enfocándose en noticias sensacionalistas, controversias y eventos de gran impacto (como el Mundial), que han demostrado ser los de mayor rendimiento y tendencia de crecimiento.",
-    "Optimizar los títulos utilizando emojis de impacto (🤯, 😱, 🔥, ⚡, ⚽) y frases que generen curiosidad o shock, imitando el patrón de los videos más exitosos para maximizar la tasa de clic.",
-    "Concentrar las publicaciones en las franjas horarias de 1 AM, 6 AM y 5 PM (17:00), con un énfasis especial en la 1 AM debido a su consistencia en atraer una alta cantidad de vistas.",
-    "Implementar ganchos iniciales que generen intriga, urgencia o sorpresa, evitando aquellos que sean meramente informativos o incompletos, los cuales se han correlacionado directamente con 0 vistas.",
-    "Establecer un sistema de seguimiento para registrar la duración de los videos y sus vistas, con el fin de determinar la 'duracion_optima' basada en datos reales en futuras iteraciones, ya que actualmente esta métrica es desconocida."
+    "Priorizar la creación de contenido de 'ia_noticias' enfocado en deportes controversiales o de alto impacto (ej. fútbol internacional y ligas importantes), dado que estos representan el 80% de los videos más vistos y el nicho 'mundial_2026' es el de mejor performance.",
+    "Publicar contenido entre la 1 AM y 6 AM (hora local de la audiencia principal) y a las 5 PM (17:00), con especial énfasis en la 1 AM debido a su consistencia en atraer altos views y concentración de videos exitosos.",
+    "Desarrollar ganchos (en el título o en el primer segundo del video) que generen intriga, utilicen preguntas polémicas o resalten hechos inesperados, y evitar inicios de video o títulos puramente descriptivos o factuales que revelen el desenlace sin generar curiosidad."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido deportivo, particularmente las noticias controversiales o de alto impacto relacionadas con el fútbol, representa el sub-nicho más potente para generar vistas masivas, con una tendencia de crecimiento y vistas promedio significativamente superiores a otras categorías."
+  "insight_semana": "La dominancia absoluta de las noticias deportivas controversiales y de alto impacto dentro de la categoría `ia_noticias` es el factor clave de rendimiento, con el 80% de los top 10 videos centrándose en esta temática y superando significativamente el promedio general de la categoría."
 }
