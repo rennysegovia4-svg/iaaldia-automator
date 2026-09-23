@@ -1,38 +1,40 @@
 {
   "updated": "2026-09-23",
-  "iteracion": 364,
+  "iteracion": 365,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.1,
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "¿[Evento/Persona] [Verbo de impacto]? 🤯",
-    "[Tema urgente/impactante]: [Detalle clave] [Emoji de shock/urgencia]",
-    "[Evento/Liga] hoy: ¡[Impacto]! 😱"
+    "¡Se acabó la espera! ¡El [Evento/Noticia]...",
+    "Con solo [edad/condición], [nombre] [logro]...",
+    "Muy buenas tardes. Bienvenidos a [contexto de noticia/evento]...",
+    "[Evento/Noticia] + ¿[Pregunta Controversial]? 🤯",
+    "[Desastre/Noticia Impactante]: [Breve Descripción del Suceso]",
+    "[Evento/Juego] HOY: ¡[Resultado Dramático/Impactante]! 😱"
   ],
   "avoid_hooks": [
-    "Demasiado factual sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Información genérica o incompleta (ej. 'Brasil y Noruega empatan')",
-    "Referencia a elementos poco conocidos sin contexto (ej. 'Sidny Lopes Cabral acaba de')"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima",
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar contenido de **noticias deportivas de alto impacto o controversiales** (ej. resultados de Mundial, cambios drásticos en ligas) aprovechando la resonancia del nicho 'mundial_2026' y la capacidad viral de 'ia_noticias'.",
-    "Explotar **noticias de desastres naturales urgentes** o eventos de gran escala con un tono alarmante pero informativo, ya que demuestran un alto potencial de vistas dentro de 'ia_noticias'.",
-    "Desarrollar ganchos iniciales que generen **intriga, sorpresa o controversia** desde el primer segundo del video, utilizando preguntas impactantes o exclamaciones con emojis (🤯, 😱) para maximizar la retención.",
-    "Experimentar con la publicación de videos de alto potencial en la **franja horaria de la 1 AM**, ya que ha sido la hora más frecuente para los videos más vistos."
+    "Prioriza la creación de contenido enfocado en eventos deportivos de alto impacto y noticias virales, especialmente los relacionados con el Mundial (ej. `mundial_2026`), ya que este segmento demuestra el mayor potencial de vistas y crecimiento (`trend` de 867.0).",
+    "Diseña ganchos que generen alta anticipación o resalten logros/momentos clave. Los ganchos '¡Se acabó la espera! ¡El' (867 avg_views) y 'Con solo 17 años, Lamine' (740 avg_views) son ejemplos claros de aperturas que capturan la atención de forma masiva.",
+    "Experimenta con la publicación de videos de noticias virales y deportivas en franjas horarias de madrugada (1 AM y 6 AM), ya que el 50% de los videos en el TOP 10 se publicaron en estos horarios, sugiriendo una audiencia activa en esos momentos.",
+    "Evita ganchos meramente descriptivos o factuales que no generen intriga o emoción. Los ganchos como 'Brasil y Noruega empatan 0-0' resultaron en 0 vistas, indicando que la ausencia de un elemento de sorpresa o urgencia es un fallo crítico."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias`, a pesar de tener un promedio de vistas bajo (31) y una tendencia negativa (-0.8), es una categoría de alto riesgo y alta recompensa, ya que acaparó la totalidad del TOP 10 de videos. Esto indica que el éxito extremo dentro de este nicho depende exclusivamente de la identificación y ejecución precisa de temas altamente específicos, controversiales o urgentes (ej. polémicas deportivas, desastres naturales), los cuales pueden generar picos de vistas masivos y compensar la baja media."
+  "insight_semana": "La estrategia para el nicho 'ia_noticias' no es de consistencia de vistas, sino de una **identificación y capitalización extremadamente rápida de 'momentos virales' y noticias de alto impacto social o deportivo**. A pesar de un `avg_views` bajo (30), el 100% de los videos del TOP 10 provienen de este nicho, lo que demuestra un alto potencial de picos de rendimiento si el tema es el adecuado y se lanza oportunamente."
 }
