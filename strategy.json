@@ -1,39 +1,40 @@
 {
   "updated": "2026-09-24",
-  "iteracion": 368,
+  "iteracion": 369,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
     "ia_noticias": 0.4,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.35,
+    "productividad": 0.1,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0,
+    "productividad_ia": 0.0,
+    "negocios": 0.0
   },
   "best_hooks": [
-    "Hooks de urgencia/anticipación (ej. '¡Se acabó la espera! ¡El', con 867 avg_views)",
-    "Hooks de detalle específico/sorpresa personal (ej. 'Con solo 17 años, Lamine', con 740 avg_views)",
-    "Hooks con formato de introducción noticiosa (ej. 'Muy buenas tardes. Bienvenidos a', con 375 avg_views)",
-    "Títulos con detonantes emocionales y emojis de impacto (`🤯😱!`), comunes en el TOP 10.",
-    "Títulos que prometen contenido segmentado o datos numéricos concretos (`PARTE 1`, `1/2`, `132 muertos`), presentes en el TOP 10.",
-    "Títulos enfocados en la actualidad geográfica o temporal (`LATAM hoy`, `Temblor hoy Colombia`, `HOY`), efectivos en el TOP 10."
+    "¡Se acabó la espera! ¡El...",
+    "Con solo [número/edad] [persona/entidad]...",
+    "Muy buenas tardes. Bienvenidos a...",
+    "[Evento/Nombre] [Verbo dramático] [Sufijo sorpresa] [Emojis]",
+    "La noticia [adjetivo] que sacude [lugar] [hoy/ahora] [emoji]",
+    "Terremoto devastador en [Lugar]: [Número] [consecuencia]..."
   ],
   "avoid_hooks": [
-    "Hooks que anuncian resultados deportivos hipotéticos o no dramáticos (ej. 'Brasil y Noruega empatan 0-0', 'Brasil y Noruega empatan'), ambos con 0 views.",
-    "Hooks genéricos o incompletos que carecen de intriga y contexto (ej. 'Sidny Lopes Cabral acaba de', con 0 views).",
-    "Cualquier hook que sugiera noticias no verificadas o irreales sobre eventos futuros, ya que estas generan consistentemente 0 vistas."
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar el nicho de `deportes` (basado en el rendimiento excepcional de `mundial_2026`) por su alta consistencia y el nicho `ia_noticias` por su potencial viral, enfocándose en noticias dramáticas o controversiales con un ángulo de impacto en Latam.",
-    "Implementar una estrategia de titulación y hooks que combine urgencia, detalles específicos, fuerte carga emocional con exclamaciones (`🤯😱!`), referencias geográficas/temporales y segmentación numérica para maximizar la intriga y el engagement, siguiendo los patrones de los videos del TOP 10.",
-    "Evitar categóricamente la creación de contenido basado en eventos deportivos hipotéticos o no verificados (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!'), dado su rendimiento consistentemente nulo y el rechazo de la audiencia a contenido infundado.",
-    "Experimentar con la publicación de Shorts en los horarios de mayor éxito observados (1 AM, 6 AM y 5 PM), con una inclinación inicial hacia la 1 AM por ser la hora más frecuente de publicación en el TOP 10 (30% de los videos).",
-    "Considerar la recolección de datos de duración de video para futuras iteraciones, ya que este dato es crucial para optimizar la retención en Shorts y no pudo ser analizado en esta ocasión, limitando una recomendación precisa."
+    "Priorizar la creación de contenido dentro de la categoría 'ia_noticias' que cubra eventos deportivos de alto interés y noticias de última hora con elementos dramáticos, ya que el 100% de los videos con más vistas provienen de este nicho.",
+    "Maximizar el uso de títulos que incorporen elementos de intriga como preguntas dramáticas (ej. 'ENTREGÓ la Final del Mundial?'), referencias a números o partes (ej. 'PARTE 1', '132 muertos'), y emojis impactantes (🤯😱🔥) para aumentar el CTR.",
+    "Evitar la creación de contenido basado en eventos deportivos hipotéticos o no verificados que resulten en bajos índices de interés, como se observó en los videos con 0 vistas que hablaban de empates en el Mundial 2026.",
+    "Experimentar con la publicación de videos entre la 1 AM y las 6 AM, ya que estos horarios concentran el 60% (6 de 10) de los videos con más vistas, sugiriendo un segmento de audiencia activa durante la madrugada o primeras horas de la mañana."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una alta variabilidad: aunque su promedio de vistas es de solo 24, es el único nicho que logra videos virales, ocupando la totalidad del TOP 10. Esto indica un alto potencial para 'hits' con el enfoque correcto, aunque con un riesgo elevado de bajo rendimiento para contenido no optimizado."
+  "insight_semana": "Aunque 'ia_noticias' es la categoría que alberga todos los videos más exitosos individualmente, el nicho 'mundial_2026' (subcategoría de deportes) demuestra un rendimiento promedio significativamente superior (258 avg_views vs 25 avg_views para 'ia_noticias' en general), lo que indica que el contenido noticioso de deportes específicos sobre grandes eventos ofrece una base de rendimiento más sólida y consistente."
 }
