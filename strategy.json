@@ -1,37 +1,40 @@
 {
   "updated": "2026-09-25",
-  "iteracion": 378,
+  "iteracion": 379,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.05
+    "ia_noticias": 0.6,
+    "mundial_2026": 0.25,
+    "productividad": 0.05,
+    "negocios": 0.02,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "deportes": 0.01,
+    "entretenimiento": 0.01,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "**Urgencia y Exclamación:** Empezar con una frase que genere expectación y urgencia, usando exclamaciones. (Ej: '¡Se acabó la espera! ¡El')",
-    "**Dato Sorprendente de Personalidad:** Iniciar con un hecho inusual o un logro impresionante asociado a una figura relevante. (Ej: 'Con solo 17 años, Lamine...')",
-    "**Anuncio de Noticia Impactante/Crisis:** Ir directamente al grano con una declaración de una noticia de gran impacto o crisis. (Ej: 'Terremoto devastador en Colombia...')",
-    "**Pregunta Directa y Controversial:** Usar una pregunta retórica o controversial al inicio del título o gancho para generar intriga. (Ej: '¿FINAL ENTREGADA? 🤯')",
-    "**Noticia Deportiva Inmediata con Regionalismo:** Anunciar un evento deportivo o un resultado con gran relevancia regional. (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "**Declaración de Shock o Giro Inesperado:** Presentar una situación como un 'shock' o un 'giro inesperado' para captar atención. (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "Gancho de Impacto + Pregunta/Exclamación y Emoji: \"[[Sujeto/Evento]] [[Verbo de Impacto]] [[Pregunta/Exclamación]] 🤯/😱/🔥\" (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Gancho de Crisis/Urgencia: \"[[Evento Catastrófico]] [[Localización]]: [[Dato Impactante]] [[Emergencia/Tragedia]]\" (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Gancho de Noticia Deportiva \"Breaking\": \"La noticia deportiva que sacude [[Región]] hoy ⚽\" o \"[[Sujeto Deportivo]] ELIMINADO/CEDE LIDERATO/SANCIONES! 😱\"",
+    "Gancho de Escasez/Demanda: \"[[Producto/Evento]] [[Localización]] ¡Se Agotan! 😱🔥\"",
+    "Gancho Directo e Intriga: \"¡Se acabó la espera! ¡El...\" (utiliza la anticipación para un evento importante)",
+    "Gancho de Logro/Destacado con Edad: \"Con solo [[Edad]] años, [[Nombre]]...\" (enfatiza la precocidad de un logro)"
   ],
   "avoid_hooks": [
-    "**Resultados de partidos sin contexto o impacto:** Evitar simplemente anunciar un resultado plano. (Ej: 'Brasil y Noruega empatan 0-0')",
-    "**Afirmaciones genéricas sin gancho emocional o de intriga:** Declaraciones simples que no generen curiosidad inmediata. (Ej: 'Brasil y Noruega empatan')",
-    "**Mención de nombres poco conocidos o sin relevancia inmediata:** Iniciar el gancho con un nombre que no resuene con la audiencia objetivo. (Ej: 'Sidny Lopes Cabral acaba de')"
+    "Hooks demasiado factuales o sin intriga/emoción: (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Hooks incompletos o demasiado genéricos al inicio: (ej. \"Sidny Lopes Cabral acaba de\")",
+    "Hooks de contenido motivacional/genérico que no conecta con una noticia específica de impacto: (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\")"
   ],
   "best_hora": 16,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Maximizar la producción de contenido bajo el formato de noticias (ia_noticias) enfocándose en temas de deportes con factor sorpresa o crisis/desastres naturales, ya que estos representan el 90% de los videos con más vistas y son el motor principal de viralidad.",
-    "Implementar ganchos iniciales que generen urgencia o destaquen un dato sorprendente y personal. Es crucial evitar declaraciones planas o la mención de nombres poco conocidos en los primeros segundos del video, ya que estos patrones han demostrado un rendimiento de 0 vistas.",
-    "Experimentar con horarios de publicación concentrándose en la ventana de las 16:00 (4 PM) para el potencial de vistas promedio más altas, y también en la 'ventana matutina' (1-6 AM) para el potencial de volumen de hits, según la distribución actual de los videos más exitosos."
+    "Maximizar la creación de contenido dentro del nicho 'ia_noticias', con especial énfasis en noticias deportivas urgentes y eventos de crisis/desastres naturales en LATAM, que son los que generan el mayor volumen de vistas.",
+    "Implementar títulos de video que incorporen elementos de intriga, preguntas controvertidas y emojis de alto impacto (🤯, 😱, 🔥), replicando los patrones de los videos más vistos para captar la atención inicial.",
+    "Programar las publicaciones de contenido de alto impacto a las 16:00 (4 PM), ya que esta hora ha demostrado consistentemente el promedio de vistas más alto (1298 vistas) para los videos exitosos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es la principal fuente de videos virales con un potencial de vistas extremadamente alto (todos los top 10), pero también presenta una alta variabilidad, con un bajo promedio general y una tendencia negativa. La clave del éxito reside en identificar correctamente los temas de alto impacto (especialmente deportes y crisis) dentro de este nicho para mitigar el riesgo de bajo rendimiento."
+  "insight_semana": "El nicho 'ia_noticias', a pesar de su bajo promedio general (19 vistas) y tendencia negativa, es el único que produce contenido viral (todos los Top 10 videos con >970 vistas) cuando el tema es extremadamente relevante y urgente (deportes, crisis/desastres), indicando que la clave es la resonancia temática, no el promedio constante."
 }
