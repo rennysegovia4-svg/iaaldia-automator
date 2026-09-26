@@ -1,37 +1,38 @@
 {
   "updated": "2026-09-26",
-  "iteracion": 385,
+  "iteracion": 386,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "ia_noticias": 0.25,
+    "finanzas": 0.03,
+    "entretenimiento": 0.15,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Hooks que generan anticipación: `¡Se acabó la espera! ¡El` (867 avg_views)",
-    "Hooks que destacan un logro o personaje sorprendente: `Con solo 17 años, Lamine` (740 avg_views)",
-    "Hooks que establecen un tono noticioso formal: `Muy buenas tardes. Bienvenidos a` (375 avg_views)",
-    "Títulos en forma de pregunta controversial con emoji de shock: `[TEMA] ENTREGÓ [EVENTO]? 🤯`",
-    "Títulos que comunican una noticia impactante con emoji de shock: `[EVENTO O NOTICIA] ¡SHOCK! 🤯`",
-    "Títulos que enfatizan la urgencia o un suceso dramático con emojis: `[EVENTO] ¡Se Agotan! 😱🔥` o `[SUCESO] ¡ELIMINADO! 😱`"
+    "Pregunta Controversial + Emoji: \"¿[Evento/Situación Inesperada]? 🤯\"",
+    "Noticia Impactante + Emojis de Urgencia/Shock: \"[Evento Dramático]: ¡[Resultado Inesperado]! 😱🔥\"",
+    "Hecho Sorprendente/Personalidad + Edad/Logro: \"Con solo [Edad], [Nombre] [Logro Inesperado]...\"",
+    "Urgencia/Exclusividad + Revelación: \"¡Se acabó la espera! ¡El [Evento Importante]...\"",
+    "Noticia Deportiva Clave + Impacto Regional/Global + Emoji: \"La noticia deportiva que sacude [Región] hoy ⚽\"",
+    "Breaking News + Consecuencia Inmediata + Emoji: \"[Sujeto] [Verbo en Pasado] HOY: ¿[Consecuencia]? 😱\""
   ],
   "avoid_hooks": [
-    "Hooks que revelan el desenlace de la noticia prematuramente (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks incompletos o demasiado directos que no generan intriga (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que son meramente descriptivos sin emoción ni pregunta (ej. 'Brasil y Noruega empatan')"
+    "Revelar el resultado completo/clímax al inicio (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Frases incompletas o que no generan intriga (ej. \"Sidny Lopes Cabral acaba de\")",
+    "Declaraciones directas de un evento sin un giro o pregunta (ej. \"Brasil y Noruega empatan\")"
   ],
   "best_hora": 16,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de 'ia_noticias' enfocado en temas deportivos (fútbol, mundiales, ligas), ya que esta combinación ha dominado el TOP 10 de videos más vistos.",
-    "Diseñar títulos que incorporen preguntas controversiales, expresiones de shock y emojis ('🤯', '😱', '🔥') para maximizar el CTR y la curiosidad del espectador, siguiendo el patrón de los videos de alto rendimiento.",
-    "Elaborar hooks iniciales que generen intriga y anticipación, evitando en todo momento revelar el clímax o el resultado final de la noticia para mantener al espectador enganchado."
+    "Priorizar fuertemente la creación de contenido de 'deportes' y 'ia_noticias' que involucren controversias, eventos impactantes o noticias de última hora, ya que estas temáticas dominan el TOP 10 de videos.",
+    "Optimizar títulos y hooks utilizando preguntas polémicas, emojis (🤯, 😱, 🔥, ⚽), declaraciones de shock y elementos de urgencia o escasez para maximizar el CTR inicial.",
+    "Experimentar con horarios de publicación en la madrugada y mañana (1:00, 2:00, 6:00), además de los picos de la tarde (16:00, 17:00), dado que las noticias virales muestran engagement en diversas franjas horarias.",
+    "Evitar a toda costa los hooks que revelan la conclusión o el dato clave de la noticia al principio, ya que esta práctica ha demostrado generar 0 vistas y anula la intriga."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La sinergia entre el formato 'ia_noticias' y el contenido deportivo (especialmente fútbol y eventos de alto perfil como mundiales) es la fórmula más potente y consistente para generar vistas elevadas en este canal, capturando el 100% de los videos en el TOP 10."
+  "insight_semana": "El rendimiento de los videos de Shorts está altamente correlacionado con la capacidad de generar shock, controversia y urgencia, siendo las noticias deportivas y de impacto global las que mejor explotan esta fórmula, incluso cuando el nicho general ('ia_noticias') muestra promedios bajos."
 }
