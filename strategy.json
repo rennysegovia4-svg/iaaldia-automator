@@ -1,38 +1,38 @@
 {
   "updated": "2026-09-27",
-  "iteracion": 392,
+  "iteracion": 393,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.4,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "negocios_digitales": 0.025,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "finanzas": 0.08,
+    "entretenimiento": 0.08,
+    "negocios_digitales": 0.07,
+    "productividad_ia": 0.07,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Anticipación/Evento mayor: '¡Se acabó la espera! ¡El [evento clave] ha llegado...'",
-    "Logro/Sorpresa Inesperada: 'Con solo [edad], [nombre] revoluciona [campo]...'",
-    "Noticia Urgente/Catastrófica: '[Evento trágico] en [lugar]: [impacto] y emergencia...'",
-    "Pregunta con Implicación Impactante: '¿[Sujeto] entregó la [situación]? 🤯'",
-    "Declaración de Shock/Giro Inesperado: '[Situación]: ¡[Evento] ¡SHOCK! 🤯'",
-    "Advertencia de Escasez/Rapidez: '[Producto/Evento] ¡Se Agota/Vende Hoy! 😱🔥'"
+    "[Noticia de Alto Impacto] + [Pregunta Intrigante/Consecuencia] + [Emoji de Shock/Sorpresa 🤯/😱]",
+    "[Evento Urgente/Masivo] + ¡[Impacto/Conclusión]! 😱/🔥",
+    "[Noticia Deportiva Específica] + [Estado de Shock/Cambio] + 🤯/😱",
+    "[Tema de Última Hora] + [Localización/Detalle clave]: [Cifra/Impacto]",
+    "¡Se acabó la espera! ¡El [Evento Importante]...",
+    "Con solo [Edad/Característica], [Nombre] logró/hizo..."
   ],
   "avoid_hooks": [
-    "Descripción plana de resultados sin intriga: 'Brasil y Noruega empatan 0-0'",
-    "Enfoque en nombres o eventos poco conocidos sin contexto dramático: 'Sidny Lopes Cabral acaba de...'",
-    "Reiteración de información o hooks genéricos sin elementos emocionales (sorpresa, urgencia)."
+    "Hooks que son meras descripciones factuales de eventos poco impactantes o simulados, sin generar intriga o emoción (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks incompletos o ambiguos que no transmiten la información clave o el impacto de inmediato (ej. 'Sidny Lopes Cabral acaba de').",
+    "Hooks que anuncian resultados o situaciones sin un 'gancho' que justifique la atención o la inmediatez."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias` enfocado en eventos deportivos de gran magnitud (como el `mundial_2026`) y noticias de actualidad con alto impacto, ya que demuestran el mayor potencial de viralidad y views.",
-    "Optimizar los títulos y hooks para generar anticipación, intriga y emoción, utilizando formatos de pregunta, declaraciones de shock o escasez, y emojis de impacto (`🤯`, `😱`, `🔥`), como se observa en los videos de mejor rendimiento.",
-    "Establecer la `1 AM` (01:00) como el horario principal de publicación, dado que es la franja con mayor concentración de videos en el top 10 y un alto promedio de vistas. Los horarios de 6 AM y 17 PM también son prometedores como opciones secundarias.",
-    "Realizar pruebas activas de duración para los shorts, ya que actualmente no hay datos que permitan establecer una duración óptima y es un factor clave para el engagement."
+    "Priorizar la inmediatez y el 'factor noticia': Concentrar los esfuerzos en la creación de contenido `ia_noticias` que aborde eventos deportivos de alto impacto, tragedias o sucesos culturales masivos, publicándolos lo más rápido posible para capitalizar el interés inicial.",
+    "Optimizar títulos y hooks con disparadores emocionales: Implementar sistemáticamente las fórmulas de hooks más efectivos (pregunta, exclamación, emojis de sorpresa 🤯/😱) para maximizar el click-through y la retención inicial.",
+    "Monitorear nichos con potencial pero sin datos: Aunque `finanzas`, `negocios_digitales`, `cripto_inversiones`, `productividad_ia` y `politica_latam` tienen 0 vistas, se recomienda realizar pruebas controladas (1-2 videos por semana) en cada uno, aplicando los patrones de hooks exitosos, para identificar si existe una audiencia latente.",
+    "Evitar temas genéricos y descripciones planas: Descartar por completo contenido de autoayuda o hooks que sean meramente descriptivos sin elementos de intriga o impacto, ya que han demostrado un rendimiento nulo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El formato `ia_noticias`, a pesar de su `avg_views` moderado de 74, es el vehículo exclusivo para todos los 10 videos de mayor rendimiento, lo que demuestra un potencial inigualable para la viralización cuando se combina con hooks dramáticos y temas noticiosos de gran actualidad y controversia."
+  "insight_semana": "Aunque el nicho `mundial_2026` (deportes) exhibe el mejor promedio de vistas y tendencia, el 100% de los videos más virales (Top 10) provienen de `ia_noticias`, demostrando que la cobertura inmediata de eventos actuales y de alto impacto es la principal palanca para generar picos de audiencia masivos."
 }
