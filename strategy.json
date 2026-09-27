@@ -1,39 +1,39 @@
 {
   "updated": "2026-09-27",
-  "iteracion": 388,
+  "iteracion": 389,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.45,
-    "finanzas": 0.03,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.2,
+    "ia_noticias": 0.6,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia/Anuncio: \"¡Se acabó la espera! ¡El [evento/noticia]...\" (promedio: 867 vistas)",
-    "Intriga por dato específico: \"Con solo [edad/número], [nombre]...\" (promedio: 740 vistas)",
-    "Introducción formal a noticia: \"Muy buenas tardes. Bienvenidos a [tema]...\" (promedio: 375 vistas)",
-    "Pregunta controversial + emoji: \"¿[Afirmación impactante]? 🤯\" (derivado de títulos top)",
-    "Noticia impactante + cifra: \"[Evento devastador]: [número] [consecuencia]...\" (derivado de títulos top)",
-    "Declaración impactante + actor: \"[Resultado impactante]: ¡[Entidad] [acción]! 😱\" (derivado de títulos top)"
+    "Gancho de expectativa (`¡Se acabó la espera! ¡El`)",
+    "Gancho de talento emergente (`Con solo 17 años, Lamine`)",
+    "Noticia con pregunta controversial + Emoji (`¿FINAL ENTREGADA? 🤯`)",
+    "Evento dramático/impactante + Cifras/Ubicación (`Terremoto devastador en Colombia: 132 muertos`)",
+    "Noticia deportiva impactante + Ubicación + Urgencia (`La noticia deportiva que sacude LATAM hoy ⚽`)",
+    "Evento urgente/Anuncio + Pregunta retórica/Emoji (`LEICESTER SE VENDE HOY: ¿Adiós...? 😱`)"
   ],
   "avoid_hooks": [
-    "Revelar el resultado principal de inmediato: \"Brasil y Noruega empatan 0-0\" (0 vistas)",
-    "Demasiado factual sin intriga: \"Brasil y Noruega empatan\" (0 vistas)",
-    "Gancho incompleto o sin impacto claro: \"Sidny Lopes Cabral acaba de\" (0 vistas)"
+    "Resultados deportivos directos sin intriga (`Brasil y Noruega empatan 0-0`)",
+    "Hechos noticiosos planos sin contexto dramático (`Brasil y Noruega empatan`)",
+    "Mención de personaje sin gancho ni impacto (`Sidny Lopes Cabral acaba de`)"
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido para el nicho `ia_noticias`, dado que abarca el 100% de los videos con más vistas (973-1325 vistas), enfocándose en noticias de alto impacto, controversia y actualidad en deportes, política y eventos generales.",
-    "Implementar el uso de elementos de \"serie\" o \"parte\" en los títulos (e.g., \"PARTE 1\", \"1/2\") para temas que generen intriga y requieran más de un video, siguiendo el patrón de los videos con 1325 y 1298 vistas.",
-    "Desarrollar ganchos iniciales que generen urgencia, intriga con datos específicos, o presenten directamente una noticia impactante con cifras, evitando revelar el desenlace completo del video en el gancho para mantener la expectación.",
-    "Publicar videos de alto impacto preferentemente alrededor de la `1 AM` (hora con mayor concentración de videos en el TOP 10) y `16 PM` (hora del segundo video con más vistas), aunque la distribución de vistas exitosas abarca varias franjas horarias.",
-    "Reconocer el alto potencial y la volatilidad del nicho `mundial_2026` (bajo `deportes`). Aunque tiene el `avg_views` más alto, también ha generado videos con 0 vistas. El contenido en este nicho debe ser muy preciso y enganchador para capitalizar la tendencia."
+    "Priorizar fuertemente la creación de contenido dentro del nicho `ia_noticias`, dado que acapara el 100% de los videos con más de 973 vistas.",
+    "Implementar la estrategia de 'contenido por partes' ('PARTE 1', '1/2') en títulos de noticias de alto interés o controversiales para fomentar la retención y la visualización de series.",
+    "Utilizar títulos y ganchos que generen intriga, incluyan preguntas retóricas, empleen emojis de impacto (🤯, 😱, 🔥, ⚽) y resalten la urgencia o la novedad del evento.",
+    "Evitar ganchos y títulos que presenten la información de forma directa o plana (ej., resultados deportivos sin drama), ya que consistentemente resultan en 0 vistas.",
+    "Experimentar con la publicación de contenido de alto potencial alrededor de la 1 AM, que ha demostrado ser la hora con más videos en el TOP 10 y el pico de vistas más alto (1325 views)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el principal impulsor de virales en el canal, demostrando un potencial masivo de vistas (973-1325 por video) cuando el contenido y el gancho resuenan, a pesar de que su promedio general de vistas es bajo. Esto indica que la clave está en la precisión y el impacto de los videos dentro de esta categoría, más que en una consistencia generalizada."
+  "insight_semana": "La clave del éxito en `ia_noticias` reside en la habilidad de transformar noticias urgentes o potencialmente controversiales (especialmente deportivas y de entretenimiento) en contenido altamente viral mediante títulos que incorporan preguntas, emojis emocionales (🤯, 😱, 🔥, ⚽) y el uso de indicadores de serie ('PARTE 1'), logrando picos de vistas significativos a pesar de la alta variabilidad general del nicho."
 }
