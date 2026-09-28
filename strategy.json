@@ -1,37 +1,39 @@
 {
   "updated": "2026-09-28",
-  "iteracion": 396,
+  "iteracion": 397,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.35,
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "productividad": 0.1,
+    "negocios": 0.05,
     "finanzas": 0.03,
     "entretenimiento": 0.03,
     "negocios_digitales": 0.03,
-    "productividad_ia": 0.02,
     "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Anticipación/Exclamación: \"¡Se acabó la espera! ¡El\"",
-    "Logro/Sorpresa por Edad: \"Con solo 17 años, Lamine\"",
-    "Apertura Formal Impactante: \"Muy buenas tardes. Bienvenidos a\"",
-    "Pregunta Retórica Controversial + Emoji: \"¿[Evento] ENTREGÓ [algo]? 🤯\"",
-    "Noticia Impactante con Cifras/Nombres + Emoji: \"[Evento] devastador en [lugar]: [cifra] muertos 😱\"",
-    "Urgencia + Consecuencia Dramática + Emoji: \"¡[Entidad] SE [acción] HOY: ¿Adiós a [algo importante]? 😱\""
+    "Intriga con Pregunta Retórica y Emoción: ¿[Evento] ENTREGÓ la [Situación]? 🤯",
+    "Noticia Impactante con Ubicación y Emojis: [Evento Devastador/Noticia Impactante] en [Lugar] + 🤯/😱/⚡",
+    "Evento Inesperado/Crítico con Exclamación Dramática: [Sujeto] CEDE/SE VENDE/ELIMINADO HOY: ¡[Reacción]! 😱",
+    "Anticipación y Exclamación de Evento: ¡Se acabó la espera! ¡El [Evento Importante]!",
+    "Logro Sorprendente por Edad/Contraste: Con solo [Edad] años, [Nombre]...",
+    "Saludo Inicial Profesional y Temática Clara: Muy buenas tardes. Bienvenidos a [Tema Noticioso]"
   ],
   "avoid_hooks": [
-    "Hooks puramente descriptivos de un resultado o hecho (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks informativos sin intriga, conflicto o consecuencia (ej. \"Brasil y Noruega empatan\")",
-    "Hooks que mencionan un nombre o evento sin un contexto inmediato de impacto o sorpresa (ej. \"Sidny Lopes Cabral acaba de\")"
+    "Hooks que son meramente descriptivos del resultado final sin generar intriga o sorpresa (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks que inician con un nombre propio sin contexto o impacto inmediato (ej. 'Sidny Lopes Cabral acaba de').",
+    "Hooks excesivamente breves y sin un elemento emocional o de conflicto."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Focalizar la creación de contenido en el nicho de 'deportes' (particularmente eventos de fútbol como el Mundial) y 'ia_noticias', que demuestran el rendimiento más alto en vistas.",
-    "Implementar una estrategia de titulación y ganchos que genere controversia, urgencia o sorpresa. Utilizar preguntas retóricas, exclamaciones (`¡SHOCK!`, `¡ELIMINADO!`) y emojis impactantes (`🤯`, `😱`, `🔥`). La serialización de títulos (`PARTE 1`, `1/2`) es clave para la intriga.",
-    "Priorizar la publicación de videos a la 1 AM (hora 1), que se ha identificado como la ventana de mayor concentración de videos top y vistas agregadas."
+    "Intensificar la creación de contenido en el nicho de `deportes` y `ia_noticias`, priorizando el contenido deportivo que ha demostrado generar los picos de vistas más altos y un rendimiento promedio superior (mundial_2026).",
+    "Implementar estrategias de hooks que generen intriga y emoción intensa, utilizando preguntas retóricas, menciones de eventos inesperados o impactantes, y la inclusión de emojis relevantes (🤯, 😱, ⚡, 🔥, ⚽).",
+    "Mantener una alta frecuencia de publicación alrededor de la 1 AM (hora local del público objetivo), ya que esta franja horaria ha demostrado ser la más recurrente y con el mayor volumen de videos exitosos en el TOP 10."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La intriga y la controversia son los principales motores de captación de vistas, especialmente cuando se aplican a noticias de última hora o eventos deportivos con un fuerte componente emocional, y su impacto se potencia con emojis y formatos serializados."
+  "insight_semana": "El nicho `mundial_2026` (sub-categoría de deportes) presenta el `score` de rendimiento más alto (4.68) y una tendencia de crecimiento de 867.0, lo que lo posiciona como el nicho con mayor potencial de escalabilidad, incluso si los videos individuales más vistos se categorizan actualmente como `ia_noticias`."
 }
