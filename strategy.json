@@ -1,38 +1,39 @@
 {
   "updated": "2026-09-29",
-  "iteracion": 405,
+  "iteracion": 406,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "entretenimiento": 0.1,
+    "productividad_ia": 0.08,
+    "finanzas": 0.06,
+    "negocios_digitales": 0.06,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Urgencia/Primicia: Frases que denotan inmediatez o exclusividad (ej. '¡Se acabó la espera!', 'La noticia que sacude hoy...', 'ÚLTIMA HORA:').",
-    "Impacto Dramático/Asombro: Exclamaciones, eventos chocantes o giros inesperados (ej. '¡Gamezking ELIMINADO! 😱', 'Terremoto devastador...', 'Con solo 17 años, Lamine...').",
-    "Pregunta Retórica con Gran Implicación: Plantean una cuestión que sugiere conspiración, cambio radical o final (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯', '¿Adiós a la Premier League?').",
-    "Noticia con Datos o Consecuencias Claras: Presentan un hecho contundente con cifras o resultados significativos (ej. '132 muertos y emergencia n...', 'AMÉRICA CEDE LIDERATO ¡SHOCK!').",
-    "Escasez/Oportunidad Limitada: Resaltan la inminencia de una pérdida o la fugacidad de una oportunidad (ej. '¡Se Agotan! 😱🔥', 'Se Vende HOY').",
-    "Entrada Directa al Tema Principal: Establecen el contexto de la noticia de forma profesional y rápida (ej. 'Muy buenas tardes. Bienvenidos a...', 'Hoy analizamos...')."
+    "¡[EVENTO CRÍTICO]! ¿[IMPLICACIÓN CONTROVERSIAL]? [EMOJI DE SHOCK]",
+    "[SUCESO INESPERADO/DRAMÁTICO]: ¡[CONSECUENCIA ALARMANTE]! [EMOJI DE REACCIÓN]",
+    "[TEMÁTICA] HOY: ¡[NOTICIA IMPACTANTE]! [EMOJI DE ALERTA]",
+    "[ANUNCIO URGENTE] ¡[RESULTADO CLAVE/ESCASEZ]! [EMOJI DE ALERTA/FUEGO]",
+    "¡[FRASE DE INTRIGA/EXPECTATIVA]! [DETALLE SOBRE UN HECHO]",
+    "[PREGUNTA DIRECTA DE IMPACTO] [EMOJI DE SORPRESA]"
   ],
   "avoid_hooks": [
-    "Resultados Neutros/Sin Drama: Ganchos que simplemente describen un evento o resultado sin generar intriga o implicación emocional.",
-    "Excesivamente Descriptivos sin Hook Emocional: Inicios de narración que no capturan la atención inmediatamente (ej. 'Sidny Lopes Cabral acaba de...').",
-    "Contenido Genérico o Sin Relevancia Aparente: Que no justifiquen el 'por qué debería importarme' al espectador, especialmente con eventos irrelevantes."
+    "Hooks que simplemente describen un evento con bajo impacto o un resultado neutro (Ej: 'Brasil y Noruega empatan 0-0', 'Brasil y Noruega empatan').",
+    "Hooks que introducen un detalle muy específico o un nombre sin contexto intrigante para la audiencia general (Ej: 'Sidny Lopes Cabral acaba de').",
+    "Hooks que insinúan o presentan noticias falsas o resultados simulados, ya que resultan en 0 visualizaciones (Ej: 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ?')."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias de alto impacto, especialmente en el ámbito deportivo (fútbol de selecciones/ligas importantes) y eventos dramáticos/sucesos, bajo la categoría 'ia_noticias' por su probado engagement.",
-    "Optimizar los horarios de publicación centrándose en la 1 AM, y considerar franjas adicionales a las 6 AM y 5 PM, que han demostrado ser efectivas para captar audiencias tempranas o de fin de jornada.",
-    "Diseñar títulos y hooks que exploten la urgencia, el asombro, planteen preguntas con implicaciones importantes o comuniquen escasez, y evitar ganchos que solo describan resultados neutros o sean introducciones genéricas para maximizar la retención.",
-    "Evitar la creación de contenido con noticias falsas o eventos deportivos irrelevantes/no confirmados, ya que estos han demostrado consistentemente una efectividad del 0% en visualizaciones."
+    "Priorizar la creación de contenido de `deportes` con un enfoque en controversias, 'teorías de conspiración' y resultados inesperados para maximizar vistas, siguiendo el patrón de los videos top (Ej. 'ARGENTINA ENTREGÓ la Final del Mundial?').",
+    "Implementar ganchos (hooks) que generen urgencia, intriga o presenten un problema/pregunta impactante en los primeros 3 segundos del video, utilizando las fórmulas más efectivas identificadas.",
+    "Incorporar emojis de sorpresa, shock o alerta (🤯, 😱, 🔥) en títulos y miniaturas para captar la atención visual rápidamente y comunicar el tono dramático/sensacionalista de manera efectiva.",
+    "Evitar la publicación de contenido que simule resultados deportivos o presente noticias falsas, ya que consistentemente tiene 0 visualizaciones y es perjudicial para el canal.",
+    "Concentrar las publicaciones en las franjas horarias de madrugada (1 AM) y tarde-noche (5 PM / 17:00), que han demostrado ser los momentos más efectivos para la audiencia de este canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave para el alto rendimiento reside en la intercepción de noticias de alto impacto y tiempo real, especialmente deportivas (fútbol), combinadas con ganchos que explotan la urgencia y el drama, como lo demuestra la alta tendencia del nicho 'mundial_2026' y el éxito de los videos etiquetados como 'ia_noticias'."
+  "insight_semana": "El contenido más exitoso explota la combinación de 'noticias impactantes' o 'teorías de conspiración' en temas de alto interés, especialmente deportes, demostrando que el framing dramático y controversial de la noticia es más crucial que la categoría general del nicho para generar vistas masivas."
 }
