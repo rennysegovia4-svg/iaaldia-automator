@@ -1,41 +1,38 @@
 {
   "updated": "2026-09-29",
-  "iteracion": 402,
+  "iteracion": 403,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.3,
-    "productividad": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "entretenimiento": 0.03,
-    "politica_latam": 0.03,
-    "negocios": 0.02
+    "productividad_ia": 0.1,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Ganchos de anticipación/excitación: Utilizar frases que generen expectativa, como '¡Se acabó la espera! ¡El...' (867 avg_views).",
-    "Ganchos de logro/hecho sorprendente: Destacar eventos o personas inusuales, especialmente por edad o contexto, como 'Con solo X años, [Nombre]...' (740 avg_views).",
-    "Ganchos de pregunta controversial o impactante: Formular el título como una pregunta que genere debate o curiosidad profunda, ej. '¿[Tema candente] ENTREGÓ [Resultado inesperado]?' (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial?').",
-    "Ganchos de noticias de alto impacto/urgencia: Enfatizar la gravedad o la actualidad de un evento, ej. '[Evento devastador/importante] en [Lugar] hoy' o 'La noticia [tipo] que sacude [Región] hoy'.",
-    "Ganchos de drama/giro inesperado: Resaltar cambios drásticos o situaciones chocantes, utilizando palabras como 'SHOCK', 'ELIMINADO', 'CEDIÓ' (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK!').",
-    "Ganchos de escasez/FOMO (Fear of Missing Out): Crear un sentido de urgencia alrededor de un evento popular, ej. '¡[Entradas/Producto popular] se Agotan! 🔥' (Ej: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan!')."
+    "Fórmula 1: Anuncio urgente de evento mayor (Ej: '¡Se acabó la espera! ¡El')",
+    "Fórmula 2: Destacar logro/dato sorprendente con detalle específico (Ej: 'Con solo X años, [Nombre]')",
+    "Fórmula 3: Saludo profesional y directo para establecer autoridad (Ej: 'Muy buenas tardes. Bienvenidos a')",
+    "Fórmula 4: Pregunta controversial o desafiante con keyword clave y emoji (Ej: '[Tema] ¿[Acción] la Final? 🤯')",
+    "Fórmula 5: Noticia impactante/trágica con datos concretos (Ej: 'Terremoto devastador en [Lugar]: [Número] muertos')",
+    "Fórmula 6: Noticia de última hora con entidad/persona específica y consecuencia dramática (Ej: '[Entidad/Persona] [Evento impactante] 😱')"
   ],
   "avoid_hooks": [
-    "Evitar ganchos que revelan completamente el desenlace del evento noticioso desde el principio (ej. 'Brasil y Noruega empatan 0-0', 0 views).",
-    "Evitar ganchos genéricos o incompletos que carecen de contexto o un elemento intrigante para el espectador (ej. 'Sidny Lopes Cabral acaba de', 0 views).",
-    "Evitar ganchos sin emoción o impacto que simplemente enuncian un hecho de manera plana, sin generar curiosidad o sorpresa."
+    "Descripciones de resultados deportivos neutrales o de bajo impacto (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Mencionar nombres de figuras poco conocidas sin un contexto de impacto inmediato (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones puramente factuales que carecen de intriga o controversia sin un emoji de impacto o una pregunta (Ej: 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de noticias de alto impacto, especialmente en el ámbito deportivo y eventos mundiales, dado su rendimiento superior y alta 'trend'.",
-    "Integrar consistentemente emojis de impacto (🤯, 😱, ⚡, 🔥, ⚽) en los títulos para maximizar la visibilidad y captar la atención en el feed de Shorts.",
-    "Experimentar con la publicación de videos en los horarios de la 1 AM, 6 AM y 5 PM (17h), ya que son los momentos donde se han concentrado los videos con mayor número de vistas.",
-    "Formular títulos y ganchos que generen intriga, anticipación o revelen un giro dramático, en lugar de enunciar directamente el resultado o el desenlace de la noticia.",
-    "Mantener la producción en los nichos con bajo rendimiento (finanzas, negocios_digitales, cripto_inversiones, productividad_ia, politica_latam, negocios) en un mínimo, a la espera de más datos o ajustando drásticamente el enfoque de contenido si se desea explorarlos."
+    "Priorizar la creación de contenido alrededor de noticias deportivas de alto impacto, controversia o eventos masivos (como mundiales, ligas importantes, escándalos de jugadores/equipos) debido a su rendimiento superior y alta tendencia.",
+    "Asegurar que los títulos y hooks incorporen elementos de sorpresa, urgencia o emoción intensa, utilizando emojis como 🤯, 😱, 🔥, ⚽ para maximizar la CTR en el feed de Shorts, como se observa en el 90% de los videos top.",
+    "Realizar pruebas de publicación consistentes en los horarios de 1 AM, 6 AM y 5 PM (17:00), ya que estos han demostrado ser picos de audiencia para los videos de mayor rendimiento.",
+    "Desarrollar una narrativa que plantee preguntas intrigantes o exponga revelaciones impactantes desde el inicio del video, siguiendo el patrón de los videos más vistos sobre 'entregar finales' o 'decisiones polémicas'."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside en la combinación de un formato de noticias de IA (`ia_noticias`) con temas de alto impacto y gran seguimiento popular, especialmente deportes mayores como mundiales de fútbol, lo cual supera el rendimiento promedio de otros temas dentro del mismo nicho. La 'ia_noticias' funciona como un canal eficaz para la difusión de temas virales."
+  "insight_semana": "El canal demuestra una dependencia crítica del contenido de noticias deportivas de última hora y alto impacto, incluso cuando se etiqueta genéricamente como 'ia_noticias', lo que indica que la relevancia y controversia deportiva superan significativamente a otros temas y a la mera etiqueta de 'IA' en la captación de audiencia."
 }
