@@ -1,189 +1,154 @@
 {
   "updated": "2026-09-29",
   "hook_formulas": [
-    "Ganchos de anticipación/excitación: Utilizar frases que generen expectativa, como '¡Se acabó la espera! ¡El...' (867 avg_views).",
-    "Ganchos de logro/hecho sorprendente: Destacar eventos o personas inusuales, especialmente por edad o contexto, como 'Con solo X años, [Nombre]...' (740 avg_views).",
-    "Ganchos de pregunta controversial o impactante: Formular el título como una pregunta que genere debate o curiosidad profunda, ej. '¿[Tema candente] ENTREGÓ [Resultado inesperado]?' (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial?').",
-    "Ganchos de noticias de alto impacto/urgencia: Enfatizar la gravedad o la actualidad de un evento, ej. '[Evento devastador/importante] en [Lugar] hoy' o 'La noticia [tipo] que sacude [Región] hoy'.",
-    "Ganchos de drama/giro inesperado: Resaltar cambios drásticos o situaciones chocantes, utilizando palabras como 'SHOCK', 'ELIMINADO', 'CEDIÓ' (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK!').",
-    "Ganchos de escasez/FOMO (Fear of Missing Out): Crear un sentido de urgencia alrededor de un evento popular, ej. '¡[Entradas/Producto popular] se Agotan! 🔥' (Ej: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan!').",
-    "Situación/Objeto Inusual + Reacción Extrema",
-    "Declaración Audaz + Sujeto/Tecnología",
-    "Pregunta Directa/Intrusiva sobre Finanzas Personales",
-    "Comedia Relatable/Escenario de la Vida Real",
-    "Revelación de una Estrategia/Idea Brillante",
-    "Reto/Prueba con un Resultado Inesperado"
+    "Evento Futuro/Especulativo + Resultado Inesperado/Controversial (Ej: 'NORUEGA 2X1 BRASIL COPA DO MUNDO 2026')",
+    "Advertencia/Alerta de Peligro + Fenómeno Popular/Actual (Ej: '⚠️😳 ¡Aguas! La estafa del álbum del mundial 2026')",
+    "Declaración Impactante/Mito-Buster + Tema Controversial (Ej: 'EL TRADING ES UNA MENTIRA ⚠️')",
+    "Pregunta Retórica/Hipotética + Consecuencia Dramática (Ej: '¿Qué PASARÍA si NO completas el álbum PANINI 2026? 😰⚽')",
+    "Dramatización Emocional + Evento/Año Futuro (Ej: 'La mejor historia del 2026🥲.')",
+    "Acción Sorprendente/Humor + Personajes Conocidos (Ej: 'Les juegan una BROMA a los tiburones 😂')",
+    "Pregunta de Curiosidad Histórica + Sujeto Específico (Ej: 'Cuanto Oro extrajeron los Españoles?')",
+    "Dato Histórico Impactante + Figura Conocida (Ej: 'El Mayor Temor de Adolf Hitler eran los Españoles')",
+    "Anuncio de Transición de Tiempo + Años (Ej: 'Adiós 2025 Bienvenido 2026')",
+    "Batalla/Comparación + Concepto Futuro (Ej: 'Batallas de Aura | moda 2026')",
+    "Noticia de Evento Importante + Detalles clave (Ej: 'México vs Inglaterra; horario y dónde ver el partido del Mundial 2026')",
+    "Verdad Incómoda/Declaración Impactante + Tema Cultural/Social (Ej: 'No es LatinoAmerica Verdades que duelen')"
   ],
   "title_patterns": [
-    "[Sujeto] en [Situación Impactante] + [Emojis]",
-    "[Declaración de Logro/Fracaso] + [Sujeto/Tecnología] + !!!",
-    "¿[Pregunta Curiosa/Personal]? + [Emojis]",
-    "[Sujeto/Concepto] + [Verbo de Acción/Efecto] + [Resultado/Beneficio]",
-    "[Adjetivo Impactante] + [Sujeto/Concepto] + [Comparación/Contexto]",
-    "[Comedia Relatable/Personaje] + [Reacción Exagerada] + [Emojis]",
-    "[Experimento/Reto] + [Pregunta de Verificación]",
-    "[Tendencia/Fenómeno] + [Declaración de Impacto/Popularidad]"
+    "[Entidades] + [Resultado Sorprendente] + [Evento/Año] (Ej: 'NORUEGA 2X1 BRASIL COPA DO MUNDO 2026')",
+    "[Emoji/Advertencia] + [Exclamación] + [Estafa/Problema] + [Tema Popular/Evento] (Ej: '⚠️😳 ¡Aguas! La estafa del álbum del mundial 2026')",
+    "[Declaración Absoluta/Exagerada] + [Tema Central] + [Emoji] (Ej: 'La mejor historia del 2026🥲.')",
+    "[Pregunta Directa/Hipotética] + [Consecuencia Emocional/Impactante] + [Tema/Año] (Ej: '¿Qué PASARÍA si NO completas el álbum PANINI 2026? 😰⚽')",
+    "[Verbo Activo/Situación] + [Sujeto Famoso/Grupo] + [Emoji] (Ej: 'Les juegan una BROMA a los tiburones 😂')",
+    "[Pregunta Cantidad/Hecho] + [Sujeto Histórico/Objeto] + [Interrogación] (Ej: 'Cuanto Oro extrajeron los Españoles?')",
+    "[Transición de Tiempo] + [Años] + [Separador] + [Elemento Visual] (Ej: 'Adiós 2025 Bienvenido 2026 | #')",
+    "[Eventos/Entidades] + [Separador] + [Detalle del Evento] + [Año] (Ej: 'España vs Argentina | Final Mundial 2026')"
   ],
   "palabras_prohibidas": [
-    "Guía",
-    "Tutorial",
-    "Análisis",
-    "Completo",
-    "Explicación",
-    "Introducción",
-    "Detallado",
-    "Conferencia",
-    "Webinar",
-    "Lección"
+    "video",
+    "parte",
+    "explicación",
+    "tutorial",
+    "información",
+    "conoce",
+    "descubre",
+    "análisis",
+    "guía",
+    "contenido"
   ],
   "palabras_clave_virales": [
-    "#shorts",
-    "#viral",
-    "#humor",
-    "#funny",
-    "#tiktokvideo",
-    "#fyp",
-    "#latina",
-    "#comedia",
-    "#ai",
-    "#inteligenciaartificial",
-    "#ia",
-    "#bitcoin",
-    "#dinero",
-    "#ahorro",
-    "#emprendedor"
+    "shorts",
+    "2026",
+    "mundial",
+    "españa",
+    "argentina",
+    "viral",
+    "latam",
+    "fútbol",
+    "estafa",
+    "brasil",
+    "méxico",
+    "trading",
+    "album",
+    "historia",
+    "copa del mundo"
   ],
-  "estructura_gancho_optima": "El gancho óptimo inicia con una imagen o situación visualmente impactante y/o sorprendente que rompe el patrón, seguida inmediatamente por una pregunta intrigante, una declaración audaz o una situación cómica relatable que genera curiosidad o identificación emocional en los primeros 3 segundos. A menudo incluye elementos de misterio, humor, desafío o una promesa de valor/conocimiento inesperado.",
-  "duracion_optima_segundos": 30,
-  "insight_clave": "La clave del éxito reside en la combinación de un formato de noticias de IA (`ia_noticias`) con temas de alto impacto y gran seguimiento popular, especialmente deportes mayores como mundiales de fútbol, lo cual supera el rendimiento promedio de otros temas dentro del mismo nicho. La 'ia_noticias' funciona como un canal eficaz para la difusión de temas virales.",
-  "recomendacion_thumbnail": "Un fotograma vibrante y de alta calidad del momento más impactante o cómico del video, con una expresión facial humana exagerada (sorpresa, risa, angustia) o un elemento visual clave que genere misterio/curiosidad. Idealmente, incluye un texto superpuesto breve y de alto contraste que refuerza el gancho del título, utilizando emojis relevantes para captar la atención.",
+  "estructura_gancho_optima": "Combina un elemento de Sorpresa/Inesperado o Alerta de Peligro con una referencia a un Tema/Evento Universalmente Conocido o de Alta Relevancia. Debe incluir un toque Emocional Fuerte (drama, humor, miedo, curiosidad) y, frecuentemente, uso de Números o Emojis para captar atención visual. Es breve y conciso, generando una pregunta o indignación que impulsa la reproducción.",
+  "duracion_optima_segundos": 58,
+  "insight_clave": "La virilidad se logra al presentar una especulación o una dramática contra-narrativa sobre temas universalmente reconocibles y de alto interés. No solo es el tema, sino el 'shock' o la 'urgencia' que genera la perspectiva inesperada (ej. resultados falsos del Mundial, estafas inminentes, desmentidos históricos). Esto crea una disonancia cognitiva o una 'necesidad de saber' que obliga al espectador a interactuar con el contenido.",
+  "recomendacion_thumbnail": "Priorizar la expresión emocional extrema o la incongruencia visual. Utilizar superposiciones de texto audaces y claras que reflejen el mensaje central del gancho, a menudo con emojis, símbolos de advertencia (⚠️😳) o números. Incluir rostros reconocibles, logos, banderas o caricaturas de celebridades relacionadas con el tema para una identificación instantánea. El objetivo es una comprensión inmediata del drama o la sorpresa que genere curiosidad o alarma.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Demostración sorprendente de una capacidad de IA",
-        "Uso cómico/relatable de un filtro de IA",
-        "Predicción o resultado impactante generado por IA"
+        "Predicción/Escenario Futuro Inesperado de un Evento Global (Ej: Mundial 2026)",
+        "Advertencia Urgente sobre un Fenómeno de Interés Masivo (Ej: Estafa del álbum)",
+        "Narrativa Emocional o Dramática ligada a un Evento Futuro"
       ],
       "topics": [
-        "Filtros y efectos de IA",
-        "Capacidades y herramientas de IA (ChatGPT, Wonder Studio)",
-        "IA en la cultura pop y predicciones (M3gan, deportes)"
+        "Mundial de Fútbol 2026 (predicciones, estafas, historias)",
+        "Eventos futuros/cambios de año (2025/2026)",
+        "Tecnología y tendencias futuras (moda, IA) en un contexto de predicción"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Escenario relatable de ahorro/gasto con humor",
-        "Pregunta directa o desafío sobre decisiones financieras",
-        "Historia corta con moraleja financiera o lección"
+        "Declaración Controversial/Desmentido sobre una Estrategia Financiera (Ej: 'EL TRADING ES UNA MENTIRA')",
+        "Pregunta Directa sobre Impacto Económico o Riqueza",
+        "Consejo Urgente o Advertencia sobre Inversiones/Estafas"
       ],
       "topics": [
-        "Ahorro y gasto de dinero",
-        "Dilemas y decisiones financieras",
-        "Humor relacionado con las finanzas personales"
+        "Mitos y realidades de modelos de inversión (trading)",
+        "Historia económica y su impacto actual (oro, riqueza)",
+        "Advertencias sobre estafas financieras o riesgos"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Revelación de una estrategia de marketing ingeniosa",
-        "Idea de negocio creativa/novedosa con demostración",
-        "Experimento personal con un modelo de negocio digital"
+        "Situación Inesperada/Humorística con Personajes Reconocibles (Ej: Broma a tiburones)",
+        "Declaración Audaz que Desafía Creencias Comunes o Hechos Históricos",
+        "Pregunta de Curiosidad Histórica/Cultural con Relevancia Actual"
       ],
       "topics": [
-        "Estrategias de marketing y negocios reales (Zomato)",
-        "Ideas de negocio y 'side gigs' (bookmarks, 3D printing, dropshipping)",
-        "Comparativas y análisis de plataformas de ingresos (YouTube vs Facebook)"
+        "Momentos virales de programas de emprendimiento (Shark Tank)",
+        "Mitos históricos y verdades sobre España y Latam",
+        "Crítica o análisis de modelos de negocio (trading)"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Situación de alto riesgo/pérdida financiera dramática",
-        "Clips inspiracionales/motivacionales (a menudo con tags #bitcoin)",
-        "Conceptos de futuro/tecnología (ej. metaverso) que intrigan"
+        "Alerta de Fraude o Riesgo en el Mundo Cripto",
+        "Predicción Audaz sobre el Futuro de una Criptomoneda/Tecnología Blockchain",
+        "Declaración Controvertida sobre la Viabilidad o Impacto de Cripto"
       ],
       "topics": [
-        "Fraudes/estafas con grandes sumas de dinero",
-        "Metaverso y realidades virtuales",
-        "Motivación y éxito financiero (genérico, a menudo mis-etiquetado)"
+        "Volatilidad y predicciones del mercado cripto",
+        "Seguridad y estafas en inversiones digitales",
+        "Mitos y verdades sobre criptomonedas y blockchain"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Demostración de una herramienta que resuelve un problema específico",
-        "Declaración de un beneficio claro y cuantificable",
-        "Uso de IA para simplificar una tarea"
+        "Demostración Sorprendente de Capacidades de IA para Ahorrar Tiempo/Mejorar",
+        "Advertencia sobre un Riesgo o Desafío de la IA en Productividad",
+        "Comparación Dramática entre Métodos Tradicionales vs. Productividad con IA"
       ],
       "topics": [
-        "Herramientas de IA para escritura/creatividad",
-        "Optimización de procesos con IA",
-        "Recomendaciones de software y apps"
+        "Herramientas de IA para la productividad personal o laboral",
+        "El futuro del trabajo con IA",
+        "Desafíos y oportunidades de la inteligencia artificial"
       ]
     }
   },
   "top_videos_semana": [
     {
-      "titulo": "Ellie's Coin Jar A Lesson on Saving Money #shorts",
-      "views": 566837099,
-      "id": "UspZIrwaP1M"
+      "titulo": "Les juegan una BROMA a los tiburones 😂 #SharkTankMx #Shorts",
+      "views": 7805472,
+      "id": "dtZMxMNKl-s"
     },
     {
-      "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 71969043,
-      "id": "qEBPaKp0kKA"
+      "titulo": "NORUEGA 2X1 BRASIL COPA DO MUNDO 2026 #brasil #noruega #futebol #shorts",
+      "views": 3925397,
+      "id": "jIkevnnB5Pc"
     },
     {
-      "titulo": "Genius Marketing Strategy by Zomato😬 #shorts #marketing #zomato",
-      "views": 65089094,
-      "id": "wJ1-eR_hAV0"
+      "titulo": "⚠️😳 ¡Aguas! La estafa del álbum del mundial 2026 #shorts #fyp #viral #engaño #estafa #album",
+      "views": 3080687,
+      "id": "_kcLBj-dOzQ"
     },
     {
-      "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 59113936,
-      "id": "QYxtNplarhA"
+      "titulo": "La mejor historia del 2026🥲. #futbol #argentina #football #caboverde #españa #mundial #shorts",
+      "views": 2387947,
+      "id": "7NZEE9hliQE"
     },
     {
-      "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44366483,
-      "id": "qrfrPlEGrdw"
+      "titulo": "EL TRADING ES UNA MENTIRA ⚠️ #shorts #viral #argentina #chile #mexico #bananarancia #trading",
+      "views": 741011,
+      "id": "-fy-YFVHQ90"
     },
     {
-      "titulo": "JUNIOR en LAVA 🔥 #lava #filtro #viral #junior #fuego #aliens #shorts #short #funny",
-      "views": 43228239,
-      "id": "LtYzjl5w-YY"
-    },
-    {
-      "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42261122,
-      "id": "IKXiyApvKjI"
-    },
-    {
-      "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42261122,
-      "id": "IKXiyApvKjI"
-    },
-    {
-      "titulo": "Incredible Wonder Studio Ai | Humans VS Robot ~ Fair Fight? #shorts",
-      "views": 27256762,
-      "id": "WLifoj5-Xog"
-    },
-    {
-      "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15362096,
-      "id": "gDn_SQU6YZE"
-    },
-    {
-      "titulo": "I DEFEATED ChatGPT !!! #shorts",
-      "views": 14582519,
-      "id": "t0x6WNItdX4"
-    },
-    {
-      "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
-      "views": 9918970,
-      "id": "GITF0gO6W3Q"
-    },
-    {
-      "titulo": "La mejor herramienta para humanizar tus textos es Bypass AI #shorts",
-      "views": 187949,
-      "id": "6Cp0mADlFK0"
+      "titulo": "Cuanto Oro extrajeron los Españoles? #shorts #españa #latam #shortvideo",
+      "views": 427053,
+      "id": "43rpOOuG95E"
     }
   ],
   "aprendizajes_externos": {
