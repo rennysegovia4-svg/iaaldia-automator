@@ -1,41 +1,39 @@
 {
   "updated": "2026-09-30",
-  "iteracion": 409,
+  "iteracion": 410,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "entretenimiento": 0.05,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "ia_noticias": 0.3,
+    "productividad_ia": 0.15,
+    "negocios_digitales": 0.05,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante] está aquí!",
-    "Con solo [Edad], [Nombre] logra [Hazaña increíble] que [Impacto]",
-    "[Sujeto] ¿[Verbo] la [Evento Controversial]? 🤯",
-    "[Evento Devastador] en [Lugar]: [Cifra] [Impacto] y [Consecuencia]",
-    "[Liga/Evento]: [Sujeto] ¡[Acción Inesperada]! 😱",
-    "[Producto/Evento] ¡Se Agotan! 😱🔥"
+    "¡Se acabó la espera! ¡El [gran evento]...",
+    "Con solo [edad/condición], [persona/evento]...",
+    "¿[Tema Controversial]? 🤯",
+    "[Noticia Urgente/Devastadora] en [Lugar]: [Detalle impactante]...",
+    "[Equipo/Persona] ELIMINADO! 😱",
+    "[Tema] CEDIÓ LIDERATO ¡SHOCK! 🤯"
   ],
   "avoid_hooks": [
-    "Descripciones planas y sin emoción del evento (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Introducciones genéricas o incompletas que no revelan el valor (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Afirmaciones directas sin generar intriga o sorpresa para eventos menores."
+    "Resultados deportivos desprovistos de emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Declaraciones fácticas sin gancho emocional (ej. 'Brasil y Noruega empatan')",
+    "Nombres de personajes poco conocidos sin contexto dramático (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar la creación de contenido de `ia_noticias` que aborde controversias de alto perfil, especialmente en el ámbito deportivo o eventos noticiosos urgentes, ya que son los que consistentemente generan el mayor volumen de vistas.",
-    "Implementar la estrategia de dividir noticias impactantes en series (ej. 'PARTE 1') para prolongar el interés y capitalizar la curiosidad, como se observó en el video 'ARGENTINA ENTREGÓ la Final del Mundial? (PARTE 1)' con 1325 vistas.",
-    "Publicar el contenido en la franja horaria de la 1 AM (GMT-X, asumiendo hora local del canal), ya que ha demostrado ser la más efectiva con un promedio de 1121 vistas para los videos top.",
-    "Integrar emojis de impacto (🤯, 😱, 🔥) en los títulos para amplificar la emoción y el clickbait, una práctica común en 7 de los 10 videos más exitosos.",
-    "Diseñar títulos que planteen preguntas intrigantes o controvertidas directamente relacionadas con la noticia, como se ve en 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯', para captar la atención del espectador."
+    "Priorizar temas deportivos de alto impacto y controversia (ej. finales de mundial, ligas mayores) que han demostrado la mayor viralidad y dominan el TOP 10 de videos.",
+    "Implementar la estrategia de 'contenido en serie' (ej. 'PARTE 1') para noticias virales que puedan sostener el interés del público a lo largo de varios Shorts, capitalizando el éxito de este formato.",
+    "Optimizar las publicaciones en la franja de 1 AM (GMT-X), ya que ha mostrado el promedio más alto de vistas para los videos top (1121 vistas en 3 videos).",
+    "Utilizar emojis dramáticos (🤯, 😱, 🔥) y formulaciones de pregunta en los títulos para generar intriga y emoción, directamente correlacionados con el alto rendimiento de 7 de los 10 videos principales.",
+    "Elaborar ganchos iniciales que creen anticipación ('¡Se acabó la espera!') o resalten un detalle sorprendente y específico ('Con solo 17 años...') para captar la atención de inmediato, basándose en los hooks más efectivos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento viral del canal está fuertemente impulsado por noticias de `ia_noticias` de alta controversia, eventos deportivos polémicos o tragedias urgentes, los cuales superan consistentemente el promedio de vistas, independientemente del promedio general del nicho `ia_noticias`."
+  "insight_semana": "El nicho 'ia_noticias', a pesar de su bajo promedio general de vistas (20 vistas), actúa como un motor de contenido viral de alto riesgo y alta recompensa, generando consistentemente los videos con más vistas cuando aborda temas de controversia deportiva, crisis o noticias urgentes. Su valor principal reside en la identificación y capitalización de temas 'hot' para lograr picos de audiencia, en lugar de una performance promedio sostenida."
 }
