@@ -1,37 +1,39 @@
 {
   "updated": "2026-09-30",
-  "iteracion": 412,
+  "iteracion": 413,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "entretenimiento": 0.15,
-    "productividad_ia": 0.1,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.3,
+    "ia_noticias": 0.45,
+    "finanzas": 0.02,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento esperado]!",
-    "Con solo [edad], [nombre] [logro/noticia impactante]",
-    "Muy buenas tardes. Bienvenidos a [noticiero/evento]",
-    "Preguntas especulativas/controversiales con emoji (🤯): ¿[Noticia Impactante]? 🤯",
-    "Exclamaciones de shock o urgencia con emoji (😱, 🔥): ¡[Evento Sorprendente]! 😱/🔥",
-    "Noticias de crisis/gran impacto con ubicación y consecuencia: [Evento Trágico] en [Lugar]: [Impacto]"
+    "¡Se acabó la espera! ¿[Evento/Decisión] es una farsa? 🤯",
+    "[Evento trágico] en [Lugar]: ¡[Cifra] muertos y [consecuencia grave]! 😱",
+    "[Liga/Torneo]: ¡[Equipo/Jugador] [Acción sorpresiva]! ¡SHOCK! 🤯",
+    "[Producto/Evento] HOY: ¿Adiós a [algo importante]? [😱/🔥]",
+    "[Sujeto] [Acción que revela algo]! 🤯 (PARTE X)",
+    "Con solo [edad] años, [Nombre] [logró/enfrenta problema]..."
   ],
   "avoid_hooks": [
-    "Afirmaciones factuales y sin emoción sobre resultados (ej. 'Brasil y Noruega empatan 0-0')",
-    "Introducciones genéricas de personajes sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que reportan un empate de bajo interés sin drama o implicación mayor."
+    "Hooks que anuncian un resultado deportivo sin emoción ni sorpresa (ej. 'Brasil y Noruega empatan 0-0').",
+    "Ganchos que empiezan con una afirmación incompleta o un sujeto desconocido, sin construir intriga o impacto desde el inicio (ej. 'Sidny Lopes Cabral acaba de').",
+    "Declaraciones puramente descriptivas y sin carga emocional o pregunta, especialmente para eventos que se supone que son impactantes."
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el contenido de `deportes` dentro del formato `ia_noticias`, enfocándose en eventos de gran escala (ej. Mundiales) y noticias con potencial de controversia o especulación, como se ve en los videos de Argentina.",
-    "Optimizar los títulos con preguntas o exclamaciones usando emojis de alto impacto (🤯, 😱, 🔥), replicando el patrón presente en 7 de los 10 videos más vistos para generar curiosidad y emoción.",
-    "Implementar la estrategia de división de contenido en partes ('PARTE 1', '1/2') para noticias de alto interés, manteniendo la expectativa y fomentando la continuidad de la audiencia, como demostrado con los videos de Argentina (1325 y 1298 views)."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias', especialmente sobre deportes actuales (controversias, grandes eventos) y noticias de crisis/desastres, dado su dominio consistente en el TOP 10.",
+    "Implementar activamente la estrategia de dividir noticias de alto interés en 'Partes' (ej. 'PARTE 1/2') para maximizar la retención y generar múltiples visualizaciones de un mismo tema viral.",
+    "Aprovechar la franja horaria de la 1 AM (UTC) para la publicación de contenido clave, ya que ha demostrado ser la más efectiva en términos de views y frecuencia en el top 10.",
+    "Continuar utilizando emojis de impacto (`🤯`, `😱`, `🔥`) y palabras de alto dramatismo (`SHOCK`, `ENTREGÓ`, `DEVASDADTOR`, `AGOTAN`) en títulos y ganchos.",
+    "Establecer un sistema de seguimiento para la duración de los videos, ya que esta métrica es crucial para optimizar el rendimiento de los Shorts y actualmente no se dispone de datos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación más potente para el canal es el formato de 'ia_noticias' aplicado a contenido deportivo de gran envergadura (especialmente fútbol latinoamericano y Mundiales), utilizando títulos con preguntas o exclamaciones emocionales y emojis de alto impacto (🤯, 😱, 🔥), y la táctica de series ('PARTE 1') para maximizar las vistas y la retención."
+  "insight_semana": "La clave para el alto rendimiento no es solo la identificación de nichos con alto potencial teórico (ej. `mundial_2026`), sino la *ejecución dramática y urgente* de noticias de alto impacto, como se observa en la dominancia consistente de `ia_noticias` en el TOP 10, superando la inconsistencia de nichos con promedios inflados por outliers."
 }
