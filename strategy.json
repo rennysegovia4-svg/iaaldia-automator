@@ -1,39 +1,41 @@
 {
   "updated": "2026-09-30",
-  "iteracion": 408,
+  "iteracion": 409,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.03,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "entretenimiento": 0.05,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡ÚLTIMA HORA! [Evento/Noticia] está [acción impactante] ahora mismo. ¿Qué pasará?",
-    "Con solo [Edad/Condición], [Nombre] [Logro Inesperado]. ¡No creerás esto!",
-    "[Sujeto] ¿Realmente [Verbo Polémico] [Objeto]? ¡La verdad te dejará en shock!",
-    "[Tipo de Desastre] hoy en [Lugar]: [Número] muertos y [Consecuencia Grave]!",
-    "[Entidad] CEDE [Posición/Objeto] ¡Impacto total en [Contexto]!",
-    "[Artículo/Evento] en [Lugar] ¡Se Agotan RÁPIDO! 😱🔥 No te lo pierdas."
+    "¡Se acabó la espera! ¡El [Evento Importante] está aquí!",
+    "Con solo [Edad], [Nombre] logra [Hazaña increíble] que [Impacto]",
+    "[Sujeto] ¿[Verbo] la [Evento Controversial]? 🤯",
+    "[Evento Devastador] en [Lugar]: [Cifra] [Impacto] y [Consecuencia]",
+    "[Liga/Evento]: [Sujeto] ¡[Acción Inesperada]! 😱",
+    "[Producto/Evento] ¡Se Agotan! 😱🔥"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el desenlace de forma plana (ej: 'Brasil y Noruega empatan 0-0').",
-    "Hooks puramente descriptivos sin generar emoción o intriga (ej: 'Sidny Lopes Cabral acaba de').",
-    "Hooks sin un claro llamado a la sorpresa, controversia o urgencia."
+    "Descripciones planas y sin emoción del evento (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Introducciones genéricas o incompletas que no revelan el valor (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones directas sin generar intriga o sorpresa para eventos menores."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que se enfoque en controversias deportivas de alto perfil y noticias de crisis/desastres naturales, ya que son los impulsores clave de visualizaciones.",
-    "Implementar una estrategia de contenido seriado ('PARTE 1', 'PARTE 2') para temas de gran interés y controversia, aprovechando la anticipación para fomentar múltiples visualizaciones por usuario.",
-    "Optimizar los horarios de publicación concentrándose en 1 AM, 6 AM y 17 PM (hora local del canal), que han demostrado ser los momentos con mayor promedio de vistas para los videos top.",
-    "Revisar y posiblemente pausar la creación de contenido en nichos con 0 vistas como 'finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia' y 'politica_latam' hasta identificar una estrategia viable.",
-    "Enfocarse en la redacción de ganchos que generen intriga, controversia, anticipación o anuncien eventos impactantes/urgentes, evitando descripciones que revelen el desenlace de forma plana."
+    "Priorizar la creación de contenido de `ia_noticias` que aborde controversias de alto perfil, especialmente en el ámbito deportivo o eventos noticiosos urgentes, ya que son los que consistentemente generan el mayor volumen de vistas.",
+    "Implementar la estrategia de dividir noticias impactantes en series (ej. 'PARTE 1') para prolongar el interés y capitalizar la curiosidad, como se observó en el video 'ARGENTINA ENTREGÓ la Final del Mundial? (PARTE 1)' con 1325 vistas.",
+    "Publicar el contenido en la franja horaria de la 1 AM (GMT-X, asumiendo hora local del canal), ya que ha demostrado ser la más efectiva con un promedio de 1121 vistas para los videos top.",
+    "Integrar emojis de impacto (🤯, 😱, 🔥) en los títulos para amplificar la emoción y el clickbait, una práctica común en 7 de los 10 videos más exitosos.",
+    "Diseñar títulos que planteen preguntas intrigantes o controvertidas directamente relacionadas con la noticia, como se ve en 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯', para captar la atención del espectador."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito abrumador del canal radica en la capacidad de identificar y capitalizar `ia_noticias` de alto impacto emocional, ya sean controversias deportivas candentes o desastres naturales, lo que demuestra que la urgencia y el factor 'shock' son los mayores motores de visualización en este formato."
+  "insight_semana": "El rendimiento viral del canal está fuertemente impulsado por noticias de `ia_noticias` de alta controversia, eventos deportivos polémicos o tragedias urgentes, los cuales superan consistentemente el promedio de vistas, independientemente del promedio general del nicho `ia_noticias`."
 }
