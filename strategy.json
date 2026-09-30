@@ -1,39 +1,37 @@
 {
   "updated": "2026-09-30",
-  "iteracion": 411,
+  "iteracion": 412,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "productividad_ia": 0.15,
-    "negocios_digitales": 0.05,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "ia_noticias": 0.25,
+    "entretenimiento": 0.15,
+    "productividad_ia": 0.1,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [gran evento]...",
-    "Con solo [edad/condición], [persona/evento]...",
-    "¿[Tema Controversial]? 🤯",
-    "[Noticia Urgente/Devastadora] en [Lugar]: [Detalle impactante]...",
-    "[Equipo/Persona] ELIMINADO! 😱",
-    "[Tema] CEDIÓ LIDERATO ¡SHOCK! 🤯"
+    "¡Se acabó la espera! ¡El [evento esperado]!",
+    "Con solo [edad], [nombre] [logro/noticia impactante]",
+    "Muy buenas tardes. Bienvenidos a [noticiero/evento]",
+    "Preguntas especulativas/controversiales con emoji (🤯): ¿[Noticia Impactante]? 🤯",
+    "Exclamaciones de shock o urgencia con emoji (😱, 🔥): ¡[Evento Sorprendente]! 😱/🔥",
+    "Noticias de crisis/gran impacto con ubicación y consecuencia: [Evento Trágico] en [Lugar]: [Impacto]"
   ],
   "avoid_hooks": [
-    "Resultados deportivos desprovistos de emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Declaraciones fácticas sin gancho emocional (ej. 'Brasil y Noruega empatan')",
-    "Nombres de personajes poco conocidos sin contexto dramático (ej. 'Sidny Lopes Cabral acaba de')"
+    "Afirmaciones factuales y sin emoción sobre resultados (ej. 'Brasil y Noruega empatan 0-0')",
+    "Introducciones genéricas de personajes sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que reportan un empate de bajo interés sin drama o implicación mayor."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar temas deportivos de alto impacto y controversia (ej. finales de mundial, ligas mayores) que han demostrado la mayor viralidad y dominan el TOP 10 de videos.",
-    "Implementar la estrategia de 'contenido en serie' (ej. 'PARTE 1') para noticias virales que puedan sostener el interés del público a lo largo de varios Shorts, capitalizando el éxito de este formato.",
-    "Optimizar las publicaciones en la franja de 1 AM (GMT-X), ya que ha mostrado el promedio más alto de vistas para los videos top (1121 vistas en 3 videos).",
-    "Utilizar emojis dramáticos (🤯, 😱, 🔥) y formulaciones de pregunta en los títulos para generar intriga y emoción, directamente correlacionados con el alto rendimiento de 7 de los 10 videos principales.",
-    "Elaborar ganchos iniciales que creen anticipación ('¡Se acabó la espera!') o resalten un detalle sorprendente y específico ('Con solo 17 años...') para captar la atención de inmediato, basándose en los hooks más efectivos."
+    "Priorizar el contenido de `deportes` dentro del formato `ia_noticias`, enfocándose en eventos de gran escala (ej. Mundiales) y noticias con potencial de controversia o especulación, como se ve en los videos de Argentina.",
+    "Optimizar los títulos con preguntas o exclamaciones usando emojis de alto impacto (🤯, 😱, 🔥), replicando el patrón presente en 7 de los 10 videos más vistos para generar curiosidad y emoción.",
+    "Implementar la estrategia de división de contenido en partes ('PARTE 1', '1/2') para noticias de alto interés, manteniendo la expectativa y fomentando la continuidad de la audiencia, como demostrado con los videos de Argentina (1325 y 1298 views)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias', a pesar de su bajo promedio general de vistas (20 vistas), actúa como un motor de contenido viral de alto riesgo y alta recompensa, generando consistentemente los videos con más vistas cuando aborda temas de controversia deportiva, crisis o noticias urgentes. Su valor principal reside en la identificación y capitalización de temas 'hot' para lograr picos de audiencia, en lugar de una performance promedio sostenida."
+  "insight_semana": "La combinación más potente para el canal es el formato de 'ia_noticias' aplicado a contenido deportivo de gran envergadura (especialmente fútbol latinoamericano y Mundiales), utilizando títulos con preguntas o exclamaciones emocionales y emojis de alto impacto (🤯, 😱, 🔥), y la táctica de series ('PARTE 1') para maximizar las vistas y la retención."
 }
