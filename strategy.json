@@ -1,38 +1,37 @@
 {
   "updated": "2026-10-01",
-  "iteracion": 418,
+  "iteracion": 419,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "entretenimiento": 0.08,
+    "ia_noticias": 0.35,
     "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.04,
-    "productividad_ia": 0.02,
-    "politica_latam": 0.01
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¿[Evento Impactante]? 🤯",
-    "[Evento/Persona] HOY [Región]: ¡[Reacción/Noticia]! 😱/🔥",
-    "¡[Noticia Impactante en Mayúsculas]! 😱/🤯",
-    "¡Se acabó la espera! ¡El [Tema Principal]...",
-    "Con solo [Edad] años, [Nombre]...",
-    "[Titular Vistoso] (PARTE X)/(X/Y)"
+    "¡Se acabó la espera! [Evento clave/Noticia impactante]",
+    "Con solo [Dato impactante], [Sujeto/Situación clave]",
+    "Muy buenas tardes. Bienvenidos a [Tema de actualidad/debate]",
+    "[Afirmación controversial]? 🤯",
+    "[Evento grave/cambio]: ¡[Consecuencia/Reacción]! 😱",
+    "La noticia [Adjetivo] que sacude [Región/Mundo] hoy ⚽/🔥"
   ],
   "avoid_hooks": [
-    "Hooks con desenlaces descriptivos y neutros (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que inician a mitad de frase o sin un contexto claro (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que carecen de impacto emocional o sentido de urgencia"
+    "Hooks que revelan el desenlace o resultado clave en la primera frase (ej. 'Brasil y Noruega empatan 0-0', 0 views).",
+    "Hooks excesivamente descriptivos o genéricos, sin elementos de misterio o emoción (ej. 'Brasil y Noruega empatan', 0 views).",
+    "Hooks que introducen a un personaje o tema de forma abrupta sin contexto que genere interés inmediato (ej. 'Sidny Lopes Cabral acaba de', 0 views)."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de 'deportes', especialmente noticias virales o de último minuto relacionadas con eventos importantes o figuras clave de LATAM, dado que el nicho 'mundial_2026' (que es deportivo) muestra el `avg_views` más alto (258) y un `trend` excepcional (867.0).",
-    "Maximizar el uso de ganchos (hooks) y títulos que generen intriga, urgencia y emociones fuertes, empleando mayúsculas, signos de exclamación y emojis de alto impacto (🤯, 😱, 🔥), ya que esta característica es consistente en el 100% de los videos del Top 10.",
-    "Establecer la 1 AM UTC como la hora de publicación principal para los Shorts, ya que esta franja horaria concentra la mayor cantidad de videos en el Top 10 (3 videos) y un promedio de 1121 vistas para esos contenidos."
+    "**Priorizar la cobertura de noticias deportivas de alto impacto y tendencia**: El nicho `mundial_2026` (deportes) tiene el `trend` más alto (867.0) y el `avg_views` de 258, y las noticias deportivas de `ia_noticias` dominan el Top 10, lo que indica una alta demanda por estos temas.",
+    "**Optimizar títulos y hooks con disparadores emocionales y preguntas**: El uso consistente de emojis como `🤯`, `😱`, `🔥` y frases que generen intriga o revelen un dato sorprendente es crucial para captar la atención, como demuestran los hooks de mejor rendimiento.",
+    "**Publicar videos a la 1 AM UTC**: Esta franja horaria ha probado ser la más efectiva para generar altos volúmenes de vistas, con 3 de los videos del Top 10 logrando un promedio de 1121 vistas a esa hora."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido noticioso de IA, especialmente el deportivo, opera en un modelo de alto riesgo y alta recompensa: aunque domina el Top 10 de vistas con temas virales, su rendimiento general es bajo y volátil, indicando que el éxito depende fuertemente de la relevancia inmediata del evento y de ganchos extremadamente efectivos para capturar la atención inicial."
+  "insight_semana": "La virulencia de los Shorts está en la confluencia de noticias de actualidad con alto impacto emocional (característica de `ia_noticias`) y eventos masivos deportivos (como `mundial_2026`), donde la sorpresa y la controversia (ej. 'ARGENTINA ENTREGÓ la Final?') capturan la atención masiva, a pesar de la volatilidad general del nicho de noticias."
 }
