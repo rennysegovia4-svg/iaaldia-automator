@@ -1,40 +1,37 @@
 {
   "updated": "2026-10-01",
-  "iteracion": 415,
+  "iteracion": 416,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.35,
+    "deportes": 0.35,
     "ia_noticias": 0.4,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "deportes": 0.02,
-    "entretenimiento": 0.02,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
-    "cripto_inversiones": 0.01,
-    "productividad_ia": 0.005,
-    "politica_latam": 0.005
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Direct announcement of a highly anticipated event/result (e.g., '¡Se acabó la espera! El [Evento clave]...')",
-    "Intriguing introduction of a specific person or entity, often highlighting an unusual feat or attribute (e.g., 'Con solo [Edad/Logro], [Nombre]...')",
-    "Formal, direct news-style opening (e.g., 'Muy buenas [Mañana/Tardes/Noches]. Bienvenidos a [Tema]...')",
-    "Dramatic rhetorical question about a controversy combined with an impact emoji (e.g., '[Sujeto] ¿ENTREGÓ [Evento]? 🤯')",
-    "Urgent, high-impact news announcement featuring specific numbers or entities, followed by an impact emoji (e.g., '[Evento devastador]: [Número] muertos 😱' o '[Keyword]: ¡[Entidad] ELIMINADO! 😱')",
-    "Vague yet attention-grabbing statement about a major current event, emphasizing urgency and including an emoji (e.g., 'La noticia [Tipo] que sacude [Región] hoy ⚽')"
+    "¡Se acabó la espera! ¡El [evento/noticia impactante] ha llegado!",
+    "Con solo [edad/detalle sorprendente], [nombre/sujeto] [acción clave]...",
+    "[Evento/Noticia de último minuto] en [lugar/tema]: [Cifra/Impacto]...",
+    "¿[Afirmación Controversial/Pregunta Impactante] sobre [tema clave]? 🤯",
+    "¡[Acción dramática] en [evento/liga]! ¡[Sujeto] [Resultado]! 😱",
+    "La noticia [tipo, ej. deportiva] que sacude [región/comunidad] hoy [emoji impactante]"
   ],
   "avoid_hooks": [
-    "Anunciar resultados neutrales o de baja emoción directamente al inicio (e.g., 'X y Y empatan 0-0')",
-    "Descripciones de acciones vagas o incompletas que no generan curiosidad (e.g., '[Nombre] acaba de...')",
-    "Ganchos que ofrecen la conclusión completa y poco emocionante de la noticia sin crear suspenso"
+    "[Equipo A] y [Equipo B] empatan [Marcador opcional]",
+    "[Nombre] acaba de [acción genérica]",
+    "Hooks que no generen intriga o urgencia y tengan 0 vistas"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar la creación de contenido basado en noticias de alta controversia, especulación o drama, especialmente en el ámbito deportivo y de actualidad, utilizando preguntas retóricas y emojis de impacto en los títulos para maximizar el CTR.",
-    "Implementar una estrategia de contenido en serie (ej. 'PARTE 1', '1/2') para historias de alto interés, lo cual ha demostrado maximizar el potencial de visualización y retención de la audiencia sobre un mismo tema viral.",
-    "Concentrar la publicación de contenido de alto potencial en la franja de las 1 AM UTC, identificada como el horario con mayor frecuencia de videos exitosos en el Top 10, utilizando las 17 PM UTC como segunda opción estratégica."
+    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, ya que ha demostrado ser una \"mina de oro\" para videos virales, ocupando el 100% del Top 10, a pesar de su bajo promedio general de vistas, sugiriendo una estrategia de alto volumen y alta varianza.",
+    "Integrar elementos de controversia, números impactantes y emojis (`🤯`, `😱`, `🔥`) en los títulos y los primeros segundos de los videos (`hooks`), especialmente para noticias deportivas o de eventos significativos, dado que estos patrones dominan los videos con más vistas.",
+    "Concentrar las publicaciones en la franja horaria de 1 AM UTC, que alberga el 40% de los videos más vistos del Top 10, y considerar 17 PM (5 PM) UTC como una sólida segunda opción para maximizar la visibilidad inicial del contenido."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "A pesar de que el nicho `ia_noticias` tiene un `avg_views` muy bajo (25), es el único nicho que ha producido el 100% de los videos en el Top 10, lo que indica que es un nicho de alta varianza donde es necesario producir un gran volumen de contenido para encontrar éxitos virales con vistas masivas."
+  "insight_semana": "La baja `avg_views` (23) del nicho `ia_noticias` en el ranking general es engañosa, ya que este nicho sigue siendo la fuente exclusiva del 100% de los videos en el Top 10, confirmando su naturaleza de 'mina de oro' para hits virales de alto impacto y alta varianza en Shorts."
 }
