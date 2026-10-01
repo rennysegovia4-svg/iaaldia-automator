@@ -1,40 +1,40 @@
 {
   "updated": "2026-10-01",
-  "iteracion": 414,
+  "iteracion": 415,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.25,
-    "finanzas": 0.01,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
+    "mundial_2026": 0.35,
+    "ia_noticias": 0.4,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "deportes": 0.02,
+    "entretenimiento": 0.02,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "productividad_ia": 0.005,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "\"¡Se acabó la espera! ¡El...\" (Gancho de anticipación y exclusividad)",
-    "\"Con solo 17 años, Lamine...\" (Gancho de intriga por dato único o personaje)",
-    "\"Muy buenas tardes. Bienvenidos a...\" (Gancho de introducción formal de noticias)",
-    "\"¿[Evento] entregado/fraude/escándalo? 🤯\" (Gancho de controversia y pregunta abierta, inferido de títulos)",
-    "\"¡[Sujeto/Equipo] en SHOCK! 😱\" (Gancho de impacto y sorpresa, inferido de títulos)",
-    "\"¡[Artículo] se agotan/desaparecen! 🔥\" (Gancho de urgencia y escasez, inferido de títulos)"
+    "Direct announcement of a highly anticipated event/result (e.g., '¡Se acabó la espera! El [Evento clave]...')",
+    "Intriguing introduction of a specific person or entity, often highlighting an unusual feat or attribute (e.g., 'Con solo [Edad/Logro], [Nombre]...')",
+    "Formal, direct news-style opening (e.g., 'Muy buenas [Mañana/Tardes/Noches]. Bienvenidos a [Tema]...')",
+    "Dramatic rhetorical question about a controversy combined with an impact emoji (e.g., '[Sujeto] ¿ENTREGÓ [Evento]? 🤯')",
+    "Urgent, high-impact news announcement featuring specific numbers or entities, followed by an impact emoji (e.g., '[Evento devastador]: [Número] muertos 😱' o '[Keyword]: ¡[Entidad] ELIMINADO! 😱')",
+    "Vague yet attention-grabbing statement about a major current event, emphasizing urgency and including an emoji (e.g., 'La noticia [Tipo] que sacude [Región] hoy ⚽')"
   ],
   "avoid_hooks": [
-    "\"Brasil y Noruega empatan 0-0\" (Fáctico, sin emoción, 0 views)",
-    "\"Brasil y Noruega empatan\" (Fáctico, sin emoción, 0 views)",
-    "\"Sidny Lopes Cabral acaba de\" (Incompleto, poco intrigante, 0 views)"
+    "Anunciar resultados neutrales o de baja emoción directamente al inicio (e.g., 'X y Y empatan 0-0')",
+    "Descripciones de acciones vagas o incompletas que no generan curiosidad (e.g., '[Nombre] acaba de...')",
+    "Ganchos que ofrecen la conclusión completa y poco emocionante de la noticia sin crear suspenso"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho de 'deportes' y 'ia_noticias' enfocado en temas de alta actualidad, dramatismo o controversia, como eventos deportivos clave o noticias de última hora, que han demostrado el mayor potencial de vistas.",
-    "Continuar utilizando títulos con preguntas dramáticas, sugerencias de controversia y emojis de impacto (`🤯`, `😱`, `🔥`) para generar alto engagement, siguiendo el patrón de los videos más vistos.",
-    "Mantener la estrategia de series de contenido ('PARTE 1/2') para noticias de alto interés, ya que ha demostrado ser exitosa para maximizar las vistas de una historia viral.",
-    "Programar la mayoría de las publicaciones alrededor de la `1` AM (UTC) y también considerar las `17` PM (UTC) como una ventana secundaria efectiva, basándose en la frecuencia y el rendimiento de los top videos.",
-    "Evitar ganchos que son meramente descriptivos o que no evocan emoción/intriga, especialmente para resultados no dramáticos, ya que consistentemente resultan en 0 vistas.",
-    "Implementar un sistema de registro de la duración de los videos para futuras iteraciones, ya que actualmente no hay datos disponibles para determinar una 'duración_optima'."
+    "Priorizar la creación de contenido basado en noticias de alta controversia, especulación o drama, especialmente en el ámbito deportivo y de actualidad, utilizando preguntas retóricas y emojis de impacto en los títulos para maximizar el CTR.",
+    "Implementar una estrategia de contenido en serie (ej. 'PARTE 1', '1/2') para historias de alto interés, lo cual ha demostrado maximizar el potencial de visualización y retención de la audiencia sobre un mismo tema viral.",
+    "Concentrar la publicación de contenido de alto potencial en la franja de las 1 AM UTC, identificada como el horario con mayor frecuencia de videos exitosos en el Top 10, utilizando las 17 PM UTC como segunda opción estratégica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una extrema volatilidad: su bajo promedio de `23` vistas contrasta fuertemente con los éxitos de `973` a `1325` vistas que llevan esa misma etiqueta, indicando que la clave es identificar temas virales, dramáticos o controvertidos (especialmente deportes y noticias de última hora) dentro de esta categoría para alcanzar un alto rendimiento."
+  "insight_semana": "A pesar de que el nicho `ia_noticias` tiene un `avg_views` muy bajo (25), es el único nicho que ha producido el 100% de los videos en el Top 10, lo que indica que es un nicho de alta varianza donde es necesario producir un gran volumen de contenido para encontrar éxitos virales con vistas masivas."
 }
