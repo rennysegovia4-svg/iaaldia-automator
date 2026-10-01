@@ -1,38 +1,38 @@
 {
   "updated": "2026-10-01",
-  "iteracion": 417,
+  "iteracion": 418,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "deportes": 0.4,
     "ia_noticias": 0.25,
-    "productividad": 0.15,
+    "productividad": 0.1,
+    "entretenimiento": 0.08,
     "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.05
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.04,
+    "productividad_ia": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡[Evento de alto impacto]!",
-    "[Logro/Hecho sorprendente] con solo [edad/número] años: [Nombre/Sujeto]",
-    "¿[Pregunta dramática sobre evento/entidad]? 🤯",
-    "[Evento Impactante]: [Cifra/Dato alarmante] y [consecuencia] 😱",
-    "[Entidad] [Verbo de Acción fuerte] HOY: ¡[Reacción/Consecuencia]! 🔥",
-    "La noticia [adjetivo, ej. deportiva/trágica] que sacude [Región/LATAM] [HOY] ⚽"
+    "¿[Evento Impactante]? 🤯",
+    "[Evento/Persona] HOY [Región]: ¡[Reacción/Noticia]! 😱/🔥",
+    "¡[Noticia Impactante en Mayúsculas]! 😱/🤯",
+    "¡Se acabó la espera! ¡El [Tema Principal]...",
+    "Con solo [Edad] años, [Nombre]...",
+    "[Titular Vistoso] (PARTE X)/(X/Y)"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Hooks con desenlaces descriptivos y neutros (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que inician a mitad de frase o sin un contexto claro (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que carecen de impacto emocional o sentido de urgencia"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la producción de contenido `ia_noticias` en temas deportivos de actualidad y alto impacto, como eventos de mundiales o ligas populares, utilizando siempre elementos de sorpresa (🤯, 😱) en los títulos.",
-    "Implementar en los títulos preguntas dramáticas y específicas (\"¿FINAL ENTREGADA?\"), junto con datos numéricos concretos de alto impacto (\"132 muertos\"), para maximizar la intriga y la relevancia.",
-    "Establecer la 1 AM UTC como el horario principal de publicación, y las 17 PM UTC como una segunda ventana clave, para aprovechar los picos de audiencia identificados por la alta concentración de videos exitosos."
+    "Priorizar la creación de contenido en el nicho de 'deportes', especialmente noticias virales o de último minuto relacionadas con eventos importantes o figuras clave de LATAM, dado que el nicho 'mundial_2026' (que es deportivo) muestra el `avg_views` más alto (258) y un `trend` excepcional (867.0).",
+    "Maximizar el uso de ganchos (hooks) y títulos que generen intriga, urgencia y emociones fuertes, empleando mayúsculas, signos de exclamación y emojis de alto impacto (🤯, 😱, 🔥), ya que esta característica es consistente en el 100% de los videos del Top 10.",
+    "Establecer la 1 AM UTC como la hora de publicación principal para los Shorts, ya que esta franja horaria concentra la mayor cantidad de videos en el Top 10 (3 videos) y un promedio de 1121 vistas para esos contenidos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho `ia_noticias` posee un `avg_views` bajo (24) y un `trend` negativo (-0.85), es el único nicho capaz de generar videos virales (100% del Top 10), lo que indica que se debe mantener una estrategia de alto volumen en este nicho para buscar 'hits' esporádicos."
+  "insight_semana": "El contenido noticioso de IA, especialmente el deportivo, opera en un modelo de alto riesgo y alta recompensa: aunque domina el Top 10 de vistas con temas virales, su rendimiento general es bajo y volátil, indicando que el éxito depende fuertemente de la relevancia inmediata del evento y de ganchos extremadamente efectivos para capturar la atención inicial."
 }
