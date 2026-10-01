@@ -1,37 +1,38 @@
 {
   "updated": "2026-10-01",
-  "iteracion": 416,
+  "iteracion": 417,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.4,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "productividad": 0.15,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia impactante] ha llegado!",
-    "Con solo [edad/detalle sorprendente], [nombre/sujeto] [acción clave]...",
-    "[Evento/Noticia de último minuto] en [lugar/tema]: [Cifra/Impacto]...",
-    "¿[Afirmación Controversial/Pregunta Impactante] sobre [tema clave]? 🤯",
-    "¡[Acción dramática] en [evento/liga]! ¡[Sujeto] [Resultado]! 😱",
-    "La noticia [tipo, ej. deportiva] que sacude [región/comunidad] hoy [emoji impactante]"
+    "¡Se acabó la espera! ¡[Evento de alto impacto]!",
+    "[Logro/Hecho sorprendente] con solo [edad/número] años: [Nombre/Sujeto]",
+    "¿[Pregunta dramática sobre evento/entidad]? 🤯",
+    "[Evento Impactante]: [Cifra/Dato alarmante] y [consecuencia] 😱",
+    "[Entidad] [Verbo de Acción fuerte] HOY: ¡[Reacción/Consecuencia]! 🔥",
+    "La noticia [adjetivo, ej. deportiva/trágica] que sacude [Región/LATAM] [HOY] ⚽"
   ],
   "avoid_hooks": [
-    "[Equipo A] y [Equipo B] empatan [Marcador opcional]",
-    "[Nombre] acaba de [acción genérica]",
-    "Hooks que no generen intriga o urgencia y tengan 0 vistas"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, ya que ha demostrado ser una \"mina de oro\" para videos virales, ocupando el 100% del Top 10, a pesar de su bajo promedio general de vistas, sugiriendo una estrategia de alto volumen y alta varianza.",
-    "Integrar elementos de controversia, números impactantes y emojis (`🤯`, `😱`, `🔥`) en los títulos y los primeros segundos de los videos (`hooks`), especialmente para noticias deportivas o de eventos significativos, dado que estos patrones dominan los videos con más vistas.",
-    "Concentrar las publicaciones en la franja horaria de 1 AM UTC, que alberga el 40% de los videos más vistos del Top 10, y considerar 17 PM (5 PM) UTC como una sólida segunda opción para maximizar la visibilidad inicial del contenido."
+    "Concentrar la producción de contenido `ia_noticias` en temas deportivos de actualidad y alto impacto, como eventos de mundiales o ligas populares, utilizando siempre elementos de sorpresa (🤯, 😱) en los títulos.",
+    "Implementar en los títulos preguntas dramáticas y específicas (\"¿FINAL ENTREGADA?\"), junto con datos numéricos concretos de alto impacto (\"132 muertos\"), para maximizar la intriga y la relevancia.",
+    "Establecer la 1 AM UTC como el horario principal de publicación, y las 17 PM UTC como una segunda ventana clave, para aprovechar los picos de audiencia identificados por la alta concentración de videos exitosos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La baja `avg_views` (23) del nicho `ia_noticias` en el ranking general es engañosa, ya que este nicho sigue siendo la fuente exclusiva del 100% de los videos en el Top 10, confirmando su naturaleza de 'mina de oro' para hits virales de alto impacto y alta varianza en Shorts."
+  "insight_semana": "Aunque el nicho `ia_noticias` posee un `avg_views` bajo (24) y un `trend` negativo (-0.85), es el único nicho capaz de generar videos virales (100% del Top 10), lo que indica que se debe mantener una estrategia de alto volumen en este nicho para buscar 'hits' esporádicos."
 }
