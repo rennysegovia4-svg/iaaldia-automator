@@ -1,39 +1,38 @@
 {
   "updated": "2026-10-02",
-  "iteracion": 424,
+  "iteracion": 425,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "entretenimiento": 0.1,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "finanzas": 0.03,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El...",
-    "Con solo X años, [Nombre]...",
-    "[Hecho impactante] HOY/AHORA: ¡[Consecuencia]! 🤯/😱",
-    "¿[Pregunta controvertida o impactante]...? 🤯",
-    "La noticia [tipo] que sacude [lugar]...",
-    "[Sujeto] CEDIÓ/ELIMINADO: ¡[Impacto]! 😱/🔥"
+    "¡Se acabó la espera! ¡El [Evento clave/Fecha crucial]...",
+    "Con solo [Edad] años, [Nombre] [Logro inesperado/Impacto]...",
+    "Muy buenas tardes. Bienvenidos a [Noticia IMPACTANTE]...",
+    "[Tema Controversial]: ¿[Pregunta impactante]? 🤯",
+    "[Evento/Noticia] que sacude [Región] hoy [Emoji de Urgencia/Relevancia]",
+    "[Evento/Figura]: ¡[Resultado drástico o sorpresivo]! 😱"
   ],
   "avoid_hooks": [
-    "[Equipo1] vs [Equipo2] [score]: [Hecho sin emoción]",
-    "[Nombre] acaba de [acción simple sin contexto de impacto]",
-    "[Afirmación factual sin generar intriga o emoción]"
+    "Declaraciones factuales o de resultado sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Inicios abruptos con nombres poco conocidos o sin contexto que genere interés (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks meramente informativos que no evocan emoción, urgencia o una pregunta abierta"
   ],
-  "best_hora": 17,
-  "duracion_optima": 58,
+  "best_hora": 1,
+  "duracion_optima": "datos_insuficientes",
   "recomendaciones": [
-    "Priorizar contenido de `ia_noticias` enfocado en **deportes populares** y noticias del `mundial_2026`, ya que estos temas consistentemente generan las vistas más altas y tienen el `trend` más elevado.",
-    "Implementar **títulos con gancho** que incluyan preguntas retóricas, palabras de urgencia (ej. 'HOY', 'ÚLTIMO'), y emojis de alto impacto (🤯, 😱, 🔥) para maximizar la curiosidad y el click-through.",
-    "Diseñar hooks iniciales que generen **anticipación o intriga** ('¡Se acabó la espera!', 'Con solo X años...') y evitar aquellos que solo enuncian hechos de manera plana y sin emoción.",
-    "Experimentar con horarios de publicación, enfocándose en las franjas de **1 AM, 6 AM, 16 PM, 17 PM y 21 PM** para capturar los picos de audiencia identificados en los videos top.",
-    "Implementar la recopilación de datos sobre la **duración de los videos y la retención de audiencia** para poder determinar empíricamente la `duracion_optima`, una métrica crítica actualmente ausente."
+    "Priorizar la creación de contenido en el nicho de 'Deportes' (especialmente grandes eventos como 'mundial_2026') y 'ia_noticias', que demuestran el mayor potencial de vistas y tendencia.",
+    "Implementar una estrategia de títulos y hooks que incorpore emociones fuertes (🤯, 😱, 🔥), palabras de urgencia (HOY, MUNDIAL) y preguntas sensacionalistas para maximizar la curiosidad y el CTR.",
+    "Experimentar con horarios de publicación específicos, prestando especial atención a la franja de 1 AM a 2 AM y las 5 PM (17 PM), que concentran los videos de mayor rendimiento.",
+    "Establecer inmediatamente la recolección de datos de 'duración de video' y 'retención de audiencia' para optimizar la estrategia de contenido más allá de las vistas iniciales, ya que es una métrica crítica ausente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El público responde masivamente a noticias de última hora y controversiales en el ámbito deportivo (especialmente fútbol), independientemente de que se etiqueten como `ia_noticias` o `mundial_2026`, con un fuerte uso de emojis y palabras de shock en los títulos."
+  "insight_semana": "El contenido más performante capitaliza noticias deportivas o eventos de alto impacto con un enfoque sensacionalista, utilizando emojis y preguntas en títulos y hooks para generar curiosidad y urgencia, evidenciando que las 'ia_noticias' que tocan temas de 'deportes' son una combinación explosiva."
 }
