@@ -1,40 +1,41 @@
 {
   "updated": "2026-10-03",
-  "iteracion": 432,
+  "iteracion": 433,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.4,
-    "mundial_2026": 0.25,
-    "productividad": 0.08,
-    "negocios": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "deportes": 0.03,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "finanzas": 0.04,
     "entretenimiento": 0.04,
-    "politica_latam": 0.03
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.03,
+    "productividad": 0.05,
+    "negocios": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento esperado]!",
-    "Con solo [número] años, [nombre de la persona] [logro destacado]...",
-    "Muy buenas tardes. Bienvenidos a [noticia urgente]",
-    "¿[Evento clave] [verbo impactante]? 🤯",
-    "[Tema urgente] HOY: [Impacto sorprendente] 😱",
-    "[Evento clave]: ¡[Reacción fuerte]! 🔥"
+    "{TEMA} {VERBO IMPACTANTE} {SUCESO}? 🤯 (PARTE X)",
+    "{EVENTO} HOY: {NOTICIA IMPACTANTE} 😱",
+    "{TEMA}: {RESULTADO SHOCK} ¡SHOCK! 🤯",
+    "{EVENTO PRINCIPAL} {DETALLE CLAVE}: ¡{CONSECUENCIA IMPACTANTE}! 😱",
+    "{SUCESO CATASTRÓFICO} en {LUGAR}: {CANTIDAD} muertos y {CONSECUENCIA}",
+    "La noticia {TIPO} que sacude {REGIÓN} {HOY/AHORA} ⚽/🔥/😱"
   ],
   "avoid_hooks": [
-    "Ganchos que solo informan un resultado sin emoción o contexto relevante (ej. 'Brasil y Noruega empatan 0-0').",
-    "Ganchos que mencionan nombres o eventos desconocidos sin proporcionar contexto inmediato o impacto (ej. 'Sidny Lopes Cabral acaba de').",
-    "Ganchos puramente factuales que carecen de palabras emocionales o emojis que generen intriga o urgencia."
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima",
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Priorizar el contenido clasificado como 'ia_noticias' con enfoque en noticias deportivas o eventos de gran impacto (terremotos, Shakira), ya que este nicho, junto con 'mundial_2026', domina las vistas del TOP 10.",
-    "Implementar títulos y ganchos que incluyan preguntas intrigantes, exclamaciones de sorpresa y emojis de alto impacto (🤯, 😱, 🔥), ya que este patrón se encuentra en 9 de los 10 videos más vistos, generando alto engagement.",
-    "Explorar el formato de contenido en serie utilizando indicadores como '(PARTE 1)' o '(1/2)' en los títulos, lo cual ha demostrado captar y mantener la atención de la audiencia en videos de alto rendimiento."
+    "Priorizar fuertemente el contenido de noticias deportivas, especialmente aquellas relacionadas con el fútbol o eventos deportivos importantes, dado que impulsan las vistas más altas y consistentemente.",
+    "Utilizar estructuras de título que generen urgencia, sorpresa o una pregunta intrigante, incorporando emojis de alto impacto (🤯, 😱, 🔥, ⚽) y palabras clave como 'HOY'.",
+    "Experimentar con títulos en formato de serie (ej. '(PARTE 1)', '(1/2)') para narrativas complejas o en curso, buscando fomentar la visualización secuencial.",
+    "Mantener las publicaciones alrededor de la 1 AM (hora 1), ya que este horario ha demostrado la mayor concentración de videos top y el video con más vistas.",
+    "Evitar títulos o ganchos que simplemente informen un resultado sin generar curiosidad o emoción, como se observa en los videos de bajo rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El análisis revela que, aunque muchos videos exitosos se clasifican bajo 'ia_noticias', el contenido deportivo es el verdadero motor de vistas, concentrando más del 70.4% del rendimiento superior del canal. Esto subraya la alta demanda por noticias deportivas urgentes y emocionantes, aunque el nicho 'mundial_2026' muestra una volatilidad de alto riesgo/alta recompensa."
+  "insight_semana": "La audiencia de Shorts en español demuestra una fuerte preferencia por noticias deportivas de impacto y eventos de actualidad con elementos de shock o controversia, especialmente si son relevantes para Latinoamérica."
 }
