@@ -1,37 +1,39 @@
 {
   "updated": "2026-10-03",
-  "iteracion": 429,
+  "iteracion": 430,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "negocios": 0.05,
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
     "finanzas": 0.05,
-    "entretenimiento": 0.03,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
     "productividad_ia": 0.03,
-    "politica_latam": 0.03
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Exclamación de alta expectativa]! ¡El/La [Tema Impactante]!",
-    "Con solo [Dato sorprendente/cantidad], [Sujeto/Evento] [Verbo de impacto]!",
-    "[Saludo formal/introducción] Bienvenidos a [Noticia/Evento Relevante]."
+    "¡Se acabó la espera! ¡El (alta expectativa/revelación, 867 avg_views)",
+    "Con solo 17 años, Lamine (resaltando talento joven/logro, 740 avg_views)",
+    "Muy buenas tardes. Bienvenidos a (apertura estilo noticiero/broadcast, 375 avg_views)",
+    "Preguntas de conspiración/shock con emojis (ej. '¿FINAL ENTREGADA? 🤯' de títulos top)",
+    "Noticias urgentes de eventos/figuras con exclamaciones y emojis (ej. '¡Gamezking ELIMINADO! 😱', '¡Se Agotan! 🔥' de títulos top)",
+    "Noticias de impacto geográfico/numérico (ej. 'Terremoto devastador en Colombia: 132 muertos' de títulos top)"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado completo y poco emocionante (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks genéricos que no generan intriga inmediata (ej. 'Brasil y Noruega empatan').",
-    "Hooks que mencionan a un sujeto sin contexto ni implicación clara (ej. 'Sidny Lopes Cabral acaba de')."
+    "Declaraciones fácticas y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks con información demasiado específica sobre figuras desconocidas sin contexto (ej. 'Sidny Lopes Cabral acaba de')",
+    "Ausencia total de gancho o hooks genéricos que no generen intriga"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido enfocado en noticias deportivas de alto impacto, especialmente temas relacionados con mundiales y ligas principales, ya que dominan tanto el ranking de nichos por tendencia ('mundial_2026' con 867.0) como los videos individuales más vistos (la mayoría de los TOP 10 son noticias deportivas).",
-    "Implementar ganchos que generen intriga, anticipación o revelación sorprendente, como '¡Se acabó la espera! ¡El' (867 avg_views) o aquellos que destacan un dato inusual sobre un sujeto ('Con solo 17 años, Lamine').",
-    "Concentrar las publicaciones en la franja horaria de la 1 AM, que ha demostrado la mayor consistencia y alto rendimiento, albergando 3 de los 10 videos más vistos con un promedio de 1121 vistas.",
-    "Evitar ganchos que revelen el desenlace completo de la noticia o sean demasiado genéricos y desprovistos de emoción, ya que estos patrones están asociados a videos con 0 vistas."
+    "Priorizar la creación de contenido de 'noticias deportivas' con un enfoque en el shock, la conspiración o los eventos de alta tensión, ya que este tipo de contenido, a menudo categorizado como 'ia_noticias' o 'mundial_2026', domina el rendimiento general y el TOP 10.",
+    "Maximizar el uso de ganchos que generen intriga, urgencia o sorpresa, incorporando preguntas, exclamaciones y emojis (🤯, 😱, 🔥, ⚽) en los primeros segundos del video o en el título, evitando hooks puramente fácticos.",
+    "Establecer la 1 AM como hora principal de publicación, dado que ha mostrado la mayor consistencia y promedio de vistas (1121) entre los videos de mayor rendimiento.",
+    "Desarrollar contenido en formato de serie (ej. 'Parte 1', '(1/2)') para temas de alto interés, capitalizando la alta tracción inicial de estos videos.",
+    "Aunque se proporciona un valor predeterminado, se carece de datos específicos sobre la duración óptima de los videos. Se recomienda establecer pruebas A/B con diferentes duraciones para identificar el punto ideal de retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La intersección de contenido clasificado como 'ia_noticias' con temáticas deportivas de alto interés (como mundiales y ligas principales) es la combinación más efectiva para generar vistas altas, a pesar de la tendencia general negativa del nicho 'ia_noticias' en solitario, indicando que el 'topic' es más potente que el 'nicho-categoría' en este contexto."
+  "insight_semana": "El rendimiento excepcional del canal está impulsado casi en su totalidad por 'noticias deportivas' (incluyendo eventos de Mundiales y ligas), especialmente cuando se presentan con un ángulo de controversia, conspiración o sorpresa, superando a todos los demás nichos de forma consistente en términos de vistas individuales y presencia en el TOP 10."
 }
