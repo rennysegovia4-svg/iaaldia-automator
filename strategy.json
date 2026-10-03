@@ -1,40 +1,37 @@
 {
   "updated": "2026-10-03",
-  "iteracion": 428,
+  "iteracion": 429,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.23,
-    "ia_noticias": 0.1,
-    "finanzas": 0.1,
-    "negocios_digitales": 0.1,
-    "cripto_inversiones": 0.1,
-    "productividad_ia": 0.1,
-    "entretenimiento": 0.1,
-    "politica_latam": 0.1,
-    "productividad": 0.05,
-    "negocios": 0.02
+    "deportes": 0.4,
+    "ia_noticias": 0.25,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.05,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.03,
+    "productividad_ia": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "¿[Sujeto/Evento] entregó [Resultado]?",
-    "[Noticia impactante] hoy [Lugar]: ¡[Reacción/Consecuencia]! [Emoji]",
-    "[Evento/Nombre] [Verbo de Acción/Estado]: ¡[Resultado dramático]! [Emoji]"
+    "¡[Exclamación de alta expectativa]! ¡El/La [Tema Impactante]!",
+    "Con solo [Dato sorprendente/cantidad], [Sujeto/Evento] [Verbo de impacto]!",
+    "[Saludo formal/introducción] Bienvenidos a [Noticia/Evento Relevante]."
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un hecho o resultado sin drama (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que refieren a personas o eventos oscuros sin contexto o intriga inmediata (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks vacíos o ausentes, ya que correlacionan con 0 vistas en varios videos de bajo rendimiento"
+    "Hooks que revelan el resultado completo y poco emocionante (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks genéricos que no generan intriga inmediata (ej. 'Brasil y Noruega empatan').",
+    "Hooks que mencionan a un sujeto sin contexto ni implicación clara (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para determinar la duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', enfocándose en subtemas de alta actualidad y controversia como el 'mundial_2026', dado su sobresaliente promedio de 258 vistas y una tendencia de crecimiento de 867.0.",
-    "Optimizar el horario de publicación concentrándose en la franja de la 1 AM, que ha demostrado ser la más consistente y efectiva al albergar 3 de los 10 videos más vistos, con un promedio de 1121 vistas para esos videos.",
-    "Implementar ganchos iniciales que generen intriga, urgencia o controversia, utilizando preguntas retóricas, noticias impactantes con emojis o resultados dramáticos, replicando los patrones de los hooks más efectivos y títulos de alto rendimiento.",
-    "Es imperativo comenzar a recopilar y analizar la métrica de duración de los Shorts para futuras iteraciones, ya que actualmente no se dispone de datos para determinar una duración óptima y es crucial para refinar la estrategia de contenido."
+    "Priorizar la creación de contenido enfocado en noticias deportivas de alto impacto, especialmente temas relacionados con mundiales y ligas principales, ya que dominan tanto el ranking de nichos por tendencia ('mundial_2026' con 867.0) como los videos individuales más vistos (la mayoría de los TOP 10 son noticias deportivas).",
+    "Implementar ganchos que generen intriga, anticipación o revelación sorprendente, como '¡Se acabó la espera! ¡El' (867 avg_views) o aquellos que destacan un dato inusual sobre un sujeto ('Con solo 17 años, Lamine').",
+    "Concentrar las publicaciones en la franja horaria de la 1 AM, que ha demostrado la mayor consistencia y alto rendimiento, albergando 3 de los 10 videos más vistos con un promedio de 1121 vistas.",
+    "Evitar ganchos que revelen el desenlace completo de la noticia o sean demasiado genéricos y desprovistos de emoción, ya que estos patrones están asociados a videos con 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento superior y la tendencia explosivamente positiva del nicho 'mundial_2026' (avg_views 258, trend 867.0) demuestran que el contenido hiper-específico y de alta actualidad dentro de 'deportes' genera un engagement mucho más profundo y un crecimiento más rápido que la categoría general de 'ia_noticias' (avg_views 119, trend -1.0), a pesar de que esta última acapara la mayoría de los videos más vistos por volumen."
+  "insight_semana": "La intersección de contenido clasificado como 'ia_noticias' con temáticas deportivas de alto interés (como mundiales y ligas principales) es la combinación más efectiva para generar vistas altas, a pesar de la tendencia general negativa del nicho 'ia_noticias' en solitario, indicando que el 'topic' es más potente que el 'nicho-categoría' en este contexto."
 }
