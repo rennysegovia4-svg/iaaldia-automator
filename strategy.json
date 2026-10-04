@@ -1,37 +1,39 @@
 {
   "updated": "2026-10-04",
-  "iteracion": 439,
+  "iteracion": 440,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
     "entretenimiento": 0.1,
-    "productividad_ia": 0.08,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.02
+    "finanzas": 0.08,
+    "negocios_digitales": 0.08,
+    "cripto_inversiones": 0.06,
+    "productividad_ia": 0.05,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Hooks que plantean controversia o conspiración (ej. \"ARGENTINA ENTREGÓ...?\")",
-    "Hooks que anuncian un evento impactante o devastador (ej. \"Terremoto devastador en...\")",
-    "Hooks que crean un sentido de urgencia o escasez (ej. \"...¡Se Agotan! 😱🔥\")",
-    "Hooks que resaltan un giro inesperado o \"shock\" (ej. \"...¡SHOCK! 🤯\")",
-    "Hooks que usan exclamaciones y emojis impactantes para noticias deportivas de eliminación o sorpresa (ej. \"¡Gamezking ELIMINADO! 😱\")",
-    "Hooks que presentan noticias de última hora sobre temas virales o relevantes (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")"
+    "Hook de Controversia/Pregunta Explosiva: Insinuar una duda o polémica sobre un evento importante (Ej: '¿[Evento] fue un fraude? 🤯')",
+    "Hook de Urgencia/Última Hora: Transmitir inmediatez y relevancia de la noticia (Ej: 'La noticia que sacude [Región] hoy 🔥')",
+    "Hook de Impacto/Reacción Emocional: Usar exclamaciones y emojis para indicar sorpresa o shock (Ej: '¡[Situación] en SHOCK! 😱')",
+    "Hook de Anticipación Dramática: Generar expectación sobre un evento inminente o esperado (Ej: '¡Se acabó la espera! El [algo impactante] está aquí')",
+    "Hook de Dato Sorprendente/Específico: Resaltar un detalle inesperado o una cifra impactante al inicio (Ej: 'Con solo [X] años/días, [persona/evento] logra [Y sorprendente]')",
+    "Hook de Giro Inesperado: Anunciar un cambio drástico o una reversión de expectativas (Ej: '¡[Situación] dio un giro inesperado! 🤯')"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado o el clímax de la noticia inmediatamente (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks que son demasiado descriptivos y carecen de intriga (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Hooks genéricos sin un valor añadido de impacto, controversia o urgencia."
+    "Revelar el resultado o el clímax de la noticia de inmediato (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases que resumen completamente la información central sin dejar intriga (ej. 'Brasil y Noruega empatan')",
+    "Comenzar con el desenlace del evento (ej. 'Sidny Lopes Cabral acaba de [suceso final]')"
   ],
   "best_hora": 17,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar temas de noticias deportivas controversiales o de alto impacto, especialmente los que pueden ser categorizados como `ia_noticias`, ya que estos generaron el 100% de los videos top.",
-    "Utilizar títulos y hooks que planteen preguntas, intriga o sugieran resultados inesperados/controversiales (ej. usando 'ENTREGÓ', 'ENTREGADA', 'SHOCK', 'ELIMINADO') para maximizar la curiosidad del espectador.",
-    "Experimentar con la publicación en las franjas horarias de 1 AM - 2 AM, 4 PM - 5 PM (horas 16-17) y 9 PM (hora 21), ya que todas han demostrado ser efectivas para videos de alto rendimiento."
+    "Priorizar el contenido deportivo y de grandes eventos actuales: Dada la alta performance del nicho 'mundial_2026' (avg 258 vistas, trend 867.0) y la dominancia de noticias deportivas/masivas en el Top 10 de 'ia_noticias', el canal debe enfocarse en estas temáticas para maximizar el alcance.",
+    "Explotar títulos con controversia y lenguaje de shock: Los títulos más efectivos ('ARGENTINA ENTREGÓ...', '¿FINAL ENTREGADA? 🤯', '¡SHOCK! 🤯') utilizan preguntas polémicas y exclamaciones de sorpresa. Replicar estas estructuras para aumentar el CTR.",
+    "Refinar la estrategia de publicación en horarios de tarde/noche: Mantener el enfoque en la ventana 16-17 PM (promedio de 1135.33 vistas para videos top) y validar aún más la hora 21 PM, que produjo un video con 1244 vistas en el top 10.",
+    "Implementar pruebas A/B de contenido para nichos con 0 vistas: Aunque nichos como 'finanzas' o 'negocios_digitales' muestran 0 vistas, se deben realizar pruebas controladas aplicando las estrategias de título y hook exitosas para evaluar su verdadero potencial.",
+    "Mantener la duración de los Shorts cerca de 58 segundos como referencia estándar de la plataforma, mientras se monitorean futuros datos para una optimización basada en evidencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho `ia_noticias` muestre una tendencia general ligeramente negativa (-0.65), su capacidad para generar el 100% de los videos extremadamente virales en temas deportivos controversiales lo posiciona como el de mayor potencial para picos de vistas, a pesar de que `mundial_2026` (parte de deportes) muestre un mejor rendimiento promedio (258 vistas) y una fuerte tendencia general (867.0)."
+  "insight_semana": "A pesar de que los 10 videos más vistos provienen del nicho `ia_noticias`, su `avg_views` (57) y `trend` (-1.0) son bajos, sugiriendo una alta volatilidad. En contraste, `mundial_2026` (un sub-nicho deportivo) muestra un `avg_views` significativamente más alto (258) y una `trend` muy positiva (867.0), indicando una mayor consistencia y potencial de crecimiento en contenido deportivo específico sobre otros temas de noticias generales."
 }
