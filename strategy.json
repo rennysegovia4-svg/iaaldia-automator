@@ -1,40 +1,41 @@
 {
-  "updated": "2026-10-03",
-  "iteracion": 434,
+  "updated": "2026-10-04",
+  "iteracion": 435,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.2,
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "entretenimiento": 0.1,
+    "productividad": 0.05,
+    "negocios": 0.05,
     "finanzas": 0.03,
-    "entretenimiento": 0.03,
     "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
     "cripto_inversiones": 0.03,
-    "politica_latam": 0.05
+    "productividad_ia": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Fórmula de Anticipación Extrema: \"¡Se acabó la espera! ¡El [evento]...\"",
-    "Fórmula de Talento Sorprendente: \"Con solo [Edad] años, [Nombre]...\"",
-    "Fórmula de Intro de Noticias Directa: \"Muy buenas tardes. Bienvenidos a [tema]...\"",
-    "Fórmula de Controversia y Pregunta: \"[Sujeto] [Verbo polémico] [Evento]? 🤯 (PARTE X)\"",
-    "Fórmula de Noticia de Impacto (Desastre/Crisis): \"[Tipo de evento] devastador en [Lugar]: [Número] [Impacto]\"",
-    "Fórmula de Urgencia Regional Deportiva: \"La noticia [Tema] que sacude [Región] hoy ⚽\""
+    "Urgencia y Emojis de Alto Impacto: \"[Tema] HOY: ¡[Reacción/Consecuencia]! 😱🔥\"",
+    "Controversia/Cuestionamiento Abierto: \"[Sujeto] [Verbo polémico] [Objeto]? 🤯\"",
+    "Anticipación y Final de Espera: \"¡Se acabó la espera! ¡El [Evento]...\"",
+    "Impacto con Detalle Específico: \"Con solo 17 años, [Nombre]...\"",
+    "Noticia de Última Hora/Catástrofe: \"[Evento Devastador] en [Lugar]: [Cifra/Detalle]\"",
+    "Escasez o Agotamiento Rápido: \"[Producto/Evento] ¡Se Agotan! 😱🔥\""
   ],
   "avoid_hooks": [
-    "Ganchos excesivamente factuales sin intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Ganchos que anuncian resultados poco emocionantes o esperados (ej. \"Brasil y Noruega empatan\")",
-    "Ganchos que inician una frase sin completar la idea o el impacto (\"Sidny Lopes Cabral acaba de\")"
+    "Declaraciones Factuales sin Emoción: \"[Equipo A] [Resultado] [Equipo B]\"",
+    "Nombres Poco Conocidos sin Contexto Dramático: \"[Nombre de Persona] acaba de\"",
+    "Ausencia Total de Hook: \"\" (cuando el título por sí solo no genera intriga)"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 45,
   "recomendaciones": [
-    "Concentrar la producción de contenido en la temática de `deportes` (incluyendo `mundial_2026`), con un énfasis particular en eventos de alto perfil y noticias deportivas controversiales o de última hora, que han demostrado ser los de mayor rendimiento.",
-    "Implementar activamente las \"fórmulas de gancho\" identificadas como efectivas (Anticipación, Talento, Controversia, Impacto) en los títulos y el inicio de los Shorts para maximizar la tasa de clics y la retención inicial.",
-    "Evitar ganchos que son meramente descriptivos o factuales, y aquellos que no generan una intriga o emoción inmediata, ya que consistentemente resultan en 0 vistas.",
-    "Priorizar la publicación de videos alrededor de la `hora 1 AM` (en la zona horaria del público objetivo), ya que esta franja horaria alberga los videos con mayor rendimiento y concentración en el TOP 10.",
-    "Explorar la creación de contenido seriado o con indicaciones de \"PARTE X\" en el título (ej. \"PARTE 1\" o \"(1/2)\"), dado que 3 de los TOP 10 videos emplean esta estrategia con éxito, sugiriendo una oportunidad para aumentar el consumo recurrente.",
-    "Comenzar a recopilar datos sobre la duración de los Shorts para determinar un rango óptimo que maximice las vistas y la retención del público, ya que esta información no está disponible actualmente."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' con un enfoque en temas de alto impacto como deportes (especialmente fútbol latinoamericano y eventos globales), noticias de última hora o controversias, y entretenimiento viral.",
+    "Implementar de forma sistemática el uso de títulos y hooks que incorporen elementos de urgencia ('HOY'), controversia ('ENTREGÓ', 'SHOCK'), y emojis de alto impacto (😱, 🤯, 🔥) para maximizar el CTR.",
+    "Experimentar con el formato de 'PARTE X' o '(X/Y)' en los títulos para generar continuidad y potencialmente aumentar la retención y el consumo de videos relacionados, dada su presencia en 3 de los 10 videos más vistos.",
+    "Optimizar los tiempos de publicación, concentrando el contenido de alto impacto en las horas más exitosas identificadas: 1 AM (madrugada), 6 AM (temprano en la mañana) y 5 PM (final de la tarde).",
+    "Evaluar la posibilidad de dedicar recursos a explorar nichos con potencial de 'alto riesgo, alta recompensa' como 'mundial_2026' (dentro de 'deportes'), asegurando que los temas elegidos sean de masivo interés y con un fuerte componente de novedad o controversia para mitigar el riesgo de 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de noticias generadas por IA sobre eventos deportivos de alto perfil con un ángulo de controversia o \"conspiración\" (ej. \"FINAL ENTREGADA\") y el uso de un formato seriado ('PARTE X') es excepcionalmente potente, capturando las mayores audiencias y generando múltiples interacciones para seguir la narrativa."
+  "insight_semana": "El estilo `ia_noticias`, cuando aborda temas de alta controversia, urgencia o eventos deportivos masivos (como 'entregas' en finales de mundial) y utiliza títulos con emojis de impacto (🤯, 😱, 🔥) y marcadores de tiempo ('HOY'), es consistentemente el de mejor rendimiento, logrando los views más altos del canal a pesar de una media más baja para el nicho general."
 }
