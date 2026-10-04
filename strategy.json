@@ -1,39 +1,37 @@
 {
   "updated": "2026-10-04",
-  "iteracion": 438,
+  "iteracion": 439,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.3,
+    "ia_noticias": 0.35,
     "entretenimiento": 0.1,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.03,
+    "productividad_ia": 0.08,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.01,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El...",
-    "Con solo X años, [Nombre]...",
-    "[Evento Impactante] en [Lugar]: [Número] muertos y emergencia...",
-    "¿[Afirmación Controversial] la Final del Mundial? 🤯",
-    "[Equipo/Entidad] se [Acción Impactante] HOY: ¿[Consecuencia Drama]?",
-    "La noticia [Tipo] que sacude [Región] hoy ⚽"
+    "Hooks que plantean controversia o conspiración (ej. \"ARGENTINA ENTREGÓ...?\")",
+    "Hooks que anuncian un evento impactante o devastador (ej. \"Terremoto devastador en...\")",
+    "Hooks que crean un sentido de urgencia o escasez (ej. \"...¡Se Agotan! 😱🔥\")",
+    "Hooks que resaltan un giro inesperado o \"shock\" (ej. \"...¡SHOCK! 🤯\")",
+    "Hooks que usan exclamaciones y emojis impactantes para noticias deportivas de eliminación o sorpresa (ej. \"¡Gamezking ELIMINADO! 😱\")",
+    "Hooks que presentan noticias de última hora sobre temas virales o relevantes (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")"
   ],
   "avoid_hooks": [
-    "Reportes de resultados exactos (ej. 'Brasil 0-0 Noruega') sin intriga.",
-    "Afirmaciones factuales sobre figuras o eventos poco conocidos (ej. 'Sidny Lopes Cabral acaba de').",
-    "Títulos que carecen de elementos de sorpresa, controversia o urgencia."
+    "Hooks que revelan el resultado o el clímax de la noticia inmediatamente (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Hooks que son demasiado descriptivos y carecen de intriga (ej. \"Sidny Lopes Cabral acaba de\")",
+    "Hooks genéricos sin un valor añadido de impacto, controversia o urgencia."
   ],
   "best_hora": 17,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de la categoría 'deportes', enfocándose en temas de 'mundial_2026' debido a su alto score (4.248) y tendencia de crecimiento (867.0).",
-    "Continuar explotando el nicho de 'ia_noticias' con un enfoque en controversias deportivas, noticias de última hora impactantes y eventos de celebridades, ya que estos temas han demostrado ser capaces de viralizarse (100% de los TOP 10 videos).",
-    "Mantener las franjas de publicación durante la tarde (16-17h, específicamente 17h como pico) y la madrugada (1-2 AM) para maximizar la visibilidad, dada su comprobada eficacia en el TOP 10.",
-    "Refinar las estrategias de hooks y títulos para incluir elementos de shock (😱, 🤯), urgencia ('HOY', '¡Se Agotan!'), y controversia ('ENTREGÓ', '¿ES FRAUDE?'), ya que son patrones recurrentes en los videos más vistos.",
-    "Es crucial implementar pruebas A/B para la duración de los videos (rango de 30-60 segundos) para poder determinar la `duracion_optima`, ya que esta métrica vital aún no puede ser establecida con los datos actuales."
+    "Priorizar temas de noticias deportivas controversiales o de alto impacto, especialmente los que pueden ser categorizados como `ia_noticias`, ya que estos generaron el 100% de los videos top.",
+    "Utilizar títulos y hooks que planteen preguntas, intriga o sugieran resultados inesperados/controversiales (ej. usando 'ENTREGÓ', 'ENTREGADA', 'SHOCK', 'ELIMINADO') para maximizar la curiosidad del espectador.",
+    "Experimentar con la publicación en las franjas horarias de 1 AM - 2 AM, 4 PM - 5 PM (horas 16-17) y 9 PM (hora 21), ya que todas han demostrado ser efectivas para videos de alto rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es extremadamente volátil: aunque domina el 100% del TOP 10, su promedio de vistas es bajo (61) y su tendencia es negativa (-0.85). Esto sugiere que solo temas muy específicos y de alto impacto dentro de esta categoría logran viralidad, mientras que otros fallan completamente. El nicho 'mundial_2026' dentro de 'deportes' muestra el mayor potencial de crecimiento con una tendencia de 867.0."
+  "insight_semana": "Aunque el nicho `ia_noticias` muestre una tendencia general ligeramente negativa (-0.65), su capacidad para generar el 100% de los videos extremadamente virales en temas deportivos controversiales lo posiciona como el de mayor potencial para picos de vistas, a pesar de que `mundial_2026` (parte de deportes) muestre un mejor rendimiento promedio (258 vistas) y una fuerte tendencia general (867.0)."
 }
