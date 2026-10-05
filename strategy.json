@@ -1,39 +1,40 @@
 {
   "updated": "2026-10-05",
-  "iteracion": 442,
+  "iteracion": 443,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.3,
-    "productividad": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.02,
-    "negocios": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.3,
+    "ia_noticias": 0.2,
+    "finanzas": 0.15,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.1,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Intriga por un evento muy esperado: \"¡Se acabó la espera! ¡El...\"",
-    "Destacar un logro o hecho excepcional de una figura: \"Con solo X años, [Nombre]...\"",
-    "Introducción de noticia urgente o de alto impacto: \"Última hora: [Evento crítico]...\"",
-    "Cuestionamiento de una controversia o evento inesperado: \"¿[Evento] fue [acción controvertida]?\" o \"La verdad detrás de [controversia]...\"",
-    "Anuncio de una situación disruptiva o sorprendente: \"¡[Evento impactante] sacude [lugar/comunidad]!\"",
-    "Enfoque en la implicación de una figura clave: \"[Nombre] es la clave para entender [situación].\""
+    "Ganchos de Anticipación y Urgencia: Ej. '¡Se acabó la espera! ¡El' - Crea inmediatez y expectativa.",
+    "Ganchos de Hito o Logro Inesperado (edad, condición): Ej. 'Con solo 17 años, Lamine' - Resalta un hecho sorprendente.",
+    "Ganchos de Noticia de Última Hora Impactante: Abrir directamente con un evento trascendental (ej. 'Muy buenas tardes. Bienvenidos a' o 'Terremoto devastador en Colombia:').",
+    "Ganchos de Controversia/Pregunta Insinuante en Deportes: Plantear una duda sobre un resultado o evento importante (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯').",
+    "Ganchos de Shock/Alerta con Iconos de Emoción: Utilizar palabras como 'SHOCK', 'ELIMINADO', 'SE VENDE', acompañado de emojis 🤯, 😱, 🔥 (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯').",
+    "Ganchos de Fenómeno Viral/Escasez Rápida: Resaltar eventos que se agotan o tienen alta demanda ('ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')."
   ],
   "avoid_hooks": [
-    "Revelar el resultado final o clímax de una noticia de inmediato (ej., \"Brasil y Noruega empatan 0-0\").",
-    "Mencionar una persona o evento sin contexto o intriga previa que justifique su importancia (ej., \"Sidny Lopes Cabral acaba de\").",
-    "Empezar con una declaración conclusiva que no genere curiosidad o un deseo de saber más."
+    "Hooks que simplemente enuncian un hecho sin intriga o emoción (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks demasiado literales o descriptivos sin un elemento de sorpresa o controversia (ej. 'Brasil y Noruega empatan').",
+    "Hooks que cortan abruptamente o son incompletos sin generar curiosidad (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 17,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar el contenido de deportes, especialmente las narrativas de controversia o preguntas intrigantes sobre eventos importantes (como mundiales), ya que el nicho 'mundial_2026' tiene un avg_views de 258 y una tendencia de 867.0, y muchos de los videos top de 'ia_noticias' son de deportes.",
-    "Diseñar hooks que construyan intriga y anticipación (ej., '¡Se acabó la espera! ¡El...'), y evitar aquellos que revelen el resultado final o el clímax de la noticia de inmediato, patrón que consistentemente resulta en 0 vistas.",
-    "Optimizar las publicaciones en las franjas horarias más efectivas identificadas: madrugada (1-2 AM), tarde (16-17 PM) y noche (21 PM), que han producido videos en el top 10 con altas vistas."
+    "Priorizar la creación de contenido en el nicho de `deportes`, particularmente subtemas relacionados con `mundial_2026` o eventos deportivos de gran escala, debido a su alto `avg_views` (258) y excepcional `trend` (867.0).",
+    "Desarrollar títulos y hooks que exploten la controversia, la conspiración o preguntas impactantes sobre eventos deportivos conocidos para maximizar la intriga y las vistas (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?').",
+    "Publicar videos entre las 1-2 AM, 6 AM, 16-17 PM y especialmente 21 PM, ya que estas franjas horarias han demostrado consistentemente producir videos de alto rendimiento.",
+    "Ser extremadamente selectivo con el contenido de `ia_noticias`, centrándose solo en subtemas con potencial viral evidente, dado que este nicho muestra una gran disparidad entre sus videos más vistos y su bajo `avg_views` (42) y `trend` negativo (-0.95).",
+    "Evitar hooks que sean meramente informativos o que simplemente declaren un hecho sin añadir intriga, emoción o una pregunta, ya que este tipo de hooks está directamente asociado con 0 vistas.",
+    "Dado que varios nichos (`finanzas`, `entretenimiento`, `negocios_digitales`, `productividad_ia`, `cripto_inversiones`, `politica_latam`) presentan un `avg_views` de 0 en el ranking actual, se recomienda realizar experimentos con bajo volumen de videos en estas categorías para recopilar datos reales y evaluar su potencial antes de asignarles un peso estratégico mayor."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho `ia_noticias` sigue produciendo los videos individuales con más vistas (ocupando todo el top 10), su bajo promedio general (57 vistas) y tendencia negativa (-1.0) contrastan fuertemente con el nicho `mundial_2026` (deportes), que, pese a sus fallos, muestra un rendimiento promedio superior (258 vistas) y una tendencia de crecimiento masiva (867.0), indicando que es un nicho más estable y con mayor potencial de retorno promedio."
+  "insight_semana": "El nicho `ia_noticias` presenta una paradoja: mientras domina el top 10 con múltiples videos superando las 900 vistas, su `avg_views` global es de solo 42 y su `trend` es negativa (-0.95), señalando una alta inconsistencia y una dependencia extrema de la viralidad de subtemas específicos."
 }
