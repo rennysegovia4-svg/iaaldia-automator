@@ -1,40 +1,38 @@
 {
   "updated": "2026-10-05",
-  "iteracion": 443,
+  "iteracion": 444,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.2,
-    "finanzas": 0.15,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.1,
-    "productividad_ia": 0.08,
+    "deportes": 0.4,
+    "ia_noticias": 0.25,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
     "cripto_inversiones": 0.05,
-    "politica_latam": 0.02
+    "politica_latam": 0.1
   },
   "best_hooks": [
-    "Ganchos de Anticipación y Urgencia: Ej. '¡Se acabó la espera! ¡El' - Crea inmediatez y expectativa.",
-    "Ganchos de Hito o Logro Inesperado (edad, condición): Ej. 'Con solo 17 años, Lamine' - Resalta un hecho sorprendente.",
-    "Ganchos de Noticia de Última Hora Impactante: Abrir directamente con un evento trascendental (ej. 'Muy buenas tardes. Bienvenidos a' o 'Terremoto devastador en Colombia:').",
-    "Ganchos de Controversia/Pregunta Insinuante en Deportes: Plantear una duda sobre un resultado o evento importante (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯').",
-    "Ganchos de Shock/Alerta con Iconos de Emoción: Utilizar palabras como 'SHOCK', 'ELIMINADO', 'SE VENDE', acompañado de emojis 🤯, 😱, 🔥 (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯').",
-    "Ganchos de Fenómeno Viral/Escasez Rápida: Resaltar eventos que se agotan o tienen alta demanda ('ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')."
+    "Pregunta Sensacionalista con Dato/Evento Específico: `[Evento/Tema]: ¿[Afirmación Controversial/Sorprendente]? 🤯`",
+    "Urgencia y Anticipación de Gran Evento: `¡Se acabó la espera! ¡El [Evento Importante]...`",
+    "Foco en Figura o Hecho Impactante: `Con solo [Dato Específico], [Nombre/Sujeto] [Hecho Sorprendente/Logro]...`",
+    "Noticia de Impacto con Cifra: `[Evento Catastrófico/Noticia grave]: [Dato Numérico Impactante] y [Consecuencia/Alerta]`",
+    "Noticia Viral General con Localización: `La noticia [Tipo de Noticia] que sacude [Región] hoy [Emoji]`",
+    "Introducción Estilo Informativo (para noticias serias): `Muy buenas tardes. Bienvenidos a [Tema de la Noticia]...`"
   ],
   "avoid_hooks": [
-    "Hooks que simplemente enuncian un hecho sin intriga o emoción (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks demasiado literales o descriptivos sin un elemento de sorpresa o controversia (ej. 'Brasil y Noruega empatan').",
-    "Hooks que cortan abruptamente o son incompletos sin generar curiosidad (ej. 'Sidny Lopes Cabral acaba de')."
+    "Hooks puramente descriptivos y factuales sin intriga: `[Equipo 1] y [Equipo 2] empatan [Resultado Exacto]`",
+    "Hooks cortados o incompletos que no cierran una idea: `[Nombre de Persona] acaba de...`",
+    "Títulos/Hooks que prometen fraude sin una base clara o un gancho más allá de la pregunta directa: `[Evento]: ¿ES FRAUDE? ⚡`"
   ],
-  "best_hora": 17,
-  "duracion_optima": null,
+  "best_hora": 1,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de `deportes`, particularmente subtemas relacionados con `mundial_2026` o eventos deportivos de gran escala, debido a su alto `avg_views` (258) y excepcional `trend` (867.0).",
-    "Desarrollar títulos y hooks que exploten la controversia, la conspiración o preguntas impactantes sobre eventos deportivos conocidos para maximizar la intriga y las vistas (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?').",
-    "Publicar videos entre las 1-2 AM, 6 AM, 16-17 PM y especialmente 21 PM, ya que estas franjas horarias han demostrado consistentemente producir videos de alto rendimiento.",
-    "Ser extremadamente selectivo con el contenido de `ia_noticias`, centrándose solo en subtemas con potencial viral evidente, dado que este nicho muestra una gran disparidad entre sus videos más vistos y su bajo `avg_views` (42) y `trend` negativo (-0.95).",
-    "Evitar hooks que sean meramente informativos o que simplemente declaren un hecho sin añadir intriga, emoción o una pregunta, ya que este tipo de hooks está directamente asociado con 0 vistas.",
-    "Dado que varios nichos (`finanzas`, `entretenimiento`, `negocios_digitales`, `productividad_ia`, `cripto_inversiones`, `politica_latam`) presentan un `avg_views` de 0 en el ranking actual, se recomienda realizar experimentos con bajo volumen de videos en estas categorías para recopilar datos reales y evaluar su potencial antes de asignarles un peso estratégico mayor."
+    "**Priorizar contenido de deportes, enfocado en subtemas virales como el Mundial 2026:** El nicho `mundial_2026` muestra el mayor potencial de crecimiento (avg_views: 258, trend: 867.0) a pesar de no dominar el Top 10 individualmente. Asignar la mayor parte del presupuesto de contenido a explorar y capitalizar temas de alto interés deportivo.",
+    "**Optimizar videos de `ia_noticias` con un enfoque 'high-risk/high-reward':** Dado que `ia_noticias` tiene el mayor número de videos en el Top 10 pero un `avg_views` general bajo (44) y una `trend` negativa (-0.95), se debe enfocar la estrategia en identificar subtemas con alto potencial de viralidad, utilizando títulos y hooks que generen intriga y sensacionalismo (e.g., preguntas con emojis, claims explosivos).",
+    "**Implementar ganchos (hooks) con intriga, urgencia o especificidad impactante:** Los hooks más efectivos se basan en la anticipación ('¡Se acabó la espera!'), la focalización en un dato o figura clave ('Con solo 17 años, Lamine...'), o preguntas que generan controversia. Evitar a toda costa los hooks puramente descriptivos o incompletos que generan 0 vistas.",
+    "**Continuar experimentando con nichos con 0 vistas, pero con bajo volumen:** Asignar un pequeño porcentaje a `finanzas`, `entretenimiento`, `negocios_digitales`, `productividad_ia`, `cripto_inversiones` y `politica_latam`. Al no tener datos de rendimiento para estos nichos, su publicación debe ser exploratoria y con una frecuencia limitada hasta obtener métricas significativas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una paradoja: mientras domina el top 10 con múltiples videos superando las 900 vistas, su `avg_views` global es de solo 42 y su `trend` es negativa (-0.95), señalando una alta inconsistencia y una dependencia extrema de la viralidad de subtemas específicos."
+  "insight_semana": "El nicho `ia_noticias` presenta una clara dualidad: es capaz de generar los picos de vistas más altos (hasta 1325 vistas en el top 10) pero su inconsistencia se refleja en un `avg_views` de solo 44 y una `trend` negativa de -0.95, sugiriendo una alta dependencia de la selección precisa de temas virales y un alto riesgo de bajo rendimiento."
 }
