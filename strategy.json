@@ -1,39 +1,40 @@
 {
   "updated": "2026-10-07",
-  "iteracion": 457,
+  "iteracion": 458,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
+    "deportes": 0.45,
     "ia_noticias": 0.25,
+    "finanzas": 0.04,
     "entretenimiento": 0.1,
-    "finanzas": 0.08,
-    "negocios_digitales": 0.08,
-    "productividad_ia": 0.07,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Controversia/Conspiración Extrema (Deportiva): Preguntas directas sobre posibles fraudes o entregas en eventos clave, utilizando emojis de shock (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯').",
-    "Noticia Devastadora/Urgente con Datos Clave: Reportar tragedias o emergencias con números impactantes o descripciones concisas de la magnitud (ej. 'Terremoto devastador en Colombia: 132 muertos y emergencia n').",
-    "Anuncio de Eliminación/Caída Dramática: Usar terminología de 'tarjeta roja', 'eliminado', o 'cede liderato' para eventos de alto impacto, acompañado de emojis de sorpresa (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱').",
-    "Alerta de Venta/Cambio Radical (con Urgencia): Noticias sobre grandes cambios o ventas de entidades importantes con preguntas retóricas (ej. 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱').",
-    "Anuncio de Evento/Éxito Masivo (con Escasez/Exageración): Resaltar la popularidad o el éxito de un evento con un toque de exclusividad o gran demanda (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥').",
-    "Frase de Anticipación/Revelación Directa (General): Usar frases que generen expectativa de una revelación inminente (ej. '¡Se acabó la espera! ¡El')."
+    "Controversia Deportiva + Pregunta Retórica + Emoji Shock (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Urgente/Tragedia + Dato Numérico Impactante (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Noticia Deportiva General + Factor de Intriga + Emoji Relevante (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Evento Específico Dramático + Verbo Fuerte + Emoji Shock (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Anuncio de Venta/Cambio Grande + Pregunta Consecuencia + Emoji Shock (ej. 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
+    "Evento Popular Rápido + Urgencia + Emoji Shock/Fuego (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')"
   ],
   "avoid_hooks": [
-    "Resultados de partidos poco emocionantes o empates (ej. 'Brasil y Noruega empatan 0-0').",
-    "Declaraciones vagas o nombres propios sin contexto que no generan curiosidad inmediata (ej. 'Sidny Lopes Cabral acaba de').",
-    "Reportes puramente factuales y no emotivos para contenido de formato corto, que carecen de gancho dramático."
+    "Reportes literales de resultados deportivos sin intriga (ej. 'BRASIL 0-0 NORUEGA')",
+    "Declaraciones incompletas o sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')",
+    "Títulos que revelan un desenlace monótono o la falta de acción desde el inicio"
   ],
   "best_hora": 1,
   "duracion_optima": null,
   "recomendaciones": [
-    "Maximizar el contenido de `deportes` (especialmente sub-nichos como `mundial_2026`) y `ia_noticias` enfocándose en controversias, rumores de conspiración, y noticias de última hora con alta carga emocional, ya que estos temas representan el 100% de los videos con más de 900 vistas.",
-    "Utilizar títulos con emojis estratégicos (🤯, 😱, 🔥, ⚽) y signos de puntuación como '?' y '!' para comunicar drama, urgencia o sorpresa, patrón presente en todos los videos del TOP 10.",
-    "Evitar crear contenido sobre eventos deportivos con resultados poco emocionantes (ej. empates 0-0) o noticias con ganchos genéricos o falta de drama, ya que estos han demostrado consistentemente cero vistas.",
-    "Realizar pruebas de publicación concentradas en las horas 1 AM y entre las 16-17 PM, dado que estos periodos muestran la mayor frecuencia de videos de alto rendimiento y el pico de vistas promedio para horas individuales.",
-    "Para métricas como `duracion_optima`, no se dispone de datos reales en esta iteración. Se recomienda incluir la duración en el próximo conjunto de datos para un análisis más completo."
+    "Priorizar la creación de contenido dentro del nicho 'deportes', especialmente temas relacionados con el Mundial, controversias, o noticias de ligas importantes, utilizando la fórmula de intriga y shock.",
+    "Aprovechar las noticias de última hora y eventos urgentes, tanto en deportes como en tragedias o eventos populares (celebridades), destacando cifras o consecuencias impactantes en el título.",
+    "Mantener y reforzar el uso de emojis (🤯, 😱, ⚽, 🔥) y signos de puntuación (¿?, ¡!) en los títulos para maximizar la tasa de clic y la expresión emocional.",
+    "Concentrar las publicaciones en la `hora 1` (01:00 AM), que demostró ser el horario con la mayor concentración y promedio de vistas en los videos top.",
+    "Evitar rigurosamente los títulos que revelan un contenido poco sensacional o un resultado monótono, incluso dentro de nichos de alto rendimiento, ya que esto resulta en 0 vistas.",
+    "Implementar la recolección de datos sobre la duración de los videos para identificar la `duracion_optima` en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La polarización de rendimiento en el nicho 'ia_noticias' es extrema: aunque el 100% de los videos del top 10 provienen de esta categoría, su promedio de vistas (41) y tendencia (-0.95) son bajos y negativos, respectivamente. Esto indica que el éxito es binario; solo temas altamente virales, controversiales o urgentes (como conspiraciones deportivas o desastres con datos específicos) logran impacto masivo, mientras que la mayoría del contenido dentro del nicho no resuena."
+  "insight_semana": "El motor de crecimiento más potente es el contenido de 'noticias deportivas controversiales o de alto impacto' (especialmente la temática `mundial_2026`), demostrando que la intriga y el factor 'shock' en el título amplifican drásticamente el rendimiento, incluso si el evento subyacente no es inherentemente sensacional, siempre que el gancho lo sea."
 }
