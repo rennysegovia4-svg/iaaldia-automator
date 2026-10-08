@@ -1,37 +1,42 @@
 {
   "updated": "2026-10-08",
-  "iteracion": 464,
+  "iteracion": 465,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.25,
+    "productividad": 0.1,
     "finanzas": 0.05,
-    "entretenimiento": 0.15,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.0,
+    "entretenimiento": 0.05,
+    "negocios": 0.05,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
     "politica_latam": 0.0
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "¿[Sujeto/Evento Impactante] [Verbo de Acción/Consecuencia]? 🤯",
-    "[Tipo de Noticia] en [Lugar/Contexto]: [Impacto/Cifra] 🚨",
-    "[Entidad/Evento] [Verbo de Urgencia] HOY: [Consecuencia impactante] 😱"
+    "¡Se acabó la espera! [Evento Impactante]...",
+    "Con solo [Edad] años, [Nombre Propio] logra [Hito Impresionante]...",
+    "[Evento Dramático]: ¿[Pregunta Controvertida]? 🤯",
+    "[Nombre Propio/Lugar] en SHOCK: [Noticia Impactante/Trágica] 😱",
+    "[Evento Actual] HOY: ¡[Consecuencia Urgente/Sorprendente]! 🔥",
+    "La noticia [Tipo] que sacude [Región] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Declaraciones fácticas y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Inicios de frase que no revelan el conflicto o la novedad (ej. 'Sidny Lopes Cabral acaba de')",
+    "Titulares de resultados directos sin contexto o impacto inmediato."
   ],
   "best_hora": 16,
   "duracion_optima": 58,
   "recomendaciones": [
-    "**Priorizar contenido deportivo de eventos masivos y noticias de última hora**: El nicho `mundial_2026` y las noticias deportivas dentro de `ia_noticias` muestran la mayor capacidad de viralización, con el video de mayor rendimiento de esta iteración alcanzando 1298 vistas a la hora 16.",
-    "**Utilizar títulos que generen intriga, urgencia y sorpresa con emojis de alto impacto**: La presencia consistente de emojis (🤯, 😱, 🔥, ⚽) y frases que anticipan un evento crítico o una revelación (ej. preguntas retóricas) es clave para la clickabilidad, como se observa en los top 10 videos.",
-    "**Explorar noticias de entretenimiento con alto engagement local o regional**: El éxito de 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥' (991 vistas) sugiere que noticias de celebridades o eventos culturales relevantes en LATAM/España tienen un alto potencial viral dentro del nicho `ia_noticias`."
+    "Priorizar fuertemente la creación de contenido dentro del sub-nicho `mundial_2026` y noticias deportivas de alto impacto para LATAM, dado su alto rendimiento (avg_views de 258 y trend de 867.0).",
+    "Continuar explotando el nicho `ia_noticias` para eventos virales específicos (tragedias, celebridades, deportes), ya que alberga el 100% de los videos top a pesar de su bajo promedio general.",
+    "Concentrar las publicaciones en la `hora 16` (4 PM) para maximizar el potencial viral, y considerar `hora 21` y `hora 1` como franjas secundarias fuertes.",
+    "Implementar ganchos que generen anticipación, controversia o resalten figuras y eventos específicos, usando exclamaciones y emojis como `🤯`, `😱`, `🔥`.",
+    "Evitar ganchos meramente descriptivos o que presenten resultados sin generar intriga o impacto emocional, como los observados en los videos con 0 vistas.",
+    "Es crucial comenzar a recolectar datos sobre la duración de los videos para determinar una `duracion_optima` basada en evidencia real y no en valores predeterminados."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `mundial_2026` ha demostrado un potencial viral excepcional, con un promedio de 258 vistas y una tendencia de 867.0, superando drásticamente a todas las demás categorías y posicionándose como el segmento más prometedor para futuros contenidos."
+  "insight_semana": "La especialización en sub-nichos de alto impacto como `mundial_2026` dentro de la categoría `ia_noticias` es clave, ya que este sub-nicho mostró el mayor factor de tendencia (867.0) y el promedio de vistas más alto (258), indicando un potencial de crecimiento exponencial a pesar del bajo promedio general de la categoría madre."
 }
