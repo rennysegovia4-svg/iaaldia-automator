@@ -1,193 +1,196 @@
 {
   "updated": "2026-10-09",
   "hook_formulas": [
-    "¡Se acabó la espera! ¡El [evento/noticia] ha comenzado!",
-    "Con solo [edad] años, [nombre] [logro/noticia impactante]",
-    "[Evento/Situación] que sacude [Región/Comunidad] hoy ⚽",
-    "[Entidad/País] [Verbo en pasado/Situación impactante]? 🤯",
-    "[Lugar] hoy: [Tragedia/Noticia urgente] que [Verbo Impactante]",
-    "[Entidad]: ¡[Situación Impactante]! 😱🔥",
-    "[Concepto Actual/Real] vs [Tecnología/Concepto Futurista]",
-    "[Personaje/Elemento] en [Situación Extrema/Visualmente Cautivadora]",
-    "[Problema Cotidiano/Dilema] con [Giro Cómico/Resultado Inesperado]",
-    "[Historia Simple] que enseña una [Lección Importante/Sorprendente]",
-    "[Estrategia/Idea Brillante] de [Entidad Conocida/Concepto]",
-    "[Pregunta Retórica/Dilema] sobre [Tema Serio/Financiero]"
+    "Dilema/Pregunta Abierta que Requiere Elección Inmediata",
+    "Comparación de Escenarios (Real vs. IA, Antes vs. Ahora, Dos Caminos)",
+    "Situación Inesperada/Absurda con un Personaje Principal",
+    "Historia Rápida con una Lección Moral o un Desenlace Sorprendente",
+    "Reacción a Contenido/Fenómeno Conocido o una Broma Elaborada",
+    "Desafío/Experimento Personal con una Hipótesis o Resultado Claro",
+    "Afirmación Impactante o Promesa de Valor (Directa o Irónica)",
+    "Tutorial Rápido o Solución a un Problema con una Herramienta Específica (usando IA)",
+    "Lista (Top N) de Ideas, Estrategias o Ejemplos Concretos",
+    "Personaje Popular/Meme/Trend en un Contexto Extremo o Humorístico",
+    "Conflicto/Lucha de un Underdog contra una Fuerza Superior",
+    "Interrogante/Exageración sobre una Novedad Tecnológica o Tendencia Social"
   ],
   "title_patterns": [
-    "[Sujeto/Concepto] vs [Oponente/Concepto] + [Giro/Parte X]",
-    "[Sujeto Inesperado] + [Acción Destructiva/Cómica] + [Lugar/Objeto] + [Emoji]",
-    "[Pregunta Retórica] + [Dilema Financiero/Negocio] + [Emoji]",
-    "[Emoción/Situación] + [Acción Cotidiana] + [Resultado Cómico/Relatable] + [Emojis]",
-    "[Objeto/Concepto] + [Adjetivo de Autenticidad] + [Giro/Parte X]",
-    "[Verbo de Acción Imperativo] + [Consecuencia Crucial] + [Símbolos Financieros]",
-    "[Experimento/Desafío Personal] + [Duración/Contexto] + [Resultado Implícito]",
-    "[Adjetivo Superlativo] + [Evento/Momento] + [Reacción] + [Emoji]"
+    "[Tema/Sujeto Principal] vs [Elemento de Contraste/IA] + [Parte/Emoji]",
+    "[Personaje/Objeto] en [Situación Extrema/Inesperada] + [Emoji Humorístico] + [#PalabrasClave]",
+    "[Afirmación Personal/Situación Relatable] + [Reacción Emocional/Emoji]",
+    "[Concepto con Juego de Palabras/Giro Cómico] + [Elemento Visual/Emoji] + [#PalabrasClave]",
+    "[Pregunta Intrigante/Dilema] + [Emoji de Reflexión/Negocio] + [#PalabrasClave]",
+    "[Historia/Acción Principal] con [Resultado Impactante/Sorprendente] + [Emoji]",
+    "[Número] + [Sujeto/Concepto] + [Verbo Impactante/Resultado] + [Contexto]",
+    "[Cómo Hacer/La Mejor Herramienta] + [Beneficio Cuantificable/Problema Resuelto] + [Tecnología/Recurso]"
   ],
   "palabras_prohibidas": [
-    "completo",
-    "tutorial",
-    "explicación",
-    "introducción",
-    "parte larga",
-    "detallado",
-    "episodio",
-    "suscríbete",
-    "mira esto",
-    "guía"
+    "introducción a",
+    "análisis de",
+    "explicación de",
+    "guía para",
+    "resumen de",
+    "beneficios de",
+    "consideraciones sobre",
+    "consejos sobre",
+    "la verdad sobre",
+    "un estudio de"
   ],
   "palabras_clave_virales": [
     "shorts",
-    "viral",
     "humor",
     "funny",
+    "comedia",
+    "viral",
+    "trending",
+    "fyp",
     "ai",
     "ia",
-    "comedia",
-    "fyp",
     "ahorro",
     "finanzas",
-    "emprendimiento",
+    "emprender",
+    "negocio",
     "bitcoin",
-    "inversiones",
-    "marketing",
-    "robot"
+    "robot",
+    "latina",
+    "memes",
+    "historia"
   ],
-  "estructura_gancho_optima": "El gancho óptimo se inicia con un evento visualmente impactante, una pregunta intrigante, un contraste directo (real vs. IA, antes vs. ahora) o una situación cómica relatable, todo dentro de los primeros 1-3 segundos. Se complementa con un título conciso que incluye emojis para reforzar la emoción (sorpresa, risa, drama) y un call to action implícito a ver el desenlace o la reacción. La clave es la inmediatez y la claridad del conflicto o el humor.",
-  "duracion_optima_segundos": 25,
-  "insight_clave": "El nicho `ia_noticias` es el generador exclusivo de los videos más vistos (100% del Top 10), demostrando una capacidad de viralidad inigualable para noticias de alto impacto, tragedias o eventos deportivos específicos, a pesar de que su promedio de vistas general es de solo 28. Esto lo contrasta con `mundial_2026`, que tiene un promedio de vistas superior (258) pero sin picos virales en este conjunto de datos.",
-  "recomendacion_thumbnail": "El thumbnail más efectivo es un frame capturado del pico de la acción o emoción del video, destacando el contraste principal, el personaje en la situación más impactante, o el momento más cómico. Debe ser visualmente claro, con colores vibrantes y un foco central obvio, minimizando o eliminando texto para depender puramente del impacto visual. A menudo, el uso de emojis en el título compensa la falta de texto en el thumbnail y refuerza la emoción.",
+  "estructura_gancho_optima": "Inicio con un impacto visual o sonoro inmediato (1-3s) que establece el conflicto, dilema o humor. Desarrollo rápido del escenario o la trama (5-15s) con elementos visuales dinámicos o humor exagerado. Final con una resolución inesperada, giro cómico, lección o cliffhanger que invita a la reflexión o la risa. Uso frecuente de texto en pantalla para reforzar el mensaje clave o el humor.",
+  "duracion_optima_segundos": 58,
+  "insight_clave": "La virabilidad se logra a través de la 'storytelling emocional inmediata'. Los videos no solo informan o educan, sino que provocan una reacción fuerte (risa, asombro, curiosidad, empatía) en los primeros segundos. Esto se consigue con situaciones altamente relatables o exageradas, conflictos claros (vs. format), giros inesperados y un fuerte impacto visual que comunica el mensaje antes de que el espectador pueda procesar el texto o el audio. La simplicidad del mensaje y la capacidad de conectar emocionalmente con la audiencia superan la complejidad del contenido.",
+  "recomendacion_thumbnail": "Miniatura con la escena más dramática o humorística del video, con personajes principales mostrando emociones exageradas (sorpresa, risa, confusión). Contraste de colores alto y brillante. Incluir un texto superpuesto muy conciso y en negrita que resuma la hook o el punto álgido del video. Evitar miniaturas genéricas; debe ser una captura específica que genere curiosidad y transmita la esencia del corto al instante.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "[Elemento Real] vs [Versión IA/Robot] + [Resultado]",
-        "[Personaje/Sujeto] en [Situación Absurda/Extrema] generada por IA",
-        "[Tecnología IA] + [Impacto/Capacidad]"
+        "Comparación de la Vida Real vs. Escenarios generados por IA",
+        "Personaje o Elemento Físico en una Situación Absurda o Peligrosa con un filtro/contexto de IA",
+        "Conflicto Dramático o Batalla de un 'Underdog' contra una IA Gigante/Poderosa"
       ],
       "topics": [
-        "Comparación y contraste IA vs Realidad",
-        "Humor y situaciones absurdas con IA",
-        "Demostraciones de capacidades de herramientas IA"
+        "IA aplicada a situaciones cotidianas (humor, desastres controlados)",
+        "Diferencias entre imágenes/realidad con y sin IA",
+        "Historias con IA (narrativas cortas, personajes)"
       ]
     },
     "finanzas": {
       "hooks": [
-        "[Dilema Común/Situación Cómica] sobre Dinero/Ahorro",
-        "[Pregunta Retórica] sobre [Decisión Financiera Importante]",
-        "[Historia Personal] con [Resultado Inesperado] de Ahorro/Gasto"
+        "Historia con un Personaje Principal que Demuestra una Lección Financiera Clara",
+        "Planteamiento de un Dilema de Elección Financiera con Consecuencias Claras",
+        "Humor Relatable sobre Hábitos de Ahorro o Gastos Cotidianos"
       ],
       "topics": [
-        "Ahorro y sus desafíos/beneficios",
-        "Dilemas y decisiones financieras",
-        "Humor y situaciones relatable con dinero"
+        "Ahorro y sus impactos (positivos y negativos)",
+        "Conceptos básicos de inversión (interés compuesto)",
+        "Problemas y soluciones financieras en la vida diaria"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "[Estrategia de Marketing] [Adjetivo Positivo] de [Empresa/Concepto]",
-        "[Experimento Personal] con [Método de Negocio Digital] + [Duración]",
-        "[Pregunta/Problema Común] en [Emprendimiento/Negocios]"
+        "Revelación de una Estrategia de Marketing 'Genial' o Viral de una Marca Conocida",
+        "Experimento o Desafío Personal (e.g., 'Intenté Dropshipping por X tiempo') con Resultados",
+        "Pregunta Directa sobre un Problema Común de Negocios y su Implicación"
       ],
       "topics": [
-        "Estrategias de marketing y branding",
-        "Modelos de negocio digital (dropshipping, 3D printing, affiliate marketing)",
-        "Consejos y desafíos del emprendimiento"
+        "Estrategias de marketing y publicidad (análisis de casos)",
+        "Ideas de negocio (handmade, dropshipping, ingresos online)",
+        "Desafíos y soluciones para emprendedores"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "[Concepto Falso/Creencia Común] vs [Realidad/Verdad] (a veces IA)",
-        "[Narrativa/Escena] con [Mensaje Motivacional/Filosófico] relacionado con dinero/éxito",
-        "[Pregunta Directa/Interacción] sobre [Dinero/Finanzas Personales]"
+        "Discurso Motivacional/Inspiracional con Imágenes Impactantes (usando #bitcoin como palabra clave de tendencia)",
+        "Entrevista Rápida con Pregunta Directa sobre Cuánto Dinero tiene alguien en su cuenta",
+        "Narrativa Dramática de un Evento Financiero de Alto Riesgo (Scams, Ganancias Millonarias)"
       ],
       "topics": [
-        "Filosofía de vida y motivación con elementos de éxito/dinero",
-        "Criptomonedas (Bitcoin) como símbolo de inversión/futuro",
-        "Interacciones sociales sobre finanzas personales"
+        "Motivación y superación personal (vinculada indirectamente a las finanzas/cripto)",
+        "Percepciones públicas sobre el dinero y el ahorro (a través de entrevistas)",
+        "Grandes sumas de dinero involucradas en estafas o inversiones"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "[Cómo] [Lograr Gran Cantidad] de [Tarea] con [IA]",
-        "La mejor [Herramienta/App] de IA para [Beneficio Específico]",
-        "[Beneficio Instantáneo] gracias a [Tecnología IA]"
+        "Tutorial Cuantificable sobre Cómo Realizar una Gran Cantidad de Tareas con IA (e.g., '100 videos/hora')",
+        "Presentación de la 'Mejor Herramienta de IA' para Resolver un Problema Específico",
+        "Demostración de Funcionalidades Clave de una IA para Mejorar la Productividad"
       ],
       "topics": [
-        "Automatización y eficiencia con IA",
-        "Herramientas de IA para creación de contenido/texto",
-        "Productividad con ayuda de IA"
+        "Creación de contenido asistida por IA (videos, textos)",
+        "Herramientas de IA para optimizar el trabajo (gratuitas, específicas)",
+        "Humanización de textos/contenidos generados por IA"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "Ellie's Coin Jar A Lesson on Saving Money #shorts",
-      "views": 566843656,
+      "views": 566843804,
       "id": "UspZIrwaP1M"
     },
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 74917757,
+      "views": 74921729,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 73563171,
+      "views": 73592676,
       "id": "qEBPaKp0kKA"
     },
     {
       "titulo": "Genius Marketing Strategy by Zomato😬 #shorts #marketing #zomato",
-      "views": 65096790,
+      "views": 65096820,
       "id": "wJ1-eR_hAV0"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 59969580,
+      "views": 59987577,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44396705,
+      "views": 44397027,
       "id": "qrfrPlEGrdw"
     },
     {
       "titulo": "JUNIOR en LAVA 🔥 #lava #filtro #viral #junior #fuego #aliens #shorts #short #funny",
-      "views": 43251652,
+      "views": 43252169,
       "id": "LtYzjl5w-YY"
     },
     {
       "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42267071,
+      "views": 42267174,
       "id": "IKXiyApvKjI"
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 38670788,
+      "views": 38681137,
       "id": "59AAoa8l064"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38158988,
+      "views": 38179901,
       "id": "dp2WHA1oZnQ"
     },
     {
-      "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
-      "views": 9928340,
-      "id": "GITF0gO6W3Q"
+      "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
+      "views": 15379118,
+      "id": "gDn_SQU6YZE"
     },
     {
-      "titulo": "Les juegan una BROMA a los tiburones 😂 #SharkTankMx #Shorts",
-      "views": 7824884,
-      "id": "dtZMxMNKl-s"
+      "titulo": "Top 3 Creative TV Ads 😎 | Marketing | #mangeshshinde #shorts",
+      "views": 8496809,
+      "id": "RabWLuxUzbw"
     },
     {
       "titulo": "✅ Como Hacer 100 Videos - Hora Con Esta INTELIGENCIA ARTIFICIAL *Gratis*",
-      "views": 261546,
+      "views": 261751,
       "id": "FaTwnb2Cz_U"
     },
     {
       "titulo": "La mejor herramienta para humanizar tus textos es Bypass AI #shorts",
-      "views": 188462,
+      "views": 188475,
       "id": "6Cp0mADlFK0"
     }
   ],
