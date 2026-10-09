@@ -1,37 +1,38 @@
 {
   "updated": "2026-10-09",
-  "iteracion": 468,
+  "iteracion": 469,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "productividad_ia": 0.15,
-    "negocios_digitales": 0.05,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "productividad_ia": 0.1,
     "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.02,
     "cripto_inversiones": 0.02,
-    "entretenimiento": 0.02,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia] ha comenzado!",
-    "Con solo [edad] años, [nombre] [logro/noticia impactante]",
-    "[Evento/Situación] que sacude [Región/Comunidad] hoy ⚽",
-    "[Entidad/País] [Verbo en pasado/Situación impactante]? 🤯",
-    "[Lugar] hoy: [Tragedia/Noticia urgente] que [Verbo Impactante]",
-    "[Entidad]: ¡[Situación Impactante]! 😱🔥"
+    "¡Atención! La noticia que cambia todo [Evento/Figura clave]...",
+    "¿[Pregunta Controversial]?",
+    "¡[Hecho Impactante] en [Lugar/Evento]!",
+    "Con solo [Edad/Dato sorprendente], [Nombre] [Logro inesperado]...",
+    "La verdad sobre [Tema candente] que nadie te ha contado...",
+    "¡URGENTE! [Situación crítica] en [Contexto específico]..."
   ],
   "avoid_hooks": [
-    "Resultados deportivos planos: '([Equipo A] [Score A]-[Score B] [Equipo B]) sin emoción o contexto'",
-    "Introducciones genéricas sin gancho fuerte: '[Nombre] acaba de [acción]' sin un impacto claro o emoción",
-    "Afirmaciones descriptivas sin intriga: 'X y Y empatan' sin una pregunta, exclamación, o sorpresa"
+    "Hooks que revelan la información completa o el desenlace al inicio (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks genéricos, incompletos o que carecen de contexto inmediato (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks puramente fácticos sin emoción, intriga o sentido de urgencia"
   ],
   "best_hora": 16,
-  "duracion_optima": "No hay datos suficientes para determinar la duración óptima.",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Maximizar el contenido dentro de la categoría `ia_noticias` que trate sobre deportes de alto interés (especialmente fútbol con enfoque LATAM), tragedias o celebridades, ya que estas temáticas generan el 100% de los videos más vistos, a pesar del bajo promedio general del nicho.",
-    "Priorizar títulos que incluyan nombres de países, equipos, figuras públicas o ubicaciones geográficas específicas (ej. 'ARGENTINA', 'COLOMBIA', 'SHAKIRA', 'LIGA MX') combinados con palabras de alto impacto emocional (🤯, 😱, 🔥, ¡SHOCK!) para generar intriga y urgencia.",
-    "Aprovechar las horas de publicación identificadas como pico de rendimiento, especialmente las 16 y 21 horas, que han demostrado consistentemente alcanzar los mayores picos de vistas entre los videos de mayor éxito."
+    "Concentrar esfuerzos en el nicho `ia_noticias`, ya que es el único que ha demostrado capacidad para generar picos de viralidad extrema, ocupando el 100% del Top 10 de videos con más vistas.",
+    "Optimizar los títulos para incluir preguntas controversiales, exclamaciones de shock y referencias geográficas o a figuras clave (ej. 'ARGENTINA', 'COLOMBIA', 'SHAKIRA') para capitalizar la curiosidad y la emoción, un patrón presente en el 80% de los videos top.",
+    "Mantener la publicación de contenido de alto potencial entre la `hora 16` y `hora 1` para maximizar la visibilidad, siendo la `hora 16` la que tiene el pico de vistas más alto de un solo video en el Top 10 (1298 views) y la `hora 1` la que agrupa la mayor cantidad de videos top (3 videos).",
+    "Integrar hooks que generen anticipación, resalten logros sorprendentes o empleen un estilo noticioso directo para captar la atención inicial, evitando hooks que revelen la información clave de inmediato o sean demasiado genéricos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el generador exclusivo de los videos más vistos (100% del Top 10), demostrando una capacidad de viralidad inigualable para noticias de alto impacto, tragedias o eventos deportivos específicos, a pesar de que su promedio de vistas general es de solo 28. Esto lo contrasta con `mundial_2026`, que tiene un promedio de vistas superior (258) pero sin picos virales en este conjunto de datos."
+  "insight_semana": "El nicho `ia_noticias` exhibe un patrón de 'todo o nada', siendo la única categoría capaz de generar videos virales y ocupar el 100% del Top 10, a pesar de tener un bajo promedio de vistas (37), lo que indica que se beneficia de un enfoque de contenido de alto riesgo y alta recompensa. Por otro lado, `mundial_2026` (bajo el paraguas de `deportes`) ofrece un rendimiento promedio más alto y consistente (258 vistas) y la mejor tendencia (867.0), pero sin lograr picos de viralidad individuales en esta iteración."
 }
