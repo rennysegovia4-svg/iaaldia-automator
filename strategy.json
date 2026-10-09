@@ -1,39 +1,38 @@
 {
   "updated": "2026-10-09",
-  "iteracion": 474,
+  "iteracion": 475,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.5,
-    "finanzas": 0.02,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "productividad": 0.1,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.08,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia/Expectativa: '¡Se acabó la espera! ¡El'",
-    "Figura/Evento Destacado: 'Con solo 17 años, Lamine'",
-    "Saludo Directo de Noticias: 'Muy buenas tardes. Bienvenidos a'",
-    "Pregunta de Intriga + Emoji de Sorpresa: '¿FINAL ENTREGADA? 🤯'",
-    "Noticia Impactante + Emoji de Shock: '¡Gamezking ELIMINADO! 😱'",
-    "Evento Crítico + Localidad + Impacto: 'Terremoto devastador en Colombia...'"
+    "Pregunta Abierta + Emoji de Sorpresa/Impacto (🤯, 😱)",
+    "Noticia Controversial/Impactante + Emoji (😱, 🤯)",
+    "Declaración de Urgencia/Inminencia (ej. '¡Se acabó la espera!', 'HOY')",
+    "Detalle Específico y Sorprendente (ej. 'Con solo 17 años, Lamine', 'Terremoto devastador')",
+    "Introducción de Noticiero con Tono Dramático (ej. 'Muy buenas tardes. Bienvenidos a')",
+    "Mencionar Evento/Sujeto + SHOCK/ALERTA/TRAGEDIA"
   ],
   "avoid_hooks": [
-    "Demasiado Descriptivo y Sin Intriga (resultados de partidos): 'Brasil y Noruega empatan 0-0'",
-    "Vago y Sin Contexto de Impacto: 'Brasil y Noruega empatan'",
-    "Nombres Poco Conocidos sin Contexto de Shock: 'Sidny Lopes Cabral acaba de'"
+    "Resultados deportivos directos y sin dramatismo (ej. 'X vs Y empatan 0-0')",
+    "Frases incompletas o vagas que no generan intriga ('Sidny Lopes Cabral acaba de')",
+    "Afirmaciones obvias o sin gancho claro"
   ],
   "best_hora": 16,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de la categoría `ia_noticias` (50% de los esfuerzos), ya que concentra la totalidad del TOP 10 de videos más vistos, incluyendo noticias deportivas y de desastres.",
-    "Asegurar que los títulos y ganchos incorporen intriga mediante preguntas directas y el uso de emojis de sorpresa/shock (🤯, 😱) para maximizar la curiosidad del espectador.",
-    "Experimentar con la publicación de contenido de alto potencial alrededor de las 16 horas, ya que este horario ha demostrado el promedio de vistas más alto (1298) para un video top, aunque con menor frecuencia que otras franjas.",
-    "Aunque el nicho `mundial_2026` (bajo `deportes`) muestra volatilidad, su alto `trend` (867.0) justifica continuar explorándolo, enfocándose en eventos de alto impacto, controversia o resultados inesperados, y evitando informes de partidos con poca acción (ej. empates 0-0).",
-    "Diversificar temas dentro de `ia_noticias` para incluir noticias de desastres o eventos de gran impacto social, dado el éxito del video 'Terremoto devastador en Colombia' (1244 views), demostrando que el interés no se limita a deportes."
+    "Priorizar la creación de contenido bajo el formato 'ia_noticias', centrándose en temas de alta repercusión en deportes (especialmente con controversias o giros dramáticos del Mundial 2026) y eventos noticiosos generales con impacto (terremotos, crisis).",
+    "Optimizar la publicación de videos para el horario de las 16:00, que ha mostrado el mayor rendimiento promedio individual en el Top 10 (1298 views), y considerar probar las 1:00 AM para aumentar la frecuencia de intentos exitosos.",
+    "Enfocarse en la construcción de títulos y hooks que generen intriga, sorpresa o urgencia, utilizando preguntas abiertas, emojis de impacto (🤯, 😱) y frases que denoten inminencia o shock, siguiendo los patrones de los videos más vistos.",
+    "Evitar rigurosamente hooks que presenten resultados deportivos directos sin un ángulo dramático o que sean frases incompletas/vagas, ya que estos patrones están directamente asociados a videos con 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside en la capacidad de generar 'noticias de impacto' bajo la categoría `ia_noticias`, ya sean deportivas o de eventos críticos, empleando títulos y ganchos que exploten la curiosidad y el shock. La identificación de la 'hora dorada' de las 16:00, aunque con menos volumen de videos, indica un momento de potencial viralidad máxima."
+  "insight_semana": "La clave del éxito reside en aplicar la narrativa de 'noticia de impacto/controversia' (ia_noticias) a temas de alta repercusión, especialmente en deportes (Mundial 2026) y eventos de actualidad, transformando hechos en relatos dramáticos que eviten la trivialidad de resultados o datos sin gancho, como lo demuestran todos los videos del Top 10."
 }
