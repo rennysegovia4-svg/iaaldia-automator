@@ -1,39 +1,39 @@
 {
   "updated": "2026-10-09",
-  "iteracion": 471,
+  "iteracion": 472,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.4,
-    "productividad": 0.08,
-    "negocios": 0.02,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "finanzas": 0.06,
+    "entretenimiento": 0.06,
+    "negocios_digitales": 0.06,
+    "productividad_ia": 0.06,
+    "cripto_inversiones": 0.06,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta provocadora con emoji de shock y potencial de serie (ej. \"¿FINAL ENTREGADA? 🤯 (1/2)\")",
-    "Noticia de impacto o desastre con cifras dramáticas (ej. \"Terremoto devastador... 132 muertos\")",
-    "Noticia deportiva de shock o urgencia con exclamación/emoji (ej. \"¡Gamezking ELIMINADO! 😱\")",
-    "Exclamación de expectativa o anuncio urgente (ej. \"¡Se acabó la espera!\")",
-    "Noticia de urgencia/escasez con exclamaciones de impacto (ej. \"¡Se Agotan! 😱🔥\")",
-    "Presentación de un hecho sorprendente/logro con dato específico (ej. \"Con solo 17 años, Lamine\")"
+    "Fórmula de Urgencia y Anticipación: Inicios como '¡Se acabó la espera! ¡El...' o que enfaticen 'HOY' para crear expectativa.",
+    "Fórmula de Dato/Cifra Impactante con Sujeto Específico: Mencionando edad, cantidad o nombre para generar sorpresa (Ej. 'Con solo 17 años, Lamine', '132 muertos').",
+    "Fórmula de Noticia Directa y Formal: Inicios como 'Muy buenas tardes. Bienvenidos a...' para presentar información clave.",
+    "Fórmula de Pregunta Controversial con Emoticono de Shock: Generar intriga sobre un evento o decisión (Ej. 'ARGENTINA ENTREGÓ la Final...? 🤯', '¿ES FRAUDE? ⚡').",
+    "Fórmula de Evento de Alto Impacto con Nombre/Tema Clave y Emoticono: Destacar una noticia importante con un sujeto claro (Ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱').",
+    "Fórmula de Alerta de Situación Crítica/Tragedia: Anunciar noticias serias o desastres naturales (Ej. 'Terremoto devastador en Colombia...', 'Temblor hoy...')."
   ],
   "avoid_hooks": [
-    "Descripciones planas de resultados o eventos sin emoción (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks incompletos o que no generan curiosidad inmediata (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Mención de un hecho sin contextualización ni impacto aparente (ej. \"Brasil y Noruega empatan\")"
+    "Hooks puramente descriptivos de resultados: Aquellos que solo informan un suceso sin añadir intriga o emoción (ej., 'Brasil y Noruega empatan 0-0').",
+    "Hooks que inician con un nombre propio sin contexto: Presentar un personaje sin explicar inmediatamente su relevancia o el impacto de su acción (ej., 'Sidny Lopes Cabral acaba de').",
+    "Hooks planos o genéricos: Frases que no generan curiosidad, urgencia o una reacción emocional."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias`, enfocándose en noticias deportivas de alto impacto (especialmente fútbol) y eventos noticiosos de gran envergadura (como desastres naturales o noticias de celebridades con urgencia).",
-    "Optimizar los títulos y los ganchos iniciales utilizando preguntas provocadoras, exclamaciones de sorpresa/shock (🤯, 😱, 🔥) y, si aplica, indicar continuaciones (Parte 1/2) para generar intriga y fomentar la retención.",
-    "Concentrar la publicación de los videos clave en la `hora 1` (AM), ya que se ha demostrado ser el horario de mayor potencial de viralidad, albergando el video más visto y la mayor cantidad de videos en el Top 10."
+    "Priorizar el nicho `ia_noticias` enfocándose en noticias deportivas (especialmente fútbol, controversias de mundiales) y desastres naturales, dada su alta viralidad y dominio en el Top 10.",
+    "Implementar títulos con ganchos de intriga y el uso de indicadores de series o continuaciones ('(PARTE 1)', '(1/2)') para fomentar la retención y la visualización de contenido relacionado.",
+    "Evitar completamente hooks que sean meramente descriptivos o carezcan de emoción e intriga, ya que tienen una correlación directa con 0 vistas.",
+    "Explorar con precaución el nicho `deportes` (sub-nicho `mundial_2026`) por su alto potencial de vistas y `trend`, pero balanceando el riesgo inherente de bajo rendimiento, asegurando hooks de alta calidad.",
+    "Experimentar con los horarios de publicación que han demostrado ser efectivos en el Top 10, prestando especial atención a las franjas de 1 AM, 6 AM y 5 PM."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave para la viralidad reside en el nicho `ia_noticias`, específicamente con contenido deportivo de alto impacto o noticias de desastres, utilizando títulos que generen intriga y shock, y publicando consistentemente en la hora 1."
+  "insight_semana": "La extrema polaridad del nicho `mundial_2026` (bajo `deportes`), que genera el `avg_views` más alto y un `trend` excepcional (867.0), pero también es responsable de 3 de los 5 videos con 0 vistas, sugiere una estrategia de contenido de alto riesgo/alta recompensa que requiere una ejecución muy precisa del hook y el tema para ser exitosa."
 }
