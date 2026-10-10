@@ -1,39 +1,37 @@
 {
   "updated": "2026-10-10",
-  "iteracion": 481,
+  "iteracion": 482,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.65,
+    "deportes": 0.4,
     "ia_noticias": 0.35,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "finanzas": 0.03,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Inicio directo y enérgico: '¡Se acabó la espera! ¡El...' (promedio 867 views)",
-    "Mencionar logros o figuras jóvenes relevantes: 'Con solo 17 años, Lamine...' (promedio 740 views)",
-    "Saludo formal y acogedor: 'Muy buenas tardes. Bienvenidos a...' (promedio 375 views)",
-    "Pregunta retórica polémica que genera intriga: '¿[Hecho polémico]? 🤯'",
-    "Noticia de alto impacto con exclamaciones de sorpresa: '[Noticia urgente] ¡SHOCK! 😱'",
-    "Referencia a eventos actuales y específicos de una ubicación: '[Evento catastrófico] en [lugar]: [impacto]'"
+    "¡[Evento inminente/escasez]! [Verbo de impacto]!",
+    "¿[Pregunta controversial/impactante]? 🤯",
+    "[Noticia de gran escala]: [Consecuencia numérica] y [Impacto]",
+    "[Noticia/Evento] que sacude [Región/Audiencia] hoy ⚽/🔥",
+    "¡[SUCESO CLAVE]! ¡[Reacción intensa]! 😱",
+    "Con [Detalle sorprendente], [Sujeto] [Acción clave]"
   ],
   "avoid_hooks": [
-    "Hooks que solo describen el resultado de forma plana: 'X vs Y empatan Z-Z'",
-    "Hooks que mencionan nombres poco conocidos sin contexto o intriga: '[Nombre] acaba de...'",
-    "Hooks demasiado descriptivos y sin elementos emocionales o de misterio"
+    "Declaraciones puramente fácticas sin gancho emocional o de urgencia (ej. 'X empata Y 0-0')",
+    "Información redundante que ya se deduce del título o contexto (ej. 'X empata')",
+    "Inicios con nombres propios poco conocidos sin contexto intrigante (ej. 'Nombre acaba de...')"
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 16,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', enfocándose en temas de alta viralidad como el 'Mundial 2026' y noticias relacionadas con 'Argentina', dado su 'score' de 8.814 y 'trend' de 867.0.",
-    "Mantener una fuerte presencia en 'ia_noticias' para cubrir eventos de alto impacto y actualidad (desastres naturales, noticias de celebridades), ya que sus videos representan la mayoría de los más vistos a pesar de un 'avg_views' general bajo.",
-    "Diseñar hooks que capturen la atención de forma inmediata, utilizando preguntas polémicas, exclamaciones de sorpresa (🤯, 😱) y un lenguaje que genere urgencia o misterio, siguiendo los patrones de los hooks más efectivos.",
-    "Evitar a toda costa los hooks que son meramente descriptivos o que no presentan un claro 'gancho' emocional o de misterio, como los identificados con 0 views ('Brasil y Noruega empatan').",
-    "Experimentar con la publicación de contenido en series (ej. 'PARTE 1', '1/2') para temas complejos o de alto interés, capitalizando la tendencia observada en 3 de los 10 títulos con más vistas."
+    "Prioriza el contenido noticioso de alto impacto y urgencia, con fuerte énfasis en deportes controversiales (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?') y desastres naturales con cifras alarmantes, todos bajo la categoría `ia_noticias` que ha demostrado el mayor potencial viral.",
+    "Implementa títulos que generen intriga mediante preguntas con emojis de sorpresa (🤯, 😱) y que incluyan indicadores de serie ('PARTE 1', '1/2') para fomentar la retención y el seguimiento de temas complejos.",
+    "Asegura que los hooks iniciales (primeros 3-5 segundos) creen una sensación de urgencia, intriga por un detalle sorprendente o una declaración impactante, evitando aperturas genéricas o puramente descriptivas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La combinación de capitalizar eventos deportivos masivos y altamente trending (como el 'Mundial 2026') con hooks que generan controversia, sorpresa o urgencia, es el motor principal de views para el canal, demostrando que la inmediatez y el impacto emocional son claves sobre la constancia general del nicho."
+  "insight_semana": "El nicho `ia_noticias` exhibe un patrón de rendimiento bimodal: aunque su promedio de vistas es bajo (29), todos los videos del TOP 10 pertenecen a esta categoría, indicando un potencial de viralidad excepcionalmente alto para noticias específicas de alto impacto (ej. controversias deportivas, desastres, celebridades) que eclipsa su rendimiento general."
 }
