@@ -1,205 +1,203 @@
 {
   "updated": "2026-10-10",
   "hook_formulas": [
-    "[[Situación Relatable]] + [[Reacción Emocional/Humorística]]",
-    "[[Afirmación Impactante]] + [[Emoji de Shock/Cuestionamiento]]",
-    "Pregunta Retórica/Directa + [[Emoji de Curiosidad/Reflexión]]",
-    "[[Contraste Fuerte/Dilema]] + [[Elementos en Conflicto]]",
-    "[[Beneficio Impactante]] + [[Herramienta/Método]] + [[Adjetivo de Acceso]]",
-    "[[Evento/Persona Inesperada]] + [[Acción Sorprendente]]",
-    "[[Declaración Audaz]] + [[Consecuencia/Necesidad]]",
-    "[[Skepticismo]] + [[Prueba/Verificación]]",
-    "[[Tema Actual/Tendencia]] + [[Acción Relacionada]]",
-    "[[Figura de Autoridad/Controversial]] + [[Opinión/Declaración]]",
-    "[[Problema Común]] + [[Explicación/Solución]]",
-    "[[Idea de Negocio Específica]] + \"business idea💡\""
+    "[[Concepto/Sujeto A]] Vs [[Concepto/Sujeto B]] para generar contraste (ej. Real Life Vs AI)",
+    "[[Situación Relatable]] + [[Desenlace Humorístico/Exagerado]] (ej. Mis sueños cuando me como toda la olla de frijoles)",
+    "[[Afirmación Sorprendente]] + [[Emoji de Shock/Cuestionamiento]] para generar intriga (ej. A.I. is getting way too Realistic 💀😂)",
+    "[[Pregunta Retórica o Directa]] + [[Emoji de Curiosidad/Reflexión]] para iniciar un debate (ej. ¿Así Son Los Negocios? 🧐💼)",
+    "[[Evento Inesperado]] + [[Acción Destructiva/Sorprendente]] (ej. Baby destroys Walmart! 😂)",
+    "[[Declaración Audaz/Necesidad]] + [[Resultado o Consecuencia Directa]] (ej. ¡Ahorrar No Es Suficiente! Hay Que Invertir)",
+    "[[Escepticismo sobre un Producto/Método]] + [[Propuesta de Prueba/Verificación]] (ej. CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA)",
+    "[[Comedia de Situación Familiar]] + [[Reacción Emocional Inesperada]] (ej. Mamá quería ahorrar 🙈🤭)",
+    "[[Fragmento de Película/Serie]] + [[Mensaje Motivacional/Relacionado]] (ej. Puedes Lograrlo - Nemo)",
+    "[[Revelación de Habilidad Inusual]] + [[Sujeto Inesperado]] (ej. Esta inteligencia artificial hace magia con tus dibujos)",
+    "[[Problema Común de Negocio]] + [[Pregunta Directa sobre Solución]] (ej. ¿Tu Negocio No Vende? 🧐)",
+    "[[Demostración Rápida de Herramienta/Método]] + [[Beneficio Impactante]] (ej. Free Text to Speech - AI voice from Script)"
   ],
   "title_patterns": [
-    "[[Sujeto/Concepto]] + Vs + [[Sujeto/Concepto]]",
-    "[[Afirmación/Exclamación]] + [[Emoji Humor/Shock]]",
-    "Pregunta Directa/Retórica + [[Emoji de Curiosidad]]",
-    "[[Sujeto Sorprendente]] + [[Acción Dramática/Inesperada]]",
-    "[[Adjetivo Superlativo]] + [[Sujeto]] + [[Beneficio/Acción]]",
-    "[[POV/Escenario]] + [[Consecuencia/Dilema]]",
-    "[[Sujeto]] + [[Comentario/Explicación]]",
-    "[[Cantidad/Logro Impresionante]] + [[Descripción]]"
+    "[[Concepto/Sujeto]] + 'Vs' + [[Concepto/Sujeto]] + [[Parte/Número Opcional]] (ej. Real Life Vs AI. Part 14)",
+    "[[Afirmación de Cualidad Extrema]] + [[Emoji de Reacción Mixta]] + [[Call to Action opcional]] (ej. A.I. is getting way too Realistic 💀😂 ( Watch till the end ))",
+    "[[Situación Personal/Relatable]] + [[Resultado Humorístico]] + [[Emoji de Risa/Humor]] (ej. Mis sueños cuando me como toda la olla de frijoles 🤣)",
+    "[[Sujeto Inesperado]] + [[Verbo Fuerte]] + [[Lugar/Objeto]] + [[Emoji de Humor]] (ej. Baby destroys Walmart! 😂)",
+    "[[Pregunta Directa/Retórica]] + [[Tema de Negocio/Finanzas]] + [[Emoji de Reflexión/Investigación]] (ej. ¿Así Son Los Negocios? 🧐💼)",
+    "[[Personaje/Concepto Familiar]] + [[Verbo/Acción]] + [[Motivación/Emoción]] + [[Emoji de Reacción]] (ej. Mamá quería ahorrar 🙈🤭)",
+    "[[Producto/Idea]] + [[Pregunta de Veracidad/Efectividad]] + [[Call to Action de Prueba]] (ej. CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA)",
+    "[[Declaración de Necesidad/Importancia]] + [[Acción Clave]] + [[Emojis de Finanzas/Crecimiento]] (ej. ¡Ahorrar No Es Suficiente! Hay Que Invertir 📈💰)"
   ],
   "palabras_prohibidas": [
-    "Tutorial",
-    "Guía completa",
-    "Lección",
-    "Introducción a",
-    "Explicación detallada",
-    "Análisis profundo",
-    "Paso a paso",
-    "Conferencia sobre",
-    "Webinar",
-    "Demostración técnica"
+    "tutorial",
+    "completo",
+    "explicación",
+    "guía",
+    "detalles",
+    "información",
+    "presentación",
+    "documental",
+    "paso a paso",
+    "clase"
   ],
   "palabras_clave_virales": [
-    "shorts",
-    "ai",
-    "inteligencia artificial",
+    "AI",
+    "IA",
     "humor",
     "funny",
     "comedia",
     "viral",
+    "trending",
     "ahorrar",
     "ahorro",
+    "emprendedor",
     "negocios",
-    "business idea",
-    "invertir",
-    "inversiones",
-    "crypto",
     "tiktokvideo",
+    "latina",
     "fyp",
-    "mamá",
-    "scam",
-    "gratis",
-    "free",
-    "vs",
-    "memes"
+    "memes",
+    "baby",
+    "dinero",
+    "wow",
+    "bitcoin",
+    "inteligenciaartificial"
   ],
-  "estructura_gancho_optima": "Una afirmación o pregunta impactante que genera curiosidad, emoción (humor, shock, miedo) o una promesa de valor inmediato, a menudo presentando un contraste o un escenario extremo.",
+  "estructura_gancho_optima": "Un visual o sonido impactante y emocionalmente cargado (sorpresa, risa, asombro) en los primeros 1-3 segundos, complementado por un título que plantea una pregunta intrigante, una afirmación sorprendente o una situación relatable con un giro humorístico/inesperado. El objetivo es generar una conexión emocional instantánea y el deseo de ver el desenlace.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "La virality no solo reside en la temática, sino en la capacidad del título y los primeros segundos para generar una fuerte disonancia cognitiva o una pregunta sin respuesta inmediata, obligando al espectador a quedarse para resolver esa intriga, ya sea a través de humor relatable, escenarios extremos o contrastes inesperados.",
-  "recomendacion_thumbnail": "Un frame impactante del video que capture el pico emocional (humor, shock, curiosidad) o el contraste central del contenido. Debe ser visualmente exagerado o contener elementos inesperados. La inclusión de un texto superpuesto breve y un emoji relevante puede reforzar el gancho del título.",
+  "insight_clave": "La viralidad extrema en YouTube Shorts se logra al provocar una fuerte reacción emocional (humor, asombro, shock, identificación) en los primeros segundos del video, a menudo mediante el uso de contrastes visuales impactantes (ej. IA vs. Real), situaciones hiper-relatables o la anticipación de un desenlace inesperado, todo ello empaquetado en un formato ultra-conciso que incentiva la repetición y el compartir.",
+  "recomendacion_thumbnail": "El thumbnail debe ser una captura del punto culminante visualmente más impactante o emotivo del Short (ej. un rostro con una expresión exagerada, un contraste dramático, un objeto inesperado), diseñado para intrigar o reflejar el humor del título, y siempre debe complementar los emojis utilizados en este para reforzar la expectativa.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "[[Situación Real]] vs [[AI Inesperada]]",
-        "[[AI Hace Algo Demasiado Real/Sorprendente]] + [[Emoji Shock/Humor]]",
-        "[[POV/Escenario]] + [[Consecuencia de IA]]"
+        "Contraste visual entre la realidad y la creación de IA",
+        "Afirmación impactante sobre la capacidad de la IA + Emoji de shock",
+        "Situación humorística o meme donde la IA es el catalizador"
       ],
       "topics": [
-        "Realismo y Capacidad de la IA",
-        "Humor y Escenarios Absurdos con IA",
-        "El Futuro y los Dilemas de la IA"
+        "Comparación de imágenes/videos generados por IA vs. realidad",
+        "Capacidades sorprendentes y realismo de la IA",
+        "Memes y humor usando IA en contextos cotidianos"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Pregunta Intriga sobre [[Concepto Financiero]]",
-        "[[Situación Familiar]] + [[Humor sobre Ahorro]]",
-        "Declaración Audaz/Contraria a la Creencia Común sobre [[Finanzas]]"
+        "Pregunta retórica sobre finanzas/negocios que desafía la percepción",
+        "Situación familiar o personal relatable con humor sobre el ahorro",
+        "Desafío o puesta a prueba de un método/producto financiero"
       ],
       "topics": [
-        "Ahorro y sus Dilemas/Humor",
-        "Inversiones y Comparación con Ahorro",
-        "Consejos Prácticos (negocios, hipotecas)"
+        "Humor y situaciones cotidianas relacionadas con el ahorro de dinero",
+        "Consejos y estrategias de inversión frente al ahorro simple",
+        "La realidad y los desafíos del emprendimiento y los negocios"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "[[Idea de Negocio Específica]] + \"business idea💡\"",
-        "Pregunta Problema Común de [[Negocio]]",
-        "[[Evento/Empresa]] + [[Hecho Sorprendente/Explicación]]"
+        "Presentación de una idea de negocio inusual o 'side gig' visualmente atractiva",
+        "Anécdota o broma impactante sobre marketing o negociación",
+        "Pregunta directa que aborda un problema común en los negocios"
       ],
       "topics": [
-        "Ideas de Negocio (específicas o generales)",
-        "Problemas y Soluciones en Negocios",
-        "Historias y Explicaciones de Empresas/Scams"
+        "Ideas de negocios innovadoras y poco convencionales",
+        "Ejemplos del poder del marketing o tácticas de venta",
+        "Lecciones o parodias de programas de emprendimiento/negocios"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "[[Escenario Extremo/Dramático]] con Cripto/Metaverso",
-        "[[Figura de Autoridad]] Dice [[Algo sobre Cripto]]",
-        "Advertencia/Consejo sobre [[Inversión en Cripto]]"
+        "Contraste humorístico o situación inesperada (ej. sin IA vs. con IA)",
+        "Mensaje motivacional o cita inspiradora aplicada a la vida/finanzas",
+        "Declaración impactante de una figura relevante en el mundo cripto"
       ],
       "topics": [
-        "Estafas y Riesgos en Cripto",
-        "Predicciones y el Futuro de las Cripto",
-        "Consejos de Inversión y Trading"
+        "Humor y situaciones sorprendentes con un toque de cripto/inversiones",
+        "Motivación personal y filosofías de vida (a menudo asociadas a figuras)",
+        "Noticias o perspectivas sobre el futuro de las criptomonedas"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "[[Beneficio Impactante]] + [[IA/Herramienta]] + \"GRATIS\"",
-        "\"Cómo Hacer [[Cantidad]] [[Acción]] con [[IA]] *Gratis*\"",
-        "\"[[Adjetivo Superlativo]] Herramienta para [[Tarea Específica con IA]]\""
+        "Promesa de acceso 'gratis' o 'definitivo' a una herramienta de IA",
+        "Demostración de cómo una IA realiza una tarea de creación compleja",
+        "Muestra de un beneficio clave de una herramienta de IA (ej. humanizar textos)"
       ],
       "topics": [
-        "Herramientas de IA Gratuitas",
-        "Productividad y Automatización con IA",
-        "Creación de Contenido con IA (música, video, texto)"
+        "Herramientas de IA para generación de contenido (voz, música, video)",
+        "Métodos para escalar la creación de contenido con IA",
+        "Funcionalidades específicas de IA para mejorar la productividad"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 74967655,
+      "views": 74992493,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 73807939,
+      "views": 73872581,
       "id": "qEBPaKp0kKA"
     },
     {
+      "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
+      "views": 60150890,
+      "id": "QYxtNplarhA"
+    },
+    {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 54514286,
+      "views": 54548097,
       "id": "6ms51abwU5A"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44399753,
+      "views": 44400489,
       "id": "qrfrPlEGrdw"
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 38746620,
+      "views": 38760305,
       "id": "59AAoa8l064"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38288237,
+      "views": 38307552,
       "id": "dp2WHA1oZnQ"
     },
     {
-      "titulo": "¿Qué Camino Tomarías Tú? 🛣️ #Ahorro #Finanzas #Inversiones #InterésCompuesto #Invertir #Shorts",
-      "views": 38135943,
-      "id": "t4JnOP6atKs"
+      "titulo": "Ahorrar es progreso 🤣💕 #shorts #humor #tiktokvideo #latina #comedia #funny #fyp",
+      "views": 30743836,
+      "id": "PcxIHhWHuKY"
     },
     {
       "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23411910,
+      "views": 23413354,
       "id": "D53HF_okHi8"
     },
     {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15381019,
+      "views": 15381716,
       "id": "gDn_SQU6YZE"
     },
     {
-      "titulo": "Man Lives In The Metaverse FULL TIME?! #shorts",
-      "views": 14453592,
-      "id": "hmGIxJr_uj8"
+      "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
+      "views": 9929614,
+      "id": "GITF0gO6W3Q"
     },
     {
       "titulo": "Business ideas of Kalyug 🗿😂 | Kuldeep Singhaniaa #shorts",
-      "views": 8670998,
+      "views": 8674423,
       "id": "7T4i43Oxzy8"
     },
     {
-      "titulo": "Les juegan una BROMA a los tiburones 😂 #SharkTankMx #Shorts",
-      "views": 7827471,
-      "id": "dtZMxMNKl-s"
-    },
-    {
       "titulo": "🔥Free Text to Speech - AI voice from Script #ai #aitools #shorts #texttospeech",
-      "views": 2421716,
+      "views": 2429250,
       "id": "jKUzVNCSiY8"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 559579,
+      "views": 559843,
       "id": "14URUL4nBkA"
     },
     {
       "titulo": "✅ Como Hacer 100 Videos - Hora Con Esta INTELIGENCIA ARTIFICIAL *Gratis*",
-      "views": 262622,
+      "views": 262874,
       "id": "FaTwnb2Cz_U"
     }
   ],
