@@ -1,38 +1,39 @@
 {
-  "updated": "2026-10-09",
-  "iteracion": 475,
+  "updated": "2026-10-10",
+  "iteracion": 476,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
+    "deportes": 0.5,
+    "ia_noticias": 0.2,
     "productividad": 0.1,
-    "entretenimiento": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
+    "entretenimiento": 0.08,
+    "finanzas": 0.04,
+    "negocios_digitales": 0.04,
     "cripto_inversiones": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta Abierta + Emoji de Sorpresa/Impacto (🤯, 😱)",
-    "Noticia Controversial/Impactante + Emoji (😱, 🤯)",
-    "Declaración de Urgencia/Inminencia (ej. '¡Se acabó la espera!', 'HOY')",
-    "Detalle Específico y Sorprendente (ej. 'Con solo 17 años, Lamine', 'Terremoto devastador')",
-    "Introducción de Noticiero con Tono Dramático (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "Mencionar Evento/Sujeto + SHOCK/ALERTA/TRAGEDIA"
+    "Controversia/Conspiración Deportiva + Emoji: ¿[Evento/País] ENTREGÓ [Resultado]? 🤯",
+    "Noticia de Gran Impacto (desastre, deporte) + Cantidad/Lugar: [Catástrofe] devastador en [Lugar]: [Número] muertos",
+    "Noticia Deportiva Urgente/Inesperada + Emoji: [Noticia deportiva] que sacude [Lugar] hoy ⚽",
+    "Evento con Agotamiento/Alta Demanda + Emoji: [Producto/Entrada] [Celebridad/Evento] ¡Se Agotan! 😱🔥",
+    "Noticia de Transferencia/Cambio Mayor con Consecuencia y Emoji: [Entidad] SE VENDE HOY: ¿Adiós a [Consecuencia]? 😱",
+    "Titular Dramático de Eliminación/Sanción + Emoji: ¡[Personaje/Equipo] ELIMINADO/SANCIONADO! 😱"
   ],
   "avoid_hooks": [
-    "Resultados deportivos directos y sin dramatismo (ej. 'X vs Y empatan 0-0')",
-    "Frases incompletas o vagas que no generan intriga ('Sidny Lopes Cabral acaba de')",
-    "Afirmaciones obvias o sin gancho claro"
+    "Resultado predecible/sin emoción: Evitar hooks que solo anuncian un resultado neutral (ej. 'Brasil y Noruega empatan 0-0').",
+    "Frases incompletas/vagas: Evitar hooks que no cierran una idea o no transmiten el impacto completo (ej. 'Sidny Lopes Cabral acaba de').",
+    "Hechos sin dramatismo/conflicto: Evitar declaraciones puramente fácticas sin un elemento de sorpresa o pregunta (ej. 'Brasil y Noruega empatan')."
   ],
-  "best_hora": 16,
-  "duracion_optima": 0,
+  "best_hora": 1,
+  "duracion_optima": "No se dispone de datos sobre la duración de los videos, por lo que no es posible determinar una duración_optima basada en la evidencia actual.",
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el formato 'ia_noticias', centrándose en temas de alta repercusión en deportes (especialmente con controversias o giros dramáticos del Mundial 2026) y eventos noticiosos generales con impacto (terremotos, crisis).",
-    "Optimizar la publicación de videos para el horario de las 16:00, que ha mostrado el mayor rendimiento promedio individual en el Top 10 (1298 views), y considerar probar las 1:00 AM para aumentar la frecuencia de intentos exitosos.",
-    "Enfocarse en la construcción de títulos y hooks que generen intriga, sorpresa o urgencia, utilizando preguntas abiertas, emojis de impacto (🤯, 😱) y frases que denoten inminencia o shock, siguiendo los patrones de los videos más vistos.",
-    "Evitar rigurosamente hooks que presenten resultados deportivos directos sin un ángulo dramático o que sean frases incompletas/vagas, ya que estos patrones están directamente asociados a videos con 0 vistas."
+    "Priorizar el contenido de noticias deportivas que incluyan controversia, drama o eventos inesperados (ej. `mundial_2026`, traspasos, resultados sorprendentes), ya que este tema domina consistentemente los videos de mayor rendimiento.",
+    "Implementar títulos y hooks que generen intriga mediante preguntas directas y el uso estratégico de emojis de shock (🤯, 😱) y urgencia (🔥, ⚽) para aumentar la tasa de clics y la curiosidad.",
+    "Realizar pruebas de publicación en los horarios de 1 AM y 4-5 PM (16-17 PM), dado que estos han demostrado ser los momentos con mayor concentración de videos exitosos en el Top 10.",
+    "Expandir la cobertura de noticias de alto impacto general (no solo deportivas) que involucren desastres, eventos de celebridades o acontecimientos con implicaciones masivas, siguiendo el éxito de 'Terremoto' y 'Shakira'.",
+    "Considerar la estrategia de 'Parte 1' o '(1/2)' en títulos de temas complejos o muy populares para incentivar la visualización de series y potencialmente aumentar la retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside en aplicar la narrativa de 'noticia de impacto/controversia' (ia_noticias) a temas de alta repercusión, especialmente en deportes (Mundial 2026) y eventos de actualidad, transformando hechos en relatos dramáticos que eviten la trivialidad de resultados o datos sin gancho, como lo demuestran todos los videos del Top 10."
+  "insight_semana": "La clave para el alto rendimiento de Shorts en este canal reside en la capacidad de generar 'noticias de impacto' (ya sean deportivas, de desastres o celebridades) que evoquen sorpresa o controversia, presentadas con títulos urgentes, emocionales y el uso estratégico de emojis, con el horario de la 1 AM mostrando un potencial superior al previamente identificado."
 }
