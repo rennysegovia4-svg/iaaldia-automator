@@ -1,39 +1,37 @@
 {
   "updated": "2026-10-11",
-  "iteracion": 484,
+  "iteracion": 485,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
+    "finanzas": 0.06,
+    "entretenimiento": 0.06,
+    "negocios_digitales": 0.06,
+    "productividad_ia": 0.06,
+    "cripto_inversiones": 0.06,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "[SUJETO/EVENTO] [VERBO IMPACTANTE/PREGUNTA POLÉMICA]? 🤯",
-    "[TIPO DE NOTICIA] devastador en [LOCALIDAD]: [CIFRA/DETALLE IMPACTANTE] 😱",
-    "[ITEM/EVENTO ESPECÍFICO] [VERBO URGENTE/ESCASEZ] [EMOJI DE IMPACTO]!",
-    "[COMPETICIÓN/SITUACIÓN]: [RESULTADO INESPERADO/DECISIÓN] ¡[EMOCIÓN FUERTE]!",
-    "¡Se acabó la espera! ¡El [TEMA] que [DESPIERTA CURIOSIDAD]!",
-    "Con solo [EDAD] años, [NOMBRE] [LOGRO/HECHO EXTRAORDINARIO]!"
+    "¡Se acabó la espera! ¡El",
+    "Con solo X años, [Nombre]...",
+    "¡[Palabra de Urgencia/Shock, ej. HOY/SHOCK]! 😱",
+    "¿[Evento] ENTREGÓ/FRAUDE? 🤯",
+    "La noticia que sacude [Región] hoy [Topic] ⚽",
+    "[Palabra de Impacto, ej. TARJETA ROJA/SANCIONES] MUNDIAL: ¡[Nombre] ELIMINADO! 😱"
   ],
   "avoid_hooks": [
-    "Directamente indicar un empate o resultado neutral sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Descripciones puramente factuales de una acción o evento sin un elemento de shock (ej. 'Sidny Lopes Cabral acaba de')",
-    "Ganchos que son genéricos o carecen de un elemento de 'noticia' o 'impacto' inmediato"
+    "Reportes neutrales de resultados (ej. 'X y Y empatan 0-0')",
+    "Afirmaciones sin elementos de shock o misterio (ej. 'X acaba de')",
+    "Ganchos que no generen intriga o urgencia"
   ],
-  "best_hora": 16,
-  "duracion_optima": 58,
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para determinar",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` con un fuerte enfoque en **deportes** y **noticias de última hora con alto impacto** (desastres naturales, eventos culturales masivos), ya que todos los videos del TOP 10 provienen de esta categoría.",
-    "Integrar consistentemente **emojis de sorpresa (🤯, 😱)** y de **urgencia (🔥)** en los títulos para maximizar la curiosidad y el engagement, dado que aparecen en la mayoría de los videos más vistos.",
-    "Realizar pruebas de publicación estratégicas a las **16:00 (4 PM)**, que mostró el video con más vistas (1298), y considerar también las franjas de **21:00 (9 PM)** y **01:00 (1 AM)** donde otros videos tuvieron un alto rendimiento.",
-    "Construir ganchos que generen **urgencia o escasez** ('¡Se Agotan!', 'HOY'), o que presenten **noticias impactantes/controversiales** ('¿ENTREGÓ la Final?', '¡Gamezking ELIMINADO!'), evitando descripciones neutras o resúmenes sin intriga.",
-    "Explorar el nicho `mundial_2026` (bajo la categoría de `deportes`) con una ejecución cuidadosa, dado su alto puntaje y tendencia positiva, lo que sugiere un gran potencial de vistas si se logra el tono correcto de contenido de anticipación o especulación."
+    "Priorizar la creación de contenido de `ia_noticias` con un fuerte enfoque en deportes (fútbol, Mundial, ligas), ya que consistentemente genera los videos con más vistas del canal, demostrando su alto potencial viral.",
+    "Implementar ganchos en títulos y descripciones que enfaticen la urgencia ('HOY', '¡Se Agotan!'), el shock ('🤯', '😱', 'SHOCK') o la controversia ('¿ENTREGÓ?', 'ELIMINADO'), ya que son patrones probados para maximizar la tasa de clics.",
+    "Concentrar las publicaciones de videos de alto impacto en las franjas horarias de 01:00, 16:00, 17:00 y 21:00, que han demostrado ser momentos clave para captar la atención de la audiencia con noticias relevantes."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el único que ha logrado posicionar videos en el TOP 10, y su éxito se basa casi exclusivamente en **noticias de alto impacto, especialmente deportivas y de última hora**, que generan sorpresa, controversia o urgencia en la audiencia, mientras que los temas generales de 'ia_noticias' tienen un rendimiento promedio bajo."
+  "insight_semana": "El nicho `ia_noticias` exhibe una polarización extrema: aunque su promedio general es bajo (26 vistas), cuando se enfoca en temas deportivos o de actualidad de alto impacto y se combinan con ganchos dramáticos/urgentes, produce consistentemente los videos más virales del canal, superando las 1000 vistas, lo que subraya la crítica importancia de la selección de tema y la ejecución del hook sobre el nicho base."
 }
