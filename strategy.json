@@ -1,38 +1,37 @@
 {
   "updated": "2026-10-12",
-  "iteracion": 490,
+  "iteracion": 491,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.5,
-    "finanzas": 0.01,
+    "deportes": 0.45,
+    "ia_noticias": 0.2,
+    "productividad_ia": 0.15,
+    "finanzas": 0.05,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "negocios_digitales": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Controversia/Conspiración + Emoción Fuerte + Pregunta (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticia Urgente/Tragedia + Ubicación/Número (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Noticia Deportiva Impactante + Geografía + Urgencia + Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Evento Específico + Consecuencia Dramática + Emoción (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Venta/Escasez Urgente + Impacto + Emoción/Emoji (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
-    "Anticipación/Revelación Grande (ej. '¡Se acabó la espera! ¡El [gran evento/revelación]!')"
+    "Impacto + Pregunta Controversial + Emoji: \"[Noticia impactante]? 🤯\"",
+    "Urgencia + Drama + Emoji de Reacción: \"[Evento] HOY: [Consecuencia impactante]! 😱/🔥\"",
+    "Noticia de Última Hora con Datos Clave: \"[Tipo de evento] devastador en [Lugar]: [Número] muertos...\"",
+    "Impacto General + Urgencia + Emoji Temático: \"La noticia [Tema] que sacude [Lugar] hoy ⚽\"",
+    "Generador de Anticipación / Gran Revelación: \"¡Se acabó la espera! ¡El...\"",
+    "Detalle Específico + Factor Único: \"Con solo [Edad/Característica], [Nombre]...\""
   ],
   "avoid_hooks": [
-    "Descripción plana de un evento (ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmación simple sin intriga (ej. 'Brasil y Noruega empatan')",
-    "Declaración de un hecho sin impacto emocional (ej. 'Sidny Lopes Cabral acaba de')"
+    "Resúmenes Genéricos de Partidos sin Drama (especialmente 0-0): \"Brasil y Noruega empatan 0-0\"",
+    "Frases Incompletas o Demasiado Vagas: \"Sidny Lopes Cabral acaba de\"",
+    "Mensajes Motivacionales Genéricos sin Contexto Específico: \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\""
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho 'ia_noticias', específicamente en temas de fútbol (controversias, resultados impactantes) y noticias de impacto regional (tragedias, eventos culturales masivos), ya que estas temáticas generan el mayor potencial de viralidad.",
-    "Utilizar ganchos que enfaticen la controversia, la urgencia o la escasez, e incorporen emociones fuertes (🤯, 😱, 🔥) y preguntas directas para captar la atención del espectador inmediatamente.",
-    "Publicar videos en la franja horaria de la 01:00 AM (UTC, as per general interpretation of 'hora' in data), ya que ha demostrado ser el horario de mayor rendimiento promedio para los videos más vistos en esta iteración (1121 vistas promedio para 3 videos).",
-    "Explorar más a fondo el sub-nicho 'mundial_2026' (dentro de 'deportes' e 'ia_noticias') debido a su sólido rendimiento promedio (258 vistas) y fuerte tendencia de crecimiento (867.0), lo que sugiere una mayor consistencia y predictibilidad de éxito."
+    "Prioriza la creación de contenido deportivo de alto impacto, enfocándote en eventos con drama, controversia o resultados sorprendentes, siguiendo el éxito de 'mundial_2026' y los videos de fútbol en 'ia_noticias'.",
+    "Maximiza el uso de la hora de publicación 01:00 AM, que ha demostrado ser la franja horaria más consistente para videos de alto rendimiento, logrando un promedio de 1121 vistas en los videos del Top 10 publicados en este horario.",
+    "En los títulos y ganchos, integra siempre elementos de urgencia ('HOY', 'Se Agotan'), impacto emocional y emojis ('🤯', '😱', '🔥', '⚽') para generar curiosidad inmediata y destacar en el feed."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una dualidad extrema: es el único capaz de producir videos altamente virales (concentra todo el top 10), pero su bajo promedio de vistas general indica una alta tasa de fracaso para temas que no resuenan, enfatizando la necesidad de una selección de temas y ganchos muy precisa dentro de este nicho."
+  "insight_semana": "La categoría 'ia_noticias' es altamente volátil: aunque contiene los 10 videos con más vistas, su promedio general de vistas es de solo 20 y tiene una tendencia negativa de -0.95. Esto indica que solo los temas específicos de alta controversia, urgencia y drama dentro de esta categoría logran tracción, haciendo que el nicho sea de alto riesgo sin una selección temática muy precisa."
 }
