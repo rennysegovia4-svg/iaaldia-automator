@@ -1,37 +1,38 @@
 {
   "updated": "2026-10-12",
-  "iteracion": 492,
+  "iteracion": 493,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.2,
-    "productividad_ia": 0.15,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "deportes": 0.4,
+    "ia_noticias": 0.25,
+    "finanzas": 0.04,
+    "entretenimiento": 0.15,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "Impacto + Pregunta Controversial + Emoji: \"[Noticia impactante]? 🤯\"",
-    "Urgencia + Drama + Emoji de Reacción: \"[Evento] HOY: [Consecuencia impactante]! 😱/🔥\"",
-    "Noticia de Última Hora con Datos Clave: \"[Tipo de evento] devastador en [Lugar]: [Número] muertos...\"",
-    "Impacto General + Urgencia + Emoji Temático: \"La noticia [Tema] que sacude [Lugar] hoy ⚽\"",
-    "Generador de Anticipación / Gran Revelación: \"¡Se acabó la espera! ¡El...\"",
-    "Detalle Específico + Factor Único: \"Con solo [Edad/Característica], [Nombre]...\""
+    "¡Se acabó la espera! ¡El [Evento/Anuncio emocionante]!",
+    "Con solo [Edad] años, [Nombre]...",
+    "Muy buenas tardes. Bienvenidos a [Noticiero/Análisis de]...",
+    "¿[Declaración impactante o controversia] [Sujeto/Evento]? 🤯",
+    "[Evento catastrófico] en [Ubicación]: [Cifra/Impacto] y [Consecuencia clave]",
+    "[Sujeto] [Verbo de acción impactante] [Evento/Liga] ¡[Exclamación]! 😱🔥"
   ],
   "avoid_hooks": [
-    "Resúmenes Genéricos de Partidos sin Drama (especialmente 0-0): \"Brasil y Noruega empatan 0-0\"",
-    "Frases Incompletas o Demasiado Vagas: \"Sidny Lopes Cabral acaba de\"",
-    "Mensajes Motivacionales Genéricos sin Contexto Específico: \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\""
+    "Hooks que solo enuncian un resultado o hecho trivial sin generar emoción ni intriga (ej., 'Brasil y Noruega empatan 0-0').",
+    "Hooks que introducen un nombre o evento muy específico sin contexto previo ni impacto inmediato (ej., 'Sidny Lopes Cabral acaba de').",
+    "Hooks excesivamente concisos que fallan en transmitir la urgencia o la importancia de la noticia (ej., 'Brasil y Noruega empatan')."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Prioriza la creación de contenido deportivo de alto impacto, enfocándote en eventos con drama, controversia o resultados sorprendentes, siguiendo el éxito de 'mundial_2026' y los videos de fútbol en 'ia_noticias'.",
-    "Maximiza el uso de la hora de publicación 01:00 AM, que ha demostrado ser la franja horaria más consistente para videos de alto rendimiento, logrando un promedio de 1121 vistas en los videos del Top 10 publicados en este horario.",
-    "En los títulos y ganchos, integra siempre elementos de urgencia ('HOY', 'Se Agotan'), impacto emocional y emojis ('🤯', '😱', '🔥', '⚽') para generar curiosidad inmediata y destacar en el feed."
+    "Priorizar fuertemente el contenido dentro del nicho de 'deportes', enfocándose en eventos de gran magnitud y controversias (como el 'mundial_2026'), ya que muestra el rendimiento promedio más alto (258 vistas) y una tendencia excepcional (867.0).",
+    "Mantener la hora de publicación de las 1:00 AM (hora 1) para el contenido de mayor impacto, dado que consistentemente produce el promedio de vistas más alto (1121) entre los videos del Top 10 con múltiples publicaciones en la misma franja.",
+    "Diseñar títulos y ganchos que planteen preguntas controvertidas o insinuaciones de entrega de resultados, acompañados de emojis (🤯, 😱, 🔥), ya que esta estrategia ha generado los videos con más vistas (1325 y 1298) al maximizar la curiosidad y el engagement.",
+    "Evitar ganchos que simplemente enuncian resultados o eventos sin un elemento emocional o de intriga, como 'Brasil y Noruega empatan 0-0', ya que estos patrones han demostrado consistentemente 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' es altamente volátil: aunque contiene los 10 videos con más vistas, su promedio general de vistas es de solo 20 y tiene una tendencia negativa de -0.95. Esto indica que solo los temas específicos de alta controversia, urgencia y drama dentro de esta categoría logran tracción, haciendo que el nicho sea de alto riesgo sin una selección temática muy precisa."
+  "insight_semana": "Aunque la mayoría de los videos de alto rendimiento se etiquetan como 'ia_noticias', el rendimiento sostenido y la tendencia positiva provienen casi exclusivamente de temas deportivos de gran escala y controversia (ej. 'mundial_2026'), mientras que las 'ia_noticias' generales tienen un rendimiento promedio muy bajo, lo que indica que el tema es más crítico que el formato para el éxito constante."
 }
