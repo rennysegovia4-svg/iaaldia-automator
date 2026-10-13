@@ -1,143 +1,150 @@
 {
   "updated": "2026-10-13",
   "hook_formulas": [
-    "[[Contraste Visual Impactante (Real vs. AI / Antes vs. Ahora)] + [Observación Directa/Reacción Exagerada]]",
-    "[[Pregunta Intriga/Dilema Relatable] + [Emoji Reflexivo (🧐, 🛣️)]]",
-    "[[Situación Relatable Extrema/Humor Absurdo] + [Emoji Reacción Intensa (🤣, 🙈, 🤭)]]",
-    "[[Revelación de Herramienta/Idea Útil (Gratis/Fácil)] + [Beneficio Explícito (ej. hace magia, business idea💡)]]",
-    "[[Escenario Hipotético/POV] + [Consecuencia Dramática/Inquietante (💀)]]",
-    "[[Narrativa de Drama/Suspense] + [Cifra Impactante/Desenlace (ej. $455K Disappear)]]",
-    "[[Desafío/Misterio a Prueba] + [Pregunta Directa (ej. SERA VERDAD?)]]",
-    "[[Exclamación de Sorpresa/Asombro] + [Objeto/Evento Impactante (ej. Wow 😮🚀, Power of Marketing)]]",
-    "[[Cita/Afirmación de Autoridad] + [Tema Controversial/Relevante (ej. ANDREW TATE SAYS THIS ABOUT CRYPTO)]]",
-    "[[Descubrimiento/Hallazgo Inesperado] + [Objeto Específico (ej. Bitcoin Bag Is Real!)]]",
-    "[[Personaje/Situación Inspiradora/Moral] + [Mensaje Breve (ej. Puedes Lograrlo, Hacer el bien)]]",
-    "[[Pregunta Común/Mito] + [Duda/Aclaración (ej. ¿Es Malo Usar...?)]]"
+    "Contraste Visual Impactante (Real vs. AI / Antes vs. Ahora): Contrapone elementos visuales o situaciones para generar sorpresa o humor.",
+    "Dilema Relatable/Pregunta Intriga: Plantea una pregunta o un escenario con el que la audiencia se puede identificar o que genera curiosidad.",
+    "Humor Absurdo/Situación Relatable Extrema: Presenta un escenario exagerado o cómico que evoca risas y conexión.",
+    "Revelación de Herramienta/Idea Útil (con Beneficio Explícito): Muestra o explica algo práctico que ofrece una solución o ventaja clara.",
+    "Escenario Hipotético/POV Inquietante: Crea una situación imaginaria con un giro dramático o una consecuencia impactante.",
+    "Narrativa de Drama/Suspense con Cifra Impactante: Cuenta una historia breve con un elemento de tensión y un dato sorprendente.",
+    "Desafío/Misterio a Prueba: Propone verificar la veracidad de algo o resolver una incógnita.",
+    "Exclamación de Sorpresa/Descubrimiento Inesperado: Presenta un hecho, objeto o fenómeno que genera asombro.",
+    "Cita/Afirmación de Autoridad sobre Tema Relevante: Usa la influencia de una figura reconocida para abordar un tema de interés.",
+    "Personaje/Situación Inspiradora/Moral: Comparte un mensaje positivo o una lección de vida a través de una historia o personaje.",
+    "Pregunta Común/Mito (con Aclaración): Aborda una duda frecuente o desmiente una creencia popular.",
+    "Mini-Narrativa Curiosa/Explicativa: Ofrece una explicación concisa o una historia breve sobre un tema intrigante."
   ],
   "title_patterns": [
-    "[Concepto A] Vs [Concepto B] + [Detalle/Serie/Emoji]",
-    "[Afirmación Impactante] + [Emoji de Reacción/CTA (ej. 💀😂, Watch till the end)]",
-    "[Situación Relatable/Humor Absurdo] + [Emoji de Risa/Reacción (ej. 🤣, 🙈🤭, 😭🙈)]",
-    "[Pregunta Directa/Dilema] + [Emoji Reflexivo (ej. 🧐💼, 🛣️, 💰🧐)]",
-    "[POV/Escenario Hipotético] + [Consecuencia Impactante] + [Emoji Miedo/Sorpresa (ej. 💀)]",
-    "[Herramienta/Idea] + [Beneficio Clave] + [Calificativo/Gratis (ej. hace magia, business idea💡, 🔥Free)]",
-    "[Sujeto/Evento Dramático] + [Acción/Resultado Impactante] + [Cifra/Detalle (ej. Scammer Watches $455K Disappear)]",
-    "[Exclamación] + [Objeto/Evento] + [Emoji de Sorpresa/Asombro (ej. Wow 😮🚀, Bitcoin Bag Is Real!)]"
+    "[Declaración impactante/pregunta] + [Emojis de reacción/reflexión]",
+    "[Contexto] + [Contraste/Resultado]",
+    "[Situación/POV] + [Resultado/Reacción]",
+    "[Acción/Herramienta] + [Beneficio/Resultado]",
+    "[Frase pegadiza/Cita] + [Contexto/Fuente]",
+    "[Sujeto] + [Verbo de descubrimiento] + [Objeto]",
+    "[Pregunta directa] + [Tema/Dilema]",
+    "[Idea de negocio/Producto] + [Beneficio/Categoría]"
   ],
   "palabras_prohibidas": [
-    "Explicación",
-    "Detallado",
-    "Completo",
-    "Análisis",
-    "Introducción",
-    "Tutorial",
-    "Parte 1 de X",
-    "Largo",
-    "Clase",
-    "Resumen"
+    "exhaustivo",
+    "metodología",
+    "perspectiva",
+    "cuantitativo",
+    "cualitativo",
+    "conferencia",
+    "seminario",
+    "fundamentos",
+    "principios",
+    "introducción"
   ],
   "palabras_clave_virales": [
-    "shorts",
     "AI",
     "IA",
     "Humor",
-    "Viral",
-    "Dinero",
-    "Ahorrar",
-    "Bitcoin",
-    "Mamá",
-    "Negocios",
-    "Emprendimiento",
-    "Funny",
     "Comedia",
+    "Funny",
+    "Ahorrar",
+    "Ahorro",
+    "Finanzas",
+    "Emprendedor",
+    "Emprendimiento",
+    "Negocios",
+    "Bitcoin",
+    "Crypto",
+    "Dinero",
+    "BusinessIdea",
     "Herramienta",
-    "Gratis"
+    "Gratis",
+    "Sueños"
   ],
-  "estructura_gancho_optima": "Comienza con un contraste visual impactante (ej. \"Real vs. AI\", \"Antes vs. Ahora\") o una afirmación/pregunta sorprendente y altamente relatable que capte la atención en los primeros 1-3 segundos. Esto se refuerza con emojis de reacción intensa (sorpresa, risa, miedo) y un mensaje claro y conciso que establece el tono emocional o la curiosidad inmediata del video, priorizando la identificación rápida.",
+  "estructura_gancho_optima": "Visual Impactante (Contraste o Sorpresa) Inmediato + Pregunta/Afirmación Intriga + Desarrollo Rápido del Dilema/Solución/Situación Humorística + Conclusión Impactante/Satisfactoria.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "La viralidad máxima en Shorts, especialmente a niveles globales, a menudo se logra a través de la universalidad de la emoción (humor, sorpresa, identificación) evocada por escenarios simples y altamente relatables, que trascienden el nicho y permiten una conexión y compartición instantánea por una audiencia masiva, incluso por encima de la complejidad o producción de contenido específico de nicho.",
-  "recomendacion_thumbnail": "Thumbnails que presenten caras con expresiones emocionales exageradas (sorpresa, risa, miedo), contrastes visuales dramáticos (antes/después, real/AI), o elementos visuales absurdos/inesperados extraídos del clímax del video. Si se incluye texto, este debe ser mínimo, de gran tamaño y plantear una pregunta intrigante o una afirmación impactante.",
+  "insight_clave": "El éxito viral radica en la micro-narrativa emocionalmente densa y el contraste impactante. Estos shorts logran compactar un arco narrativo completo –que va de la intriga inicial al clímax (humor, sorpresa, revelación, dilema) y una resolución rápida– en menos de 58 segundos, generando una fuerte conexión emocional o cognitiva inmediata que maximiza la retención y la compartibilidad.",
+  "recomendacion_thumbnail": "Thumbnails con una captura de un momento de máxima intriga, humor o sorpresa visual del video, a menudo incluyendo caras con reacciones exageradas o un contraste visual directo (ej. 'Real vs. AI'). Un texto superpuesto minimalista con una pregunta o exclamación impactante puede aumentar el CTR, siempre buscando una composición que comunique la emoción central del corto al instante.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Contraste Visual Impactante (Real vs. AI) + Observación Directa",
-        "Afirmación Impactante sobre Capacidad/Realismo de IA + Emoji de Reacción",
-        "Escenario Hipotético/POV sobre Consecuencias de la IA + Emoji de Miedo"
+        "Contraste Visual Impactante (Real vs. AI): Contrapone elementos visuales o situaciones para generar sorpresa o humor.",
+        "Escenario Hipotético/POV Inquietante: Crea una situación imaginaria con un giro dramático o una consecuencia impactante.",
+        "Humor Absurdo/Situación Relatable Extrema: Presenta un escenario exagerado o cómico que evoca risas y conexión."
       ],
       "topics": [
-        "Realismo y Capacidades Sorprendentes de la IA",
-        "Escenarios Futuros y Consecuencias de la IA",
-        "Herramientas y Aplicaciones Creativas de IA"
+        "Capacidades impactantes/realistas de la IA (visuales, creatividad)",
+        "Humor relacionado con IA (sueños, escenarios absurdos)",
+        "Futuro/consecuencias de la IA (apocalípticas, sorprendentes)"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Pregunta o Dilema Financiero Relatable + Emoji Reflexivo",
-        "Situación Humorística Familiar (con 'Mamá') Relacionada con el Ahorro",
-        "Puesta a Prueba/Verificación de un Producto o Estrategia de Ahorro"
+        "Dilema Relatable/Pregunta Intriga: Plantea una pregunta o un escenario con el que la audiencia se puede identificar o que genera curiosidad.",
+        "Humor Absurdo/Situación Relatable Extrema: Presenta un escenario exagerado o cómico que evoca risas y conexión.",
+        "Desafío/Misterio a Prueba: Propone verificar la veracidad de algo o resolver una incógnita."
       ],
       "topics": [
-        "Ahorro y Finanzas Personales",
-        "Humor sobre Hábitos Financieros",
-        "Decisiones y Consejos de Emprendimiento/Negocios"
+        "Ahorro de dinero (métodos, comportamiento, humor)",
+        "Decisiones financieras (inversiones, créditos, negocios)",
+        "Mitos y realidades de productos/conceptos financieros"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Revelación de Idea de Negocio o Side Gig Disruptivo + Icono de Idea",
-        "Pregunta Directa sobre un Problema Común de Negocio + Llamada a la Solución",
-        "Fragmento Dramático/Impactante de un Programa de Negocios (ej. Shark Tank)"
+        "Revelación de Herramienta/Idea Útil (con Beneficio Explícito): Muestra o explica algo práctico que ofrece una solución o ventaja clara.",
+        "Dilema Relatable/Pregunta Intriga: Plantea una pregunta o un escenario con el que la audiencia se puede identificar o que genera curiosidad.",
+        "Mini-Narrativa Curiosa/Explicativa: Ofrece una explicación concisa o una historia breve sobre un tema intrigante."
       ],
       "topics": [
-        "Ideas y Modelos de Negocio Digitales/Creativos",
-        "Estrategias de Marketing y Ventas",
-        "Herramientas y Tecnología para Emprendedores"
+        "Ideas de negocios y emprendimiento (específicas, creativas)",
+        "Herramientas y tecnologías para negocios (digitales, 3D printing)",
+        "Historias y estrategias de marcas/empresas exitosas o conocidas"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Mensaje Inspirador/Motivacional (a menudo con clips de películas) Aplicado a Cripto",
-        "Historia Dramática de Estafa o Descubrimiento Impactante en Cripto",
-        "Opinión de Figura de Autoridad/Controversial sobre el Futuro de las Criptomonedas"
+        "Narrativa de Drama/Suspense con Cifra Impactante: Cuenta una historia breve con un elemento de tensión y un dato sorprendente.",
+        "Personaje/Situación Inspiradora/Moral: Comparte un mensaje positivo o una lección de vida a través de una historia o personaje.",
+        "Cita/Afirmación de Autoridad sobre Tema Relevante: Usa la influencia de una figura reconocida para abordar un tema de interés."
       ],
       "topics": [
-        "Motivación y Filosofía Cripto",
-        "Noticias y Advertencias sobre Cripto (estafas, tendencias)",
-        "Cripto y su Presencia en la Cultura Pop"
+        "Grandes historias de éxito/fracaso en cripto (scammers, billionaires)",
+        "Perspectivas y consejos de figuras influyentes en cripto",
+        "Conceptos inspiradores/motivacionales aplicados al ámbito financiero/cripto"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Revelación de Herramienta de IA Gratuita con Beneficio Rápido y Específico",
-        "Promesa de Eficiencia Extrema o Alta Cantidad de Producción con IA + Cifra",
-        "Solución con IA a un Problema Específico de Contenido/Texto + Calificativo (ej. mejor)"
+        "Revelación de Herramienta/Idea Útil (Gratis/Fácil con AI): Muestra o explica algo práctico que ofrece una solución o ventaja clara.",
+        "Beneficio Explícito (ej. Hace X en Y tiempo): Muestra un resultado concreto y eficiente de una herramienta/método.",
+        "Descubrimiento/Hallazgo Inesperado: Presenta un hecho, objeto o fenómeno que genera asombro."
       ],
       "topics": [
-        "Herramientas de IA Gratuitas para Creación de Contenido (video, música, texto)",
-        "Optimización de la Productividad y Eficiencia con IA",
-        "Funcionalidades Específicas de IA (humanización de texto, generación de voz)"
+        "Herramientas de IA para la creación de contenido (audio, video, texto)",
+        "Automatización y eficiencia con IA (productividad)",
+        "IA gratuitas o accesibles para tareas específicas"
       ]
+    },
+    "_global": {
+      "hooks": [],
+      "topics": []
     }
   },
   "top_videos_semana": [
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 75126233,
+      "views": 75127259,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Las frutas verdaderas sin IA🍓   #shorts #humor #tiktokvideo #comedia #funny #fyp",
-      "views": 74587504,
+      "views": 74591427,
       "id": "qEBPaKp0kKA"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 60416317,
+      "views": 60417264,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 54776914,
+      "views": 54779794,
       "id": "6ms51abwU5A"
     },
     {
@@ -147,52 +154,52 @@
     },
     {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 38884436,
+      "views": 38884851,
       "id": "59AAoa8l064"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38495874,
+      "views": 38496681,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "¿Qué Camino Tomarías Tú? 🛣️ #Ahorro #Finanzas #Inversiones #InterésCompuesto #Invertir #Shorts",
-      "views": 38136288,
+      "views": 38136290,
       "id": "t4JnOP6atKs"
     },
     {
       "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23425514,
+      "views": 23425565,
       "id": "D53HF_okHi8"
     },
     {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15387914,
+      "views": 15387979,
       "id": "gDn_SQU6YZE"
     },
     {
       "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
-      "views": 9931844,
+      "views": 9931847,
       "id": "GITF0gO6W3Q"
     },
     {
       "titulo": "Digital Board for online teaching #digitalboard #shorts  @Edusquadz",
-      "views": 8341347,
+      "views": 8341352,
       "id": "VkZG-aJo6vw"
     },
     {
       "titulo": "🔥Free Text to Speech - AI voice from Script #ai #aitools #shorts #texttospeech",
-      "views": 2471141,
+      "views": 2471421,
       "id": "jKUzVNCSiY8"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 562402,
+      "views": 562437,
       "id": "14URUL4nBkA"
     },
     {
       "titulo": "✅ Como Hacer 100 Videos - Hora Con Esta INTELIGENCIA ARTIFICIAL *Gratis*",
-      "views": 266357,
+      "views": 266378,
       "id": "FaTwnb2Cz_U"
     }
   ],
