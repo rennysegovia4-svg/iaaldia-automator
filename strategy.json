@@ -1,37 +1,40 @@
 {
   "updated": "2026-10-13",
-  "iteracion": 495,
+  "iteracion": 496,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.55,
-    "ia_noticias": 0.2,
+    "deportes": 0.15,
+    "ia_noticias": 0.6,
+    "finanzas": 0.025,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.025,
     "productividad_ia": 0.1,
-    "negocios_digitales": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "Declaraciones Urgentes/Emocionales: Captura la atención con una exclamación que anticipa un evento importante o un giro inesperado (ej. '¡Se acabó la espera! ¡El').",
-    "Revelaciones de Logros/Hechos Sorprendentes: Presenta un dato o logro impactante que genere curiosidad sobre la historia detrás (ej. 'Con solo 17 años, Lamine').",
-    "Anuncio Formal de Noticia Relevante: Un inicio profesional que establece la seriedad y el alcance de la noticia (ej. 'Muy buenas tardes. Bienvenidos a').",
-    "Preguntas de Controversia/Intriga: Insinúa un debate o un misterio que el espectador querrá resolver, replicando el éxito de títulos controversiales.",
-    "Alerta de Última Hora/Impacto Inminente: Crea un sentido de urgencia y la necesidad de saber qué está ocurriendo, ideal para noticias de alto impacto.",
-    "Narración de Evento Crítico/Desafío: Describe brevemente una situación tensa o un problema importante, generando expectación."
+    "Noticia de último momento: [Evento impactante] + [Impacto/Número] ¡HOY! 🤯",
+    "¿[Pregunta Controversial] en [Evento Grande]? ¡La verdad te dejará en shock! 😱",
+    "¡[Equipo/Celebridad] [Acción Drástica]! [Consecuencia Inesperada] 💥",
+    "ALERTA: [Evento Crítico] ¡[Consecuencia Severa]! [Lugar/Momento] 🚨",
+    "[Cifra Impactante] [Edad/Número]: La historia que [Verbo de Impacto] el mundo 🌍",
+    "¡ULTIMAS PLAZAS/OPORTUNIDAD! [Artículo/Evento Deseado] ¡Se agota en [Tiempo]! 🔥"
   ],
   "avoid_hooks": [
-    "Anunciar resultados deportivos exactos o no controversiales (ej. 'Brasil y Noruega empatan 0-0').",
-    "Presentar un nombre o evento poco conocido sin generar intriga o contexto de alto valor (ej. 'Sidny Lopes Cabral acaba de').",
-    "Resumir directamente el contenido del video sin un 'gancho' emocional o de misterio."
+    "Resultados deportivos genéricos o empates sin un contexto de gran impacto o sorpresa extrema. (Ej: 'Brasil y Noruega empatan 0-0').",
+    "Introducir nombres de personas o entidades poco conocidas sin un gancho inmediato que justifique su relevancia o drama. (Ej: 'Sidny Lopes Cabral acaba de').",
+    "Declaraciones amplias de autoayuda o productividad sin estar vinculadas a una noticia o evento específico y urgente. (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar duración óptima.",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Enfócate prioritariamente en noticias deportivas que generen controversia, sospecha o sorpresa, utilizando títulos con preguntas o exclamaciones como '¿FINAL ENTREGADA? 🤯' o '¡SHOCK! 🤯' para maximizar la curiosidad.",
-    "Asegura que los títulos de todos los videos incluyan al menos un emoji de alto impacto (🤯, 😱, 🔥) para aumentar la visibilidad y el click-through rate.",
-    "Programa las publicaciones de tu contenido de mayor impacto para la 1 AM, ya que esta franja horaria ha demostrado la mayor efectividad para los videos top (1121 vistas de media)."
+    "Centrarse en el nicho 'ia_noticias', especialmente en temas deportivos de gran impacto (Mundial, ligas populares) y noticias de eventos relevantes (ej. desastres naturales, eventos de celebridades), ya que todos los videos del Top 10 pertenecen a esta categoría.",
+    "Incorporar emojis de alto impacto (🤯, 😱, 🔥) en los títulos, ya que 8 de los 10 videos más vistos los utilizan, demostrando una correlación directa con la visibilidad y el click-through.",
+    "Crear títulos que generen intriga inmediata, controversia o urgencia, utilizando preguntas directas, palabras como 'SHOCK', 'TRAGEDIA', 'SE AGOTAN' y referencias temporales como 'HOY'.",
+    "Evitar títulos que presenten resultados deportivos genéricos (especialmente empates) o introduzcan nombres de figuras poco conocidas sin un gancho contextual fuerte que justifique su relevancia, ya que estos patrones resultaron en 0 vistas.",
+    "Considerar las franjas horarias de publicación de 1 AM, 6 AM y 17 PM como las más prometedoras, basándose en el rendimiento histórico de los videos top, con 1 AM mostrando el promedio de vistas más alto.",
+    "Utilizar formatos de 'PARTE 1' o '(1/2)' en títulos para fomentar la retención o la búsqueda de una continuación en temas complejos o controversiales, observando su presencia en videos con más de 1200 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del rendimiento excepcional reside en la combinación de noticias deportivas de alta relevancia (especialmente fútbol y controversias), formuladas con títulos que insinúan misterio o sorpresa y el uso estratégico de emojis de impacto, superando por mucho a otros formatos de noticias o nichos."
+  "insight_semana": "La combinación de noticias de impacto (especialmente deportivas y de eventos) bajo la etiqueta 'ia_noticias', con títulos que incluyen preguntas controversiales, urgencia y emojis de shock (🤯, 😱, 🔥), es la fórmula más efectiva para captar la atención masiva en Shorts."
 }
