@@ -1,38 +1,37 @@
 {
-  "updated": "2026-10-12",
-  "iteracion": 493,
+  "updated": "2026-10-13",
+  "iteracion": 494,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.25,
-    "finanzas": 0.04,
-    "entretenimiento": 0.15,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "finanzas": 0.05,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento/Anuncio emocionante]!",
-    "Con solo [Edad] años, [Nombre]...",
-    "Muy buenas tardes. Bienvenidos a [Noticiero/Análisis de]...",
-    "¿[Declaración impactante o controversia] [Sujeto/Evento]? 🤯",
-    "[Evento catastrófico] en [Ubicación]: [Cifra/Impacto] y [Consecuencia clave]",
-    "[Sujeto] [Verbo de acción impactante] [Evento/Liga] ¡[Exclamación]! 😱🔥"
+    "Pregunta con Controversia + Emoticono de Impacto (Ej: \"¿FINAL ENTREGADA? 🤯\")",
+    "Noticia Impactante (Tragedia/Gran Evento) + Detalle numérico (Ej: \"Terremoto devastador en Colombia: 132 muertos...\")",
+    "Urgencia y Sentimiento de Alarma + Especificación Regional/Global (Ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")",
+    "Evento Deportivo/Noticia con Final Dramático/Inesperado + Emoticono (Ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "Anuncio de Gran Evento/Noticia esperada (Ej: \"¡Se acabó la espera! ¡El [Evento importante] está aquí!\")",
+    "Actualidad con Impacto en Ventas/Disponibilidad + Emoticono/Fuerza (Ej: \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\")"
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un resultado o hecho trivial sin generar emoción ni intriga (ej., 'Brasil y Noruega empatan 0-0').",
-    "Hooks que introducen un nombre o evento muy específico sin contexto previo ni impacto inmediato (ej., 'Sidny Lopes Cabral acaba de').",
-    "Hooks excesivamente concisos que fallan en transmitir la urgencia o la importancia de la noticia (ej., 'Brasil y Noruega empatan')."
+    "Anunciar resultados deportivos planos o no controversiales (Ej: \"Brasil y Noruega empatan 0-0\")",
+    "Introducir nombres poco conocidos o información vaga sin contexto que genere intriga (Ej: \"Sidny Lopes Cabral acaba de\")",
+    "Ganchos genéricos de autoayuda o reflexión que no son noticiosos ni urgentes (Ej: \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\")"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar fuertemente el contenido dentro del nicho de 'deportes', enfocándose en eventos de gran magnitud y controversias (como el 'mundial_2026'), ya que muestra el rendimiento promedio más alto (258 vistas) y una tendencia excepcional (867.0).",
-    "Mantener la hora de publicación de las 1:00 AM (hora 1) para el contenido de mayor impacto, dado que consistentemente produce el promedio de vistas más alto (1121) entre los videos del Top 10 con múltiples publicaciones en la misma franja.",
-    "Diseñar títulos y ganchos que planteen preguntas controvertidas o insinuaciones de entrega de resultados, acompañados de emojis (🤯, 😱, 🔥), ya que esta estrategia ha generado los videos con más vistas (1325 y 1298) al maximizar la curiosidad y el engagement.",
-    "Evitar ganchos que simplemente enuncian resultados o eventos sin un elemento emocional o de intriga, como 'Brasil y Noruega empatan 0-0', ya que estos patrones han demostrado consistentemente 0 vistas."
+    "Priorizar fuertemente el contenido de noticias deportivas que involucren controversia, resultados inesperados o eventos de gran magnitud (ej. Mundiales, ligas importantes), dado que 8 de 10 videos top son de esta temática.",
+    "Enfocarse en crear títulos y ganchos que generen intriga inmediata, utilizando preguntas retóricas sobre posibles fraudes o giros dramáticos, y acompañarlos de emojis de impacto (🤯, 😱, 🔥) para maximizar el CTR.",
+    "Mantener la estrategia de publicación en las horas más exitosas identificadas (especialmente la 1 AM y 5 PM) para capturar la mayor audiencia potencial, replicando el patrón de los videos de alto rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque la mayoría de los videos de alto rendimiento se etiquetan como 'ia_noticias', el rendimiento sostenido y la tendencia positiva provienen casi exclusivamente de temas deportivos de gran escala y controversia (ej. 'mundial_2026'), mientras que las 'ia_noticias' generales tienen un rendimiento promedio muy bajo, lo que indica que el tema es más crítico que el formato para el éxito constante."
+  "insight_semana": "A pesar del bajo promedio general de la categoría 'ia_noticias' (16 vistas), el contenido deportivo con un componente de controversia o urgencia es el motor principal del rendimiento, dominando el Top 10 y confirmando que la especificidad del tema viral supera la etiqueta general de la categoría."
 }
