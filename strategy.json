@@ -1,37 +1,37 @@
 {
   "updated": "2026-10-14",
-  "iteracion": 503,
+  "iteracion": 504,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
+    "deportes": 0.35,
     "ia_noticias": 0.3,
-    "finanzas": 0.02,
+    "finanzas": 0.05,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta Retórica Controversial con Emoji de Shock: Ejemplo: \"¿[Evento polémico] sucedió? 🤯\"",
-    "Anuncio Impactante de Noticia con Emoji de Sorpresa: Ejemplo: \"¡[Sujeto] [Verbo en pasado]! 😱\"",
-    "Urgencia o Inmediatez + Consecuencia Dramática: Ejemplo: \"[Evento] HOY: ¿[Resultado impactante]? ⚡\"",
-    "Detalle Numérico Específico de Alto Impacto: Ejemplo: \"Con solo [Edad] años, [Nombre]...\" o \"[Cifra] muertos en [Lugar]...\"",
-    "Anticipación Dramática Directa: Ejemplo: \"¡Se acabó la espera! [Evento]...\"",
-    "Hecho Noticioso Reciente + Reacción/Impacto: Ejemplo: \"[Fenómeno] hoy en [Lugar]: la [consecuencia]...\""
+    "¡Se acabó la espera! ¡El [Evento/Noticia]...",
+    "Con solo [Número] años, [Nombre]...",
+    "Muy buenas tardes. Bienvenidos a [Situación/Noticia importante]...",
+    "[Evento/Tema] ¿[Acción/Resultado inesperado]? 🤯 (Parte X)",
+    "[Evento catastrófico] en [Lugar]: [Número] muertos y [consecuencia]...",
+    "La noticia [adjetivo] que sacude [Región] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Hooks que son meros resultados de partidos sin un giro o dramatismo, ej. \"Brasil y Noruega empatan 0-0\".",
-    "Afirmaciones genéricas o incompletas que no generan intriga inmediata, ej. \"Brasil y Noruega empatan\".",
-    "Inicio con nombres propios o referencias desconocidas sin contexto que justifique la atención, ej. \"Sidny Lopes Cabral acaba de\"."
+    "Hooks que simplemente enuncian un resultado fáctico sin contexto o dramatismo (ej. \"Brasil y Noruega empatan 0-0\").",
+    "Hooks que son frases incompletas o vagas sin un gancho claro (ej. \"Sidny Lopes Cabral acaba de\").",
+    "Hooks que carecen de urgencia, controversia o una pregunta que despierte curiosidad."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar la duración óptima",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Enfocarse masivamente en contenido deportivo controversial (Mundial, ligas populares) y noticias de actualidad con alto impacto (desastres), ya que estas categorías han demostrado la mayor viralidad y rendimiento promedio.",
-    "Optimizar títulos y ganchos implementando preguntas retóricas, capitalización estratégica y emojis de shock o sorpresa (🤯, 😱) para maximizar el click-through rate y la retención inicial.",
-    "Concentrar las publicaciones en las horas 1 AM y 6 AM, que han demostrado ser las más efectivas para alcanzar picos de viralidad y un alto número de vistas en esta iteración."
+    "Priorizar fuertemente el contenido de deportes, especialmente alrededor de eventos de alto perfil como el 'Mundial 2026' (nicho 'mundial_2026' con 258 avg_views y 867.0 trend), aprovechando su rendimiento consistente y sólido.",
+    "Implementar ganchos que creen anticipación inmediata, enfaticen detalles únicos o planteen preguntas controversiales, como se observa en \"¡Se acabó la espera! ¡El\" (867 avg_views) y en títulos que actúan como ganchos directos.",
+    "Publicar el contenido con mayor potencial viral, especialmente en el nicho `ia_noticias` que cubre controversias o desastres del mundo real, alrededor de la 1 AM, dada su probada eficacia para el engagement (3 de los videos más vistos promediando 1121 vistas)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La viralidad extrema se logra al explotar la controversia en noticias deportivas o tragedias de la vida real, lo que se demuestra con el 90% (9 de 10) de los videos del Top 10 provenientes de `ia_noticias` de esta índole, promediando más de 1100 vistas cada uno."
+  "insight_semana": "La viralidad extrema se concentra en el nicho `ia_noticias` a través de temas controversiales deportivos y desastres reales, logrando 9 de los 10 videos más vistos con un promedio de 1123 vistas, lo que indica un patrón de alto riesgo/alta recompensa para este nicho, a pesar de su bajo promedio general de 23 vistas."
 }
