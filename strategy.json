@@ -1,38 +1,37 @@
 {
-  "updated": "2026-10-13",
-  "iteracion": 502,
+  "updated": "2026-10-14",
+  "iteracion": 503,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.03,
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "finanzas": 0.02,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.08,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Declaración Controversial/Impactante: Abordar un tema candente con una afirmación o pregunta directa y provocadora.",
-    "Dato Numérico Específico: Usar números exactos (edades, cifras, rankings) en los primeros segundos.",
-    "Shock con Emojis de Emoción: Combinar una palabra de impacto ('SHOCK', 'ELIMINADO') con emojis como 😱 o 🤯.",
-    "Urgencia y Ubicación Geográfica: Mencionar un evento actual y su lugar de impacto.",
-    "Anticipación Dramática: Crear expectativa sobre un evento importante que está ocurriendo o a punto de ocurrir.",
-    "Frase de Gran Relevancia Regional: Presentar la noticia como algo que 'sacude' o afecta a una amplia región (e.g., LATAM)."
+    "Pregunta Retórica Controversial con Emoji de Shock: Ejemplo: \"¿[Evento polémico] sucedió? 🤯\"",
+    "Anuncio Impactante de Noticia con Emoji de Sorpresa: Ejemplo: \"¡[Sujeto] [Verbo en pasado]! 😱\"",
+    "Urgencia o Inmediatez + Consecuencia Dramática: Ejemplo: \"[Evento] HOY: ¿[Resultado impactante]? ⚡\"",
+    "Detalle Numérico Específico de Alto Impacto: Ejemplo: \"Con solo [Edad] años, [Nombre]...\" o \"[Cifra] muertos en [Lugar]...\"",
+    "Anticipación Dramática Directa: Ejemplo: \"¡Se acabó la espera! [Evento]...\"",
+    "Hecho Noticioso Reciente + Reacción/Impacto: Ejemplo: \"[Fenómeno] hoy en [Lugar]: la [consecuencia]...\""
   ],
   "avoid_hooks": [
-    "Resultados Deportivos Planos/Ficticios: Anunciar resultados de partidos empatados o sin incidentes dramáticos, especialmente si son ficticios.",
-    "Introducciones Genéricas o Fácticas sin Controversia: Comenzar con descripciones de eventos que carecen de un elemento de sorpresa o urgencia.",
-    "Referencias a Nombres Poco Conocidos sin Contexto Impactante: Mencionar personas o entidades sin que la audiencia pueda comprender inmediatamente por qué son relevantes o cuál es el impacto de la noticia."
+    "Hooks que son meros resultados de partidos sin un giro o dramatismo, ej. \"Brasil y Noruega empatan 0-0\".",
+    "Afirmaciones genéricas o incompletas que no generan intriga inmediata, ej. \"Brasil y Noruega empatan\".",
+    "Inicio con nombres propios o referencias desconocidas sin contexto que justifique la atención, ej. \"Sidny Lopes Cabral acaba de\"."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos para determinar la duración óptima",
   "recomendaciones": [
-    "Priorizar contenido del nicho 'deportes' (incluyendo `mundial_2026` y noticias deportivas de `ia_noticias`) y 'ia_noticias' general, centrándose en eventos controversiales, de última hora o con relevancia geográfica inmediata.",
-    "Implementar fórmulas de gancho que incluyan datos numéricos específicos, emojis emocionales, lenguaje urgente y preguntas controversiales en los primeros segundos del video.",
-    "Publicar estratégicamente a las 1 AM para maximizar el potencial de viralidad, mientras se monitorean otros picos de rendimiento como 6 AM, 16 PM, 17 PM y 21 PM para diversificar el alcance.",
-    "Evitar títulos y hooks que presenten resultados deportivos predecibles o ficticios sin drama, así como referencias a individuos desconocidos sin un contexto de impacto claro."
+    "Enfocarse masivamente en contenido deportivo controversial (Mundial, ligas populares) y noticias de actualidad con alto impacto (desastres), ya que estas categorías han demostrado la mayor viralidad y rendimiento promedio.",
+    "Optimizar títulos y ganchos implementando preguntas retóricas, capitalización estratégica y emojis de shock o sorpresa (🤯, 😱) para maximizar el click-through rate y la retención inicial.",
+    "Concentrar las publicaciones en las horas 1 AM y 6 AM, que han demostrado ser las más efectivas para alcanzar picos de viralidad y un alto número de vistas en esta iteración."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La máxima viralidad se logra combinando noticias urgentes, controversiales y geográficamente relevantes (especialmente en el ámbito deportivo y de desastres) publicadas en las primeras horas de la madrugada (1 AM), utilizando ganchos con datos específicos y emojis emocionales."
+  "insight_semana": "La viralidad extrema se logra al explotar la controversia en noticias deportivas o tragedias de la vida real, lo que se demuestra con el 90% (9 de 10) de los videos del Top 10 provenientes de `ia_noticias` de esta índole, promediando más de 1100 vistas cada uno."
 }
