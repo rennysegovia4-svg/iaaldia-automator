@@ -1,37 +1,41 @@
 {
   "updated": "2026-10-15",
-  "iteracion": 514,
+  "iteracion": 515,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
+    "deportes": 0.45,
     "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Exclamación de Urgencia/Expectativa + Tema Clave (ej. \"¡Se acabó la espera! ¡El...\")",
-    "Dato Impactante sobre Protagonista/Evento (ej. \"Con solo 17 años, Lamine...\", \"Terremoto devastador en Colombia:...\")",
-    "Introducción Directa a Noticia de Gran Impacto (ej. \"Muy buenas tardes. Bienvenidos a...\")",
-    "Pregunta Intrigante sobre un Evento Polémico (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Noticia Impactante sobre Entidad Conocida + Consecuencia (ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\")",
-    "Actualidad con Emoción y Localización (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")"
+    "Pregunta con Intrigra/Conspiración: [Tema Polémico] entregó [Resultado Inesperado]? 🤯 (PARTE X)",
+    "Noticia Shockante/Impactante: [Evento Catastrófico] en [Lugar]: [Cifra/Consecuencia] y [Estado de Emergencia]",
+    "Urgencia/Exclusiva Deportiva: La noticia deportiva que sacude [Región] hoy ⚽",
+    "Alerta de Última Hora/Desenlace Inesperado: [Evento/Competencia]: ¡[Personaje/Equipo] ELIMINADO! 😱",
+    "Rumor/Confirmación de Gran Venta/Cambio: [Equipo/Empresa] SE VENDE HOY: ¿Adiós a [Liga/Mercado]? 😱",
+    "Advertencia de Escasez/Demanda Explosiva: ENTRADAS [Evento/Artista] ¡Se Agotan! 😱🔥"
   ],
   "avoid_hooks": [
-    "Resultados de partidos poco emocionantes sin contexto (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks sin gancho que solo enuncian un hecho plano (ej. \"Brasil y Noruega empatan\")",
-    "Nombres propios desconocidos o sin contexto de impacto (ej. \"Sidny Lopes Cabral acaba de\")"
+    "Declaraciones de resultados deportivos sin drama o pregunta, especialmente empates sin goles.",
+    "Frases incompletas o que cortan la narrativa al inicio del hook (ej: 'X acaba de...').",
+    "Mensajes genéricos de autoayuda o filosofía sin un anclaje noticioso o impactante claro."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido deportivo, especialmente fútbol y eventos de gran escala como el 'Mundial 2026', dado su alto promedio de vistas (258) y tendencia de crecimiento (867.0).",
-    "Mantener el formato y estilo de 'ia_noticias' para todas las publicaciones de noticias rápidas, ya que el 100% de los videos del TOP 10 usan este nicho, demostrando su efectividad como vehículo para contenido de alta visibilidad.",
-    "Optimizar los títulos y descripciones con palabras clave de alto impacto, preguntas intrigantes y emojis que denoten shock o urgencia (ej. 'ARGENTINA', 'MUNDIAL', 'SHOCK', 'ELIMINADO', 🤯, 😱, 🔥), replicando patrones de éxito en el TOP 10."
+    "Priorizar la creación de contenido de noticias deportivas, especialmente aquellas relacionadas con grandes eventos (como mundiales o ligas principales) y figuras relevantes, dado su rendimiento superior y alta tendencia.",
+    "Optimizar los títulos y ganchos usando preguntas intrigantes, exclamaciones dramáticas y emojis relevantes (🤯, 😱, 🔥, ⚽) para captar la atención de inmediato.",
+    "Experimentar con publicaciones en franjas de tarde/noche (16:00, 17:00, 21:00) para capitalizar los picos de rendimiento individual por video, sin abandonar la franja de 1 AM que genera alto volumen.",
+    "Evitar ganchos que son simplemente declaraciones de resultados o frases inconclusas, ya que han demostrado un rendimiento nulo.",
+    "Dada la falta de datos sobre la duración, realizar pruebas controladas de videos cortos (entre 30-60 segundos) para determinar la duración óptima para este canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `mundial_2026` no solo domina en promedio de vistas (258) sino que su tendencia (867.0) es masivamente superior a cualquier otro nicho, señalando una ventana de oportunidad crítica y urgente para contenido de fútbol de gran escala."
+  "insight_semana": "El contenido de noticias deportivas de última hora, presentado con un enfoque dramático e intrigante a través de hooks impactantes, es el motor principal de vistas del canal, demostrando un potencial de crecimiento masivo en nichos como `mundial_2026`."
 }
