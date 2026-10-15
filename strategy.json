@@ -1,38 +1,37 @@
 {
   "updated": "2026-10-15",
-  "iteracion": 510,
+  "iteracion": 511,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.45,
-    "finanzas": 0.02,
+    "deportes": 0.5,
+    "ia_noticias": 0.2,
+    "finanzas": 0.05,
     "entretenimiento": 0.1,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Intriga/Pregunta + Emoji: \"¿[Evento clave] + [Verbo de impacto]? 🤯\"",
-    "Impacto/Urgencia + Palabra clave + Emoji: \"[Noticia impactante]: ¡[Sujeto] [Acción]! 😱\"",
-    "Noticia de última hora + Ubicación + Consecuencia: \"[Fenómeno] devastador en [Lugar]: [Impacto]\"",
-    "Anticipación/Emoción: \"¡Se acabó la espera! ¡El [Evento/Noticia]...\"",
-    "Detalle específico e intrigante sobre persona/evento: \"Con solo [Edad/Característica] años, [Nombre]...\"",
-    "Urgencia con entidad específica: \"[ENTIDAD] SE [VERBO IMPACATANTE] HOY: ¿[Consecuencia]? 😱\""
+    "Iniciando con una frase de alta energía y anticipación (ej. \"¡Se acabó la espera!\")",
+    "Presentando un dato específico o sorprendente sobre el sujeto principal (ej. \"Con solo 17 años, Lamine\")",
+    "Un saludo formal que introduce el tema sin rodeos (ej. \"Muy buenas tardes. Bienvenidos a\")",
+    "Planteando una pregunta retórica o un dilema intrigante, a menudo con emojis de sorpresa (ej. \"¿FINAL ENTREGADA? 🤯\")",
+    "Usando exclamaciones directas de impacto o incredulidad para el tema central (ej. \"¡Gamezking ELIMINADO! 😱\")",
+    "Comenzando directamente con un evento de actualidad o un actor relevante para generar inmediatez (ej. \"Terremoto devastador en Colombia\")"
   ],
   "avoid_hooks": [
-    "Anunciar un resultado neutral o negativo directamente (ej: 'X empatan Y-Y', 'X pierde Y').",
-    "Hooks que carecen de intriga o elemento emocional, solo describiendo un hecho.",
-    "Hooks de autoayuda/motivacionales genéricos que no se alinean con el formato de noticias (ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA')."
+    "Anunciar el resultado o el hecho principal directamente al inicio del video",
+    "Frases incompletas o que no establecen claramente el contexto de la noticia",
+    "Hooks que carecen de intriga o un elemento emocional que motive la visualización"
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido bajo el formato 'ia_noticias', enfocándose en temas de alto impacto como deportes (especialmente fútbol con menciones a Mundiales), noticias de última hora (ej: desastres naturales) y eventos de entretenimiento masivo (ej: conciertos de celebridades).",
-    "Implementar títulos que actúen como ganchos visuales y emocionales, utilizando preguntas, palabras de choque/intriga ('ENTREGÓ', 'ELIMINADO', 'SHOCK', 'CEDIÓ') y un uso estratégico de emojis (🤯, 😱, ⚽, 🔥).",
-    "Evitar títulos o ganchos que revelen el desenlace de la noticia de forma directa y sin intriga, especialmente en resultados deportivos (ej: empates 0-0) que pueden carecer de la tensión necesaria para un Short.",
-    "Aumentar la publicación de contenido del nicho 'deportes' (cubriendo sub-nichos como `mundial_2026`), dado su alto rendimiento promedio (`avg_views`: 258) y excepcional tendencia de crecimiento (`trend`: 867.0), combinándolo con el estilo `ia_noticias`."
+    "Priorizar contenido de deportes de alto impacto, especialmente fútbol y Mundial, utilizando títulos con interrogantes y emojis de sorpresa como '🤯' y '😱' para generar intriga.",
+    "Publicar los videos de mayor potencial a la 1 AM, mientras se exploran también las franjas de 6 AM (2171 vistas) y 17 PM (2108 vistas) para una distribución de contenido diversificada que capture distintas audiencias.",
+    "Evitar Hooks que revelen el resultado o el hecho principal de forma directa; en su lugar, iniciar con frases de anticipación o datos específicos que inviten a ver el video completo."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho 'ia_noticias' contiene todos los videos individuales de mayor rendimiento, lo que sugiere un alto potencial de picos de visualización, el sub-nicho 'mundial_2026' (dentro de 'deportes') muestra una performance promedio superior y una tendencia de crecimiento excepcional, indicando una mayor consistencia y viabilidad a largo plazo para el canal si se explota activamente."
+  "insight_semana": "La combinación más potente para generar vistas es el contenido deportivo de alta trascendencia (e.g., Mundial de fútbol) presentado con el formato ágil y de intriga característico de 'ia_noticias', utilizando títulos que generen expectativa y no revelen el desenlace."
 }
