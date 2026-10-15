@@ -1,41 +1,38 @@
 {
   "updated": "2026-10-15",
-  "iteracion": 515,
+  "iteracion": 516,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "productividad": 0.1,
-    "negocios": 0.05,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "entretenimiento": 0.15,
+    "productividad_ia": 0.05,
     "finanzas": 0.03,
-    "entretenimiento": 0.03,
     "negocios_digitales": 0.03,
     "cripto_inversiones": 0.02,
-    "productividad_ia": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Pregunta con Intrigra/Conspiración: [Tema Polémico] entregó [Resultado Inesperado]? 🤯 (PARTE X)",
-    "Noticia Shockante/Impactante: [Evento Catastrófico] en [Lugar]: [Cifra/Consecuencia] y [Estado de Emergencia]",
-    "Urgencia/Exclusiva Deportiva: La noticia deportiva que sacude [Región] hoy ⚽",
-    "Alerta de Última Hora/Desenlace Inesperado: [Evento/Competencia]: ¡[Personaje/Equipo] ELIMINADO! 😱",
-    "Rumor/Confirmación de Gran Venta/Cambio: [Equipo/Empresa] SE VENDE HOY: ¿Adiós a [Liga/Mercado]? 😱",
-    "Advertencia de Escasez/Demanda Explosiva: ENTRADAS [Evento/Artista] ¡Se Agotan! 😱🔥"
+    "Hooks que generen suspense y anticipación por un evento inminente (ej. \"¡Se acabó la espera! ¡El\")",
+    "Hooks que enfaticen un talento emergente o un evento individual impactante (ej. \"Con solo 17 años, Lamine\")",
+    "Hooks que planteen una pregunta dramática o sugieran una controversia/conspiración (ej. \"¿FINAL ENTREGADA? 🤯\", \"¿Adiós a la Premier League? 😱\")",
+    "Hooks que transmitan urgencia o la naturaleza de 'noticia de última hora' (ej. \"HOY\", \"SACUDE LATAM\", \"¡Se Agotan! 🔥\")",
+    "Hooks que describan alto impacto, shock o tragedia con adjetivos fuertes y emojis (ej. \"DEVASTADOR\", \"TRAGEDIA\", \"¡SHOCK! 🤯\", \"😱\")",
+    "Hooks con nombres específicos (equipos, personas) y un desenlace de alto riesgo (ej. \"AMÉRICA CEDE LIDERATO\", \"FIFA CEDIÓ\")"
   ],
   "avoid_hooks": [
-    "Declaraciones de resultados deportivos sin drama o pregunta, especialmente empates sin goles.",
-    "Frases incompletas o que cortan la narrativa al inicio del hook (ej: 'X acaba de...').",
-    "Mensajes genéricos de autoayuda o filosofía sin un anclaje noticioso o impactante claro."
+    "Declaraciones fácticas neutrales o de bajo impacto, especialmente resultados deportivos poco emocionantes (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Frases genéricas, incompletas o que no revelan un conflicto/intriga inmediata (ej. \"Sidny Lopes Cabral acaba de\")",
+    "Ganchos de autoayuda o motivación genérica que no se alinean con el formato de noticias/drama del canal (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA\")"
   ],
-  "best_hora": 1,
+  "best_hora": 16,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de noticias deportivas, especialmente aquellas relacionadas con grandes eventos (como mundiales o ligas principales) y figuras relevantes, dado su rendimiento superior y alta tendencia.",
-    "Optimizar los títulos y ganchos usando preguntas intrigantes, exclamaciones dramáticas y emojis relevantes (🤯, 😱, 🔥, ⚽) para captar la atención de inmediato.",
-    "Experimentar con publicaciones en franjas de tarde/noche (16:00, 17:00, 21:00) para capitalizar los picos de rendimiento individual por video, sin abandonar la franja de 1 AM que genera alto volumen.",
-    "Evitar ganchos que son simplemente declaraciones de resultados o frases inconclusas, ya que han demostrado un rendimiento nulo.",
-    "Dada la falta de datos sobre la duración, realizar pruebas controladas de videos cortos (entre 30-60 segundos) para determinar la duración óptima para este canal."
+    "Priorizar la creación de contenido de `ia_noticias` enfocado en temas deportivos de alto impacto, controversia o eventos globales como `mundial_2026`, que muestra una tendencia de crecimiento excepcional (867.0).",
+    "Emplear ganchos que generen intriga, urgencia y drama, utilizando preguntas directas, exclamaciones de shock y emojis (🤯, 😱, 🔥) para maximizar el CTR, como se observa consistentemente en los títulos de mayor rendimiento.",
+    "Concentrar las publicaciones de videos de alto impacto entre las 16:00 y 21:00 (particularmente a las 16:00, con un promedio de 1298 vistas por video), franjas que demuestran un rendimiento individual por video excepcionalmente alto, sin descartar los volúmenes totales en la madrugada (1:00-6:00).",
+    "Evitar temas deportivos con resultados poco emocionantes (ej. empates 0-0) o contenido genérico de autoayuda/motivación, ya que estos patrones han resultado en 0 vistas, indicando una falta de resonancia con la audiencia del canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El contenido de noticias deportivas de última hora, presentado con un enfoque dramático e intrigante a través de hooks impactantes, es el motor principal de vistas del canal, demostrando un potencial de crecimiento masivo en nichos como `mundial_2026`."
+  "insight_semana": "La clave del éxito reside en aplicar el formato de `ia_noticias` a tópicos de alto impacto y tendencia, especialmente en el nicho de `deportes` (demostrado por el `mundial_2026` con un trend de 867.0) y noticias virales (celebridades, desastres), creando una combinación potente para captar audiencias masivas, a pesar del bajo rendimiento de `ia_noticias` como categoría genérica."
 }
