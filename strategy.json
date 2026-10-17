@@ -1,37 +1,38 @@
 {
   "updated": "2026-10-17",
-  "iteracion": 527,
+  "iteracion": 528,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.5,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.5,
+    "ia_noticias": 0.15,
+    "productividad": 0.1,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento] que [Impacto/Sorpresa]!",
-    "Con solo [Dato impactante], [Sujeto] [Logro/Acción clave].",
-    "¡Atención! Bienvenidos al [Tema candente] de hoy...",
-    "¿[Sujeto/Evento] [Verbo polémico]? 🤯",
-    "La noticia [Adjetivo] que sacude [Región/Comunidad] HOY ⚽",
-    "¡[Evento catastrófico/shocking] en [Lugar]: [Número/Dato de impacto]! 😱"
+    "¡Se acabó la espera! [Evento clave]",
+    "Con solo X años, [Nombre] [Logro inesperado]",
+    "¿[Afirmación Controversial]?",
+    "[Evento Impactante]: [Número] muertos/afectados",
+    "¡[Nombre o Evento] ELIMINADO/SACUDIDO/SHOCK! 😱",
+    "La noticia [Tipo] que sacude [Región] hoy"
   ],
   "avoid_hooks": [
-    "Hooks que spoilean el resultado de eventos deportivos sin crear intriga.",
-    "Hooks que inician una frase sin un gancho claro o un contexto intrigante inmediato.",
-    "Hooks que son meramente descriptivos y carecen de elementos emocionales o de sorpresa."
+    "Hooks que son puramente descriptivos del contenido (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks que no incluyen elementos de intriga, emoción o urgencia.",
+    "Hooks que simplemente informan un resultado o un hecho sin contexto dramático (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar contenido de noticias dentro del nicho 'ia_noticias', enfocándose específicamente en temas deportivos (fútbol, Mundiales) que generen controversia, sorpresa o gran impacto en LATAM, dado que estos constituyen el 70% de los videos más virales.",
-    "Diseñar hooks que maximicen la intriga y el Click-Through Rate (CTR) utilizando preguntas impactantes, verbos fuertes (ej. 'ENTREGÓ', 'SACUDE', 'ELIMINADO'), números concretos de impacto y emojis (🤯, 😱, ⚽) en los primeros segundos del video.",
-    "Experimentar con los horarios de publicación de madrugada (1 AM - 2 AM) y primera hora de la mañana (6 AM), así como la tarde (16 PM - 17 PM), ya que estos bloques han demostrado consistentemente alta captación inicial para el contenido viral."
+    "Priorizar la creación de contenido de noticias deportivas, enfocándose en eventos de alta controversia o impacto regional (LATAM) para maximizar la viralidad, dado que el 70% de los videos top del nicho 'ia_noticias' son de este tipo y tienen un promedio de 1114.7 views.",
+    "Diseñar títulos que incorporen palabras de 'shock' o 'controversia' como 'ENTREGÓ', 'SACUDE', 'ELIMINADO', 'SHOCK', 'CEDIÓ', ya que el 90% de los videos del top 10 utilizan esta estrategia para generar intriga instantánea.",
+    "Implementar hooks de apertura que generen intriga o anticipación, evitando descripciones directas. Ejemplos incluyen '¡Se acabó la espera!' o '¿[Afirmación Controversial]?', para captar la atención de inmediato y evitar el patrón de 0 vistas asociado a hooks puramente descriptivos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' demuestra un potencial viral extremo y una alta volatilidad, generando el 100% de los videos más vistos pero con un bajo promedio general y tendencia negativa, lo que indica que el éxito depende crucialmente de temas muy específicos y ejecuciones con alto impacto emocional y controversia."
+  "insight_semana": "El nicho 'ia_noticias' solo es efectivo cuando aborda temas deportivos con alto impacto o controversia (promedio de vistas > 1100), mientras que su rendimiento general es muy bajo (avg_views: 10) fuera de este sub-nicho, indicando una fuerte dependencia del contenido de deportes para la viralidad."
 }
