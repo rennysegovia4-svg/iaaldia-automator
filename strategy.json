@@ -1,39 +1,38 @@
 {
-  "updated": "2026-10-16",
-  "iteracion": 523,
+  "updated": "2026-10-17",
+  "iteracion": 524,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.2,
+    "deportes": 0.35,
+    "ia_noticias": 0.25,
+    "entretenimiento": 0.1,
+    "politica_latam": 0.1,
     "productividad_ia": 0.08,
-    "negocios_digitales": 0.05,
-    "cripto_inversiones": 0.05,
     "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "politica_latam": 0.04
+    "negocios_digitales": 0.04,
+    "cripto_inversiones": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia]...",
-    "Con solo [edad], [persona] [logro sorprendente]...",
-    "Muy buenas tardes. Bienvenidos a [resumen de noticia]...",
-    "¿[Sujeto/Equipo] [Acción controvertida] [Evento clave]? 🤯",
-    "[Evento Catastrófico] devastador en [Lugar]: [Cifra impactante]...",
-    "[Noticia Urgente] [Tema Popular] HOY: ¡[Reacción]! 😱"
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "¿[Evento/Situación Controvertida]? 🤯",
+    "¡[Noticia Impactante] HOY! 😱",
+    "[Desastre/Evento] en [Lugar]: la tragedia que...",
+    "[Figura Pública/Equipo] en SHOCK: ¡[Suceso Clave]! 🔥"
   ],
   "avoid_hooks": [
-    "Descripciones de resultados exactos sin intriga, como 'Brasil y Noruega empatan 0-0'.",
-    "Mencionar nombres de figuras poco conocidas sin contexto intrigante, como 'Sidny Lopes Cabral acaba de'.",
-    "Ganchos puramente factuales que no generen una pregunta o emoción, resultando en 0 vistas."
+    "[Equipo 1] y [Equipo 2] empatan [Marcador]",
+    "[Nombre completo] acaba de [acción simple]",
+    "Hooks que simplemente enuncian un hecho sin intriga"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido de noticias deportivas de alto impacto, especialmente relacionado con grandes eventos (ej. Mundial) y ligas populares (ej. LIGA MX), dado que concentran la mayoría de las vistas top y un alto promedio en el nicho 'mundial_2026' (258 vistas).",
-    "Utilizar títulos y ganchos que insinúen conspiraciones, controversias o giros inesperados en eventos conocidos ('ARGENTINA ENTREGÓ la Final del Mundial? 🤯') ya que son los más efectivos para generar vistas (hasta 1325 vistas).",
-    "Expandir la cobertura de 'ia_noticias' para incluir otras noticias de alto impacto más allá del deporte, como desastres naturales ('Terremoto devastador en Colombia' con 1244 vistas) y eventos de celebridades, manteniendo siempre un tono urgente y sorprendente.",
-    "Publicar estratégicamente videos en las franjas horarias de 1h, 6h, 16h, 17h y 21h, con especial atención a la 1h AM, que ha mostrado el mayor rendimiento individual (1325 vistas) y consistencia en el top 10.",
-    "Evitar completamente títulos y ganchos puramente descriptivos o factuales que no generen intriga o emoción, ya que estos patrones han demostrado resultar en 0 vistas y un fracaso total en el alcance."
+    "Priorizar la creación de contenido de 'ia_noticias' enfocado en deportes, desastres naturales o noticias de celebridades con un ángulo de shock, controversia o revelación, aprovechando su alta capacidad de viralidad demostrada.",
+    "Utilizar de forma consistente ganchos que generen intriga, anticipación o que presenten una pregunta abierta/conspirativa en los primeros segundos del video, como se observa en los títulos de mayor rendimiento.",
+    "Invertir más recursos en el nicho de 'deportes', especialmente temas relacionados con 'mundial_2026', dado su alto rendimiento promedio y tendencia creciente, buscando siempre un ángulo novedoso o polémico.",
+    "Evitar ganchos iniciales que sean puramente descriptivos o que revelen el desenlace de forma directa, ya que esto ha resultado en un nulo engagement en la mayoría de los casos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias', a pesar de su bajo promedio de vistas (15), actúa como un 'contenedor de alto impacto', albergando 9 de los 10 videos con más vistas. Esto demuestra que no es el nicho en sí, sino la capacidad de presentar noticias específicas y de gran relevancia (deportes, desastres, celebridades) con un enfoque de intriga y urgencia, lo que impulsa el éxito del canal."
+  "insight_semana": "El nicho 'ia_noticias' opera como un potente amplificador para noticias de alto impacto y trending topics (especialmente deportes, desastres y entretenimiento), mostrando una alta varianza pero una capacidad excepcional para generar los picos de vistas más altos, a pesar de su bajo promedio general. Esto sugiere que el éxito radica en la relevancia y el ángulo sensacionalista del tema cubierto, más allá de la categoría genérica de 'noticias IA'."
 }
