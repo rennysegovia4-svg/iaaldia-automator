@@ -1,24 +1,27 @@
 {
-  "updated": "2026-10-18",
-  "iteracion": 537,
+  "updated": "2026-10-19",
+  "iteracion": 538,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.55,
-    "ia_noticias": 0.25,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "mundial_2026": 0.2,
+    "productividad": 0.08,
+    "negocios": 0.02,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El... (hook efectivo con 867 vistas promedio)",
-    "Con solo 17 años, Lamine... (hook efectivo con 740 vistas promedio)",
-    "Muy buenas tardes. Bienvenidos a... (hook efectivo con 375 vistas promedio)",
-    "[Evento] ENTREGÓ [Resultado]? 🤯 (Patrón: Pregunta Controversial + Emoji)",
-    "[Noticia Impactante] [Región/Detalle]: [Consecuencia] 😱 (Patrón: Noticias de Choque + Especificidad + Emoji)",
-    "[Evento Específico] HOY: ¡[Noticia Urgente]! 😱 (Patrón: Urgencia + Especificidad + Emoji)"
+    "¡Se acabó la espera! ¡El [evento/noticia] ha llegado!",
+    "Con solo [edad], [nombre] logra [hazaña]...",
+    "Muy buenas tardes. Bienvenidos a [resumen de la noticia].",
+    "¿[Evento polémico] entregó [resultado]? 🤯",
+    "[Sujeto] en SHOCK: ¡[Evento]! 😱",
+    "La noticia [adjetivo] que sacude [lugar] HOY ⚽"
   ],
   "avoid_hooks": [
     "Brasil y Noruega empatan 0-0",
@@ -26,14 +29,14 @@
     "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho 'deportes' (incluyendo subtemas como 'mundial_2026') debido a su excepcional rendimiento promedio (258 vistas), su alto score (3.659) y una tendencia de crecimiento masiva (867.0).",
-    "Implementar los ganchos efectivos identificados, prestando especial atención a la combinación de preguntas controversiales, noticias impactantes, elementos de urgencia (ej. 'HOY') y el uso estratégico de emojis (🤯, 😱, 🔥, ⚽) en los títulos.",
-    "Programar la publicación de Shorts preferentemente a la 1 AM, ya que esta franja horaria concentró el mayor número de videos en el TOP 10 (3 videos) y el video más visto (1325 vistas), mostrando una alta efectividad general.",
-    "Establecer un sistema para recopilar datos de 'duracion_optima' y 'retención de audiencia' de los Shorts, ya que actualmente se carece de esta métrica clave para una optimización más profunda y basada en el comportamiento del espectador.",
-    "Analizar los temas y enfoques de los 5 videos con 0 vistas para comprender mejor los patrones que conducen a una falla total en la captación de audiencia y evitarlos activamente."
+    "Priorizar la creación de contenido de noticias deportivas, especialmente aquellos que giran en torno a grandes eventos o polémicas como el Mundial, dado el rendimiento excepcional del nicho 'mundial_2026' y la prevalencia de noticias deportivas en los videos top de 'ia_noticias'.",
+    "Diseñar hooks que generen intriga, urgencia y que incorporen elementos emocionales como preguntas impactantes, exclamaciones y emojis (ej. '🤯', '😱', '🔥'), siguiendo el patrón de éxito de los títulos del TOP 10.",
+    "Experimentar con horarios de publicación, enfocándose en la 1 AM por su consistencia en producir múltiples videos top, y también probando a las 16 PM para contenido de alto impacto individual, monitoreando cuál franja es más efectiva para distintos tipos de noticias.",
+    "Evitar hooks genéricos o puramente descriptivos que no generen anticipación o emoción, como se observó en los videos con 0 vistas en el nicho 'mundial_2026'.",
+    "Implementar la recolección de datos sobre la 'duracion_optima' de los Shorts y la tasa de retención. Esta métrica es crucial para optimizar la duración de los videos y aumentar el engagement, ya que actualmente se carece de esta información."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'mundial_2026' (y por extensión, 'deportes') no solo domina en vistas promedio (258 vs. 71 del siguiente) y score (3.659), sino que su impresionante tendencia de 867.0 indica un potencial de crecimiento explosivo y debe ser el foco principal de la estrategia de contenido para maximizar el alcance."
+  "insight_semana": "A pesar de que el nicho 'ia_noticias' generó el 100% de los videos en el TOP 10, el nicho 'mundial_2026' muestra el mayor potencial de crecimiento con un `avg_views` de 258 y un `trend` de 867.0, sugiriendo alta viralidad y alcance cuando el contenido es bien recibido, aunque con mayor riesgo de bajo rendimiento."
 }
