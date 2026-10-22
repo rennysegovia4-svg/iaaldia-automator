@@ -1,37 +1,39 @@
 {
   "updated": "2026-10-22",
-  "iteracion": 562,
+  "iteracion": 563,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.25,
-    "finanzas": 0.05,
     "entretenimiento": 0.15,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "finanzas": 0.04,
+    "negocios_digitales": 0.04,
+    "productividad_ia": 0.04,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡[Evento/Noticia clave]!",
-    "Con solo [Edad/Número], [Persona] [Logro/Hecho sorprendente]...",
-    "Muy buenas [Día/Noche]. Bienvenidos a [Tema Noticioso/Actualidad]...",
-    "¿[Afirmación Controvertida/Rumor]? 🤯 / 😱",
-    "¡Última hora! [Evento Devastador/Impactante] en [Lugar]...",
-    "[Equipo/Liga]: [Acción Inesperada] ¡[Emoción Fuerte]! 😱"
+    "¡Se acabó la espera! ¡El [evento/noticia] ha llegado...",
+    "Con solo [edad/condición], [persona/equipo] logra [hazaña inesperada]...",
+    "Muy buenas tardes. Bienvenidos a [noticia urgente]...",
+    "¿[Afirmación controvertida]? ¡[Impacto]! 🤯 (Ej. ¿Argentina entregó la final? 🤯)",
+    "[Evento importante] hoy: ¡[Consecuencia impactante]! 😱 (Ej. Terremoto devastador: 132 muertos...)",
+    "¡[Producto/Evento] se agota/termina [hoy/ahora]! 😱🔥 (Ej. Entradas Shakira Madrid ¡Se Agotan!)"
   ],
   "avoid_hooks": [
-    "Hooks que reportan hechos simples y sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que son excesivamente específicos sin proveer contexto amplio o un impacto claro (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que sugieren un 'no-evento' o un resultado poco emocionante en temas de alto perfil."
+    "Evitar hooks puramente informativos y sin emoción que solo describen el evento sin generar intriga o impacto (Ej. 'Brasil y Noruega empatan 0-0').",
+    "Evitar hooks incompletos o demasiado específicos que no ofrecen contexto inmediato o una promesa clara al espectador (Ej. 'Sidny Lopes Cabral acaba de').",
+    "Evitar hooks sobre eventos hipotéticos o futuros presentados como noticias actuales, especialmente si son sobre resultados deportivos futuros, ya que generan desconfianza o confusión."
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Enfocarse primordialmente en noticias deportivas, especialmente fútbol/soccer, utilizando títulos y ganchos que planteen preguntas controvertidas o expresen emociones fuertes con emojis para maximizar el engagement (reflejado en el éxito de temas como 'Argentina' y 'Mundial').",
-    "Priorizar la creación de contenido de 'ia_noticias' sobre eventos de última hora que generen fuerte reacción emocional (shock, tragedia, urgencia) y publicarlos alrededor de la 1 AM, aprovechando el potencial de impacto temprano identificado.",
-    "Experimentar con el nicho 'mundial_2026' debido a su alta tendencia de crecimiento (867.0), pero con una selección de temas extremadamente cuidadosa para evitar reportar no-eventos o resultados poco atractivos (como empates 0-0), que han demostrado llevar a 0 vistas."
+    "Priorizar enfáticamente la creación de contenido sobre noticias deportivas de alto impacto y urgencia, especialmente relacionadas con fútbol latinoamericano y eventos de magnitud global (ej. mundiales), dado su dominio en el TOP 10 y la alta tendencia de nichos como 'mundial_2026'.",
+    "Maximizar la visibilidad publicando contenido noticioso urgente a la 1 AM (hora 1), ya que este horario ha demostrado consistentemente el mayor promedio de vistas para los videos de mayor rendimiento, asegurando un impacto temprano en la audiencia.",
+    "Implementar ganchos que generen urgencia, expectación y emoción, utilizando preguntas disruptivas, adjetivos impactantes y emojis (🤯, 😱, 🔥) para captar la atención en los primeros segundos, basándose en las fórmulas identificadas en los hooks más efectivos y títulos exitosos.",
+    "Ampliar la cobertura a noticias de entretenimiento de alto perfil y eventos noticiosos de interés general (ej. desastres naturales), siempre que sean temas trending y generen un alto volumen de búsqueda o conversación, como se observó con 'Shakira' y los 'Terremotos'.",
+    "Evitar rigurosamente la publicación de contenido que presente eventos futuros o hipotéticos como noticias actuales (ej. resultados de un mundial aún no disputado), ya que estos videos han demostrado un rendimiento nulo y pueden dañar la credibilidad del canal."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La alta volatilidad dentro de los nichos 'ia_noticias' y 'mundial_2026' revela que, si bien tienen el potencial de generar vistas masivas con el contenido y los ganchos adecuados, la mayoría de sus videos no logran tracción, haciendo que la selección del tema y la formulación del gancho sean el factor crítico entre el éxito viral y el fracaso total."
+  "insight_semana": "El rendimiento del canal está extremadamente polarizado: los videos exitosos provienen exclusivamente de noticias de alto impacto y urgencia (principalmente deportes, pero también desastres o celebridades), mientras que la mayoría de los videos bajo el mismo nicho 'ia_noticias' tienen un rendimiento muy bajo, lo que indica que la clave no es el nicho per se, sino la capacidad de identificar y capitalizar eventos noticiosos virales y trending con ganchos potentes."
 }
