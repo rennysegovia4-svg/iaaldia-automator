@@ -1,38 +1,39 @@
 {
   "updated": "2026-10-23",
-  "iteracion": 571,
+  "iteracion": 572,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.55,
-    "ia_noticias": 0.2,
-    "productividad_ia": 0.1,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
     "entretenimiento": 0.08,
-    "negocios_digitales": 0.05,
-    "finanzas": 0.01,
-    "cripto_inversiones": 0.005,
-    "politica_latam": 0.005
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El (generador de anticipación, 867 avg_views)",
-    "Con solo 17 años, Lamine (sorpresa, detalle específico, 740 avg_views)",
-    "Muy buenas tardes. Bienvenidos a (introducción de noticias directa, 375 avg_views)",
-    "¿Es posible que...? (pregunta provocadora sobre un evento mayor, inferido de títulos top)",
-    "ALERTA MUNDIAL: (noticia urgente de alto impacto, inferido de desastres naturales)",
-    "INCREÍBLE: [Nombre] FUERA! (anuncio dramático de resultado/eliminación, inferido de noticias deportivas)"
+    "¿[Evento/Situación] [Verbo dramático]? 🤯",
+    "[Noticia impactante] + [cifra/lugar clave] + [consecuencia dramática]",
+    "[Entidad/Persona] [Acción sorprendente] ¡[Exclamación]! 😱",
+    "[Alerta de escasez/urgencia] + [Producto/Evento] ¡[Emoción]! 🔥",
+    "¡Se acabó la espera! [Evento clave]...",
+    "Con solo [edad] años, [nombre]..."
   ],
   "avoid_hooks": [
-    "Hooks que anuncian resultados de partidos poco dramáticos o empates (ej. 'Brasil y Noruega empatan 0-0' con 0 views)",
-    "Hooks genéricos o que carecen de impacto inmediato sin contexto (ej. 'Brasil y Noruega empatan' con 0 views)",
-    "Hooks que presentan un sujeto o evento desconocido sin intriga o relevancia aparente (ej. 'Sidny Lopes Cabral acaba de' con 0 views)"
+    "Hooks que describen eventos ficticios o hipotéticos como hechos reales y poco dramáticos.",
+    "Hooks excesivamente específicos y sin contexto que no generan intriga.",
+    "Hooks que revelan el resultado sin un giro o pregunta dramática."
   ],
   "best_hora": 1,
   "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar intensamente el contenido de noticias deportivas controversiales y de última hora (ej. Mundial, ligas importantes) y el de desastres naturales o eventos de celebridades con alta demanda, ya que estos sub-nichos han demostrado el mayor potencial de viralización.",
-    "Implementar la estrategia de 'contenido fragmentado' utilizando '(PARTE 1)' o '(1/2)' en títulos de temas complejos o controvertidos para generar intriga sostenida, tal como se observó en los videos de 'ARGENTINA' con hasta 1325 vistas.",
-    "Concentrar esfuerzos de publicación en las franjas horarias de mayor rendimiento: `1 AM`, `6 AM` y `17 PM` (5 PM), dando especial prioridad a la `1 AM` debido a su recurrencia en los videos top.",
-    "Diseñar hooks que enfaticen la anticipación, la sorpresa o el impacto inmediato de la noticia, evitando aquellos que simplemente enuncian un hecho sin crear urgencia o curiosidad, lo cual ha demostrado una correlación directa con 0 vistas."
+    "Priorizar la creación de contenido de noticias deportivas urgentes, especialmente las relacionadas con grandes torneos como el Mundial y ligas regionales (ej. Liga MX), dado el alto rendimiento del nicho 'mundial_2026' y videos en el TOP 10.",
+    "Experimentar con horarios de publicación en la madrugada (1 AM - 2 AM) y la tarde (5 PM - 6 PM / 17-18 PM) para la difusión de noticias de última hora o eventos importantes, ya que estas franjas han demostrado la mayor concentración de videos de alto rendimiento.",
+    "Implementar hooks que generen intriga, utilicen preguntas retóricas, mencionen cifras o lugares específicos de impacto (ej. '132 muertos en Colombia'), o anuncien escasez/urgencia de eventos (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan!'), amplificando la emoción con emojis.",
+    "Diversificar las temáticas dentro de 'ia_noticias' para incluir noticias de desastres naturales con impacto local y menciones explícitas de consecuencias, así como noticias de entretenimiento urgentes (ej. eventos de celebridades con alta demanda)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' opera como una categoría de alto riesgo y alta recompensa; aunque su promedio de vistas es bajo (13), es la fuente principal de los videos más virales (con más de 1000 vistas) cuando se alinea con noticias deportivas controversiales, desastres naturales o eventos de celebridades de última hora, indicando que el éxito depende críticamente de la elección de temas de actualidad y alto impacto emocional."
+  "insight_semana": "El nicho 'ia_noticias' presenta una alta variabilidad, con un promedio de vistas general bajo (`13` vistas), pero un potencial viral masivo para temas de alto impacto y urgencia (ej. noticias deportivas dramáticas, desastres naturales con cifras, escasez de entradas para eventos), concentrando todos los `10` videos más vistos, lo que sugiere una estrategia de 'hits' en lugar de consistencia promedio para este nicho."
 }
