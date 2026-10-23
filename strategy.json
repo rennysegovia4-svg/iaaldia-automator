@@ -1,37 +1,39 @@
 {
   "updated": "2026-10-23",
-  "iteracion": 568,
+  "iteracion": 569,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.03,
+    "deportes": 0.5,
+    "ia_noticias": 0.4,
+    "finanzas": 0.01,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.01,
+    "productividad_ia": 0.02,
     "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "[Evento] ENTREGÓ [Algo]? 🤯",
-    "[Noticia Impactante] ¡[Acción]! 😱",
-    "[Producto/Evento] ¡Se Agotan! 😱🔥"
+    "Hooks de anticipación y urgencia: '¡Se acabó la espera! ¡El', 'HOY', '¡Se Agotan!'",
+    "Hooks destacando talentos jóvenes o nombres propios con impacto: 'Con solo 17 años, Lamine', '¡Gamezking ELIMINADO!'",
+    "Hooks con preguntas controversiales y emojis de shock: '¿FINAL ENTREGADA? 🤯', '¿Adiós a la Premier League? 😱'",
+    "Hooks para noticias de gran impacto o desastres con cifras/ubicaciones: 'Terremoto devastador en Colombia: 132 muertos'",
+    "Hooks con declaraciones de shock o crisis y emojis emotivos: 'AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯', '¡FIFA CEDIÓ! 🤯'",
+    "Fórmula de serialización en el título para temas calientes: '(PARTE 1)', '(1/2)'"
   ],
   "avoid_hooks": [
-    "[Equipo] y [Equipo] empatan [Resultado] (ej. 'Brasil y Noruega empatan 0-0')",
-    "[Nombre] acaba de [Acción] (sin intriga ni impacto claro)",
-    "Afirmaciones fácticas y sin emoción que repiten el título (ej. 'Brasil y Noruega empatan')"
+    "Hooks demasiado descriptivos o puramente fácticos sin emoción ni intriga: 'Brasil y Noruega empatan 0-0'",
+    "Hooks incompletos o que no generan contexto ni curiosidad: 'Sidny Lopes Cabral acaba de'",
+    "Hooks que mencionan eventos deportivos con resultados poco emocionantes: 'Brasil y Noruega empatan'"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar contenido de `ia_noticias` enfocado en noticias deportivas controversiales y de última hora (especialmente fútbol/Mundial), utilizando títulos con preguntas y emojis de sorpresa (🤯, 😱) como en 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯' para maximizar la intriga.",
-    "Implementar los hooks de alta intriga y anticipación, como '¡Se acabó la espera! ¡El' (867 avg_views) y 'Con solo 17 años, Lamine' (740 avg_views), así como títulos que generen urgencia o escasez (`¡Se Agotan! 😱🔥`) para una mayor captación de la audiencia.",
-    "Consolidar la estrategia de publicación en las franjas horarias de 1 AM, 16 PM y 21 PM, dado que el video de mayor rendimiento (1325 views) fue publicado a la 1 AM, y estas horas han demostrado ser consistentemente exitosas."
+    "Priorizar la creación de contenido en nichos de alto rendimiento como 'deportes' (aprovechando el éxito de 'mundial_2026' y noticias deportivas de LATAM) y 'ia_noticias' (noticias de última hora, controversias regionales, desastres y celebridades).",
+    "Implementar la estrategia de serialización (usando '(PARTE 1)' o '(1/2)' en el título) para temas controvertidos o complejos que puedan generar intriga y fomentar la visualización de contenido en serie.",
+    "Diseñar títulos y hooks que generen fuerte anticipación, utilicen preguntas retóricas, mencionen impacto global/regional o números clave, y empleen emojis relevantes como 🤯, 😱, 🔥 para maximizar el CTR.",
+    "Evitar los patrones de hooks que han mostrado un rendimiento nulo, como las descripciones excesivamente factuales o las frases incompletas.",
+    "Concentrar las publicaciones de videos de alto impacto en las horas más exitosas identificadas: 1 AM como la principal, y 6 AM y 5 PM (17) como alternativas fuertes."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La discrepancia entre el bajo promedio de vistas del nicho 'ia_noticias' (15 views) y su dominancia absoluta en el Top 10 videos, revela que este nicho es de alto riesgo y alta recompensa, donde la clave del éxito reside en la selección de temas de noticias extremadamente virales y controversiales, especialmente dentro del ámbito deportivo."
+  "insight_semana": "El nicho 'ia_noticias' es el motor principal de videos virales, con los temas de alta controversia (ej. 'Argentina Mundial'), noticias de último minuto con impacto regional (ej. 'Terremoto en Colombia') y la estrategia de serialización '(PARTE 1)' siendo los patrones más efectivos para superar las 1000 vistas. El potencial de 'mundial_2026' resalta la demanda masiva por noticias deportivas específicas."
 }
