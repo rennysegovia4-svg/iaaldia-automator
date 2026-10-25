@@ -1,39 +1,39 @@
 {
   "updated": "2026-10-25",
-  "iteracion": 582,
+  "iteracion": 583,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta retórica/declaración polémica + Emoji de shock (🤯) + Parte N (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
-    "Noticia impactante/trágica + Ubicación + Cifras/Consecuencia (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Noticia de urgencia ('HOY') + Impacto (LATAM/sacude) + Emoji (⚽) (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Declaración impactante/eliminación + Capitalizado + Emoji de shock (😱) (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Evento urgente + Geografía + Palabra 'tragedia' (ej. 'Temblor hoy Colombia y Venezuela: la tragedia sísmica...')",
-    "Keywords capitalizadas + Verbo de acción/estado + ¡Emoción! + Emoji (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "Hooks que generan anticipación y urgencia sobre un evento principal (ej. \"¡Se acabó la espera! ¡El\")",
+    "Hooks que destacan logros o situaciones sorprendentes de figuras clave, especialmente jóvenes (ej. \"Con solo 17 años, Lamine\")",
+    "Hooks formulados como preguntas o que plantean una controversia sobre eventos importantes (ej. \"¿FINAL ENTREGADA? 🤯\")",
+    "Hooks que utilizan exclamaciones y emojis potentes para expresar shock, sorpresa o una noticia impactante (ej. \"¡SHOCK! 🤯\", \"😱\")",
+    "Hooks que anuncian noticias de alto impacto y actualidad con ubicación y consecuencias directas (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Hooks que prometen información exclusiva o de gran relevancia para un público amplio en un nicho específico (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")"
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un resultado o hecho sin generar intriga o impacto (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que introducen una persona sin contexto viral o emocional (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks descriptivos redundantes o versiones acortadas sin valor añadido (ej. 'Brasil y Noruega empatan')"
+    "Hooks puramente descriptivos o de resultados sin generar emoción, curiosidad o impacto (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Hooks incompletos o demasiado genéricos que no contextualizan la información ni despiertan interés (ej. \"Sidny Lopes Cabral acaba de\")",
+    "Hooks que anuncian eventos sin una conexión clara con la audiencia o un elemento de sorpresa (ej. \"BRASIL 0-0 NORUEGA EN MUNDIAL 2026!\")"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar contenido en los nichos de `deportes` (aprovechando el potencial de `mundial_2026` con su alto avg_views y trend) y `ia_noticias`, buscando equilibrar la viralidad explosiva de este último con la consistencia del primero.",
-    "Mantener la Hora 1 (1 AM) como la franja principal de publicación, dado su rendimiento superior en la generación de viralidad para los videos del Top 10.",
-    "Diseñar los ganchos iniciales de los videos y los títulos utilizando elementos como preguntas polémicas, noticias impactantes con cifras, palabras de urgencia ('HOY'), uso intensivo de mayúsculas y emojis emocionales (🤯, 😱, 🔥, ⚽), inferidos de los títulos de videos exitosos.",
-    "Evitar ganchos meramente descriptivos o que revelen el clímax sin generar intriga, como se observó en los videos de bajo rendimiento (0 vistas).",
-    "Implementar de forma urgente la captura y registro sistemático del `hook` exacto (primeros 3-5 segundos) y la `duracion` de cada video, especialmente los virales, para permitir un análisis predictivo y una optimización precisa en futuras iteraciones."
+    "Priorizar el nicho `deportes` (basado en el rendimiento de `mundial_2026`) asignándole más recursos debido a su alta `avg_views` (258) y fuerte `trend` (867.0), lo que indica un potencial de crecimiento sostenido y menos volátil.",
+    "Mantener la producción en `ia_noticias` con una estrategia de alta precisión: enfocar el 100% de los esfuerzos en \"momentos virales\" y noticias de última hora con títulos y ganchos extremadamente impactantes, dada su volatilidad (100% Top 10 pero bajo `avg_views` y `trend` negativa).",
+    "Implementar urgentemente la recopilación de datos para el `hook` real utilizado y la `duracion` de cada video. Sin estos datos, la optimización profunda y precisa de la estrategia de contenido es severamente limitada.",
+    "Continuar publicando los contenidos clave alrededor de la Hora 1 (1 AM), ya que esta franja horaria consistentemente produce el mayor volumen de vistas para los videos del Top 10, consolidándose como la hora óptima de publicación.",
+    "Para los nichos con 0 `avg_views` y `trend` nula (finanzas, entretenimiento, etc.), destinar un porcentaje mínimo y controlado de contenido experimental para identificar posibles intereses latentes, sin desviar recursos significativos de los nichos con rendimiento probado."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dicotomía `ia_noticias` se intensifica: genera el 100% de los videos más vistos, pero su bajo `avg_views` y `trend` evidencian una extrema volatilidad. El éxito reside en identificar y explotar el 'momento viral' fugaz, mientras que nichos como `mundial_2026` (bajo `deportes`) ofrecen un rendimiento promedio superior y más estable que necesita ser explorado para picos de vistas, a pesar de la falta crítica de datos de hooks y duración que impide una optimización precisa."
+  "insight_semana": "La estrategia de contenido en `ia_noticias` es de 'todo o nada': aunque monopoliza el Top 10 (100%), su bajo `avg_views` (15) y `trend` negativa (-0.95) revelan que solo los picos de contenido son efectivos, lo que contrasta con el crecimiento estable y el alto `avg_views` del nicho `deportes` (mundial_2026)."
 }
