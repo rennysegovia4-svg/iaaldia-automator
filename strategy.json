@@ -1,37 +1,40 @@
 {
   "updated": "2026-10-25",
-  "iteracion": 580,
+  "iteracion": 581,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
+    "ia_noticias": 0.6,
     "deportes": 0.3,
-    "ia_noticias": 0.45,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.05
+    "productividad": 0.1,
+    "finanzas": 0.0,
+    "entretenimiento": 0.0,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia impactante]!",
-    "Con solo [número] años, [nombre] [acción sorprendente/logro]",
-    "[NOTICIA EN MAYÚSCULAS/EVENTO CLAVE]: ¿[PREGUNTA DE ALTO IMPACTO]? 🤯",
-    "[SUCESO CATASTRÓFICO/DEPORTIVO] que sacude [REGIÓN/AUDIENCIA] hoy [EMOJI DE IMPACTO]",
-    "[TÍTULO/NOMBRE EN MAYÚSCULAS] [ACCIÓN DE SHOCK/RESULTADO]! 😱",
-    "[Hecho sorprendente/revelación]: ¡[Consecuencia/Reacción]! 🔥/🤯"
+    "Pregunta Controversial + Emoción Intensa + Emoji de Impacto (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Urgente de Evento Crítico + Número/Detalle Específico (Ej: 'Terremoto devastador en Colombia: 132 muertos')",
+    "Anuncio de Evento/Resultado Inesperado + Exclamación + Emoji Sorpresa (Ej: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Evento Actual (HOY) + Consecuencia/Pregunta Clave + Emoji de Incertidumbre (Ej: 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
+    "Celebridad/Marca + Evento Rápido/Urgente + Emoji de Acción/Fuego (Ej: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
+    "Liga/Equipo Específico + Giro Inesperado + Palabra de Shock + Emoji (Ej: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Declaraciones directas de resultados deportivos sin intriga (ej. 'Brasil y Noruega empatan').",
-    "Inicios de frase genéricos que no generan expectación (ej. 'Sidny Lopes Cabral acaba de').",
-    "Afirmaciones puramente informativas sin uso de mayúsculas, signos de exclamación o emojis de impacto."
+    "Declaraciones literales y poco emocionantes (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones factuales sin intriga (Ej: 'Brasil y Noruega empatan')",
+    "Introducciones genéricas o informativas sin gancho (Ej: 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar contenido de `ia_noticias` con enfoque en picos de viralidad, ya que produjo el 100% de los videos en el Top 10, buscando temas impactantes o controversiales.",
-    "Establecer la 1 AM como horario de publicación principal para el contenido de mayor potencial viral, dado que esta franja horaria concentró el 50.3% de las vistas del Top 10 con solo 3 videos.",
-    "Implementar una estrategia agresiva de hooks y títulos, utilizando preguntas, exclamaciones, MAYÚSCULAS y emojis de impacto, aprendiendo de los patrones de los videos más vistos para generar curiosidad y urgencia."
+    "Priorizar el nicho `ia_noticias` para la creación de contenido viral, enfocándose en noticias de alto impacto (deportes, controversias, catástrofes) y utilizando títulos que generen fuerte emoción y curiosidad.",
+    "Consolidar las publicaciones en la Hora 1 (1 AM) para maximizar el potencial viral, dado su rendimiento superior y constante en la captación de vistas en el Top 10.",
+    "Implementar un registro detallado de los `hooks` reales (primeros 3 segundos de video, elementos visuales y auditivos) para todos los videos, especialmente los más exitosos, para construir una base de datos precisa y no depender únicamente de los títulos.",
+    "Explorar el nicho `deportes` (particularmente contenido relacionado con `mundial_2026`) dada su alta media de vistas y tendencia positiva, pero con una estrategia de hooks y temas que mitigue la alta volatilidad observada (ej. múltiples videos con 0 vistas).",
+    "Iniciar la recopilación de datos sobre la duración exacta de los videos para identificar en futuras iteraciones una `duracion_optima` basada en la evidencia de rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el principal motor de viralidad, produciendo todos los videos del Top 10 a pesar de un bajo `avg_views` general, lo que indica que su éxito se basa en la identificación y amplificación de noticias altamente resonantes y no en una consistencia general de rendimiento."
+  "insight_semana": "La viralidad es monopolio del nicho `ia_noticias`, el cual, a pesar de su bajo rendimiento promedio, es el único capaz de producir el 100% de los videos en el Top 10, confirmando un patrón de 'todo o nada' impulsado por eventos noticiosos de alto impacto y la publicación estratégica en la Hora 1 (1 AM)."
 }
