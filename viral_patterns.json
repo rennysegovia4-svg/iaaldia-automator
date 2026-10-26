@@ -1,212 +1,184 @@
 {
   "updated": "2026-10-26",
   "hook_formulas": [
-    "[Realidad/Humor] vs [IA/Tecnología] + [Reacción/Humor]",
-    "[Escenario Relatable/Surrealista] + [Elemento Inesperado/IA] + [Humor/Reacción]",
-    "[Sujeto Inesperado/Adorable] + [Acción Impactante/Humorística] + [Emojis/Contexto]",
-    "[Pregunta Retórica/Directa] + [Concepto Clave/Problema] + [Emoji]",
-    "[Personaje Relatable/Humorístico] + [Situación Financiera/Cotidiana] + [Humor/Emoji]",
-    "[Comparación/Contraste] + [Resultado Financiero/Conclusión]",
-    "[Cita/Referencia Cultural] + [Tema Profundo/Financiero]",
-    "[Evento Dramático/Shocking] + [Resultado Financiero/Inesperado]",
-    "[Herramienta/Tecnología IA] + [Beneficio Extremo/Acción Específica] + [Calificador (GRATIS/Definitiva)]",
-    "[Idea de Negocio/Producto] + [Beneficio/Potencial] + [Emoji]",
-    "[Afirmación de Identificación/Universalidad] + [Reacción Emocional/Humor]",
-    "[Predicción/Declaración Impactante de Experto] + [Tema Clave]"
+    "[Comparación] + [Sujetos/Conceptos] + [Resultado/Partes]",
+    "[Afirmación Impactante sobre X] + [Emoji] + [CTA Urgente]",
+    "[Escenario Relatable/Surrealista] + [Resultado Humorístico] + [Emoji]",
+    "[Sujeto Inesperado/Adorable] + [Acción Impactante/Humorística] + [Contexto/IA]",
+    "[Característica Impactante] + [Sujeto/Tecnología] + [Ubicación/Fecha/Detalle]",
+    "[Transformación Sorprendente] + [Sujeto/Objeto] + [Implicación de Novedad/IA]",
+    "[Exclamación Emocional] + [Contenido Implícito/Visual]",
+    "[Sujeto/IA] + [Acción Mágica/Sorprendente] + [Objeto]",
+    "[Beneficio Claro/Gratuito] + [Herramienta/Función de IA]",
+    "[Afirmación de Superioridad] + [Herramienta/Función de IA] + [Beneficio/Acción]",
+    "[Beneficio de Cantidad/Velocidad] + [Función/Herramienta de IA] + [Beneficio]",
+    "[Pregunta Controversial/Directa] + [Sujeto/Tema]"
   ],
   "title_patterns": [
-    "[Sujeto Inesperado/Tecnología] + [Verbo de Impacto] + [Detalle/Resultado] + [Emojis]",
-    "[Escenario Relatable/Humorístico] + [Reacción Emocional/Humor] + [Emojis]",
-    "[Pregunta Retórica/Intrigante] + [Tema Clave/Financiero] + [Emojis]",
-    "[Afirmación Directa/Consejo] + [Concepto Financiero/Beneficio] + [Emojis]",
-    "[Comparación/Contraste] + [Sujetos/Conceptos] + [Conclusión/Parte de Serie]",
-    "[Declaración de Herramienta/Método] + [Beneficio Extremo] + [Calificador (GRATIS/Definitiva)]",
-    "[Cita de Autoridad/Personaje] + [Tema/Mensaje Clave]",
-    "[Objeto/Idea] + [Calificador de Valor/Potencial] + [Tipo de Contenido (ej. business idea)] + [Emojis]"
+    "[Sujeto 1] vs [Sujeto 2]",
+    "[Afirmación Impactante/Observación] + [Emojis] + [CTA Opcional]",
+    "[Sujeto Inesperado] + [Acción Humorística/Impactante] + [Emojis/Contexto]",
+    "[Característica] + [Objeto/Sujeto] + [Detalle Específico]",
+    "[Pregunta Directa] + [Tema Clave] + [Emojis]",
+    "[Personaje Relatable] + [Situación Cotidiana/Financiera] + [Emojis]",
+    "[Afirmación de Valor/Solución] + [Beneficio] + [Emojis]",
+    "[Beneficio Cuantificable] + [Herramienta/IA] + [Costo/Condición]"
   ],
   "palabras_prohibidas": [
-    "No se pueden identificar palabras que 'matan el CTR' directamente de la lista de videos virales proporcionados, ya que estos datos solo muestran lo que funciona, no lo que falla."
+    "tutorial",
+    "explicación",
+    "guía",
+    "completo",
+    "episodio",
+    "parte",
+    "mi opinión",
+    "detallado",
+    "paso a paso",
+    "análisis"
   ],
   "palabras_clave_virales": [
     "shorts",
-    "viral",
     "ai",
-    "ia",
     "humor",
     "funny",
-    "comedia",
-    "ahorrar",
-    "ahorro",
-    "dinero",
-    "bitcoin",
-    "crypto",
+    "viral",
     "trending",
-    "memes",
-    "robot",
-    "negocios",
-    "business",
-    "emprendimiento",
-    "emprendedor",
-    "tiktokvideo",
-    "latina",
-    "fyp",
+    "inteligencia artificial",
+    "ahorrar",
+    "dinero",
+    "invertir",
+    "españa",
+    "latam",
     "gratis",
-    "real",
-    "realistic"
+    "herramienta",
+    "mamá"
   ],
-  "estructura_gancho_optima": "Una afirmación o pregunta impactante/relatable que crea curiosidad o humor, seguida de una revelación sorprendente o un giro inesperado, a menudo amplificada por emojis de reacción fuerte (😱, 🤣, 💀) al final del título.",
-  "duracion_optima_segundos": 58,
-  "insight_clave": "La clave de la viralidad reside en el desencadenamiento inmediato de una emoción fuerte (humor, asombro, shock, curiosidad, inspiración, identificación) en los primeros segundos, combinado con una gratificación rápida o un giro sorprendente que recompensa la atención del espectador y fomenta la repetición de la visualización y el compartir.",
-  "recomendacion_thumbnail": "El thumbnail debe mostrar una **cara humana con una emoción exagerada y clara (sorpresa, risa, asombro)** o la **imagen más impactante/clímax del video (ej. el robot hiperrealista, el bebé destruyendo algo, el dinero, el objeto único)**. Idealmente, incluir un **texto superpuesto conciso que refuerce la pregunta o la declaración del gancho del título** para generar curiosidad instantánea, con colores de alto contraste y tipografía grande y legible.",
+  "estructura_gancho_optima": "Un impacto inicial fuerte (visual, auditivo o textual) que genera curiosidad o una emoción intensa. Este gancho presenta el conflicto, la sorpresa o el tema central, a menudo a través de una reacción humana expresiva o una salida surrealista/hiperrealista de la IA, diseñada para capturar la atención en los primeros 1-3 segundos.",
+  "duracion_optima_segundos": 28,
+  "insight_clave": "Los Shorts más virales, especialmente en el nicho de IA, trascienden su tema específico al utilizar la IA no solo como contenido, sino como herramienta para crear escenarios hiperrealistas o absurdos. Esto genera contenido que apela a emociones universales como el humor, la sorpresa y el asombro, convirtiéndose en memes o virales visuales altamente compartibles que capturan la atención de una audiencia masiva, independientemente de su interés inicial en la tecnología.",
+  "recomendacion_thumbnail": "Imagen de alta calidad y contraste, mostrando el momento más impactante o el \"punchline\" visual del video. Idealmente, incluye un rostro humano expresando una emoción fuerte (sorpresa, incredulidad, humor) o un elemento visual generado por IA que cause curiosidad o asombro. Es clave incluir un texto corto y audaz (2-4 palabras) con emojis que refuerce el gancho del título.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "[Comparación Realidad vs IA/Tecnología] + [Reacción/Humor]",
-        "[IA/Robot con Cualidad Extrema] + [Asombro/Humor]",
-        "[Escenario Relatable/Surrealista] + [Elemento IA]"
+        "[Comparación Directa] + [IA]",
+        "[Afirmación Impactante sobre IA] + [Emoji/CTA]",
+        "[Sujeto Inesperado/Adorable] + [Acción Impactante] + [Contexto IA/Meme]"
       ],
       "topics": [
-        "Realismo y avances de la IA (visual, robots)",
-        "IA en situaciones cotidianas o humorísticas",
-        "Aplicaciones sorprendentes de la IA en la creatividad"
+        "Realismo y capacidades sorprendentes de la IA (visuales/videos)",
+        "Humor y situaciones absurdas generadas por IA",
+        "Robots hiperrealistas y avances tecnológicos"
       ]
     },
     "finanzas": {
       "hooks": [
-        "[Pregunta Retórica sobre Conceptos Financieros] + [Emoji]",
-        "[Humor Relatable sobre Ahorro/Dinero] + [Personaje]",
-        "[Comparación de Hábitos Financieros] + [Resultado]"
+        "[Pregunta Retórica/Directa] + [Concepto Clave] + [Emoji]",
+        "[Personaje Relatable/Humorístico] + [Situación Financiera] + [Emojis]",
+        "[Comparación/Contraste] + [Resultado Financiero]"
       ],
       "topics": [
-        "Consejos y mitos de ahorro e inversión",
-        "Humor basado en la gestión del dinero y personajes (ej. madres)",
-        "Impacto de decisiones financieras"
+        "Consejos y trucos de ahorro (a menudo con humor)",
+        "Diferencias entre ahorro e inversión",
+        "Situaciones cotidianas y humor sobre la gestión del dinero"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "[Idea de Negocio Innovadora] + [Potencial/Método]",
-        "[Pregunta Desafiante sobre Estrategias de Negocio/Marketing]",
-        "[Análisis/Historia de Marcas Famosas]"
+        "[Pregunta Controversial/Histórica] + [Sujeto]",
+        "[Afirmación Impactante/Cuestionamiento] + [Sujeto Histórico/Geográfico]",
+        "[Comparación Directa de Lugares/Conceptos]"
       ],
       "topics": [
-        "Ideas y emprendimientos (ej. manualidades, 3D printing)",
-        "Estrategias de marketing y ventas",
-        "Historias de éxito/análisis de empresas"
+        "Historia y hechos controvertidos sobre España y Latinoamérica",
+        "Mitos y desmentidos históricos",
+        "Comparaciones culturales o económicas entre regiones"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "[Cita Inspiradora/Referencia Famosa] + [Contexto Financiero]",
-        "[Historia Dramática/Confrontación sobre Dinero] + [Resultado]",
-        "[Opinión de Figura de Autoridad] + [Predicción/Análisis de Cripto]"
+        "[Pregunta Directa] + [Problema Común] + [Solución Implícita]",
+        "[Afirmación de Riesgo/Oportunidad] + [Sujeto/Cripto] + [Emoji]",
+        "[Comparación Impactante] + [Ganancia/Pérdida]"
       ],
       "topics": [
-        "Motivación y filosofía para el éxito financiero",
-        "Escenarios de riesgo y recompensa en cripto/finanzas",
-        "Opiniones de expertos sobre el futuro de criptomonedas"
+        "Predicciones y análisis de precios de criptomonedas",
+        "Errores comunes al invertir en cripto",
+        "Historias de éxito o fracaso en el mundo cripto"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "[Herramienta IA (Gratuita)] + [Beneficio Transformador]",
-        "[Promesa de Gran Productividad] + [Método con IA]",
-        "[Predicción de Experto] + [Impacto Futurista de la IA]"
+        "[Beneficio Claro/Gratuito] + [Herramienta/Función de IA]",
+        "[Afirmación de Superioridad] + [Herramienta/Función de IA] + [Beneficio]",
+        "[Beneficio de Cantidad/Velocidad] + [Función/Herramienta de IA] + [Beneficio]"
       ],
       "topics": [
-        "Herramientas IA para generación de contenido (texto, música, video)",
-        "Optimización de la productividad con IA",
-        "Visiones y predicciones de líderes sobre el futuro de la IA"
-      ]
-    },
-    "_global": {
-      "hooks": [
-        "[Comparación Temporal/Situacional] + [Humor/Reacción]",
-        "[POV/Escenario Relatable] + [Situación Absurda/Humor]",
-        "[Evento Común/Celebración] + [Humor/Reacción]"
-      ],
-      "topics": [
-        "Humor relatable sobre situaciones cotidianas",
-        "Reacciones exageradas a eventos comunes",
-        "Desafíos visuales o acertijos"
+        "Herramientas de IA para generación de contenido (texto, voz, video, música)",
+        "Automatización y eficiencia con IA",
+        "Demostraciones de IA para mejorar la productividad"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 75714527,
+      "views": 75716207,
       "id": "QndanaE1eqg"
     },
     {
-      "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 61187383,
-      "id": "QYxtNplarhA"
-    },
-    {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 55624872,
+      "views": 55625797,
       "id": "6ms51abwU5A"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44453313,
+      "views": 44453942,
       "id": "qrfrPlEGrdw"
     },
     {
-      "titulo": "How much money is in your bank account?  🤔💰  #shorts #finance #interview",
-      "views": 42274669,
-      "id": "IKXiyApvKjI"
-    },
-    {
       "titulo": "Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts",
-      "views": 39259855,
+      "views": 39266636,
       "id": "59AAoa8l064"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38845635,
+      "views": 38847027,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "Ahorrar es progreso 🤣💕 #shorts #humor #tiktokvideo #latina #comedia #funny #fyp",
-      "views": 30886884,
+      "views": 30887672,
       "id": "PcxIHhWHuKY"
     },
     {
-      "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23482156,
-      "id": "D53HF_okHi8"
-    },
-    {
-      "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15413394,
-      "id": "gDn_SQU6YZE"
-    },
-    {
-      "titulo": "Best 3D Print Farm Side Gig? #3dprinting #shorts",
-      "views": 9943807,
-      "id": "GITF0gO6W3Q"
-    },
-    {
-      "titulo": "Digital Board for online teaching #digitalboard #shorts  @Edusquadz",
-      "views": 8345209,
-      "id": "VkZG-aJo6vw"
-    },
-    {
       "titulo": "🔥Free Text to Speech - AI voice from Script #ai #aitools #shorts #texttospeech",
-      "views": 2623923,
+      "views": 2624128,
       "id": "jKUzVNCSiY8"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 571614,
+      "views": 571777,
       "id": "14URUL4nBkA"
     },
     {
+      "titulo": "Cuanto Oro extrajeron los Españoles? #shorts #españa #latam #shortvideo",
+      "views": 427058,
+      "id": "43rpOOuG95E"
+    },
+    {
+      "titulo": "Los Españoles Fueron conquistados por los Árabes ❓🤔 #shorts #españa #latam #hispanoamérica",
+      "views": 422478,
+      "id": "eAQb2MUQQ28"
+    },
+    {
       "titulo": "✅ Como Hacer 100 Videos - Hora Con Esta INTELIGENCIA ARTIFICIAL *Gratis*",
-      "views": 285199,
+      "views": 285358,
       "id": "FaTwnb2Cz_U"
+    },
+    {
+      "titulo": "El Mayor Temor de Adolf Hitler eran los Españoles #shorts #españa #latam ##2024",
+      "views": 269154,
+      "id": "zKPKk-WaT8U"
     }
   ],
   "aprendizajes_externos": {
