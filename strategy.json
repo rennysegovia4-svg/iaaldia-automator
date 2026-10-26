@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-26",
-  "iteracion": 590,
+  "iteracion": 591,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
@@ -8,34 +8,30 @@
     "finanzas": 0.05,
     "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.07
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Gancho de anticipación y exclamación: '¡Se acabó la espera! ¡El'",
-    "Gancho de dato sorprendente o logro específico: 'Con solo 17 años, Lamine'",
-    "Gancho de pregunta controversial o impactante con emoji: '¿FINAL ENTREGADA? 🤯'",
-    "Gancho de noticia de impacto con cifra y ubicación: 'Terremoto devastador en Colombia: 132 muertos'",
-    "Gancho de drama urgente con nombre propio y emoción: '¡Gamezking ELIMINADO! 😱'",
-    "Gancho de escasez o urgencia sobre evento popular: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥'"
+    "¡Se acabó la espera! ¡El...",
+    "Con solo X años, Y...",
+    "Muy buenas tardes. Bienvenidos a...",
+    "¿[Hecho impactante]?",
+    "[Evento] [Número] [Impacto]",
+    "[Sujeto] [Verbo de acción] [Impacto] ¡[Emoción]!"
   ],
   "avoid_hooks": [
-    "Descripciones puramente factuales sin emoción ni misterio: 'Brasil y Noruega empatan 0-0'",
-    "Frases incompletas o vagas que no generan curiosidad: 'Sidny Lopes Cabral acaba de'",
-    "Reiteración de información obvia o ya esperada sin un giro: 'Brasil y Noruega empatan'"
+    "Hooks que describen un empate o un no-evento en deportes (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Frases vagas o incompletas que no comunican la relevancia inmediata (\"Brasil y Noruega empatan\")",
+    "Hooks centrados en nombres poco conocidos o sin un contexto de controversia/impacto inmediato (\"Sidny Lopes Cabral acaba de\")"
   ],
-  "best_hora": 1,
-  "duracion_optima": 0,
+  "best_hora": 17,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `deportes`, con un enfoque específico en eventos de alto interés como 'mundial_2026' (que ha mostrado un promedio de 258 vistas y una tendencia de 867.0).",
-    "Continuar la estrategia de `ia_noticias` para identificar y explotar 'outliers' virales, basándose en la identificación de temas dramáticos, urgentes o controversiales que atraigan la atención inmediata, usando títulos y miniaturas como ganchos primarios, dado que el 100% del Top 10 proviene de este nicho.",
-    "Implementar activamente las fórmulas de ganchos identificadas del Top 10, que incluyen preguntas, el uso de emojis, datos numéricos específicos, palabras emocionales y un sentido de urgencia en títulos y descripciones.",
-    "Evitar los patrones de hooks puramente factuales, vagos o incompletos, que han demostrado consistentemente cero vistas.",
-    "Programar publicaciones alrededor de la 1 AM (Hora 1), que ha demostrado ser la hora más consistente en producir videos del Top 10 con un promedio de 1121 vistas para esos videos.",
-    "Explorar la viabilidad de la categoría 'Productividad' (no 'productividad_ia'), ya que videos bajo este tema tuvieron un promedio de 56 vistas, sugiriendo un interés subyacente que no está reflejado en las categorías actuales con 0 vistas.",
-    "Se necesitan más datos sobre la duración óptima de los videos para poder hacer una recomendación basada en evidencia."
+    "Priorizar el nicho `deportes` (especialmente `mundial_2026`) para un crecimiento estable y consistente, dado su alto promedio de vistas (258) y tendencia positiva (867.0).",
+    "Implementar una estrategia de contenido de alto riesgo/alta recompensa para `ia_noticias`, enfocándose en identificar y capitalizar rápidamente temas noticiosos excepcionalmente virales, ya que este nicho es el único generador de los videos Top 10 a pesar de su bajo promedio general (16 vistas).",
+    "Utilizar elementos que generen intriga o revelación (preguntas, números específicos, partes de contenido) y un lenguaje emocional fuerte (🤯, 😱, 🔥) en títulos y hooks para maximizar el engagement y el click-through-rate, como se observa en los videos de mayor rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia más efectiva es bimodal: perseguir hits virales de alto riesgo/recompensa en `ia_noticias` (todos los Top 10 provienen de aquí, con un promedio de 1121 vistas para esos videos) mientras se construye una base de audiencia más consistente con contenido de `deportes` hiper-enfocado (el nicho `mundial_2026` lidera en promedio de vistas con 258 y tendencia de 867.0)."
+  "insight_semana": "La estrategia más efectiva para el canal requiere un equilibrio entre la consistencia y fiabilidad del nicho `deportes` (con `mundial_2026` como pilar) y la búsqueda oportunista de fenómenos virales en `ia_noticias`, que, aunque inconsistente en promedio, es el único nicho capaz de producir éxitos masivos."
 }
