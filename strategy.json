@@ -1,37 +1,39 @@
 {
-  "updated": "2026-10-27",
-  "iteracion": 600,
+  "updated": "2026-10-28",
+  "iteracion": 601,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.63,
-    "ia_noticias": 0.27,
-    "finanzas": 0.01,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "entretenimiento": 0.1,
+    "productividad": 0.07,
+    "negocios": 0.03,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Urgencia/Anticipación: ¡Se acabó la espera! ¡El (867 avg_views)",
-    "Foco en detalle sorprendente: Con solo 17 años, Lamine (740 avg_views)",
-    "Intro de noticia convencional pero directa: Muy buenas tardes. Bienvenidos a (375 avg_views)",
-    "Pregunta/Controversia sobre evento clave: ARGENTINA ENTREGÓ la Final del Mundial? 🤯",
-    "Impacto/Drama con emoción: ELIMINADO! 😱 / SHOCK! 🤯 (ej. TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
-    "Escasez/Exclusividad con urgencia: ¡Se Agotan! 😱🔥 (ej. ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥)"
+    "Pregunta Controversial + Emoción + Urgencia/Parte: \"¿[Evento Controversial]? 🤯 (PARTE X)\"",
+    "Anuncio/Exclusiva + Emoción/Urgencia: \"¡[Noticia Impactante] HOY! 😱/🔥\"",
+    "Hecho Impactante + Cifra/Detalle Específico + Ubicación: \"[Evento Dramático] en [Lugar]: [Número] [Detalle]...\"",
+    "Noticia Relevante + Temporalidad + Alcance Geográfico + Emoji: \"La noticia [Tipo] que sacude [Región] hoy ⚽/🔥\"",
+    "Frase de Gancho de Noticia Directa con Urgencia: \"¡Se acabó la espera! ¡El [Evento/Anuncio]...\"",
+    "Introducción Clara de Tema + Impacto + Identificador: \"[Tema Específico]: [Impacto] ¡SHOCK! 🤯\""
   ],
   "avoid_hooks": [
-    "Anuncios de resultados sin intriga: Brasil y Noruega empatan 0-0 (0 views)",
-    "Declaraciones fácticas vagas sin gancho emocional: Brasil y Noruega empatan (0 views)",
-    "Nombres/eventos desconocidos sin contexto inmediato: Sidny Lopes Cabral acaba de (0 views)"
+    "Resultados de eventos hipotéticos o futuros sin un impacto real o creíble (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!')",
+    "Declaraciones de hechos simples sin generar intriga o emoción (ej. 'Brasil y Noruega empatan')",
+    "Hooks incompletos o demasiado genéricos y descontextualizados (ej. 'Sidny Lopes Cabral acaba de', 'NO TOMAR RIESGO es tu MAYOR AMENAZA')"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el contenido de 'deportes' y las noticias deportivas, ya que el 70% de los videos del Top 10 (7 de 10) y el nicho 'mundial_2026' son de esta temática, mostrando un rendimiento superior consistente.",
-    "Implementar activamente la estrategia de 'partes' en títulos (ej. 'PARTE 1', '1/2') para temas de alto interés, lo que ha demostrado ser efectivo en 3 de los 10 videos más vistos para generar intriga y fomentar visualizaciones continuadas.",
-    "Enfocarse en títulos y miniaturas que evoquen urgencia, controversia o un gran impacto con el uso de emojis como '🤯', '😱', y '🔥', como se observa en casi todos los videos del Top 10 para maximizar la tasa de clics."
+    "Priorizar fuertemente la creación de contenido de 'deportes', especialmente sub-nichos como 'mundial_2026' o eventos actuales, dada su alta puntuación (3.916) y tendencia de crecimiento (867.0) demostrada.",
+    "Continuar y optimizar la estrategia de ganchos que incluyen preguntas controversiales, números específicos, nombres propios, y el uso estratégico de emojis (🤯, 😱, 🔥, ⚽) para maximizar el CTR, replicando el éxito de los videos del Top 10.",
+    "A pesar de la presencia de 'ia_noticias' en el Top 10, monitorear y adaptar rápidamente este nicho debido a su tendencia negativa (-0.9), explorando sub-temas o formatos que puedan revertir esta desaceleración."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El rendimiento masivo de los temas deportivos en el Top 10, incluso cuando están categorizados como 'ia_noticias', revela que la audiencia busca principalmente noticias deportivas de última hora y con gancho. La categorización interna del nicho 'ia_noticias' podría estar enmascarando el verdadero potencial y dominio del contenido deportivo."
+  "insight_semana": "El contenido de deportes con un enfoque controversial o de 'teoría de la conspiración' (ej. 'ARGENTINA ENTREGÓ la Final') combinado con formatos de partes, genera una viralidad y retención excepcionales, como se evidencia en el nicho 'mundial_2026' con un 'trend' de 867.0."
 }
