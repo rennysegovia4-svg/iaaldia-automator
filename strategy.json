@@ -1,37 +1,40 @@
 {
   "updated": "2026-10-29",
-  "iteracion": 609,
+  "iteracion": 610,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "productividad": 0.05,
-    "negocios": 0.03,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Fórmula 1 (Expectativa y Urgencia): Inicia con una exclamación que genera anticipación y destaca un evento clave, como \"¡Se acabó la espera! ¡El [evento/noticia importante]...\"",
-    "Fórmula 2 (Dato Específico y Talento Joven): Enfocarse en un detalle sorprendente, como la edad o un logro inusual de una persona, por ejemplo, \"Con solo [edad] años, [nombre propio] [logro inesperado]...\"",
-    "Fórmula 3 (Introducción Formal a Noticias): Utiliza un saludo profesional seguido de una bienvenida directa al tema central, del tipo \"Muy buenas tardes. Bienvenidos a [noticia/evento]...\""
+    "Activador de Anticipación (ej. '¡Se acabó la espera! ¡El')",
+    "Logro Extraordinario con Cifra (ej. 'Con solo 17 años, Lamine')",
+    "Noticia de Apertura Formal (ej. 'Muy buenas tardes. Bienvenidos a')",
+    "Pregunta Controversial con Dato + Emoji (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Titular de Impacto con Cifras/Consecuencias (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Evento Dramático/Giro Inesperado + Nombre/Lugar + Emoji (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
   ],
   "avoid_hooks": [
-    "Patrón 1 (Resultados Deportivos Hipotéticos/Falsos): Hooks que anuncian resultados de eventos deportivos futuros o inventados, como \"Brasil y Noruega empatan 0-0\" o \"Brasil y Noruega empatan\".",
-    "Patrón 2 (Nombres o Eventos Irrelevantes/Inventados): Hooks que mencionan nombres propios o situaciones sin relevancia clara, especialmente si son hipotéticos o carecen de contexto, como \"Sidny Lopes Cabral acaba de\"."
+    "Noticias deportivas falsas/hipotéticas (ej. 'Brasil y Noruega empatan 0-0')",
+    "Resultados deportivos inventados (ej. 'Brasil y Noruega empatan')",
+    "Eventos deportivos inexistentes con nombres propios (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 1,
-  "duracion_optima": null,
+  "best_hora": 16,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido para el nicho de `deportes` (específicamente `mundial_2026`), dado su promedio de vistas de 258 y una tendencia de crecimiento dominante de 867.0, lo que sugiere un potencial de rendimiento estable y elevado.",
-    "Mantener una estrategia de publicación robusta a la `1 AM`, ya que esta franja horaria alberga 3 de los 10 videos más vistos y el video con mayor rendimiento individual (1325 views), indicando una audiencia muy activa en ese momento.",
-    "Aprovechar el potencial viral de `ia_noticias` enfocándose en temas de alta controversia, noticias de última hora con impacto regional/global, y eventos de entretenimiento masivo. Es crucial usar preguntas intrigantes y emojis de sorpresa (🤯, 😱) en los títulos.",
-    "Eliminar completamente la producción de videos basados en 'noticias' falsas o hipotéticas sobre resultados deportivos o eventos futuros, ya que esta estrategia ha demostrado generar consistentemente 0 vistas y penalizaciones claras.",
-    "Investigar y recopilar datos sobre la duración de los videos en los Top 10 y los más bajos para identificar la `duracion_optima`, ya que esta métrica es actualmente desconocida y crucial para el formato Shorts."
+    "Priorizar la creación de contenido para el nicho 'deportes' (especialmente 'mundial_2026') debido a su excepcional tendencia de crecimiento (867.0) y alto promedio de vistas (258), apuntando a un rendimiento más consistente.",
+    "Continuar produciendo contenido en el nicho 'ia_noticias' utilizando las fórmulas de ganchos exitosas, enfocándose en temas de alta controversia, noticias de última hora o eventos sensacionalistas para maximizar la probabilidad de hits virales.",
+    "Implementar activamente las 6 fórmulas de ganchos identificadas para aumentar el CTR de los videos, combinándolas con emojis de sorpresa (🤯, 😱, 🔥) y datos específicos.",
+    "Evitar categóricamente la creación de 'noticias' o resultados deportivos falsos/hipotéticos, ya que estos videos consistentemente resultan en 0 vistas y penalizan el rendimiento del canal.",
+    "Realizar publicaciones primarias a las 16:00 (4 PM), ya que esta franja horaria ha demostrado el promedio más alto de vistas entre los videos top (1298), complementando con pruebas en 1 AM, 6 AM, 17 PM y 21 PM para captar diferentes audiencias.",
+    "Comenzar a recopilar datos sobre la duración de los videos para identificar una 'duración óptima' basada en métricas de retención y vistas, ya que esta información clave no está disponible actualmente (duracion_optima: 0)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal está experimentando una dicotomía en su rendimiento: mientras que el nicho `ia_noticias` tiene la capacidad comprobada de generar hits virales (el 100% de los videos en el Top 10 provienen de él), su rendimiento promedio (34 views) y tendencia negativa (-0.9) muestran una alta inconsistencia. En contraste, el nicho `deportes` (`mundial_2026`), aunque no tiene videos en el Top 10 de esta iteración, es el más prometedor a largo plazo con un `avg_views` de 258 y un `trend` de crecimiento sobresaliente de 867.0, indicando una base de audiencia más estable y un crecimiento sostenido."
+  "insight_semana": "El nicho 'mundial_2026' (deportes) es el de mayor potencial de crecimiento a largo plazo, con un 'trend' de 867.0 y un 'avg_views' de 258, superando la consistencia del nicho 'ia_noticias' que, aunque domina el Top 10 individual, presenta un 'avg_views' bajo (34) y un 'trend' negativo (-0.8)."
 }
