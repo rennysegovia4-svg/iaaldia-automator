@@ -1,39 +1,37 @@
 {
   "updated": "2026-10-29",
-  "iteracion": 608,
+  "iteracion": 609,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "productividad": 0.05,
+    "negocios": 0.03,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡[Evento Impactante/Urgente]! ¡El [Tema Clave]!",
-    "Con solo [Número/Edad], [Nombre/Hecho Destacado] [Reacción]",
-    "Muy buenas tardes. Bienvenidos a [Noticia Relevante]",
-    "[Afirmación Controversial]: ¿[Pregunta Provocadora]? 🤯",
-    "[Noticia Trágica/Impactante] en [Lugar]: ¡[Consecuencia Extrema]!",
-    "La noticia [Tipo] que sacude [Región/Grupo] hoy [Emoji]!"
+    "Fórmula 1 (Expectativa y Urgencia): Inicia con una exclamación que genera anticipación y destaca un evento clave, como \"¡Se acabó la espera! ¡El [evento/noticia importante]...\"",
+    "Fórmula 2 (Dato Específico y Talento Joven): Enfocarse en un detalle sorprendente, como la edad o un logro inusual de una persona, por ejemplo, \"Con solo [edad] años, [nombre propio] [logro inesperado]...\"",
+    "Fórmula 3 (Introducción Formal a Noticias): Utiliza un saludo profesional seguido de una bienvenida directa al tema central, del tipo \"Muy buenas tardes. Bienvenidos a [noticia/evento]...\""
   ],
   "avoid_hooks": [
-    "Descripciones meramente factuales y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmaciones vagas o sin contexto inmediato (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que no generen intriga o pregunta inmediata en el espectador"
+    "Patrón 1 (Resultados Deportivos Hipotéticos/Falsos): Hooks que anuncian resultados de eventos deportivos futuros o inventados, como \"Brasil y Noruega empatan 0-0\" o \"Brasil y Noruega empatan\".",
+    "Patrón 2 (Nombres o Eventos Irrelevantes/Inventados): Hooks que mencionan nombres propios o situaciones sin relevancia clara, especialmente si son hipotéticos o carecen de contexto, como \"Sidny Lopes Cabral acaba de\"."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de `deportes` (mundial_2026), dada su impresionante tendencia (867.0) y rendimiento promedio (258 vistas).",
-    "Aprovechar el potencial de `ia_noticias` enfocándose en títulos con preguntas, emojis de shock (🤯, 😱) y palabras de alto impacto para maximizar las vistas individuales, pero ser consciente de su alta inconsistencia.",
-    "Implementar los ganchos de inicio identificados como más efectivos, que utilizan la urgencia, el interés humano, el impacto numérico o preguntas controversiales.",
-    "Evitar la creación de contenido deportivo hipotético o falso que pueda generar expectativas no cumplidas (ej. resultados de partidos futuros), ya que estos videos consistentemente obtienen 0 vistas.",
-    "Continuar publicando alrededor de la 1 AM, que ha demostrado ser un horario clave para alcanzar la audiencia de mayor rendimiento, aunque se debe explorar la consistencia de otros picos (ej. 16, 21, 6, 17)."
+    "Priorizar la creación de contenido para el nicho de `deportes` (específicamente `mundial_2026`), dado su promedio de vistas de 258 y una tendencia de crecimiento dominante de 867.0, lo que sugiere un potencial de rendimiento estable y elevado.",
+    "Mantener una estrategia de publicación robusta a la `1 AM`, ya que esta franja horaria alberga 3 de los 10 videos más vistos y el video con mayor rendimiento individual (1325 views), indicando una audiencia muy activa en ese momento.",
+    "Aprovechar el potencial viral de `ia_noticias` enfocándose en temas de alta controversia, noticias de última hora con impacto regional/global, y eventos de entretenimiento masivo. Es crucial usar preguntas intrigantes y emojis de sorpresa (🤯, 😱) en los títulos.",
+    "Eliminar completamente la producción de videos basados en 'noticias' falsas o hipotéticas sobre resultados deportivos o eventos futuros, ya que esta estrategia ha demostrado generar consistentemente 0 vistas y penalizaciones claras.",
+    "Investigar y recopilar datos sobre la duración de los videos en los Top 10 y los más bajos para identificar la `duracion_optima`, ya que esta métrica es actualmente desconocida y crucial para el formato Shorts."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho de `deportes` (específicamente `mundial_2026`) ha consolidado su posición como el área de mayor potencial de crecimiento, impulsado por una tendencia excepcional de 867.0 y un rendimiento promedio muy superior, eclipsando la consistencia general del nicho de `ia_noticias` a pesar de sus picos de vistas individuales."
+  "insight_semana": "El canal está experimentando una dicotomía en su rendimiento: mientras que el nicho `ia_noticias` tiene la capacidad comprobada de generar hits virales (el 100% de los videos en el Top 10 provienen de él), su rendimiento promedio (34 views) y tendencia negativa (-0.9) muestran una alta inconsistencia. En contraste, el nicho `deportes` (`mundial_2026`), aunque no tiene videos en el Top 10 de esta iteración, es el más prometedor a largo plazo con un `avg_views` de 258 y un `trend` de crecimiento sobresaliente de 867.0, indicando una base de audiencia más estable y un crecimiento sostenido."
 }
