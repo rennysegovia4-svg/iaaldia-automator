@@ -1,37 +1,39 @@
 {
   "updated": "2026-10-31",
-  "iteracion": 623,
+  "iteracion": 624,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.35,
-    "ia_noticias": 0.4,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "ia_noticias": 0.3,
+    "finanzas": 0.06,
+    "entretenimiento": 0.06,
+    "negocios_digitales": 0.06,
+    "productividad_ia": 0.06,
+    "cripto_inversiones": 0.06,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante] ha llegado!",
-    "Con solo [Edad/Número], [Persona/Hecho] logra [Hito Impresionante] 😱",
-    "Muy buenas tardes. Bienvenidos a [Programa/Noticia del Día]",
-    "¿[Pregunta Dramática sobre un Evento Mayor]? 🤯",
-    "[Noticia Impactante] ¡[Consecuencia Shocking]! 😱",
-    "[Evento/Producto] ¡[Acción/Estado Urgente]! 🔥"
+    "Gancho de Urgencia/Expectativa (ej. '¡Se acabó la espera! ¡El')",
+    "Gancho de Hecho Impactante/Personalidad (ej. 'Con solo 17 años, Lamine')",
+    "Gancho de Tono Noticioso Profesional (ej. 'Muy buenas tardes. Bienvenidos a')",
+    "Gancho de Pregunta Controversial + Emojis (ej. '¿Final entregada? 🤯')",
+    "Gancho de Anuncio de Shock + Emojis (ej. '¡Eliminado! 😱')",
+    "Gancho de Última Hora/Agotamiento (ej. '¡Se Agotan! 🔥')"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado principal de inmediato sin generar intriga (ej. 'Brasil y Noruega empatan 0-0').",
-    "Inicios demasiado descriptivos o narrativos sin un elemento de sorpresa (ej. 'Sidny Lopes Cabral acaba de').",
-    "Hooks genéricos sobre resultados de partidos o eventos sin un 'gancho' emocional o de urgencia."
+    "Hooks descriptivos de empates 0-0 (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks factuales sin intriga sobre eventos específicos (ej. 'Sidny Lopes Cabral acaba de')",
+    "Títulos/Hooks de autoayuda genéricos sin noticias (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Explorar y priorizar el horario de las 01:00 AM, ya que ha demostrado ser el más efectivo, concentrando el mayor número de videos en el top 10 (4 videos) y el de mayor rendimiento individual (1325 vistas).",
-    "Perfeccionar y testear rigurosamente los 3-5 segundos iniciales de cada video, especialmente en nichos de alto potencial como 'ia_noticias' y 'mundial_2026', dado que un gancho fallido puede resultar en 0 vistas, anulando el potencial de un tema de alto interés.",
-    "Replicar la fórmula de títulos con preguntas dramáticas y emojis de alto impacto (🤯, 😱, 🔥) para el nicho 'ia_noticias' y aplicar el mismo principio al contenido de 'deportes' para maximizar el CTR y el engagement inicial."
+    "Priorizar el nicho `ia_noticias` para generar picos virales extremos, dada su capacidad probada de monopolizar el Top 10 con contenido de alto impacto.",
+    "Mantener una fuerte presencia en el nicho `deportes` (específicamente `mundial_2026`) por su consistente rendimiento de vistas promedio y alta tendencia, pese a no alcanzar los picos virales de `ia_noticias`.",
+    "Optimizar los títulos combinando preguntas intrigantes, emojis dramáticos (🤯, 😱, 🔥) y palabras clave de alta relevancia para el tema, siguiendo el patrón de los videos más exitosos.",
+    "Experimentar con horarios de publicación nocturnos y matutinos (01:00 AM, 06:00 AM, 17:00 PM), que han demostrado ser efectivos para captar la atención de la audiencia global o trasnochadora.",
+    "Evitar rigurosamente los hooks y títulos que sean meramente descriptivos o factuales sin generar intriga o drama, especialmente para eventos percibidos como poco emocionantes (ej. empates 0-0), ya que resultan en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta un patrón de alto riesgo y alta recompensa; aunque tiene un bajo promedio de vistas (10) y videos con 0 vistas, es el único nicho capaz de generar picos virales extremos, siendo responsable del 100% de los videos en el top 10, lo que sugiere una dependencia crítica de ganchos y temas altamente controversiales o dramáticos para alcanzar el éxito masivo."
+  "insight_semana": "Aunque el nicho 'ia_noticias' presenta un bajo promedio de vistas (10) y tendencia negativa, es el único nicho capaz de generar picos virales extremos, capturando el 100% del Top 10, mientras que el nicho 'deportes' (a través de 'mundial_2026') ofrece la mejor consistencia y tendencia general en el canal."
 }
