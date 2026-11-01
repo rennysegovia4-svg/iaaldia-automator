@@ -1,38 +1,39 @@
 {
   "updated": "2026-11-01",
-  "iteracion": 632,
+  "iteracion": 633,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Gancho de Inmediatez/Anticipación: \"¡Se acabó la espera! ¡El...\"",
-    "Gancho de Hecho Sorprendente/Logro Inesperado: \"Con solo X años, Y...\"",
-    "Gancho de Apertura Formal de Noticias: \"Muy buenas tardes. Bienvenidos a...\"",
-    "Gancho de Intriga con Pregunta Implícita: \"Descubre por qué X...\"",
-    "Gancho de Impacto Exagerado/Urgencia: \"¡ALERTA! X sacude a...\"",
-    "Gancho de Noticia de Última Hora Directa: \"ÚLTIMA HORA: X acaba de...\""
+    "Gancho de urgencia/expectación: \"¡Se acabó la espera! ¡El...\" (con 867 avg_views)",
+    "Gancho de talento/noticia personal destacada: \"Con solo X años, [Nombre]...\" (con 740 avg_views)",
+    "Gancho de introducción de noticia directa: \"Muy buenas tardes. Bienvenidos a...\" (con 375 avg_views)",
+    "Gancho de pregunta intrigante en título: Títulos con ¿Pregunta? y emojis 🤯/😱",
+    "Gancho de impacto/sorpresa en título: Títulos con palabras como 'SHOCK', 'ENTREGÓ', 'ELIMINADO' y emojis 🤯/😱",
+    "Gancho de actualidad/última hora en título: Títulos que mencionan \"hoy\" y un evento que \"sacude\" o genera \"tragedia\" 🔥"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado sin misterio (ej. \"X y Y empatan 0-0\")",
-    "Hooks excesivamente genéricos o incompletos (ej. \"X y Y empatan\")",
-    "Hooks que introducen nombres sin contexto o impacto inmediato (ej. \"Z acaba de...\")"
+    "Evitar ganchos que solo presenten un resultado numérico frío: \"Brasil y Noruega empatan 0-0\"",
+    "Evitar ganchos que sean solo una afirmación factual sin intriga: \"Brasil y Noruega empatan\"",
+    "Evitar ganchos que inicien con un nombre sin contexto inmediato de impacto: \"Sidny Lopes Cabral acaba de\""
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar contenido de noticias deportivas de alta actualidad y controversia dentro del nicho `ia_noticias`, dada su capacidad demostrada para generar picos de vistas (10 de 10 videos Top).",
-    "Publicar videos estratégicamente alrededor de la 1 AM (hora 1) para capturar la audiencia de contenido viral y de última hora, optimizando la visibilidad, especialmente para temas trending.",
-    "Implementar títulos con preguntas y emojis de sorpresa/impacto (🤯, 😱, ⚡) para maximizar la intriga y el Click-Through Rate (CTR), como se observa en el 90% de los videos principales.",
-    "Es crucial comenzar a registrar y analizar la duración de los videos para identificar el `duracion_optima` y refinar la estrategia de contenido, ya que actualmente no se dispone de estos datos."
+    "Priorizar fuertemente la creación de contenido dentro del nicho 'deportes', capitalizando el éxito de 'mundial_2026' debido a su alto avg_views (258) y excepcional trend (867.0).",
+    "Mantener una estrategia de alto riesgo/alta recompensa para 'ia_noticias', enfocándose en temas de última hora y alto impacto con títulos que incluyan preguntas, exclamaciones y emojis como 🤯, 😱, ya que el 100% de los videos Top 10 pertenecen a este nicho, a pesar de su bajo promedio general.",
+    "Publicar el contenido más viral y de 'última hora' a la 1 AM (hora 1), que ha demostrado ser la franja más efectiva para este tipo de videos, acumulando el mayor volumen de vistas en el Top 10 (3363 vistas de 3 videos)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' demuestra una extrema bimodalidad: aunque su promedio general de vistas es muy bajo (5), los 10 videos con más vistas pertenecen exclusivamente a él. Esto subraya que el éxito depende casi enteramente de la **selección de temas de alta resonancia y actualidad (especialmente deportes y tragedias)**, más que del nicho en sí mismo, lo que requiere una estrategia de contenido altamente sensible a las tendencias."
+  "insight_semana": "La extrema volatilidad del nicho 'ia_noticias' es su característica definitoria: aunque concentra el 100% de los videos con más vistas, su promedio de 5 vistas en el ranking general subraya que la mayoría de los intentos fracasan, haciendo crucial la selección de temas de alto impacto."
 }
