@@ -1,42 +1,39 @@
 {
-  "updated": "2026-10-31",
-  "iteracion": 627,
+  "updated": "2026-11-01",
+  "iteracion": 628,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.08,
-    "negocios": 0.05,
+    "deportes": 0.45,
+    "ia_noticias": 0.45,
+    "finanzas": 0.01,
     "entretenimiento": 0.05,
-    "finanzas": 0.02,
     "negocios_digitales": 0.01,
+    "productividad_ia": 0.01,
     "cripto_inversiones": 0.01,
-    "productividad_ia": 0.02,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia]...",
-    "Con solo [edad], [nombre] [logro sorprendente]...",
-    "¿[Pregunta impactante sobre evento/país] SUCEDIÓ? 🤯",
-    "[Evento devastador] HOY: [Cifras impactantes] 😱",
-    "[Liga/Celebridad] [Acción Drástica] ¡SHOCK! 😱/🔥",
-    "TARJETA ROJA MUNDIAL: ¡[Jugador/Equipo] ELIMINADO! 😱"
+    "¡Se acabó la espera! ¡El [evento emocionante] que no te puedes perder!",
+    "Con solo [número] años, [Nombre] está [acción impactante/logro]...",
+    "¿[Tema polémico/Pregunta impactante]... es [conclusión sorprendente]? 🤯",
+    "[Noticia de último minuto/Desastre impactante] hoy: [detalle clave] 😱",
+    "La [tipo] que sacude [lugar/momento] con [consecuencia/emoción] ⚽",
+    "[Evento/Sujeto] ¡[Verbo Dramático]! 😱🔥"
   ],
   "avoid_hooks": [
-    "Declaraciones puramente fácticas y sin emoción (e.g., 'Brasil y Noruega empatan 0-0')",
-    "Resúmenes de resultados sin un 'gancho' adicional (e.g., 'Brasil y Noruega empatan')",
-    "Inicios de oración que carecen de contexto o revelación inmediata (e.g., 'Sidny Lopes Cabral acaba de')"
+    "Descripciones factuales sin emoción (ej. 'equipo X empata Y-Y')",
+    "Inicios puramente descriptivos de un evento sin generar intriga (ej. '[Nombre] acaba de...')",
+    "Títulos genéricos que no transmiten urgencia o novedad ('PARTIDO COLOMBIA SÁBADO')"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el nicho 'ia_noticias' para la búsqueda de contenido viral, invirtiendo en hooks y títulos extremadamente impactantes para maximizar la probabilidad de picos de vistas, a pesar de su bajo promedio general.",
-    "Invertir consistentemente en el nicho 'deportes' (especialmente 'mundial_2026') para asegurar un crecimiento estable y una base de audiencia sólida, dado su alto promedio de vistas (258) y fuerte tendencia de crecimiento (867.0).",
-    "Mantener el uso de preguntas intrigantes, palabras de impacto (SHOCK, ENTREGADA, ELIMINADO) y emojis dramáticos (🤯, 😱, 🔥) en los títulos, ya que esta fórmula es una constante en el Top 10 viral.",
-    "Experimentar con la publicación de contenido de alto impacto en la franja de 1 AM, que ha demostrado concentrar la mayor cantidad de videos virales y el video con más vistas de esta iteración.",
-    "Evitar a toda costa los hooks y títulos puramente descriptivos o factuales, y centrarse en generar intriga, urgencia y emoción desde el primer segundo del video.",
-    "Implementar la recolección de datos sobre la duración de los videos para poder determinar un rango de duración óptima en futuras iteraciones."
+    "Priorizar la creación de contenido en los nichos 'ia_noticias' y 'deportes', asignando el 90% del esfuerzo a estas categorías dada su demostrada capacidad viral y de rendimiento promedio.",
+    "Enfocarse en títulos que incorporen preguntas intrigantes, declaraciones de shock y emojis dramáticos (🤯, 😱, 🔥) para maximizar el click-through rate, siguiendo los patrones de los videos del Top 10.",
+    "Experimentar con horarios de publicación en la madrugada (especialmente 1 AM), ya que esta franja horaria ha mostrado ser consistentemente la de mayor potencial para generar videos virales.",
+    "Incorporar ganchos de inicio de video como '¡Se acabó la espera!' o 'Con solo [edad] años, [nombre]' para captar la atención inmediatamente en los primeros segundos del Short.",
+    "Realizar pruebas controladas para determinar la duración óptima de los videos, ya que actualmente no se dispone de datos para este crucial factor."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es una espada de doble filo: genera el 100% de los videos virales extremos del Top 10, pero tiene un promedio de vistas extremadamente bajo (10), lo que indica que es un nicho de alto riesgo/alta recompensa que requiere una optimización de gancho excepcional para tener éxito."
+  "insight_semana": "A pesar de tener un bajo promedio de vistas general (7 vistas), el nicho 'ia_noticias' es la fuente exclusiva de los picos virales, ocupando el 100% del Top 10 de videos, lo que subraya la importancia de identificar temas noticiosos de alto impacto y presentarlos con un gancho dramático."
 }
