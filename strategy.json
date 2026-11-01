@@ -1,39 +1,38 @@
 {
   "updated": "2026-11-01",
-  "iteracion": 631,
+  "iteracion": 632,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.2,
-    "finanzas": 0.15,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.1,
-    "productividad_ia": 0.08,
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
     "cripto_inversiones": 0.05,
-    "politica_latam": 0.02
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡[EMOCIÓN INTENSA] [EVENTO/NOTICIA CLAVE] HOY/AHORA! (Ej: '¡SHOCK! [LIGA MX] HOY')",
-    "[HECHO SORPRENDENTE/NÚMERO]: ¿[PREGUNTA INTRIGANTE]? 🤯 (Ej: '[ARGENTINA entregó] ¿[MUNDIAL 2026]? 🤯')",
-    "[NÚMERO/MAGNITUD] [SUJETO/EVENTO]: ¡[IMPACTO/CONSECUENCIA]! 😱 (Ej: 'Terremoto: ¡132 muertos! 😱')",
-    "[EVENTO DE ÚLTIMA HORA] en [LUGAR]: La [TRAGEDIA/NOTICIA] que sacude [REGIÓN]. (Ej: 'Temblor HOY Colombia: La tragedia que sacude LATAM')",
-    "[SUJETO INESPERADO/Joven Talento] [ACCIÓN IMPACTANTE/LOGRO] ¡[EMOCIÓN]! (Ej: 'Con solo 17 años, Lamine... ¡Historia!')",
-    "¡[Saludo Inmediato]! Bienvenidos a [NOTICIA RELEVANTE]. (Ej: 'Muy buenas tardes. Bienvenidos a [la noticia deportiva...]')"
+    "Gancho de Inmediatez/Anticipación: \"¡Se acabó la espera! ¡El...\"",
+    "Gancho de Hecho Sorprendente/Logro Inesperado: \"Con solo X años, Y...\"",
+    "Gancho de Apertura Formal de Noticias: \"Muy buenas tardes. Bienvenidos a...\"",
+    "Gancho de Intriga con Pregunta Implícita: \"Descubre por qué X...\"",
+    "Gancho de Impacto Exagerado/Urgencia: \"¡ALERTA! X sacude a...\"",
+    "Gancho de Noticia de Última Hora Directa: \"ÚLTIMA HORA: X acaba de...\""
   ],
   "avoid_hooks": [
-    "Descripciones fácticas directas de resultados sin intriga ni emoción (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Mencionar nombres propios poco conocidos sin un contexto impactante inmediato que genere curiosidad (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Declaraciones planas o de consejo genérico que no sugieren urgencia, novedad o conflicto (Ej: 'NO TOMAR RIESGO es tu MAYOR AMENAZA')"
+    "Hooks que revelan el resultado sin misterio (ej. \"X y Y empatan 0-0\")",
+    "Hooks excesivamente genéricos o incompletos (ej. \"X y Y empatan\")",
+    "Hooks que introducen nombres sin contexto o impacto inmediato (ej. \"Z acaba de...\")"
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar los temas dentro del nicho 'ia_noticias' que se centran en noticias deportivas de alto impacto (especialmente grandes eventos como el Mundial) y tragedias/eventos de última hora, ya que estos son los que consistentemente generan picos virales masivos.",
-    "Aprovechar la urgencia y los detonantes emocionales en los títulos y hooks, utilizando signos de exclamación y emojis de sorpresa/impacto (🤯, 😱, 🔥) para captar la atención de inmediato.",
-    "Publicar contenido de noticias de última hora o alto impacto entre la 1 AM y 2 AM, ya que esta franja horaria ha demostrado ser la más efectiva para generar un alto volumen de vistas en el Top 10.",
-    "Mantener una producción consistente en el nicho 'mundial_2026' debido a su fuerte rendimiento promedio (258 vistas) y tendencia de crecimiento (+867.0), combinándolo con las mejores prácticas de hooks para asegurar un rendimiento sostenido.",
-    "Evitar hooks que revelen el resultado completo de la noticia o que sean meramente descriptivos, ya que estos han demostrado ser ineficaces para generar engagement."
+    "Priorizar contenido de noticias deportivas de alta actualidad y controversia dentro del nicho `ia_noticias`, dada su capacidad demostrada para generar picos de vistas (10 de 10 videos Top).",
+    "Publicar videos estratégicamente alrededor de la 1 AM (hora 1) para capturar la audiencia de contenido viral y de última hora, optimizando la visibilidad, especialmente para temas trending.",
+    "Implementar títulos con preguntas y emojis de sorpresa/impacto (🤯, 😱, ⚡) para maximizar la intriga y el Click-Through Rate (CTR), como se observa en el 90% de los videos principales.",
+    "Es crucial comenzar a registrar y analizar la duración de los videos para identificar el `duracion_optima` y refinar la estrategia de contenido, ya que actualmente no se dispone de estos datos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La volatilidad del nicho 'ia_noticias' es extrema: aunque su promedio de vistas general es muy bajo (5), el 100% de los videos más vistos (Top 10) pertenecen a este nicho, lo que confirma que su éxito no radica en la 'IA' per se, sino en la elección precisa de temas noticiosos de altísima resonancia (deportes clave y tragedias) que desencadenan una reacción viral inmediata en la audiencia."
+  "insight_semana": "El nicho 'ia_noticias' demuestra una extrema bimodalidad: aunque su promedio general de vistas es muy bajo (5), los 10 videos con más vistas pertenecen exclusivamente a él. Esto subraya que el éxito depende casi enteramente de la **selección de temas de alta resonancia y actualidad (especialmente deportes y tragedias)**, más que del nicho en sí mismo, lo que requiere una estrategia de contenido altamente sensible a las tendencias."
 }
