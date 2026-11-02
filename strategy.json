@@ -1,40 +1,39 @@
 {
   "updated": "2026-11-02",
-  "iteracion": 638,
+  "iteracion": 639,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.2,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.08,
-    "productividad_ia": 0.15,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "ia_noticias": 0.4,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante]...",
-    "Con solo [Edad] años, [Nombre] [Hecho Impresionante]...",
-    "Muy buenas tardes. Bienvenidos a [Programa/Noticia]...",
-    "¡ÚLTIMA HORA! [Noticia Impactante] que [Efecto]...",
-    "¿[Pregunta Controversial sobre Evento]? ¡La verdad te dejará [Emoción]! 🤯",
-    "¡Atención [País/Región]! [Evento Sorprendente] sacude [Lugar]..."
+    "Generación de anticipación (`¡Se acabó la espera! ¡El`)",
+    "Revelación de un hecho sorprendente (`Con solo 17 años, Lamine...`)",
+    "Tono formal de noticiero (`Muy buenas tardes. Bienvenidos a`)",
+    "Pregunta controversial e intrigante con emoji (`¿Final entregada? 🤯`)",
+    "Anuncio de evento urgente/impactante con emoji (`¡Gamezking ELIMINADO! 😱`)",
+    "Noticia de actualidad con referencia geográfica (`Temblor hoy Colombia y Venezuela`)"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Resultados de partidos sin intriga/impacto adicional (`Brasil y Noruega empatan 0-0`)",
+    "Nombres propios desconocidos sin contexto (`Sidny Lopes Cabral acaba de`)",
+    "Afirmaciones vagas sin generar curiosidad (`Brasil y Noruega empatan`)"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 30,
   "recomendaciones": [
-    "Priorizar la creación de contenido temático de DEPORTES, especialmente de gran escala como el Mundial, utilizando el formato de `ia_noticias`, dado que este nicho presenta la mejor performance promedio (258 avg_views para 'mundial_2026') y es el driver principal de los hits virales del TOP 10.",
-    "Concentrar la publicación de los videos de mayor potencial viral alrededor de la 1 AM (hora 1), que consistentemente se ha demostrado como el prime time para la viralidad, acumulando la mayor cantidad de videos de alto rendimiento y vistas totales.",
-    "Diseñar títulos que generen intriga y sorpresa, incorporando preguntas directas, exclamaciones y emojis como '🤯' (presente en el 50% del TOP 10), además de la estrategia de 'PARTE 1' para fomentar la continuidad y la expectativa.",
-    "Evitar ganchos iniciales que simplemente presenten hechos concluyentes o resultados, ya que estos han demostrado ser inefectivos y contribuyen a videos con 0 vistas. En su lugar, enfocarse en crear anticipación o un sentido de urgencia.",
-    "Explorar la expansión del contenido en el nicho de `productividad_ia` (mapeando de `productividad`), que muestra el segundo mejor rendimiento promedio (56 avg_views), ofreciendo una base de audiencia más estable y predecible en contraste con la volatilidad de los grandes hits de noticias.",
-    "Comenzar a recolectar datos sobre la duración de los videos para identificar un rango óptimo, ya que esta métrica es crucial para el rendimiento en Shorts y actualmente no está disponible para análisis."
+    "Priorizar la creación de contenido para el nicho de 'deportes' (particularmente 'mundial_2026') para un rendimiento promedio consistente y alto, y el nicho 'ia_noticias' para buscar picos de viralidad a pesar de su inconsistencia general.",
+    "Implementar ganchos que generen anticipación, revelen hechos sorprendentes o usen un tono de noticiero formal, combinándolos con preguntas controversiales y emojis relevantes (🤯, 😱, 🔥, ⚽) para maximizar la intriga y el CTR.",
+    "Enfocar las publicaciones en la franja de la 1 AM (hora 1) como el horario más exitoso en términos de cantidad de videos en el TOP 10, y considerar la 4 PM (hora 16) y 9 PM (hora 21) para potencial de picos de vistas individuales.",
+    "Evitar ganchos que presenten resultados de partidos sin un ángulo de intriga o que mencionen nombres poco conocidos sin contexto impactante, ya que estos patrones han resultado en 0 vistas.",
+    "Comenzar a recolectar datos sobre la duración de los videos para poder optimizar la `duracion_optima` basándose en evidencia real."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Mientras el nicho 'ia_noticias' presenta un rendimiento promedio extremadamente bajo (4 avg_views, score 1.0) en el canal, es el único responsable del 100% de los videos en el TOP 10. Esto indica que 'ia_noticias' funciona como una *fórmula de formato* excepcionalmente efectiva para hits virales cuando se aplica a temas de alto interés (predominantemente deportes y noticias de última hora de gran impacto), pero es de alto riesgo/alta recompensa para contenido general."
+  "insight_semana": "A pesar de tener un `avg_views` de 3 y `score` de 1.0 en el ranking general, el nicho `ia_noticias` monopoliza el 100% de los videos en el TOP 10, consolidándolo como el nicho de 'lotería viral' con el mayor potencial para hits masivos, pero con una extrema inconsistencia en su rendimiento promedio."
 }
