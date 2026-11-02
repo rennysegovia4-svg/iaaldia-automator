@@ -1,38 +1,41 @@
 {
   "updated": "2026-11-02",
-  "iteracion": 635,
+  "iteracion": 636,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.04,
-    "productividad_ia": 0.04,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.05
+    "deportes": 0.5,
+    "ia_noticias": 0.2,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "entretenimiento": 0.05,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Fórmula 1: Intriga/Pregunta con Emoji (Ej: \"¿[Evento sorprendente]? 🤯\")",
-    "Fórmula 2: Noticia Impactante con Emoji (Ej: \"[Sujeto] [Verbo impactante] ¡[Exclamación]! 😱\")",
-    "Fórmula 3: Urgencia y Excitación (Ej: \"¡Se acabó la espera! ¡El [Evento clave]\")",
-    "Fórmula 4: Hecho Sorprendente/Logro (Ej: \"Con solo [edad], [nombre] [logro/hecho sorprendente]\")",
-    "Fórmula 5: Declaración de Shock/Pérdida (Ej: \"[Sujeto] CEDE [algo] ¡SHOCK! 🤯\")",
-    "Fórmula 6: Alarma/Tragedia con Locación (Ej: \"[Evento devastador] en [Lugar]: [consecuencia]\")"
+    "Pregunta Intrigante + Emojis de Sorpresa (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Noticia Impactante + Palabras Clave de Shock (ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "Urgencia o Actualidad + Impacto Geográfico/Temporal (ej. \"La noticia deportiva que sacude LATAM hoy ⚽\")",
+    "Nombre Propio Famoso + Verbo de Acción/Evento Clave + Emojis (ej. \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\")",
+    "Cifras y Datos Impactantes + Consecuencia Dramática (ej. \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Formato en Partes para Generar Expectativa (ej. \"ARGENTINA Mundial 2026: ¿FINAL ENTREGADA? 🤯 (1/2)\")"
   ],
   "avoid_hooks": [
-    "Declaraciones Factuales sin Emoción (Ej: \"[Sujeto] y [Sujeto] empatan [resultado]\")",
-    "Inicio de Oración Incompleta y Genérica (Ej: \"[Nombre] acaba de [verbo]\")",
-    "Información Poco Impactante y Específica (Ej: \"Brasil y Noruega empatan 0-0\")"
+    "Ganchos puramente descriptivos y sin emoción (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Ganchos abstractos o de autoayuda que no son noticia (ej. \"NO TOMAR RIESGO es tu MAYOR AMENAZA 😱\")",
+    "Inicios de frase incompletos o demasiado crípticos (ej. \"Sidny Lopes Cabral acaba de\")"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar contenido del nicho 'deportes' (especialmente 'mundial_2026') por su rendimiento consistente y tendencia de crecimiento (trend 867.0).",
-    "Para el nicho 'ia_noticias', enfocarse exclusivamente en temas de actualidad extremadamente impactantes y controversiales para maximizar el potencial viral, aceptando el alto riesgo de fracaso para temas menos atractivos.",
-    "Mantener la estrategia de títulos con preguntas y emojis de sorpresa (🤯, 😱, ⚡), ya que aparecen en el 90% de los videos del Top 10 y demuestran una alta efectividad para generar clics.",
-    "Concentrar la publicación de los videos con mayor potencial viral alrededor de la 1 AM (hora 1), que es la franja horaria más efectiva, con un promedio de 1121 vistas por video en el Top 10."
+    "Priorizar la creación de contenido del nicho 'deportes', utilizando el estilo viral de 'ia_noticias', dado que 8 de los 10 videos más vistos pertenecen a esta intersección.",
+    "Concentrar las publicaciones en la hora 1 (1 AM), ya que es el momento más prolífico para los videos virales, y considerar también las horas 16 y 17 como ventanas secundarias de oportunidad.",
+    "Diseñar títulos que incorporen preguntas intrigantes, palabras de alto impacto emocional (SHOCK, ENTREGADO), indicadores de actualidad (HOY, SACUDE) y emojis relevantes (🤯, 😱, 🔥, ⚽).",
+    "Experimentar con el formato de series o partes ('PARTE 1', '1/2') para historias complejas o controvertidas, como se observó en varios videos de alto rendimiento, para fomentar la retención y la visualización de contenido relacionado.",
+    "Comenzar a recolectar datos sobre la duración de los videos para identificar la 'duracion_optima', ya que actualmente no hay información disponible en los datos proporcionados para este métrica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es un juego de alto riesgo y alta recompensa: captura el 100% de los videos más virales, pero su rendimiento general y tendencia negativos indican una alta tasa de fracaso para la mayoría de sus videos, requiriendo una selección de temas extremadamente precisa."
+  "insight_semana": "La extrema volatilidad del nicho 'ia_noticias' es su característica definitoria: produce la totalidad de los videos más virales (Top 10) pero con el promedio de vistas más bajo y una tendencia negativa en el ranking general, lo que indica un modelo de alto riesgo y alta recompensa donde el éxito depende críticamente de la efectividad del título y el gancho."
 }
