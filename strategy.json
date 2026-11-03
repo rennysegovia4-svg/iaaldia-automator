@@ -1,41 +1,40 @@
 {
   "updated": "2026-11-03",
-  "iteracion": 641,
+  "iteracion": 642,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
+    "deportes": 0.45,
     "ia_noticias": 0.4,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0,
-    "productividad": 0.1,
-    "negocios": 0.05
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento impactante]...",
-    "Con solo [cifra], [nombre/evento]...",
-    "Muy buenas tardes. Bienvenidos a [resumen noticioso/evento]",
-    "Título: [Pregunta impactante o controversia]? 🤯",
-    "Título: [Noticia urgente/trágica] en [Lugar]: [Número] [Detalle clave]...",
-    "Título: [Evento/Personaje] [Acción impactante] ¡[Reacción]! 😱"
+    "¿AFIRMACIÓN CONTROVERSIAL + EMOJI? (PARTE X)",
+    "¡EVENTO URGENTE/IMPACTANTE + EMOJI + EXCLAMACIÓN!",
+    "La noticia [tipo] que sacude [REGIÓN] hoy + EMOJI",
+    "Terremoto devastador en [LUGAR]: [CIFRA] muertos y...",
+    "¡Se acabó la espera! ¡El... [ANTICIPACIÓN]",
+    "Con solo [EDAD] años, [NOMBRE]... [HECHO SORPRENDENTE]"
   ],
   "avoid_hooks": [
-    "Afirmaciones factuales y directas de un resultado o hecho sin carga emocional ni intriga.",
-    "Frases incompletas o que no generan intriga inmediata al lector/oyente.",
-    "Descripciones planas de eventos que no sugieren un desenlace impactante o una revelación."
+    "Resultados deportivos exactos y sin contexto de sorpresa (Ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones fácticas y directas sin intriga o misterio (Ej. 'Brasil y Noruega empatan')",
+    "Frases incompletas o que requieren contexto no provisto (Ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el nicho `ia_noticias` por su demostrada capacidad de generar los videos con más vistas (ocupando el 100% del TOP 10), centrándose en temas controversiales, urgentes y que generen alta emoción.",
-    "Aprovechar el nicho `deportes`, especialmente sub-nichos como `mundial_2026`, debido a su alto `avg_views` (258) y un `trend` muy positivo (867.0), lo que sugiere un crecimiento y estabilidad en la audiencia.",
-    "Diseñar títulos que funcionen como ganchos primarios, incorporando preguntas que generen controversia o sorpresa, nombres específicos, datos impactantes y emojis (🤯, 😱, 🔥) para captar la atención de inmediato.",
-    "Publicar el contenido preferentemente a la Hora 1 (entre las 01:00 y las 01:59 AM) para maximizar la visibilidad algorítmica inicial, especialmente para los videos de `ia_noticias`.",
-    "Es crucial recopilar datos sobre la duración de los videos para identificar la 'duración óptima', ya que actualmente es un factor desconocido que podría mejorar significativamente el rendimiento."
+    "Priorizar la creación de contenido en el nicho `ia_noticias` y el sub-nicho `mundial_2026` (dentro de `deportes`) debido a su demostrada capacidad para generar alto volumen de vistas y su fuerte tendencia al alza, respectivamente.",
+    "Desarrollar `hooks` que incorporen preguntas controvertidas (`¿FINAL ENTREGADA?`), declaraciones de shock o urgencia (`¡Gamezking ELIMINADO!`, `¡Se Agotan!`) y, crucialmente, el uso estratégico de emojis (`🤯`, `😱`, `🔥`, `⚽`).",
+    "Evitar estrictamente `hooks` que sean meramente descriptivos, incompletos o carentes de emoción, ya que han resultado consistentemente en 0 visualizaciones.",
+    "Publicar los videos de mayor potencial en el rango de la Hora 1 (entre las 00:00 y 01:00 AM UTC) para capitalizar el pico de visibilidad algorítmica observado en los videos top.",
+    "Considerar la implementación de formatos seriados ('PARTE 1', '1/2') para noticias de alto interés o controversia, replicando el éxito de múltiples videos en el TOP 10.",
+    "Implementar pruebas A/B para determinar la duración óptima de los Shorts, ya que este dato es crucial para la retención y no está disponible en el análisis actual."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una paradoja: domina el 100% de los videos con más vistas (TOP 10) superando las 970 views, pero a nivel general tiene un `avg_views` de 3 y una `trend` negativa de -0.9, lo que indica una alta volatilidad y que el éxito depende críticamente de la elección del tema y la ejecución del gancho."
+  "insight_semana": "El nicho `ia_noticias` presenta una alta volatilidad, con un `avg_views` general muy bajo (4 vistas) pero una dominancia absoluta en el TOP 10 (todos los videos), indicando que el éxito reside en identificar sub-temas de alto impacto y ejecutar `hooks` específicos para captar audiencia masiva, a pesar de la inconsistencia promedio."
 }
