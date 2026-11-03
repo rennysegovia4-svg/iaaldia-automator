@@ -1,38 +1,41 @@
 {
   "updated": "2026-11-03",
-  "iteracion": 640,
+  "iteracion": 641,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "finanzas": 0.01,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.35,
+    "ia_noticias": 0.4,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.0,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.0,
+    "productividad": 0.1,
+    "negocios": 0.05
   },
   "best_hooks": [
-    "Generación de anticipación o expectación (Ej: '¡Se acabó la espera! ¡El')",
-    "Hechos sorprendentes o únicos sobre individuos/eventos (Ej: 'Con solo 17 años, Lamine')",
-    "Tono formal y autoritario de noticiero (Ej: 'Muy buenas tardes. Bienvenidos a')",
-    "Preguntas retóricas o declaraciones de shock en el título (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticias urgentes y de alto impacto con datos clave (Ej: 'Terremoto devastador en Colombia: 132 muertos')",
-    "Anuncios de crisis o cambios trascendentales (Ej: 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')"
+    "¡Se acabó la espera! ¡El [evento impactante]...",
+    "Con solo [cifra], [nombre/evento]...",
+    "Muy buenas tardes. Bienvenidos a [resumen noticioso/evento]",
+    "Título: [Pregunta impactante o controversia]? 🤯",
+    "Título: [Noticia urgente/trágica] en [Lugar]: [Número] [Detalle clave]...",
+    "Título: [Evento/Personaje] [Acción impactante] ¡[Reacción]! 😱"
   ],
   "avoid_hooks": [
-    "Declaraciones puramente factuales sin intriga (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Afirmaciones genéricas y sin gancho emocional (Ej: 'Brasil y Noruega empatan')",
-    "Inicios de relato sin un evento impactante inmediato (Ej: 'Sidny Lopes Cabral acaba de')"
+    "Afirmaciones factuales y directas de un resultado o hecho sin carga emocional ni intriga.",
+    "Frases incompletas o que no generan intriga inmediata al lector/oyente.",
+    "Descripciones planas de eventos que no sugieren un desenlace impactante o una revelación."
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho de `deportes` (particularmente temas como el 'mundial_2026') y `ia_noticias` que aborden eventos deportivos de gran magnitud o noticias de actualidad impactantes, dada su alta viralidad potencial y rendimiento promedio.",
-    "Implementar activamente las fórmulas de gancho identificadas, como la anticipación y las declaraciones de shock, tanto en los títulos como en los primeros segundos de los videos, ya que el título mismo suele actuar como el gancho principal.",
-    "Concentrar las publicaciones más estratégicas alrededor de la Hora 1, que ha demostrado ser un momento óptimo para la visibilidad algorítmica y la captación de audiencia en los videos de mayor rendimiento.",
-    "Recopilar datos sobre la duración específica de los videos exitosos y fallidos para determinar la `duracion_optima` más efectiva para este formato y nicho."
+    "Priorizar el nicho `ia_noticias` por su demostrada capacidad de generar los videos con más vistas (ocupando el 100% del TOP 10), centrándose en temas controversiales, urgentes y que generen alta emoción.",
+    "Aprovechar el nicho `deportes`, especialmente sub-nichos como `mundial_2026`, debido a su alto `avg_views` (258) y un `trend` muy positivo (867.0), lo que sugiere un crecimiento y estabilidad en la audiencia.",
+    "Diseñar títulos que funcionen como ganchos primarios, incorporando preguntas que generen controversia o sorpresa, nombres específicos, datos impactantes y emojis (🤯, 😱, 🔥) para captar la atención de inmediato.",
+    "Publicar el contenido preferentemente a la Hora 1 (entre las 01:00 y las 01:59 AM) para maximizar la visibilidad algorítmica inicial, especialmente para los videos de `ia_noticias`.",
+    "Es crucial recopilar datos sobre la duración de los videos para identificar la 'duración óptima', ya que actualmente es un factor desconocido que podría mejorar significativamente el rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La extrema polarización en el rendimiento del nicho `ia_noticias`, que monopoliza el TOP 10 de visualizaciones a pesar de su bajo rendimiento promedio, indica que su éxito depende críticamente de la elección de temas ultra-virales y oportunos."
+  "insight_semana": "El nicho `ia_noticias` presenta una paradoja: domina el 100% de los videos con más vistas (TOP 10) superando las 970 views, pero a nivel general tiene un `avg_views` de 3 y una `trend` negativa de -0.9, lo que indica una alta volatilidad y que el éxito depende críticamente de la elección del tema y la ejecución del gancho."
 }
