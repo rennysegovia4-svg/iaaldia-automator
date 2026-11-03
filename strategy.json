@@ -1,40 +1,39 @@
 {
   "updated": "2026-11-03",
-  "iteracion": 642,
+  "iteracion": 643,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
     "ia_noticias": 0.4,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.005
   },
   "best_hooks": [
-    "¿AFIRMACIÓN CONTROVERSIAL + EMOJI? (PARTE X)",
-    "¡EVENTO URGENTE/IMPACTANTE + EMOJI + EXCLAMACIÓN!",
-    "La noticia [tipo] que sacude [REGIÓN] hoy + EMOJI",
-    "Terremoto devastador en [LUGAR]: [CIFRA] muertos y...",
-    "¡Se acabó la espera! ¡El... [ANTICIPACIÓN]",
-    "Con solo [EDAD] años, [NOMBRE]... [HECHO SORPRENDENTE]"
+    "Anticipación + Evento Clave (Ej: '¡Se acabó la espera! ¡El...')",
+    "Hecho Sorprendente + Impacto en Individuo/Grupo (Ej: 'Con solo 17 años, Lamine...')",
+    "Pregunta Abierta + Controversia/Impacto Negativo (Ej: '¿X ENTREGÓ la Final? 🤯')",
+    "Noticia Urgente + Consecuencia Dramática (Ej: 'Terremoto devastador en X: Y muertos...')",
+    "Evento Específico + Emoción Fuerte (Ej: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Actualidad Regional + Magnitud (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')"
   ],
   "avoid_hooks": [
-    "Resultados deportivos exactos y sin contexto de sorpresa (Ej. 'Brasil y Noruega empatan 0-0')",
-    "Afirmaciones fácticas y directas sin intriga o misterio (Ej. 'Brasil y Noruega empatan')",
-    "Frases incompletas o que requieren contexto no provisto (Ej. 'Sidny Lopes Cabral acaba de')"
+    "Hooks que solo describen el evento de forma seca y sin emoción ('Brasil y Noruega empatan 0-0')",
+    "Hooks que no generan intriga o plantean una pregunta clara ('Brasil y Noruega empatan')",
+    "Hooks incompletos o que carecen de un 'punchline' ('Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho `ia_noticias` y el sub-nicho `mundial_2026` (dentro de `deportes`) debido a su demostrada capacidad para generar alto volumen de vistas y su fuerte tendencia al alza, respectivamente.",
-    "Desarrollar `hooks` que incorporen preguntas controvertidas (`¿FINAL ENTREGADA?`), declaraciones de shock o urgencia (`¡Gamezking ELIMINADO!`, `¡Se Agotan!`) y, crucialmente, el uso estratégico de emojis (`🤯`, `😱`, `🔥`, `⚽`).",
-    "Evitar estrictamente `hooks` que sean meramente descriptivos, incompletos o carentes de emoción, ya que han resultado consistentemente en 0 visualizaciones.",
-    "Publicar los videos de mayor potencial en el rango de la Hora 1 (entre las 00:00 y 01:00 AM UTC) para capitalizar el pico de visibilidad algorítmica observado en los videos top.",
-    "Considerar la implementación de formatos seriados ('PARTE 1', '1/2') para noticias de alto interés o controversia, replicando el éxito de múltiples videos en el TOP 10.",
-    "Implementar pruebas A/B para determinar la duración óptima de los Shorts, ya que este dato es crucial para la retención y no está disponible en el análisis actual."
+    "Priorizar contenido de 'ia_noticias' que sea altamente controversial, urgente o emocional, replicando patrones de títulos del TOP 10 (preguntas, emojis de sorpresa, mención de eventos impactantes y específicos).",
+    "Aprovechar el sub-nicho 'mundial_2026' dentro de la categoría 'deportes' debido a su alto 'avg_views' de 258 y 'trend' positivo de 867.0, a pesar de la variabilidad observada en videos individuales.",
+    "Mantener la hora de publicación predominante a la Hora 1 (independientemente de la zona horaria), que ha demostrado ser la más efectiva con un promedio de 1121 vistas en los videos del TOP 10, y considerar las Horas 6 y 17 como alternativas sólidas.",
+    "Integrar sistemáticamente emojis en los títulos y explorar la serialización ('PARTE 1') para fomentar la curiosidad y la retención, ya que el 100% de los videos TOP 10 usan emojis y varios emplean la serialización.",
+    "Es crucial recopilar datos sobre la duración óptima de los Shorts, ya que actualmente no hay información disponible para guiar esta métrica."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una alta volatilidad, con un `avg_views` general muy bajo (4 vistas) pero una dominancia absoluta en el TOP 10 (todos los videos), indicando que el éxito reside en identificar sub-temas de alto impacto y ejecutar `hooks` específicos para captar audiencia masiva, a pesar de la inconsistencia promedio."
+  "insight_semana": "El nicho 'ia_noticias' opera bajo un modelo de 'hit or miss': es capaz de generar picos de viralidad extrema (dominando el TOP 10 con vistas de 973-1325), pero su bajo promedio general (3 vistas) y tendencia negativa (-1.0) sugieren que solo los contenidos con ganchos excepcionalmente fuertes y emocionantes logran romper el algoritmo, mientras que la mayoría falla."
 }
