@@ -1,34 +1,42 @@
 {
   "updated": "2026-11-04",
-  "iteracion": 652,
+  "iteracion": 653,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "deportes": 0.4,
     "ia_noticias": 0.3,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a"
+    "Ganchos que generan alta anticipación: \"¡Se acabó la espera! ¡El\"",
+    "Ganchos que destacan talentos jóvenes o hazañas: \"Con solo 17 años, Lamine\"",
+    "Ganchos de inicio de noticias directos y de gran impacto: \"Muy buenas tardes. Bienvenidos a\"",
+    "Títulos tipo COUNTRY + EVENTO CLAVE + VERBO SHOCK + EMOJI + ?: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
+    "Títulos tipo URGENCIA + TEMA + PREGUNTA CLAVE + EMOJI: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
+    "Títulos tipo NOTICIA DE IMPACTO LATAM + EMOJI: Ej. \"La noticia deportiva que sacude LATAM hoy ⚽\""
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Anuncios blandos de resultados: \"Brasil y Noruega empatan 0-0\"",
+    "Declaraciones de hechos sin intriga: \"Brasil y Noruega empatan\"",
+    "Nombres propios poco conocidos sin contexto impactante: \"Sidny Lopes Cabral acaba de\""
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el contenido del nicho de **deportes** (específicamente temas de `mundial_2026`) debido a su consistente rendimiento promedio (258 vistas) y fuerte tendencia positiva (867.0), lo que sugiere una base de audiencia más estable y predecible.",
-    "Mantener una estrategia de publicación robusta en la **Hora 1**, ya que es el horario que consistentemente produce el video con más vistas (1325) y la mayor cantidad de videos en el TOP 10, optimizando la ventana de lanzamiento para la viralidad inicial.",
-    "Para el nicho `ia_noticias`, centrarse en títulos que combinen **menciones de países clave** (ej. Argentina, Colombia), **eventos de alto impacto** (Mundial, Terremoto) y **emojis emocionales** (🤯, 😱) para capitalizar su potencial de virales extremos, mitigando su alta volatilidad general."
+    "Priorizar el nicho `deportes` (específicamente contenido tipo `mundial_2026`), ya que es el nicho más estable y con mayor potencial de crecimiento predecible (avg_views 258, trend 867.0).",
+    "Implementar una estrategia dual para `ia_noticias`: utilizar este nicho para intentos virales de alto riesgo/recompensa, centrándose en temas de actualidad candente, países específicos (Argentina, Colombia) y personalidades populares (Shakira), con títulos sensacionalistas y emojis.",
+    "Mantener la publicación a la Hora 1 como horario principal, ya que consistentemente ha albergado los videos de mayor impacto y viralidad, incluyendo el top 1 de esta iteración y 3 de los 10 videos principales.",
+    "Crear títulos que combinen menciones de países relevantes, eventos de alto impacto (Mundial, Terremoto), palabras de shock o urgencia (ENTREGÓ, CEDE LIDERATO, Se Agotan), signos de interrogación/exclamación y emojis (🤯, 😱, 🔥) para maximizar la CTR.",
+    "Evitar ganchos iniciales que simplemente enuncian un hecho sin generar intriga, misterio o una fuerte emoción, ya que estos han demostrado ser ineficaces con 0 vistas.",
+    "Incorporar la métrica de duración del video en futuras iteraciones de datos para poder determinar la duración óptima, ya que actualmente no se dispone de esta información."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` presenta una dualidad extrema: concentra el 100% de los videos más vistos, pero su promedio de vistas de solo 7 y su tendencia negativa revelan una estrategia de alto riesgo/alta recompensa, con la mayoría de los videos fallando a pesar de picos virales ocasionales, contrastando con la estabilidad y crecimiento del nicho `mundial_2026` (Deportes)."
+  "insight_semana": "La extrema volatilidad del nicho `ia_noticias`, que domina el TOP 10 pero tiene una media de 7 vistas, contrasta con la estabilidad y el alto rendimiento promedio de `mundial_2026` (258 vistas, trend 867.0), indicando la necesidad de una estrategia de contenido dual que combine el potencial viral de alto riesgo con el crecimiento sostenido y predecible."
 }
