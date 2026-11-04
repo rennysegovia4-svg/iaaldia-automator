@@ -1,189 +1,206 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "hook_formulas": [
-    "Pregunta Controversial + Emojis de Impacto (🤯, 😱): Ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯'",
-    "Noticia Impactante/Trágica + Ubicación/Detalle: Ej. 'Terremoto devastador en Colombia: 132 muertos'",
-    "Urgencia ('HOY') + Impacto Amplio + Emoji (⚽): Ej. 'La noticia deportiva que sacude LATAM hoy ⚽'",
-    "Evento Dramático/Shocking + Entidad Específica + Emoji (😱, 🤯): Ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱'",
-    "Noticia de Venta/Cambio Grande + Pregunta Retórica + Emoji (😱): Ej. 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱'",
-    "Evento con Celebridad/Figura Pública + Urgencia + Emojis (😱🔥): Ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥'",
-    "[COMPARACIÓN/DILEMA] + [RESULTADO/MEJOR OPCIÓN]",
-    "[EVENTO IMPACTANTE/ACCIÓN INESPERADA] + [EMOJI DE REACCIÓN]",
-    "[HUMOR RELATABLE/EXAGERACIÓN] + [EMOJI DE RISA/VERGÜENZA]",
-    "[PREGUNTA CON INTRIGA] + [EMOJI DE REFLEXIÓN]",
-    "[REVELACIÓN DE SECRETO/HERRAMIENTA] + [EMOJI DE SORPRESA/BENEFICIO]",
-    "[BENEFICIO DIRECTO/SOLUCIÓN] + [CIFRA/MÉTODO]"
+    "Afirmación Impactante/Exagerada + Emoji de Reacción (ej. 'A.I. is getting way too Realistic 💀😂')",
+    "Comparación Directa (X vs Y) o Implícita (Antes vs Ahora) (ej. 'AI ASMR vs Traditional ASMR Which is Better...', 'Real Life Vs AI.')",
+    "Pregunta Generadora de Curiosidad/Intriga (ej. '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
+    "Revelación de Secreto/Truco/Método (ej. 'Sección Secreta de Amazon 😳📦')",
+    "Cita/Referencia Pop Cultural + Tema (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin')",
+    "Situación Humorística/Relatable + Emoji (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣')",
+    "Afirmación de Beneficio + Herramienta/Método (ej. 'Gana Miles de $$$ con Sandwitches desde Casa')",
+    "Evento Dramático/Inesperado con Detalle (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+    "Desafío o Puesta a Prueba (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA')",
+    "Intriga sobre 'Lo Famoso' o 'Lo Normal' (ej. 'Los Famosos \"Pagos Chiquitos\" 😳💵')",
+    "Urgencia/Exclusividad + Afirmación (ej. 'Esta es la IA definitiva para crear música GRATIS')",
+    "Acción Específica + Resultado/Impacto (ej. 'Baby destroys Walmart! 😂')"
   ],
   "title_patterns": [
-    "[SENTENCIA IMPACTANTE/HECHO INESPERADO] + [EMOJI DE REACCIÓN]",
-    "[SITUACIÓN RELATABLE/HUMOR] + [EMOJI DE RISA/VERGÜENZA]",
-    "[PREGUNTA INTRIGANTE/BUSCADOR DE SOLUCIÓN] + [EMOJI DE REFLEXIÓN/DINERO]",
-    "[REVELACIÓN DE HERRAMIENTA/SECRETO] + [BENEFICIO] + [EMOJI DE SORPRESA]",
-    "[BENEFICIO DIRECTO/IDEA DE NEGOCIO] + [CIFRA/MÉTODO] + [EMOJI]",
-    "[LISTA/TOP] + [ADJETIVO] + [TEMA] + [EMOJI]",
-    "[ACCIÓN ESPECÍFICA] + [HERRAMIENTA/SUJETO] + [BENEFICIO]",
-    "[ESCENA ICÓNICA/CITA] + [PERSONAJE/PELÍCULA]"
+    "[Tema/Sujeto] + [Verbo de Acción/Estado] + [Detalle/Consecuencia] + [Emojis] (ej. 'Baby destroys Walmart! 😂')",
+    "[Pregunta de Curiosidad/Consejo] + [Beneficio/Concepto] + [Emojis] (ej. '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
+    "[Referencia Pop/Situación] + [Humor/Reacción] + [Emojis] (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣')",
+    "[Afirmación de Utilidad/Solución] + [Herramienta/Concepto] + [Emojis/Hashtags] (ej. '🔥Free Text to Speech - AI voice from Script')",
+    "[Comparación X vs Y] + [Pregunta/Juicio] (ej. 'AI ASMR vs Traditional ASMR Which is Better...')",
+    "[Declaración de Impacto/Evento] + [Cantidad/Duración] + [Consecuencia] (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+    "[Título de película/frase icónica] + [Tema implícito] (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin')",
+    "[Identificación de Objeto/Concepto] + [Intriga/Impacto] + [Emojis] (ej. 'Sección Secreta de Amazon 😳📦')"
   ],
-  "palabras_prohibidas": [],
+  "palabras_prohibidas": [
+    "Guía completa",
+    "Tutorial extenso",
+    "Análisis profundo",
+    "Principios básicos",
+    "Explicación detallada",
+    "Fundamentos de",
+    "Conoce sobre",
+    "Parte 1 de",
+    "Introducción a",
+    "Metodología"
+  ],
   "palabras_clave_virales": [
     "shorts",
-    "ai",
-    "ia",
+    "AI",
+    "IA",
     "viral",
-    "ahorrar",
     "humor",
-    "dinero",
     "funny",
-    "bitcoin",
     "comedia",
-    "finanzas",
-    "tiktokvideo",
-    "latina",
-    "peru",
-    "marketing",
-    "trending"
+    "ahorrar",
+    "ahorro",
+    "dinero",
+    "memes",
+    "trending",
+    "inteligenciaartificial",
+    "bitcoin",
+    "crypto",
+    "trucos",
+    "truco",
+    "negocio",
+    "business",
+    "amazon",
+    "mamá",
+    "sora2"
   ],
-  "estructura_gancho_optima": "Una declaración o pregunta de apertura fuerte que genere curiosidad o relatabilidad inmediata, a menudo destacando un contraste, dilema o evento inesperado. Frecuentemente reforzada por emojis expresivos que transmiten shock, humor o intriga, y puede incluir una llamada a la acción implícita para ver el video completo o la resolución. El objetivo es provocar una reacción emocional (risa, shock, curiosidad) en los primeros 1-3 segundos.",
+  "estructura_gancho_optima": "La estructura de gancho óptima presenta un evento o situación sorprendente, humorística o desafiante, a menudo con un elemento visual intrigante o chocante en los primeros 1-3 segundos, y un título que genera curiosidad o valida la emoción del video. Frecuentemente usa emojis de reacción (ej., 😂, 💀, 😱, 😳) y palabras clave de alto impacto como 'AI', 'viral', 'secreto', 'truco' o 'destruye' para captar la atención inmediatamente y prometer un desenlace. La presencia de un personaje relatable (e.g., 'mamá', 'baby') o una referencia cultural (e.g., 'Nemo', 'Batman') también potencia este efecto.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "Aunque el nicho 'ia_noticias' generó todos los videos de mayor rendimiento de esta iteración, su promedio general de vistas de solo 4 y su tendencia negativa (-0.95) revelan una alta variabilidad y una elevada tasa de fallos, indicando que su éxito depende de la selección de temas virales específicos (principalmente deportivos) en lugar de una estrategia generalizada.",
-  "recomendacion_thumbnail": "Un thumbnail que presente un fotograma congelado del video de alto contraste y emocionalmente cargado (por ejemplo, un momento sorprendente, una revelación dramática, una expresión facial relatable de shock/humor). Esta imagen debe incluir idealmente una superposición de texto mínima pero impactante (1-3 palabras) o un emoji prominente que comunique instantáneamente la emoción central o el beneficio/intriga clave del video, asegurando que destaque y despierte la curiosidad inmediata. Evitar visuales saturados.",
+  "insight_clave": "Un insight clave es la hibridación efectiva de contenido ya viral (memes, escenas de películas, personajes populares, situaciones relatable) con nichos específicos (IA, finanzas, cripto). Esto permite enganchar a una audiencia masiva familiarizada con el contenido de entretenimiento, para luego introducirlos o contextualizarlo con un tema de nicho, aprovechando la resonancia emocional preexistente y la alta compartibilidad del humor y las referencias culturales. El Shorts se convierte en un 'meme de nicho' o una 'cita relevante' que transciende su formato original.",
+  "recomendacion_thumbnail": "Los thumbnails más efectivos capturan el momento más impactante o visualmente curioso del video, incorporando elementos humanos con expresiones faciales exageradas (sorpresa, risa, miedo) o textos superpuestos llamativos (en español) que refuerzan la promesa del título. Para nichos técnicos, incluir capturas de pantalla de la herramienta/interfaz destacando un resultado impresionante o un elemento clave (e.g., un logo, una cifra de dinero, un icono de AI) es crucial, a menudo con emojis grandes y contrastantes superpuestos para guiar la vista y evocar una emoción inmediata. Evitar fondos aburridos o estáticos.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "[COMPARACIÓN IA vs TRADICIONAL/REAL] + [PREGUNTA DE VALOR]",
-        "[SHOCK POR REALISMO/AVANCE IA] + [EMOJI DE REACCIÓN] + [CTA DE RETENCIÓN]",
-        "[EVENTO INESPERADO/ABSURDO GENERADO POR IA] + [EMOJI DE HUMOR]"
+        "Comparación sorprendente (e.g., 'AI vs Real Life', 'AI ASMR vs Traditional ASMR')",
+        "Afirmación de realismo/poder de la IA + emoji de shock/humor (e.g., 'A.I. is getting way too Realistic 💀😂')",
+        "Escenario inesperado/absurdo generado por IA (e.g., 'Baby destroys Walmart! 😂')"
       ],
       "topics": [
-        "ASMR/Relajación con IA",
-        "Realismo/Avance de la IA (generación de imágenes/video)",
-        "Humor/Memes generados por IA"
+        "Realismo y capacidades de la IA para generar contenido (imágenes, videos)",
+        "Aplicaciones inusuales o creativas de la IA (ASMR, memes, sueños)",
+        "Comparación entre resultados de IA y la vida real/tradicional"
       ]
     },
     "finanzas": {
       "hooks": [
-        "[PREGUNTA INTRIGANTE SOBRE NEGOCIOS/AHORRO] + [EMOJI DE REFLEXIÓN]",
-        "[HUMOR RELATABLE SOBRE AHORRO/GASTO] + [EMOJI DE RISA/VERGÜENZA]",
-        "[REVELACIÓN DE SECRETO/TRUCO DE AHORRO] + [EMOJI DE SORPRESA]"
+        "Situación humorística/relatable sobre ahorro/dinero + emoji (e.g., 'Mamá quería ahorrar 🙈🤭')",
+        "Pregunta directa sobre un método/concepto financiero + emoji de curiosidad (e.g., '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
+        "Revelación de un 'secreto' o 'truco' para ahorrar (e.g., 'Sección Secreta de Amazon 😳📦')"
       ],
       "topics": [
-        "Ahorro de dinero (métodos, consejos, humor)",
-        "Negocios/Emprendimiento (preguntas, reflexiones)",
-        "Finanzas personales (hipotecas, pagos, trucos)"
+        "Consejos y trucos de ahorro (hipotecas, carteras, métodos)",
+        "Humor y situaciones cotidianas relacionadas con el dinero y el ahorro",
+        "Exposición de conceptos financieros populares o controversiales ('Pagos Chiquitos')"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "[IDEA DE NEGOCIO/OPORTUNIDAD DE GANANCIA] + [PRODUCTO/MÉTODO]",
-        "[LISTA/TOP DE EJEMPLOS CREATIVOS] + [TEMA DE MARKETING]",
-        "[EXPLICACIÓN RÁPIDA DE CONCEPTO] + [TIEMPO/EJEMPLO]"
+        "Idea de negocio creativa/inusual con potencial de ganancias (e.g., 'Handmade bookmarks business idea💡')",
+        "Top/Lista de ejemplos impactantes en marketing/negocios (e.g., 'Top 3 Creative TV Ads 😎')",
+        "Explicación concisa de un concepto clave o problema de negocio (e.g., 'Understand Marketing in 30 Seconds')"
       ],
       "topics": [
-        "Ideas de negocio / Emprendimiento (manualidades, comida)",
-        "Marketing (anuncios, conceptos, estafas)",
-        "Inversiones (supermercados, fintech)"
+        "Ideas de negocio con baja barrera de entrada o alto potencial",
+        "Conceptos de marketing y publicidad explicados de forma simple",
+        "Historias de éxito o lecciones de negocios (emprendimiento, estafas)"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "[CITA/ESCENA ICÓNICA DE PELÍCULA] + [MENSAJE MOTIVACIONAL/FINANCIERO]",
-        "[ANÉCDOTA DRAMÁTICA/CONSECUENCIA FINANCIERA] + [CIFRA/IMPACTO]",
-        "[HUMOR RELATABLE SOBRE CRIPTO] + [EMOJI DE REACCIÓN]"
+        "Citas/Escenas de películas famosas adaptadas al contexto cripto/dinero (e.g., 'Puedes Lograrlo - Nemo')",
+        "Anécdotas dramáticas o curiosas relacionadas con criptomonedas/scams (e.g., 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+        "Comedia relatable sobre el mundo cripto (e.g., 'The guy who told you to buy bitcoin 😬😑😂')"
       ],
       "topics": [
-        "Citas/Escenas de películas aplicadas a finanzas/vida",
-        "Estafas y consecuencias en inversiones (especialmente cripto)",
-        "Humor y situaciones cotidianas en el mundo cripto"
+        "Inspiración y motivación a través de frases icónicas y Bitcoin",
+        "Historias de scammers, inversiones y pérdidas/ganancias extremas",
+        "Humor sobre el comportamiento de inversores o tendencias cripto"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "[HERRAMIENTA IA GRATUITA/DEFINITIVA] + [BENEFICIO ESPECÍFICO]",
-        "[FUNCIÓN DE IA SORPRENDENTE] + [APLICACIÓN ESPECÍFICA]",
-        "[TUTORIAL/CÓMO HACER CON IA] + [RESULTADO DESEADO]"
+        "Afirmación de una herramienta IA 'definitiva' o 'gratis' con beneficio claro (e.g., '🔥Free Text to Speech - AI voice from Script')",
+        "'Truco' o método con IA para una tarea específica (e.g., '✅TRUCO para PRESENTACIONES con AI en CANVA')",
+        "Promesa de creación fácil y rápida de contenido viral con IA (e.g., 'This AI Tool Creates Short Videos in Seconds!')"
       ],
       "topics": [
-        "Herramientas IA para creación de contenido (voz, música, video)",
-        "IA para productividad (Excel, transcripción, traducción)",
-        "IA gratis / cómo usar herramientas IA"
+        "Herramientas de IA gratuitas y fáciles de usar para la creación de contenido",
+        "Trucos y consejos para optimizar la productividad con IA",
+        "Métodos para generar contenido viral usando IA"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?",
-      "views": 176419551,
+      "views": 176420237,
       "id": "3bYx9XKbmQk"
     },
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 76172848,
+      "views": 76177457,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 61218884,
+      "views": 61219472,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 56598066,
+      "views": 56603665,
       "id": "6ms51abwU5A"
     },
     {
-      "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44499107,
-      "id": "qrfrPlEGrdw"
-    },
-    {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38982961,
+      "views": 38984830,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "#shorts CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA",
-      "views": 23848138,
+      "views": 23848160,
       "id": "1PzL_R9bZ9o"
     },
     {
       "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23526393,
+      "views": 23527233,
       "id": "D53HF_okHi8"
     },
     {
+      "titulo": "Cuando a tu mamá le gusta ahorrar dinero 🤣 #shorts #humor #comedy #viralvideo",
+      "views": 15968180,
+      "id": "Vf23kOtb3IY"
+    },
+    {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15437064,
+      "views": 15437354,
       "id": "gDn_SQU6YZE"
     },
     {
       "titulo": "sabía que no trabajabas aquí - hitch #shorts #viral #shortvideo #bitcoin",
-      "views": 13484200,
+      "views": 13484219,
       "id": "8jCJ0vgJUsk"
     },
     {
       "titulo": "Top 3 Creative TV Ads 😎 | Marketing | #mangeshshinde #shorts",
-      "views": 8503818,
+      "views": 8503837,
       "id": "RabWLuxUzbw"
     },
     {
       "titulo": "DAY-31 2026 SUPERMART INVESTMENT BREAKDOWN!!🤩🔥 #shorts #business #kiranastore #viral #investment",
-      "views": 7350601,
+      "views": 7358957,
       "id": "ihIoMizSbxo"
     },
     {
       "titulo": "🔥Free Text to Speech - AI voice from Script #ai #aitools #shorts #texttospeech",
-      "views": 2736007,
+      "views": 2736915,
       "id": "jKUzVNCSiY8"
     },
     {
-      "titulo": "This AI tool translates video to ANY language #shorts #videotips #videomarketingtips",
-      "views": 731520,
-      "id": "os7nUVOZ_0E"
+      "titulo": "✅TRUCO para PRESENTACIONES con AI en CANVA #shorts #canva",
+      "views": 1023465,
+      "id": "ztzpmCOf0e4"
     },
     {
-      "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 577784,
-      "id": "14URUL4nBkA"
+      "titulo": "This AI Tool Creates Short Videos in Seconds!",
+      "views": 602734,
+      "id": "Ie4mDLkFTdU"
     }
   ],
   "aprendizajes_externos": {
