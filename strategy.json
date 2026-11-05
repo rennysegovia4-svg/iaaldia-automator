@@ -1,42 +1,39 @@
 {
-  "updated": "2026-11-04",
-  "iteracion": 653,
+  "updated": "2026-11-05",
+  "iteracion": 654,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Ganchos que generan alta anticipación: \"¡Se acabó la espera! ¡El\"",
-    "Ganchos que destacan talentos jóvenes o hazañas: \"Con solo 17 años, Lamine\"",
-    "Ganchos de inicio de noticias directos y de gran impacto: \"Muy buenas tardes. Bienvenidos a\"",
-    "Títulos tipo COUNTRY + EVENTO CLAVE + VERBO SHOCK + EMOJI + ?: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
-    "Títulos tipo URGENCIA + TEMA + PREGUNTA CLAVE + EMOJI: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
-    "Títulos tipo NOTICIA DE IMPACTO LATAM + EMOJI: Ej. \"La noticia deportiva que sacude LATAM hoy ⚽\""
+    "Anticipación/Urgencia: `¡Se acabó la espera! ¡El [evento]...` (Ej: `¡Se acabó la espera! ¡El mundial ya tiene campeón inesperado!`)",
+    "Historia de talento/personaje: `Con solo [edad] años, [Nombre]...` (Ej: `Con solo 17 años, Lamine Yamal deslumbra al mundo del fútbol!`)",
+    "Introducción estilo noticiero: `Muy buenas tardes. Bienvenidos a...` (Ej: `Muy buenas tardes. Bienvenidos a la noticia que paraliza al fútbol.`)",
+    "Pregunta retórica explosiva con emoji: `¿[Evento/Situación] [Impacto]? 🤯` (Ej: `¿Argentina entregó la Final del Mundial? 🤯`)",
+    "Noticia impactante con cifra/nombre y emoji: `[Evento Dramático]: [Cifra/Nombre Específico] 😱` (Ej: `Terremoto devastador en Colombia: 132 muertos...`)",
+    "Urgencia y consecuencia con emoji: `[Tema] HOY: [Consecuencia Impactante] 😱🔥` (Ej: `LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱`)"
   ],
   "avoid_hooks": [
-    "Anuncios blandos de resultados: \"Brasil y Noruega empatan 0-0\"",
-    "Declaraciones de hechos sin intriga: \"Brasil y Noruega empatan\"",
-    "Nombres propios poco conocidos sin contexto impactante: \"Sidny Lopes Cabral acaba de\""
+    "Declaraciones factuales sin intriga ni emoción: `[Hecho simple] 0-0` (Ej: `Brasil y Noruega empatan 0-0`)",
+    "Declaraciones demasiado directas y poco contextualizadas: `[Nombre] acaba de [acción]` (Ej: `Sidny Lopes Cabral acaba de...`)",
+    "Titulares sin emojis ni llamados a la acción, que solo informan un resultado sin generar curiosidad."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el nicho `deportes` (específicamente contenido tipo `mundial_2026`), ya que es el nicho más estable y con mayor potencial de crecimiento predecible (avg_views 258, trend 867.0).",
-    "Implementar una estrategia dual para `ia_noticias`: utilizar este nicho para intentos virales de alto riesgo/recompensa, centrándose en temas de actualidad candente, países específicos (Argentina, Colombia) y personalidades populares (Shakira), con títulos sensacionalistas y emojis.",
-    "Mantener la publicación a la Hora 1 como horario principal, ya que consistentemente ha albergado los videos de mayor impacto y viralidad, incluyendo el top 1 de esta iteración y 3 de los 10 videos principales.",
-    "Crear títulos que combinen menciones de países relevantes, eventos de alto impacto (Mundial, Terremoto), palabras de shock o urgencia (ENTREGÓ, CEDE LIDERATO, Se Agotan), signos de interrogación/exclamación y emojis (🤯, 😱, 🔥) para maximizar la CTR.",
-    "Evitar ganchos iniciales que simplemente enuncian un hecho sin generar intriga, misterio o una fuerte emoción, ya que estos han demostrado ser ineficaces con 0 vistas.",
-    "Incorporar la métrica de duración del video en futuras iteraciones de datos para poder determinar la duración óptima, ya que actualmente no se dispone de esta información."
+    "Priorizar el nicho de `deportes` (especialmente `mundial_2026`) con el 40% del contenido, aprovechando su alto promedio de vistas (258) y fuerte tendencia de crecimiento (867.0) para asegurar un crecimiento sostenido y predecible.",
+    "Experimentar con el nicho `ia_noticias` (30% del contenido), pero con cautela y una estrategia de alta frecuencia. Aunque es volátil (AVG views 6, trend -1.0), ha demostrado capacidad para generar videos en el TOP 10 (100% de esta iteración), indicando que el 'viral' puede ocurrir, pero no es la norma.",
+    "Adoptar una estrategia de titulación que combine preguntas retóricas, urgencia ('HOY'), nombres específicos, números impactantes y emojis (🤯, 😱, 🔥, ⚽), replicando los patrones observados en el TOP 10.",
+    "Considerar la creación de contenido en formato 'Parte 1 / (1/2)' para noticias complejas o historias que requieren más contexto, lo que parece mantener la intriga y potencial para más vistas (ej. `ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)`).",
+    "Mantener la duración de los Shorts en torno a los 58 segundos (valor preestablecido), aunque la data específica de duración por video no está disponible para una validación directa en esta iteración. Es crucial incorporar esta métrica en futuros análisis."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La extrema volatilidad del nicho `ia_noticias`, que domina el TOP 10 pero tiene una media de 7 vistas, contrasta con la estabilidad y el alto rendimiento promedio de `mundial_2026` (258 vistas, trend 867.0), indicando la necesidad de una estrategia de contenido dual que combine el potencial viral de alto riesgo con el crecimiento sostenido y predecible."
+  "insight_semana": "La dicotomía entre la volatilidad de `ia_noticias` (100% del TOP 10, pero con un promedio de vistas bajísimo de 6 y tendencia negativa) y la consistencia de `deportes` (`mundial_2026`, con el promedio de vistas más alto de 258 y fuerte tendencia de 867.0), subraya la necesidad de una estrategia dual: una apuesta de alto riesgo/recompensa para virales (`ia_noticias`) combinada con un pilar de contenido estable para el crecimiento (`deportes`)."
 }

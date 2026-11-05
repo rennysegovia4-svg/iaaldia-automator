@@ -1,182 +1,196 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "hook_formulas": [
-    "Gancho de Humor Situacional/Relatable: Inicia con una escena o dilema cotidiano que provoca risa o identificación, a menudo involucrando personajes como 'mamá' o 'bebés'.",
-    "Gancho de Impacto/Sorpresa con IA: Muestra una capacidad de IA sorprendentemente realista, cómica o inesperada, contrastándola con la realidad o expectativas.",
-    "Gancho de Comparación/Contraste Directo: Presenta una dicotomía clara (ej. 'Real Life Vs AI', 'Uno ahorra, otro se hace rico') que genera curiosidad o intriga.",
-    "Gancho de Pregunta o Desafío de Intriga: Formula una pregunta directa o presenta un desafío que incita a buscar la respuesta en el video (ej. '¿Será verdad?', 'Guess WHO?').",
-    "Gancho de Problema + Solución/Oportunidad Directa: Identifica un problema común o una necesidad y ofrece una solución concisa o una idea innovadora desde el inicio (ej. 'Ahorrar no es suficiente', 'Business idea').",
-    "Gancho de Referencia a Cultura Pop/Citas Famosas: Utiliza frases o escenas icónicas de películas/personajes que resuenan y se aplican al tema del video.",
-    "Gancho de Listado/Top X: Promete una lista de elementos destacados, ideas o productos ('Top 3 Creative TV Ads', 'My Top 5 Winning Products').",
-    "Gancho de Historia/Evento Dramático: Presenta una situación con alta tensión, consecuencias inesperadas o una transformación significativa (ej. 'Scammer Watches...', 'Engineering Student Turned...').",
-    "Gancho de Afirmación Impactante/Exagerada: Una declaración audaz o un hecho sorprendente que capta la atención inmediatamente.",
-    "Gancho de Revelación de Herramienta/Recurso: Anuncia una herramienta o recurso 'definitivo', 'gratuito' o 'mejor' para una tarea específica.",
-    "Gancho de Evento Único/Experiencia Visual: Muestra un evento poco común, culturalmente relevante o un puzzle visualmente intrigante.",
-    "Gancho de Carácter Arquetípico/Personalidad: Se centra en un tipo de persona o su comportamiento para generar conexión o humor ('Most Humble Crypto Billionaire', 'Cuando a tu mamá le gusta ahorrar')."
+    "Gancho de Comparación/Contraste Impactante: '¡[Tema A] Vs [Tema B]!' o 'Realidad vs [Elemento Sorpresa]'. (Ej: 'AI ASMR vs Traditional ASMR', 'Real Life Vs AI', 'Antes Va Ahora')",
+    "Gancho de Humor Situacional y Relatable: Presenta una escena cotidiana exagerada o un dilema que provoca risa, a menudo con personajes identificables. (Ej: 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Mamá quería ahorrar 🙈🤭', 'Baby destroys Walmart! 😂')",
+    "Gancho de Revelación Sorprendente/Inesperada con IA: Muestra una capacidad de IA sorprendentemente realista, cómica o inquietante. (Ej: 'A.I. is getting way too Realistic 💀😂', 'FILTRO QUE TE HACE UN MEME CON INTELIGENCIA ARTIFICIAL?!')",
+    "Gancho de Problema Común + Solución/Oportunidad Directa: Identifica una necesidad y ofrece una respuesta concisa o una idea innovadora desde el inicio. (Ej: '¡Ahorrar No Es Suficiente! Hay Que Invertir', 'Handmade bookmarks business idea💡')",
+    "Gancho de Intriga con Pregunta o Desafío: Formula una pregunta directa o presenta un desafío que incita a buscar la respuesta en el video. (Ej: '¿Así Son Los Negocios? 🧐💼', '¿Será verdad?', 'Guess WHO?')",
+    "Gancho de Referencia a Cultura Pop/Citas Famosas: Utiliza frases o escenas icónicas de películas/personajes que resuenan y se aplican al tema del video. (Ej: 'Puedes Lograrlo - Nemo', 'Yo soy el Dueño - Batman', 'Albert Einstein once said...')",
+    "Gancho de Narrativa Breve y Emocional: Presenta una mini-historia con un desenlace inesperado o impactante que genera curiosidad. (Ej: '🔺 One kid saves, the other becomes rich', 'The Story of Joy - The Soap')",
+    "Gancho de Cifra o Impacto Monetario Elevado: Destaca una cantidad de dinero o un número grande para captar atención por su magnitud. (Ej: 'Scammer Watches $455K Disappear', 'My Top 5 Winning Products ($500M)')",
+    "Gancho de 'Watch till the end' o Llamada a la Expectativa: Crea una promesa implícita de una recompensa o un giro al finalizar el video. (Ej: '( Watch till the end )')",
+    "Gancho de Novedad/Tendencia Tecnológica: Destaca una nueva herramienta, capacidad o fenómeno (especialmente en IA). (Ej: 'INTELIGÊNCIA ARTIFICIAL DO MEU CELULAR!!!', 'Esta es la IA definitiva para crear música GRATIS')",
+    "Gancho de Drama/Impacto con Elemento Viral: Presenta una situación dramática o altamente compartible basada en un evento real o fenómeno masivo. (Ej: 'Eid train journey!! 2026🌙', '100M views pyramid in a cage puzzle')",
+    "Gancho de Carácter Relatable/Identificación Personal: Describe un sentimiento, una experiencia o un deseo universal que el espectador puede reconocer. (Ej: 'Mi sueño más real 😭🤣🙈', 'Somos iguales 😱🥹')"
   ],
   "title_patterns": [
-    "[Declaración de Humor/Relatable] + [Emoji/s] + [#hashtags]",
-    "[Comparación/Contraste de Sujetos/Conceptos] + [Emoji Opcional]",
-    "[Sujeto/Situación Impactante] + [Verbo de Acción/Resultado] + [Emoji/s] + [#hashtags]",
-    "[Pregunta Directa/Desafío] + [Producto/Tema] + [Emoji/s]",
-    "[Referencia Pop/Personaje] + [Contexto Temático] + [#PalabraClave]",
-    "[Número] + [Adjetivo Opcional] + [Objeto/Concepto] + [Resultado/Impacto]",
-    "[Afirmación de Valor/Problema] + [Verbo de Solución/Inversión] + [Emoji/s]",
-    "[Revelación de Tecnología/Herramienta] + [Resultado/Beneficio] + [Emoji/s]"
+    "[Tema A] vs [Tema B] + [Emoji de Comparación/Reacción] (Ej: 'AI ASMR vs Traditional ASMR Which is Better...', 'Real Life Vs AI. Part 14')",
+    "[Situación Humoresca/Absurda] + [Emoji de Humor] (Ej: 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Baby destroys Walmart! 😂', 'Mamá quería ahorrar 🙈🤭')",
+    "[Declaración Impactante sobre IA] + [Emoji de Sorpresa/Intriga] (Ej: 'A.I. is getting way too Realistic 💀😂', 'A.I. is getting way too Realistic 💀😂 ( Watch till the end )')",
+    "[Pregunta de Intriga/Dilema] + [Emoji de Reflexión/Cuestionamiento] (Ej: '¿Así Son Los Negocios? 🧐💼', '¿Será verdad?', '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
+    "[Problema/Acción] + [Consecuencia Impactante/Resultado] (Ej: '🔺 One kid saves, the other becomes rich', 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+    "[Cita/Personaje Famoso] - [Tema Relacionado/Mensaje] (Ej: 'Puedes Lograrlo - Nemo #shorts', 'Yo soy el Dueño - Batman #shorts')",
+    "[Tema Innovador/Tendencia] + [Beneficio/Curiosidad] + [Emoji] (Ej: 'Handmade bookmarks business idea💡 #shorts', 'Esta es la IA definitiva para crear música GRATIS #shorts')",
+    "[Frase Corta y Directa] + [Emoji de Humor/Reacción Instantánea] (Ej: 'Antes Va Ahora 🤭😂', 'Ahorrar es progreso 🤣💕', 'Guess WHO? #Shorts')"
   ],
   "palabras_prohibidas": [
-    "No hay suficientes datos de videos no virales para identificar palabras que consistentemente maten el CTR. Los títulos virales a menudo usan palabras fuertes como 'scam' o 'destroys' para generar impacto y curiosidad, no para reducir el CTR."
+    "tutorial",
+    "guía",
+    "completo",
+    "episodio",
+    "explicación",
+    "analítico",
+    "webinar",
+    "seminario",
+    "paso a paso",
+    "demostración"
   ],
   "palabras_clave_virales": [
-    "shorts",
-    "humor",
+    "#shorts",
     "AI",
     "IA",
-    "viral",
+    "humor",
     "funny",
-    "comedia",
+    "🤣",
+    "😂",
+    "viral",
+    "bitcoin",
     "ahorrar",
     "dinero",
-    "bitcoin",
-    "inteligenciaartificial",
     "trending",
-    "memes",
+    "vs",
+    "mamá",
     "negocios",
-    "inversiones"
+    "business",
+    "😱",
+    "filtro"
   ],
-  "estructura_gancho_optima": "La estructura de gancho más efectiva inicia con una situación, personaje o tecnología que genera sorpresa o humor, a menudo de forma relatable o con una exageración inesperada. Este setup rápido captura la atención en los primeros segundos y culmina en un 'punchline' visual o narrativo, una pregunta intrigante o una revelación directa que obliga al espectador a quedarse para ver el desenlace o la explicación.",
-  "duracion_optima_segundos": 50,
-  "insight_clave": "La clave de la viralidad masiva en estos Shorts radica en la 'universalización del nicho': temas específicos como IA, finanzas o cripto se convierten en virales al ser presentados a través de lentes de entretenimiento universal (humor, sorpresa, identificación emocional o referencias a la cultura pop), haciendo que el contenido sea atractivo y comprensible para una audiencia mucho más amplia que el nicho demográfico principal.",
-  "recomendacion_thumbnail": "El thumbnail óptimo es una captura de pantalla de alta resolución del momento más impactante y emocional del video. Debe mostrar expresiones faciales exageradas (sorpresa, risa, confusión, impacto) o un elemento visual intrigante/cómico clave, a menudo con alto contraste y colores vibrantes. Si se añade texto, debe ser mínimo, en una fuente legible y grande, reafirmando el gancho o la pregunta central del video.",
+  "estructura_gancho_optima": "Un estímulo visual o sonoro inmediato que presente un contraste extremo, una situación humorística relatable o una pregunta intrigante que se resuelva rápidamente o genere una necesidad urgente de ver el desenlace. Este gancho debe estar amplificado con emojis que refuercen la emoción o el impacto, y que invite a una identificación personal o sorpresa instantánea.",
+  "duracion_optima_segundos": 58,
+  "insight_clave": "Los Shorts más virales explotan el **contraste extremo o la paradoja visual/narrativa** para generar una disonancia cognitiva o una reacción emocional inmediata. Ya sea la confrontación de 'Realidad vs AI', 'Antes vs Ahora', 'Uno ahorra vs Uno se hace rico', o la yuxtaposición de un elemento inesperado en un contexto familiar, esta colisión de expectativas obliga a la audiencia a detenerse y procesar la información, a menudo con una recompensa humorística, sorprendente o educativa que se revela rápidamente.",
+  "recomendacion_thumbnail": "El thumbnail más efectivo debe ser una imagen de alto contraste o una captura de pantalla del momento más impactante/divertido del video. Debe presentar un contraste visual dramático (ej. un 'antes/después', 'X vs Y', o una escena 'real vs IA'), una reacción humana exagerada (sorpresa, risa, shock), un elemento visual inusual o absurdo que genere intriga, o una cifra monetaria/dato destacado. Los emojis clave del título pueden ser replicados o complementados visualmente para reforzar el mensaje emocional del gancho.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Comparación directa entre IA y elementos tradicionales/reales.",
-        "Revelación de la capacidad 'demasiado realista' o 'sorprendente' de la IA.",
-        "Humor relatable generado o potenciado por la IA (sueños, memes, situaciones absurdas)."
+        "Comparación Impactante 'AI vs Realidad': Presenta una dicotomía visual o conceptual entre lo generado por IA y la vida real. (Ej: 'AI ASMR vs Traditional ASMR', 'Real Life Vs AI')",
+        "Escenario Absurdo o Hiperrealista con IA: Muestra una situación cómica o inquietante creada por IA. (Ej: 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Baby destroys Walmart! 😂')",
+        "Herramienta/Filtro de IA con Resultado Sorprendente: Demuestra una funcionalidad de IA que produce un efecto inesperado o divertido. (Ej: 'FILTRO QUE TE HACE UN MEME CON INTELIGENCIA ARTIFICIAL?!')"
       ],
       "topics": [
-        "Realismo y evolución de la IA (imágenes, videos, efectos)",
-        "Aplicaciones de IA en la vida cotidiana (filtros, asistentes, experimentación)",
-        "Humor y situaciones absurdas creadas por IA"
+        "Realismo y Capacidad de la IA (Comparaciones y simulaciones)",
+        "Humor y Escenarios Absurdos Generados por IA",
+        "Herramientas y Aplicaciones Prácticas/Divertidas de IA"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Humor situacional y relatable sobre el ahorro o los hábitos financieros (a menudo con madres).",
-        "Contraste de decisiones financieras y sus consecuencias (ej. 'One kid saves, the other becomes rich').",
-        "Preguntas directas o desafíos sobre métodos de ahorro e inversión."
+        "Humor Relatable sobre Ahorro/Dinero: Situaciones cotidianas exageradas o cómicas relacionadas con las finanzas personales. (Ej: 'Mamá quería ahorrar 🙈🤭', 'Ahorrar es progreso 🤣💕')",
+        "Dilema/Contraste Financiero con Lección Implícita: Presenta dos caminos o resultados opuestos en finanzas que conllevan una moraleja. (Ej: '🔺 One kid saves, the other becomes rich', '¡Ahorrar No Es Suficiente! Hay Que Invertir')",
+        "Pregunta Directa sobre Conceptos Financieros: Incita a la reflexión sobre una práctica o creencia común en el ámbito financiero. (Ej: '¿Así Son Los Negocios? 🧐💼', '¿Cómo Ahorrar en tu Hipoteca?')"
       ],
       "topics": [
-        "Humor sobre finanzas personales y ahorro familiar",
-        "Consejos prácticos para ahorrar o invertir dinero (carteras, hipotecas)",
-        "Principios básicos de inversión y crecimiento de riqueza"
+        "Humor y Comedia sobre Ahorro y Gastos",
+        "Consejos de Inversión y Gestión de Dinero",
+        "Reflexiones sobre el Emprendimiento y Negocios"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Ideas de negocio creativas y con potencial de riqueza ('desde casa', 'handmade').",
-        "Listas de ejemplos exitosos (anuncios virales, productos ganadores) o explicaciones de scams.",
-        "Historias de emprendedores que transformaron su situación ('Engineering Student Turned Start Up Entrepreneur')."
+        "Idea de Negocio Innovadora/Tendencia: Presenta una oportunidad de negocio o un producto con potencial viral. (Ej: 'Handmade bookmarks business idea💡', 'My Top 5 Winning Products ($500M)')",
+        "Consejo de Marketing/Emprendimiento con Ejemplos: Muestra estrategias exitosas o lecciones aprendidas de forma concisa. (Ej: 'Top 3 Creative TV Ads 😎', 'Engineering Student Turned Start Up Entrepreneur')",
+        "Advertencia/Explicación de Estafas Digitales: Revela métodos fraudulentos para educar a la audiencia y prevenir riesgos. (Ej: 'Fake Products Online Scam Explained')"
       ],
       "topics": [
-        "Ideas de negocio innovadoras y de bajo costo",
-        "Estrategias de marketing y publicidad viral",
-        "Casos de éxito de emprendedores y productos de ecommerce"
+        "Ideas y Estrategias de Negocio Digital",
+        "Marketing y Publicidad Creativa",
+        "Casos de Éxito Emprendedor y Advertencias sobre Estafas"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Uso de escenas icónicas de películas para ilustrar conceptos de cripto/finanzas.",
-        "Historias dramáticas o impactantes sobre estafas o consecuencias financieras en el mundo cripto.",
-        "Personajes arquetípicos del mundo cripto (multimillonarios humildes, inversores con consejos dudosos)."
+        "Fragmento de Película/Serie con Mensaje Motivacional/Relevante: Utiliza escenas icónicas para transmitir una lección sobre finanzas o vida. (Ej: 'Puedes Lograrlo - Nemo', 'Yo soy el Dueño - Batman')",
+        "Historia Dramática o Advertencia de Scammers: Narra un evento impactante relacionado con inversiones o fraudes en el espacio cripto. (Ej: 'Scammer Watches $455K Disappear')",
+        "Humor sobre el Mundo Cripto: Bromea sobre situaciones comunes, riesgos o personajes en el mercado de las criptomonedas. (Ej: 'The guy who told you to buy bitcoin 😬😑😂')"
       ],
       "topics": [
-        "Motivación y mentalidad financiera con alusión a Bitcoin",
-        "Riesgos y estafas en el mercado de criptomonedas",
-        "Humor y situaciones irónicas relacionadas con la inversión en Bitcoin"
+        "Motivación y Reflexiones (aplicadas a finanzas/vida)",
+        "Advertencias sobre Scams y Seguridad en Cripto",
+        "Humor y Memes del Ecosistema Cripto"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Afirmación de la 'IA definitiva' o 'mejor herramienta' para una tarea específica y gratuita.",
-        "Demostración de capacidades de IA que 'humanizan' textos o crean contenido complejo fácilmente."
+        "Herramienta de IA con Beneficio Directo y Gratuito: Destaca una IA específica que ofrece una solución valiosa sin costo. (Ej: 'Esta es la IA definitiva para crear música GRATIS')",
+        "Mejor Herramienta para un Problema Específico: Presenta la 'solución definitiva' para una necesidad común en productividad. (Ej: 'La mejor herramienta para humanizar tus textos es Bypass AI')",
+        "Novedad en Productividad con IA: Muestra cómo la IA puede simplificar o mejorar tareas cotidianas o profesionales."
       ],
       "topics": [
-        "Herramientas de IA para la creación de contenido (música)",
-        "IA para la optimización y humanización de textos"
+        "Herramientas de IA Gratuitas para Tareas Creativas",
+        "Optimización de Texto y Contenido con IA",
+        "Aplicaciones de IA para la Productividad Diaria"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?",
-      "views": 176426884,
+      "views": 176427574,
       "id": "3bYx9XKbmQk"
     },
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 76222523,
+      "views": 76225723,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 61222341,
+      "views": 61224297,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 56724599,
+      "views": 56730250,
       "id": "6ms51abwU5A"
     },
     {
+      "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
+      "views": 44512232,
+      "id": "qrfrPlEGrdw"
+    },
+    {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 38991225,
+      "views": 38994106,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "Ahorrar es progreso 🤣💕 #shorts #humor #tiktokvideo #latina #comedia #funny #fyp",
-      "views": 30977956,
+      "views": 30982187,
       "id": "PcxIHhWHuKY"
     },
     {
-      "titulo": "🔺 One kid saves, the other becomes rich #shorts",
-      "views": 24617883,
-      "id": "0iq2fqW-eBU"
-    },
-    {
       "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23531135,
+      "views": 23532108,
       "id": "D53HF_okHi8"
     },
     {
+      "titulo": "Hacer el bien Siempre #shorts #viral #bitcoin #viralvideo",
+      "views": 16923542,
+      "id": "IoNPlxLWbqY"
+    },
+    {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15440970,
+      "views": 15441144,
       "id": "gDn_SQU6YZE"
     },
     {
-      "titulo": "sabía que no trabajabas aquí - hitch #shorts #viral #shortvideo #bitcoin",
-      "views": 13484270,
-      "id": "8jCJ0vgJUsk"
-    },
-    {
       "titulo": "Top 3 Creative TV Ads 😎 | Marketing | #mangeshshinde #shorts",
-      "views": 8504042,
+      "views": 8504078,
       "id": "RabWLuxUzbw"
     },
     {
-      "titulo": "Vendo sandwiches desde casa y me hago rico #negociocreativo #ideasdenegocio #shorts",
-      "views": 4624169,
-      "id": "fD1XG5pBZ2c"
+      "titulo": "Fake Products Online Scam Explained #shorts",
+      "views": 3395588,
+      "id": "WSx8vFrOwgQ"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 578468,
+      "views": 578631,
       "id": "14URUL4nBkA"
     },
     {
       "titulo": "La mejor herramienta para humanizar tus textos es Bypass AI #shorts",
-      "views": 189323,
+      "views": 189326,
       "id": "6Cp0mADlFK0"
     }
   ],
