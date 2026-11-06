@@ -1,39 +1,39 @@
 {
   "updated": "2026-11-06",
-  "iteracion": 662,
+  "iteracion": 663,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
-    "ia_noticias": 0.45,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.05
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "finanzas": 0.033,
+    "entretenimiento": 0.033,
+    "negocios_digitales": 0.033,
+    "productividad_ia": 0.033,
+    "cripto_inversiones": 0.033,
+    "politica_latam": 0.035
   },
   "best_hooks": [
-    "Pregunta Dramática con Emoji de Asombro/Intriga: \"¿[Evento/Situación Inesperada]? 🤯 (PARTE X)\"",
-    "Noticia de Urgencia/Impacto con Emoji Relevante: \"[Evento Crítico] HOY: ¡[Consecuencia Shockeante]! 😱\"",
-    "Anuncio de Tragedia/Noticia Seria con Ubicación: \"[Catástrofe] en [Lugar]: [Dato Impactante] y [Situación Crítica]\"",
-    "Noticia Deportiva Impactante con Localización y Emoji: \"La noticia deportiva que sacude [Región] hoy ⚽\"",
-    "Gancho de Anticipación y Llamada a la Acción/Relevancia: \"¡Se acabó la espera! ¡El [Evento Importante] ha llegado!\"",
-    "Enfoque en Dato Específico/Logro Inesperado: \"Con solo [Edad/Dato Clave], [Nombre] logra [Hito Inesperado]\""
+    "¡Alerta máxima! Esto acaba de...",
+    "Con solo [X edad/cantidad], [persona/evento]...",
+    "Bienvenidos, hoy les revelaré el secreto de...",
+    "¿Es posible que [evento impactante]? 🤔",
+    "¡IMPACTO TOTAL! La noticia que...",
+    "La verdad oculta sobre [tema]..."
   ],
   "avoid_hooks": [
-    "Hooks que revelan completamente el desenlace de forma plana (ej. \"X empata Y 0-0\")",
-    "Hooks incompletos o demasiado genéricos que no generan intriga (ej. \"X acaba de\")",
-    "Hooks puramente descriptivos sin emoción, urgencia o un elemento de sorpresa"
+    "Hooks que resumen el evento o resultado de manera plana (Ej: 'Brasil y Noruega empatan 0-0').",
+    "Hooks que revelan la información clave sin generar intriga (Ej: 'Brasil y Noruega empatan').",
+    "Hooks descriptivos e incompletos que no añaden valor o sorpresa (Ej: 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de los nichos `ia_noticias` y `deportes` (específicamente sub-nichos de alto impacto como `mundial_2026`), dado que son los únicos que han demostrado capacidad para generar videos virales, a pesar de su alta varianza.",
-    "Implementar hooks y títulos que generen intriga, drama o urgencia, utilizando preguntas impactantes y emojis (🤯, 😱, ⚽, 🔥) consistentemente, siguiendo el patrón de los 10 videos más vistos para maximizar el CTR inicial.",
-    "Evitar hooks que sean meramente descriptivos o que revelen el desenlace sin generar curiosidad, como \"X empata Y 0-0\" o frases incompletas, ya que estos patrones están directamente correlacionados con un rendimiento de 0 vistas.",
-    "Experimentar con los horarios de publicación prioritariamente a la 1 AM (hora con mayor recurrencia en el TOP 10), y también considerar las 5 PM y 6 AM como ventanas de oportunidad sólidas, dada su aparición frecuente en los videos más exitosos.",
-    "Comenzar a registrar la duración de los videos para identificar una duración óptima y correlacionarla con el rendimiento, ya que esta es una métrica crucial para el éxito en Shorts y actualmente no se dispone de datos."
+    "Priorizar la creación de contenido en el nicho de `deportes` (aprovechando el éxito de `mundial_2026`), ya que muestra el mayor promedio de vistas y tendencia positiva.",
+    "Para el nicho `ia_noticias`, enfocar la estrategia en temas de alta controversia o que generen shock/conspiración, replicando el patrón de los videos del TOP 10, pero conscientes de su alta volatilidad.",
+    "Experimentar con los horarios de publicación de 1 AM, 6 AM y 5 PM (17 PM), que han demostrado ser las franjas más efectivas para los videos de mayor rendimiento.",
+    "Implementar de forma inmediata la recopilación de datos sobre la duración de los videos para poder determinar la duración óptima y mejorar la retención de audiencia.",
+    "Analizar los nichos `productividad` (56 avg_views) y `negocios` (21 avg_views) para futuras incorporaciones o estrategias, ya que demuestran un rendimiento superior al promedio de `ia_noticias` y al resto de nichos con 0 vistas, aunque no estén en la distribución actual de pesos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es un ecosistema de alto riesgo y alta recompensa; aunque concentra el 100% de los videos con más vistas, su promedio general es de solo 4 vistas, lo que revela que la mayoría de sus contenidos fracasan (0 views) y el éxito está casi enteramente condicionado a la resonancia del tema y la efectividad del gancho, no a un rendimiento constante."
+  "insight_semana": "La extrema polarización del nicho `ia_noticias`: concentra el 100% de los videos en el TOP 10, pero su promedio general es de solo 4 vistas, lo que confirma que es un nicho de alto riesgo y alta recompensa, donde el éxito depende totalmente de la viralidad de temas muy específicos y ganchos sensacionalistas."
 }
