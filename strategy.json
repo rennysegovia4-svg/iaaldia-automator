@@ -1,39 +1,37 @@
 {
-  "updated": "2026-11-05",
-  "iteracion": 660,
+  "updated": "2026-11-06",
+  "iteracion": 661,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.3,
+    "ia_noticias": 0.45,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Preguntas controversiales/conspirativas + emojis de shock + sistema de partes (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
-    "Noticias de urgencia/desastre + cifras impactantes + mención geográfica (ej. 'Terremoto devastador en Colombia: 132 muertos')",
-    "Noticias deportivas/de celebridades + elementos de urgencia ('hoy', 'se agotan') + verbo de impacto + ubicación + emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Hecho sorprendente/dramático + nombre propio/equipo + situación de crisis/cambio + emoji de impacto (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Hooks de anticipación que generan expectación por un evento esperado (ej. '¡Se acabó la espera! ¡El')",
-    "Revelación de un talento/hecho sorprendente con detalle específico (edad, característica) (ej. 'Con solo 17 años, Lamine')"
+    "¡Se acabó la espera! ¡El [evento impactante]...",
+    "Con solo [edad], [nombre] [logro/noticia sorprendente]...",
+    "Muy buenas tardes. Bienvenidos a [noticia urgente/clave]...",
+    "¿[Afirmación controvertida]? La verdad sobre [tema]...",
+    "ÚLTIMA HORA: [Evento devastador/impactante] en [Lugar]...",
+    "¡[Nombre de equipo/celebridad] en SHOCK! [Evento inesperado]..."
   ],
   "avoid_hooks": [
-    "Anunciar resultados de eventos deportivos sin generar intriga o un giro inesperado (ej. 'Brasil y Noruega empatan 0-0')",
-    "Frases planas o incompletas que no revelan el impacto o la relevancia de la noticia (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks que terminan una noticia en lugar de abrir un bucle de curiosidad"
+    "Hooks que presenten resultados de eventos deportivos como un 0-0 o resultados poco emocionantes sin añadir intriga.",
+    "Hooks que sean descripciones puramente fácticas y directas sin generar curiosidad o emoción.",
+    "Hooks incompletos o demasiado vagos que no dan contexto ni anticipan el contenido (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": null,
   "recomendaciones": [
-    "Concentrar la producción de contenido de alto impacto en el nicho `ia_noticias`, utilizando títulos con preguntas controversiales, emojis de shock y formatos de 'PARTE 1/2' para capitalizar su potencial viral demostrado en el TOP 10.",
-    "Aumentar la frecuencia de contenido sobre `deportes`, específicamente el subnicho `mundial_2026`, apalancando su alta media de vistas (258) y la tendencia de crecimiento (867.0) con hooks de anticipación y cifras específicas de eventos.",
-    "Priorizar la publicación de noticias de alto impacto y urgencia durante la 1 AM, ya que esta franja horaria ha demostrado ser la más recurrente entre los videos más vistos (3 de 10)."
+    "**Priorizar la Noticia de Alto Impacto y Controversia:** Enfocarse en temas noticiosos dentro del nicho `ia_noticias` que generen debate, emoción o sorpresa, especialmente en deportes (fútbol: Mundial, ligas específicas), desastres naturales o noticias de celebridades, ya que estas dominan el TOP 10.",
+    "**Optimizar Títulos con Emojis, Preguntas y Formato de Serie:** Continuar la estrategia de usar emojis impactantes (🤯, 😱, 🔥, ⚽), formulando títulos como preguntas o exclamaciones, y emplear el formato 'PARTE X' para alargar el consumo de contenido controversial y complejo, visto en el 30% de los videos TOP.",
+    "**Capitalizar la Urgencia y Localización:** Incluir palabras como 'hoy', 'última hora' y referencias geográficas específicas (Colombia, LATAM, Madrid) o entidades (FIFA, LIGA MX) para aumentar la relevancia y el alcance de las noticias, potenciando el engagement de la audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La capacidad del nicho `ia_noticias` para generar hits virales (100% del TOP 10 de videos más vistos) contrasta fuertemente con su bajo promedio general de vistas (4) y tendencia negativa (-1.0), indicando una estrategia de alto riesgo/alta recompensa donde la clave es la creación de contenido extremadamente llamativo y controvertido para sobresalir."
+  "insight_semana": "El nicho `ia_noticias` es altamente volátil pero presenta el mayor potencial de viralidad, demostrando que al acertar con temas de alto impacto (deportes controvertidos, desastres, celebridades), el rendimiento supera significativamente el promedio histórico del nicho, acaparando el 100% de los videos más vistos."
 }
