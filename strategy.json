@@ -1,37 +1,39 @@
 {
   "updated": "2026-11-06",
-  "iteracion": 661,
+  "iteracion": 662,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
+    "deportes": 0.35,
     "ia_noticias": 0.45,
     "finanzas": 0.03,
     "entretenimiento": 0.03,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento impactante]...",
-    "Con solo [edad], [nombre] [logro/noticia sorprendente]...",
-    "Muy buenas tardes. Bienvenidos a [noticia urgente/clave]...",
-    "¿[Afirmación controvertida]? La verdad sobre [tema]...",
-    "ÚLTIMA HORA: [Evento devastador/impactante] en [Lugar]...",
-    "¡[Nombre de equipo/celebridad] en SHOCK! [Evento inesperado]..."
+    "Pregunta Dramática con Emoji de Asombro/Intriga: \"¿[Evento/Situación Inesperada]? 🤯 (PARTE X)\"",
+    "Noticia de Urgencia/Impacto con Emoji Relevante: \"[Evento Crítico] HOY: ¡[Consecuencia Shockeante]! 😱\"",
+    "Anuncio de Tragedia/Noticia Seria con Ubicación: \"[Catástrofe] en [Lugar]: [Dato Impactante] y [Situación Crítica]\"",
+    "Noticia Deportiva Impactante con Localización y Emoji: \"La noticia deportiva que sacude [Región] hoy ⚽\"",
+    "Gancho de Anticipación y Llamada a la Acción/Relevancia: \"¡Se acabó la espera! ¡El [Evento Importante] ha llegado!\"",
+    "Enfoque en Dato Específico/Logro Inesperado: \"Con solo [Edad/Dato Clave], [Nombre] logra [Hito Inesperado]\""
   ],
   "avoid_hooks": [
-    "Hooks que presenten resultados de eventos deportivos como un 0-0 o resultados poco emocionantes sin añadir intriga.",
-    "Hooks que sean descripciones puramente fácticas y directas sin generar curiosidad o emoción.",
-    "Hooks incompletos o demasiado vagos que no dan contexto ni anticipan el contenido (ej. 'Sidny Lopes Cabral acaba de')."
+    "Hooks que revelan completamente el desenlace de forma plana (ej. \"X empata Y 0-0\")",
+    "Hooks incompletos o demasiado genéricos que no generan intriga (ej. \"X acaba de\")",
+    "Hooks puramente descriptivos sin emoción, urgencia o un elemento de sorpresa"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "**Priorizar la Noticia de Alto Impacto y Controversia:** Enfocarse en temas noticiosos dentro del nicho `ia_noticias` que generen debate, emoción o sorpresa, especialmente en deportes (fútbol: Mundial, ligas específicas), desastres naturales o noticias de celebridades, ya que estas dominan el TOP 10.",
-    "**Optimizar Títulos con Emojis, Preguntas y Formato de Serie:** Continuar la estrategia de usar emojis impactantes (🤯, 😱, 🔥, ⚽), formulando títulos como preguntas o exclamaciones, y emplear el formato 'PARTE X' para alargar el consumo de contenido controversial y complejo, visto en el 30% de los videos TOP.",
-    "**Capitalizar la Urgencia y Localización:** Incluir palabras como 'hoy', 'última hora' y referencias geográficas específicas (Colombia, LATAM, Madrid) o entidades (FIFA, LIGA MX) para aumentar la relevancia y el alcance de las noticias, potenciando el engagement de la audiencia."
+    "Priorizar la creación de contenido dentro de los nichos `ia_noticias` y `deportes` (específicamente sub-nichos de alto impacto como `mundial_2026`), dado que son los únicos que han demostrado capacidad para generar videos virales, a pesar de su alta varianza.",
+    "Implementar hooks y títulos que generen intriga, drama o urgencia, utilizando preguntas impactantes y emojis (🤯, 😱, ⚽, 🔥) consistentemente, siguiendo el patrón de los 10 videos más vistos para maximizar el CTR inicial.",
+    "Evitar hooks que sean meramente descriptivos o que revelen el desenlace sin generar curiosidad, como \"X empata Y 0-0\" o frases incompletas, ya que estos patrones están directamente correlacionados con un rendimiento de 0 vistas.",
+    "Experimentar con los horarios de publicación prioritariamente a la 1 AM (hora con mayor recurrencia en el TOP 10), y también considerar las 5 PM y 6 AM como ventanas de oportunidad sólidas, dada su aparición frecuente en los videos más exitosos.",
+    "Comenzar a registrar la duración de los videos para identificar una duración óptima y correlacionarla con el rendimiento, ya que esta es una métrica crucial para el éxito en Shorts y actualmente no se dispone de datos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es altamente volátil pero presenta el mayor potencial de viralidad, demostrando que al acertar con temas de alto impacto (deportes controvertidos, desastres, celebridades), el rendimiento supera significativamente el promedio histórico del nicho, acaparando el 100% de los videos más vistos."
+  "insight_semana": "El nicho `ia_noticias` es un ecosistema de alto riesgo y alta recompensa; aunque concentra el 100% de los videos con más vistas, su promedio general es de solo 4 vistas, lo que revela que la mayoría de sus contenidos fracasan (0 views) y el éxito está casi enteramente condicionado a la resonancia del tema y la efectividad del gancho, no a un rendimiento constante."
 }
