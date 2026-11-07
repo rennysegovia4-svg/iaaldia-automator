@@ -1,38 +1,39 @@
 {
-  "updated": "2026-11-06",
-  "iteracion": 668,
+  "updated": "2026-11-07",
+  "iteracion": 669,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.7,
-    "ia_noticias": 0.15,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
     "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.05,
     "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! [Noticia emocionante]",
-    "Con solo [edad/número], [nombre/evento sorprendente]",
-    "Muy buenas tardes. Bienvenidos a [Noticia importante]",
-    "¿[Sujeto] [Verbo polémico] el [Evento]? 🤯",
-    "La noticia [adjetivo] que sacude [lugar] hoy [emoji]",
-    "¡[Sujeto/Evento] en SHOCK: [Detalle sorprendente]! 😱"
+    "¡Urgencia y Suspense! El [Tema clave]...",
+    "Dato Específico Impactante sobre [Persona/Evento]...",
+    "Noticia de Última Hora: [Evento]...",
+    "Títulos con preguntas retóricas y emojis de impacto (🤯, 😱) para generar intriga.",
+    "Frases que insinúan una revelación o controversia (Ej: '¿FINAL ENTREGADA? 🤯').",
+    "Inicios que establecen un tono de 'breaking news' o 'alerta' sobre un tema relevante."
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Revelar el resultado o el hecho central del video en el gancho.",
+    "Ganchos puramente descriptivos que carecen de elementos emocionales o de intriga.",
+    "Ganchos que no generan una pregunta o curiosidad en el espectador."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el nicho `deportes` (derivado de `mundial_2026`) por su alta consistencia, promedio de vistas (258 avg_views) y tendencia positiva (867.0), dedicando la mayor parte del esfuerzo.",
-    "Continuar explotando el potencial viral de `ia_noticias` mediante títulos controversiales, el uso de 'PARTE 1' o '(1/2)' y emojis de impacto, gestionando su alta volatilidad (4 avg_views pero 100% del TOP 10).",
-    "Concentrar las publicaciones en la franja horaria de la 1 AM, que ha demostrado ser la más efectiva para los videos de mayor rendimiento del canal (30% del TOP 10 y el video más visto).",
-    "Implementar activamente los patrones de hooks más efectivos (urgencia, números, preguntas intrigantes) y eliminar los hooks que consisten en resúmenes factuales o genéricos."
+    "Priorizar la creación de contenido de `deportes` (específicamente fútbol/mundial) y `ia_noticias` con enfoque en controversias deportivas o noticias de alto impacto/chismes de entretenimiento, dado su rendimiento en el TOP 10.",
+    "Implementar consistentemente la táctica de 'PARTE 1' o '(1/2)' en títulos de noticias intrigantes para fomentar la curiosidad y potencial retención, como se observó en 3 de los 10 videos más vistos.",
+    "Evitar ganchos que revelen directamente el resultado o el hecho principal, especialmente para temas potencialmente fabricados o de bajo impacto, ya que estos patrones resultaron en 0 vistas en los videos menos exitosos.",
+    "Realizar una investigación exhaustiva sobre los videos con 0 vistas en nichos prometedores (`ia_noticias`, `mundial_2026`) para identificar fallos en la publicación, contenido o targeting que impiden su visibilidad.",
+    "Empezar a recolectar datos sobre la duración de los videos para identificar una `duracion_optima` basada en el rendimiento real, ya que esta métrica crítica actualmente no está disponible para análisis."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia actual del canal presenta una marcada dicotomía: mientras que el nicho `ia_noticias` tiene el potencial de alcanzar picos de viralidad (ocupando el 100% del TOP 10), su rendimiento promedio (4 vistas) y tendencia negativa (-0.85) lo hacen extremadamente volátil; el nicho `mundial_2026` (`deportes`) es el motor de crecimiento más confiable con un rendimiento promedio significativamente superior (258 vistas) y una tendencia al alza (867.0), ofreciendo una base de audiencia más estable."
+  "insight_semana": "La extrema volatilidad del nicho `ia_noticias` es el hallazgo más significativo: a pesar de generar todos los videos del TOP 10, su promedio de vistas de 4 (inferior a `mundial_2026` con 258) subraya que solo temas muy específicos y controversiales, a menudo relacionados con deportes o chismes de celebridades, logran viralidad, mientras que la mayoría fracasa rotundamente."
 }
