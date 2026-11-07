@@ -1,37 +1,39 @@
 {
   "updated": "2026-11-07",
-  "iteracion": 673,
+  "iteracion": 674,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.03,
-    "ia_noticias": 0.8,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "deportes": 0.5,
+    "ia_noticias": 0.25,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "entretenimiento": 0.05,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.01,
+    "productividad_ia": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Gancho de Urgencia/Anticipación: '¡Se acabó la espera! ¡El...'",
-    "Gancho de Detalle Específico/Logro Sorprendente: 'Con solo 17 años, Lamine...'",
-    "Gancho de Bienvenida Directa a la Noticia: 'Muy buenas tardes. Bienvenidos a...'",
-    "Gancho de Pregunta Controversial e Impactante (ej. en títulos): '¿[Evento Impactante]? 🤯'",
-    "Gancho de Noticia Directa con Reacción Emocional: '[Tema]: ¡[Emoción]! 😱'",
-    "Gancho de Titular Noticioso de Actualidad: '[Tipo de Noticia] que sacude [Región] hoy ⚽'"
+    "Pregunta con Controversia/Shock + Emoji: \"¿[Afirmación Controversial/Impactante]? 🤯\"",
+    "Noticia Urgente/Impactante + Verbo Fuerte + Emoji: \"[Sujeto] [Verbo de Impacto] HOY/AHORA! 😱\"",
+    "Anuncio con Cifra/Detalle Específico + Curiosidad: \"Con solo [X años/cifra], [Sujeto]...\"",
+    "Urgencia Directa/Expectativa Alta: \"¡Se acabó la espera! ¡El [evento]...\"",
+    "Noticia Deportiva General + Ubicación + Emoji: \"La noticia deportiva que sacude [Región] hoy ⚽\"",
+    "Declaración Audaz + Entidad Específica + Emoción + Emoji: \"[Entidad] [Acción Impactante] ¡[Emoción]! 🤯/😱\""
   ],
   "avoid_hooks": [
-    "Gancho de resultado deportivo simple sin emoción: 'Brasil y Noruega empatan 0-0'",
-    "Gancho descriptivo genérico sin intriga: 'Brasil y Noruega empatan'",
-    "Gancho que introduce un nombre sin contexto o impacto inmediato: 'Sidny Lopes Cabral acaba de'"
+    "Resultados Secos/Directos sin Emoción: (e.g., 'Brasil y Noruega empatan 0-0')",
+    "Frases Incompletas/Vagas/Poco Concretas: (e.g., 'Sidny Lopes Cabral acaba de')",
+    "Ausencia de Emojis/Interrogantes/Exclamaciones: Títulos o hooks sin elementos visuales o de intriga."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar duración óptima.",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Concentrar la producción de contenido en el nicho `ia_noticias` (80% del peso), enfocándose en temas de alta actualidad y controversia, especialmente noticias deportivas (fútbol), catástrofes impactantes y eventos de celebridades con alto interés público.",
-    "Implementar títulos que utilicen preguntas controversiales, declaraciones impactantes y emojis como '🤯', '😱', '🔥', ya que estos elementos están presentes en el 100% de los videos del TOP 10 y aumentan la curiosidad.",
-    "Priorizar ganchos iniciales que generen anticipación ('¡Se acabó la espera! ¡El...') o que presenten un detalle sorprendente y específico ('Con solo 17 años, Lamine...'), evitando ganchos que solo describen un evento sin intriga."
+    "Priorizar el contenido de `ia_noticias` enfocado en deportes (especialmente fútbol) y noticias de alto impacto (desastres naturales, eventos culturales trending), ya que constituyen el 100% de los videos en el TOP 10.",
+    "Implementar emojis (`🤯`, `😱`, `🔥`), preguntas y exclamaciones en los títulos de forma consistente para aumentar el CTR, siguiendo el patrón del 100% de los videos más vistos.",
+    "Concentrar las publicaciones de alto potencial en la 1 AM, que ha demostrado ser el horario más efectivo por volumen de videos en el TOP 10 y picos de vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el único generador de contenido viral (100% del TOP 10), pero su bajo `avg_views` general (2) y `trend` negativo (-1.0) confirman su naturaleza de alto riesgo/alta recompensa, donde el éxito depende críticamente de seleccionar temas de alta controversia/interés y una ejecución impecable del título y gancho."
+  "insight_semana": "La contradicción aparente entre el bajo `avg_views` general del nicho `ia_noticias` (2 vistas) y su rol como la *fuente exclusiva* del 100% de los videos más virales, resalta una estrategia de alto riesgo y alta recompensa: apostar por noticias de impacto dentro de este nicho, especialmente deportivas, para buscar viralidad puntual."
 }
