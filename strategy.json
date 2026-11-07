@@ -1,39 +1,37 @@
 {
   "updated": "2026-11-07",
-  "iteracion": 672,
+  "iteracion": 673,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.2,
-    "ia_noticias": 0.7,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
+    "deportes": 0.03,
+    "ia_noticias": 0.8,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El...",
-    "¡Increíble revelación! ¿Sabías que...?",
-    "Con solo X años, [nombre] acaba de...",
-    "¡Alerta máxima! Última hora sobre...",
-    "¿Realmente sucedió esto...?",
-    "Muy buenas tardes. Bienvenidos a..."
+    "Gancho de Urgencia/Anticipación: '¡Se acabó la espera! ¡El...'",
+    "Gancho de Detalle Específico/Logro Sorprendente: 'Con solo 17 años, Lamine...'",
+    "Gancho de Bienvenida Directa a la Noticia: 'Muy buenas tardes. Bienvenidos a...'",
+    "Gancho de Pregunta Controversial e Impactante (ej. en títulos): '¿[Evento Impactante]? 🤯'",
+    "Gancho de Noticia Directa con Reacción Emocional: '[Tema]: ¡[Emoción]! 😱'",
+    "Gancho de Titular Noticioso de Actualidad: '[Tipo de Noticia] que sacude [Región] hoy ⚽'"
   ],
   "avoid_hooks": [
-    "Revelar el desenlace o el resultado principal de la noticia de inmediato.",
-    "Anunciar un hecho sin generar intriga o expectativa previa.",
-    "Proveer información demasiado específica y directa que no invita a seguir viendo."
+    "Gancho de resultado deportivo simple sin emoción: 'Brasil y Noruega empatan 0-0'",
+    "Gancho descriptivo genérico sin intriga: 'Brasil y Noruega empatan'",
+    "Gancho que introduce un nombre sin contexto o impacto inmediato: 'Sidny Lopes Cabral acaba de'"
   ],
-  "best_hora": 16,
-  "duracion_optima": 0,
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para determinar duración óptima.",
   "recomendaciones": [
-    "Priorizar contenido dentro del nicho `ia_noticias`, enfocándose en noticias deportivas controvertidas o eventos de última hora con alto impacto emocional, ya que es la única categoría que ha demostrado capacidad de viralización.",
-    "Optimizar títulos utilizando lenguaje emocional fuerte, preguntas y emojis como '🤯', '😱', '🔥' para maximizar la tasa de clics inicial, replicando el patrón de los videos con más vistas.",
-    "Implementar ganchos (hooks) de inicio que generen anticipación e intriga, evitando revelar el desenlace o el hecho principal en los primeros segundos del Short.",
-    "Experimentar con la publicación de videos en las horas pico identificadas: 16:00, 17:00 y 21:00, que han mostrado el mayor potencial de vistas individuales para contenido de calidad.",
-    "Establecer un sistema para registrar y analizar la duración de los videos en futuras iteraciones, con el fin de determinar la duración óptima para Shorts y refinar aún más la estrategia."
+    "Concentrar la producción de contenido en el nicho `ia_noticias` (80% del peso), enfocándose en temas de alta actualidad y controversia, especialmente noticias deportivas (fútbol), catástrofes impactantes y eventos de celebridades con alto interés público.",
+    "Implementar títulos que utilicen preguntas controversiales, declaraciones impactantes y emojis como '🤯', '😱', '🔥', ya que estos elementos están presentes en el 100% de los videos del TOP 10 y aumentan la curiosidad.",
+    "Priorizar ganchos iniciales que generen anticipación ('¡Se acabó la espera! ¡El...') o que presenten un detalle sorprendente y específico ('Con solo 17 años, Lamine...'), evitando ganchos que solo describen un evento sin intriga."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave del éxito reside exclusivamente en la hiper-selección de temas de `ia_noticias` con alto potencial de controversia o urgencia (especialmente deportivos), ya que este nicho es el único generador de vistas masivas, aunque con una altísima tasa de fracaso para temas no virales, lo que exige una estrategia de contenido muy específica y audaz."
+  "insight_semana": "El nicho `ia_noticias` es el único generador de contenido viral (100% del TOP 10), pero su bajo `avg_views` general (2) y `trend` negativo (-1.0) confirman su naturaleza de alto riesgo/alta recompensa, donde el éxito depende críticamente de seleccionar temas de alta controversia/interés y una ejecución impecable del título y gancho."
 }
