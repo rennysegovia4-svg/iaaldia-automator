@@ -1,40 +1,37 @@
 {
   "updated": "2026-11-08",
-  "iteracion": 682,
+  "iteracion": 683,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.55,
-    "mundial_2026": 0.3,
-    "productividad": 0.05,
-    "negocios": 0.02,
-    "entretenimiento": 0.05,
-    "finanzas": 0.01,
-    "negocios_digitales": 0.01,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
     "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "deportes": 0.0,
-    "politica_latam": 0.01
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "Noticia Controversial/Pregunta Impactante [Sujeto/Evento]?",
-    "Impacto + Evento + Consecuencia (e.g., Terremoto devastador...)",
-    "Anuncio/Urgencia + Evento + Emoción (e.g., ¡Se acabó la espera! ¡El...)",
-    "Logro/Estado Actual + Persona/Equipo + Destacado (e.g., Con solo 17 años, Lamine...)",
-    "Evento Específico + Palabras de Choque/Emoción (e.g., TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
-    "Actualidad Regional + Impacto Inmediato (e.g., La noticia deportiva que sacude LATAM hoy)"
+    "Fórmulas de Exclamación con Urgencia/Anticipación (ej: \"¡Se acabó la espera!\")",
+    "Mención de Talentos Jóvenes o Nombres Específicos Relevantes (ej: \"Con solo 17 años, Lamine\")",
+    "Introducción Formal para Noticia Impactante (ej: \"Muy buenas tardes. Bienvenidos a\")",
+    "Pregunta Incitante que Genera Shock o Dilema (ej: \"¿FINAL ENTREGADA? 🤯\")",
+    "Declaración de Impacto con Emoticono de Sorpresa/Alarma (ej: \"¡Gamezking ELIMINADO! 😱\")",
+    "Referencia Inmediata a Eventos Grandes y su Ubicación (ej: \"Terremoto devastador en Colombia:\")"
   ],
   "avoid_hooks": [
-    "Hooks que solo enuncian un resultado o evento sin emoción ni pregunta (e.g., Brasil y Noruega empatan 0-0)",
-    "Hooks que son descripciones planas del contenido sin generar intriga (e.g., Sidny Lopes Cabral acaba de)",
-    "Hooks que no usan palabras de impacto o emojis para captar la atención"
+    "Hooks que revelan el resultado o contenido principal de forma neutral (ej: \"Brasil y Noruega empatan 0-0\")",
+    "Introducción de sujetos o eventos poco conocidos sin contexto intrigante (ej: \"Sidny Lopes Cabral acaba de\")",
+    "Descripciones blandas o informativas que no generan intriga ni emoción"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro de los subtemas de 'noticias deportivas controversiales' y 'noticias de actualidad impactantes' bajo la categoría 'ia_noticias' y 'mundial_2026', ya que son los que demuestran mayor potencial de viralidad.",
-    "Concentrar las publicaciones en los horarios de mayor rendimiento: 1 AM (mayor número de videos top) y 17 PM (alto volumen de vistas) para maximizar la visibilidad inicial.",
-    "Desarrollar títulos y hooks que generen intriga y usen palabras de impacto, controversia o urgencia, evitando la simple enunciación de hechos o resultados que han demostrado ser ineficaces."
+    "Priorizar la creación de contenido de 'ia_noticias' centrado en noticias deportivas de alto impacto, controversia o revelaciones inesperadas (ej: resultados de partidos, ligas, escándalos), dado que el 80% del TOP 10 se alinea con esta temática.",
+    "Maximizar las publicaciones a la 1 AM UTC, ya que este horario demostró ser el más efectivo para la visibilidad inicial, acumulando la mayor cantidad de videos y vistas del TOP 10 en una sola franja horaria (3 videos, 3363 vistas).",
+    "Diseñar títulos y ganchos (hooks) que generen fuerte expectativa, controversia o una pregunta impactante, evitando a toda costa spoilear el desenlace o presentar la información de forma meramente descriptiva."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' presenta una performance paradójica: su promedio general de vistas es extremadamente bajo (1 vista), sin embargo, 10 de los 10 videos con más vistas pertenecen a esta categoría. Esto indica que no es la categoría en sí, sino la ejecución de subtemas muy específicos (noticias deportivas controversiales y eventos de actualidad impactantes) dentro de ella, lo que determina el éxito o fracaso."
+  "insight_semana": "El nicho 'ia_noticias', aunque muestra un 'avg_views' bajo (1) en el ranking general, es responsable del 100% de los videos en el TOP 10, impulsado principalmente por temas de noticias deportivas con un ángulo de shock o controversia (80% de los top videos), lo que indica una alta volatilidad pero también un potencial extremo en subtemas específicos."
 }
