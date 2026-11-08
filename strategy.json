@@ -1,37 +1,40 @@
 {
   "updated": "2026-11-08",
-  "iteracion": 681,
+  "iteracion": 682,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.25,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.03
+    "ia_noticias": 0.55,
+    "mundial_2026": 0.3,
+    "productividad": 0.05,
+    "negocios": 0.02,
+    "entretenimiento": 0.05,
+    "finanzas": 0.01,
+    "negocios_digitales": 0.01,
+    "cripto_inversiones": 0.0,
+    "productividad_ia": 0.0,
+    "deportes": 0.0,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta + Controversia + Emoji (ej. '¿FINAL ENTREGADA? 🤯')",
-    "Evento Dramático + Término de Nicho Específico + Nombre + Verbo Fuerte + Emoji (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Urgencia/Anticipación + Inicio de Evento (ej. '¡Se acabó la espera! ¡El')",
-    "Introducir Talento Joven/Sorpresa + Nombre (ej. 'Con solo 17 años, Lamine')",
-    "Evento Impactante + Impacto Específico/Cifras (ej. 'Terremoto devastador en Colombia: 132 muertos')",
-    "Afirmación Audaz + Nicho + Urgencia + Emoji (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')"
+    "Noticia Controversial/Pregunta Impactante [Sujeto/Evento]?",
+    "Impacto + Evento + Consecuencia (e.g., Terremoto devastador...)",
+    "Anuncio/Urgencia + Evento + Emoción (e.g., ¡Se acabó la espera! ¡El...)",
+    "Logro/Estado Actual + Persona/Equipo + Destacado (e.g., Con solo 17 años, Lamine...)",
+    "Evento Específico + Palabras de Choque/Emoción (e.g., TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
+    "Actualidad Regional + Impacto Inmediato (e.g., La noticia deportiva que sacude LATAM hoy)"
   ],
   "avoid_hooks": [
-    "Informar un evento con poca emoción o impacto directamente (ej. 'Brasil y Noruega empatan 0-0')",
-    "Declaraciones fácticas simples y genéricas de bajo impacto (ej. 'Brasil y Noruega empatan')",
-    "Presentar información sobre figuras o eventos poco conocidos sin un gancho intrigante (ej. 'Sidny Lopes Cabral acaba de')"
+    "Hooks que solo enuncian un resultado o evento sin emoción ni pregunta (e.g., Brasil y Noruega empatan 0-0)",
+    "Hooks que son descripciones planas del contenido sin generar intriga (e.g., Sidny Lopes Cabral acaba de)",
+    "Hooks que no usan palabras de impacto o emojis para captar la atención"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el contenido de noticias de alta urgencia, controversia o impacto en deportes y eventos clave (ej. mundiales de fútbol, desastres naturales, eventos de figuras públicas), ya que estos temas dominan los videos más vistos.",
-    "Diseñar títulos y hooks que formulen preguntas provocativas, usen lenguaje emocional fuerte y emojis llamativos (ej. 🤯, 😱, 🔥) para generar intriga inmediata y aumentar el Click-Through Rate (CTR).",
-    "Concentrar las publicaciones en los horarios de 1 AM y 17 PM, que han demostrado ser los momentos más efectivos para captar la audiencia de Shorts para este tipo de contenido, acumulando casi la mitad de las vistas de los videos top."
+    "Priorizar la creación de contenido dentro de los subtemas de 'noticias deportivas controversiales' y 'noticias de actualidad impactantes' bajo la categoría 'ia_noticias' y 'mundial_2026', ya que son los que demuestran mayor potencial de viralidad.",
+    "Concentrar las publicaciones en los horarios de mayor rendimiento: 1 AM (mayor número de videos top) y 17 PM (alto volumen de vistas) para maximizar la visibilidad inicial.",
+    "Desarrollar títulos y hooks que generen intriga y usen palabras de impacto, controversia o urgencia, evitando la simple enunciación de hechos o resultados que han demostrado ser ineficaces."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias', a pesar de su bajo promedio general (1 view), es la fuente casi exclusiva de los videos de mayor rendimiento cuando se enfoca en noticias de alto impacto, controversia o urgencia (especialmente deportes y eventos), lo que indica que la clave está en el subtema y la ejecución del gancho dentro de la categoría, no en el promedio general."
+  "insight_semana": "La categoría 'ia_noticias' presenta una performance paradójica: su promedio general de vistas es extremadamente bajo (1 vista), sin embargo, 10 de los 10 videos con más vistas pertenecen a esta categoría. Esto indica que no es la categoría en sí, sino la ejecución de subtemas muy específicos (noticias deportivas controversiales y eventos de actualidad impactantes) dentro de ella, lo que determina el éxito o fracaso."
 }
