@@ -1,37 +1,40 @@
 {
   "updated": "2026-11-09",
-  "iteracion": 685,
+  "iteracion": 686,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.0,
-    "ia_noticias": 1.0,
-    "finanzas": 0.0,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.0,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/momento] ha llegado!",
-    "[Logro/Hecho sorprendente] de [Persona/Equipo] a [Edad/Condición específica]",
-    "Muy buenas tardes. Bienvenidos a [resumen de la noticia]",
-    "¡[País/Equipo/Evento] [Verbo de impacto]! ¿[Consecuencia]? 🤯",
-    "[Evento Trágico/Impactante] en [Lugar]: [Número] [Víctimas/Impacto] y [Situación Urgente]",
-    "¡[Producto/Evento famoso] [Lugar]: ¡[Estado de urgencia]! 😱🔥"
+    "[Evento Grande/Urgente] HOY: ¡[Reacción/Impacto]! (ej. LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱)",
+    "¿[Sujeto] [Verbo de Impacto] la [Situación Crítica]? 🤯 (ej. ARGENTINA ENTREGÓ la Final del Mundial? 🤯)",
+    "¡Se acabó la espera! ¡El [Evento Anticipado]...",
+    "La noticia [Temática] que sacude [Región] hoy [Emoji relevante] (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
+    "[Título de Equipo/Persona] ¡[Acción/Resultado Impactante]! 😱 (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
+    "Con solo [Edad/Característica], [Persona] logra [Hito]..."
   ],
   "avoid_hooks": [
-    "Frases que anticipan resultados deportivos hipotéticos sin sorpresa ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Nombres propios poco conocidos o sin relevancia inmediata para la audiencia sin contexto impactante (ej. 'Sidny Lopes Cabral acaba de')",
-    "Declaraciones de hechos ya conocidos o sin novedad que no generen una pregunta o reacción."
+    "[Equipo 1] vs [Equipo 2] [Resultado]: [Descripción breve y factual].",
+    "[Sujeto] acaba de [Acción simple].",
+    "Descripciones concisas de un empate sin emoción (ej. Brasil y Noruega empatan 0-0)"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Concentrar la producción en el nicho 'ia_noticias', específicamente en noticias deportivas de actualidad y alto impacto, ya que ha demostrado ser el único generador de contenido con alto rendimiento, acaparando el 100% de los videos TOP 10.",
-    "Priorizar las horas de publicación de la 1 AM y 17 PM, ya que en conjunto, son responsables del 48.3% de las vistas totales del TOP 10, con la 1 AM siendo la franja horaria más efectiva para los videos de mayor rendimiento.",
-    "Desarrollar títulos y ganchos que enfaticen la urgencia, la sorpresa, la intriga y el drama utilizando emojis como 🤯, 😱, 🔥, y evitando cualquier contenido especulativo o que revele información sin generar emoción, como resultados deportivos hipotéticos."
+    "Priorizar fuertemente la creación de contenido dentro del nicho 'ia_noticias' enfocado en noticias deportivas de alto impacto y actualidad (ej. Mundial, Ligas importantes), replicando los patrones de éxito del TOP 10.",
+    "Experimentar activamente con el nicho 'mundial_2026', dado su alto 'avg_views' y 'trend', aplicando los mismos principios de titulación y hooks emocionales para maximizar su potencial y mitigar videos de 0 vistas.",
+    "Programar la publicación de videos Shorts predominantemente en las franjas horarias de 1 AM y 17 PM, ya que estos son los momentos de mayor concentración de vistas en los videos de alto rendimiento.",
+    "Diseñar títulos y hooks que generen intriga inmediata, incluyan elementos de sorpresa (🤯, 😱) y formulen preguntas retóricas, evitando descripciones planas o factuales que demuestran bajo rendimiento.",
+    "Implementar la recopilación de datos de duración de visualización y retención de audiencia para los Shorts, ya que esta información es crucial para optimizar la 'duracion_optima' y actualmente no está disponible.",
+    "Analizar los eventos y figuras (ej. Argentina, Shakira, Ligas MX/Premier) que consistentemente generan alto interés dentro de 'ia_noticias' para identificar oportunidades de contenido replicable."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias', a pesar de su bajo promedio de vistas general (1 vista), es el único responsable del 100% de los videos en el TOP 10, lo que lo posiciona como el nicho con mayor potencial para hits virales, especialmente cuando se enfoca en noticias deportivas impactantes."
+  "insight_semana": "El nicho 'ia_noticias' exhibe una extrema volatilidad: si bien es la única categoría que logra posicionar el 100% de los videos en el TOP 10 (con un techo de rendimiento muy alto), su bajo 'avg_views' general indica que es una estrategia de alto riesgo/recompensa. Específicamente, las noticias deportivas impactantes dentro de 'ia_noticias' son el motor principal de estas explosiones de vistas."
 }
