@@ -1,40 +1,37 @@
 {
   "updated": "2026-11-09",
-  "iteracion": 686,
+  "iteracion": 687,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "productividad": 0.1,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "[Evento Grande/Urgente] HOY: ¡[Reacción/Impacto]! (ej. LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱)",
-    "¿[Sujeto] [Verbo de Impacto] la [Situación Crítica]? 🤯 (ej. ARGENTINA ENTREGÓ la Final del Mundial? 🤯)",
-    "¡Se acabó la espera! ¡El [Evento Anticipado]...",
-    "La noticia [Temática] que sacude [Región] hoy [Emoji relevante] (ej. La noticia deportiva que sacude LATAM hoy ⚽)",
-    "[Título de Equipo/Persona] ¡[Acción/Resultado Impactante]! 😱 (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
-    "Con solo [Edad/Característica], [Persona] logra [Hito]..."
+    "¡Se acabó la espera! ¡El (directo, urgencia)",
+    "Con solo 17 años, Lamine (enfoque en detalle intrigante/persona)",
+    "Pregunta Impactante con Emoji de Shock (ej. \"¿FINAL ENTREGADA? 🤯\")",
+    "Noticia Urgente con Consecuencia Drástica (ej. \"Terremoto devastador...\", \"ELIMINADO! 😱\")",
+    "Declaración de Crisis/Cambio Drástico + Emoji (ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "Alerta de Evento con Escasez/Urgencia (ej. \"Se Agotan! 😱🔥\", \"SE VENDE HOY...\")"
   ],
   "avoid_hooks": [
-    "[Equipo 1] vs [Equipo 2] [Resultado]: [Descripción breve y factual].",
-    "[Sujeto] acaba de [Acción simple].",
-    "Descripciones concisas de un empate sin emoción (ej. Brasil y Noruega empatan 0-0)"
+    "Resultados de partidos sin contexto o intriga (ej. \"Brasil y Noruega empatan 0-0\")",
+    "Afirmaciones planas sin un gancho emocional o de sorpresa (ej. \"Brasil y Noruega empatan\")",
+    "Nombres propios desconocidos o eventos ambiguos sin más información (ej. \"Sidny Lopes Cabral acaba de\")"
   ],
-  "best_hora": 1,
-  "duracion_optima": 58,
+  "best_hora": 17,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido dentro del nicho 'ia_noticias' enfocado en noticias deportivas de alto impacto y actualidad (ej. Mundial, Ligas importantes), replicando los patrones de éxito del TOP 10.",
-    "Experimentar activamente con el nicho 'mundial_2026', dado su alto 'avg_views' y 'trend', aplicando los mismos principios de titulación y hooks emocionales para maximizar su potencial y mitigar videos de 0 vistas.",
-    "Programar la publicación de videos Shorts predominantemente en las franjas horarias de 1 AM y 17 PM, ya que estos son los momentos de mayor concentración de vistas en los videos de alto rendimiento.",
-    "Diseñar títulos y hooks que generen intriga inmediata, incluyan elementos de sorpresa (🤯, 😱) y formulen preguntas retóricas, evitando descripciones planas o factuales que demuestran bajo rendimiento.",
-    "Implementar la recopilación de datos de duración de visualización y retención de audiencia para los Shorts, ya que esta información es crucial para optimizar la 'duracion_optima' y actualmente no está disponible.",
-    "Analizar los eventos y figuras (ej. Argentina, Shakira, Ligas MX/Premier) que consistentemente generan alto interés dentro de 'ia_noticias' para identificar oportunidades de contenido replicable."
+    "Priorizar contenido en la categoría 'deportes' (basado en 'mundial_2026') debido a su alta puntuación (340.632) y tendencia de crecimiento (867.0), combinando con el potencial de alto impacto de 'ia_noticias' que, aunque inconsistente en promedio, domina los picos de vistas.",
+    "Incorporar urgentemente el uso de emojis de shock (🤯, 😱) y preguntas directas en los títulos de los Shorts, replicando el patrón de alto rendimiento del TOP 10 de 'ia_noticias', complementado con ganchos iniciales directos y que generen expectativa.",
+    "Maximizar la publicación de videos alrededor de la 1 AM y 17 PM (hora local del público objetivo) para aprovechar las franjas horarias consistentemente más efectivas para la captación de vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' exhibe una extrema volatilidad: si bien es la única categoría que logra posicionar el 100% de los videos en el TOP 10 (con un techo de rendimiento muy alto), su bajo 'avg_views' general indica que es una estrategia de alto riesgo/recompensa. Específicamente, las noticias deportivas impactantes dentro de 'ia_noticias' son el motor principal de estas explosiones de vistas."
+  "insight_semana": "La disparidad entre la dominancia de 'ia_noticias' en los videos con más vistas y su bajo rendimiento promedio general (avg_views 1) revela una alta varianza; este nicho ofrece un potencial de viralización extremo pero también un riesgo significativo de fallar, lo que requiere un balance estratégico con nichos de mayor consistencia como 'mundial_2026' (deportes)."
 }
