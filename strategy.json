@@ -1,40 +1,38 @@
 {
   "updated": "2026-11-10",
-  "iteracion": 690,
+  "iteracion": 691,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "deportes": 0.4,
     "ia_noticias": 0.25,
     "entretenimiento": 0.1,
+    "productividad": 0.05,
     "finanzas": 0.05,
     "negocios_digitales": 0.05,
     "productividad_ia": 0.05,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia impactante]!",
-    "Con solo [número] [años/hechos], [nombre/entidad] [acción sorprendente]...",
-    "[Pregunta impactante o controversia] [Evento/Tema]? 🤯",
-    "[Noticia urgente/desastre impactante]: [Consecuencia/Dato clave]",
-    "Muy buenas tardes. Bienvenidos a [noticia destacada].",
-    "¡[Evento crítico/Exclamación de shock]! [Nombre/Situación] [Acción/Resultado] 😱"
+    "Controversia/Conspiración Deportiva [Evento/Figura] (ej: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Noticia Impactante de Última Hora [Lugar/Evento] (ej: \"Terremoto devastador en Colombia: 132 muertos...\")",
+    "Drama/Cambio Inesperado en Deportes [Equipo/Liga] (ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "Alerta/Fenómeno Viral [Celebridad/Evento Popular] (ej: \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\")",
+    "Noticia Deportiva Que Sacude [Región] (ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")",
+    "Anticipación Extrema [Evento/Anuncio] (ej: \"¡Se acabó la espera! ¡El\")"
   ],
   "avoid_hooks": [
-    "Evitar hooks que simplemente describen un empate o resultado poco emocionante (ej. '[Equipo 1] y [Equipo 2] empatan...').",
-    "Evitar hooks que introducen nombres poco conocidos sin generar intriga o contexto (ej. '[Nombre poco conocido] acaba de...').",
-    "Evitar hooks genéricos que carecen de impacto emocional, urgencia o una pregunta intrigante."
+    "Declaraciones puramente factuales y carentes de emoción o intriga (ej: \"Brasil y Noruega empatan 0-0\")",
+    "Referencias a eventos o personajes poco conocidos sin un contexto dramático inmediato (ej: \"Sidny Lopes Cabral acaba de\")",
+    "Ganchos que prometen controversia ('fraude') pero se refieren a eventos de bajo interés o con una base débil (ej: \"PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡\")"
   ],
   "best_hora": 17,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente contenido relacionado con deportes, incluyendo noticias reales y especulaciones (como el Mundial 2026), dado su dominio en el TOP 10 y el alto 'trend' del nicho 'mundial_2026'.",
-    "Para los videos de 'ia_noticias' y 'deportes', optimizar los títulos para que funcionen como el gancho principal, utilizando elementos de intriga, controversia, exclamaciones y emojis impactantes (ej. '🤯', '😱', '🔥').",
-    "Cuando se usen hooks explícitos, aplicar fórmulas de anticipación (ej. '¡Se acabó la espera!') o presentar un hecho sorprendente relacionado con un personaje o evento (ej. 'Con solo 17 años, Lamine...').",
-    "Evitar temas o hooks que sean descriptivos de eventos con bajo impacto o que mencionen nombres poco relevantes sin un contexto intrigante, ya que consistentemente resultan en 0 vistas.",
-    "Mantener la estrategia de publicación en los bloques de 1 AM y 17 PM, con una ligera preferencia por las 17 PM por su promedio ligeramente superior en el TOP 10.",
-    "Implementar la recolección de datos sobre la duración de los videos para identificar el 'duracion_optima' y mejorar la retención."
+    "Priorizar la creación de contenido de ia_noticias enfocado en **deportes** (especialmente fútbol, mundiales, ligas populares como LIGA MX) y **eventos de gran impacto** (catástrofes, noticias virales de entretenimiento).",
+    "Desarrollar títulos altamente **sensacionalistas y directos** que funcionen como gancho principal. Incorporar **preguntas controversiales**, **emojis relevantes** (🤯, 😱, 🔥, ⚽), y **palabras clave de urgencia/impacto** (entregó, devastador, sacude, eliminado, shock, se agotan).",
+    "Mantener la estrategia de publicación en las **17 PM** como horario de alta efectividad por su consistencia, y explorar el potencial de las **1 AM** para contenido de alto impacto o breaking news, que ha mostrado picos de rendimiento en el TOP 10. (La duración óptima no pudo determinarse por falta de datos)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una dicotomía extrema: es capaz de generar los videos más vistos (todos en el TOP 10), pero su rendimiento promedio general es casi nulo (1 vista), indicando que solo temas ultra-trending, deportivos o de desastres con un gancho muy potente logran romper, convirtiéndolo en un nicho de altísimo riesgo y recompensa."
+  "insight_semana": "La categoría 'ia_noticias' es la fuente exclusiva de los videos más vistos, pero su promedio general de 1 vista revela una alta volatilidad, lo que implica que el éxito depende críticamente de la elección de temas de alto impacto y títulos extremadamente efectivos."
 }
