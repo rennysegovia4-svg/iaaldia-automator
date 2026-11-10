@@ -1,38 +1,39 @@
 {
   "updated": "2026-11-10",
-  "iteracion": 691,
+  "iteracion": 692,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.25,
-    "entretenimiento": 0.1,
-    "productividad": 0.05,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "deportes": 0.5,
+    "ia_noticias": 0.3,
+    "entretenimiento": 0.05,
+    "finanzas": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "Controversia/Conspiración Deportiva [Evento/Figura] (ej: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Noticia Impactante de Última Hora [Lugar/Evento] (ej: \"Terremoto devastador en Colombia: 132 muertos...\")",
-    "Drama/Cambio Inesperado en Deportes [Equipo/Liga] (ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
-    "Alerta/Fenómeno Viral [Celebridad/Evento Popular] (ej: \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\")",
-    "Noticia Deportiva Que Sacude [Región] (ej: \"La noticia deportiva que sacude LATAM hoy ⚽\")",
-    "Anticipación Extrema [Evento/Anuncio] (ej: \"¡Se acabó la espera! ¡El\")"
+    "Controversia/Pregunta Impactante + Emoji (ej. ¿FINAL ENTREGADA? 🤯)",
+    "Noticia de Última Hora/Urgente + Impacto (ej. Terremoto devastador en Colombia)",
+    "Evento Deportivo/Noticia de Liga + Reacción Fuerte + Emoji (ej. LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯)",
+    "Urgencia con 'HOY' + Consecuencia Dramática + Emoji (ej. LEICESTER SE VENDE HOY: ¿Adiós...? 😱)",
+    "Celebridad/Evento Popular + Exclamación + Emoji (ej. ENTRADAS SHAKIRA ¡Se Agotan! 😱🔥)",
+    "Noticia de Alto Impacto (País/Organización) + Verbo Fuerte + Emoji (ej. ARGENTINA SANCIONES: ¡FIFA CEDIÓ! 🤯)"
   ],
   "avoid_hooks": [
-    "Declaraciones puramente factuales y carentes de emoción o intriga (ej: \"Brasil y Noruega empatan 0-0\")",
-    "Referencias a eventos o personajes poco conocidos sin un contexto dramático inmediato (ej: \"Sidny Lopes Cabral acaba de\")",
-    "Ganchos que prometen controversia ('fraude') pero se refieren a eventos de bajo interés o con una base débil (ej: \"PARTIDO COLOMBIA SÁBADO: ¿ES FRAUDE? ⚡\")"
+    "Descripciones planas y factuales de resultados (ej. Brasil y Noruega empatan 0-0)",
+    "Presentación de nombres o hechos poco conocidos sin contexto impactante (ej. Sidny Lopes Cabral acaba de)",
+    "Ganchos que simplemente narran un evento sin generar curiosidad, emoción o controversia"
   ],
   "best_hora": 17,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para determinar duración óptima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de ia_noticias enfocado en **deportes** (especialmente fútbol, mundiales, ligas populares como LIGA MX) y **eventos de gran impacto** (catástrofes, noticias virales de entretenimiento).",
-    "Desarrollar títulos altamente **sensacionalistas y directos** que funcionen como gancho principal. Incorporar **preguntas controversiales**, **emojis relevantes** (🤯, 😱, 🔥, ⚽), y **palabras clave de urgencia/impacto** (entregó, devastador, sacude, eliminado, shock, se agotan).",
-    "Mantener la estrategia de publicación en las **17 PM** como horario de alta efectividad por su consistencia, y explorar el potencial de las **1 AM** para contenido de alto impacto o breaking news, que ha mostrado picos de rendimiento en el TOP 10. (La duración óptima no pudo determinarse por falta de datos)."
+    "Priorizar la creación de contenido en el nicho de 'deportes', enfocándose en temas de alta controversia, rumores o eventos actuales (ej. Mundial, ligas principales), dado que el 100% del TOP 10 y el mejor avg_views y trend pertenecen a esta categoría.",
+    "Aprovechar el formato 'ia_noticias' para la entrega de contenido, aplicándolo a noticias de alto impacto y de última hora que generen intriga o urgencia, ya que este formato ha demostrado ser el más exitoso.",
+    "Dedicar el máximo esfuerzo a la formulación de títulos que funcionen como ganchos principales, utilizando las fórmulas identificadas en 'best_hooks' e incorporando emojis y elementos de urgencia/controversia.",
+    "Mantener la publicación de contenido a las 17 PM, ya que este horario ha mostrado una consistencia probada para generar vistas, como se valida en los aprendizajes previos y la aparición de dos videos en el TOP 10 en esta franja.",
+    "Evitar categóricamente ganchos (ya sea en el título o en la descripción) que sean meramente descriptivos, faltos de emoción, intriga o contexto para el público general, como se observa en los videos con 0 views."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' es la fuente exclusiva de los videos más vistos, pero su promedio general de 1 vista revela una alta volatilidad, lo que implica que el éxito depende críticamente de la elección de temas de alto impacto y títulos extremadamente efectivos."
+  "insight_semana": "El éxito del canal reside en aplicar el formato 'ia_noticias' a temas de **deportes controversiales y noticias de alto impacto**, donde el **título funciona como el gancho principal** para captar la atención, superando el impacto de un 'hook' explícito en la descripción."
 }
