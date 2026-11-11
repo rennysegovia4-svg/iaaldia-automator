@@ -1,41 +1,37 @@
 {
   "updated": "2026-11-11",
-  "iteracion": 699,
+  "iteracion": 700,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.5,
-    "deportes": 0.3,
-    "productividad": 0.05,
-    "negocios": 0.02,
+    "deportes": 0.35,
+    "ia_noticias": 0.45,
     "finanzas": 0.02,
-    "entretenimiento": 0.02,
+    "entretenimiento": 0.1,
     "negocios_digitales": 0.02,
     "productividad_ia": 0.02,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Fórmula de Expectación Extrema: \"¡Se acabó la espera! ¡El\"",
-    "Fórmula de Hito o Figura Sorprendente: \"Con solo 17 años, Lamine\"",
-    "Fórmula de Pregunta Controversial con Emoción: (Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Fórmula de Noticia Impactante y Urgente: (Ej. \"Terremoto devastador en Colombia: 132 muertos...\")",
-    "Fórmula de Evento Drástico/Inesperado con Shock: (Ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\")",
-    "Fórmula de Demanda Alta/Espectáculo Agotado: (Ej. \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\")"
+    "Frase de expectación extrema + [evento] (ej. '¡Se acabó la espera! ¡El...')",
+    "Dato impactante sobre personaje/evento + [consecuencia] (ej. 'Con solo 17 años, Lamine...')",
+    "Intro formal/urgente de noticias + [tema] (ej. 'Muy buenas tardes. Bienvenidos a...')",
+    "Pregunta de controversia/shock + 🤯 (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia catastrófica/urgente + [cifra/lugar] (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Revelación impactante + ¡[Sujeto] [Verbo en shock]! 😱 (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
   ],
   "avoid_hooks": [
-    "Ganchos puramente descriptivos de resultados: (Ej. \"Brasil y Noruega empatan 0-0\")",
-    "Ganchos de empate sin intriga: (Ej. \"Brasil y Noruega empatan\")",
-    "Ganchos introductorios descriptivos sin impacto inmediato: (Ej. \"Sidny Lopes Cabral acaba de\")"
+    "Resultado deportivo directo y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hecho directo sin intriga ni gancho (ej. 'Brasil y Noruega empatan')",
+    "Introducción genérica a un personaje sin contexto ni impacto (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos",
   "recomendaciones": [
-    "Dominar el nicho `ia_noticias`: Concentrar la creación de contenido en esta categoría, que ha demostrado ser el principal motor de vistas del canal, cubriendo noticias deportivas, eventos de gran impacto y novedades de entretenimiento.",
-    "Maximizar la intriga en títulos y ganchos: Utilizar fórmulas que generen preguntas controversiales, revelen eventos chocantes o creen expectativa extrema, incorporando consistentemente emojis de shock (🤯, 😱) para potenciar la curiosidad.",
-    "Optimizar la ventana de publicación a la `hora 1`: Priorizar las publicaciones alrededor de la `hora 1` (AM, según la zona horaria de los datos), ya que es el momento con mayor concentración de videos en el TOP 10.",
-    "Evitar ganchos descriptivos sin emoción: Descartar por completo ganchos puramente informativos o de resultados sin factor de intriga, pues históricamente han resultado en 0 vistas.",
-    "Explorar contenido multipartes: Considerar la creación de series o contenido en 'PARTES' para temas de alta controversia o interés, como se observa en el video más visto \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)\"."
+    "Concentrarse intensamente en la creación de contenido bajo el formato `ia_noticias`, ya que demostró ser el más efectivo, acaparando el 100% de los videos en el TOP 10.",
+    "Priorizar temas de deportes controversiales, inesperados o de gran impacto emocional, especialmente aquellos relacionados con grandes eventos o ligas, ya que representan el 70% de los videos más exitosos dentro de `ia_noticias`.",
+    "Implementar la estrategia de dividir temas de alta controversia o interés en 'PARTES' (ej. 'PARTE 1') para maximizar la retención y la curiosidad, tal como se observó en el video más visto (1325 vistas) y otro top performer."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` es el motor de crecimiento indiscutible del canal, siendo responsable del 100% de los videos en el TOP 10 con un promedio de ~1100 vistas, lo que rectifica una discrepancia crítica en su `score` global inicialmente reportado como bajo."
+  "insight_semana": "A pesar de la discrepancia en el ranking global de nichos, el formato `ia_noticias` es el motor indiscutible del rendimiento del canal, generando el 100% de los videos en el TOP 10, con un promedio de ~1100 vistas por video en ese grupo. El éxito se centra en noticias impactantes y controversias, especialmente en el ámbito deportivo."
 }
