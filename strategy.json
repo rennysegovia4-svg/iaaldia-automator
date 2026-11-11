@@ -1,41 +1,39 @@
 {
-  "updated": "2026-11-10",
-  "iteracion": 695,
+  "updated": "2026-11-11",
+  "iteracion": 696,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.6,
-    "mundial_2026": 0.25,
-    "productividad": 0.08,
-    "negocios": 0.05,
-    "deportes": 0.01,
-    "entretenimiento": 0.01,
-    "finanzas": 0.0,
-    "negocios_digitales": 0.0,
-    "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "politica_latam": 0.0
+    "ia_noticias": 0.4,
+    "deportes": 0.35,
+    "productividad": 0.05,
+    "entretenimiento": 0.05,
+    "politica_latam": 0.05,
+    "negocios": 0.03,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.01
   },
   "best_hooks": [
-    "¿[Sujeto/Evento] [Acción controvertida/impactante]? 🤯",
-    "¡[Noticia de última hora] que sacude [Región] hoy! 😱",
-    "[Sujeto/Evento]: ¡[Desenlace inesperado/negativo]! 😱",
-    "¡[Objeto/Evento] [Estado de escasez/urgencia]! 😱🔥",
-    "Con solo [Edad] años, [Nombre del personaje]",
-    "¡Se acabó la espera! ¡El [Evento anticipado]!"
+    "Anticipación/Exclusividad con Urgencia: `[Emoción/Alerta] + [Evento Crucial] + [Urgencia/Exclusividad]` (ej. '¡Se acabó la espera! ¡El')",
+    "Dato Específico Sorprendente: `[Número/Dato Inesperado] + [Sujeto/Contexto] + [Logro/Situación Shock]` (ej. 'Con solo 17 años, Lamine')",
+    "Pregunta Retórica de Intriga: `[Afirmación Controversial] + [Pregunta Abierta] + [Emoji de Asombro]` (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Impacto Regional/Desastre Inminente: `[Tipo de Desastre] + [Ubicación Geográfica] + [Consecuencia Crítica/Número]` (ej. 'Terremoto devastador en Colombia')",
+    "Noticia Deportiva Impactante/Actual: `[Tipo de Noticia] + [Verbo de Impacto] + [Audiencia Específica] + [Emoji Relevante]` (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Giro Inesperado/Game-changer: `[Evento Clave] + [Sujeto Inesperado] + [Conclusión Drástica] + [Emoji de Shock]` (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
   ],
   "avoid_hooks": [
-    "Hooks que reportan un resultado final poco emocionante o predecible (ej. 'equipo X empata 0-0').",
-    "Hooks puramente descriptivos o informativos sin generar intriga o impacto emocional (ej. '[Nombre] acaba de').",
-    "Hooks que revelan la información clave del video en su totalidad sin dejar un 'curiosity gap'."
+    "Descripciones de resultados exactos sin drama (ej. 'Brasil y Noruega empatan 0-0')",
+    "Descripciones de resultados genéricos sin drama (ej. 'Brasil y Noruega empatan')",
+    "Mención de figuras desconocidas sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Maximizar la producción de contenido bajo el formato 'ia_noticias', enfocándose en controversias deportivas, noticias de última hora sobre desastres naturales o eventos regionales, y temas de entretenimiento de alta demanda, dada su probada capacidad para generar videos virales (100% del TOP 10).",
-    "Mantener una estrategia agresiva de títulos utilizando emojis impactantes (🤯, 😱, 🔥, ⚽) y palabras que generen intriga, urgencia o sorpresa (ej. 'ENTREGÓ', 'SHOCK', 'Se Agotan'), ya que esta es una característica común en los videos más exitosos.",
-    "Concentrar la publicación de los videos en la hora 1 (1 AM), identificada como el horario con el mayor número de videos de alto rendimiento en el TOP 10 y el pico de views más exitoso.",
-    "Implementar la estrategia de segmentación de contenido con 'PARTE 1' o '(X/Y)' en los títulos para historias complejas o continuas, con el fin de capitalizar la curiosidad y potencialmente aumentar el tiempo de visualización total del usuario."
+    "Priorizar la producción de contenido 'ia_noticias' de alto impacto, enfocándose en controversias deportivas, desastres naturales con impacto regional y eventos de entretenimiento de alta demanda, dado que representan el 100% de los videos más vistos.",
+    "Implementar títulos que generen intriga y continuidad utilizando formatos como 'PARTE 1' o '(1/2)' para fomentar la expectativa, y evitar ganchos que revelen resultados directos o carezcan de un contexto intrigante o emocional.",
+    "Optimizar los horarios de publicación concentrando la mayoría de las publicaciones en la franja de la 1 AM (hora 1), que ha demostrado ser el horario con mayor frecuencia de videos exitosos en el TOP 10."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta un patrón de éxito bifronte: aunque su 'avg_views' general es 0 en el ranking de rendimiento, monopoliza el 100% del TOP 10 de videos más vistos, lo que sugiere una alta volatilidad con picos de viralidad extremos en temas de actualidad deportiva, desastres y entretenimiento, a la vez que una gran cantidad de videos de bajo rendimiento."
+  "insight_semana": "El nicho 'ia_noticias' exhibe una varianza de rendimiento extrema; es el responsable de todos los éxitos virales del TOP 10, pero su bajo promedio general (0 avg_views en el ranking) sugiere que la mayoría de los intentos fallan, destacando una estrategia de alto riesgo y alta recompensa que requiere una ejecución precisa."
 }
