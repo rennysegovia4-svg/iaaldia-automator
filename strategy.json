@@ -1,39 +1,37 @@
 {
   "updated": "2026-11-11",
-  "iteracion": 696,
+  "iteracion": 697,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.4,
-    "deportes": 0.35,
-    "productividad": 0.05,
-    "entretenimiento": 0.05,
-    "politica_latam": 0.05,
-    "negocios": 0.03,
-    "finanzas": 0.02,
-    "negocios_digitales": 0.02,
-    "cripto_inversiones": 0.02,
-    "productividad_ia": 0.01
+    "ia_noticias": 0.5,
+    "mundial_2026": 0.25,
+    "deportes": 0.1,
+    "entretenimiento": 0.08,
+    "productividad": 0.03,
+    "negocios": 0.02,
+    "finanzas": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Anticipación/Exclusividad con Urgencia: `[Emoción/Alerta] + [Evento Crucial] + [Urgencia/Exclusividad]` (ej. '¡Se acabó la espera! ¡El')",
-    "Dato Específico Sorprendente: `[Número/Dato Inesperado] + [Sujeto/Contexto] + [Logro/Situación Shock]` (ej. 'Con solo 17 años, Lamine')",
-    "Pregunta Retórica de Intriga: `[Afirmación Controversial] + [Pregunta Abierta] + [Emoji de Asombro]` (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Impacto Regional/Desastre Inminente: `[Tipo de Desastre] + [Ubicación Geográfica] + [Consecuencia Crítica/Número]` (ej. 'Terremoto devastador en Colombia')",
-    "Noticia Deportiva Impactante/Actual: `[Tipo de Noticia] + [Verbo de Impacto] + [Audiencia Específica] + [Emoji Relevante]` (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Giro Inesperado/Game-changer: `[Evento Clave] + [Sujeto Inesperado] + [Conclusión Drástica] + [Emoji de Shock]` (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')"
+    "¡Se acabó la espera! ¡El (generar anticipación y urgencia)",
+    "Con solo 17 años, Lamine (destacar logros sorprendentes o talentos jóvenes)",
+    "Muy buenas tardes. Bienvenidos a (establecer un tono formal y de noticias importantes)",
+    "ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (plantear una controversia deportiva o conspiración)",
+    "Terremoto devastador en Colombia: 132 muertos y emergencia n (noticia de alto impacto regional/desastre)",
+    "ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥 (crear FOMO y urgencia con emojis)"
   ],
   "avoid_hooks": [
-    "Descripciones de resultados exactos sin drama (ej. 'Brasil y Noruega empatan 0-0')",
-    "Descripciones de resultados genéricos sin drama (ej. 'Brasil y Noruega empatan')",
-    "Mención de figuras desconocidas sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')"
+    "Brasil y Noruega empatan 0-0 (resultados descriptivos sin emoción)",
+    "Brasil y Noruega empatan (resultados simplificados y poco intrigantes)",
+    "Sidny Lopes Cabral acaba de (anuncios de acciones sin contexto que generen curiosidad)"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar la producción de contenido 'ia_noticias' de alto impacto, enfocándose en controversias deportivas, desastres naturales con impacto regional y eventos de entretenimiento de alta demanda, dado que representan el 100% de los videos más vistos.",
-    "Implementar títulos que generen intriga y continuidad utilizando formatos como 'PARTE 1' o '(1/2)' para fomentar la expectativa, y evitar ganchos que revelen resultados directos o carezcan de un contexto intrigante o emocional.",
-    "Optimizar los horarios de publicación concentrando la mayoría de las publicaciones en la franja de la 1 AM (hora 1), que ha demostrado ser el horario con mayor frecuencia de videos exitosos en el TOP 10."
+    "Priorizar la producción de contenido `ia_noticias` enfocado en **controversias deportivas significativas (ej. \"Argentina Final\") y noticias de emergencia regional** (ej. \"Terremoto Colombia\"), ya que estos temas dominan consistentemente el TOP 10.",
+    "Diseñar ganchos iniciales que generen **intriga, expectativa o resalten logros sorprendentes** (ej. \"¡Se acabó la espera! ¡El\", \"Con solo 17 años, Lamine\"), evitando descripciones planas o resultados predecibles que no inviten a ver el video.",
+    "Establecer la **1 AM como horario principal de publicación** para Shorts, dada su alta correlación con la viralidad en el 30% de los videos más exitosos, y considerar el uso de títulos \"Parte 1\" para construir series."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' exhibe una varianza de rendimiento extrema; es el responsable de todos los éxitos virales del TOP 10, pero su bajo promedio general (0 avg_views en el ranking) sugiere que la mayoría de los intentos fallan, destacando una estrategia de alto riesgo y alta recompensa que requiere una ejecución precisa."
+  "insight_semana": "El éxito viral se logra al aplicar el formato `ia_noticias` a **temas de alta carga emocional y controversia**, especialmente en deportes y noticias de última hora con impacto regional, lo que impulsa las vistas a pesar de la variabilidad general del nicho."
 }
