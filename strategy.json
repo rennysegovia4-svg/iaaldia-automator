@@ -1,37 +1,38 @@
 {
   "updated": "2026-11-12",
-  "iteracion": 704,
+  "iteracion": 705,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
+    "deportes": 0.3,
     "ia_noticias": 0.45,
-    "finanzas": 0.005,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.005,
-    "productividad_ia": 0.005,
-    "cripto_inversiones": 0.005,
-    "politica_latam": 0.08
+    "finanzas": 0.05,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¿[Evento controversial] [Verbo]? 🤯 (PARTE N)",
-    "[Tipo de evento] devastador en [Lugar]: [Número] [Consecuencia]",
-    "La noticia deportiva que sacude [Región] hoy ⚽",
-    "[Evento de alto impacto]: ¡[Sujeto] [Acción]! 😱",
-    "[Producto/Evento] [Celebridad/Lugar] ¡Se Agotan/Se Vende HOY! 😱🔥",
-    "¡Se acabó la espera! ¡El [Evento esperado]!"
+    "¡Se acabó la espera! ¡El [Evento/Noticia]...",
+    "Con solo [Edad] años, [Nombre]...",
+    "Noticia de impacto con pregunta abierta [EMOJI]",
+    "Urgencia y localización: [Evento] en [Lugar] HOY [EMOJI]",
+    "Shock deportivo: [Equipo/Jugador] ¡[Suceso Impactante]! [EMOJI]",
+    "Alerta de escasez/cambio: ¡[Artículo/Evento] se agota/cede! [EMOJI]"
   ],
   "avoid_hooks": [
-    "Resultados deportivos sin emoción/consecuencia clara (ej. 'Brasil y Noruega empatan 0-0')",
-    "Información escueta y sin gancho emocional (ej. 'Brasil y Noruega empatan')",
-    "Frases incompletas o sin resolución clara en el gancho (ej. 'Sidny Lopes Cabral acaba de')"
+    "Descripciones fácticas y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
+    "Ganchos incompletos o truncados (ej. 'Sidny Lopes Cabral acaba de')",
+    "Información genérica sin un elemento de sorpresa o urgencia"
   ],
-  "best_hora": 17,
-  "duracion_optima": 58,
+  "best_hora": 1,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el formato 'ia_noticias' sobre todos los demás nichos, ya que es el único que genera vistas masivas y abarca el 100% de los videos en el TOP 10.",
-    "Enfocar la creación de contenido dentro del formato 'ia_noticias' en temas de deportes controvertidos/urgentes, catástrofes naturales de alto impacto y noticias de celebridades con elementos de escasez/demanda.",
-    "Implementar títulos que incluyan preguntas controversiales, emojis de alto impacto (🤯, 😱, 🔥, ⚽), palabras de urgencia ('HOY', 'Se Agotan') y la estrategia de serialización ('PARTE 1', '1/2') para maximizar el CTR y la retención."
+    "Priorizar fuertemente la creación de contenido dentro del nicho 'ia_noticias', dado que el 100% (10 de 10) de los videos del TOP 10 provienen de esta categoría, demostrando su capacidad para generar vistas masivas.",
+    "Maximizar el uso de emojis de impacto (🤯, 😱, 🔥, ⚽) en los títulos (presentes en el 80% del TOP 10) y frases que generen urgencia ('HOY', 'Se Agotan'), para captar la atención inmediata y mejorar el CTR.",
+    "Implementar la estrategia de contenido serializado ('PARTE 1', '1/2') para temas de alto interés, ya que el 20% de los videos del TOP 10 que utilizan este formato superan las 1300 vistas, sugiriendo un potencial de retención.",
+    "Para el nicho 'deportes' (mundial_2026), enfocar la producción en eventos muy específicos y noticiosos con ganchos altamente impactantes, ya que su alta volatilidad genera tanto éxitos como fracasos absolutos (60% de los videos con 0 vistas en este nicho)."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El formato 'ia_noticias' es la única vía comprobada para obtener alto volumen de vistas, siendo especialmente efectivo cuando cubre temas deportivos con controversia o urgencia, noticias de desastres con impacto local y eventos de entretenimiento con escasez o alta demanda en Latinoamérica."
+  "insight_semana": "El nicho 'ia_noticias' presenta una dicotomía extrema: monopoliza el TOP 10 de videos con miles de vistas, mientras su 'avg_views' en el ranking es 0, indicando que es altamente efectivo cuando se acierta con el tema noticioso, pero también muy volátil y propenso a fallar si no se encuentra un 'hit'."
 }
