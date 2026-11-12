@@ -1,38 +1,42 @@
 {
   "updated": "2026-11-12",
-  "iteracion": 705,
+  "iteracion": 706,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.3,
-    "ia_noticias": 0.45,
-    "finanzas": 0.05,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "ia_noticias": 0.5,
+    "mundial_2026": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "deportes": 0.03,
+    "entretenimiento": 0.02,
+    "finanzas": 0.0,
+    "negocios_digitales": 0.0,
+    "cripto_inversiones": 0.0,
+    "productividad_ia": 0.0,
+    "politica_latam": 0.0
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento/Noticia]...",
-    "Con solo [Edad] años, [Nombre]...",
-    "Noticia de impacto con pregunta abierta [EMOJI]",
-    "Urgencia y localización: [Evento] en [Lugar] HOY [EMOJI]",
-    "Shock deportivo: [Equipo/Jugador] ¡[Suceso Impactante]! [EMOJI]",
-    "Alerta de escasez/cambio: ¡[Artículo/Evento] se agota/cede! [EMOJI]"
+    "Pregunta/Afirmación Controversial + Emoji de Shock (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Noticia Catastrófica/Impactante + Dato Específico + Región (Ej: 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Urgencia/Actualidad Deportiva + Región/Evento + Emoji Relevante (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Evento Específico + Consecuencia Dramática/Sorpresa + Emoji (Ej: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Rumor/Decisión Económica Mayor + Consecuencia + Emoji (Ej: 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
+    "Evento Popular + Alerta de Escasez/Demanda + Emojis de Urgencia/Impacto (Ej: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')"
   ],
   "avoid_hooks": [
-    "Descripciones fácticas y sin emoción (ej. 'Brasil y Noruega empatan 0-0')",
-    "Ganchos incompletos o truncados (ej. 'Sidny Lopes Cabral acaba de')",
-    "Información genérica sin un elemento de sorpresa o urgencia"
+    "Revelación completa del resultado/hecho en el inicio (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Mención de nombres propios desconocidos sin contexto intrigante (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Afirmaciones blandas o genéricas que carecen de emoción/urgencia (Ej: 'Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar fuertemente la creación de contenido dentro del nicho 'ia_noticias', dado que el 100% (10 de 10) de los videos del TOP 10 provienen de esta categoría, demostrando su capacidad para generar vistas masivas.",
-    "Maximizar el uso de emojis de impacto (🤯, 😱, 🔥, ⚽) en los títulos (presentes en el 80% del TOP 10) y frases que generen urgencia ('HOY', 'Se Agotan'), para captar la atención inmediata y mejorar el CTR.",
-    "Implementar la estrategia de contenido serializado ('PARTE 1', '1/2') para temas de alto interés, ya que el 20% de los videos del TOP 10 que utilizan este formato superan las 1300 vistas, sugiriendo un potencial de retención.",
-    "Para el nicho 'deportes' (mundial_2026), enfocar la producción en eventos muy específicos y noticiosos con ganchos altamente impactantes, ya que su alta volatilidad genera tanto éxitos como fracasos absolutos (60% de los videos con 0 vistas en este nicho)."
+    "Priorizar el nicho 'ia_noticias' por su capacidad para generar videos virales (100% del TOP 10), centrándose en temas de alta actualidad, controversia o impacto emocional.",
+    "Optimizar títulos utilizando al menos un emoji de impacto (🤯, 😱, 🔥, ⚽) y palabras que generen sentido de urgencia o inmediatez (HOY, Se Agotan, SHOCK, ENTREGÓ).",
+    "Diseñar los hooks iniciales para crear intriga y curiosidad, evitando revelar el desenlace completo de la noticia en los primeros segundos del Short.",
+    "Experimentar con horarios de publicación de madrugada (1 AM) y tarde/noche (16, 17, 21), ya que estas franjas han demostrado el mejor rendimiento en el TOP 10.",
+    "Implementar un sistema de recolección de datos para la duración de los videos (duracion_optima) de Shorts, ya que esta información es crucial y actualmente no disponible para un análisis preciso."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una dicotomía extrema: monopoliza el TOP 10 de videos con miles de vistas, mientras su 'avg_views' en el ranking es 0, indicando que es altamente efectivo cuando se acierta con el tema noticioso, pero también muy volátil y propenso a fallar si no se encuentra un 'hit'."
+  "insight_semana": "El nicho 'ia_noticias' es la única fuente de contenido viral del canal, produciendo el 100% de los videos TOP 10 con vistas superiores a 900, lo que subraya su alto potencial cuando se identifica un tema relevante y se ejecuta con un título y gancho de impacto, a pesar de su tendencia a tener un promedio de vistas bajo en la totalidad de videos del nicho."
 }
