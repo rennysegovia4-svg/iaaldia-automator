@@ -1,42 +1,37 @@
 {
   "updated": "2026-11-12",
-  "iteracion": 707,
+  "iteracion": 708,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.5,
-    "mundial_2026": 0.3,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "deportes": 0.03,
-    "entretenimiento": 0.02,
-    "finanzas": 0.0,
-    "negocios_digitales": 0.0,
-    "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Pregunta/Afirmación Controversial + Emoji de Shock (Ej: 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
-    "Noticia Catastrófica/Impactante + Dato Específico + Región (Ej: 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Urgencia/Actualidad Deportiva + Región/Evento + Emoji Relevante (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Evento Específico + Consecuencia Dramática/Sorpresa + Emoji (Ej: 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Rumor/Decisión Económica Mayor + Consecuencia + Emoji (Ej: 'LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱')",
-    "Evento Popular + Alerta de Escasez/Demanda + Emojis de Urgencia/Impacto (Ej: 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')"
+    "Gancho de Anticipación: \"¡Se acabó la espera! ¡El [gran evento/noticia]...\" (867 avg_views)",
+    "Gancho de Intriga por Dato Clave: \"Con solo [dato numérico], [persona/entidad] [acción sorprendente]...\" (740 avg_views)",
+    "Gancho de Anuncio Directo/Importancia: \"Muy buenas tardes. Bienvenidos a [noticia clave]...\" (375 avg_views)",
+    "Gancho de Pregunta Escandalosa/Controversial: \"¿[Afirmación impactante o rumor controvertido]? 🤯\" (Ej. ARGENTINA ENTREGÓ la Final del Mundial?)",
+    "Gancho de Noticia Catastrófica/Impactante con Cifras: \"[Evento grave] en [lugar]: [Número] muertos y [consecuencia]...\" (Ej. Terremoto devastador en Colombia: 132 muertos)",
+    "Gancho de Noticia Deportiva Dramática: \"[Situación deportiva crítica]: ¡[Consecuencia drástica]! 😱\" (Ej. TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO!)"
   ],
   "avoid_hooks": [
-    "Revelación completa del resultado/hecho en el inicio (Ej: 'Brasil y Noruega empatan 0-0')",
-    "Mención de nombres propios desconocidos sin contexto intrigante (Ej: 'Sidny Lopes Cabral acaba de')",
-    "Afirmaciones blandas o genéricas que carecen de emoción/urgencia (Ej: 'Brasil y Noruega empatan')"
+    "Revelación directa del resultado deportivo (Ej. \"Brasil y Noruega empatan 0-0\")",
+    "Revelación directa del resultado de la noticia (Ej. \"Brasil y Noruega empatan\")",
+    "Inicio de noticia con revelación inmediata del sujeto/acción principal (Ej. \"Sidny Lopes Cabral acaba de...\")"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar el nicho 'ia_noticias' por su capacidad para generar videos virales (100% del TOP 10), centrándose en temas de alta actualidad, controversia o impacto emocional.",
-    "Optimizar títulos utilizando al menos un emoji de impacto (🤯, 😱, 🔥, ⚽) y palabras que generen sentido de urgencia o inmediatez (HOY, Se Agotan, SHOCK, ENTREGÓ).",
-    "Diseñar los hooks iniciales para crear intriga y curiosidad, evitando revelar el desenlace completo de la noticia en los primeros segundos del Short.",
-    "Experimentar con horarios de publicación de madrugada (1 AM) y tarde/noche (16, 17, 21), ya que estas franjas han demostrado el mejor rendimiento en el TOP 10.",
-    "Implementar un sistema de recolección de datos para la duración de los videos (duracion_optima) de Shorts, ya que esta información es crucial y actualmente no disponible para un análisis preciso."
+    "Priorizar contenido de noticias de alto impacto y deportes: El 100% de los videos del TOP 10 son 'ia_noticias' sobre eventos deportivos, desastres o celebridades. Además, 'mundial_2026' muestra alto potencial con su 'trend' de 867.0.",
+    "Optimizar títulos y ganchos para generar intriga: Implementar ganchos que creen anticipación sin revelar el desenlace y utilizar preguntas retóricas, exclamaciones y emojis (🤯, 😱) en los títulos.",
+    "Experimentar con horarios de publicación tempranos: La hora 1 (1 AM) acumula la mayor cantidad de views del TOP 10, lo que sugiere que publicar noticias de alto impacto en la madrugada puede ser efectivo para captar a la audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es la única fuente de contenido viral del canal, produciendo el 100% de los videos TOP 10 con vistas superiores a 900, lo que subraya su alto potencial cuando se identifica un tema relevante y se ejecuta con un título y gancho de impacto, a pesar de su tendencia a tener un promedio de vistas bajo en la totalidad de videos del nicho."
+  "insight_semana": "La categoría 'ia_noticias' presenta un patrón de alta variabilidad: aunque su 'avg_views' general es de solo 2, concentra el 100% de los videos del TOP 10. Esto indica que es un nicho de alto riesgo/alta recompensa, donde el éxito depende de acertar con temas de alta viralidad, a diferencia del nicho 'mundial_2026' que, sin picos individuales en el TOP 10, muestra un rendimiento promedio y de tendencia superior (258 avg_views, 867 trend)."
 }
