@@ -1,39 +1,38 @@
 {
   "updated": "2026-11-13",
-  "iteracion": 715,
+  "iteracion": 716,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.45,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.0,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.0,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.0,
+    "politica_latam": 0.1
   },
   "best_hooks": [
-    "Fórmula de Urgencia/Anticipación: '¡Se acabó la espera! ¡El...'",
-    "Fórmula de Logro Sorprendente: 'Con solo X años, [Nombre]...'",
-    "Fórmula de Noticia Formal de Alto Impacto: 'Muy buenas tardes. Bienvenidos a...'",
-    "Fórmula de Pregunta Controversial + Emoji de Sorpresa: '¿[Evento controversial]? 🤯'",
-    "Fórmula de Noticia de Catástrofe/Impacto con Consecuencia: '[Catástrofe] en [Lugar]: [Impacto]...'",
-    "Fórmula de Afirmación Shockeante de Evento Deportivo + Emoji: '[Evento deportivo]: ¡[Resultado impactante]! 😱'"
+    "Pregunta de intriga o shock (ej. ¿ARGENTINA ENTREGÓ la Final...?)",
+    "Declaración de urgencia o final contundente (ej. ¡Se acabó la espera!, ÚLTIMA HORA:)",
+    "Dato específico y sorprendente (ej. Con solo 17 años, Lamine...)",
+    "Exclamación de emoción fuerte o reacción (ej. ¡Gamezking ELIMINADO! 😱, ¡SHOCK! 🤯)",
+    "Introducción directa a noticia relevante o polémica (ej. Muy buenas tardes. Bienvenidos a... [noticia clave])",
+    "Indicador de serialización para generar continuidad (ej. [TITULO] (PARTE 1), [TITULO] (1/2))"
   ],
   "avoid_hooks": [
-    "Hooks que revelan completamente el resultado o información clave ('Brasil y Noruega empatan X-X').",
-    "Hooks puramente descriptivos y sin intriga ('Sidny Lopes Cabral acaba de...').",
-    "Hooks de eventos deportivos de bajo interés o ficticios que carecen de impacto."
+    "Hooks que revelan el desenlace sin generar intriga (ej. Brasil y Noruega empatan 0-0)",
+    "Hooks puramente descriptivos y sin emoción (ej. Brasil y Noruega empatan)",
+    "Hooks incompletos o sin un contexto que genere interés (ej. Sidny Lopes Cabral acaba de)"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": null,
   "recomendaciones": [
-    "**Concentrar la Estrategia en Nichos de Alta Relevancia:** Priorizar el 95% del contenido en 'deportes' (aprovechando el alto rendimiento de 'mundial_2026' y noticias deportivas controversiales) e 'ia_noticias' con un enfoque en temas de alto impacto y potencial viral (controversias, tragedias masivas, noticias de última hora).",
-    "**Optimización Agresiva de Títulos y Hooks:** Implementar las fórmulas de gancho identificadas, utilizando preguntas retóricas, exclamaciones de sorpresa/urgencia y emojis (🤯, 😱, 🔥, ⚽) en los títulos para maximizar la curiosidad y el CTR. Evitar hooks que revelen la información o sean demasiado planos.",
-    "**Estrategia de Contenido Serializado para Temas Virales:** Continuar utilizando marcadores como 'PARTE 1' o '(1/2)' en noticias de alto interés, demostrado en el TOP 10, para generar intriga y fomentar la continuidad de la audiencia.",
-    "**Publicación Estratégica en Horas Pico para Contenido Viral:** Mantener la 1 AM como hora principal de publicación para contenido de alto potencial viral, reforzado por su frecuencia y alto volumen de vistas en el TOP 10, y considerar 6 AM y 5 PM (17 PM) como franjas secundarias clave.",
-    "**Evitar Nichos Sin Rendimiento y Contenido Irrelevante:** Descontinuar la creación de contenido para nichos con 0 vistas (finanzas, entretenimiento, negocios_digitales, productividad_ia, cripto_inversiones, politica_latam) hasta tener datos que justifiquen su inversión. Asimismo, abstenerse de cubrir eventos ficticios o de bajo impacto."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' enfocado en controversias deportivas (ej. finales de mundiales, ligas) y tragedias/noticias impactantes de Latinoamérica, que han demostrado ser los temas más virales.",
+    "Diseñar ganchos iniciales que generen intriga, sorpresa o urgencia, utilizando preguntas directas, exclamaciones o datos específicos llamativos, y evitar revelaciones directas o descripciones planas de la noticia.",
+    "Implementar una estrategia de serialización de contenido (ej. 'PARTE 1', '(1/2)') en los títulos de noticias de alto impacto para fomentar la curiosidad y la retención del espectador, buscando un compromiso a largo plazo.",
+    "Concentrar los esfuerzos de publicación en las franjas horarias de 1 AM, 6 AM y 5 PM (17 PM), prestando especial atención a la 1 AM para maximizar el alcance inicial de los videos virales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La alta polarización de rendimiento en el nicho 'ia_noticias' es la clave: aunque su promedio de vistas es muy bajo (3), las historias específicas de alto impacto (noticias deportivas controversiales, tragedias, eventos masivos) pueden generar miles de vistas, indicando que el éxito no radica en la cantidad de contenido, sino en la selección de temas intrínsecamente virales y bien ganchados."
+  "insight_semana": "El nicho 'ia_noticias' exhibe una volatilidad extrema: aunque monopoliza el TOP 10 de videos más vistos, su bajo promedio general (3 vistas) subraya que la ejecución (elección de tema, hook y timing) es absolutamente crítica para replicar el éxito viral."
 }
