@@ -1,40 +1,39 @@
 {
   "updated": "2026-11-13",
-  "iteracion": 710,
+  "iteracion": 711,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
+    "deportes": 0.45,
     "ia_noticias": 0.4,
-    "mundial_2026": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.015,
-    "entretenimiento": 0.015,
-    "negocios_digitales": 0.015,
-    "productividad_ia": 0.015,
-    "deportes": 0.015,
-    "cripto_inversiones": 0.015,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.01,
+    "cripto_inversiones": 0.01,
     "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta Retórica de Alto Impacto con Emoción: ¿[Evento] [Consecuencia]? 🤯",
-    "Noticia Urgente/Impactante con Detalle Clave: [Evento] en [Lugar]: [Número] muertos.",
-    "Evento Inesperado con Consecuencia Extrema y Emoción: ¡[Protagonista] [Estado/Acción]! 😱",
-    "Urgencia y Exclusividad con Alto Impacto: La noticia que sacude [Región] hoy ⚽",
-    "Anuncio de Gran Expectativa/Escasez con Emoción: ¡[Producto/Evento] [Estado]! 😱🔥",
-    "Hecho Sorprendente/Detalle Específico sobre Persona: Con solo [Edad] años, [Nombre]..."
+    "¡Se acabó la [situación/espera]! ¡El/La [evento] [estado/sorpresa]!",
+    "Con solo [edad] años, [nombre] [logro sorprendente/noticia impactante]",
+    "Muy buenas [tiempo]. Bienvenidos a [noticia/evento impactante]",
+    "[SUJETO] [VERBO] [OBJETO] [PREGUNTA]? [EMOJI_SHOCK]",
+    "[EVENTO] [ADJETIVO] en [LUGAR]: [DATO] y [CONSECUENCIA] [EMOJI_SHOCK/ALERTA]",
+    "[LIGA/EVENTO]: [SUJETO] [CAMBIO DE ESTADO] ¡SHOCK! [EMOJI_SHOCK]"
   ],
   "avoid_hooks": [
-    "Revelar directamente la conclusión o el resultado de la noticia (ej. 'Brasil y Noruega empatan 0-0').",
-    "Noticias sobre eventos hipotéticos o futuros con desenlaces específicos no confirmados (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!').",
-    "Títulos genéricos o de autoayuda que no se alinean con el formato viral de noticias del canal (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')."
+    "Hooks que solo enuncian un resultado trivial o un empate ('Brasil y Noruega empatan 0-0')",
+    "Frases incompletas o vagas que no generan intriga ('Sidny Lopes Cabral acaba de')",
+    "Descripciones excesivamente simplistas de eventos sin un giro emocional ('Brasil y Noruega empatan')"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para determinar duración óptima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar el formato 'ia_noticias' para contenido viral y de alto impacto, especialmente en temas deportivos y de última hora, dado que el 100% de los videos del TOP 10 pertenecen a esta categoría.",
-    "Diseñar títulos y hooks que generen curiosidad y anticipación a través de preguntas retóricas, urgencia o emociones (emojis), evitando revelar la información principal para mantener el interés del espectador.",
-    "Experimentar con la publicación de noticias de alto impacto en la franja horaria de la 1 AM, ya que esta hora concentró el 29.6% de las vistas totales de los videos más exitosos del canal."
+    "Priorizar la creación de contenido de noticias virales y de última hora, especialmente en temas deportivos (ej. fútbol, mundiales) y eventos de gran impacto (ej. desastres naturales, noticias de celebridades), ya que estos impulsan el 100% de los videos más vistos.",
+    "Integrar emojis de emoción (🤯, 😱, 🔥) en los títulos de los Shorts, dado que el 70% de las vistas del TOP 10 provienen de videos que los utilizan, aumentando la curiosidad y el CTR.",
+    "Aprovechar la franja de la 1 AM para la publicación de contenido de alto impacto y potencial viral, ya que esta hora concentra la mayor cantidad de vistas (3363) y videos (3) en el TOP 10.",
+    "Enfocarse en el nicho 'deportes', con un énfasis particular en temas relacionados con 'mundial_2026', que muestra la mayor tendencia positiva (867.0) y un promedio de vistas superior (258) entre los nichos evaluados.",
+    "Experimentar con las franjas horarias adicionales de 6 AM y 5 PM (17 PM), ya que, junto con la 1 AM, concentran el 70% de los videos del TOP 10, sugiriendo múltiples momentos de alta actividad de la audiencia."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dualidad del nicho 'ia_noticias', que monopoliza el TOP 10 en vistas pero tiene un bajo promedio general y tendencia negativa, subraya la importancia crítica de la temática viral y el título sensacionalista para generar picos de audiencia, priorizando el impacto individual sobre la consistencia del nicho."
+  "insight_semana": "El rendimiento del nicho 'ia_noticias' es binario: aunque su promedio general es bajo (1 vista y tendencia negativa de -1.0), es el único nicho capaz de generar videos virales masivos que componen la totalidad del TOP 10. Este éxito se logra al abordar noticias de última hora y alto impacto con títulos emocionales y hooks intrigantes, lo que subraya que la estrategia debe enfocarse en la búsqueda de la viralidad temática dentro de este nicho, más que en la consistencia de un promedio alto."
 }
