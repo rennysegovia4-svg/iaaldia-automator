@@ -1,188 +1,177 @@
 {
   "updated": "2026-11-13",
   "hook_formulas": [
-    "Comparación de dos elementos (ej. AI vs. Tradicional, Realidad vs. IA) con una pregunta implícita o explícita sobre superioridad o impacto.",
-    "Afirmación impactante o exagerada sobre una novedad (ej. IA realista) seguida de emojis de shock/humor y un CTA de retención ('Watch till the end').",
-    "Escenario cotidiano o situación altamente relatable con un giro absurdo, hiperbólico o humorístico, rematado con emojis de risa/sorpresa.",
-    "Un personaje familiar (ej. Mamá, Bebé) realizando una acción inesperada o común con un toque humorístico, acompañado de emojis de reacción.",
-    "Citas o frases motivacionales/filosóficas atribuidas a películas o figuras icónicas, aplicadas a un tema relevante (ej. finanzas, cripto).",
-    "Pregunta retórica o directa sobre un concepto conocido (ej. negocios, ahorro) que busca la reflexión, intriga o curiosidad, con emojis de enigma/tema.",
-    "Problema o deseo común (ej. ahorrar, invertir) seguido de una solución, consejo contraintuitivo o afirmación fuerte, con emojis financieros.",
-    "La historia de un objeto o concepto con un giro inesperado o influencia de IA ('The Story of X').",
-    "Un desafío, reto o puzzle visual/mental que genera curiosidad inmediata por el desenlace ('Pyramid in a cage puzzle').",
-    "Pregunta interactiva tipo 'Adivina quién' que invita a la participación del espectador ('Guess WHO?').",
-    "Contraste humorístico de 'Antes vs. Ahora' o 'Realidad vs. Expectativa' en situaciones culturales o personales.",
-    "Enumeración de elementos sorprendentes (ej. 'Top 3', 'My Top 5 Winning Products') que prometen valor o información de alto impacto."
+    "Comparación Directa (X vs Y) con pregunta implícita o explícita sobre superioridad/impacto.",
+    "Afirmación Impactante sobre una novedad o evento, seguida de emojis de emoción y CTA de retención.",
+    "Escenario Relatable Humorístico o Absurdo (sueños, situaciones cotidianas) con emojis de reacción.",
+    "Acción Inesperada realizada por un Personaje familiar o cotidiano (ej. bebé, mamá) con humor y emojis.",
+    "Pregunta Retórica Intriga o Reflexión sobre un concepto clave (negocios, finanzas) con emojis de enigma.",
+    "Cita, Diálogo o Referencia de Película/Personaje icónico aplicada a un tema (ej. finanzas, motivación).",
+    "Revelación de una 'Idea de Negocio' o 'Solución' práctica con un emoji de💡.",
+    "Listado o 'Top X' de ejemplos creativos o impactantes en un tema específico.",
+    "Declaración Controversial o 'Reality Check' sobre un modelo de negocio o concepto.",
+    "Interrogante directo o desafío ('¿Será verdad? Pongámoslo a prueba') que genera curiosidad activa.",
+    "Situación Social o Contexto Culturalmente Relatable que invita a la identificación y el humor.",
+    "Narrativa Concisa o Mini-Historia que presenta un dilema o una enseñanza."
   ],
   "title_patterns": [
-    "[SUJETO] [VERBO DE ACCIÓN IMPACTANTE] [OBJETO/SITUACIÓN] [EMOJIS DE REACCIÓN]",
-    "[TEMA 1] vs [TEMA 2] [PREGUNTA DE COMPARACIÓN]?",
-    "¡[AFIRMACIÓN IMPACTANTE/EXAGERADA]! [EMOJIS DE SHOCK/HUMOR] ([CTA DE RETENCIÓN])",
-    "[SITUACIÓN COTIDIANA] [GIRO HUMORÍSTICO/ABSURDO] [EMOJIS DE RISA/SORPRESA]",
-    "[CITA/REFERENCIA POPULAR] - [PERSONAJE/FUENTE] #shorts #viral",
-    "¿[PREGUNTA DIRECTA O RETÓRICA] [CONCEPTO/TEMA]? [EMOJIS DE INTRIGA]",
-    "¡[AFIRMACIÓN FUERTE/CONSEJO]! [EXPLICACIÓN/CONSECUENCIA] [EMOJIS DE FINANZAS]",
-    "[NÚMERO] [DESCRIPCIÓN DE ELEMENTOS] ([DATO IMPACTANTE]) #shorts #nicho"
+    "[Tema 1] vs [Tema 2] + [Pregunta/Conclusión sobre comparación]",
+    "[Acción/Situación] + [Personaje/Sujeto] + [Emojis de Reacción] + #hashtags",
+    "[Afirmación Impactante/Exagerada] + [Emojis de Shock/Humor] + (CTA de Retención)",
+    "[Escenario Humorístico/Relatable] + [Reacción Emocional/Emojis]",
+    "[Pregunta Directa/Retórica] + [Concepto Clave] + [Emojis de Reflexión/Tema]",
+    "[Personaje Famoso/Película] - [Cita/Concepto] + #hashtags de tema",
+    "[Tipo de Idea/Solución] + [Producto/Nicho] + [Emoji de Idea/Tendencia]",
+    "[Número] + [Adjetivo Impactante] + [Sustantivo] + [Emojis de Calificación]"
   ],
-  "palabras_prohibidas": [
-    "tutorial completo",
-    "compra ahora",
-    "explicación detallada",
-    "suscríbete a mi canal",
-    "análisis profundo",
-    "webinar gratuito",
-    "descuento exclusivo",
-    "parte 1 de (serie larga)",
-    "haz clic aquí",
-    "documento extenso"
-  ],
+  "palabras_prohibidas": [],
   "palabras_clave_virales": [
-    "shorts",
-    "humor",
-    "ia",
-    "ai",
-    "funny",
-    "viral",
-    "bitcoin",
-    "ahorrar",
-    "comedia",
-    "tiktokvideo",
-    "trending",
-    "memes",
-    "inteligenciaartificial",
-    "finanzas",
-    "emprender"
+    "#shorts",
+    "#humor",
+    "#tiktokvideo",
+    "#latina",
+    "#comedia",
+    "#funny",
+    "#fyp",
+    "#ai",
+    "#ia",
+    "#inteligenciaartificial",
+    "#viral",
+    "#bitcoin",
+    "#emprendimiento",
+    "#ahorro",
+    "#negocios"
   ],
-  "estructura_gancho_optima": "Planteamiento rápido y visual de una situación familiar, un concepto nuevo (ej. IA) o un dilema, introducido con un elemento de sorpresa o un giro inesperado. Se busca generar una emoción fuerte (risa, shock, intriga) de forma instantánea, a menudo con la ayuda de emojis en el título o una narrativa visual concisa que culmine en una pregunta o un desenlace rápido, incentivando la retención completa del Short.",
+  "estructura_gancho_optima": "Inicia con una afirmación impactante, una comparación directa, o una pregunta retórica intrigante que genera curiosidad o identificación inmediata en los primeros 1-3 segundos. Frecuentemente se acompaña de emojis de sorpresa, risa, reflexión o misterio (💀😂🧐💼🙈🤭😱📈💰) y, en ocasiones, de un llamado implícito a la acción o la expectativa ('Watch till the end') o una referencia a una fuente autoritaria/cultural (películas, personajes famosos) para añadir credibilidad o atractivo emocional. El objetivo es romper el patrón de scroll y forzar la atención en los segundos iniciales.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "La clave de la viralidad reside en el 'contraste sorprendente dentro de un contexto relatable'. Los Shorts más exitosos fusionan situaciones cotidianas o conceptos familiares (ahorro, sueños, personajes conocidos) con un elemento inesperado, exagerado o transformador (humor absurdo, IA realista, citas profundas de películas, giros de trama). Este choque genera una fuerte reacción emocional (risa, asombro, intriga, inspiración) de manera instantánea, capturando la atención antes de que el espectador pueda deslizar.",
-  "recomendacion_thumbnail": "Miniaturas con caras humanas (o personajes icónicos) y expresiones exageradas de sorpresa, risa o incredulidad. Utilizar divisiones visuales o composiciones de contraste (ej. 'antes vs. ahora', 'IA vs. Realidad'). Incluir el elemento clave del 'giro' o la 'sorpresa' del video (ej. el objeto del puzzle, el bebé destruyendo algo, la olla de frijoles) de forma prominente. El texto superpuesto debe ser mínimo, de alto contraste y utilizar emojis que refuercen la emoción principal del Short.",
+  "insight_clave": "La viralidad se dispara al combinar la identificación emocional profunda (humor, asombro, aspiración, nostalgia) con la entrega rápida de un concepto novedoso, una solución o una moraleja. Esto se logra utilizando anclajes culturales (películas, personajes famosos, tendencias) o situaciones hiper-relatables. La clave no es solo el tema, sino cómo se presenta para generar una reacción visceral y compartible en los primeros segundos. La narrativa visual rápida y el uso estratégico de emojis son cruciales para el engagement inicial y la retención.",
+  "recomendacion_thumbnail": "Thumbnails dinámicos y de alto contraste que capturen el momento más sorprendente, humorístico o impactante del video. Deben incluir expresiones faciales exageradas (sorpresa, risa, asombro), elementos visuales que representen la comparación (e.g., antes/después, X vs. Y) o el concepto clave del gancho del título (e.g., IA realista, dinero volando, objeto destruido). La adición de emojis grandes y relevantes directamente en el thumbnail o texto superpuesto con la pregunta/afirmación del gancho aumenta significativamente el CTR.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Comparación AI vs. X con pregunta de superioridad.",
-        "Afirmación exagerada sobre el realismo/capacidad de la IA + emojis de shock/humor.",
-        "Escenario cotidiano con intervención humorística o sorprendente de la IA."
+        "Comparación 'AI vs. [Tradicional/Realidad]' generando una pregunta implícita de superioridad o impacto.",
+        "Afirmación sobre el 'realismo/avance extremo de la IA' con emojis de shock/humor y CTA de retención.",
+        "Escenario relatable o inesperado donde la IA juega un rol absurdo/hiperbólico."
       ],
       "topics": [
-        "Realismo y capacidades avanzadas de la IA",
-        "Humor y situaciones absurdas generadas por IA",
-        "Aplicaciones inesperadas de la IA (ej. ASMR, edición de imágenes)"
+        "Realismo y capacidad de la IA (generación de imágenes, video, audio).",
+        "IA en situaciones humorísticas o inesperadas (destrucción, sueños, memes).",
+        "Experimentos o demostraciones de IA (ASMR, herramientas)."
       ]
     },
     "finanzas": {
       "hooks": [
-        "Escenario humorístico con personajes (ej. mamá) y el concepto de ahorro.",
-        "Pregunta retórica o directa sobre negocios/ahorro que incita a la reflexión.",
-        "Narrativa de 'uno hace X, el otro Y' con una moraleja financiera (ej. ahorrar vs. invertir)."
+        "Humor basado en situaciones cotidianas de ahorro o dinero, a menudo involucrando a un personaje (Mamá).",
+        "Preguntas retóricas sobre conceptos financieros que invitan a la reflexión o revelación.",
+        "Declaraciones audaces o consejos directos sobre ahorro e inversión, a menudo en contraste ('No es suficiente, hay que...')."
       ],
       "topics": [
-        "Humor sobre el ahorro y el dinero",
-        "Diferencia entre ahorrar e invertir",
-        "Consejos y preguntas sobre finanzas personales/emprendimiento"
+        "Humor y comedia en torno al ahorro y gastos.",
+        "Consejos y educación financiera básica (ahorro, inversión, hipotecas).",
+        "Historias o anécdotas con moraleja financiera."
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Presentación de ideas de negocio innovadoras o de nicho.",
-        "Análisis o 'Top X' de estrategias de marketing/productos exitosos.",
-        "Desmitificación o revelación de la 'realidad' de un negocio o concepto."
+        "Revelación de 'ideas de negocio' o 'productos ganadores' de manera concisa y visual.",
+        "Análisis o 'realidad' detrás de un negocio o modelo de marketing específico.",
+        "Listados (Ej. 'Top 3...') de estrategias o ejemplos creativos."
       ],
       "topics": [
-        "Ideas de negocio creativas y rentables",
-        "Marketing y publicidad viral",
-        "E-commerce y productos ganadores"
+        "Ideas de negocio y emprendimiento (ej. productos hechos a mano, comercio electrónico).",
+        "Marketing y publicidad creativa.",
+        "Análisis de casos de negocio o productos exitosos/fallidos."
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Citas motivacionales/filosóficas de películas o figuras icónicas aplicadas a la vida/finanzas.",
-        "Narrativas dramáticas sobre estafas o eventos inesperados en el mundo cripto.",
-        "Historias de éxito o humildad de figuras en el espacio cripto."
+        "Uso de fragmentos de películas o diálogos icónicos con lecciones de vida/éxito, vinculados a Bitcoin/finanzas.",
+        "Frases motivacionales o de superación personal que resuenan con el camino del inversor.",
+        "Narrativas concisas sobre la determinación o las consecuencias."
       ],
       "topics": [
-        "Motivación y filosofía de vida aplicada a inversiones/cripto",
-        "Riesgos y estafas en criptomonedas",
-        "Historias y figuras relevantes en el mundo de las criptomonedas"
+        "Motivación y superación personal.",
+        "Lecciones de vida y filosofía (a través de escenas de películas).",
+        "Conceptos implícitos de dinero, éxito y perseverancia, asociados a Bitcoin."
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Revelación de una herramienta de IA 'definitiva' o 'gratuita' para una tarea específica.",
-        "Escenario cotidiano con intervención humorística o sorprendente de la IA (patrón global).",
-        "Comparación AI vs. X con pregunta de superioridad (patrón global)."
+        "Presentación de 'la IA definitiva para...' como una solución mágica o muy eficiente para un problema.",
+        "Preguntas sobre cómo la IA puede resolver un problema específico o mejorar una tarea.",
+        "Demostración de una herramienta de IA innovadora con un resultado impactante."
       ],
       "topics": [
-        "Herramientas de IA para la creatividad (ej. música)",
-        "Aplicaciones sorprendentes de la IA (patrón global)",
-        "Humor y situaciones absurdas generadas por IA (patrón global)"
+        "Herramientas de IA para la creatividad (ej. música).",
+        "Optimización de tareas y procesos con IA.",
+        "Demostraciones prácticas de nuevas tecnologías de IA."
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?",
-      "views": 176496697,
+      "views": 176497196,
       "id": "3bYx9XKbmQk"
     },
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 76588232,
+      "views": 76590054,
       "id": "QndanaE1eqg"
     },
     {
       "titulo": "Puedes Lograrlo - Nemo #shorts #viral #bitcoin #viralvideo #movie",
-      "views": 61255158,
+      "views": 61255235,
       "id": "QYxtNplarhA"
     },
     {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 58794288,
+      "views": 58796951,
       "id": "6ms51abwU5A"
     },
     {
       "titulo": "¿Así Son Los Negocios? 🧐💼 #Emprender #Emprendedor #Emprendimiento #Shorts",
-      "views": 44572777,
+      "views": 44573331,
       "id": "qrfrPlEGrdw"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 39068427,
+      "views": 39070626,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "Ahorrar es progreso 🤣💕 #shorts #humor #tiktokvideo #latina #comedia #funny #fyp",
-      "views": 31073709,
+      "views": 31075083,
       "id": "PcxIHhWHuKY"
     },
     {
-      "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23563528,
-      "id": "D53HF_okHi8"
-    },
-    {
-      "titulo": "Hacer el bien Siempre #shorts #viral #bitcoin #viralvideo",
-      "views": 16923569,
-      "id": "IoNPlxLWbqY"
-    },
-    {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15464820,
+      "views": 15464943,
       "id": "gDn_SQU6YZE"
     },
     {
+      "titulo": "sabía que no trabajabas aquí - hitch #shorts #viral #shortvideo #bitcoin",
+      "views": 13484917,
+      "id": "8jCJ0vgJUsk"
+    },
+    {
+      "titulo": "Yo soy el Dueño - Batman #shorts #viral #viralvideo #bitcoin",
+      "views": 11976314,
+      "id": "QMvCoqQA8oo"
+    },
+    {
       "titulo": "Top 3 Creative TV Ads 😎 | Marketing | #mangeshshinde #shorts",
-      "views": 8505351,
+      "views": 8505355,
       "id": "RabWLuxUzbw"
     },
     {
       "titulo": "Fire Crackers business reality #shorts",
-      "views": 5209080,
+      "views": 5209170,
       "id": "9FqlKkbZOOE"
     },
     {
       "titulo": "Esta es la IA definitiva para crear música GRATIS #shorts",
-      "views": 584479,
+      "views": 584519,
       "id": "14URUL4nBkA"
     }
   ],
