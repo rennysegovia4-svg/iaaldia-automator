@@ -1,39 +1,37 @@
 {
   "updated": "2026-11-14",
-  "iteracion": 724,
+  "iteracion": 725,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.3,
-    "productividad": 0.15,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "ia_noticias": 0.35,
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "¡[Frase de anticipación/exclamación]! ¡El [Evento/Persona]...",
-    "Con solo [Edad] años, [Nombre]...",
-    "Muy buenas [Día/Momento]. Bienvenidos a [Tema/Noticia]...",
-    "¿[Pregunta controvertida/impactante]? 🤯",
-    "[Tipo de desastre] devastador en [Lugar]: [Cifra impactante]...",
-    "¡[Evento/Situación] SHOCK! 😱"
+    "Preguntas Polémicas o Controversiales: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\"",
+    "Anuncios de Urgencia o Eventos Clave: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\" o \"¡Se acabó la espera! ¡El\"",
+    "Énfasis en SHOCK/SORPRESA con Emojis: Ej. \"¡Gamezking ELIMINADO! 😱\" o \"¡SHOCK! 🤯\"",
+    "Noticias de Gran Impacto/Desastre: Ej. \"Terremoto devastador en Colombia:\"",
+    "Nombres Propios + Dato Específico/Logro: Ej. \"Con solo 17 años, Lamine\" o \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\"",
+    "Fragmentación de Noticia con Partes: Ej. \"(PARTE 1)\" o \"(1/2)\""
   ],
   "avoid_hooks": [
-    "Hooks que simplemente enuncian un hecho sin emoción ni intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que revelan completamente el desenlace de un evento no dramático al inicio.",
-    "Hooks que comienzan con una declaración neutral o descriptiva sin un claro detonante emocional o de urgencia (ej. 'Sidny Lopes Cabral acaba de')"
+    "Factual score en el hook que revele el resultado: Ej. \"BRASIL 0-0 NORUEGA\"",
+    "Descripciones vagas o sin impacto emocional: Ej. \"Brasil y Noruega empatan\"",
+    "Nombres propios sin contexto inmediato de relevancia: Ej. \"Sidny Lopes Cabral acaba de\""
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'deportes', capitalizando eventos como el 'Mundial 2026' debido a su alta media de vistas (258) y fuerte tendencia (867.0), lo que sugiere un crecimiento más sostenido.",
-    "Continuar explotando el nicho 'ia_noticias' con temas controvertidos y de alto impacto emocional, especialmente aquellos relacionados con 'Argentina' o desastres/eventos regionales, aprovechando su probada capacidad para generar videos virales (100% del TOP 10).",
-    "Implementar ganchos (hooks) que generen intriga, emoción o anticipación (ej. preguntas impactantes, exclamaciones, noticias urgentes) y evitar introducciones factuales o descriptivas que no generen interés inmediato."
+    "Priorizar la creación de contenido para el nicho de 'Deportes' (específicamente 'mundial_2026') debido a su alta consistencia y el mejor promedio de vistas (258 vistas) y tendencia (867.0).",
+    "Explotar temas polémicos o controversias relacionadas con 'Argentina' dentro del nicho 'ia_noticias', ya que actúa como un potente catalizador de viralidad, ocupando 4 de los 10 videos más vistos.",
+    "Implementar sistemáticamente la estrategia de fragmentación de noticias en títulos (ej. 'PARTE 1', '(1/2)') para contenido de alto impacto o controversial, como se vio en 3 de los 10 videos principales, para fomentar la curiosidad y retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el 100% de los videos más vistos provienen del nicho 'ia_noticias', la inconsistencia de este (avg_views: 2, trend: -0.9) contrasta fuertemente con la alta consistencia y tendencia positiva del nicho 'mundial_2026' (avg_views: 258, trend: 867.0) bajo el paraguas de 'deportes', sugiriendo una estrategia dual de viralidad esporádica y crecimiento sostenido es óptima."
+  "insight_semana": "El nicho 'ia_noticias' presenta una paradoja: aunque su promedio de vistas general es muy bajo (2 vistas) y su tendencia negativa (-0.9), ha demostrado una capacidad exclusiva para generar contenido masivamente viral, monopolizando el 100% del TOP 10 de videos con picos de hasta 1325 vistas. Esto indica que, a pesar de su inconsistencia, tiene un potencial explosivo con el contenido adecuado (controversias, desastres, noticias urgentes)."
 }
