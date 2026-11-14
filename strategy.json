@@ -1,39 +1,38 @@
 {
   "updated": "2026-11-14",
-  "iteracion": 721,
+  "iteracion": 722,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.2,
-    "finanzas": 0.03,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.07,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.04
+    "ia_noticias": 0.25,
+    "finanzas": 0.04,
+    "entretenimiento": 0.04,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante] está aquí!",
-    "Con solo [Edad] años, [Nombre de la figura]...",
-    "Muy buenas tardes. Bienvenidos a [Noticia impactante o controversial]",
-    "[Noticia Impactante o Pregunta] ¿[Afirmación controvertida]? 🤯",
-    "¡[Sujeto/Equipo] [Verbo de Impacto] HOY! 😱",
-    "[Desastre/Noticia] en [Lugar]: ¡[Consecuencia Shock]!"
+    "Pregunta/Afirmación de Conspiración/Shock + Ubicación/Evento Clave + Parte (Ej: ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1))",
+    "Noticia Urgente/Devastadora + Ubicación + Impacto Emocional (Ej: Terremoto devastador en Colombia: 132 muertos y emergencia n / La noticia deportiva que sacude LATAM hoy ⚽)",
+    "Evento Dramático/Eliminación + Nombre Propio/Marca + Emojis de Shock (Ej: TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
+    "Urgencia de Venta/Escasez + Ubicación/Evento + Emojis de Shock/Fuego (Ej: ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥)",
+    "Anuncio de Espera/Revelación Importante (Ej: ¡Se acabó la espera! ¡El)",
+    "Hecho Específico Sorprendente sobre Persona/Evento (Ej: Con solo 17 años, Lamine)"
   ],
   "avoid_hooks": [
-    "Declaraciones factuales sin emoción: 'Brasil y Noruega empatan 0-0'",
-    "Anuncios sin intriga: 'Brasil y Noruega empatan'",
-    "Inicios de frase que no revelan el drama: 'Sidny Lopes Cabral acaba de'"
+    "Hooks meramente factuales o descriptivos sin dramatismo ni intriga (Ej: Brasil y Noruega empatan 0-0)",
+    "Hooks incompletos o que terminan abruptamente sin dar un cierre emocional o intrigante (Ej: Sidny Lopes Cabral acaba de)",
+    "Títulos que anuncian una negación o 'no hacer' sin un gancho claro del 'por qué' o la amenaza bien definida (Ej: NO TOMAR RIESGO es tu MAYOR AMENAZA 😱)"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos",
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar contenido del nicho 'deportes' y 'ia_noticias' que involucre controversia, escándalo, eventos de última hora o situaciones de crisis (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?', 'Terremoto devastador').",
-    "Integrar emojis de impacto como 🤯, 😱, 🔥, ⚡ en títulos y hooks para amplificar la urgencia y el shock emocional, un patrón consistente en los videos de alto rendimiento.",
-    "Enfocarse en temas con relevancia regional ('LATAM', 'Colombia', 'MADRID') para capitalizar el interés local y la viralidad inmediata en noticas de entretenimiento, deportes o desastres.",
-    "Evitar los hooks que presentan resultados o hechos de manera plana y sin emoción; la intriga y la promesa de una revelación dramática son cruciales para el engagement.",
-    "Publicar los videos de alto impacto alrededor de la 1 AM, ya que esta franja horaria ha demostrado ser la más efectiva para generar un alto volumen de vistas en los videos top."
+    "Priorizar fuertemente el nicho 'deportes' (especialmente temas relacionados con eventos como el 'mundial_2026') debido a su alta media de vistas (258) y su robusta tendencia de crecimiento (867.0), asegurando una base de audiencia más consistente.",
+    "Mantener una estrategia de contenido en 'ia_noticias' enfocada en noticias de alto impacto, urgencia regional y elementos de sorpresa (ej. emojis 🤯, 😱, 🔥) para capitalizar su potencial de viralidad, pero con la conciencia de su alta volatilidad y baja consistencia general.",
+    "Publicar videos de alto potencial viral, especialmente en el nicho 'ia_noticias', alrededor de la 1 AM (hora local del público objetivo), ya que esta franja horaria ha demostrado ser la más efectiva para generar picos de visualizaciones.",
+    "Incorporar una estrategia de titulación que use la segmentación por 'PARTE X' o '(X/Y)' para temas complejos o polémicos que puedan generar un interés sostenido y la búsqueda de continuación por parte del espectador."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El canal opera bajo un patrón de 'alto riesgo, alta recompensa': el nicho 'ia_noticias', si bien generó el 100% de los videos con más vistas esta iteración, tiene una media de vistas extremadamente baja (2 views) y una tendencia negativa (-1.0), indicando una alta volatilidad y un bajo porcentaje de éxito en la mayoría de sus publicaciones. Por el contrario, 'mundial_2026' muestra una consistencia mucho mayor, con el mejor promedio de vistas y tendencia positiva general."
+  "insight_semana": "El nicho 'mundial_2026' (englobado en 'deportes') es el más prometedor para el crecimiento sostenido, con una media de 258 vistas y una tendencia de 867.0, a pesar de no figurar en el TOP 10 de esta iteración, contrastando con la alta volatilidad de 'ia_noticias' que, si bien genera picos virales, tiene un promedio general muy bajo (2 vistas) y una tendencia negativa (-1.0)."
 }
