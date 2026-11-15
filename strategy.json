@@ -1,39 +1,41 @@
 {
   "updated": "2026-11-15",
-  "iteracion": 731,
+  "iteracion": 732,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
     "ia_noticias": 0.45,
+    "deportes": 0.3,
+    "productividad": 0.1,
+    "entretenimiento": 0.05,
+    "negocios": 0.02,
     "finanzas": 0.02,
-    "entretenimiento": 0.1,
     "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "productividad_ia": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Noticias Controversiales/Conspirativas de Eventos Mayores: '[Tema grande] [acción controvertida/rumor]? 🤯'",
-    "Noticia de Impacto/Tragedia con Ubicación: '[Desastre/Evento] devastador en [Lugar]: [consecuencia]...'",
-    "Alerta Deportiva Shocking/Urgente: '[Equipo/Liga] [Suceso inesperado] ¡[Reacción/Emoción]! 😱'",
-    "Fenómeno de Escasez/Demanda Explosiva: '[Producto/Evento popular] ¡Se Agotan! 😱🔥'",
-    "Conflicto o Sanción con Resolución Impactante: '[Entidad] SANCIONES: ¡[Resolución inesperada]! 🤯'",
-    "Introducción que genera Anticipación o Revela un Dato Sorprendente: '¡Se acabó la espera! ¡El [evento]!' o 'Con solo [dato sorprendente], [sujeto]...'"
+    "Controversia/Teoría impactante sobre evento conocido + Entidad + Emoción: Ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)\"",
+    "Noticia urgente/dramática + Localización/Cifras + Intriga/Impacto: Ej. \"Terremoto devastador en Colombia: 132 muertos y emergencia n\"",
+    "Evento deportivo clave + Consecuencia inesperada + Emoción: Ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\"",
+    "Noticia de último momento sobre figura/entidad + Acción clave + Emoción: Ej. \"LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱\"",
+    "Anticipación fuerte para evento popular + Confirmación de agotamiento/éxito + Emoción: Ej. \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\"",
+    "Frases de apertura que generan intriga o anuncian un gran evento: Ej. \"¡Se acabó la espera! ¡El [TEMA]...\" (con 867 avg_views)"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el desenlace o son demasiado descriptivos (ej. 'BRASIL 0-0 NORUEGA EN MUNDIAL 2026!')",
-    "Hooks genéricos o de autoayuda sin un anclaje noticioso o de evento (ej. 'NO TOMAR RIESGO es tu MAYOR AMENAZA 😱')",
-    "Hooks con información poco clara o falta de impacto inmediato (ej. 'Sidny Lopes Cabral acaba de [acción vaga]')"
+    "Hooks que revelan directamente un resultado neutral o anticlimático: Ej. \"Brasil y Noruega empatan 0-0\"",
+    "Hooks incompletos o que carecen de contexto/impacto suficiente para generar curiosidad: Ej. \"Sidny Lopes Cabral acaba de\"",
+    "Hooks que presentan eventos futuros o ficticios como hechos, especialmente en noticias deportivas: Ej. \"BRASIL 0-0 NORUEGA EN MUNDIAL 2026! ¿QUÉ PASÓ? 😱\""
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' con un enfoque específico en noticias deportivas virales/sensacionalistas y noticias de eventos actuales de alto impacto (ej. desastres naturales, conciertos populares), dada su probada capacidad para generar videos de +1000 vistas.",
-    "Implementar la estrategia de contenido en series o partes (ej. '(PARTE 1)', '(1/2)') para temas de alto interés, ya que ha demostrado mantener la intriga y la retención en 3 de los 10 videos más vistos.",
-    "Concentrar las publicaciones en la franja horaria de la 1 AM (hora local de la audiencia objetivo), dado que ha producido el mayor número de videos en el TOP 10 con el promedio de vistas más alto (1121 vistas en 3 videos) en esta iteración.",
-    "Desarrollar títulos y hooks que generen intriga y sorpresa, combinando entidades específicas (países, equipos, artistas), eventos inesperados y exclamaciones/emojis (🤯, 😱, 🔥), mientras se evita revelar el desenlace de la noticia en el título.",
-    "Capitalizar el alto potencial del nicho 'deportes', especialmente aquellos temas relacionados con el 'mundial_2026', dada su métrica de 'trend' excepcionalmente alta (867.0), preparándose para capitalizar picos de interés a pesar de la variabilidad observada."
+    "Priorizar la creación de contenido en el nicho 'ia_noticias', enfocándose en eventos actuales, polémicos o de alto impacto emocional, dado que el 100% de los videos del TOP 10 provienen de este nicho.",
+    "Explorar temas deportivos que sean noticias reales y relevantes (ej. LIGA MX, transferencias de equipos), evitando la creación de escenarios futuros o ficticios de eventos deportivos (ej. resultados de Mundiales futuros) que han demostrado fracasar rotundamente.",
+    "Optimizar las publicaciones para la 1 AM (hora 1), que ha demostrado ser la franja horaria de mayor rendimiento promedio para los videos más vistos en esta iteración (1121 vistas promedio para 3 videos).",
+    "Integrar 'PARTES' en los títulos (ej. 'PARTE 1', '1/2') para noticias complejas o controvertidas, como se vio en los videos de 'ARGENTINA', lo que puede fomentar la intriga y la retención.",
+    "Continuar utilizando exclamaciones y emojis en los títulos para potenciar el impacto emocional y captar la atención rápidamente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una extrema polarización en su rendimiento: posee un 'avg_views' general de solo 3, pero al mismo tiempo monopoliza el 100% de los videos del TOP 10 (con vistas superiores a 900), lo que indica que el éxito radica en una estrategia de alto volumen para 'tocar' temas virales específicos y maximizar el potencial de explosión."
+  "insight_semana": "El nicho 'ia_noticias' presenta una dicotomía extrema: su promedio general es bajo, pero es el único capaz de generar videos virales (100% del TOP 10), lo que indica que el éxito radica en una estrategia de alto volumen donde se busca acertar con temas noticiosos *reales y actuales* de alto impacto, combinados con hooks emocionalmente cargados, mientras que las 'noticias' falsas o futuras fracasan por completo."
 }
