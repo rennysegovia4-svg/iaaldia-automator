@@ -1,39 +1,40 @@
 {
   "updated": "2026-11-16",
-  "iteracion": 736,
+  "iteracion": 737,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.45,
-    "ia_noticias": 0.35,
+    "ia_noticias": 0.2,
+    "productividad": 0.15,
     "finanzas": 0.05,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.02,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Fórmula 1: Pregunta controversial o teoría conspirativa con emoji de impacto (ej: '¿X entregó la final? 🤯')",
-    "Fórmula 2: Anuncio urgente o esperado con exclamación (ej: '¡Se acabó la espera! ¡El...')",
-    "Fórmula 3: Destacar una figura o hito sorprendente (ej: 'Con solo 17 años, Lamine...')",
-    "Fórmula 4: Noticia impactante o trágica de última hora con cifra (ej: 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Fórmula 5: Anuncio de shock o urgencia en deportes o eventos con emoji (ej: '¡X ELIMINADO! 😱', '¡Se Agotan! 🔥')",
-    "Fórmula 6: Saludo y bienvenida formal para establecer autoridad en noticias (ej: 'Muy buenas tardes. Bienvenidos a...')"
+    "Títulos con preguntas retóricas y emojis de shock (ej. 🤯): 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯'",
+    "Títulos de noticia de última hora con impacto regional y claridad (ej. Terremoto devastador): 'Terremoto devastador en Colombia:'",
+    "Títulos de eventos deportivos críticos con exclamaciones de impacto (ej. 😱): 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱'",
+    "Títulos que mencionan ligas o nombres famosos con sucesos impactantes: 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯'",
+    "Ganchos orales que generan expectativa y novedad: '¡Se acabó la espera! ¡El' (867 avg_views)",
+    "Ganchos orales que destacan logros o situaciones extraordinarias de figuras: 'Con solo 17 años, Lamine' (740 avg_views)"
   ],
   "avoid_hooks": [
-    "Descripciones genéricas o sin intriga (ej: 'Brasil y Noruega empatan 0-0', 'Brasil y Noruega empatan')",
-    "Afirmaciones factuales sin contexto o impacto aparente (ej: 'Sidny Lopes Cabral acaba de')",
-    "Cualquier hook que no genere una pregunta o emoción fuerte en los primeros 3 segundos"
+    "Ganchos orales que revelan inmediatamente el desenlace o resultado (ej. 'Brasil y Noruega empatan 0-0'), eliminando la intriga.",
+    "Hooks excesivamente descriptivos y carentes de misterio o emoción: 'Brasil y Noruega empatan'.",
+    "Ganchos que se centran en nombres poco conocidos o acciones sin un contexto de impacto inicial: 'Sidny Lopes Cabral acaba de'."
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido de `deportes` y `ia_noticias` con enfoque en controversias, noticias de última hora o eventos de alto impacto, ya que estas temáticas dominan el TOP 10 y el nicho `mundial_2026` (parte de deportes) tiene el promedio más alto de vistas.",
-    "Implementar títulos altamente atractivos que incluyan preguntas, elementos de sorpresa, escasez o controversia, y que utilicen emojis de impacto (`🤯`, `😱`, `🔥`, `⚽`) para maximizar la tasa de clics, replicando el patrón del 80% de los videos TOP 10.",
-    "Concentrar las publicaciones de alto impacto en la franja horaria de la 1 AM, que ha demostrado ser la más efectiva para generar vistas masivas, y también considerar las ventanas de 6 AM y 5 PM (17h) como secundarias.",
-    "Dado que los videos TOP 10 no tienen un `hook` explícito en los metadatos, enfocar los esfuerzos en un gancho visual y auditivo potente y directo desde el segundo 0 del video para captar y retener la atención de la audiencia de Shorts.",
-    "Evitar títulos y ganchos que sean meramente descriptivos o que anuncien resultados sin añadir un elemento de sorpresa o misterio, ya que se correlacionan directamente con videos de 0 vistas."
+    "Priorizar fuertemente el contenido de deportes, especialmente aquellos relacionados con 'mundial_2026' o noticias deportivas de alto impacto (ej. Argentina, Ligas locales), ya que muestran el mayor potencial de viralidad y consistencia.",
+    "Optimizar títulos utilizando preguntas, exclamaciones y emojis (🤯, 😱, 🔥, ⚽) como el principal gancho, dado que los videos más vistos no reportan un 'hook' explícito y el título asume este rol.",
+    "Mantener la franja horaria de 1 AM como el horario prime para publicaciones de alto impacto, y considerar 6 AM y 17 PM como secundarias de buen rendimiento.",
+    "Asegurarse de que cualquier gancho oral evite revelar el clímax o el resultado de la noticia, fomentando la curiosidad para que el espectador vea el video completo.",
+    "Comenzar el video con el gancho oral o visual de forma inmediata (desde el segundo 0), imitando el patrón observado en los videos del TOP 10 que no tienen un 'hook' pre-definido."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' presenta una dicotomía extrema: su promedio bajo de vistas (2) y tendencia negativa (-1.0) en el ranking de nichos contrasta fuertemente con su dominio absoluto (100%) en los videos TOP 10, lo que sugiere que, si bien su rendimiento general es volátil, tiene un potencial viral excepcional cuando aborda noticias de alto impacto y controversia, especialmente deportivas, indicando una estrategia de alto riesgo y alta recompensa."
+  "insight_semana": "El *título y la miniatura* actúan como el gancho principal y más efectivo para los videos más virales, especialmente cuando se combinan con temas de actualidad deportiva o noticiosa y el uso de emojis impactantes, superando en rendimiento a hooks orales pre-definidos."
 }
