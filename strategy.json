@@ -1,37 +1,40 @@
 {
   "updated": "2026-11-17",
-  "iteracion": 739,
+  "iteracion": 740,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.35,
-    "finanzas": 0.0125,
-    "entretenimiento": 0.0125,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.0125,
-    "politica_latam": 0.0125
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "¡Se acabó la espera! [Evento emocionante]",
-    "Con solo [Edad] años, [Nombre]...",
-    "¡Última hora! [Noticia impactante]",
-    "[Sujeto] en SHOCK: [Evento dramático] 😱",
-    "¿[Sujeto] entregó [Evento]?",
-    "¡[Evento] que sacude [Región] hoy! ⚡"
+    "Pregunta impactante con emoji de sorpresa (ej. ¿FINAL ENTREGADA? 🤯)",
+    "Afirmación de evento inesperado/crítico con emoji de impacto (ej. ¡SHOCK! 🤯, ¡Gamezking ELIMINADO! 😱)",
+    "Noticia urgente/relevante del día con enfoque geográfico (ej. que sacude LATAM hoy ⚽)",
+    "Urgencia por ventas o eventos que se agotan con emoji (ej. ¡Se Agotan! 😱🔥)",
+    "Titular en formato de serie/parte para generar expectativa (ej. (PARTE 1), (1/2))",
+    "Inicio de audio que genera anticipación o introduce un dato sorprendente (ej. ¡Se acabó la espera! ¡El, Con solo 17 años, Lamine)"
   ],
   "avoid_hooks": [
-    "Revelar el desenlace o resultado al inicio del video (ej. 'Brasil y Noruega empatan 0-0')",
-    "Frases que inician con un dato específico pero sin contexto intrigante (ej. 'Sidny Lopes Cabral acaba de')",
-    "Frases excesivamente directas y sin misterio sobre el evento principal (ej. 'Brasil y Noruega empatan')"
+    "Revelar el resultado o desenlace directamente en el hook (ej. Brasil y Noruega empatan 0-0)",
+    "Iniciar con un dato concreto que no genera intriga sobre el 'cómo' o 'por qué' (ej. Sidny Lopes Cabral acaba de)",
+    "Hooks genéricos de autoayuda o motivación sin anclaje en noticias específicas o eventos de actualidad"
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho 'mundial_2026' (mapeado a 'deportes' en pesos) para un crecimiento sostenido, dada su alta media de vistas (258) y fuerte tendencia positiva (867.0), a pesar de que sus videos no estén en el TOP 10.",
-    "Mantener la franja horaria de publicación de la 1 AM (hora 1), ya que ha demostrado ser consistentemente efectiva al albergar 3 de los videos más vistos y la mayor suma de vistas (3363 vistas) en el TOP 10.",
-    "Enfocarse en ganchos que construyan intriga y generen curiosidad, utilizando preguntas retóricas, exclamaciones, emojis de impacto (🤯, 😱, ⚡) y referencias a eventos actuales, evitando a toda costa revelar el desenlace de la noticia en los primeros segundos."
+    "Priorizar fuertemente el contenido de noticias deportivas y eventos de alto impacto bajo los nichos 'deportes' e 'ia_noticias', ya que concentran el 100% de los videos más vistos y muestran el mayor potencial viral.",
+    "Implementar ganchos (títulos y verbales) que construyan intriga, utilicen preguntas o afirmaciones potentes, y emojis de impacto (🤯, 😱, 🔥) para captar la atención inmediatamente.",
+    "Evitar los ganchos que revelan el desenlace de la noticia o el resultado de un evento al principio, ya que esta estrategia ha resultado consistentemente en 0 vistas.",
+    "Programar publicaciones de contenido de alto impacto en la franja horaria de 1 AM, que ha demostrado ser la más efectiva para generar un gran volumen de vistas en los videos top.",
+    "Explorar el formato de contenido en serie con indicadores como '(PARTE 1)' o '(1/2)' en el título para historias complejas o muy demandadas, buscando capitalizar la curiosidad del espectador y fomentar la retención.",
+    "Dado que la duración óptima no se puede determinar con los datos actuales, se recomienda probar diferentes duraciones de Shorts (entre 15-58 segundos) y monitorizar el rendimiento en futuras iteraciones."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La extrema volatilidad del nicho 'ia_noticias' genera los picos de vistas más altos (todos los videos del TOP 10), pero su bajo promedio de vistas (1) y tendencia negativa (-1.0) indican una alta tasa de fracaso, convirtiéndolo en una estrategia de alto riesgo/recompensa. En contraste, 'mundial_2026' ofrece un rendimiento promedio significativamente superior (258 vistas) y una tendencia de crecimiento muy fuerte (867.0), posicionándose como la apuesta más segura para el crecimiento estable del canal."
+  "insight_semana": "La clave para el alto rendimiento viral radica en la selección de noticias de actualidad y deportes de impacto, combinada con ganchos que generen intriga y emoción (usando preguntas y emojis), mientras que revelar el desenlace de la noticia anula completamente la visualización."
 }
