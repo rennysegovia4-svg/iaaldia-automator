@@ -1,37 +1,39 @@
 {
   "updated": "2026-11-17",
-  "iteracion": 743,
+  "iteracion": 744,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.5,
-    "mundial_2026": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.0,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.0,
+    "productividad_ia": 0.1,
     "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "deportes": 0.0,
-    "entretenimiento": 0.0,
-    "politica_latam": 0.0
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Fórmula de anticipación y exclamación: '¡Se acabó la espera! ¡[Evento]...'",
-    "Fórmula de impacto por contraste: 'Con solo [número impresionante], [nombre/evento]...'",
-    "Fórmula de introducción formal y directa: 'Muy buenas tardes. Bienvenidos a [tema]...'"
+    "¡Se acabó la espera! ¡El",
+    "Con solo 17 años, Lamine",
+    "Muy buenas tardes. Bienvenidos a",
+    "Pregunta impactante con emoji de shock y segmentación (ej. \"¿FINAL ENTREGADA? 🤯 (1/2)\")",
+    "Noticia urgente con mención geográfica y emoji de emoción (ej. \"Terremoto devastador en Colombia: X muertos\")",
+    "Evento deportivo clave con impacto y emoji de sorpresa (ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")"
   ],
   "avoid_hooks": [
-    "Anunciar un resultado o hecho de forma directa sin intriga (ej. '[Evento] [Resultado]')",
-    "Hooks demasiado concisos y sin elemento de sorpresa (ej. '[Sujeto] y [Sujeto] [Verbo]')",
-    "Iniciar con nombres propios sin un gancho que justifique su relevancia (ej. '[Nombre] acaba de...')"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Enfocarse estratégicamente en noticias de impacto bajo el nicho 'ia_noticias', priorizando temas deportivos de gran resonancia (ej. fútbol, mundiales) y noticias de última hora con relevancia regional (ej. terremotos, eventos masivos), dado su probado potencial para hits virales pese a una variabilidad en el rendimiento general.",
-    "Optimizar títulos con palabras que impliquen inmediatez (ej. 'HOY', 'URGENTE', 'AHORA') y emojis de sorpresa o impacto (ej. '🤯', '😱', '🔥') para maximizar el CTR y la viralidad.",
-    "Dividir noticias complejas o de alto interés en segmentos ('PARTE 1', '1/2') para generar intriga y fomentar la retención de la audiencia a través de múltiples Shorts."
+    "Priorizar el nicho de 'deportes' (aprovechando patrones de 'mundial_2026' y noticias deportivas actuales) para obtener un rendimiento más estable y crecer, manteniendo a 'ia_noticias' para intentos virales de alto impacto, enfocándose en la actualidad noticiosa y no en la IA per se.",
+    "Continuar la estrategia de segmentar contenido en partes (ej. 'PARTE 1', '1/2') en los títulos, lo cual ha demostrado ser muy efectivo para la retención y generación de expectativas.",
+    "Utilizar emojis de shock, sorpresa o intensidad (`🤯`, `😱`, `🔥`, `⚡`) en los títulos para maximizar la tasa de clics y la viralidad.",
+    "Enfocar el contenido de noticias en temas con relevancia geográfica explícita y/o figuras públicas (ej. 'Argentina', 'Colombia', 'LATAM', 'Shakira en Madrid') para conectar fuertemente con audiencias específicas.",
+    "Optimizar las publicaciones para la franja horaria de la 1 AM (UTC/GMT), que consistentemente produce los videos de mayor rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' presenta un patrón claro de 'todo o nada': aunque su promedio de vistas es muy bajo (1 vista), tiene una capacidad única para generar los videos más virales (100% del Top 10), demostrando que el contenido de noticias generado por IA, cuando es oportuno y sensacionalista, domina el potencial de viralidad del canal."
+  "insight_semana": "El nicho 'ia_noticias' presenta un patrón de altísima volatilidad: produce todos los videos más vistos, pero su promedio de vistas (1) y su tendencia negativa (-1.0) indican una enorme cantidad de videos fallidos, sugiriendo una estrategia de alto riesgo para buscar virales, mientras que 'mundial_2026' es más consistente."
 }
