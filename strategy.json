@@ -1,40 +1,37 @@
 {
   "updated": "2026-11-17",
-  "iteracion": 741,
+  "iteracion": 742,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
     "finanzas": 0.05,
-    "entretenimiento": 0.05,
+    "entretenimiento": 0.1,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
+    "productividad_ia": 0.02,
     "cripto_inversiones": 0.02,
-    "politica_latam": 0.03
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta impactante con emoji de sorpresa (ej. ¿FINAL ENTREGADA? 🤯)",
-    "Afirmación de evento inesperado/crítico con emoji de impacto (ej. ¡SHOCK! 🤯, ¡Gamezking ELIMINADO! 😱)",
-    "Noticia urgente/relevante del día con enfoque geográfico (ej. que sacude LATAM hoy ⚽)",
-    "Urgencia por ventas o eventos que se agotan con emoji (ej. ¡Se Agotan! 😱🔥)",
-    "Titular en formato de serie/parte para generar expectativa (ej. (PARTE 1), (1/2))",
-    "Inicio de audio que genera anticipación o introduce un dato sorprendente (ej. ¡Se acabó la espera! ¡El, Con solo 17 años, Lamine)"
+    "Pregunta Crítica + Tema Sensible/Polémico: \"¿[Sujeto/Evento] ENTREGÓ [Algo Importante]? 🤯\"",
+    "Noticia Impactante + Ubicación/Sujeto + Urgencia: \"[Noticia Devastadora] en [Lugar/Persona]: [Dato/Consecuencia] HOY ⚡\"",
+    "Evento Deportivo Clave + Consecuencia Dramática + Personaje/Equipo: \"TARJETA ROJA MUNDIAL: ¡[Nombre/Equipo] ELIMINADO! 😱\"",
+    "Urgencia Extrema + Revelación de Evento Esperado: \"¡Se acabó la espera! ¡El [Evento Importante] ha llegado!\"",
+    "Dato Sorprendente de Joven Talento + Logro/Impacto: \"Con solo [Edad] años, [Nombre] [Acción/Logro sorprendente]\"",
+    "Tema Viral/Popular + Estado de Agotamiento/Demanda: \"[Producto/Evento] ¡Se Agotan! 😱🔥\""
   ],
   "avoid_hooks": [
-    "Revelar el resultado o desenlace directamente en el hook (ej. Brasil y Noruega empatan 0-0)",
-    "Iniciar con un dato concreto que no genera intriga sobre el 'cómo' o 'por qué' (ej. Sidny Lopes Cabral acaba de)",
-    "Hooks genéricos de autoayuda o motivación sin anclaje en noticias específicas o eventos de actualidad"
+    "Revelar el desenlace o dato crucial en el gancho, eliminando la intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Utilizar ganchos meramente descriptivos que carecen de emoción o un sentido de urgencia/impacto (ej. 'Brasil y Noruega empatan')",
+    "Iniciar el video con un anuncio de un hecho aislado sin su contexto de relevancia o impacto inmediato (ej. 'Sidny Lopes Cabral acaba de')"
   ],
-  "best_hora": 1,
-  "duracion_optima": 0,
+  "best_hora": 17,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar fuertemente el contenido de noticias deportivas y eventos de alto impacto bajo los nichos 'deportes' e 'ia_noticias', ya que concentran el 100% de los videos más vistos y muestran el mayor potencial viral.",
-    "Implementar ganchos (títulos y verbales) que construyan intriga, utilicen preguntas o afirmaciones potentes, y emojis de impacto (🤯, 😱, 🔥) para captar la atención inmediatamente.",
-    "Evitar los ganchos que revelan el desenlace de la noticia o el resultado de un evento al principio, ya que esta estrategia ha resultado consistentemente en 0 vistas.",
-    "Programar publicaciones de contenido de alto impacto en la franja horaria de 1 AM, que ha demostrado ser la más efectiva para generar un gran volumen de vistas en los videos top.",
-    "Explorar el formato de contenido en serie con indicadores como '(PARTE 1)' o '(1/2)' en el título para historias complejas o muy demandadas, buscando capitalizar la curiosidad del espectador y fomentar la retención.",
-    "Dado que la duración óptima no se puede determinar con los datos actuales, se recomienda probar diferentes duraciones de Shorts (entre 15-58 segundos) y monitorizar el rendimiento en futuras iteraciones."
+    "Aprovechar el potencial viral del nicho 'ia_noticias' enfocándose en noticias deportivas de alto impacto (polémicas, fichajes, resultados inesperados) o noticias de desastres que generen conmoción, ya que estos temas dominan el TOP 10 en vistas.",
+    "Implementar la estrategia de contenido segmentado en partes (ej. 'PARTE 1', '1/2') para narrativas de alta intriga o debates prolongados, lo cual ha demostrado ser efectivo para los videos con más views (1325 y 1298 vistas).",
+    "Integrar palabras clave de inmediatez y urgencia como 'HOY', 'sacude', '¡Se Agotan!', 'ELIMINADO', 'SHOCK' en títulos y ganchos para capitalizar la actualidad y la emoción del momento, como se observa en varios videos del TOP 10."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La clave para el alto rendimiento viral radica en la selección de noticias de actualidad y deportes de impacto, combinada con ganchos que generen intriga y emoción (usando preguntas y emojis), mientras que revelar el desenlace de la noticia anula completamente la visualización."
+  "insight_semana": "El nicho 'ia_noticias', a pesar de un promedio general de vistas de 1, es la principal fuente de los videos con mayor rendimiento (100% del TOP 10), lo que indica un patrón de 'éxito o fracaso' extremo con un inmenso potencial viral para temas específicos y oportunos, pero también una alta variabilidad de resultados."
 }
