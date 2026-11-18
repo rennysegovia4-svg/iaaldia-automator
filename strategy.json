@@ -1,37 +1,38 @@
 {
   "updated": "2026-11-18",
-  "iteracion": 750,
+  "iteracion": 751,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad_ia": 0.1,
+    "deportes": 0.35,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.08
   },
   "best_hooks": [
-    "¿[TEMA POLÉMICO]? ¡[REACCIÓN FUERTE]! 🤯",
-    "[NOTICIA URGENTE] HOY: ¡[IMPACTO GEOGRÁFICO/SOCIAL]! 😱",
-    "¡Última Hora! [EVENTO RELEVANTE] sacude [REGIÓN/COMUNIDAD] 🔥",
-    "[ENTIDAD/EQUIPO] [ACCIÓN INESPERADA] ¡SHOCK! 💥",
-    "¡[PRODUCTO/CELEBRIDAD] [VERBO DE DEMANDA] HOY! ¡No te lo pierdas! 📈",
-    "[CONTROVERSIA CLAVE]: ¡[ACCIÓN DE AUTORIDAD]! 🚨 (Parte 1)"
+    "Pregunta polémica con emoji de shock: '¿[Evento controversial]? 🤯' (Ej: '¿FINAL ENTREGADA? 🤯')",
+    "Noticia urgente o relevante con impacto inmediato: '[Evento] HOY: ¡[Consecuencia]!' (Ej: 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Anuncio directo de un giro inesperado o eliminación: '[Sujeto] [Acción Sorprendente] ¡[Resultado]! 😱' (Ej: '¡Gamezking ELIMINADO! 😱')",
+    "Confirmación de escasez o alta demanda: '[Producto/Evento] ¡Se Agota/Acabó! 🔥' (Ej: '¡Se acabó la espera! ¡El', 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
+    "Revelación impactante sobre una figura joven o dato inusual: 'Con solo [Edad], [Nombre]...' (Ej: 'Con solo 17 años, Lamine')",
+    "Inicio de boletín de noticias formal/directo: 'Muy buenas tardes. Bienvenidos a [tema].'"
   ],
   "avoid_hooks": [
-    "Anunciar directamente el resultado de un evento (ej. 'Brasil y Noruega empatan 0-0')",
-    "Ganchos incompletos o ambiguos que no ofrecen contexto (ej. 'Sidny Lopes Cabral acaba de')",
-    "Afirmaciones simples de resultados sin generar intriga o impacto emocional"
+    "Anunciar un resultado de empate o '0-0' directamente (falta de intriga).",
+    "Mencionar nombres específicos o poco conocidos sin contexto (Ej: 'Sidny Lopes Cabral acaba de').",
+    "Ganchos que simplemente enuncian un hecho neutral o anticlimático sin generar emoción."
   ],
   "best_hora": 1,
-  "duracion_optima": -1,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido en el nicho `ia_noticias` enfocado en noticias urgentes, controversias y títulos con interrogantes/emojis impactantes (🤯, 😱, 🔥), replicando los patrones del TOP 10 para maximizar el potencial viral, a pesar de su volatilidad general.",
-    "Invertir de manera estable en el nicho de `deportes` (especialmente `mundial_2026`), que muestra el crecimiento más fuerte y consistente (tendencia de 867.0) para asegurar una base de audiencia sólida y sostenible.",
-    "Publicar el contenido de mayor potencial viral de `ia_noticias` a la 1 AM, que es la hora más consistente para lograr videos en el TOP 10. Es crucial empezar a registrar la duración de los Shorts para identificar la `duracion_optima`."
+    "Maximizar la creación de contenido para 'ia_noticias' durante las horas tempranas (1 AM) para aprovechar su demostrado potencial viral, implementando títulos sensacionalistas y estructuras de Parte 1/2.",
+    "Incrementar la inversión en el nicho 'deportes' (identificado como 'mundial_2026') debido a su tendencia de crecimiento excepcionalmente fuerte (867.0) y un rendimiento más consistente que 'ia_noticias'.",
+    "Refinar los títulos para combinar preguntas intrigantes con emojis de shock (🤯, 😱) y la segmentación en 'Parte 1' o '(1/2)', una estrategia probada en 7 de los 10 videos con más vistas.",
+    "Priorizar ganchos de inicio que generen urgencia, intriga o revelen un hecho sorprendente, evitando aquellos que simplemente declaran resultados neutros o mencionan figuras sin contexto claro."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La estrategia actual opera bajo un modelo de 'riesgo/recompensa' extremo: el nicho `ia_noticias` es el único generador de contenido viral (100% del TOP 10), pero su promedio general de vistas es de 1 con tendencia negativa, indicando una alta tasa de fracaso pese a picos ocasionales de éxito masivo."
+  "insight_semana": "La dicotomía extrema del nicho 'ia_noticias' es el aprendizaje clave: aunque representa el 100% de los videos en el TOP 10, su rendimiento promedio en el ranking es nulo, lo que lo posiciona como un nicho de altísimo riesgo y recompensa, donde la mayoría falla, pero los éxitos son masivos y virales."
 }
