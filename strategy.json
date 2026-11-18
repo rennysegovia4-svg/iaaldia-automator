@@ -1,39 +1,37 @@
 {
-  "updated": "2026-11-17",
-  "iteracion": 744,
+  "updated": "2026-11-18",
+  "iteracion": 745,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
+    "deportes": 0.4,
     "ia_noticias": 0.3,
     "finanzas": 0.05,
     "entretenimiento": 0.05,
-    "negocios_digitales": 0.0,
-    "productividad_ia": 0.1,
-    "cripto_inversiones": 0.0,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
     "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El",
-    "Con solo 17 años, Lamine",
-    "Muy buenas tardes. Bienvenidos a",
-    "Pregunta impactante con emoji de shock y segmentación (ej. \"¿FINAL ENTREGADA? 🤯 (1/2)\")",
-    "Noticia urgente con mención geográfica y emoji de emoción (ej. \"Terremoto devastador en Colombia: X muertos\")",
-    "Evento deportivo clave con impacto y emoji de sorpresa (ej. \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")"
+    "Gancho de anticipación para evento: \"¡Se acabó la espera! ¡El\"",
+    "Gancho de figura/logro específico: \"Con solo 17 años, Lamine\"",
+    "Gancho de formalidad noticiosa: \"Muy buenas tardes. Bienvenidos a\"",
+    "Gancho de controversia/pregunta impactante: \"¿[Evento/Situación] SUCEDIÓ? 🤯\"",
+    "Gancho de noticia urgente con impacto numérico/geográfico: \"[Desastre/Evento] devastador en [Lugar]: [Número] muertos...\"",
+    "Gancho de sorpresa en eventos deportivos/figuras: \"[Entidad] ¡ELIMINADO! 😱\""
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Ganchos que revelan el resultado de un evento: \"Brasil y Noruega empatan 0-0\"",
+    "Ganchos que revelan el resultado sin generar intriga: \"Brasil y Noruega empatan\"",
+    "Ganchos que anticipan la acción principal: \"Sidny Lopes Cabral acaba de\""
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar el nicho de 'deportes' (aprovechando patrones de 'mundial_2026' y noticias deportivas actuales) para obtener un rendimiento más estable y crecer, manteniendo a 'ia_noticias' para intentos virales de alto impacto, enfocándose en la actualidad noticiosa y no en la IA per se.",
-    "Continuar la estrategia de segmentar contenido en partes (ej. 'PARTE 1', '1/2') en los títulos, lo cual ha demostrado ser muy efectivo para la retención y generación de expectativas.",
-    "Utilizar emojis de shock, sorpresa o intensidad (`🤯`, `😱`, `🔥`, `⚡`) en los títulos para maximizar la tasa de clics y la viralidad.",
-    "Enfocar el contenido de noticias en temas con relevancia geográfica explícita y/o figuras públicas (ej. 'Argentina', 'Colombia', 'LATAM', 'Shakira en Madrid') para conectar fuertemente con audiencias específicas.",
-    "Optimizar las publicaciones para la franja horaria de la 1 AM (UTC/GMT), que consistentemente produce los videos de mayor rendimiento."
+    "Priorizar la inversión en el nicho de `deportes` (contenido tipo 'mundial_2026') como base estable del canal, dada su tendencia de crecimiento superior (867.0) y rendimiento promedio (258 vistas), buscando capitalizar su audiencia consistente.",
+    "Para el nicho `ia_noticias`, centrarse exclusivamente en eventos de alta controversia o urgencia extrema, utilizando títulos y ganchos que combinen preguntas abiertas, ubicaciones geográficas, entidades relevantes y emojis de emoción (🤯, 😱, 🔥), ya que este nicho solo funciona con picos virales y su promedio es muy bajo.",
+    "Asegurar la publicación de los videos con mayor potencial de vistas (tanto de `deportes` como los picos de `ia_noticias`) a la 1 AM (UTC/GMT), ya que esta hora ha demostrado ser consistentemente la más efectiva para captar la atención de la audiencia y maximizar las reproducciones iniciales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta un patrón de altísima volatilidad: produce todos los videos más vistos, pero su promedio de vistas (1) y su tendencia negativa (-1.0) indican una enorme cantidad de videos fallidos, sugiriendo una estrategia de alto riesgo para buscar virales, mientras que 'mundial_2026' es más consistente."
+  "insight_semana": "El nicho `ia_noticias` opera bajo un patrón de 'todo o nada', generando todos los videos más vistos pero con un rendimiento promedio general extremadamente bajo, mientras que el nicho `deportes` (`mundial_2026`) ofrece una base de crecimiento más consistente y predecible. La estrategia debe balancear ambos, entendiendo la naturaleza volátil de `ia_noticias` para los picos y `deportes` para la estabilidad."
 }
