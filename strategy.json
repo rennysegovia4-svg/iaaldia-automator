@@ -1,37 +1,37 @@
 {
   "updated": "2026-11-18",
-  "iteracion": 747,
+  "iteracion": 748,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "finanzas": 0.05,
-    "entretenimiento": 0.05,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "productividad": 0.15,
+    "negocios": 0.05,
+    "finanzas": 0.02,
+    "entretenimiento": 0.02,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Gancho de anticipación para evento: \"¡Se acabó la espera! ¡El\"",
-    "Gancho de figura/logro específico: \"Con solo 17 años, Lamine\"",
-    "Gancho de formalidad noticiosa: \"Muy buenas tardes. Bienvenidos a\"",
-    "Gancho de controversia/pregunta impactante: \"¿[Evento/Situación] SUCEDIÓ? 🤯\"",
-    "Gancho de noticia urgente con impacto numérico/geográfico: \"[Desastre/Evento] devastador en [Lugar]: [Número] muertos...\"",
-    "Gancho de sorpresa en eventos deportivos/figuras: \"[Entidad] ¡ELIMINADO! 😱\""
+    "Fórmula de Anticipación y Urgencia: Inicia con frases que generen expectación y sugieran un evento inminente o esperado (ej. '¡Se acabó la espera! ¡El...').",
+    "Fórmula de Hecho Sorprendente/Personalidad: Destaca un hecho inusual o impresionante sobre una persona o entidad específica (ej. 'Con solo 17 años, Lamine...').",
+    "Fórmula de Introducción Novedosa/Profesional: Utiliza un saludo directo y formal, o una entrada que anuncie el tema de forma impactante (ej. 'Muy buenas tardes. Bienvenidos a...').",
+    "Nota: Solo se identificaron 3 fórmulas de gancho altamente efectivas con datos de rendimiento positivos en esta iteración."
   ],
   "avoid_hooks": [
-    "Ganchos que revelan el resultado de un evento: \"Brasil y Noruega empatan 0-0\"",
-    "Ganchos que revelan el resultado sin generar intriga: \"Brasil y Noruega empatan\"",
-    "Ganchos que anticipan la acción principal: \"Sidny Lopes Cabral acaba de\""
+    "Evitar ganchos que revelen el resultado o el hecho principal directamente al inicio (ej. 'Brasil y Noruega empatan 0-0').",
+    "Evitar ganchos que mencionen el resultado sin generar intriga (ej. 'Brasil y Noruega empatan').",
+    "Evitar ganchos que introduzcan a una persona sin un contexto intrigante o relevante inicial (ej. 'Sidny Lopes Cabral acaba de')."
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la inversión en el nicho de `deportes` (contenido tipo 'mundial_2026') como base estable del canal, dada su tendencia de crecimiento superior (867.0) y rendimiento promedio (258 vistas), buscando capitalizar su audiencia consistente.",
-    "Para el nicho `ia_noticias`, centrarse exclusivamente en eventos de alta controversia o urgencia extrema, utilizando títulos y ganchos que combinen preguntas abiertas, ubicaciones geográficas, entidades relevantes y emojis de emoción (🤯, 😱, 🔥), ya que este nicho solo funciona con picos virales y su promedio es muy bajo.",
-    "Asegurar la publicación de los videos con mayor potencial de vistas (tanto de `deportes` como los picos de `ia_noticias`) a la 1 AM (UTC/GMT), ya que esta hora ha demostrado ser consistentemente la más efectiva para captar la atención de la audiencia y maximizar las reproducciones iniciales."
+    "Priorizar la producción de contenido en el nicho de 'deportes', específicamente 'mundial_2026', debido a su rendimiento consistente (avg_views 258) y su excepcional tendencia de crecimiento (trend 867.0), lo que lo convierte en la base más sólida del canal.",
+    "Adoptar una estrategia de alto riesgo para el nicho 'ia_noticias': enfocar los esfuerzos en noticias ultra-actuales, controversiales o de alto impacto para maximizar las chances de un hit viral, aceptando que la mayoría de los videos en este nicho tendrán un rendimiento muy bajo (avg_views 1) pese a su potencial explosivo.",
+    "Optimizar los títulos para incorporar elementos de urgencia, relevancia geográfica (enfocada en LATAM), entidades o figuras específicas, datos numéricos impactantes y emojis de emoción (ej. 🤯😱🔥⚽), replicando el patrón de los videos más vistos para generar intriga y conexión inmediata."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` opera bajo un patrón de 'todo o nada', generando todos los videos más vistos pero con un rendimiento promedio general extremadamente bajo, mientras que el nicho `deportes` (`mundial_2026`) ofrece una base de crecimiento más consistente y predecible. La estrategia debe balancear ambos, entendiendo la naturaleza volátil de `ia_noticias` para los picos y `deportes` para la estabilidad."
+  "insight_semana": "El nicho 'ia_noticias' es la fuente exclusiva de los videos más virales del canal (los 10 videos con más vistas), pero su promedio general de 1 vista y tendencia negativa (-1.0) confirman su naturaleza de extrema volatilidad (todo o nada), lo que exige una estrategia de 'apuesta alta' para el éxito."
 }
