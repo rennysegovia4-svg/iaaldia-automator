@@ -1,37 +1,39 @@
 {
   "updated": "2026-11-19",
-  "iteracion": 755,
+  "iteracion": 756,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.45,
-    "finanzas": 0.01,
-    "entretenimiento": 0.0,
-    "negocios_digitales": 0.05,
-    "productividad_ia": 0.08,
-    "cripto_inversiones": 0.0,
-    "politica_latam": 0.01
+    "ia_noticias": 0.35,
+    "deportes": 0.3,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.03,
+    "entretenimiento": 0.03,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.04,
+    "politica_latam": 0.04
   },
   "best_hooks": [
-    "Inicia con una exclamación de alta expectación o urgencia (ej. '¡Se acabó la espera! ¡El')",
-    "Presenta un dato sorprendente o una figura clave al inicio (ej. 'Con solo 17 años, Lamine')",
-    "Introduce una noticia con un saludo formal que establece un tono serio (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "Formula una pregunta controvertida sobre un evento importante, usando un emoji de shock (ej. '¿[EVENTO] ENTREGADO/FRAUDE? 🤯')",
-    "Anuncia un evento dramático o una primicia con un nombre clave y emoji de sorpresa (ej. '¡[EVENTO DRAMÁTICO]: [PERSONA/EQUIPO] ELIMINADO! 😱')",
-    "Describe un evento noticioso impactante con detalles numéricos o geográficos (ej. 'Terremoto devastador en [LUGAR]: [NÚMERO] muertos')"
+    "¡Atención! [Noticia impactante/urgente]...",
+    "¿Sabías que [Dato sorprendente sobre persona/evento]?",
+    "La verdad detrás de [Controversia/Escándalo]...",
+    "[Evento inesperado]: ¡[Consecuencia dramática]! 😱",
+    "Minuto a minuto: La última hora sobre [Tema candente]...",
+    "[Equipo/País] en shock: ¿Qué pasó con [Situación crítica]?"
   ],
   "avoid_hooks": [
-    "Hooks literales o de bajo impacto que solo describen el resultado (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks excesivamente breves o incompletos que no generan intriga (ej. 'Brasil y Noruega empatan')",
-    "Hooks que inician con una presentación genérica de un sujeto sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')"
+    "Ganchos que anuncian el resultado directamente sin suspense (e.g., 'X empata con Y').",
+    "Ganchos puramente descriptivos o factuales que no generan intriga (e.g., 'Z acaba de...').",
+    "Ganchos con un tono de reporte noticioso plano, sin elementos emocionales o de misterio."
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar el contenido de 'ia_noticias' enfocado en deportes controversiales o noticias de última hora con elementos de shock y misterio, ya que esta categoría genera los picos de audiencia más altos (100% del TOP 10).",
-    "Utilizar emojis de impacto como '🤯' y '😱' en los títulos. Estos emojis están presentes en 60% (6 de 10) de los videos top, amplificando el engagement y la curiosidad.",
-    "Concentrar las publicaciones en la 1 AM, que se consolida como la franja horaria más efectiva para los videos de mayor rendimiento, acumulando el 30% de las vistas del TOP 10."
+    "Priorizar contenido de 'ia_noticias' que trate temas altamente controversiales, deportivos (Mundial, ligas populares como LIGA MX) o noticias de alto impacto (terremotos, escándalos), utilizando títulos dramáticos y emojis de shock (`🤯`, `😱`). Este nicho, aunque volátil, genera las vistas más altas.",
+    "Continuar explotando la hora de publicación de la 1 AM (hora local del público objetivo) ya que concentra la mayor frecuencia de videos en el TOP 10 (30%), indicando un pico de consumo para contenido de alto impacto.",
+    "Diseñar títulos y ganchos que enfaticen la intriga, la urgencia o la controversia, evitando declaraciones fácticas directas al inicio. Las series 'PARTE 1' o preguntas retóricas en el título aumentan el engagement."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' exhibe una dicotomía extrema: si bien es la fuente del 100% de los videos con mayor viralidad, su rendimiento promedio en el ranking general es mínimo, lo que indica un altísimo potencial para picos de audiencia si se acierta con el tema controversial, pero también una gran volatilidad y riesgo de bajo alcance."
+  "insight_semana": "El nicho 'ia_noticias' opera bajo un modelo de alto riesgo y alta recompensa: a pesar de generar el 100% de los videos más vistos, su promedio global de vistas es 0, lo que sugiere que la mayoría de los intentos no captan tracción y que el éxito se basa en impactar con temas extremadamente virales y polarizantes."
 }
