@@ -1,39 +1,41 @@
 {
   "updated": "2026-11-19",
-  "iteracion": 757,
+  "iteracion": 758,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.35,
-    "deportes": 0.3,
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
     "productividad": 0.1,
     "negocios": 0.05,
-    "finanzas": 0.03,
-    "entretenimiento": 0.03,
+    "entretenimiento": 0.05,
     "negocios_digitales": 0.03,
     "productividad_ia": 0.03,
-    "cripto_inversiones": 0.04,
-    "politica_latam": 0.04
+    "finanzas": 0.02,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Atención! [Noticia impactante/urgente]...",
-    "¿Sabías que [Dato sorprendente sobre persona/evento]?",
-    "La verdad detrás de [Controversia/Escándalo]...",
-    "[Evento inesperado]: ¡[Consecuencia dramática]! 😱",
-    "Minuto a minuto: La última hora sobre [Tema candente]...",
-    "[Equipo/País] en shock: ¿Qué pasó con [Situación crítica]?"
+    "[Noticia/Evento] ¡[Verbo fuerte/Situación Límite]! 😱/🤯 (Ej: TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱)",
+    "¿[Pregunta intrigante sobre un evento crucial]? 🤯 (PARTE X) (Ej: ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1))",
+    "[Noticia impactante/tragedia]: [Detalle clave] y [estado]... (Ej: Terremoto devastador en Colombia: 132 muertos y emergencia n)",
+    "[Evento/Noticia de venta] HOY: ¿Adiós a [Referencia]? 😱 (Ej: LEICESTER SE VENDE HOY: ¿Adiós a la Premier League? 😱)",
+    "[Artículo/Evento] [Ubicación] ¡Se Agotan! 😱🔥 (Ej: ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥)",
+    "¡Se acabó la espera! ¡El [Evento esperado]... (Ej: ¡Se acabó la espera! ¡El)"
   ],
   "avoid_hooks": [
-    "Ganchos que anuncian el resultado directamente sin suspense (e.g., 'X empata con Y').",
-    "Ganchos puramente descriptivos o factuales que no generan intriga (e.g., 'Z acaba de...').",
-    "Ganchos con un tono de reporte noticioso plano, sin elementos emocionales o de misterio."
+    "Hooks que revelan el resultado completo de inmediato (Ej: Brasil y Noruega empatan 0-0)",
+    "Hooks excesivamente factuales sin generar curiosidad o emoción (Ej: Brasil y Noruega empatan)",
+    "Hooks que usan nombres o referencias muy específicas sin contexto introductorio (Ej: Sidny Lopes Cabral acaba de)"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 58,
   "recomendaciones": [
-    "Priorizar contenido de 'ia_noticias' que trate temas altamente controversiales, deportivos (Mundial, ligas populares como LIGA MX) o noticias de alto impacto (terremotos, escándalos), utilizando títulos dramáticos y emojis de shock (`🤯`, `😱`). Este nicho, aunque volátil, genera las vistas más altas.",
-    "Continuar explotando la hora de publicación de la 1 AM (hora local del público objetivo) ya que concentra la mayor frecuencia de videos en el TOP 10 (30%), indicando un pico de consumo para contenido de alto impacto.",
-    "Diseñar títulos y ganchos que enfaticen la intriga, la urgencia o la controversia, evitando declaraciones fácticas directas al inicio. Las series 'PARTE 1' o preguntas retóricas en el título aumentan el engagement."
+    "Priorizar la creación de contenido dentro de la subcategoría de **deportes** (especialmente fútbol/Mundiales) y **noticias virales de alto impacto** dentro de 'ia_noticias', ya que concentran la mayor parte del éxito.",
+    "Mantener la estrategia de incluir **emojis de shock (`🤯`, `😱`, `🔥`)** y palabras de urgencia/sorpresa (`HOY`, `SHOCK`, `¡`) en los títulos para maximizar el CTR.",
+    "Establecer la **1 AM como la hora principal de publicación**, dado que concentra la mayor cantidad de videos top y el mayor volumen de vistas, y experimentar con la **16 PM para contenido de muy alto impacto** que busca un pico de atención individual.",
+    "**Evitar ganchos que revelen el resultado completo o la conclusión** del video de forma inmediata; en su lugar, generar intriga o plantear una pregunta.",
+    "**Iniciar la recolección de datos sobre la duración de los Shorts** para identificar el rango óptimo y afinar la estrategia de retención."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' opera bajo un modelo de alto riesgo y alta recompensa: a pesar de generar el 100% de los videos más vistos, su promedio global de vistas es 0, lo que sugiere que la mayoría de los intentos no captan tracción y que el éxito se basa en impactar con temas extremadamente virales y polarizantes."
+  "insight_semana": "La categoría `ia_noticias` es un ecosistema de alto riesgo/alta recompensa: aunque alberga el 100% de los videos con más vistas, la mayoría de su contenido falla, destacando la necesidad crítica de identificar **temas de nicho extremadamente virales y oportunos** (como deportes y tragedias) para lograr tracción."
 }
