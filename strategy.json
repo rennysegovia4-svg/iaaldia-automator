@@ -1,41 +1,40 @@
 {
   "updated": "2026-11-20",
-  "iteracion": 762,
+  "iteracion": 763,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "ia_noticias": 0.5,
-    "deportes": 0.3,
-    "productividad": 0.08,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "productividad": 0.1,
     "negocios": 0.05,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "negocios_digitales": 0.01,
-    "productividad_ia": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.02
+    "finanzas": 0.025,
+    "entretenimiento": 0.025,
+    "negocios_digitales": 0.025,
+    "productividad_ia": 0.025,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "Activación de la intriga/anticipación: Usar frases que crean expectativa o anuncian el fin de una espera (ej. '¡Se acabó la espera! ¡El')",
-    "Introducción de figura o evento clave con dato impactante: Presentar a un personaje o un hecho central con un detalle sorprendente (ej. 'Con solo X años, Y...')",
-    "Saludo directo y formal que invita a la inmersión: Un inicio que capta la atención de manera profesional y directa (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "Pregunta retórica o de shock sobre un evento: Iniciar con una pregunta que desafíe la percepción común o genere asombro (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?')",
-    "Declaración de urgencia o cambio inminente: Anunciar una situación crucial que está ocurriendo 'HOY' o es un 'SHOCK' (ej. 'LEICESTER SE VENDE HOY', 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')",
-    "Alusión a una tragedia o emergencia de alto impacto: Referirse a eventos graves que generan gran interés público (ej. 'Terremoto devastador en Colombia')"
+    "Activación de Anticipación Extrema: Introduce la resolución de una gran expectativa (Ej: \"¡Se acabó la espera! ¡El\")",
+    "Narrativa de Impacto por Protagonista: Destaca a una figura o evento con un dato sorprendente o un logro clave (Ej: \"Con solo 17 años, Lamine\")",
+    "Entrada de Noticias Directa y Formal: Inicia con una presentación clara y concisa del tema principal (Ej: \"Muy buenas tardes. Bienvenidos a\")",
+    "Pregunta Controversial/Intriga Noticiosa: Genera duda o curiosidad sobre un evento importante (Inferido de títulos del TOP 10 como \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Noticia de Urgencia/Alarma Actual: Alude a eventos recientes o en desarrollo con un tono dramático (Inferido de títulos del TOP 10 como \"Terremoto devastador en Colombia...\")",
+    "Anuncio de Revelación Inesperada/Giro: Promete una sorpresa o un cambio significativo en una situación conocida (Inferido de títulos del TOP 10 como \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\")"
   ],
   "avoid_hooks": [
-    "Declaraciones de resultados planos y sin emoción que no generan intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Hooks que cortan abruptamente o son demasiado específicos sin contexto inicial que genere curiosidad (ej. 'Sidny Lopes Cabral acaba de')",
-    "Hooks genéricos o excesivamente breves que no ofrecen un 'por qué' para seguir viendo (ej. 'Brasil y Noruega empatan')"
+    "Declaraciones de hechos secos sin intriga ni emoción (Ej: \"Brasil y Noruega empatan 0-0\")",
+    "Falta de contexto o conflicto que invite a seguir viendo (Ej: \"Brasil y Noruega empatan\")",
+    "Introducción de nombres poco conocidos sin un gancho que genere interés inmediato (Ej: \"Sidny Lopes Cabral acaba de\")"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Maximizar el contenido de `ia_noticias` con enfoque en controversias o preguntas impactantes sobre eventos actuales (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?'), utilizando emojis de sorpresa (🤯, 😱) en los títulos para replicar el éxito de los TOP 10 videos.",
-    "Establecer una frecuencia de publicación a las 1 AM, ya que esta hora ha demostrado ser la más consistente en generar los mayores volúmenes de vistas y agrupar videos virales según el TOP 10 y aprendizajes previos.",
-    "Desarrollar hooks de apertura que generen anticipación ('¡Se acabó la espera!') o introduzcan un elemento clave directamente ('Con solo X años, Y...') para captar la atención inmediatamente, basándose en los hooks más efectivos.",
-    "A pesar del dominio de `ia_noticias` en el TOP 10, mantener una línea de contenido en `deportes` (específicamente `mundial_2026`) debido a su alta `trend` (867.0) y `avg_views` (258), lo que lo posiciona como un nicho fiable y en crecimiento para una base de audiencia estable.",
-    "Recopilar datos de duración de video para futuras iteraciones, ya que actualmente no se puede determinar la `duracion_optima` y es una métrica clave para el rendimiento de Shorts."
+    "Priorizar la creación de contenido para el nicho `deportes`, enfocándose en el sub-nicho `mundial_2026` que muestra la tendencia más alta (867.0) y el promedio de vistas más robusto (258 avg_views).",
+    "Maximizar el potencial viral del nicho `ia_noticias` mediante títulos controversiales, el uso estratégico de emojis (🤯, 😱) y ganchos que generen alta expectativa o drama, dada su capacidad de generar videos en el TOP 10 a pesar de su inconsistencia.",
+    "Implementar ganchos de inicio que generen anticipación extrema o presenten un protagonista con un dato sorprendente, ya que son los patrones más efectivos demostrados por los datos reales de hooks.",
+    "Programar la publicación de videos alrededor de la 1 AM, ya que esta franja horaria ha concentrado el mayor número de videos en el TOP 10 (3 videos) con un alto promedio de vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La contradicción entre el bajo rendimiento promedio del nicho `ia_noticias` (score 1.0, trend -1.0) y su dominio absoluto en el TOP 10 de videos demuestra que, aunque es un nicho de alto riesgo con muchos videos de bajo rendimiento, cuando se acierta con controversia y urgencia, tiene el mayor potencial viral del canal."
+  "insight_semana": "El nicho `ia_noticias` presenta una volatilidad extrema: aunque acumula el 100% de los videos en el TOP 10 por vistas, su bajo promedio general (2 avg_views) y tendencia negativa (-0.7) demuestran que, sin una ejecución de título y hook excepcional, su contenido tiende a fracasar masivamente."
 }
