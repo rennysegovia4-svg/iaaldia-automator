@@ -1,40 +1,37 @@
 {
   "updated": "2026-11-21",
-  "iteracion": 770,
+  "iteracion": 771,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.35,
-    "ia_noticias": 0.25,
-    "productividad": 0.15,
-    "negocios": 0.05,
-    "finanzas": 0.03,
-    "negocios_digitales": 0.03,
-    "cripto_inversiones": 0.03,
-    "productividad_ia": 0.03,
-    "deportes": 0.03,
-    "entretenimiento": 0.03,
+    "deportes": 0.45,
+    "ia_noticias": 0.35,
+    "finanzas": 0.02,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.02,
+    "productividad_ia": 0.02,
+    "cripto_inversiones": 0.02,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "Gancho de anticipación y urgencia (ej. '¡Se acabó la espera! ¡El')",
-    "Gancho de logro sorprendente o talento joven (ej. 'Con solo 17 años, Lamine')",
-    "Gancho de apertura de noticias formal (ej. 'Muy buenas tardes. Bienvenidos a')",
-    "Gancho de pregunta controversial sobre evento mayor con emoji de shock (ej. '¿FINAL ENTREGADA? 🤯')",
-    "Gancho de noticia de última hora impactante con detalles específicos (ej. 'Terremoto devastador... 132 muertos')",
-    "Gancho de upset deportivo o cambio de status quo con señal de crisis (ej. 'AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "¡[Sentimiento de urgencia/expectativa]! [Evento impactante] (ej. '¡Se acabó la espera! ¡El')",
+    "¿[Pregunta controvertida/impactante]? (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "[Número] [Sujeto Joven/Destacado] [Logro/Hecho sorprendente] (ej. 'Con solo 17 años, Lamine')",
+    "[Noticia de última hora/Desastre] [Ubicación]: [Impacto/Número]! (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "[Sujeto] [Acción sorprendente/Negativa]: ¡[Resultado Shock]! 😱 (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "[Evento/Producto] [Palabra clave de escasez/demanda] ¡[Emoji de impacto]! (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')"
   ],
   "avoid_hooks": [
-    "Simplemente enunciar un resultado deportivo no sorprendente (ej. 'Brasil y Noruega empatan 0-0')",
-    "Declaraciones vagas o incompletas de un evento menor sin contexto claro (ej. 'Sidny Lopes Cabral acaba de')",
-    "Información redundante o genérica en el inicio del video que no genera intriga inmediata"
+    "Presentación directa y sin emoción de resultados deportivos (ej. 'Brasil y Noruega empatan 0-0')",
+    "Afirmaciones de hechos sin un componente de impacto, controversia o urgencia (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que no prometen una revelación o un giro sorprendente"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Incrementar la producción de contenido dentro del nicho 'mundial_2026', dado su rendimiento superior en promedio de vistas (258) y la tendencia de crecimiento (867.0), indicando un interés sostenido de la audiencia.",
-    "Mantener la estrategia de publicación prioritaria a la 1 AM (hora 1), que ha demostrado ser la franja más potente al agrupar la mayor cantidad de videos en el TOP 10 (3 videos) y el video con más vistas (1325 vistas) de esta iteración.",
-    "Optimizar los títulos y el inicio de los videos con ganchos que generen alta intriga, controversia o urgencia, utilizando preguntas directas, emojis de impacto (🤯, 😱, 🔥) y, cuando sea posible, el formato de serie ('PARTE X') para prolongar la atención."
+    "Integrar emojis de impacto (🤯, 😱, 🔥) en los títulos para maximizar la CTR, siguiendo el patrón del 70% de los videos TOP 10.",
+    "Priorizar la creación de contenido alrededor de noticias controvertidas, resultados inesperados o eventos de alto impacto en deportes y actualidad, evitando la mera exposición de hechos sin giro dramático.",
+    "Programar las publicaciones clave a la 1 AM (hora 1), dado que esta franja horaria concentra el mayor número de videos en el TOP 10 y el video individual con más vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una dualidad crítica: aunque produce el 100% de los videos de mayor rendimiento (superando las 970 vistas), su promedio general de vistas (4 vistas) y su tendencia negativa (-1.0) lo identifican como un nicho de alto riesgo y alta recompensa, con gran potencial viral pero también de fallos frecuentes."
+  "insight_semana": "Aunque el nicho `ia_noticias` domina los videos más vistos por su potencial viral, su baja media y tendencia negativa indican una alta volatilidad. La estrategia debe pivotar hacia un equilibrio, aprovechando el formato `ia_noticias` para noticias explosivas, pero invirtiendo en temas de `mundial_2026` (dentro de deportes) por su rendimiento promedio superior y fuerte tendencia de crecimiento, consolidando la 1 AM como la hora clave."
 }
