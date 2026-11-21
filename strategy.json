@@ -1,37 +1,41 @@
 {
   "updated": "2026-11-21",
-  "iteracion": 767,
+  "iteracion": 768,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
-    "productividad_ia": 0.1,
-    "negocios_digitales": 0.05,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.01
+    "ia_noticias": 0.4,
+    "mundial_2026": 0.4,
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.007,
+    "negocios_digitales": 0.007,
+    "cripto_inversiones": 0.007,
+    "productividad_ia": 0.007,
+    "deportes": 0.007,
+    "entretenimiento": 0.007,
+    "politica_latam": 0.008
   },
   "best_hooks": [
-    "Intriga Extrema con Anticipación: \"¡Se acabó la espera! ¡El...\"",
-    "Dato Concreto y Sorprendente: \"Con solo X años/cifra, Y...\" (ej. \"Con solo 17 años, Lamine\", avg_views 740)",
-    "Pregunta o Afirmación Controversial/Impactante: (ej. \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\", del título top)",
-    "Noticia de Crisis/Emergencia Inmediata: (ej. \"Terremoto devastador en Z: X muertos...\", del título top)",
-    "Evento Disruptivo con Emoción Fuerte: (ej. \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\", del título top)",
-    "Urgencia Geográfica con Escasez/Demanda: (ej. \"ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥\", del título top)"
+    "¿[Afirmación controversial] + [Evento clave]? 🤯",
+    "[Noticia urgente/escasez] + [Lugar/Entidad] ¡[Impacto]! 😱🔥",
+    "Con solo [Cifra/Edad], [Sujeto] [Hecho sorprendente]",
+    "[Evento devastador] en [Lugar]: [Cifra/Impacto]...",
+    "[Evento deportivo específico]: ¡[Sujeto/Equipo] [Consecuencia]! 😱",
+    "¡Se acabó la espera! ¡El [Evento/Momento clave]..."
   ],
   "avoid_hooks": [
-    "Anuncio de Resultado Directo/Sin Intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Declaración Plana de Hechos sin Emoción (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Información General sin Contexto Impactante (ej. \"Brasil y Noruega empatan\")"
+    "Declaraciones fácticas y blandas sin emoción ni sorpresa (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks incompletos o sin contexto de impacto (ej. 'Sidny Lopes Cabral acaba de')",
+    "Resultados deportivos sin un giro o pregunta controversial que genere intriga"
   ],
   "best_hora": 1,
-  "duracion_optima": -1,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la Virality Extrema en 'ia_noticias': Enfocarse en la identificación rápida de noticias y eventos controvertidos o de gran impacto en el nicho 'ia_noticias', aplicando los patrones de ganchos más efectivos, ya que es el nicho con mayor potencial para picos de vistas.",
-    "Estrategia de Publicación Múltiple: Experimentar con los horarios pico identificados (1 AM, 6 AM y 5 PM) para maximizar la exposición de contenido viral, especialmente en 'ia_noticias', dada la dispersión de los videos top en estas franjas horarias.",
-    "Desarrollar Títulos y Ganchos Provocativos y Detallados: Incorporar preguntas que generen debate (ej. '¿ENTREGÓ el Mundial?'), datos numéricos concretos ('Con solo 17 años...') y elementos de urgencia/localización ('ENTRADAS SHAKIRA MADRID ¡Se Agotan!'), evitando descripciones planas o resultados directos sin intriga."
+    "Concentrar la producción de contenido en los nichos `ia_noticias` y `mundial_2026`, asignando un 80% de los recursos combinados debido a su demostrado potencial viral y de vistas promedio elevadas, respectivamente.",
+    "Desarrollar ganchos para títulos y los primeros segundos del video que incluyan elementos de controversia, preguntas impactantes, cifras específicas, o noticias de urgencia (ej. '¡Se Agotan!', '¿FINAL ENTREGADA?'), utilizando emojis (`🤯`, `😱`, `🔥`) para amplificar la emoción.",
+    "Establecer la 1 AM (hora 1) como la franja horaria principal para la publicación de contenido de alto impacto, dado que ha demostrado ser consistentemente la más efectiva para generar múltiples videos en el TOP 10 con un promedio de 1128 vistas.",
+    "Evitar títulos y hooks que sean meramente descriptivos o que presenten información sin un giro emocional o de intriga, como los resultados deportivos directos o declaraciones incompletas, ya que esto resulta en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' exhibe una marcada dualidad: es el único nicho que logra posicionar el 100% de los videos en el TOP 10, a pesar de tener un promedio de vistas general de solo 3. Esto confirma su naturaleza de 'todo o nada', donde la clave no es la consistencia sino la capacidad de identificar y ejecutar temas con un altísimo potencial de viralidad extrema."
+  "insight_semana": "El nicho `ia_noticias` presenta una alta volatilidad, con un promedio de vistas general muy bajo (4), pero es el único nicho capaz de producir videos virales que dominan completamente el TOP 10 (100% de los videos), lo que indica que su potencial reside en la capacidad de identificar y capitalizar temas de controversia o urgencia extrema, mientras que la mayoría de su contenido pasa desapercibido."
 }
