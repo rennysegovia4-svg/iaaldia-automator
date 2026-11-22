@@ -1,38 +1,37 @@
 {
   "updated": "2026-11-22",
-  "iteracion": 775,
+  "iteracion": 776,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.3,
-    "productividad_ia": 0.1,
-    "finanzas": 0.05,
-    "negocios_digitales": 0.05,
-    "entretenimiento": 0.03,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "deportes": 0.35,
+    "ia_noticias": 0.4,
+    "finanzas": 0.03,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.03,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "Controversia Explosiva + Pregunta Impactante + Emoji 🤯 (Ej: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Noticia Urgente + Impacto Regional/Global + 'Hoy' + Emoji 😱/🔥 (Ej: \"Terremoto devastador en Colombia: 132 muertos\")",
-    "Evento Crítico/Decisivo + Nombre Propio/Equipo + Resultado Inesperado + Emoji 😱/🤯 (Ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
-    "¡Se acabó la espera! + [Evento Anticipado/Noticia Exclusiva] (Ej: \"¡Se acabó la espera! ¡El\")",
-    "Logro Sorprendente/Récord + Detalle Específico (edad/dato) + Nombre Propio (Ej: \"Con solo 17 años, Lamine\")",
-    "Alerta de Última Hora: [Tema Viral/Crisis] + ¡NO TE LO PIERDAS! 🚨"
+    "Pregunta/Controversia Directa: '[Tema Polémico] ¿[Verbo de acción/duda]? 🤯 (PARTE X)' (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
+    "Noticia de Shock/Alerta Urgente: '[Tema] [Verbo Impactante] ¡[Emoción/Consecuencia]! 😱' (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Impacto Regional/Actualidad: 'La noticia [Adjetivo] que sacude [Región] hoy ⚽' (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Evento Catastrófico con Cifra: '[Evento] devastador en [Lugar]: [Número] [Impacto]' (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
+    "Escasez/Alta Demanda: '[Producto/Evento] ¡Se Agota/Vende Hoy! 😱🔥' (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
+    "Desarrollo Inesperado/Crisis: '[Sujeto] CEDE LIDERATO ¡SHOCK! 🤯' (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
   ],
   "avoid_hooks": [
-    "Resultados secos o hechos sin intriga, que revelan la noticia sin generar curiosidad (Ej: \"Brasil y Noruega empatan 0-0\")",
-    "Nombres propios desconocidos o entidades sin contexto viral de drama o alto impacto instantáneo (Ej: \"Sidny Lopes Cabral acaba de\")",
-    "Hooks que informan un evento sin un giro, pregunta o elemento emocional que incite a ver el video"
+    "Hooks que revelan completamente el desenlace del evento noticioso, matando la intriga (ej. 'Brasil y Noruega empatan 0-0').",
+    "Hooks demasiado descriptivos o que carecen de elementos de sorpresa o urgencia (ej. 'Sidny Lopes Cabral acaba de...').",
+    "Hooks redundantes o con variaciones mínimas que no aportan valor adicional a la intriga (ej. 'Brasil y Noruega empatan' y 'Brasil y Noruega empatan 0-0')."
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que aborde controversias deportivas con enfoque en Argentina (como la 'Final Entregada'), noticias de desastres naturales con impacto regional en LATAM, y eventos deportivos críticos o traspasos urgentes, ya que estos subtemas demuestran el mayor potencial de viralidad.",
-    "Concentrar las publicaciones en los horarios de madrugada y primera hora de la mañana, siendo la 1 AM el pico de rendimiento (3 de los 10 videos más vistos) y la 6 AM un horario fuerte (2 videos, promediando más de 1000 vistas).",
-    "Integrar consistentemente emojis de impacto (🤯, 😱, 🔥) en los títulos y hooks, ya que 8 de los 10 videos más vistos los utilizan, potenciando la capacidad de captar la atención en el feed de Shorts.",
-    "Monitorizar la duración de los videos top y bottom performers en futuras iteraciones para identificar la 'duracion_optima', ya que esta métrica es clave y no se pudo determinar con los datos actuales."
+    "Priorizar la creación de contenido de tipo 'ia_noticias' que aborde **controversias deportivas (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?') o eventos de última hora con impacto emocional y regional (ej. 'Terremoto devastador', 'ENTRADAS SHAKIRA')**, ya que estas temáticas dominan los videos más vistos.",
+    "Implementar de manera consistente **emojis de sorpresa/impacto (🤯, 😱, 🔥) en los títulos** de los Shorts, dado que están presentes en 8 de los 10 videos con más vistas y actúan como un potente captador de atención.",
+    "Aprovechar los **horarios de publicación de madrugada (1-2 AM), primera hora de la mañana (6 AM) y tarde (16-17 PM, 21 PM)**, ya que estos picos han demostrado consistentemente la mayor concentración de vistas en los videos top."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una paradoja crucial: a pesar de tener el promedio de vistas más bajo en el ranking general (6 avg_views) y una tendencia negativa, es el origen exclusivo de todos los videos en el TOP 10, lo que indica una extrema volatilidad y la necesidad crítica de identificar y replicar sub-temas virales muy específicos dentro de esta categoría amplia, como las controversias futbolísticas de Argentina, desastres naturales regionales y noticias deportivas de último momento."
+  "insight_semana": "La categoría 'ia_noticias' presenta una polarización extrema en su rendimiento: aunque su promedio general de vistas es bajo (8 vistas), todos los videos más exitosos (más de 970 vistas) provienen de este nicho, demostrando un potencial viral masivo cuando el contenido se enfoca en la controversia, la urgencia o la relevancia regional, especialmente en deportes y eventos noticiosos impactantes."
 }
