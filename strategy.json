@@ -1,38 +1,37 @@
 {
-  "updated": "2026-11-21",
-  "iteracion": 772,
+  "updated": "2026-11-22",
+  "iteracion": 773,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.3,
+    "deportes": 0.45,
+    "ia_noticias": 0.25,
     "finanzas": 0.05,
     "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.05,
-    "politica_latam": 0.05
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.025,
+    "politica_latam": 0.025
   },
   "best_hooks": [
-    "Gancho de anticipación de evento (ej: '¡Se acabó la espera! ¡El...')",
-    "Gancho de noticia impactante con shock (ej: 'X sacude Y hoy 😱')",
-    "Gancho de controversia con pregunta abierta (ej: '¿X entregó la final? 🤯')",
-    "Gancho de escasez o urgencia ('¡Se Agotan! / HOY 🔥')",
-    "Gancho de enfoque en figura destacada (ej: 'Con solo X años, Y...')",
-    "Gancho de noticia de última hora o alerta (ej: 'Temblor hoy X...')"
+    "¡[Frase de Suspenso/Exclamación]! ¡[Evento Clave]!",
+    "Con solo [Edad] años, [Nombre Propio] [Logro/Noticia Impactante]",
+    "[Saludo/Bienvenida] a [Tema Central]",
+    "[Evento Impactante] en [Lugar/Sujeto]: [Número] [Detalle Clave] y [Consecuencia Emocional]",
+    "La noticia [Tipo] que sacude [Región] hoy [Emoji de Urgencia/Tema]",
+    "[Sujeto] [Verbo de Acción/Evento Negativo] [Hoy/Ahora]: ¿[Pregunta de Intriga]? [Emoji de Shock]"
   ],
   "avoid_hooks": [
-    "Hooks que anuncian un resultado de empate sin agregar controversia o drama (ej: 'Brasil y Noruega empatan 0-0').",
-    "Hooks que inician con nombres de figuras poco reconocidas globalmente sin un contexto impactante inmediato (ej: 'Sidny Lopes Cabral acaba de').",
-    "Hooks que carecen de emojis o palabras de alto impacto emocional (ej: 🤯, 😱, 🔥) en noticias impactantes."
+    "Declaraciones fácticas sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases inconclusas o vagas (ej. 'Sidny Lopes Cabral acaba de')",
+    "Contenido sin urgencia o valor de shock, resultando en 0 views"
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "No hay datos disponibles sobre la duración óptima de los videos.",
   "recomendaciones": [
-    "Priorizar la publicación de contenido a la 1 AM (hora 1), ya que esta franja horaria ha demostrado ser la más efectiva para generar vistas, albergando el video más visto (1325 views) y la mayor concentración de éxitos en el TOP 10.",
-    "Incrementar la producción de contenido relacionado con 'mundial_2026' (dentro del nicho 'deportes'), dado su rendimiento promedio superior (258 vistas) y su fuerte tendencia de crecimiento (867.0), lo que sugiere una audiencia más estable y comprometida.",
-    "Implementar de forma consistente emojis de alto impacto (como 🤯, 😱, 🔥) en los títulos, ya que 7 de los 10 videos más vistos los utilizan, indicando una clara correlación con la capacidad de atraer clics y atención.",
-    "Para los nichos 'finanzas', 'entretenimiento', 'negocios_digitales', 'productividad_ia', 'cripto_inversiones' y 'politica_latam', se requieren más datos para generar recomendaciones específicas, ya que actualmente presentan 0 vistas de promedio."
+    "Priorizar el contenido deportivo, especialmente aquel relacionado con 'Mundial' o con la participación de 'Argentina', ya que ha demostrado ser un disparador de alta viralidad.",
+    "Implementar de forma consistente la serialización del contenido en los títulos (ej. '(PARTE 1)', '(1/2)') para generar intriga y fomentar el consumo de múltiples videos.",
+    "Utilizar emojis de alto impacto (🤯, 😱, 🔥) y preguntas intrigantes o exclamaciones en los títulos para captar la atención inmediatamente, patrón presente en 7 de los 10 videos más vistos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' opera bajo un modelo de alta volatilidad: si bien es capaz de producir éxitos virales extremos (monopolizando el TOP 10 con un promedio de 1121 views en esos videos), su rendimiento promedio global (5 vistas) y tendencia negativa (-0.95) revelan que su éxito es esporádico e impredecible, no una estrategia sostenible a largo plazo por sí sola."
+  "insight_semana": "Mientras que `ia_noticias` es la única categoría capaz de generar videos virales extremos (monopolizando el TOP 10 en vistas), su performance general (avg_views de 6 y trend negativo de -0.95) indica que su éxito es esporádico y no sostenible sin una alta producción, a diferencia del nicho `mundial_2026` que, aunque sin picos en el TOP 10, ofrece un rendimiento medio (258 avg_views) y una tendencia de crecimiento (867.0) mucho más robustos y consistentes."
 }
