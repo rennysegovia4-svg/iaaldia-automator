@@ -1,37 +1,39 @@
 {
   "updated": "2026-11-22",
-  "iteracion": 776,
+  "iteracion": 777,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.35,
+    "mundial_2026": 0.41,
     "ia_noticias": 0.4,
-    "finanzas": 0.03,
-    "entretenimiento": 0.1,
-    "negocios_digitales": 0.03,
-    "productividad_ia": 0.03,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.03
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "deportes": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "Pregunta/Controversia Directa: '[Tema Polémico] ¿[Verbo de acción/duda]? 🤯 (PARTE X)' (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯 (PARTE 1)')",
-    "Noticia de Shock/Alerta Urgente: '[Tema] [Verbo Impactante] ¡[Emoción/Consecuencia]! 😱' (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
-    "Impacto Regional/Actualidad: 'La noticia [Adjetivo] que sacude [Región] hoy ⚽' (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
-    "Evento Catastrófico con Cifra: '[Evento] devastador en [Lugar]: [Número] [Impacto]' (ej. 'Terremoto devastador en Colombia: 132 muertos...')",
-    "Escasez/Alta Demanda: '[Producto/Evento] ¡Se Agota/Vende Hoy! 😱🔥' (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
-    "Desarrollo Inesperado/Crisis: '[Sujeto] CEDE LIDERATO ¡SHOCK! 🤯' (ej. 'LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯')"
+    "¡Se acabó la espera! ¡El [Evento/Noticia clave]...",
+    "Con solo [Edad/Característica], [Persona/Entidad]...",
+    "Muy buenas tardes. Bienvenidos a [Noticia/Análisis]...",
+    "¿[Afirmación impactante sobre evento]? ¡La verdad al descubierto! (Ej: ¿ARGENTINA ENTREGÓ la Final...?)",
+    "¡ÚLTIMA HORA! [Evento devastador/chocante] en [Lugar]... (Ej: ¡Terremoto devastador en Colombia!)",
+    "¡[Celebridad/Evento] en [Lugar]! ¡[Estado de escasez/demanda]! 😱🔥 (Ej: ¡ENTRADAS SHAKIRA MADRID Se Agotan!)"
   ],
   "avoid_hooks": [
-    "Hooks que revelan completamente el desenlace del evento noticioso, matando la intriga (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks demasiado descriptivos o que carecen de elementos de sorpresa o urgencia (ej. 'Sidny Lopes Cabral acaba de...').",
-    "Hooks redundantes o con variaciones mínimas que no aportan valor adicional a la intriga (ej. 'Brasil y Noruega empatan' y 'Brasil y Noruega empatan 0-0')."
+    "Declaraciones directas del resultado (Ej: X vs Y Z-Z)",
+    "Noticias planas sin emoción ni sorpresa (Ej: [Nombre] acaba de [Acción simple])",
+    "Hooks que revelan la información clave sin generar curiosidad."
   ],
   "best_hora": 1,
   "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido de tipo 'ia_noticias' que aborde **controversias deportivas (ej. 'ARGENTINA ENTREGÓ la Final del Mundial?') o eventos de última hora con impacto emocional y regional (ej. 'Terremoto devastador', 'ENTRADAS SHAKIRA')**, ya que estas temáticas dominan los videos más vistos.",
-    "Implementar de manera consistente **emojis de sorpresa/impacto (🤯, 😱, 🔥) en los títulos** de los Shorts, dado que están presentes en 8 de los 10 videos con más vistas y actúan como un potente captador de atención.",
-    "Aprovechar los **horarios de publicación de madrugada (1-2 AM), primera hora de la mañana (6 AM) y tarde (16-17 PM, 21 PM)**, ya que estos picos han demostrado consistentemente la mayor concentración de vistas en los videos top."
+    "Priorizar la creación de contenido para el nicho 'mundial_2026' dado su alto promedio de vistas (258) y excepcional tendencia positiva (867.0), lo que indica un rendimiento consistente y de alta demanda.",
+    "Para el nicho 'ia_noticias', enfocar los esfuerzos en temas con alto potencial viral previamente identificados: narrativas de 'entrega/fraude' en deportes, noticias urgentes de desastres con cifras y ubicaciones concretas, y eventos de celebridades con escasez o alta demanda. Evitar temas genéricos que contribuyen al bajo promedio de este nicho.",
+    "Optimizar todos los títulos y hooks con emojis de impacto (🤯, 😱, 🔥) y fórmulas de gancho que generen intriga, urgencia o shock, replicando el patrón de los 10 videos más vistos para maximizar la CTR inicial.",
+    "Mantener el uso estratégico de referencias geográficas específicas a LATAM en los títulos de noticias para captar el interés de la audiencia regional, como se observó en videos de más de 1100 vistas.",
+    "Experimentar la publicación de videos en la hora 1 (1 AM) que concentra la mayor cantidad de videos en el top 10, incluyendo el más visto, y también en la hora 17 (5 PM) que muestra un rendimiento sólido en los videos de mayor alcance."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La categoría 'ia_noticias' presenta una polarización extrema en su rendimiento: aunque su promedio general de vistas es bajo (8 vistas), todos los videos más exitosos (más de 970 vistas) provienen de este nicho, demostrando un potencial viral masivo cuando el contenido se enfoca en la controversia, la urgencia o la relevancia regional, especialmente en deportes y eventos noticiosos impactantes."
+  "insight_semana": "El nicho 'ia_noticias' presenta un perfil de alto riesgo y alta recompensa; aunque genera los videos individuales con más vistas (los 10 principales), su promedio de vistas de solo 10 y su tendencia negativa sugieren que el éxito es muy dependiente de la temática exacta y la ejecución del gancho, mientras que la mayoría de su contenido podría estar subperformando significativamente."
 }
