@@ -1,38 +1,38 @@
 {
   "updated": "2026-11-22",
-  "iteracion": 774,
+  "iteracion": 775,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.4,
-    "ia_noticias": 0.35,
+    "deportes": 0.45,
+    "ia_noticias": 0.3,
+    "productividad_ia": 0.1,
     "finanzas": 0.05,
-    "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.05,
-    "cripto_inversiones": 0.03,
-    "politica_latam": 0.02
+    "entretenimiento": 0.03,
+    "cripto_inversiones": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡Se acabó la espera! [Noticia emocionante]",
-    "[Cifra/Detalle sorprendente], [Nombre/Evento] [Verbo Fuerte] [Consecuencia] 😱",
-    "¡[Evento Impactante]! ¿[Pregunta Dramática]? 🤯",
-    "[Noticia Regional Impactante] HOY: ¡[Efecto]! ⚡",
-    "🚨 URGENTE: [Suceso Clave] que [Verbo Impactante] a [Región/Audiencia] 💥",
-    "¡[Nombre Propio Famoso/Equipo] [Verbo Acción]! [Reacción Emocional] [Parte/Continuación]?"
+    "Controversia Explosiva + Pregunta Impactante + Emoji 🤯 (Ej: \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
+    "Noticia Urgente + Impacto Regional/Global + 'Hoy' + Emoji 😱/🔥 (Ej: \"Terremoto devastador en Colombia: 132 muertos\")",
+    "Evento Crítico/Decisivo + Nombre Propio/Equipo + Resultado Inesperado + Emoji 😱/🤯 (Ej: \"LIGA MX: AMÉRICA CEDE LIDERATO ¡SHOCK! 🤯\")",
+    "¡Se acabó la espera! + [Evento Anticipado/Noticia Exclusiva] (Ej: \"¡Se acabó la espera! ¡El\")",
+    "Logro Sorprendente/Récord + Detalle Específico (edad/dato) + Nombre Propio (Ej: \"Con solo 17 años, Lamine\")",
+    "Alerta de Última Hora: [Tema Viral/Crisis] + ¡NO TE LO PIERDAS! 🚨"
   ],
   "avoid_hooks": [
-    "Hooks que revelan el resultado completo o el desenlace de la noticia (ej. 'Brasil y Noruega empatan 0-0').",
-    "Hooks puramente descriptivos y sin elementos de intriga, urgencia o emoción.",
-    "Hooks que inician con un nombre propio sin contexto dramático inmediato (ej. 'Sidny Lopes Cabral acaba de')."
+    "Resultados secos o hechos sin intriga, que revelan la noticia sin generar curiosidad (Ej: \"Brasil y Noruega empatan 0-0\")",
+    "Nombres propios desconocidos o entidades sin contexto viral de drama o alto impacto instantáneo (Ej: \"Sidny Lopes Cabral acaba de\")",
+    "Hooks que informan un evento sin un giro, pregunta o elemento emocional que incite a ver el video"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": null,
   "recomendaciones": [
-    "Priorizar temáticas de 'noticia entregada' o controversias en el ámbito deportivo (ej. 'Argentina entregó la final'), dado que son los videos más virales.",
-    "Mantener una estrategia de contenido balanceada: aunque 'ia_noticias' genera picos de viralidad (dominando el TOP 10), el nicho 'deportes' (derivado de 'mundial_2026') muestra una consistencia superior en vistas promedio y tendencia de crecimiento.",
-    "Establecer la publicación de contenido clave en las horas pico identificadas entre los videos más vistos: 1 AM y 6 AM, además de las horas de la tarde (16, 17, 21), para maximizar la visibilidad inicial.",
-    "Dado que no se dispone de datos de duración óptima, se recomienda realizar pruebas A/B con duraciones variadas (entre 30 y 60 segundos) y medir la retención de audiencia para identificar el punto óptimo."
+    "Priorizar la creación de contenido dentro del nicho 'ia_noticias' que aborde controversias deportivas con enfoque en Argentina (como la 'Final Entregada'), noticias de desastres naturales con impacto regional en LATAM, y eventos deportivos críticos o traspasos urgentes, ya que estos subtemas demuestran el mayor potencial de viralidad.",
+    "Concentrar las publicaciones en los horarios de madrugada y primera hora de la mañana, siendo la 1 AM el pico de rendimiento (3 de los 10 videos más vistos) y la 6 AM un horario fuerte (2 videos, promediando más de 1000 vistas).",
+    "Integrar consistentemente emojis de impacto (🤯, 😱, 🔥) en los títulos y hooks, ya que 8 de los 10 videos más vistos los utilizan, potenciando la capacidad de captar la atención en el feed de Shorts.",
+    "Monitorizar la duración de los videos top y bottom performers en futuras iteraciones para identificar la 'duracion_optima', ya que esta métrica es clave y no se pudo determinar con los datos actuales."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho 'ia_noticias' monopoliza el TOP 10 de videos virales con picos de vistas impresionantes, su bajo promedio de vistas (7) en el ranking general sugiere una estrategia de alto riesgo/alta recompensa. Esto contrasta con la consistencia y tendencia positiva del nicho 'deportes' (derivado de 'mundial_2026'), que con un promedio de 258 vistas y una tendencia de 867, ofrece un rendimiento más predecible y una base de audiencia más estable, indicando la necesidad de balancear ambas estrategias."
+  "insight_semana": "El nicho 'ia_noticias' presenta una paradoja crucial: a pesar de tener el promedio de vistas más bajo en el ranking general (6 avg_views) y una tendencia negativa, es el origen exclusivo de todos los videos en el TOP 10, lo que indica una extrema volatilidad y la necesidad crítica de identificar y replicar sub-temas virales muy específicos dentro de esta categoría amplia, como las controversias futbolísticas de Argentina, desastres naturales regionales y noticias deportivas de último momento."
 }
