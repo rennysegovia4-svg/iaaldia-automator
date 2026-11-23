@@ -1,42 +1,39 @@
 {
   "updated": "2026-11-23",
-  "iteracion": 781,
+  "iteracion": 782,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "mundial_2026": 0.421,
-    "ia_noticias": 0.368,
-    "productividad": 0.158,
-    "negocios": 0.053,
-    "finanzas": 0.0,
-    "negocios_digitales": 0.0,
-    "cripto_inversiones": 0.0,
-    "productividad_ia": 0.0,
-    "deportes": 0.0,
-    "entretenimiento": 0.0,
-    "politica_latam": 0.0
+    "deportes": 0.4,
+    "ia_noticias": 0.35,
+    "finanzas": 0.01,
+    "entretenimiento": 0.01,
+    "negocios_digitales": 0.08,
+    "productividad_ia": 0.1,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.03
   },
   "best_hooks": [
-    "[Impacto Inmediato + Exclamación]: \"¡Se acabó la espera! ¡El [evento/noticia] ha llegado!\"",
-    "[Dato Sorprendente + Sujeto Específico]: \"Con solo [edad/número], [nombre/evento] [logró/impactó]...\"",
-    "[Inicio Directo de Noticia/Evento]: \"Muy buenas tardes. Bienvenidos a [resumen del día/noticia de última hora]...\"",
-    "[Pregunta Controversial + Emoticono]: \"¿[Sujeto] [Acción polémica]? 🤯\"",
-    "[Noticia Alarmante/Crítica + Ubicación]: \"[Evento devastador] en [lugar]: [consecuencia clave]...\"",
-    "[Declaración de Shock + Sujeto/Liga]: \"[Sujeto/Liga] en SHOCK: [Detalle Impactante]! 😱\""
+    "¡Se acabó la espera! ¡El [evento/noticia] ha llegado!",
+    "Con solo [edad/número], [nombre] [logro sorprendente/noticia impactante]",
+    "Muy buenas [mañanas/tardes/noches]. Bienvenidos a [contexto de la noticia importante].",
+    "[Sujeto] ¿[Verbo en pasado] [Objeto]?",
+    "[Evento] devastador en [Lugar]: [Número] [Efecto] y emergencia [Tipo]",
+    "La noticia [tipo] que sacude [Región] hoy [emoji relevante]"
   ],
   "avoid_hooks": [
-    "Hooks demasiado descriptivos o que revelan el clímax sin intriga (ej. \"Brasil y Noruega empatan 0-0\")",
-    "Hooks incompletos o truncados que no generan curiosidad (ej. \"Sidny Lopes Cabral acaba de\")",
-    "Hooks que simplemente enuncian un resultado sin un contexto emocional o un 'por qué importar' (ej. \"Brasil y Noruega empatan\")"
+    "Descripciones puramente informativas sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases introductorias incompletas que no generan expectativa (ej. 'Sidny Lopes Cabral acaba de')",
+    "Reiteración de información ya visible en el título o thumbnail sin añadir valor."
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": "datos insuficientes",
   "recomendaciones": [
-    "Priorizar la producción de contenido en los nichos 'mundial_2026' y 'ia_noticias' debido a su alto potencial de vistas, con 'mundial_2026' ofreciendo un rendimiento más consistente (avg 258 views) e 'ia_noticias' generando picos extraordinarios (hasta 1325 views).",
-    "Concentrar las publicaciones en la franja horaria de la 1 AM (hora 1), ya que esta demostró ser la más potente, albergando el video más visto (1325 vistas) y un promedio de 1121 vistas para sus tres entradas en el top 10.",
-    "Diseñar títulos que generen intriga o insinúen una continuación (ej. 'PARTE 1', '1/2') y que planteen preguntas controvertidas o revelen un 'shock', aprovechando el truncamiento del título en la interfaz para mantener la curiosidad.",
-    "Utilizar hooks iniciales que enfaticen la urgencia, la sorpresa, la controversia o que presenten un dato impactante para maximizar la retención inicial, replicando patrones de éxito como '¡Se acabó la espera! ¡El' (867 avg views) o 'Con solo 17 años, Lamine' (740 avg views).",
-    "Pausar o reevaluar la estrategia para nichos con rendimiento nulo ('finanzas', 'negocios_digitales', 'cripto_inversiones', 'productividad_ia', 'deportes', 'entretenimiento', 'politica_latam'), ya que actualmente no están generando vistas."
+    "Priorizar la creación de contenido en los nichos 'deportes' (especialmente temas de 'mundial_2026') e 'ia_noticias', ya que son los que demuestran el mayor potencial de vistas, tanto promedio como virales.",
+    "Implementar ganchos que generen urgencia, intriga o resalten hechos sorprendentes en los primeros segundos del video, basándose en las fórmulas identificadas en los 'best_hooks'.",
+    "Publicar los Shorts preferentemente a la 1 AM (hora 1), que ha demostrado ser la franja horaria más efectiva para los videos de alto rendimiento.",
+    "Utilizar títulos que insinúen controversia, prometan una continuación ('PARTE 1') o anuncien 'shocks' y 'emergencias' para maximizar la tasa de clics y la retención inicial.",
+    "Evitar ganchos pasivos o puramente descriptivos, ya que la data muestra consistentemente que estos resultan en 0 vistas y matan la visibilidad del Short."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' es un arma de doble filo: si bien domina absolutamente el top 10 de videos con picos de vistas extraordinarios (hasta 1325), su promedio general es bajo (10 vistas) y produce múltiples fallos (0 vistas), lo que subraya que el éxito no es inherente al nicho, sino dependiente de una ejecución precisa en el título y el hook para explotar la controversia y la intriga."
+  "insight_semana": "El nicho 'ia_noticias' presenta un patrón de rendimiento bipolar: es el único responsable de todos los videos en el top 10 (alcanzando hasta 1325 vistas), lo que indica un enorme potencial viral; sin embargo, su promedio de vistas general (8) y su tendencia negativa (-1.0) en el ranking de nichos revelan una variabilidad extrema. Esto subraya que, aunque puede generar éxitos masivos, requiere una ejecución excepcionalmente precisa en la selección temática y, fundamentalmente, en la creación del gancho para evitar el fracaso total (0 vistas)."
 }
