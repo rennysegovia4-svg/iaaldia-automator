@@ -1,139 +1,133 @@
 {
   "updated": "2026-11-24",
   "hook_formulas": [
-    "Comparación explícita o dilema (X vs Y) que invita a la reflexión/debate (ej. 'AI ASMR vs Traditional ASMR Which is Better', 'Real Life Vs AI', 'Antes Va Ahora 🤭😂')",
-    "Situación humorística o absurda altamente relatable que provoca risa inmediata (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Mamá quería ahorrar 🙈🤭')",
-    "Revelación impactante o exagerada con emojis que genera curiosidad para ver el desenlace (ej. 'A.I. is getting way too Realistic 💀😂 ( Watch till the end )')",
-    "Pregunta retórica o directa que interpela al espectador sobre un problema común con promesa de solución/prueba (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD?', '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
-    "Narrativa de drama, conflicto o situación de alto riesgo con un giro inesperado (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
-    "Uso de referencias culturales populares (películas, memes, personajes) para contextualizar un mensaje del nicho (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin', 'Las Frutinovelas con IA 🍌🍓')",
-    "Afirmación de descubrimiento o existencia de algo sorprendente/novedoso (ej. 'Esta inteligencia artificial hace magia con tus dibujos', 'Sección Secreta de Amazon 😳📦', 'The Mini Brands Bitcoin Bag Is Real!')",
-    "Introducción de una idea de negocio o consejo práctico directo y visualmente atractivo (ej. 'Handmade bookmarks business idea💡', 'Top 3 Creative TV Ads 😎')",
-    "Declaración de una habilidad o herramienta 'mágica' / 'definitiva' (ej. 'INTELIGÊNCIA ARTIFICIAL DO MEU CELULAR!!!', 'Esta es la IA definitiva para crear música GRATIS')",
-    "Escena de acción o evento inusual que crea intriga (ej. 'Eid train journey!! 2026🌙', '100M views pyramid in a cage puzzle')",
-    "Interrogante sobre identidad o sorpresa con un elemento conocido (ej. 'Guess WHO? #Shorts | CoComelon')",
-    "Presentación de un personaje o situación con una característica exagerada o singular (ej. 'Most Humble Crypto Billionaire', 'el punto débil del hombre fuerte')"
+    "Comparación directa (X vs Y) con dilema o contraste (ej. 'AI ASMR vs Traditional ASMR', 'Real Life Vs AI', 'Antes Va Ahora')",
+    "Situación humorística/absurda y relatable con giro inesperado (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Mamá quería ahorrar 🙈🤭')",
+    "Revelación impactante/exagerada con emojis y CTA a ver el final (ej. 'A.I. is getting way too Realistic 💀😂 ( Watch till the end )')",
+    "Pregunta directa sobre problema común o creencia, prometiendo prueba/solución (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD?', '¿Cómo Ahorrar en tu Hipoteca? 💰🧐')",
+    "Narrativa de conflicto/drama con alto riesgo y desenlace inesperado (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+    "Uso de referencias de cultura pop (películas, personajes) aplicada a un tema específico (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin', 'Las Frutinovelas con IA 🍌🍓')",
+    "Promesa de experiencia sensorial o estado mental deseado (ASMR, relajación) (ej. 'AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?')",
+    "Demostración de capacidad sorprendente de una herramienta/tecnología (IA) (ej. 'Esta inteligencia artificial hace magia con tus dibujos')",
+    "Revelación de información oculta, secreta o poco conocida (ej. 'Sección Secreta de Amazon 😳📦', 'What are the brands owned by Titan...')",
+    "Idea de negocio/producto creativa o inspiradora (ej. 'Handmade bookmarks business idea💡')",
+    "Lista de Top X ejemplos/casos de éxito o fallo creativo (ej. 'Top 3 Creative TV Ads 😎')",
+    "Misterio visual/desafío que invita a la interacción (ej. '100M views pyramid in a cage puzzle', 'Guess WHO?')"
   ],
   "title_patterns": [
-    "[Concepto] + [Reacción Emocional/Exageración] + [Emojis] + (CTA) #shorts (ej. 'A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts')",
-    "[Situación Relatable/Humorística] + [Emojis] + #shorts (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣 #shorts')",
-    "[Comparación X vs Y] + [Pregunta] + #shorts (ej. 'AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?')",
-    "[Afirmación de Novedad/Descubrimiento] + [Sujeto] + [Emojis] + #shorts (ej. 'Esta inteligencia artificial hace magia con tus dibujos #shorts')",
-    "[Pregunta Directa] + [Beneficio/Problema] + [Emojis] + #shorts (ej. '¿Cómo Ahorrar en tu Hipoteca? 💰🧐#Bancos #Créditos #Finanzas #Shorts')",
-    "[Nombre de Película/Personaje/Referencia] + [Mensaje/Tema Relacionado] + #shorts (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin')",
-    "[Idea de Negocio/Hack] + [Concepto Clave] + [Emojis] + #shorts (ej. 'Handmade bookmarks business idea💡 #shorts')",
-    "[Evento/Situación Disruptiva] + [Consecuencia/Reacción] + [Emojis] + #shorts (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours #shorts')"
+    "[Tema] vs [Tema]: [Pregunta/Comparación] (ej. 'AI ASMR vs Traditional ASMR Which is Better...')",
+    "[Situación Relatable/Graciosa] [Emoji] (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣')",
+    "[Afirmación Impactante] [Emoji] (CTA) (ej. 'A.I. is getting way too Realistic 💀😂 ( Watch till the end )')",
+    "[Pregunta Directa] [Objeto/Método], [Verdad/Prueba]? (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD?')",
+    "[Verbo de Acción/Proceso] [Objeto] [Resultado Sorprendente] (ej. 'Esta inteligencia artificial hace magia con tus dibujos')",
+    "[Cita Famosa/Personaje] - [Referencia] #shorts #viral [Tema] (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin')",
+    "[Revelación de Secreto/Dato Poco Conocido] [Emoji] (ej. 'Sección Secreta de Amazon 😳📦')",
+    "[Idea/Consejo de Negocio] [Emoji] #shorts #trending (ej. 'Handmade bookmarks business idea💡')"
   ],
   "palabras_prohibidas": [
-    "Explicación",
-    "Tutorial",
-    "Parte",
-    "Análisis",
-    "Guía",
-    "Detallado",
-    "Completo",
-    "Capítulo",
-    "Documental",
-    "Introducción"
+    "detallado",
+    "completo",
+    "explicativo",
+    "formal",
+    "estrategia",
+    "metodología",
+    "consideraciones",
+    "disertación",
+    "perspectivas",
+    "generalidades"
   ],
   "palabras_clave_virales": [
-    "#shorts",
-    "humor",
-    "IA",
-    "AI",
+    "shorts",
     "viral",
+    "humor",
     "comedia",
     "funny",
-    "tiktokvideo",
-    "fyp",
+    "AI",
     "ahorrar",
-    "bitcoin",
-    "mamá",
-    "inteligenciaartificial",
     "dinero",
+    "finanzas",
+    "bitcoin",
+    "tiktokvideo",
     "latina",
-    "😂",
-    "🤣",
-    "💀",
-    "😱",
-    "😳",
-    "💰"
+    "trending",
+    "realista",
+    "negocio"
   ],
-  "estructura_gancho_optima": "Inicia con una interrupción de patrón instantánea a través de una imagen impactante, una situación altamente relatable/absurda, una pregunta intrigante o una afirmación sorprendente, a menudo apoyada por emojis expresivos y una narrativa que mantiene la tensión o el humor hasta el final, generando curiosidad o una fuerte reacción emocional en los primeros 3-5 segundos.",
+  "estructura_gancho_optima": "Inicio con una pregunta o situación de contraste/dilema (X vs Y) o una situación humorística/absurda y altamente relatable, seguido de una revelación impactante o una exageración visual o narrativa, con uso de emojis que intensifican la emoción (sorpresa, risa, shock) y, frecuentemente, una llamada implícita o explícita a ver el video completo para el desenlace.",
   "duracion_optima_segundos": 58,
-  "insight_clave": "Los Shorts virales no solo capturan la atención, sino que la sostienen mediante una gratificación instantánea, ya sea a través de humor explosivo, una revelación sorprendente, una fuerte conexión emocional (relatabilidad o empatía) o una resolución rápida de un misterio/desafío. La clave está en fusionar un gancho visual y narrativo potentísimo en los primeros segundos con una entrega de valor o entretenimiento que se siente completa y satisfactoria, incluso si es breve.",
-  "recomendacion_thumbnail": "Dado que YouTube suele seleccionar un frame del video, el primer segundo debe ser diseñado como un thumbnail de alto CTR. Esto implica mostrar el pico de la emoción (cara de sorpresa, risa intensa, reacción exagerada), el elemento más intrigante, el 'plot twist' visual, o el objeto clave del que se habla, utilizando colores vivos y un encuadre claro. Evitar textos pequeños o elementos que no sean comprensibles de un vistazo rápido.",
+  "insight_clave": "La virulencia en Shorts se logra mediante la entrega de una 'descarga emocional instantánea' (humor, asombro, shock, intriga) en los primeros 1-3 segundos del video. Esto se consigue a través de contrastes inesperados, situaciones hiper-relatables o revelaciones impactantes, amplificadas por emojis y títulos directos, priorizando la intensidad y la inmediatez de la reacción sobre la profundidad del contenido.",
+  "recomendacion_thumbnail": "Thumbnails deben ser una captura de pantalla del 'momento cumbre' o más impactante/emocional del video (el 'punchline' visual), con emociones faciales exageradas si aplica. Deben incluir texto superpuesto grande y legible que sea una pregunta clave, una afirmación impactante o una revelación, y emojis relevantes que refuercen la emoción (shock, risa, curiosidad). Se prioriza el contraste visual y la claridad del mensaje para generar curiosidad inmediata.",
   "patrones_por_nicho": {
     "ia_noticias": {
       "hooks": [
-        "Comparación de IA vs Realidad/Tradicional (ej. 'AI ASMR vs Traditional ASMR', 'Real Life Vs AI')",
-        "Exageración del realismo o capacidad 'mágica' de la IA (ej. 'A.I. is getting way too Realistic 💀😂', 'Esta inteligencia artificial hace magia')",
-        "Situación humorística o absurda generada o protagonizada por IA (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣', 'Las Frutinovelas con IA 🍌🍓')"
+        "Comparación de IA vs Realidad/Tradicional (ej. 'Real Life Vs AI')",
+        "Revelación de la capacidad sorprendente/realista de la IA con emojis de shock (ej. 'A.I. is getting way too Realistic 💀😂')",
+        "Humor absurdo/relatable generado o inspirado por IA (ej. 'Mis sueños cuando me como toda la olla de frijoles 🤣')"
       ],
       "topics": [
-        "Realismo y desarrollo de la IA",
-        "Humor y creatividad con IA (frutinovelas, sueños)",
-        "IA para entretenimiento y bienestar (ASMR, historias)"
+        "Realismo y evolución de la IA (impacto visual, humor)",
+        "ASMR/Relajación generada por IA",
+        "IA aplicada a la creatividad (imágenes, dibujos)"
       ]
     },
     "finanzas": {
       "hooks": [
-        "Situaciones humorísticas y cotidianas sobre el ahorro (ej. 'Mamá quería ahorrar 🙈🤭', 'Cuando a tu mamá le gusta ahorrar dinero 🤣')",
-        "Pregunta-desafío o prueba de métodos de ahorro (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA')",
-        "Revelación de 'secretos' o hacks para ahorrar dinero (ej. 'Sección Secreta de Amazon 😳📦')"
+        "Situaciones de ahorro humorísticas y muy relatables (ej. 'Mamá quería ahorrar 🙈🤭')",
+        "Pregunta directa sobre un método/producto de ahorro o inversión, prometiendo una prueba o solución (ej. 'CARTERA PARA AHORRAR DINERO, SERA VERDAD?')",
+        "Revelación de información 'secreta' o poco conocida para ahorrar (ej. 'Sección Secreta de Amazon 😳📦')"
       ],
       "topics": [
-        "Ahorro de dinero en el día a día (compras, hipotecas)",
-        "Humor relacionado con las finanzas personales y el ahorro",
-        "Desmitificación o prueba de consejos financieros"
+        "Ahorro familiar/personal (humorístico)",
+        "Métodos y productos para ahorrar (créditos, hipotecas)",
+        "Consejos prácticos para manejar dinero"
       ]
     },
     "negocios_digitales": {
       "hooks": [
-        "Presentación de ideas de negocio creativas y visualmente atractivas (ej. 'Handmade bookmarks business idea💡')",
-        "Análisis rápido o 'top' de estrategias de marketing/empresas (ej. 'Top 3 Creative TV Ads 😎', 'What are the brands owned by Titan')",
-        "Revelación de la 'realidad' o detrás de cámaras de un negocio (ej. 'Fire Crackers business reality #shorts')"
+        "Idea de negocio creativa/inspiradora con potencial de éxito (ej. 'Handmade bookmarks business idea💡')",
+        "Listas de ejemplos exitosos o creativos en marketing/publicidad (ej. 'Top 3 Creative TV Ads 😎')",
+        "Pregunta sobre conocimiento de marcas/empresas o revelación de realidades empresariales (ej. 'What are the brands owned by Titan...')"
       ],
       "topics": [
-        "Ideas de negocio (manualidades, e-commerce)",
-        "Marketing y publicidad efectiva",
-        "Análisis de empresas y productos (Titan, Prime Hydration)"
+        "Ideas de negocios y emprendimiento",
+        "Marketing y publicidad creativa",
+        "Análisis de marcas, productos o realidades empresariales"
       ]
     },
     "cripto_inversiones": {
       "hooks": [
-        "Clips de películas o personajes icónicos adaptados a mensajes cripto (ej. 'Puedes Lograrlo - Nemo', 'Yo soy el Dueño - Batman')",
-        "Historias dramáticas o de alto riesgo relacionadas con las criptomonedas (ej. 'Scammer Watches $455K Disappear')",
-        "Descubrimiento o demostración de objetos/conceptos relacionados con cripto (ej. 'The Mini Brands Bitcoin Bag Is Real!')"
+        "Uso de citas o escenas icónicas de películas/personajes para metaforizar conceptos cripto/financieros (ej. 'Puedes Lograrlo - Nemo #shorts #viral #bitcoin')",
+        "Narrativas de drama/conflicto con dinero o estafas y un desenlace impactante (ej. 'Scammer Watches $455K Disappear After Wasting 48 Hours')",
+        "Revelación de productos/fenómenos relacionados con cripto que son inesperados o raros (ej. 'The Mini Brands Bitcoin Bag Is Real!')"
       ],
       "topics": [
-        "Bitcoin como símbolo de éxito o libertad financiera",
-        "Historias de estafas y riesgos en cripto",
-        "Motivación y reflexión con trasfondo financiero/cripto"
+        "Motivación y filosofía financiera/cripto (inspiración de películas)",
+        "Advertencias sobre estafas y riesgos en el mundo cripto",
+        "Curiosidades y fenómenos virales relacionados con cripto"
       ]
     },
     "productividad_ia": {
       "hooks": [
-        "Anuncio de la 'IA definitiva' o 'mejor herramienta' para una tarea específica (ej. 'Esta es la IA definitiva para crear música GRATIS')",
-        "Presentación directa de una solución tecnológica para un problema común (ej. 'La mejor herramienta para humanizar tus textos es Bypass AI')",
-        "Demostración de capacidades innovadoras de una IA para mejorar la productividad."
+        "Promesa de herramienta/solución IA 'definitiva' y gratuita (ej. 'Esta es la IA definitiva para crear música GRATIS #shorts')",
+        "Comparación o afirmación de superioridad de una herramienta IA (ej. 'La mejor herramienta para humanizar tus textos es Bypass AI #shorts')",
+        "Demostración de una capacidad 'mágica' o transformadora de la IA (ej. 'Esta inteligencia artificial hace magia con tus dibujos')"
       ],
       "topics": [
-        "Creación de contenido con IA (música, texto)",
-        "Herramientas de IA para optimización de tareas",
-        "Aplicaciones de IA en la vida profesional y personal"
+        "Herramientas de IA para creación de contenido (música, texto)",
+        "Optimización de tareas con IA",
+        "Descubrimiento de nuevas aplicaciones prácticas de IA"
       ]
     }
   },
   "top_videos_semana": [
     {
       "titulo": "AI ASMR vs Traditional ASMR Which is Better for Reducing Stress and Anxiety?",
-      "views": 176573483,
+      "views": 176573759,
       "id": "3bYx9XKbmQk"
     },
     {
       "titulo": "Real Life Vs AI. Part 14",
-      "views": 77083495,
+      "views": 77086468,
       "id": "QndanaE1eqg"
     },
     {
@@ -143,22 +137,22 @@
     },
     {
       "titulo": "A.I. is getting way too Realistic 💀😂 ( Watch till the end ) | Kuldeep Singhaniaa #shorts",
-      "views": 59954756,
+      "views": 59963223,
       "id": "6ms51abwU5A"
     },
     {
       "titulo": "Mamá quería ahorrar 🙈🤭 #shorts #humor #tiktokvideo #latina #comedia #peru #funny #fyp",
-      "views": 39154030,
+      "views": 39154196,
       "id": "dp2WHA1oZnQ"
     },
     {
       "titulo": "#shorts CARTERA PARA AHORRAR DINERO, SERA VERDAD? PONGAMOSLO A PRUEBA",
-      "views": 23850240,
+      "views": 23850248,
       "id": "1PzL_R9bZ9o"
     },
     {
       "titulo": "Scammer Watches $455K Disappear After Wasting 48 Hours #shorts #krakenpartner",
-      "views": 23599240,
+      "views": 23599351,
       "id": "D53HF_okHi8"
     },
     {
@@ -168,12 +162,12 @@
     },
     {
       "titulo": "Handmade bookmarks business idea💡 #shorts #trending #businessidea",
-      "views": 15490665,
+      "views": 15490788,
       "id": "gDn_SQU6YZE"
     },
     {
       "titulo": "sabía que no trabajabas aquí - hitch #shorts #viral #shortvideo #bitcoin",
-      "views": 13485934,
+      "views": 13485933,
       "id": "8jCJ0vgJUsk"
     },
     {
@@ -183,7 +177,7 @@
     },
     {
       "titulo": "What are the brands owned by Titan in the watch category? #shorts #viral #titan #rahulmalodia",
-      "views": 6805979,
+      "views": 6806001,
       "id": "swmCnmyOQ5o"
     },
     {
