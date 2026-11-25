@@ -1,41 +1,35 @@
 {
   "updated": "2026-11-25",
-  "iteracion": 795,
+  "iteracion": 796,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
-    "ia_noticias": 0.35,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.02,
-    "entretenimiento": 0.02,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El (Anticipación/Urgencia)",
-    "Con solo 17 años, Lamine (Intriga por dato específico)",
-    "Muy buenas tardes. Bienvenidos a (Formalidad noticiera)",
-    "Títulos que plantean preguntas controversiales (ej. ¿FINAL ENTREGADA? 🤯)",
-    "Títulos que usan emojis de impacto (ej. 🤯, 😱, 🔥)",
-    "Títulos que anuncian eventos actuales y de alto impacto (ej. Terremoto devastador, La noticia que sacude HOY)"
+    "Gancho de Urgencia/Anticipación: Utiliza exclamaciones y frases como '¡Se acabó la espera! ¡El' para generar expectación antes de la revelación (avg_views: 867).",
+    "Gancho de Proeza Individual: Destaca logros o hitos de personas específicas, especialmente con datos demográficos como la edad, por ejemplo 'Con solo [Edad] años, [Nombre]' (avg_views: 740).",
+    "Gancho de Apertura Noticiosa Formal: Inicia con un saludo formal tipo noticiero como 'Muy buenas tardes. Bienvenidos a' para establecer un tono informativo (avg_views: 375).",
+    "insuficientes datos para 6 fórmulas de gancho efectivas."
   ],
   "avoid_hooks": [
-    "Declaraciones factuales sin emoción (ej. Brasil y Noruega empatan 0-0)",
-    "Nombres poco conocidos o sin contexto claro (ej. Sidny Lopes Cabral acaba de)",
-    "Hooks que revelan la conclusión sin generar intriga"
+    "Revelación Inmediata del Resultado: Evitar hooks que exponen el desenlace o resultado directamente al inicio (ej. 'Brasil y Noruega empatan 0-0', 'Brasil y Noruega empatan'), ya que tienen 0 vistas al eliminar la intriga.",
+    "Declaración Factual sin Intriga: Evitar hooks que son meramente descriptivos o específicos sin generar curiosidad o impacto (ej. 'Sidny Lopes Cabral acaba de'), también asociados a 0 vistas."
   ],
   "best_hora": 1,
-  "duracion_optima": "insuficientes datos para duracion_optima",
+  "duracion_optima": "insuficiente información",
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho `ia_noticias` para buscar hits virales de alto impacto, ya que fue la única categoría en producir videos en el TOP 10, a pesar de su volatilidad general.",
-    "Mantener una producción constante en el nicho `deportes` (específicamente sub-nichos como `mundial_2026`) para asegurar una base de vistas más consistente y un crecimiento estable, dada su alta `avg_views` y `trend`.",
-    "Optimizar los títulos para que funcionen como el gancho principal, utilizando preguntas, emojis de impacto (🤯, 😱), palabras de urgencia ('HOY', 'sacude') y menciones a figuras o eventos específicos.",
-    "Experimentar con formatos de contenido en serie, incorporando 'PARTE 1' o '(1/2)' en los títulos para fomentar la retención y la visualización de múltiples videos, replicando el éxito de 3 videos en el TOP 10.",
-    "Evitar hooks o aperturas de video que sean meramente descriptivas o factuales, y que no generen curiosidad o emoción, ya que estos patrones se asocian con los videos de más bajo rendimiento."
+    "Priorizar el nicho `deportes` (representado por `mundial_2026`) debido a su `avg_views` (258) y `trend` (867.0), que lo posicionan como el nicho más consistente y predeciblemente exitoso.",
+    "Continuar explotando el nicho `ia_noticias` para la viralidad, ya que concentra el 100% de los videos del TOP 10. Es crucial seguir utilizando títulos impactantes con emojis como '🤯' y '😱' (presentes en 7 de cada 10 videos TOP).",
+    "Implementar ganchos que generen intriga y anticipación, destacando figuras clave o adoptando un formato de noticia formal, y evitar categóricamente los ganchos que revelan el desenlace del contenido.",
+    "Considerar la `hora 1` (1 AM) como un horario óptimo de publicación, ya que concentra el mayor número de videos en el TOP 10 (3 videos) y el video con más vistas de la lista."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La volatilidad del nicho `ia_noticias` es su mayor activo, generando el 100% de los videos más vistos, a pesar de su bajo promedio general. Esto contrasta con la consistencia de `deportes` (`mundial_2026`). Adicionalmente, los títulos, y no los hooks explícitos, actúan como el verdadero impulsor del rendimiento para el contenido viral."
+  "insight_semana": "La iteración actual revela una dualidad estratégica: el nicho `ia_noticias` es un motor de virales extremos (todos los TOP 10) pese a su baja `avg_views` (6) y `trend` negativa, mientras que `mundial_2026` (parte de `deportes`) ofrece un rendimiento consistentemente alto (`avg_views` de 258 y `trend` de 867.0), sugiriendo una estrategia de contenido balanceada entre alto riesgo/alta recompensa y rendimiento estable."
 }
