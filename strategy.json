@@ -1,38 +1,39 @@
 {
-  "updated": "2026-11-24",
-  "iteracion": 792,
+  "updated": "2026-11-25",
+  "iteracion": 793,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.4,
     "ia_noticias": 0.3,
-    "productividad_ia": 0.1,
-    "negocios_digitales": 0.08,
-    "finanzas": 0.04,
-    "entretenimiento": 0.04,
-    "cripto_inversiones": 0.02,
-    "politica_latam": 0.02
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "Gancho de Urgencia/Anticipación: Ej. \"¡Se acabó la espera! ¡El [evento] está aquí!\" (Basado en \"¡Se acabó la espera! ¡El\" - 867 views)",
-    "Gancho de Datos Específicos/Logro Personal: Ej. \"Con solo [edad] años, [nombre] [logro/noticia impactante].\" (Basado en \"Con solo 17 años, Lamine\" - 740 views)",
-    "Gancho de Bienvenida Profesional + Tema Directo: Ej. \"Muy buenas tardes. Bienvenidos a [tema candente/noticia clave].\" (Basado en \"Muy buenas tardes. Bienvenidos a\" - 375 views)",
-    "Gancho de Pregunta Controversial/Conspiración: Ej. \"¿Es posible que [evento] fuera [acción controvertida]? 🤯\" (Inspirado en títulos top como \"ARGENTINA ENTREGÓ la Final del Mundial? 🤯\")",
-    "Gancho de Noticia Impactante Global/Regional: Ej. \"La noticia que sacude a [región/país] hoy: [evento devastador].\" (Inspirado en títulos top como \"Terremoto devastador en Colombia\")",
-    "Gancho de Alerta Inmediata/Última Hora: Ej. \"¡Alerta máxima! [Evento principal] acaba de impactar a [entidad/liga].\" (Inspirado en títulos top como \"TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱\")"
+    "Fórmula de Conspiración/Dramatismo: [País/Entidad] [Verbo dramático] [Evento Mayor]? 🤯 (ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯')",
+    "Fórmula de Catástrofe/Noticia Impactante: [Evento Trágico] [Localización]: [Dato Impactante/Consecuencia] (ej. 'Terremoto devastador en Colombia: 132 muertos')",
+    "Fórmula de Urgencia/Relevancia General: La noticia [Tipo] que sacude [Región] hoy [Emoji] (ej. 'La noticia deportiva que sacude LATAM hoy ⚽')",
+    "Fórmula de Controversia/Eliminación: [Evento/Liga]: [Nombre/Equipo] [Acción Drámatica]! 😱 (ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱')",
+    "Fórmula de Escasez/Fenómeno Viral: [Producto/Evento de Celebridad] [Localización] ¡[Estado de Agotamiento/Éxito]! 😱🔥 (ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥')",
+    "Fórmula de Anticipación Máxima: ¡Se acabó la espera! ¡El [Evento/Anuncio esperado]!"
   ],
   "avoid_hooks": [
-    "Narración de resultados directos sin drama ni contexto (ej. \"Brasil y Noruega empatan 0-0\" - 0 views)",
-    "Afirmaciones vagas o incompletas sin promesa de desenlace (ej. \"Sidny Lopes Cabral acaba de\" - 0 views)",
-    "Introducción de nombres propios poco conocidos sin un contexto intrigante inmediato (ej. \"Sidny Lopes Cabral acaba de\" - 0 views)"
+    "Hooks que narran resultados directos o son excesivamente genéricos (ej. 'Brasil y Noruega empatan 0-0')",
+    "Hooks que introducen un personaje sin generar intriga o contexto inmediato (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que son meramente descriptivos de un evento sin un elemento de sorpresa o urgencia"
   ],
-  "best_hora": 17,
-  "duracion_optima": 58,
+  "best_hora": 1,
+  "duracion_optima": "insuficientes datos para duración_optima",
   "recomendaciones": [
-    "Priorizar la creación de contenido para el nicho 'ia_noticias' con un enfoque en títulos y hooks de alto impacto y drama, dado su demostrado potencial para generar videos virales y ocupar el 100% del TOP 10, a pesar de su volatilidad general.",
-    "Mantener una producción consistente en el nicho 'deportes' (derivado de 'mundial_2026'), aprovechando su alto `avg_views` (258) y fuerte `trend` (867.0) para asegurar una base de audiencia estable y creciente.",
-    "Implementar una estrategia de publicación que favorezca las horas 1 AM y 5 PM (hora 17), ya que estas franjas horarias han concentrado el 50% de los videos más exitosos.",
-    "Diseñar títulos que combinen elementos geográficos/entidades clave, eventos de gran magnitud y emojis de sorpresa (🤯, 😱) para maximizar la curiosidad y el clic, siguiendo el patrón de los videos con más de 973 views."
+    "Priorizar títulos que combinen un país clave (e.g., 'Argentina', 'Colombia'), un evento de gran magnitud (e.g., 'Mundial', 'Terremoto'), y un emoji de sorpresa/drama (e.g., 🤯, 😱, 🔥).",
+    "Enfocarse en generar intriga y un 'cliffhanger' en los primeros segundos o en el título, evitando narrar el desenlace o ser genérico, especialmente para videos de alto impacto noticioso.",
+    "Experimentar con horarios de publicación de 1 AM y 5 PM (17 PM), ya que concentran la mayoría de videos en el TOP 10, maximizando la exposición inicial.",
+    "Para el nicho 'ia_noticias', dada su naturaleza de alto riesgo/alta recompensa, es crucial realizar un análisis exhaustivo de la actualidad para identificar temas con potencial viral y aplicar títulos y aperturas altamente dramáticas.",
+    "Considerar la creación de contenido dentro del nicho de 'deportes' (particularmente subtemas como 'mundial_2026'), que ha mostrado una sólida `avg_views` y `trend` positiva, sugiriendo un rendimiento más consistente."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho 'ia_noticias' presenta una paradoja crucial: es la única fuente de videos en el TOP 10, demostrando un potencial de viralización extremo, pero su `avg_views` general de 6 y `trend` negativa de -1.0 en el ranking de nichos indican que el éxito es altamente dependiente de hooks y títulos excepcionales, siendo un nicho de altísimo riesgo/recompensa."
+  "insight_semana": "El nicho `ia_noticias` es de alto riesgo y alta recompensa: concentra todos los videos del TOP 10, pero su bajo `avg_views` (7) y `trend` negativa (-0.95) demuestran que su éxito depende fuertemente de la elección del tema y el título, con un alto volumen de videos de bajo rendimiento. El título, más que un hook explícito, parece ser el gancho principal para los videos más exitosos."
 }
