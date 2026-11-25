@@ -1,37 +1,41 @@
 {
   "updated": "2026-11-25",
-  "iteracion": 797,
+  "iteracion": 798,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.35,
     "ia_noticias": 0.3,
-    "productividad_ia": 0.15,
-    "negocios_digitales": 0.1,
-    "finanzas": 0.025,
-    "entretenimiento": 0.025,
-    "cripto_inversiones": 0.025,
-    "politica_latam": 0.025
+    "productividad": 0.1,
+    "negocios": 0.05,
+    "finanzas": 0.05,
+    "entretenimiento": 0.05,
+    "negocios_digitales": 0.03,
+    "productividad_ia": 0.03,
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "Exclamación de Urgencia/Anticipación: ¡Se acabó la espera! ¡El [evento/noticia] ha llegado.",
-    "Dato Sorprendente + Nombre Propio: Con solo [edad/cifra], [nombre] [logró/causó un impacto].",
-    "Introducción Formal + Anuncio de Noticias: Muy buenas tardes. Bienvenidos a [noticia/evento] que está sacudiendo [lugar].",
-    "Pregunta Retórica + Contradicción/Controversia: ¿[Evento principal] realmente [acción controvertida]? 🤯 (PARTE X)",
-    "Titular de Impacto + Cifras y Localización: [Tipo de evento] devastador en [lugar]: [cifras] [consecuencia].",
-    "Anuncio de Evento Específico + Consecuencia Dramática: [Evento específico]: ¡[Sujeto] [acción drástica]! 😱"
+    "¿[Sujeto/Evento] [Verbo de Conspiración/Cuestionamiento] la [Resultado/Hecho]? 🤯",
+    "¡URGENTE! [Tipo de Desastre/Noticia Impactante] en [Lugar]: [Cifra/Detalle Clave] 🚨",
+    "[Tema Clave] que SACUDE [Región/Comunidad] HOY [Emoji de Relevancia]!",
+    "[Contexto Específico]: ¡[Sujeto/Entidad] [Acción Inesperada/Resultado]! 😱",
+    "[Evento/Situación]: ¡[Detalle Sorprendente]! 💥",
+    "¡ALERTA! [Evento/Producto/Persona] [Lugar/Estado]: ¡[Reacción/Consecuencia]! 🔥"
   ],
   "avoid_hooks": [
-    "Anunciar directamente un resultado sin intriga (ej. 'Brasil y Noruega empatan 0-0').",
-    "Frases incompletas o que no generan curiosidad inmediata (ej. 'Sidny Lopes Cabral acaba de').",
-    "Repetir información ya implícita en el título o miniatura (ej. 'Brasil y Noruega empatan')."
+    "Revelar el resultado principal o la conclusión de inmediato (ej. 'Brasil y Noruega empatan 0-0').",
+    "Mencionar nombres propios o eventos sin contexto intrigante o emocional (ej. 'Sidny Lopes Cabral acaba de').",
+    "Afirmaciones planas o descripciones directas sin generar suspenso (ej. 'Brasil y Noruega empatan')."
   ],
   "best_hora": 1,
-  "duracion_optima": 58,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "Concentra la creación de contenido en los nichos de `deportes` (particularmente `mundial_2026`) y `ia_noticias`, dado que juntos representan el mayor potencial de vistas y el 100% del TOP 10 de videos.",
-    "Prioriza la publicación a la `hora 1` (1 AM) y considera también la `hora 17` (5 PM), ya que estas franjas horarias han demostrado ser las más efectivas para captar la audiencia inicial.",
-    "Implementa de forma consistente elementos de alta atracción en los títulos: utiliza emojis de impacto (🤯, 😱) y la estrategia de contenido serializado ('PARTE 1', '(1/2)') para mantener la intriga y fomentar la continuidad."
+    "Priorizar la creación de contenido en los nichos `ia_noticias` y `deportes` (particularmente `mundial_2026`) debido a su alta capacidad de viralización y consistencia de vistas, respectivamente.",
+    "Utilizar emojis de impacto como '🤯', '😱', '⚽', '🔥', '💥' de forma estratégica en los títulos para maximizar la visibilidad y el CTR, siguiendo el patrón de los videos TOP 10.",
+    "Programar la publicación de los videos clave alrededor de la `1 AM` (hora 1), ya que esta franja horaria ha demostrado el mayor potencial de rendimiento y concentración de videos exitosos.",
+    "Enfocarse en títulos y hooks que generen intriga, controversia o revelen una noticia impactante sin dar el resultado final inmediatamente, capitalizando la curiosidad del espectador.",
+    "Continuar monitoreando los nichos con 0 vistas para identificar tendencias emergentes, pero asignarles una baja prioridad hasta obtener datos de rendimiento."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El nicho `ia_noticias` exhibe una polarización extrema: es responsable del 100% de los videos en el TOP 10, pero su promedio general de vistas es de solo 7, lo que indica un altísimo potencial de viralidad junto con una gran variabilidad y dependencia de elementos de alta atracción como títulos y hooks."
+  "insight_semana": "La gran volatilidad del nicho `ia_noticias`: aunque representa el 100% de los videos del TOP 10, su promedio de vistas general es de solo 7, lo que indica un patrón de 'todo o nada' con alto potencial viral que requiere una estrategia de alto volumen y experimentación."
 }
