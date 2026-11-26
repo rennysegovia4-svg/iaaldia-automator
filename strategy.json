@@ -1,38 +1,39 @@
 {
   "updated": "2026-11-26",
-  "iteracion": 805,
+  "iteracion": 806,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.6,
-    "ia_noticias": 0.15,
-    "finanzas": 0.02,
-    "entretenimiento": 0.15,
-    "negocios_digitales": 0.02,
-    "productividad_ia": 0.02,
-    "cripto_inversiones": 0.02,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
+    "finanzas": 0.05,
+    "entretenimiento": 0.1,
+    "negocios_digitales": 0.05,
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.03,
     "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [evento/noticia]!",
-    "Con solo [Edad] años, [Nombre/Logro asombroso]",
-    "Muy buenas tardes. Bienvenidos a [tema noticioso]",
-    "[Hecho sorprendente/polémico]? 🤯",
-    "[Evento] HOY: ¡[Noticia impactante]! 😱",
-    "La noticia [adjetivo] que sacude [lugar] hoy ⚽"
+    "Pregunta Controversial + Emoción Fuerte (Emoji): Ej. 'ARGENTINA ENTREGÓ la Final del Mundial? 🤯'",
+    "Noticia de Alto Impacto (Sucesos/Desastres) + Números/Escala: Ej. 'Terremoto devastador en Colombia: 132 muertos'",
+    "Noticia Deportiva Urgente + Impacto Geográfico/Emoción: Ej. 'La noticia deportiva que sacude LATAM hoy ⚽'",
+    "Evento Específico/Celebridad + Urgencia + Reacción (Emoji): Ej. 'ENTRADAS SHAKIRA MADRID ¡Se Agotan! 😱🔥'",
+    "Personaje/Equipo Específico + Acción Drástica/Conclusión + Emoción (Emoji): Ej. 'TARJETA ROJA MUNDIAL: ¡Gamezking ELIMINADO! 😱'",
+    "Urgencia + Localización + Consecuencia/Tragedia: Ej. 'Temblor hoy Colombia y Venezuela: la tragedia sísmica'"
   ],
   "avoid_hooks": [
-    "Brasil y Noruega empatan 0-0",
-    "Brasil y Noruega empatan",
-    "Sidny Lopes Cabral acaba de"
+    "Descripciones sin emoción ni urgencia (ej. 'Brasil y Noruega empatan 0-0')",
+    "Frases demasiado concisas sin contexto ni impacto (ej. 'Brasil y Noruega empatan')",
+    "Inicio de frases que no generan intriga inmediata (ej. 'Sidny Lopes Cabral acaba de')"
   ],
   "best_hora": 1,
-  "duracion_optima": 0,
+  "duracion_optima": -1,
   "recomendaciones": [
-    "Priorizar el contenido de `ia_noticias` que se centra en deportes de alta relevancia (especialmente relacionados con fútbol y grandes torneos como el Mundial), noticias de última hora con impacto (ej. desastres naturales) y noticias de entretenimiento de figuras públicas, ya que estos temas dominan el Top 10 de videos.",
-    "Mantener el horario de publicación de las 1 AM (UTC-X) como estratégico, ya que ha demostrado generar la mayor cantidad de videos virales y un promedio de vistas superior en esta iteración.",
-    "Formular títulos que actúen como ganchos potentes, incorporando preguntas impactantes, noticias de última hora, urgencia y el uso estratégico de emojis (🤯, 😱, 🔥, ⚡), dado que el 100% de los videos más vistos tenían el campo 'hook' vacío y sus títulos fueron el motor principal del CTR.",
-    "Evitar ganchos genéricos o excesivamente descriptivos que no generen intriga o emoción, como 'Brasil y Noruega empatan', ya que estos resultan en 0 vistas."
+    "Priorizar temáticas de deportes y noticias de alto impacto y actualidad dentro del nicho 'ia_noticias', ya que son los únicos contenidos que han demostrado escalar vistas masivamente.",
+    "Formular los títulos como ganchos potentes y auto-suficientes, incorporando preguntas directas, palabras de impacto y emojis, dado que los videos más exitosos carecen de un campo 'hook' explícito.",
+    "Mantener la publicación de contenido de alto potencial alrededor de la 1 AM, que ha demostrado ser la franja horaria más efectiva para los videos más vistos.",
+    "Evitar títulos o ganchos genéricos y puramente descriptivos, ya que se correlacionan directamente con videos de 0 vistas.",
+    "Explorar y optimizar el contenido en el nicho 'mundial_2026' o deportes en general, a pesar de su volatilidad, dado su alto potencial de vistas promedio y tendencia positiva."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "El éxito de los videos etiquetados como `ia_noticias` es casi exclusivamente impulsado por sub-nichos hiper-relevantes como deportes (Mundial, ligas), noticias de última hora impactantes (terremotos) y entretenimiento de alto perfil, mientras que el contenido genérico de `ia_noticias` muestra un rendimiento muy bajo (avg_views: 9), creando una aparente paradoja en los datos de rendimiento del nicho."
+  "insight_semana": "El éxito de los videos etiquetados como 'ia_noticias' reside exclusivamente en la hiper-relevancia y actualidad del tema (especialmente noticias deportivas y eventos de alto impacto geográfico), y no en el nicho genérico de 'ia_noticias' en sí mismo, que en promedio tiene muy bajas vistas."
 }
