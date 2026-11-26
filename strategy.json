@@ -1,40 +1,38 @@
 {
   "updated": "2026-11-26",
-  "iteracion": 804,
+  "iteracion": 805,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
     "deportes": 0.6,
-    "ia_noticias": 0.1,
-    "productividad": 0.1,
-    "negocios": 0.05,
-    "finanzas": 0.05,
-    "entretenimiento": 0.03,
-    "negocios_digitales": 0.03,
+    "ia_noticias": 0.15,
+    "finanzas": 0.02,
+    "entretenimiento": 0.15,
+    "negocios_digitales": 0.02,
     "productividad_ia": 0.02,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.01
+    "cripto_inversiones": 0.02,
+    "politica_latam": 0.02
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento/Noticia clave]!",
-    "Con solo [Dato sorprendente] años, [Nombre] [Logro inesperado]",
-    "Muy buenas tardes. Bienvenidos a [Tema de la Noticia]",
-    "¿[Evento Sensacionalista] Entregado/Manipulado? 🤯",
-    "Última hora: [Tema] ¡Con [Dato de Impacto]!",
-    "[Evento Actual] HOY: ¡[Consecuencia Dramática]! 😱"
+    "¡Se acabó la espera! ¡El [evento/noticia]!",
+    "Con solo [Edad] años, [Nombre/Logro asombroso]",
+    "Muy buenas tardes. Bienvenidos a [tema noticioso]",
+    "[Hecho sorprendente/polémico]? 🤯",
+    "[Evento] HOY: ¡[Noticia impactante]! 😱",
+    "La noticia [adjetivo] que sacude [lugar] hoy ⚽"
   ],
   "avoid_hooks": [
-    "Afirmaciones puramente factuales sin intriga (ej. 'Brasil y Noruega empatan 0-0')",
-    "Ganchos incompletos que no cierran una idea (ej. 'Sidny Lopes Cabral acaba de')",
-    "Declaraciones genéricas sin valor añadido (ej. 'Brasil y Noruega empatan')"
+    "Brasil y Noruega empatan 0-0",
+    "Brasil y Noruega empatan",
+    "Sidny Lopes Cabral acaba de"
   ],
   "best_hora": 1,
   "duracion_optima": 0,
   "recomendaciones": [
-    "Priorizar la creación de contenido dentro del nicho de 'deportes', capitalizando tanto la tendencia de 'mundial_2026' como la alta viralidad de noticias deportivas dentro de 'ia_noticias'.",
-    "Reforzar la estrategia de publicación a la 1 AM, que ha demostrado ser la franja horaria con mayor potencial para picos de viralidad en esta iteración (4 de los 10 videos más vistos).",
-    "Asegurar que cada Short tenga un gancho de video inicial (hook) explícito y atractivo que genere curiosidad o urgencia, evitando la ausencia de hooks o ganchos genéricos que llevan a 0 vistas.",
-    "Experimentar con los hooks basados en preguntas sensacionalistas y datos sorprendentes/urgentes, incorporando emojis clave como 🤯 y 😱 en el título y potencialmente reforzando el hook."
+    "Priorizar el contenido de `ia_noticias` que se centra en deportes de alta relevancia (especialmente relacionados con fútbol y grandes torneos como el Mundial), noticias de última hora con impacto (ej. desastres naturales) y noticias de entretenimiento de figuras públicas, ya que estos temas dominan el Top 10 de videos.",
+    "Mantener el horario de publicación de las 1 AM (UTC-X) como estratégico, ya que ha demostrado generar la mayor cantidad de videos virales y un promedio de vistas superior en esta iteración.",
+    "Formular títulos que actúen como ganchos potentes, incorporando preguntas impactantes, noticias de última hora, urgencia y el uso estratégico de emojis (🤯, 😱, 🔥, ⚡), dado que el 100% de los videos más vistos tenían el campo 'hook' vacío y sus títulos fueron el motor principal del CTR.",
+    "Evitar ganchos genéricos o excesivamente descriptivos que no generen intriga o emoción, como 'Brasil y Noruega empatan', ya que estos resultan en 0 vistas."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "La dicotomía en el rendimiento del nicho 'ia_noticias' revela que, si bien es capaz de generar videos altamente virales (especialmente en deportes), su baja media de vistas y tendencia negativa subyacen a una inconsistencia crítica en la selección de temas, donde solo los subtemas deportivos logran tracción."
+  "insight_semana": "El éxito de los videos etiquetados como `ia_noticias` es casi exclusivamente impulsado por sub-nichos hiper-relevantes como deportes (Mundial, ligas), noticias de última hora impactantes (terremotos) y entretenimiento de alto perfil, mientras que el contenido genérico de `ia_noticias` muestra un rendimiento muy bajo (avg_views: 9), creando una aparente paradoja en los datos de rendimiento del nicho."
 }
