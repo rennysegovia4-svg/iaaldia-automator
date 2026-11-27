@@ -1,37 +1,37 @@
 {
   "updated": "2026-11-27",
-  "iteracion": 808,
+  "iteracion": 809,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.45,
-    "ia_noticias": 0.35,
+    "deportes": 0.4,
+    "ia_noticias": 0.3,
     "finanzas": 0.05,
     "entretenimiento": 0.05,
     "negocios_digitales": 0.05,
-    "productividad_ia": 0.025,
-    "cripto_inversiones": 0.015,
-    "politica_latam": 0.01
+    "productividad_ia": 0.05,
+    "cripto_inversiones": 0.05,
+    "politica_latam": 0.05
   },
   "best_hooks": [
-    "¡Se acabó la espera! ¡El [Evento Importante] ha llegado! [Emoji de emoción]",
-    "Con solo [Edad] años, [Nombre de persona/equipo] [Acción sorprendente]...",
-    "Muy buenas tardes. Bienvenidos a [Noticia de último momento/Evento importante].",
-    "¿[Sujeto/Evento] [Verbo de impacto]? 🤯",
-    "[Sujeto] [Verbo de shock/cambio] ¡[Adjetivo/Evento]! 😱",
-    "La noticia [Adjetivo] que sacude [Región] hoy ⚽"
+    "¡Se acabó la espera! [Evento/Noticia clave]",
+    "Con solo [X] años, [Persona/Hecho destacable]...",
+    "Muy buenas tardes. Bienvenidos a [Tema/Desarrollo importante]",
+    "¿[Tema principal] [Verbo de impacto/resultado dramático]?",
+    "[Noticia impactante] [🤯/😱/¡SHOCK!]",
+    "[Noticia actual/Tendencia] que sacude [Lugar/Comunidad] hoy"
   ],
   "avoid_hooks": [
-    "Descripciones directas de resultados sin intriga (ej., 'X y Y empatan 0-0').",
-    "Frases incompletas o genéricas que no generan interés inmediato (ej., 'Sidny Lopes Cabral acaba de').",
-    "Afirmaciones neutrales o de bajo impacto que no invocan emoción o urgencia."
+    "Ganchos que simplemente enuncian un resultado neutral o un empate. (Ej: 'Brasil y Noruega empatan 0-0')",
+    "Ganchos que son puramente descriptivos de una acción o un hecho sin crear intriga o emoción. (Ej: 'Sidny Lopes Cabral acaba de')",
+    "Ganchos que carecen de cualquier elemento de sorpresa, pregunta o urgencia, limitándose a un enunciado sin gancho explícito."
   ],
   "best_hora": 1,
-  "duracion_optima": null,
+  "duracion_optima": 0,
   "recomendaciones": [
-    "**Foco Estratégico en Nichos de Alto Impacto**: Concentrar la producción en `deportes` (especialmente sub-nichos de alto interés como `mundial_2026`) por su `avg_views` de 258 y `trend` de 867.0, y en `ia_noticias` por su capacidad probada para generar picos de viralidad (100% del Top 10), priorizando la calidad del gancho para mitigar la alta tasa de fracaso de esta última.",
-    "**Optimización de Títulos y Hooks para CTR**: Implementar sistemáticamente preguntas directas y emojis de impacto (🤯, 😱) en los títulos, una característica del 80% del Top 10, y desarrollar ganchos iniciales que generen urgencia o intriga, como '¡Se acabó la espera! ¡El' (867 avg views), evitando hooks descriptivos o incompletos.",
-    "**Estrategia de Publicación y Formato**: Publicar preferentemente a la hora 1 (AM/PM), la hora más frecuente en el Top 10, y explorar el formato de contenido serializado (ej., 'PARTE 1') presente en el 30% de los videos más vistos para fomentar la retención y el consumo múltiple."
+    "Priorizar fuertemente el nicho de 'deportes' (particularmente 'mundial_2026') debido a su alta tendencia de crecimiento (867.0) y promedio de vistas (258), enfocándose en noticias deportivas actuales y de gran impacto.",
+    "Implementar la estrategia de contenido serializado utilizando 'PARTE X' o '(X/Y)' en los títulos para noticias complejas o historias con continuación, dado que esta táctica aparece en el 30% de los videos más exitosos.",
+    "Para el nicho de 'ia_noticias', donde la viralidad es alta pero el promedio general bajo, es crucial maximizar el impacto emocional y la urgencia en los títulos y ganchos, usando emojis (🤯, 😱) y lenguaje de shock, y evitar temas genéricos o poco dramáticos."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque el nicho 'ia_noticias' genera los videos con mayor pico de vistas (100% del Top 10), su bajo promedio general de 8 vistas y tendencia negativa (-0.95) sugieren una alta variabilidad y necesidad crítica de optimizar los ganchos y temas para reducir la tasa de fallos, mientras que el nicho 'mundial_2026' (representando 'deportes') muestra un rendimiento promedio más robusto (258 vistas) y una tendencia de crecimiento significativa (867.0), indicando una base más consistente para el canal."
+  "insight_semana": "El nicho 'ia_noticias' presenta una dualidad extrema: aunque produce el 100% de los videos más vistos, su bajo promedio general de 8 vistas y tendencia negativa (-1.0) indican una alta volatilidad y tasa de fracaso, mientras que 'mundial_2026' (parte de deportes) muestra un crecimiento explosivo (trend 867.0) y un promedio de vistas superior (258), sugiriendo una oportunidad más estable para la captación de audiencia."
 }
