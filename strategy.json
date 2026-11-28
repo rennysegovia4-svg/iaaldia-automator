@@ -1,41 +1,40 @@
 {
-  "updated": "2026-11-27",
-  "iteracion": 813,
+  "updated": "2026-11-28",
+  "iteracion": 814,
   "_estrategia": "Canal 100% deportes. Mundial 2026 hasta Jul 19, luego deportes permanente.",
   "niche_weights": {
-    "deportes": 0.5,
-    "ia_noticias": 0.35,
-    "productividad_ia": 0.05,
-    "negocios_digitales": 0.05,
-    "finanzas": 0.01,
-    "entretenimiento": 0.01,
-    "cripto_inversiones": 0.01,
-    "politica_latam": 0.02
+    "mundial_2026": 0.4,
+    "ia_noticias": 0.25,
+    "productividad": 0.15,
+    "negocios": 0.05,
+    "entretenimiento": 0.05,
+    "finanzas": 0.02,
+    "negocios_digitales": 0.02,
+    "cripto_inversiones": 0.02,
+    "productividad_ia": 0.02,
+    "deportes": 0.01,
+    "politica_latam": 0.01
   },
   "best_hooks": [
-    "¡[Evento Impactante] HOY! ¿QUÉ PASÓ? 😱",
-    "¡[Dato Sorprendente] con solo [Edad/Número] [Logro]! 🤯",
-    "¡Alerta! [Noticia Urgente] que sacude [Región/Tema] ⚡",
-    "¿[Pregunta Controversial] en [Evento]? La verdad sale a la luz 🤫",
-    "El MUNDO en SHOCK: [Detalle Inesperado] en [Noticia] 💥",
-    "ÚLTIMA HORA: [Resultado/Decisión] que CAMBIA TODO en [Ámbito] 🔥"
+    "¡Se acabó la espera! [Evento clave]",
+    "[Dato específico] [Hecho sorprendente] (ej. 'Con solo 17 años, Lamine')",
+    "¿[Evento/Afirmación impactante] [Consecuencia]? 🤯",
+    "[Evento devastador/trágico]: [Cifras clave] y [consecuencia] 📈",
+    "[Evento clave] HOY: ¡[Impacto inesperado]! 😱",
+    "[Entidad clave]: [Acción/Resultado] ¡[Emoción Fuerte]! 🤯"
   ],
   "avoid_hooks": [
-    "Iniciar con un resultado plano y sin intriga: '[Equipo] [Score] [Equipo]'",
-    "Presentar un nombre propio sin contexto o impacto inmediato: '[Nombre] acaba de [Acción]' (sin explicación de quién es o por qué es relevante)",
-    "Afirmaciones puramente informativas que no generan curiosidad: '[Tema] es [Estado Actual]'"
+    "Resultados sin contexto o intriga (ej. 'Brasil y Noruega empatan 0-0')",
+    "Introducciones genéricas o incompletas que no revelan importancia (ej. 'Sidny Lopes Cabral acaba de')",
+    "Hooks que carecen de emocionalidad, impacto claro o urgencia"
   ],
   "best_hora": 16,
-  "duracion_optima": 0,
+  "duracion_optima": "insuficientes datos para duracion_optima",
   "recomendaciones": [
-    "Priorizar el nicho `deportes` (específicamente contenido tipo `mundial_2026`) con el 50% del esfuerzo, dada su performance superior en promedio de vistas (258) y tendencia de crecimiento (867.0).",
-    "Mantener una producción consistente en `ia_noticias` enfocada en fútbol y eventos noticiosos de alto impacto (70% de Top 10), ya que tiene el mayor potencial para generar hits virales, a pesar de un promedio de vistas general más bajo.",
-    "Concentrar las publicaciones de mayor potencial en las horas 16:00 y 21:00, ya que han demostrado ser los momentos más efectivos para obtener un alto número de vistas individuales (1298 y 1244 respectivamente).",
-    "Implementar ganchos iniciales que generen anticipación, misterio, o resalten un dato impactante y específico para capturar la atención rápidamente.",
-    "Evitar ganchos que se limiten a informar un resultado o un hecho sin añadir una capa de intriga, pregunta o emoción, ya que han resultado en 0 vistas.",
-    "Monitorear el rendimiento de los nichos `productividad_ia` y `negocios_digitales` con una inversión moderada, buscando correlaciones con los temas de los Top 10 (por ejemplo, noticias de negocios deportivas o productividad en el deporte).",
-    "Comenzar a recopilar datos sobre la duración de los Shorts en relación con las vistas y la retención, para poder determinar una duración óptima en futuras iteraciones."
+    "Priorizar fuertemente el nicho `mundial_2026` debido a su promedio de vistas superior (258) y su tendencia de crecimiento excepcional (867.0), consolidándolo como la principal fuente de contenido para el crecimiento sostenido.",
+    "Para el nicho `ia_noticias`, centrar la estrategia en noticias de alto impacto y trending, especialmente aquellas relacionadas con deportes o eventos noticiosos generales de gran relevancia (ej. terremotos, conciertos masivos), utilizando ganchos emocionales y preguntas controversiales para maximizar la viralidad.",
+    "Implementar ganchos que generen intriga, anticipación o que presenten datos impactantes de manera concisa (ej. '¡Se acabó la espera!', 'Con solo 17 años, Lamine', o títulos con preguntas y emojis) para aumentar el Click-Through Rate y la retención inicial."
   ],
   "nivel_confianza": 0.9,
-  "insight_semana": "Aunque `ia_noticias` produce los hits más grandes (100% del Top 10), el nicho `deportes` (representado por `mundial_2026`) es el verdadero motor de crecimiento y consistencia, con un rendimiento promedio (258 vistas) 28 veces superior y una tendencia de crecimiento (867.0) 1000 veces mayor que `ia_noticias`, indicando una audiencia más estable y comprometida para contenido predictivo/analítico de fútbol."
+  "insight_semana": "Aunque el nicho `ia_noticias` es la fuente de los videos con el mayor número de vistas individuales (Top 10), su bajo promedio de vistas (8) y tendencia negativa (-1.0) indican que su éxito es esporádico y altamente dependiente de temas ultra-virales y específicos. En contraste, `mundial_2026` (que agrupa contenido deportivo específico) demuestra un rendimiento consistentemente fuerte con un promedio de 258 vistas y una tendencia de crecimiento exponencial (867.0), siendo una apuesta más segura para el rendimiento general del canal."
 }
